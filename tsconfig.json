@@ -1,8 +1,7 @@
 {
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.d.ts"
+    "src",
+    "bin"
   ],
   "exclude": [
     "node_modules"
@@ -14,10 +13,16 @@
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "src": [
+        "./src/*"
+      ]
+    },
     "noEmit": true,
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es5",
     "strict": false,
+    "baseUrl": ".",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
