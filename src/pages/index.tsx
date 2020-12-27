@@ -4,7 +4,7 @@ import Head from "next/head";
 const index: FC = () => (
   <>
     <Head>
-      <title>Next.js + Jest + TypeScript</title>
+      <title>astroccd</title>
     </Head>
     <p>A simple example repo</p>
   </>
