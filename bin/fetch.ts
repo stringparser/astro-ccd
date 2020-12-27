@@ -1,102 +1,46 @@
 import fs from 'fs-extra';
 import path from 'path';
-import fetch from 'node-fetch';
-import cheerio from 'cheerio';
+import { fetchPageContent } from './lib';
 
-const BASE_URL = 'https://astro-ccd.com';
-
-(async function () {
-  const result = await fetch(`${BASE_URL}/fuensanta-3`)
-    .then(res => res.text())
-    .then(html => {
-      const $ = cheerio.load(html);
-      const post = $('#content > article');
-
-      const title = (post.find('.entry-header').text() || '').trim();
-
-      const description = post.find('.entry-content > p')
-        .toArray()
-        .slice(1, 4)
-        .map(el => ($(el).text() || '').trim())
-        .join(' ')
-      ;
-
-      const items = post.find('.entry-content > p')
-        .toArray()
-        .slice(4)
-        .map(el => $(el))
-        .map(el => {
-          const elFound = el.find([
-            'img',
-            'a:not(:contains(img))',
-          ].join(', '));
-
-          const found = elFound.length > 0
-            ? elFound
-            : el
-          ;
-
-          const html = found.html();
-          const tag =
-            /^<img /.test(html) && 'img' ||
-            'text'
-          ;
-
-          return {
-            el,
-            tag,
-            text: found.text() || '',
-            contents: found.contents(),
-          };
-        })
-        .reduce((acc, { tag, contents: el, text }) => {
-
-          console.log('--');
-          console.log('tagName', tag, el.first().html());
-          console.log('src', el.attr('data-orig-file') || el.attr('src'));
-          console.log(el.attr() || text);
-
-          switch (tag) {
-            case 'img': {
-              return acc.concat({
-                type: 'img',
-                src: el.attr('data-orig-file') || el.attr('src'),
-              });
-            }
-            case 'text': {
-              return acc.concat({
-                type: 'text',
-                text: text.trim()
-              });
-            }
-
-            default: {
-              return acc;
-            }
-          }
-        }, [])
-      ;
-
-      return {
-        path: '/fuensanta-3',
-        items: [
-          {
-            type: 'text',
-            variant: 'header',
-            text: title,
-          },
-          {
-            type: 'text',
-            text: description,
-          },
-          ...items
-        ],
-      }
-    })
-  ;
-
-  await fs.writeFile(
+Promise.all([
+  fetchPageContent('https://astro-ccd.com/fuensanta-3'),
+  fetchPageContent('https://astro-ccd.com/cometasasteroides'),
+  fetchPageContent('https://astro-ccd.com/galaxias'),
+  fetchPageContent('https://astro-ccd.com/nebulosas'),
+  fetchPageContent('https://astro-ccd.com/planetas-satelites'),
+  fetchPageContent('https://astro-ccd.com/construccion-del-observatorio'),
+  fetchPageContent('https://astro-ccd.com/ccd-2')
+])
+.then(results => {
+  fs.writeFile(
     path.join(__dirname, 'data.json'),
-    JSON.stringify(result, null, 2)
+    JSON.stringify(results, null, 2)
   );
-})();
+
+  return Promise.all(
+    results.map(el => {
+      const basename = el.url.split('/').pop();
+
+      const mdx = el.items.map(el => {
+        switch (el.type) {
+          case 'text': {
+            return el.text;
+          }
+          case 'header': {
+            return `# ${el.text}\n---\n`;
+          }
+          case 'image': {
+            return `<img \n\tsrc="${el.src}"\n\tloading="lazy" \n/>`;
+          }
+        }
+      })
+      .filter(value => value)
+      .join('\n\n')
+
+      return fs.writeFile(
+        path.resolve(__dirname, '..', 'src', 'pages', `${basename}.mdx`),
+        mdx
+      )
+    })
+  );
+});
