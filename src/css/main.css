@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
 
   display: flex;
@@ -21,6 +21,8 @@ body {
 }
 
 main {
+  min-height: 100vh;
+
   margin: 0 auto;
   max-width: 90vw;
   background-color: black;
