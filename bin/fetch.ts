@@ -30,7 +30,10 @@ Promise.all([
             return `# ${el.text}\n---\n`;
           }
           case 'image': {
-            return `<img \n\tsrc="${el.src}"\n\tloading="lazy" \n/>`;
+            return [
+              `<img \n\tsrc="${el.src}"\n\tloading="lazy" \n/>`,
+              el.descripcion
+            ].filter(v => v).join('\n');
           }
         }
       })
