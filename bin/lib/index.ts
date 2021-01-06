@@ -1,17 +1,17 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
-import { mapImageItem } from './image';
-import { TextItem, TitleItem, ImageItem } from './types';
+import { TextItem, TitleItem, ImageProps } from './types';
+import mapImageMetadata from './metadata/image';
 
-export type PageItem =
+export type PageItemProps =
   TextItem |
   TitleItem |
-  ImageItem
+  ImageProps
 ;
 
 export type ParsedPageContent = {
   url: string;
-  items: PageItem[];
+  items: PageItemProps[];
 };
 
 export function fetchPageContent(url: string): Promise<ParsedPageContent> {
@@ -38,7 +38,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
 
         const html = found.html();
 
-        const type: PageItem['type'] =
+        const type: PageItemProps['type'] =
           hasImage && 'image' ||
           /^h\d+/.test(html) && 'header' ||
           'text'
@@ -47,9 +47,10 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
         return {
           el: found,
           type,
+          textContent: el.text().trim().replace(/\s+/gm, ' '),
         };
       })
-      .reduce((acc, { type, el }) => {
+      .reduce((acc, { type, el, textContent }) => {
 
         // console.log('--');
         // console.log('tagName', type, el.first().html());
@@ -70,11 +71,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             });
           }
           case 'image': {
-            const src = el.attr('data-orig-file') || el.attr('src');
-            const alt = el.attr('alt');
-            const _id = (/\/([^\/.]+)\.[^\/\s]+$/.exec(src) || ['']).pop().trim();
-
-            return acc.concat(mapImageItem(_id, src, alt));
+            return acc.concat(mapImageMetadata(url, el, textContent));
           }
 
           default: {

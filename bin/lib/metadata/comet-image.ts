@@ -1,16 +1,7 @@
-import { ImageItem } from "./types";
-import { mapImageFecha } from "./util";
+import { ImageProps } from "../types";
 
-export function mapImageItem(_id: string, src: string, alt: string): ImageItem {
-  const type = 'image';
-
-  const props: ImageItem = {
-    _id,
-    src,
-    alt,
-    type,
-    fecha: mapImageFecha(src),
-  };
+export function mapCometImageMetadata(props: ImageProps): ImageProps {
+  const { src, _id } = props;
 
   if (/^c?2020f3/i.test(_id) || src === 'https://astroccd.files.wordpress.com/2020/07/re3.jpg') {
     return {

@@ -8,11 +8,13 @@ export type TitleItem = {
   text: string;
 };
 
-export type ImageItem = {
+export type ImageProps = {
   _id: string;
   src: string;
   alt: string;
   type: 'image';
   alias?: string;
   fecha?: string;
+  descripcion?: string;
+  localizacion?: string;
 };
