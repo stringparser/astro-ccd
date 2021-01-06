@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "fetchData": "ts-node ./bin/fetch.ts"
+    "fetch:data": "ts-node ./bin/fetch.ts"
   },
   "repository": {
     "type": "git",
