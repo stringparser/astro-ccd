@@ -1,7 +1,21 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
-import { TextItem, TitleItem, ImageProps } from './types';
 import mapImageMetadata from './metadata/image';
+import { TextItem, TitleItem, ImageProps } from './types';
+
+function cleanHTML(html: string) {
+  return (html
+    .replace('&amp;', ' ')
+    .replace(/&nbsp;/gm, '\n')
+    .replace(/<a \s*href[^>]+>\s*(<br\s*\/?>)?\s*<\/a>/gm, '')
+    .replace(/<br\s*\/?>/, '')
+    .replace(/class\s*=\s*["'][^'"]+["']/gm, '')
+    .replace(/style\s*=\s*["'][^'"]+["']\s*/gm, '')
+    .replace(/\s*(<|<\/)(b|em|span|h\d+|strong)\s*>\s*/gm, '')
+    .trim()
+    .replace(/\s+/g, ' ')
+  );
+}
 
 export type PageItemProps =
   TextItem |
@@ -22,9 +36,9 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
     const $ = cheerio.load(html);
     const post = $('#content > article');
 
-    const title = (post.find('.entry-header').text() || '').trim();
+    const title = cleanHTML(post.find('.entry-header').html() || '');
 
-    const items = post.find('.entry-content > p,h1,h2,h3,h4,h5,h6')
+    const items = post.find('.entry-content > p,h1,h2,h3,h4,h5,h6,video,figure')
       .toArray()
       .map(el => $(el))
       .map(el => {
@@ -44,12 +58,17 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           'text'
         ;
 
+        if (hasImage) {
+          el.find(found).remove();
+        }
+
         return {
           el: found,
           type,
-          textContent: el.text().trim().replace(/\s+/gm, ' '),
+          textContent: cleanHTML(el.html()),
         };
       })
+      .filter(({ textContent }) => title !== textContent)
       .reduce((acc, { type, el, textContent }) => {
 
         // console.log('--');
@@ -61,13 +80,13 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           case 'text': {
             return acc.concat({
               type,
-              text: el.text().trim().replace(/\s+/g, ' ')
+              text: cleanHTML(el.html())
             });
           }
           case 'header': {
             return acc.concat({
               type,
-              text: el.text().trim().replace(/\s+/g, ' ')
+              text: cleanHTML(el.html())
             });
           }
           case 'image': {

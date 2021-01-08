@@ -2,6 +2,12 @@ import fs from 'fs-extra';
 import path from 'path';
 import { fetchPageContent } from './lib';
 
+const urlMap = {
+  'ccd-2': 'ccd',
+  'fuensanta-3': 'fuensanta',
+  'cometasasteroides': 'cometas-asteroides',
+};
+
 Promise.all([
   fetchPageContent('https://astro-ccd.com/fuensanta-3'),
   fetchPageContent('https://astro-ccd.com/cometasasteroides'),
@@ -19,7 +25,8 @@ Promise.all([
 
   return Promise.all(
     results.map(el => {
-      const basename = el.url.split('/').pop();
+      const baseURL = el.url.split('/').pop();
+      const basename = urlMap[baseURL] || baseURL;
 
       const mdx = el.items.map(el => {
         switch (el.type) {

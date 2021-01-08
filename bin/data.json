@@ -8,14 +8,6 @@
       },
       {
         "type": "text",
-        "text": "FUENSANTA"
-      },
-      {
-        "type": "text",
-        "text": "FUENSANTA"
-      },
-      {
-        "type": "text",
         "text": "El Observatorio esta situado en la localidad que resido, es un pequeño pueblo de la"
       },
       {
@@ -262,11 +254,7 @@
       },
       {
         "type": "text",
-        "text": "COMETAS/ASTEROIDES"
-      },
-      {
-        "type": "text",
-        "text": "mpc I88 Lista de códigos MPC"
+        "text": "mpc I88 <a href=\"http://www.minorplanetcenter.net/iau/lists/ObsCodesF.html\" target=\"_blank\" rel=\"noopener noreferrer\">Lista de códigos MPC</a>"
       },
       {
         "type": "text",
@@ -414,7 +402,7 @@
       },
       {
         "type": "text",
-        "text": "C/2019 Y4 ATLAS"
+        "text": "C/2019 Y4ATLAS"
       },
       {
         "_id": "C/2019 Y4",
@@ -984,7 +972,7 @@
       },
       {
         "type": "text",
-        "text": "21/P 8Agosto 2018"
+        "text": "<a href=\"https://astroccd.files.wordpress.com/2018/08/21p_20180809_i88.jpg\">21/P 8Agosto 2018</a>"
       },
       {
         "type": "text",
@@ -1414,7 +1402,7 @@
       },
       {
         "type": "text",
-        "text": "Video"
+        "text": "<a href=\"https://drive.google.com/open?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc\">Video</a>"
       },
       {
         "_id": "C/2017 K2",
@@ -1462,7 +1450,7 @@
       },
       {
         "type": "text",
-        "text": "cerca de la orbita de Urano ya se le aprecia coma"
+        "text": "cerca de la orbita de Uranoya se le aprecia coma"
       },
       {
         "type": "text",
@@ -1765,7 +1753,7 @@
       },
       {
         "type": "text",
-        "text": "C2014Q2 dia 8 Febrero 2015 New360mmF1810mm"
+        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2i_20150119_i88.jpg\">C2014Q2 dia 8 Febrero 2015 New360mmF1810mm</a>"
       },
       {
         "_id": "C/2014 Q2",
@@ -1773,12 +1761,12 @@
         "alt": "2014q2_20150123_88",
         "type": "image",
         "fecha": "20150123",
-        "descripcion": "C2014Q2 dia 23 Enero 2015 New360mmF1810mm",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2i_20150119_i88.jpg\">C2014Q2 dia 23 Enero 2015 New360mmF1810mm</a>",
         "alias": "LOVEJOY"
       },
       {
         "type": "text",
-        "text": "Video cometa 2014q2_ 2.avi"
+        "text": "<a href=\"https://drive.google.com/file/d/0B9X-aeZtOZTwOUF2MlkwQWVoaG8/view?usp=sharing\">Video cometa2014q2_ 2.avi</a>"
       },
       {
         "_id": "C/2014 Q2",
@@ -1786,7 +1774,7 @@
         "alt": "2014q2_20150122_I8865",
         "type": "image",
         "fecha": "20150123",
-        "descripcion": "C2014Q2 dia 22 Enero 2015 ts65mmF420mm",
+        "descripcion": "C2014Q2 dia 22 Enero 2015ts65mmF420mm",
         "alias": "LOVEJOY"
       },
       {
@@ -1856,6 +1844,7 @@
         "alt": "2014q2in_20141223_I88",
         "type": "image",
         "fecha": "20141223",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2in_20141223_i88.jpg\"></a>",
         "alias": "LOVEJOY"
       },
       {
@@ -1892,7 +1881,7 @@
       },
       {
         "type": "text",
-        "text": "Outburst Cometa 15P 20/12/2014"
+        "text": "Outburst Cometa 15P20/12/2014"
       },
       {
         "_id": "C/2011 J2",
@@ -1920,7 +1909,7 @@
       },
       {
         "type": "text",
-        "text": "VIDEO"
+        "text": "<a href=\"http://youtu.be/po6as9H-_hk\" target=\"_blank\" rel=\"noopener noreferrer\"> VIDEO</a>"
       },
       {
         "type": "text",
@@ -1964,7 +1953,7 @@
       },
       {
         "type": "text",
-        "text": "C2014E2 10 Septiembre 2014"
+        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 10 Septiembre 2014</a>"
       },
       {
         "_id": "C/2014 E2",
@@ -1984,7 +1973,7 @@
       },
       {
         "type": "text",
-        "text": "C2014E2 27 Agosto 2014"
+        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 27 Agosto 2014</a>"
       },
       {
         "_id": "C/2014 E2",
@@ -2000,7 +1989,7 @@
         "alt": "C2014E2inv_20140807_I88",
         "type": "image",
         "fecha": "20140807",
-        "descripcion": "C2014E2 7 Agosto 2014",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 7 Agosto 2014</a>",
         "alias": "JACQUES"
       },
       {
@@ -2017,7 +2006,7 @@
         "alt": "C2014E2_20140729_I88inver",
         "type": "image",
         "fecha": "20140729",
-        "descripcion": "C2014E2 29Julio2014",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 29Julio2014</a>",
         "alias": "JACQUES"
       },
       {
@@ -2095,7 +2084,7 @@
       },
       {
         "type": "text",
-        "text": "COMETA c/2013R1"
+        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/15-febrero-2013-201da12-20-10-5-2-1.jpg\">COMETA c/2013R1</a>"
       },
       {
         "_id": "C/2013 R1",
@@ -2166,7 +2155,7 @@
       },
       {
         "type": "text",
-        "text": "C2012S1 16/11/2013 25 2 x 2 binning de 10s Imagen"
+        "text": "C2012S1 16/11/201325 2 x 2 binning de 10s Imagen"
       },
       {
         "type": "text",
@@ -2202,7 +2191,7 @@
         "alt": "C2012S1_20131013_I88",
         "type": "image",
         "fecha": "20131013",
-        "descripcion": "C/2012S1 dia 7 Noviembre 2013 distancia 1 UA C2012S1 Imagen dia 12 Octubre 2013 distancia 1.7UA parece que no va a ser tan espectacular",
+        "descripcion": "C/2012S1 dia 7 Noviembre 2013 distancia 1 UAC2012S1 Imagen dia 12 Octubre 2013 distancia 1.7UA parece que no va a ser tan espectacular",
         "alias": "ISON"
       },
       {
@@ -2220,7 +2209,7 @@
         "alt": "2012s1 10 100s 31 Enero 2013",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "El cometa C2012 S1 el 30 Enero 2013 4:02 unidades astronómicas de distancia",
+        "descripcion": "El cometa C2012 S1 el 30 Enero 20134:02 unidades astronómicas de distancia",
         "alias": "ISON"
       },
       {
@@ -2232,7 +2221,7 @@
       },
       {
         "type": "text",
-        "text": "C2012 S1 dia 6 Enero 2013 30 * 100 s DISTANCIA 4,2 UA"
+        "text": "C2012 S1 dia 6 Enero 201330 * 100 s DISTANCIA 4,2 UA"
       },
       {
         "_id": "C/2012 S1",
@@ -2271,7 +2260,7 @@
       },
       {
         "type": "text",
-        "text": "http://youtu.be/k1V0hN65ESA"
+        "text": "<a href=\"http://youtu.be/k1V0hN65ESA\" target=\"_blank\" rel=\"noopener noreferrer\">http://youtu.be/k1V0hN65ESA</a>"
       },
       {
         "_id": "99942",
@@ -2292,6 +2281,10 @@
       {
         "type": "text",
         "text": "Animación"
+      },
+      {
+        "type": "text",
+        "text": "<iframe width=\"620\" height=\"349\" src=\"https://www.youtube.com/embed/40c4a2RRVdY?version=3 rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=es&amp;autohide=2&amp;wmode=transparent\" allowfullscreen=\"true\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"></iframe>"
       },
       {
         "_id": "C/2012 K5",
@@ -2356,7 +2349,7 @@
       },
       {
         "type": "text",
-        "text": "(308635) 2005 YU55"
+        "text": "<a href=\"http://es.wikipedia.org/wiki/%28308635%29_2005_YU55\" target=\"_blank\" rel=\"noopener noreferrer\">(308635) 2005 YU<sub>55</sub></a>"
       },
       {
         "_id": "C/2007 N3",
@@ -2372,7 +2365,7 @@
         "alt": "11 18 11 2007 Holmes 30s Imagen b2 PA",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "C2007N3 Lulin 26 60 Filtro infrarojo Imagen de febrero 24 2009 R + 110mm F770mm CCD",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg\">C2007N3 Lulin 26 60 Filtro infrarojo Imagen de febrero 24 2009 R + 110mm F770mm CCD</a>",
         "alias": "Holmes"
       },
       {
@@ -2449,7 +2442,7 @@
       },
       {
         "type": "text",
-        "text": "McNaught C/2006p1 R 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz de dia 12 de Enero de 2007 a las 14H 10m"
+        "text": "McNaught C/2006p1 R 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz dedia12 de Enero de 2007 a las14H 10m"
       },
       {
         "_id": "9P",
@@ -2493,6 +2486,7 @@
         "alt": "C2002T7 22dicembre2003 suma de Imagen 8 60",
         "type": "image",
         "fecha": "201212",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2002t7-22dicembre2003-suma-de-8-imagenes-de-60s.jpg\"></a>",
         "alias": "LINEAR"
       },
       {
@@ -2537,10 +2531,6 @@
         "text": "GALAXIAS/SUPERNOVAS"
       },
       {
-        "type": "text",
-        "text": "GALAXIAS/SUPERNOVAS"
-      },
-      {
         "_id": "logodef",
         "src": "https://astroccd.files.wordpress.com/2014/02/logodef.png",
         "alt": "logodef",
@@ -2557,7 +2547,7 @@
       },
       {
         "type": "text",
-        "text": "Esta imagen es una pequeña muestra de la multitud de galaxias que existen y la inmensidad del universo tamaño de la imagen 26,15′ × 17,44′ mas o menos la mitad de la luna"
+        "text": "Esta imagen es una pequeña muestra de la multitud de galaxias que existen y la inmensidad del universo tamaño de la imagen26,15′ × 17,44′mas o menos la mitad de la luna"
       },
       {
         "_id": "Abell 2151",
@@ -2565,6 +2555,7 @@
         "alt": "abel 2151 2 1200s 27 mayo 2011PA",
         "type": "image",
         "fecha": "201212",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/abel-2151-2-1200s-27-mayo-2011pa.jpg\"></a>",
         "alias": "Hercules Cluster"
       },
       {
@@ -2585,7 +2576,7 @@
       },
       {
         "type": "text",
-        "text": "En la siguiente secuencia de Hubble se pueden apreciar los distintos tipos de Galaxias"
+        "text": "En la siguientesecuencia de Hubble se pueden apreciar los distintos tipos de Galaxias"
       },
       {
         "_id": "Abell 2151",
@@ -2891,11 +2882,11 @@
         "alt": "pulsar",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "OJ 287"
+        "descripcion": "<a href=\"http://www.caha.es/18-billions-of-suns-support-einstein_es.html\" target=\"_blank\" rel=\"noopener noreferrer\"> OJ 287</a>"
       },
       {
         "type": "text",
-        "text": "publicacion apjl_819_2_l37"
+        "text": "publicacion <a title=\"apjl_819_2_l37\" href=\"https://astroccd.files.wordpress.com/2012/12/apjl_819_2_l37.pdf\">apjl_819_2_l37</a>"
       },
       {
         "_id": "M33",
@@ -2913,7 +2904,8 @@
         "src": "https://astroccd.files.wordpress.com/2012/12/quinteto.png",
         "alt": "Quinteto",
         "type": "image",
-        "fecha": "201212"
+        "fecha": "201212",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/quinteto.png\"></a>"
       },
       {
         "type": "text",
@@ -3013,7 +3005,7 @@
       },
       {
         "type": "text",
-        "text": "PSN J22081243+4110503 en ugc 11919 12Diciembre 2014"
+        "text": "<span id=\"sites-page-title\" dir=\"ltr\">PSN J22081243+4110503 en ugc 11919 12Diciembre 2014"
       },
       {
         "_id": "PNV J03093063+2638031",
@@ -3117,6 +3109,7 @@
         "alt": "sn2014G_20140202_I88",
         "type": "image",
         "fecha": "20140202",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/sn2014g_20140202_i88.jpg\"></a>",
         "localizacion": "NGC3448"
       },
       {
@@ -3129,6 +3122,7 @@
         "alt": "SN2014JRGB_20140202_I88",
         "type": "image",
         "fecha": "20140202",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/sn2014jrgb_20140202_i88.jpg\"></a>",
         "localizacion": "M82"
       },
       {
@@ -3153,7 +3147,7 @@
         "alt": "arp99",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "Arp 99 conjunto de Galaxias en Pegaso",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/arp99.jpg\"></a>Arp 99 conjunto de Galaxias en Pegaso",
         "alias": "NGC 7547/49/50/53/58, Hickson 93",
         "localizacion": "Pegaso"
       },
@@ -3163,7 +3157,7 @@
         "alt": "SN2013EV 6 300sF",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "SN 2013ev en IC 1296 suma de 6 imagenes de 300s una galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)"
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/sn2013ev-6-300sf.jpg\"></a>SN 2013ev en IC 1296suma de 6 imagenes de 300suna galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)"
       },
       {
         "_id": "SN 2013fa",
@@ -3171,7 +3165,7 @@
         "alt": "2013fa 2013 09 10 u",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2013fa-2013-09-10-u.jpg\"></a> sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
         "localizacion": "Delfín"
       },
       {
@@ -3180,6 +3174,7 @@
         "alt": "m65 3 600s 2abril 2013",
         "type": "image",
         "fecha": "201212",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/m65-3-600s-2abril-2013.jpg\"></a>",
         "localizacion": "M65"
       },
       {
@@ -3199,14 +3194,15 @@
         "alt": "ngc 5033 7 600s 10g 8 abril 2011PA",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "m51 22junio2011 NGC 5O33 7*600S"
+        "descripcion": "<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" rel=\"attachment wp-att-442\">m51 22junio2011</a><a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" rel=\"attachment wp-att-452\"></a> <a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" rel=\"attachment wp-att-442\">NGC 5O33 7*600S</a>"
       },
       {
         "_id": "NGC 5317",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5317-2-1200srr.jpg",
         "alt": "ngc 5317 2 1200sRR",
         "type": "image",
-        "fecha": "201212"
+        "fecha": "201212",
+        "descripcion": "<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5317-2-1200srr/#main\" rel=\"attachment wp-att-453\"></a>"
       },
       {
         "type": "text",
@@ -3226,7 +3222,7 @@
       },
       {
         "type": "text",
-        "text": "la imagen de la supernova esta a la derecha 120″falto poco para cazarla"
+        "text": "la imagen de la supernova esta a la derecha 120″falto poco para <a href=\"http://www.astrosurf.com/snweb2/2005/05cs/05csMeas.htm\">cazarla</a>"
       },
       {
         "type": "text",
@@ -3252,10 +3248,6 @@
         "text": "NEBULOSAS"
       },
       {
-        "type": "text",
-        "text": "NEBULOSAS"
-      },
-      {
         "_id": "img-20200302-wa0019",
         "src": "https://astroccd.files.wordpress.com/2020/03/img-20200302-wa0019.jpg",
         "alt": "",
@@ -3264,7 +3256,7 @@
       },
       {
         "type": "text",
-        "text": "NGC 2237 Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020"
+        "text": "NGC 2237Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020"
       },
       {
         "_id": "NGC 2024",
@@ -3356,7 +3348,7 @@
       },
       {
         "type": "text",
-        "text": "1 Febrero 2016 1 toma 120s Ha 30sG 30s B en cada imagen"
+        "text": "1 Febrero 20161 toma 120s Ha 30sG 30s B en cada imagen"
       },
       {
         "_id": "IC 434",
@@ -3434,7 +3426,8 @@
         "src": "https://astroccd.files.wordpress.com/2012/11/m27.jpg",
         "alt": "m27",
         "type": "image",
-        "fecha": "201211"
+        "fecha": "201211",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/11/m27.jpg\"></a>"
       },
       {
         "type": "text",
@@ -3450,14 +3443,15 @@
         "alt": "RGBPIX3",
         "type": "image",
         "fecha": "201211",
-        "descripcion": "M57 RGB"
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/11/rgbpix3.jpg\"></a>M57 RGB"
       },
       {
         "_id": "NGC 6888",
         "src": "https://astroccd.files.wordpress.com/2012/10/ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg",
         "alt": "Ngc 6888 RGB 8 2 4 IMAGE 1200S 21 AGO 2009",
         "type": "image",
-        "fecha": "201210"
+        "fecha": "201210",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/10/ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg\"></a>"
       },
       {
         "type": "text",
@@ -3468,7 +3462,8 @@
         "src": "https://astroccd.files.wordpress.com/2012/10/l-ngc-7635-pa.jpg",
         "alt": "L ngc 7635 Pa",
         "type": "image",
-        "fecha": "201210"
+        "fecha": "201210",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/10/l-ngc-7635-pa.jpg\"></a>"
       },
       {
         "type": "text",
@@ -3484,12 +3479,37 @@
         "text": "SISTEMA SOLAR"
       },
       {
-        "type": "text",
-        "text": "SISTEMA SOLAR"
+        "_id": "conjuncion",
+        "src": "https://astroccd.files.wordpress.com/2020/12/conjuncion.gif",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012"
+      },
+      {
+        "_id": "jupiter-saturno-20diciembre2020-2",
+        "src": "https://astroccd.files.wordpress.com/2020/12/jupiter-saturno-20diciembre2020-2.png",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012"
       },
       {
         "type": "text",
-        "text": "Conjuncion Jupiter & Saturno"
+        "text": "Conjuncion Jupiter Saturno"
+      },
+      {
+        "_id": "dsc05191",
+        "src": "https://astroccd.files.wordpress.com/2020/12/dsc05191.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012"
+      },
+      {
+        "_id": "1_152049_l5_ap666",
+        "src": "https://astroccd.files.wordpress.com/2020/12/1_152049_l5_ap666.png",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012",
+        "descripcion": "<figcaption>Imagen del sol dia 1 diciembre</figcaption>"
       },
       {
         "_id": "img-20201030-wa0020",
@@ -3628,11 +3648,11 @@
         "alt": "CCDCap0050",
         "type": "image",
         "fecha": "201404",
-        "descripcion": "Mañana del dia 8 Junio 2004 8.30 /9.30 UT"
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\">Mañana del dia 8 Junio 2004 8.30 /9.30 UT</a>"
       },
       {
         "type": "text",
-        "text": "Secuencia final del transito Webcam+New 150mm"
+        "text": "Secuencia final del transitoWebcam+New 150mm"
       }
     ]
   },
@@ -3645,11 +3665,7 @@
       },
       {
         "type": "text",
-        "text": "CONSTRUCCION DEL OBSERVATORIO"
-      },
-      {
-        "type": "text",
-        "text": "REPARACION CCD SBIG"
+        "text": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" rel=\"noopener\">REPARACION CCD SBIG</a>"
       },
       {
         "_id": "franja",
@@ -3748,7 +3764,7 @@
       },
       {
         "type": "text",
-        "text": "http://www.dppobservatory.net/DomeAutomation/DomeDriver.php"
+        "text": "<a href=\"http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\" rel=\"nofollow\">http://www.dppobservatory.net/DomeAutomation/DomeDriver.php</a>"
       },
       {
         "type": "text",
@@ -3775,7 +3791,7 @@
       },
       {
         "type": "text",
-        "text": "http://www.youtube.com/watch?v=Rs40XQpR6Vo"
+        "text": "<a href=\"http://www.youtube.com/watch?v=Rs40XQpR6Vo\" rel=\"nofollow\">http://www.youtube.com/watch?v=Rs40XQpR6Vo</a>"
       },
       {
         "type": "text",
@@ -3783,7 +3799,7 @@
       },
       {
         "type": "text",
-        "text": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es de BVC (ceramico) comprado a Costas&Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia"
+        "text": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es deBVC(ceramico) comprado a Costas Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia"
       },
       {
         "type": "text",
@@ -3861,7 +3877,7 @@
       },
       {
         "type": "text",
-        "text": "Montura Tubo"
+        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/11/bisinfin1.jpg\">Montura Tubo</a>"
       },
       {
         "type": "text",
@@ -4100,7 +4116,7 @@
       },
       {
         "type": "text",
-        "text": "http://www.bbastrodesigns.com/StepperSystem.html"
+        "text": "<a href=\"http://www.bbastrodesigns.com/StepperSystem.html\" rel=\"nofollow\">http://www.bbastrodesigns.com/StepperSystem.html</a>"
       },
       {
         "_id": "scope",
@@ -4176,11 +4192,11 @@
       },
       {
         "type": "text",
-        "text": "Primeras medidas con Sensor de Calidad del Cielo y Detector de Nubes"
+        "text": "Primeras medidas conSensor de Calidad del Cielo y Detector de Nubes"
       },
       {
         "type": "text",
-        "text": "Tess"
+        "text": "<a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Tess</a>"
       },
       {
         "_id": "calibrado",
@@ -4188,6 +4204,13 @@
         "alt": "calibrado",
         "type": "image",
         "fecha": "201211"
+      },
+      {
+        "_id": "franja",
+        "src": "https://astroccd.files.wordpress.com/2020/11/franja.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202011"
       }
     ]
   },
@@ -4199,12 +4222,15 @@
         "text": "REPARACION CCD SBIG"
       },
       {
-        "type": "text",
-        "text": "REPARACION CCD SBIG"
+        "_id": "msaico-1",
+        "src": "https://astroccd.files.wordpress.com/2020/11/msaico-1.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202011"
       },
       {
         "type": "text",
-        "text": "Mi profesion es la venta&reparacion de aparatos electronicos desde 1983"
+        "text": "Mi profesion es la venta reparacion de aparatos electronicos desde 1983"
       },
       {
         "type": "text",
@@ -4213,6 +4239,13 @@
       {
         "type": "text",
         "text": "primera camara ccd fue la cb245 un diseño en forma de kit (año 1999)"
+      },
+      {
+        "_id": "cb245",
+        "src": "https://astroccd.files.wordpress.com/2020/11/cb245.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202011"
       },
       {
         "type": "text",
@@ -4268,27 +4301,69 @@
       },
       {
         "type": "text",
-        "text": "Sintomas&averias reparadas"
+        "text": "Sintomas averias reparadas"
+      },
+      {
+        "_id": "20201002_104339",
+        "src": "https://astroccd.files.wordpress.com/2020/12/20201002_104339.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012"
       },
       {
         "type": "text",
         "text": "Fuente Alimentacion averiada por sobretensión"
       },
       {
+        "_id": "20200522_184920",
+        "src": "https://astroccd.files.wordpress.com/2020/12/20200522_184920.jpg?w=978",
+        "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es 20200522_184920.jpg",
+        "type": "image",
+        "fecha": "202012"
+      },
+      {
         "type": "text",
         "text": "Problemas causados por la humedad"
+      },
+      {
+        "_id": "20200603_110317",
+        "src": "https://astroccd.files.wordpress.com/2020/12/20200603_110317.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012"
       },
       {
         "type": "text",
         "text": "Fallos en el peltier"
       },
       {
+        "_id": "cuentas",
+        "src": "https://astroccd.files.wordpress.com/2020/12/cuentas.jpg?w=1024",
+        "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es cuentas.jpg",
+        "type": "image",
+        "fecha": "202012"
+      },
+      {
         "type": "text",
         "text": "Lectura muy baja de ADUs en estrellas saturadas"
       },
       {
+        "_id": "img-20200425-wa0014",
+        "src": "https://astroccd.files.wordpress.com/2020/12/img-20200425-wa0014.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012"
+      },
+      {
         "type": "text",
         "text": "Lineas horizontales en las imagenes"
+      },
+      {
+        "_id": "guiado",
+        "src": "https://astroccd.files.wordpress.com/2020/12/guiado.jpg",
+        "alt": "",
+        "type": "image",
+        "fecha": "202012"
       },
       {
         "type": "text",

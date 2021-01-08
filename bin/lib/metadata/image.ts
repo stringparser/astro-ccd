@@ -2,7 +2,7 @@ import { ImageProps } from "../types";
 import { mapCometImageMetadata } from "./comet-image";
 import { mapGalaxyImageMetadata } from "./galaxy-image";
 
-export function mapImageFecha(src: string) {
+export function mapImageFecha(src: string = '') {
   const fechaDeArchivo = (/_(\d{8})_/.exec((src.split('/').pop() || '')) || ['']).pop();
 
   if (fechaDeArchivo) {
