@@ -1,10 +1,10 @@
 import React from "react";
 import { create } from "jss"
-import { Typography } from '@material-ui/core'
 import { MDXProvider } from '@mdx-js/react'
 import { AppContext, AppProps } from "next/app";
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles } from "@material-ui/core";
 
+import H1 from "src/components/Typography/H1";
 import Image from "src/components/Image";
 import Navigation from "src/components/Navigation";
 import defaultTheme from "src/components/default-theme";
@@ -32,13 +32,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const components = {
-  h1: props => (
-    <Typography
-      component="h1"
-      style={{color: 'spanishblue'}}
-      {...props}
-    />
-  ),
+  h1: H1,
   img: Image
 };
 

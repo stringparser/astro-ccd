@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
-import { Box, Typography } from '@material-ui/core';
+import { Box, Divider, Typography } from '@material-ui/core';
 
 import Image from 'src/components/Image';
+import H1 from 'src/components/Typography/H1';
 import cometas from 'src/data/cometas-asteroides.json';
 import DisqusEmbed from 'src/components/DisqusEmbed';
 
@@ -26,7 +27,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
   const components = results.map((el, index) => {
     switch (el.type) {
       case 'text': {
-        return <Typography key={index}>{el.text}</Typography>
+        return <Typography key={index}>{el.text}</Typography>;
       }
       case 'image': {
         return (
@@ -53,9 +54,9 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
 
   return (
     <Box>
-      <Typography component="h1">
-        Contenido de {post.params.id}
-      </Typography>
+      <H1>
+        {post.params.id}
+      </H1>
 
       {components}
 
