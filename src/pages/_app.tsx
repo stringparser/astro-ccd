@@ -8,6 +8,7 @@ import H1 from "src/components/Typography/H1";
 import Image from "src/components/Image";
 import Navigation from "src/components/Navigation";
 import defaultTheme from "src/components/default-theme";
+import ScrollToTopButton from "src/components/ScrollToTopButton";
 
 const jss = create({
   ...jssPreset(),
@@ -57,6 +58,7 @@ const WebApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
               <CssBaseline />
               <Navigation />
               <Component {...pageProps} />
+              <ScrollToTopButton />
             </StylesProvider>
           </MDXProvider>
         </ThemeProvider>
