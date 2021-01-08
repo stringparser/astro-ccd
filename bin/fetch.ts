@@ -40,7 +40,7 @@ Promise.all([
             return el.text;
           }
           case 'header': {
-            return `# ${el.text}\n---\n`;
+            return `# ${el.text}`;
           }
           case 'image': {
             return [
