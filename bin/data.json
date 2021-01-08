@@ -219,7 +219,8 @@
         "src": "https://astroccd.files.wordpress.com/2013/03/pantano-quiebrajano-30marzo-2013.jpg",
         "alt": "Pantano quiebrajano 30Marzo 2013",
         "type": "image",
-        "fecha": "201303"
+        "fecha": "201303",
+        "descripcion": "  "
       },
       {
         "type": "text",
@@ -254,7 +255,7 @@
       },
       {
         "type": "text",
-        "text": "mpc I88 <a href=\"http://www.minorplanetcenter.net/iau/lists/ObsCodesF.html\" target=\"_blank\" rel=\"noopener noreferrer\">Lista de códigos MPC</a>"
+        "text": "mpc I88 <a href=\"http://www.minorplanetcenter.net/iau/lists/ObsCodesF.html\" target=\"_blank\" >Lista de códigos MPC</a>"
       },
       {
         "type": "text",
@@ -1733,6 +1734,7 @@
         "alt": "2014Q2_RGB",
         "type": "image",
         "fecha": "201212",
+        "descripcion": " ",
         "alias": "LOVEJOY"
       },
       {
@@ -1741,6 +1743,7 @@
         "alt": "2014Q2",
         "type": "image",
         "fecha": "201212",
+        "descripcion": " ",
         "alias": "LOVEJOY"
       },
       {
@@ -1792,6 +1795,7 @@
         "alt": "C2014Q2_20150107_I88",
         "type": "image",
         "fecha": "20150107",
+        "descripcion": " ",
         "alias": "LOVEJOY"
       },
       {
@@ -1812,6 +1816,7 @@
         "alt": "2014q2f",
         "type": "image",
         "fecha": "201212",
+        "descripcion": "  ",
         "alias": "LOVEJOY"
       },
       {
@@ -1844,7 +1849,6 @@
         "alt": "2014q2in_20141223_I88",
         "type": "image",
         "fecha": "20141223",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2in_20141223_i88.jpg\"></a>",
         "alias": "LOVEJOY"
       },
       {
@@ -1909,7 +1913,7 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"http://youtu.be/po6as9H-_hk\" target=\"_blank\" rel=\"noopener noreferrer\"> VIDEO</a>"
+        "text": "<a href=\"http://youtu.be/po6as9H-_hk\" target=\"_blank\" > VIDEO</a>"
       },
       {
         "type": "text",
@@ -2006,7 +2010,7 @@
         "alt": "C2014E2_20140729_I88inver",
         "type": "image",
         "fecha": "20140729",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 29Julio2014</a>",
+        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 29Julio2014<br></a>",
         "alias": "JACQUES"
       },
       {
@@ -2043,7 +2047,7 @@
         "alt": "2012k1 Parrafo",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "C 2012K1 23 Mayo 2014 ¿Procesado?",
+        "descripcion": " C 2012K1 23 Mayo 2014 ¿Procesado?",
         "alias": "PANSTARRS"
       },
       {
@@ -2143,7 +2147,8 @@
         "src": "https://i1.wp.com/iopscience.iop.org/img/i/apj-logo.gif",
         "alt": "The Astrophysical Journal",
         "type": "image",
-        "fecha": ""
+        "fecha": "",
+        "descripcion": "<a href=\"http://www.astrosurf.com/cometas-obs/ArtSoftUtil/moreno_ison.pdf\" target=\"_blank\" ></a>"
       },
       {
         "_id": "C/2012 S1",
@@ -2260,7 +2265,7 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"http://youtu.be/k1V0hN65ESA\" target=\"_blank\" rel=\"noopener noreferrer\">http://youtu.be/k1V0hN65ESA</a>"
+        "text": "<a href=\"http://youtu.be/k1V0hN65ESA\" target=\"_blank\" >http://youtu.be/k1V0hN65ESA</a>"
       },
       {
         "_id": "99942",
@@ -2284,7 +2289,7 @@
       },
       {
         "type": "text",
-        "text": "<iframe width=\"620\" height=\"349\" src=\"https://www.youtube.com/embed/40c4a2RRVdY?version=3 rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=es&amp;autohide=2&amp;wmode=transparent\" allowfullscreen=\"true\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"></iframe>"
+        "text": "<iframe width=\"620\" height=\"349\" src=\"https://www.youtube.com/embed/40c4a2RRVdY?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=es&amp;autohide=2&amp;wmode=transparent\" allowFullScreen=\"true\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"></iframe>"
       },
       {
         "_id": "C/2012 K5",
@@ -2349,7 +2354,7 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"http://es.wikipedia.org/wiki/%28308635%29_2005_YU55\" target=\"_blank\" rel=\"noopener noreferrer\">(308635) 2005 YU<sub>55</sub></a>"
+        "text": "<a href=\"http://es.wikipedia.org/wiki/%28308635%29_2005_YU55\" target=\"_blank\" ><b>(308635) 2005 YU<sub>55</sub></b></a>"
       },
       {
         "_id": "C/2007 N3",
@@ -2486,7 +2491,6 @@
         "alt": "C2002T7 22dicembre2003 suma de Imagen 8 60",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2002t7-22dicembre2003-suma-de-8-imagenes-de-60s.jpg\"></a>",
         "alias": "LINEAR"
       },
       {
@@ -2535,7 +2539,8 @@
         "src": "https://astroccd.files.wordpress.com/2014/02/logodef.png",
         "alt": "logodef",
         "type": "image",
-        "fecha": "201402"
+        "fecha": "201402",
+        "descripcion": "<a href=\"https://sites.google.com/view/sn2017eaw\" target=\"_blank\" ></a>"
       },
       {
         "type": "text",
@@ -2555,7 +2560,6 @@
         "alt": "abel 2151 2 1200s 27 mayo 2011PA",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/abel-2151-2-1200s-27-mayo-2011pa.jpg\"></a>",
         "alias": "Hercules Cluster"
       },
       {
@@ -2882,11 +2886,11 @@
         "alt": "pulsar",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"http://www.caha.es/18-billions-of-suns-support-einstein_es.html\" target=\"_blank\" rel=\"noopener noreferrer\"> OJ 287</a>"
+        "descripcion": "<a href=\"http://www.caha.es/18-billions-of-suns-support-einstein_es.html\" target=\"_blank\" > OJ 287</a>"
       },
       {
         "type": "text",
-        "text": "publicacion <a title=\"apjl_819_2_l37\" href=\"https://astroccd.files.wordpress.com/2012/12/apjl_819_2_l37.pdf\">apjl_819_2_l37</a>"
+        "text": "publicacion <a href=\"https://astroccd.files.wordpress.com/2012/12/apjl_819_2_l37.pdf\">apjl_819_2_l37</a>"
       },
       {
         "_id": "M33",
@@ -2904,8 +2908,7 @@
         "src": "https://astroccd.files.wordpress.com/2012/12/quinteto.png",
         "alt": "Quinteto",
         "type": "image",
-        "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/quinteto.png\"></a>"
+        "fecha": "201212"
       },
       {
         "type": "text",
@@ -3005,7 +3008,7 @@
       },
       {
         "type": "text",
-        "text": "<span id=\"sites-page-title\" dir=\"ltr\">PSN J22081243+4110503 en ugc 11919 12Diciembre 2014"
+        "text": "PSN J22081243+4110503 en ugc 11919 12Diciembre 2014"
       },
       {
         "_id": "PNV J03093063+2638031",
@@ -3109,7 +3112,6 @@
         "alt": "sn2014G_20140202_I88",
         "type": "image",
         "fecha": "20140202",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/sn2014g_20140202_i88.jpg\"></a>",
         "localizacion": "NGC3448"
       },
       {
@@ -3122,7 +3124,6 @@
         "alt": "SN2014JRGB_20140202_I88",
         "type": "image",
         "fecha": "20140202",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/sn2014jrgb_20140202_i88.jpg\"></a>",
         "localizacion": "M82"
       },
       {
@@ -3147,7 +3148,7 @@
         "alt": "arp99",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/arp99.jpg\"></a>Arp 99 conjunto de Galaxias en Pegaso",
+        "descripcion": "Arp 99 conjunto de Galaxias en Pegaso",
         "alias": "NGC 7547/49/50/53/58, Hickson 93",
         "localizacion": "Pegaso"
       },
@@ -3157,7 +3158,7 @@
         "alt": "SN2013EV 6 300sF",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/sn2013ev-6-300sf.jpg\"></a>SN 2013ev en IC 1296suma de 6 imagenes de 300suna galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)"
+        "descripcion": "SN 2013ev en IC 1296suma de 6 imagenes de 300suna galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)"
       },
       {
         "_id": "SN 2013fa",
@@ -3165,7 +3166,7 @@
         "alt": "2013fa 2013 09 10 u",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2013fa-2013-09-10-u.jpg\"></a> sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
+        "descripcion": " sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
         "localizacion": "Delfín"
       },
       {
@@ -3174,7 +3175,6 @@
         "alt": "m65 3 600s 2abril 2013",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/m65-3-600s-2abril-2013.jpg\"></a>",
         "localizacion": "M65"
       },
       {
@@ -3194,15 +3194,14 @@
         "alt": "ngc 5033 7 600s 10g 8 abril 2011PA",
         "type": "image",
         "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" rel=\"attachment wp-att-442\">m51 22junio2011</a><a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" rel=\"attachment wp-att-452\"></a> <a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" rel=\"attachment wp-att-442\">NGC 5O33 7*600S</a>"
+        "descripcion": "<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >m51 22junio2011</a> <a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >NGC 5O33 7*600S</a>"
       },
       {
         "_id": "NGC 5317",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5317-2-1200srr.jpg",
         "alt": "ngc 5317 2 1200sRR",
         "type": "image",
-        "fecha": "201212",
-        "descripcion": "<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5317-2-1200srr/#main\" rel=\"attachment wp-att-453\"></a>"
+        "fecha": "201212"
       },
       {
         "type": "text",
@@ -3426,8 +3425,7 @@
         "src": "https://astroccd.files.wordpress.com/2012/11/m27.jpg",
         "alt": "m27",
         "type": "image",
-        "fecha": "201211",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/11/m27.jpg\"></a>"
+        "fecha": "201211"
       },
       {
         "type": "text",
@@ -3443,15 +3441,14 @@
         "alt": "RGBPIX3",
         "type": "image",
         "fecha": "201211",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/11/rgbpix3.jpg\"></a>M57 RGB"
+        "descripcion": "M57 RGB"
       },
       {
         "_id": "NGC 6888",
         "src": "https://astroccd.files.wordpress.com/2012/10/ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg",
         "alt": "Ngc 6888 RGB 8 2 4 IMAGE 1200S 21 AGO 2009",
         "type": "image",
-        "fecha": "201210",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/10/ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg\"></a>"
+        "fecha": "201210"
       },
       {
         "type": "text",
@@ -3462,8 +3459,7 @@
         "src": "https://astroccd.files.wordpress.com/2012/10/l-ngc-7635-pa.jpg",
         "alt": "L ngc 7635 Pa",
         "type": "image",
-        "fecha": "201210",
-        "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/10/l-ngc-7635-pa.jpg\"></a>"
+        "fecha": "201210"
       },
       {
         "type": "text",
@@ -3494,7 +3490,7 @@
       },
       {
         "type": "text",
-        "text": "Conjuncion Jupiter Saturno"
+        "text": "Conjuncion Jupiter &amp; Saturno"
       },
       {
         "_id": "dsc05191",
@@ -3556,7 +3552,8 @@
         "src": "https://astroccd.files.wordpress.com/2014/04/ecclipse1_20marzo_2015-006.jpg",
         "alt": "ECCLIPSE1_20MARZO_2015 006",
         "type": "image",
-        "fecha": "201404"
+        "fecha": "201404",
+        "descripcion": "  "
       },
       {
         "type": "text",
@@ -3665,14 +3662,15 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" rel=\"noopener\">REPARACION CCD SBIG</a>"
+        "text": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" >REPARACION CCD SBIG</a>"
       },
       {
         "_id": "franja",
         "src": "https://astroccd.files.wordpress.com/2020/11/franja.jpg?w=1024",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es franja.jpg",
         "type": "image",
-        "fecha": "202011"
+        "fecha": "202011",
+        "descripcion": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" ></a>"
       },
       {
         "_id": "obras_031",
@@ -3680,7 +3678,7 @@
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es obras_031.gif",
         "type": "image",
         "fecha": "202011",
-        "descripcion": "Todo aficionado desea tener un buen telescopio en el interior de una cupula pero el principal problema es el presupuesto pues comprar todo lo necesario a las distintas casas comerciales cuesta una pequeña fortuna cosa que no me podia permitir asi que me arme de paciencia y me decidi a construirme todo lo necesario aun sabiendo que tardaria varios años"
+        "descripcion": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" ></a>Todo aficionado desea tener un buen telescopio en el interior de una cupula pero el principal problema es el presupuesto pues comprar todo lo necesario a las distintas casas comerciales cuesta una pequeña fortuna cosa que no me podia permitir asi que me arme de paciencia y me decidi a construirme todo lo necesario aun sabiendo que tardaria varios años"
       },
       {
         "type": "text",
@@ -3764,7 +3762,7 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\" rel=\"nofollow\">http://www.dppobservatory.net/DomeAutomation/DomeDriver.php</a>"
+        "text": "<a href=\"http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\" >http://www.dppobservatory.net/DomeAutomation/DomeDriver.php</a>"
       },
       {
         "type": "text",
@@ -3791,7 +3789,7 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"http://www.youtube.com/watch?v=Rs40XQpR6Vo\" rel=\"nofollow\">http://www.youtube.com/watch?v=Rs40XQpR6Vo</a>"
+        "text": "<a href=\"http://www.youtube.com/watch?v=Rs40XQpR6Vo\" >http://www.youtube.com/watch?v=Rs40XQpR6Vo</a>"
       },
       {
         "type": "text",
@@ -3799,7 +3797,7 @@
       },
       {
         "type": "text",
-        "text": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es deBVC(ceramico) comprado a Costas Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia"
+        "text": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es deBVC(ceramico) comprado a Costas&amp;Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia"
       },
       {
         "type": "text",
@@ -3940,7 +3938,7 @@
       },
       {
         "type": "text",
-        "text": "La base esta compuesta de dos partes una fija mas pesada en forma de U y otra movil de hierro hueco cuadrado que gira sobre un eje central en la parte fija"
+        "text": "<br>La base esta compuesta de dos partes una fija mas pesada en forma de U y otra movil de hierro hueco cuadrado que gira sobre un eje central en la parte fija"
       },
       {
         "_id": "base",
@@ -4116,7 +4114,7 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"http://www.bbastrodesigns.com/StepperSystem.html\" rel=\"nofollow\">http://www.bbastrodesigns.com/StepperSystem.html</a>"
+        "text": "<a href=\"http://www.bbastrodesigns.com/StepperSystem.html\" >http://www.bbastrodesigns.com/StepperSystem.html</a>"
       },
       {
         "_id": "scope",
@@ -4148,7 +4146,8 @@
         "src": "https://astroccd.files.wordpress.com/2012/11/electronica-interior1.jpg",
         "alt": "electronica interior",
         "type": "image",
-        "fecha": "201211"
+        "fecha": "201211",
+        "descripcion": " "
       },
       {
         "type": "text",
@@ -4196,7 +4195,7 @@
       },
       {
         "type": "text",
-        "text": "<a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Tess</a>"
+        "text": "<a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" >Tess</a>"
       },
       {
         "_id": "calibrado",
@@ -4230,7 +4229,7 @@
       },
       {
         "type": "text",
-        "text": "Mi profesion es la venta reparacion de aparatos electronicos desde 1983"
+        "text": "Mi profesion es la venta&amp;reparacion de aparatos electronicos desde 1983"
       },
       {
         "type": "text",
@@ -4301,7 +4300,7 @@
       },
       {
         "type": "text",
-        "text": "Sintomas averias reparadas"
+        "text": "Sintomas&amp;averias reparadas"
       },
       {
         "_id": "20201002_104339",

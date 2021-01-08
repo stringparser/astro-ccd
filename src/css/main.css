@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 
   display: flex;
@@ -33,6 +33,7 @@ main {
   border-color: rgba(255,255,255, 0.05);
 
   padding: 2rem 1rem;
+  padding-top: 0;
 }
 
 a {
@@ -47,12 +48,6 @@ img {
 
 @media (min-width: 1024px) {
   main {
-    max-width: 750px;
-  }
-}
-
-@media (min-width: 1128px) {
-  main {
-    max-width: 80vw;
+    max-width: 960px;
   }
 }

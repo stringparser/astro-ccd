@@ -1,9 +1,10 @@
 import fs from 'fs-extra';
 import path from 'path';
 import { fetchPageContent } from './lib';
+import { cleanHTML } from './lib/util';
 
 const urlMap = {
-  'ccd-2': 'ccd',
+  'ccd-2': 'reparacion-ccd',
   'fuensanta-3': 'fuensanta',
   'cometasasteroides': 'cometas-asteroides',
 };
@@ -39,7 +40,7 @@ Promise.all([
           case 'image': {
             return [
               `<img \n\tsrc="${el.src}"\n\tloading="lazy" \n/>`,
-              el.descripcion
+              cleanHTML(el.descripcion)
             ].filter(v => v).join('\n');
           }
         }

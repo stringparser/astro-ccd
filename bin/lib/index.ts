@@ -1,21 +1,8 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
+import { cleanHTML } from './util';
 import mapImageMetadata from './metadata/image';
 import { TextItem, TitleItem, ImageProps } from './types';
-
-function cleanHTML(html: string) {
-  return (html
-    .replace('&amp;', ' ')
-    .replace(/&nbsp;/gm, '\n')
-    .replace(/<a \s*href[^>]+>\s*(<br\s*\/?>)?\s*<\/a>/gm, '')
-    .replace(/<br\s*\/?>/, '')
-    .replace(/class\s*=\s*["'][^'"]+["']/gm, '')
-    .replace(/style\s*=\s*["'][^'"]+["']\s*/gm, '')
-    .replace(/\s*(<|<\/)(b|em|span|h\d+|strong)\s*>\s*/gm, '')
-    .trim()
-    .replace(/\s+/g, ' ')
-  );
-}
 
 export type PageItemProps =
   TextItem |
@@ -70,11 +57,6 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
       })
       .filter(({ textContent }) => title !== textContent)
       .reduce((acc, { type, el, textContent }) => {
-
-        // console.log('--');
-        // console.log('tagName', type, el.first().html());
-        // console.log('src', el.attr('data-orig-file') || el.attr('src'));
-        // console.log(el.attr());
 
         switch (type) {
           case 'text': {
