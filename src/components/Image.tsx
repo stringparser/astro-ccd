@@ -12,6 +12,7 @@ const Image: React.FC<ImageProps> = props => (
     <img
       width="75%"
       loading="lazy"
+      style={{border: '1px solid rgba(0,0,0,0.15)'}}
       {...props}
     />
   </Box>
