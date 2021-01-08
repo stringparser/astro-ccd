@@ -23,8 +23,8 @@ const DisqusEmbed: React.FC<DisqusEmbedProps> = (props) => {
 
   // @ts-ignore
   window.disqus_config = function () {
-    console.log('setting discuss config', props);
     setInstalled(true);
+
     Object.assign(this.page, {
       url: window.location.href,
       language: 'es',
