@@ -29,6 +29,11 @@ Promise.all([
       const baseURL = el.url.split('/').pop();
       const basename = urlMap[baseURL] || baseURL;
 
+      fs.writeFile(
+        path.resolve(__dirname, '..', 'src', 'data', `${basename}.json`),
+        JSON.stringify(el, null, 2),
+      );
+
       const mdx = el.items.map(el => {
         switch (el.type) {
           case 'text': {
@@ -39,7 +44,7 @@ Promise.all([
           }
           case 'image': {
             return [
-              `<img \n\tsrc="${el.src}"\n\tloading="lazy" \n/>`,
+              `<img src="${el.src}" />`,
               cleanHTML(el.descripcion)
             ].filter(v => v).join('\n');
           }
@@ -51,7 +56,7 @@ Promise.all([
       return fs.writeFile(
         path.resolve(__dirname, '..', 'src', 'pages', `${basename}.mdx`),
         mdx
-      )
+      ).then(() => results)
     })
   );
 });
