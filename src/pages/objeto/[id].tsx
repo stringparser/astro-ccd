@@ -16,7 +16,6 @@ type ObjetoByIdProps = {
 };
 
 const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
-  console.log('post', post);
 
   const results = cometas.items.filter(el =>
     el._id === post.params.id
