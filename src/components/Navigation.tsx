@@ -57,9 +57,10 @@ const useStyles = makeStyles(theme => ({
   },
 
   link: {
-    fontWeight: 'normal',
+    fontWeight: 'bold',
     marginTop: '0.5rem',
     marginRight: '1rem',
+    textTransform: 'uppercase',
   },
 
   homeLink: {
@@ -67,7 +68,6 @@ const useStyles = makeStyles(theme => ({
   },
 
   currentLink: {
-    fontWeight: 'bold',
     textDecoration: 'underline',
   },
 }));
@@ -100,7 +100,7 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
                       isCurrentPage(router.route, href) && classes.currentLink,
                     )}
                   >
-                    /{text}
+                    {text}
                   </MuiLink>
                 </Link>
               </Fragment>
