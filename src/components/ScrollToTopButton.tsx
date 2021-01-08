@@ -10,7 +10,7 @@ const ScrollToTopButton: React.FC = () => (
       <KeyboardArrowUpIcon />
     </IconButton>
   </ScrollToTop>
-)
+);
 
 
 export default ScrollToTopButton;

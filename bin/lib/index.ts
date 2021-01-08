@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
-import { cleanHTML } from './util';
+import { cleanHTML, mapTextToUrl } from './util';
 import mapImageMetadata from './metadata/image';
 import { TextItem, TitleItem, ImageProps } from './types';
 
@@ -37,11 +37,11 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           : el
         ;
 
-        const html = found.html();
+        const html = found.prop('outerHTML');
 
         const type: PageItemProps['type'] =
           hasImage && 'image' ||
-          /^h\d+/.test(html) && 'header' ||
+          /<h(1|2)/.test(html) && 'header' ||
           'text'
         ;
 
@@ -55,7 +55,9 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           textContent: cleanHTML(el.html()),
         };
       })
-      .filter(({ textContent }) => title !== textContent)
+      .filter(({ textContent }) =>
+        title !== textContent
+      )
       .reduce((acc, { type, el, textContent }) => {
 
         switch (type) {
@@ -66,9 +68,11 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             });
           }
           case 'header': {
+            const text = cleanHTML(el.html());
             return acc.concat({
+              id: text,
               type,
-              text: cleanHTML(el.html())
+              text,
             });
           }
           case 'image': {
@@ -87,6 +91,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
       url,
       items: [
         {
+          id: title,
           type: 'header',
           text: title,
         },

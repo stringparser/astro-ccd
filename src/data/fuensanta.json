@@ -2,246 +2,265 @@
   "url": "https://astro-ccd.com/fuensanta-3",
   "items": [
     {
+      "id": "FUENSANTA",
       "type": "header",
-      "text": "FUENSANTA"
+      "text": "FUENSANTA",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "El Observatorio esta situado en la localidad que resido, es un pequeño pueblo de la"
+      "text": "El Observatorio esta situado en la localidad que resido, es un pequeño pueblo de la",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "provincia de Jaén llamado Fuensanta (algo mas de 3000 habitantes) la economia del pueblo esta"
+      "text": "provincia de Jaén llamado Fuensanta (algo mas de 3000 habitantes) la economia del pueblo esta",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "centrada principalmente en el olivar y la industria de tapiceria"
+      "text": "centrada principalmente en el olivar y la industria de tapiceria",
+      "url": "/fuensanta"
     },
     {
-      "_id": "entradarr",
       "src": "https://astroccd.files.wordpress.com/2013/03/entradarr.jpg",
       "alt": "ENTRADARR",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Cooperativa año 1952–2016 (esperar 5 segundos)"
+      "text": "Cooperativa año 1952–2016 (esperar 5 segundos)",
+      "url": "/fuensanta"
     },
     {
-      "_id": "pandera2jpg",
       "src": "https://astroccd.files.wordpress.com/2020/07/pandera2jpg.jpg",
       "alt": "pandera2JPG",
       "type": "image",
-      "fecha": "202007"
+      "fecha": "202007",
+      "url": "/fuensanta"
     },
     {
-      "_id": "pandera",
       "src": "https://astroccd.files.wordpress.com/2020/07/pandera.jpg",
       "alt": "pandera",
       "type": "image",
-      "fecha": "202007"
+      "fecha": "202007",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Visita a la Pandera 6Julio2020 c/2020F3"
+      "text": "Visita a la Pandera 6Julio2020 c/2020F3",
+      "url": "/fuensanta"
     },
     {
-      "_id": "fotos-cooperativa-005",
       "src": "https://astroccd.files.wordpress.com/2013/03/fotos-cooperativa-005.gif",
       "alt": "Fotos-cooperativa-005",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Final fiestas 27 Septiembre 2015"
+      "text": "Final fiestas 27 Septiembre 2015",
+      "url": "/fuensanta"
     },
     {
-      "_id": "mosaico-fiesta-pueblo-27sep2015_re1",
       "src": "https://astroccd.files.wordpress.com/2013/03/mosaico-fiesta-pueblo-27sep2015_re1.jpg",
       "alt": "MOSAICO FIESTA PUEBLO 27SEP2015_re",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Panoramica 27 Septiembre 2015"
+      "text": "Panoramica 27 Septiembre 2015",
+      "url": "/fuensanta"
     },
     {
-      "_id": "panoramica-2-re",
       "src": "https://astroccd.files.wordpress.com/2013/03/panoramica-2-re.jpg",
       "alt": "PANORAMICA 2 RE",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Sierra La Pandera 1_Marzo-2015"
+      "text": "Sierra La Pandera 1_Marzo-2015",
+      "url": "/fuensanta"
     },
     {
-      "_id": "cima-pandera",
       "src": "https://astroccd.files.wordpress.com/2013/03/cima-pandera.jpg",
       "alt": "cima pandera",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
-      "_id": "pantano-1marzo2015",
       "src": "https://astroccd.files.wordpress.com/2013/03/pantano-1marzo2015.jpg",
       "alt": "pantano 1marzo2015",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
-      "_id": "sierraa-nevadapanoramica_marzo_20115",
       "src": "https://astroccd.files.wordpress.com/2013/03/sierraa-nevadapanoramica_marzo_20115.jpg",
       "alt": "Sierraa nevadapanoramica_Marzo_20115",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Panoramicas de Fuensanta"
+      "text": "Panoramicas de Fuensanta",
+      "url": "/fuensanta"
     },
     {
-      "_id": "fuensanta",
       "src": "https://astroccd.files.wordpress.com/2013/03/fuensanta.jpg",
       "alt": "FUENSANTA",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
-      "_id": "panoramica4agosto2014",
       "src": "https://astroccd.files.wordpress.com/2013/03/panoramica4agosto2014.jpg",
       "alt": "PANORAMICA4AGOSTO2014",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
-      "_id": "sierrar-copia",
       "src": "https://astroccd.files.wordpress.com/2013/03/sierrar-copia.jpg",
       "alt": "sierraR copia",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Panoramica 4 Agosto 2014"
+      "text": "Panoramica 4 Agosto 2014",
+      "url": "/fuensanta"
     },
     {
-      "_id": "panoramica-pueblo-nevado-8-enero-2010",
       "src": "https://astroccd.files.wordpress.com/2013/03/panoramica-pueblo-nevado-8-enero-2010.jpg",
       "alt": "panoramica pueblo nevado 8 enero 2010",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
-      "_id": "panoramica-vega",
       "src": "https://astroccd.files.wordpress.com/2013/03/panoramica-vega.jpg",
       "alt": "panoramica vega",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
-      "_id": "mosaico-pro-re",
       "src": "https://astroccd.files.wordpress.com/2013/03/mosaico-pro-re.jpg",
       "alt": "mosaico pro re",
       "type": "image",
       "fecha": "201303",
-      "descripcion": "Poligono industrial"
+      "descripcion": "Poligono industrial",
+      "url": "/fuensanta"
     },
     {
-      "_id": "poligono-amanecer",
       "src": "https://astroccd.files.wordpress.com/2013/03/poligono-amanecer.jpg",
       "alt": "OLYMPUS DIGITAL CAMERA",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
-      "_id": "poligono-industrialimg_1813",
       "src": "https://astroccd.files.wordpress.com/2013/03/poligono-industrialimg_1813.jpg",
       "alt": "poligono industrialIMG_1813",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "La vega"
+      "text": "La vega",
+      "url": "/fuensanta"
     },
     {
-      "_id": "vega-re-p3252261_1",
       "src": "https://astroccd.files.wordpress.com/2013/03/vega-re-p3252261_1.jpg",
       "alt": "OLYMPUS DIGITAL CAMERA",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Imagen nocturna del pueblo"
+      "text": "Imagen nocturna del pueblo",
+      "url": "/fuensanta"
     },
     {
-      "_id": "re-pro-img_1740_filtered",
       "src": "https://astroccd.files.wordpress.com/2013/03/re-pro-img_1740_filtered.jpg",
       "alt": "RE pro IMG_1740_filtered",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Campo de Futbol"
+      "text": "Campo de Futbol",
+      "url": "/fuensanta"
     },
     {
-      "_id": "futbol",
       "src": "https://astroccd.files.wordpress.com/2013/03/futbol.jpg",
       "alt": "futbol",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Zona del coto"
+      "text": "Zona del coto",
+      "url": "/fuensanta"
     },
     {
-      "_id": "panorama-2",
       "src": "https://astroccd.files.wordpress.com/2013/03/panorama-2.jpg",
       "alt": "Panorama 2",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Pantano de Quiebrajano 30 Marzo 2013"
+      "text": "Pantano de Quiebrajano 30 Marzo 2013",
+      "url": "/fuensanta"
     },
     {
-      "_id": "pantano-quiebrajano-30marzo-2013",
       "src": "https://astroccd.files.wordpress.com/2013/03/pantano-quiebrajano-30marzo-2013.jpg",
       "alt": "Pantano quiebrajano 30Marzo 2013",
       "type": "image",
       "fecha": "201303",
-      "descripcion": "  "
+      "descripcion": "  ",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "Pantano visto desde sierra de la Pandera"
+      "text": "Pantano visto desde sierra de la Pandera",
+      "url": "/fuensanta"
     },
     {
-      "_id": "pantano-pandera",
       "src": "https://astroccd.files.wordpress.com/2013/03/pantano-pandera.jpg",
       "alt": "PANTANO pandera",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     },
     {
       "type": "text",
-      "text": "sierra nevada Granada vista desde la Pandera"
+      "text": "sierra nevada Granada vista desde la Pandera",
+      "url": "/fuensanta"
     },
     {
-      "_id": "sierra-nevadapa",
       "src": "https://astroccd.files.wordpress.com/2013/03/sierra-nevadapa.jpg",
       "alt": "SIERRA-NEVADAPA",
       "type": "image",
-      "fecha": "201303"
+      "fecha": "201303",
+      "url": "/fuensanta"
     }
   ]
 }

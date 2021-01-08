@@ -19,7 +19,7 @@ type ObjetoByIdProps = {
 const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
 
   const results = cometas.items.filter(el =>
-    el._id === post.params.id
+    el.id === post.params.id
   );
 
   const result = results[0] || {};
@@ -79,13 +79,13 @@ export async function getStaticProps({ params }: PostParams): Promise<{ props: O
 export async function getStaticPaths() {
 
   const uniqueSlugIds = cometas.items.reduce((acc: string[], el) => {
-    const _id = el._id;
+    const { id } = el;
 
-    if (!_id || acc.includes(_id)) {
+    if (!id || acc.includes(id)) {
       return acc;
     }
 
-    return acc.concat(_id);
+    return acc.concat(id);
   }, []);
 
   return {

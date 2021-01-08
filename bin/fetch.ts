@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { fetchPageContent } from './lib';
-import { cleanHTML } from './lib/util';
+import { fetchPageContent, ParsedPageContent } from './lib';
+import { cleanHTML, mapTextToUrl } from './lib/util';
 
 const urlMap = {
   'ccd-2': 'reparacion-ccd',
@@ -18,14 +18,42 @@ Promise.all([
   fetchPageContent('https://astro-ccd.com/construccion-del-observatorio'),
   fetchPageContent('https://astro-ccd.com/ccd-2')
 ])
-.then(results => {
-  fs.writeFile(
+.then(async (fetchResults) => {
+  const results = fetchResults.map((el): ParsedPageContent => {
+    const baseURL = el.url.split('/').pop();
+    const basename = urlMap[baseURL] || baseURL;
+
+    return {
+      ...el,
+      items: el.items.map(it => {
+        if (it.id == null) {
+          return {
+            ...it,
+            url: `/${basename}`
+          };
+        }
+
+        const objectUrl = mapTextToUrl(it.id);
+        const baseObjectUrl = urlMap[objectUrl] || objectUrl;
+
+        return {
+          ...it,
+          url: baseObjectUrl === basename
+            ? `/${basename}`
+            : `/${basename}/${baseObjectUrl}`,
+        };
+      })
+    }
+  });
+
+  await fs.writeFile(
     path.join(__dirname, 'data.json'),
     JSON.stringify(results, null, 2)
   );
 
-  return Promise.all(
-    results.map(el => {
+  await Promise.all(
+    results
+    .map(el => {
       const baseURL = el.url.split('/').pop();
       const basename = urlMap[baseURL] || baseURL;
 
@@ -50,13 +78,16 @@ Promise.all([
           }
         }
       })
-      .filter(value => value)
-      .join('\n\n')
+        .filter(value => value)
+        .join('\n\n')
+      ;
 
       return fs.writeFile(
-        path.resolve(__dirname, '..', 'src', 'pages', `${basename}.mdx`),
+        path.resolve(__dirname, '..', 'src', 'pages', basename, 'index.mdx'),
         mdx
       ).then(() => results)
     })
   );
+
+
 });
