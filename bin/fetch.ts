@@ -46,7 +46,7 @@ Promise.all([
             return [
               `<img src="${el.src}" />`,
               cleanHTML(el.descripcion)
-            ].filter(v => v).join('\n');
+            ].filter(v => v).join('\n\n');
           }
         }
       })

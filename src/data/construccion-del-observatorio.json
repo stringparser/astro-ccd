@@ -14,8 +14,7 @@
       "src": "https://astroccd.files.wordpress.com/2020/11/franja.jpg?w=1024",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es franja.jpg",
       "type": "image",
-      "fecha": "202011",
-      "descripcion": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" ></a>"
+      "fecha": "202011"
     },
     {
       "_id": "obras_031",
@@ -23,7 +22,7 @@
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es obras_031.gif",
       "type": "image",
       "fecha": "202011",
-      "descripcion": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" ></a>Todo aficionado desea tener un buen telescopio en el interior de una cupula pero el principal problema es el presupuesto pues comprar todo lo necesario a las distintas casas comerciales cuesta una pequeña fortuna cosa que no me podia permitir asi que me arme de paciencia y me decidi a construirme todo lo necesario aun sabiendo que tardaria varios años"
+      "descripcion": "Todo aficionado desea tener un buen telescopio en el interior de una cupula pero el principal problema es el presupuesto pues comprar todo lo necesario a las distintas casas comerciales cuesta una pequeña fortuna cosa que no me podia permitir asi que me arme de paciencia y me decidi a construirme todo lo necesario aun sabiendo que tardaria varios años"
     },
     {
       "type": "text",
@@ -283,7 +282,7 @@
     },
     {
       "type": "text",
-      "text": "<br>La base esta compuesta de dos partes una fija mas pesada en forma de U y otra movil de hierro hueco cuadrado que gira sobre un eje central en la parte fija"
+      "text": "La base esta compuesta de dos partes una fija mas pesada en forma de U y otra movil de hierro hueco cuadrado que gira sobre un eje central en la parte fija"
     },
     {
       "_id": "base",

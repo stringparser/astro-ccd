@@ -1762,7 +1762,7 @@
       "alt": "C2014E2_20140729_I88inver",
       "type": "image",
       "fecha": "20140729",
-      "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 29Julio2014<br></a>",
+      "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 29Julio2014</a>",
       "alias": "JACQUES"
     },
     {
@@ -1899,8 +1899,7 @@
       "src": "https://i1.wp.com/iopscience.iop.org/img/i/apj-logo.gif",
       "alt": "The Astrophysical Journal",
       "type": "image",
-      "fecha": "",
-      "descripcion": "<a href=\"http://www.astrosurf.com/cometas-obs/ArtSoftUtil/moreno_ison.pdf\" target=\"_blank\" ></a>"
+      "fecha": ""
     },
     {
       "_id": "C/2012 S1",
