@@ -2,7 +2,7 @@
   "url": "https://astro-ccd.com/planetas-satelites",
   "items": [
     {
-      "id": "SISTEMA SOLAR",
+      "id": "sistema-solar",
       "type": "header",
       "text": "SISTEMA SOLAR",
       "url": "/planetas-satelites/sistema-solar"
@@ -19,12 +19,8 @@
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Conjuncion Jupiter &amp; Saturno",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "Conjuncion Jupiter &amp; Saturno"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/dsc05191.jpg",
@@ -38,7 +34,7 @@
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "descripcion": "<figcaption>Imagen del sol dia 1 diciembre</figcaption>",
+      "text": "<figcaption>Imagen del sol dia 1 diciembre</figcaption>",
       "url": "/planetas-satelites"
     },
     {
@@ -46,24 +42,16 @@
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es img-20201030-wa0020.jpg",
       "type": "image",
       "fecha": "202011",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Marte 29 Octubre 2020",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "Marte 29 Octubre 2020"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/luna_14noviembre2016.jpg",
       "alt": "luna_14noviembre2016",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Superluna 14Noviembre2016",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "Superluna 14Noviembre2016"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/luna-110-2pa2.jpg",
@@ -77,24 +65,15 @@
       "alt": "LUNA 358MMPA",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Eclipse 20Marzo2015 (nublado)",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "Eclipse 20Marzo2015 (nublado)"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/ecclipse1_20marzo_2015-006.jpg",
       "alt": "ECCLIPSE1_20MARZO_2015 006",
       "type": "image",
       "fecha": "201404",
-      "descripcion": "  ",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Imagen de la luna New 360mm F1810mm Camara Nikon D90",
+      "text": "  \n\nImagen de la luna New 360mm F1810mm Camara Nikon D90",
       "url": "/planetas-satelites"
     },
     {
@@ -102,65 +81,40 @@
       "alt": "OLYMPUS DIGITAL CAMERA",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "CONJUNCION VENUS LUNA 18 JUNIO 2007 14H 19M TU REFLECTOR 358 F5+CAMARA OLYMPUS E1 imagen a pleno dia",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "CONJUNCION VENUS LUNA 18 JUNIO 2007 14H 19M TU REFLECTOR 358 F5+CAMARA OLYMPUS E1 imagen a pleno dia"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/eclipse-3-marzo-2007.jpg",
       "alt": "Eclipse 3 Marzo 2007",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Eclipse de luna 3 marzo 2007 Camara digital",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "Eclipse de luna 3 marzo 2007 Camara digital"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/eclipse-3-marzo-2007-ccd.jpg",
       "alt": "Eclipse 3 marzo 2007 ccd",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Eclipse de luna 3 marzo 2007 ccd filtro h alfa",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "Eclipse de luna 3 marzo 2007 ccd filtro h alfa"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/sol.jpg",
       "alt": "Sol",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "El Sol captado con una camara digital y Reflector 150mm a F10",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "El Sol captado con una camara digital y Reflector 150mm a F10"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/transito-venus-camara-reflex.jpg",
       "alt": "transito venus camara reflex",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "TRANSITO DE VENUS 8 JUNIO 2004",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Imagen del Sol al principio del transito Camara Reflex",
-      "url": "/planetas-satelites"
+      "url": "/planetas-satelites",
+      "text": "TRANSITO DE VENUS 8 JUNIO 2004"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0007-copia.gif",
@@ -188,12 +142,7 @@
       "alt": "CCDCap0050",
       "type": "image",
       "fecha": "201404",
-      "descripcion": "<a href=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\">Mañana del dia 8 Junio 2004 8.30 /9.30 UT</a>",
-      "url": "/planetas-satelites"
-    },
-    {
-      "type": "text",
-      "text": "Secuencia final del transitoWebcam+New 150mm",
+      "text": "<a href=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\">Mañana del dia 8 Junio 2004 8.30 /9.30 UT</a>\n\nSecuencia final del transitoWebcam+New 150mm",
       "url": "/planetas-satelites"
     }
   ]

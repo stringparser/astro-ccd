@@ -2,7 +2,7 @@
   "url": "https://astro-ccd.com/ccd-2",
   "items": [
     {
-      "id": "REPARACION CCD SBIG",
+      "id": "reparacion-ccd-sbig",
       "type": "header",
       "text": "REPARACION CCD SBIG",
       "url": "/reparacion-ccd/reparacion-ccd-sbig"
@@ -12,171 +12,64 @@
       "alt": "",
       "type": "image",
       "fecha": "202011",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Mi profesion es la venta&amp;reparacion de aparatos electronicos desde 1983",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Tengo varias aficiones pero la principal desde niño siempre ha sido la astronomia",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "primera camara ccd fue la cb245 un diseño en forma de kit (año 1999)",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Mi profesion es la venta&amp;reparacion de aparatos electronicos desde 1983"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/11/cb245.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202011",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Poco despues adquiri una sbig st2000xm de segunda mano de un compañero de aficion",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Con el paso del tiempo cambie esta ccd por una st8xme y despues esta por una st10xme que es la que actualmente tengo (todas del mercado de segunda mano)",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Estoy impresionado con la electronica /robustez y el buen funcionamiento de estas Camaras pues a pesar de los años que tienen funcionan de maravilla",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "No obstante como todo en esta vida nada es perfecto tambien se averian",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Con el paso de los años ya he reparado varias camaras y rueda portafiltros",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "St 7xme st2000xm. st8xme. st10xme rueda cfw8",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Como consecuencia de la desaparicion del apoyo tecnico en españa de estas camaras realizo:",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Reparacion de averias",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Mantenimiento",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Limpieza",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Servicio de microsoldadura",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Comprobacion real de buen funcionamiento en observatorio etc",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Contacto: jcgmilla@gmail.com",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Sintomas&amp;averias reparadas",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Poco despues adquiri una sbig st2000xm de segunda mano de un compañero de aficion"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/20201002_104339.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Fuente Alimentacion averiada por sobretensión",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Fuente Alimentacion averiada por sobretensión"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/20200522_184920.jpg?w=978",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es 20200522_184920.jpg",
       "type": "image",
       "fecha": "202012",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Problemas causados por la humedad",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Problemas causados por la humedad"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/20200603_110317.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Fallos en el peltier",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Fallos en el peltier"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/cuentas.jpg?w=1024",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es cuentas.jpg",
       "type": "image",
       "fecha": "202012",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Lectura muy baja de ADUs en estrellas saturadas",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Lectura muy baja de ADUs en estrellas saturadas"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/img-20200425-wa0014.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Lineas horizontales en las imagenes",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Lineas horizontales en las imagenes"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/guiado.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "url": "/reparacion-ccd"
-    },
-    {
-      "type": "text",
-      "text": "Mal funcionamiento ccd de guiado",
-      "url": "/reparacion-ccd"
+      "url": "/reparacion-ccd",
+      "text": "Mal funcionamiento ccd de guiado"
     }
   ]
 }

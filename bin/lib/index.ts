@@ -23,7 +23,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
     const $ = cheerio.load(html);
     const post = $('#content > article');
 
-    const title = cleanHTML(post.find('.entry-header').html() || '');
+    const title = cleanHTML(post.find('.entry-header').text() || '');
 
     const items = post.find('.entry-content > p,h1,h2,h3,h4,h5,h6,video,figure')
       .toArray()
@@ -52,7 +52,10 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
         return {
           el: found,
           type,
-          textContent: cleanHTML(el.html()),
+          textContent: type === 'header'
+            ? el.text()
+            : cleanHTML(el.html())
+          ,
         };
       })
       .filter(({ textContent }) =>

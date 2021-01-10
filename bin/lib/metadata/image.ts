@@ -36,7 +36,7 @@ export default function mapImageMetadata(pageURL: string, el: cheerio.Cheerio, t
   };
 
   if (textContent) {
-    props.descripcion = textContent;
+    props.text = textContent;
   }
 
   switch (basename) {

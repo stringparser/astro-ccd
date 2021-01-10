@@ -385,5 +385,13 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     }
   }
 
+  if (/^c?-?2018-?n2/i.test(id)) {
+    return {
+      ...props,
+      id: 'C/2018 N2',
+      alias: 'ASASSN',
+    }
+  }
+
   return props;
 }

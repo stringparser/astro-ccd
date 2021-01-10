@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import path from 'path';
+import { mapTextToUrl, mapMDX } from './lib/util';
 import { fetchPageContent, ParsedPageContent } from './lib';
-import { cleanHTML, mapTextToUrl } from './lib/util';
 
 const urlMap = {
   'ccd-2': 'reparacion-ccd',
@@ -25,24 +25,45 @@ Promise.all([
 
     return {
       ...el,
-      items: el.items.map(it => {
-        if (it.id == null) {
+      items: el.items
+        .map(({ id, ...it }) => {
+          if (!id) {
+            return {
+              ...it,
+              url: `/${basename}`,
+            };
+          }
+
+          const urlID = mapTextToUrl(id);
+          const basenameURLID = urlMap[urlID] || urlID;
+
           return {
+            id: urlID,
             ...it,
-            url: `/${basename}`
+            url: basenameURLID === basename.toLowerCase()
+              ? `/${basename}`
+              : `/${basename}/${basenameURLID}`,
           };
-        }
+        })
+        .reduce((acc, item, index, items) => {
+          const prev = items[index - 1];
 
-        const objectUrl = mapTextToUrl(it.id);
-        const baseObjectUrl = urlMap[objectUrl] || objectUrl;
+          switch (prev?.type) {
+            case 'text':
+            case 'image': {
+              if (item.type === 'text') {
+                prev.text = prev.text
+                  ? `${prev.text}\n\n${item.text}`
+                  : item.text
+                ;
 
-        return {
-          ...it,
-          url: baseObjectUrl === basename
-            ? `/${basename}`
-            : `/${basename}/${baseObjectUrl}`,
-        };
-      })
+                return acc;
+              }
+            }
+          }
+
+          return acc.concat(item);
+        }, [])
     }
   });
 
@@ -51,9 +72,7 @@ Promise.all([
     JSON.stringify(results, null, 2)
   );
 
-  await Promise.all(
-    results
-    .map(el => {
+  const pagesContent = await Promise.all(results.map(el => {
       const baseURL = el.url.split('/').pop();
       const basename = urlMap[baseURL] || baseURL;
 
@@ -62,22 +81,7 @@ Promise.all([
         JSON.stringify(el, null, 2),
       );
 
-      const mdx = el.items.map(el => {
-        switch (el.type) {
-          case 'text': {
-            return el.text;
-          }
-          case 'header': {
-            return `# ${el.text}`;
-          }
-          case 'image': {
-            return [
-              `<img src="${el.src}" />`,
-              cleanHTML(el.descripcion)
-            ].filter(v => v).join('\n\n');
-          }
-        }
-      })
+      const mdx = el.items.map(mapMDX)
         .filter(value => value)
         .join('\n\n')
       ;
@@ -87,7 +91,38 @@ Promise.all([
         mdx
       ).then(() => results)
     })
+  ).then(results => results
+    .flat()
+    .map(el => el.items)
+    .flat()
   );
 
+  await fs.writeFile(
+    path.resolve(__dirname, 'pages-content.json'),
+    JSON.stringify(pagesContent, null, 2)
+  );
 
+  const fileStream: Record<string, fs.WriteStream> = {};
+
+  pagesContent.forEach(item => {
+    if (!item.url) {
+      return;
+    }
+
+    const stream = fileStream[item.url] || (
+      fileStream[item.url] = fs.createWriteStream(
+        /(\/[^\s\/]+){2,}/.test(item.url)
+          ? path.join(__dirname, '..', 'src', 'pages', `${item.url}.mdx`)
+          : path.join(__dirname, '..', 'src', 'pages', `${item.url}/index.mdx`)
+        ,
+        {
+          start: 0,
+          flags: 'w',
+          encoding: 'utf-8',
+        }
+      )
+    );
+
+    stream.write(`${mapMDX(item)}\n\n`);
+  });
 });

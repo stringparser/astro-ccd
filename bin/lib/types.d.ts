@@ -19,8 +19,8 @@ export type ImageProps = {
   src: string;
   alt: string;
   type: 'image';
+  text?: string;
   alias?: string;
   fecha?: string;
-  descripcion?: string;
   localizacion?: string;
 };
