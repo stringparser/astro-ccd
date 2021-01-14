@@ -1,12 +1,15 @@
 import fs from 'fs-extra';
 import path from 'path';
 import { mapTextToUrl, mapMDX } from './lib/util';
-import { fetchPageContent, ParsedPageContent } from './lib';
+import { fetchPageContent, PageItemProps, ParsedPageContent } from './lib';
+import { mapImageFecha } from './lib/metadata/image';
 
 const urlMap = {
   'ccd-2': 'reparacion-ccd',
   'fuensanta-3': 'fuensanta',
   'cometasasteroides': 'cometas-asteroides',
+  'planetas-satelites': 'sistema-solar',
+  'construccion-del-observatorio': 'observatorio'
 };
 
 Promise.all([
@@ -26,26 +29,7 @@ Promise.all([
     return {
       ...el,
       items: el.items
-        .map(({ id, ...it }) => {
-          if (!id || it.type === 'header') {
-            return {
-              ...it,
-              url: `/${basename}`,
-            };
-          }
-
-          const urlID = mapTextToUrl(id);
-          const basenameURLID = urlMap[urlID] || urlID;
-
-          return {
-            id: urlID,
-            ...it,
-            url: basenameURLID === basename
-              ? `/${basename}`
-              : `/${basename}/${basenameURLID}`,
-          };
-        })
-        .reduce((acc, item, index, items) => {
+        .reduce((acc: PageItemProps[], item, index, items) => {
           const prev = items[index - 1];
 
           switch (prev?.type) {
@@ -64,6 +48,43 @@ Promise.all([
 
           return acc.concat(item);
         }, [])
+        .map(item => {
+          switch (item.type) {
+            case 'image': {
+              return {
+                ...item,
+                fecha: mapImageFecha(item),
+              };
+            }
+            default: {
+              return item;
+            }
+          }
+        })
+        .map(item => {
+          const { id, ...it } = item;
+
+          if (!id || it.type === 'header') {
+            return {
+              ...it,
+              url: `/${basename}`,
+            };
+          }
+
+          const urlID = mapTextToUrl(id);
+          const basenameURLID = [
+            item.fecha,
+            urlMap[urlID] || urlID,
+          ].filter(v => v).join('-');
+
+          return {
+            id: urlID,
+            ...it,
+            url: basenameURLID === basename
+              ? `/${basename}`
+              : `/${basename}/${basenameURLID}`,
+          };
+        })
     }
   });
 
@@ -108,9 +129,11 @@ Promise.all([
       return acc;
     }
 
+    const key = item.url;
+
     return {
       ...acc,
-      [item.url]: (acc[item.url] || []).concat(mapMDX(item)),
+      [key]: (acc[key] || []).concat(mapMDX(item)),
     };
   }, {} as Record<string, string>);
 

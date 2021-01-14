@@ -3,6 +3,7 @@ export type TextItem = {
   url?: string;
   type: 'text';
   text: string;
+  fecha?: string;
 };
 
 export type TitleItem = {
@@ -11,6 +12,7 @@ export type TitleItem = {
   type: 'header';
   text: string;
   href: string;
+  fecha?: string;
 };
 
 export type ImageProps = {

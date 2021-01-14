@@ -11,538 +11,538 @@
       "src": "https://astroccd.files.wordpress.com/2014/02/logodef.png",
       "alt": "logodef",
       "type": "image",
-      "fecha": "201402",
       "alias": "Hercules Cluster",
-      "url": "/galaxias/abell-2151",
-      "text": "Abel 2151"
+      "text": "Abel 2151",
+      "fecha": "201402",
+      "url": "/galaxias/201402-abell-2151"
     },
     {
       "id": "abell-2151",
       "src": "https://astroccd.files.wordpress.com/2012/12/abel-2151-2-1200s-27-mayo-2011pa.jpg",
       "alt": "abel 2151 2 1200s 27 mayo 2011PA",
       "type": "image",
-      "fecha": "201212",
       "alias": "Hercules Cluster",
-      "url": "/galaxias/abell-2151",
-      "text": "Nuestra galaxia mide aproximadamente 100–120mil años luz se cree que tiene unos 200—400 millones de estrellas"
+      "text": "Nuestra galaxia mide aproximadamente 100–120mil años luz se cree que tiene unos 200—400 millones de estrellas",
+      "fecha": "201212",
+      "url": "/galaxias/201212-abell-2151"
     },
     {
       "id": "abell-2151",
       "src": "https://astroccd.files.wordpress.com/2012/12/hubble_sequence_photo.png",
       "alt": "Hubble_sequence_photo",
       "type": "image",
-      "fecha": "201212",
       "alias": "Hercules Cluster",
-      "url": "/galaxias/abell-2151",
-      "text": "En la siguientesecuencia de Hubble se pueden apreciar los distintos tipos de Galaxias"
+      "text": "En la siguientesecuencia de Hubble se pueden apreciar los distintos tipos de Galaxias",
+      "fecha": "201212",
+      "url": "/galaxias/201212-abell-2151"
     },
     {
       "id": "abell-2151",
       "src": "https://astroccd.files.wordpress.com/2018/10/20170506_200443.jpg",
       "alt": "20170506_200443",
       "type": "image",
-      "fecha": "201810",
       "alias": "Hercules Cluster",
-      "url": "/galaxias/abell-2151",
-      "text": "ngc7331 6 Mayo 2017"
+      "text": "ngc7331 6 Mayo 2017",
+      "fecha": "20170506",
+      "url": "/galaxias/20170506-abell-2151"
     },
     {
       "id": "sn2020-jfo",
       "src": "https://astroccd.files.wordpress.com/2020/05/sn2020jfo._20200517.jpg",
       "alt": "sn2020jfo._20200517",
       "type": "image",
-      "fecha": "20200517",
       "localizacion": "NGC 4303",
-      "url": "/galaxias/sn2020-jfo",
-      "text": "sn2020jfo en M61 17 Mayo 2020"
+      "text": "sn2020jfo en M61 17 Mayo 2020",
+      "fecha": "20200517",
+      "url": "/galaxias/20200517-sn2020-jfo"
     },
     {
       "id": "sn219-ein",
       "src": "https://astroccd.files.wordpress.com/2019/08/sn219ein_20190510_gjcb.png",
       "alt": "sn219ein_20190510_GJCB",
       "type": "image",
+      "text": "sn2019ein 10 Mayo 2019",
       "fecha": "20190510",
-      "url": "/galaxias/sn219-ein",
-      "text": "sn2019ein 10 Mayo 2019"
+      "url": "/galaxias/20190510-sn219-ein"
     },
     {
       "id": "sn2019-ein",
       "src": "https://astroccd.files.wordpress.com/2019/05/snm51.jpg",
       "alt": "snm51",
       "type": "image",
-      "fecha": "201905",
       "localizacion": "NGC 5353",
-      "url": "/galaxias/sn2019-ein",
-      "text": "sn2019ehk en M100 30Abril2019"
+      "text": "sn2019ehk en M100 30Abril2019",
+      "fecha": "20190430",
+      "url": "/galaxias/20190430-sn2019-ein"
     },
     {
       "id": "ngc-4627",
       "src": "https://astroccd.files.wordpress.com/2019/04/ngc4627.jpg",
       "alt": "ngc4627",
       "type": "image",
-      "fecha": "201904",
-      "url": "/galaxias/ngc-4627",
-      "text": "ngc 4627 26Abril 2019"
+      "text": "ngc 4627 26Abril 2019",
+      "fecha": "20190426",
+      "url": "/galaxias/20190426-ngc-4627"
     },
     {
       "id": "ngc-4656",
       "src": "https://astroccd.files.wordpress.com/2019/04/ngc4656.jpg",
       "alt": "ngc4656",
       "type": "image",
-      "fecha": "201904",
-      "url": "/galaxias/ngc-4656",
-      "text": "ngc 4656 26Abril 2019"
+      "text": "ngc 4656 26Abril 2019",
+      "fecha": "20190426",
+      "url": "/galaxias/20190426-ngc-4656"
     },
     {
       "id": "ngc-5194",
       "src": "https://astroccd.files.wordpress.com/2019/03/m51.jpg",
       "alt": "M51.jpg",
       "type": "image",
-      "fecha": "201903",
       "alias": "M51",
-      "url": "/galaxias/ngc-5194",
-      "text": "AT2019abn 2Marzo 2019"
+      "text": "AT2019abn 2Marzo 2019",
+      "fecha": "20190302",
+      "url": "/galaxias/20190302-ngc-5194"
     },
     {
       "id": "at2019-ahd",
       "src": "https://astroccd.files.wordpress.com/2019/03/at2019ahd_20190214_gjcb.jpg",
       "alt": "at2019ahd_20190214_GJCB",
       "type": "image",
-      "fecha": "20190214",
       "localizacion": "NGC 3423",
-      "url": "/galaxias/at2019-ahd",
-      "text": "at2019ahd en NGC 3423 13 Febrero 2019"
+      "text": "at2019ahd en NGC 3423 13 Febrero 2019",
+      "fecha": "20190213",
+      "url": "/galaxias/20190213-at2019-ahd"
     },
     {
       "id": "at2019-ahd",
       "src": "https://astroccd.files.wordpress.com/2019/01/rgb.jpg",
       "alt": "rgb",
       "type": "image",
-      "fecha": "201901",
       "localizacion": "NGC 3423",
-      "url": "/galaxias/at2019-ahd",
-      "text": "sn 2019np en ngc 3254 14 Enero 2019 F2730 b2"
+      "text": "sn 2019np en ngc 3254 14 Enero 2019 F2730 b2",
+      "fecha": "20190114",
+      "url": "/galaxias/20190114-at2019-ahd"
     },
     {
       "id": "sn2019-np",
       "src": "https://astroccd.files.wordpress.com/2019/01/sn2019np_20190112_gjcb-1.png",
       "alt": "sn2019np_20190112_gjcb",
       "type": "image",
-      "fecha": "20190112",
       "localizacion": "NGC 3254",
-      "url": "/galaxias/sn2019-np",
-      "text": "sn 2019np en ngc 3254 12 Enero 2019 F1850 b1"
+      "text": "sn 2019np en ngc 3254 12 Enero 2019 F1850 b1",
+      "fecha": "20190112",
+      "url": "/galaxias/20190112-sn2019-np"
     },
     {
       "id": "sn2018-isq",
       "src": "https://astroccd.files.wordpress.com/2018/12/2018isq_20181203_gjcb.jpg",
       "alt": "2018isq_20181203_GJCB",
       "type": "image",
+      "text": "sn2018isq 3 Diciembre 2018",
       "fecha": "20181203",
-      "url": "/galaxias/sn2018-isq",
-      "text": "sn2018isq 3 Diciembre 2018"
+      "url": "/galaxias/20181203-sn2018-isq"
     },
     {
       "id": "sn2018-ivc",
       "src": "https://astroccd.files.wordpress.com/2018/11/sn2018ivc_20181126_gjcb.jpg",
       "alt": "SN2018IVC_20181126_GJCB",
       "type": "image",
-      "fecha": "20181126",
       "localizacion": "M77",
-      "url": "/galaxias/sn2018-ivc",
-      "text": "sn 2018ivc en M77 26Noviembre 2018"
+      "text": "sn 2018ivc en M77 26Noviembre 2018",
+      "fecha": "20181126",
+      "url": "/galaxias/20181126-sn2018-ivc"
     },
     {
       "id": "sn2018-imf",
       "src": "https://astroccd.files.wordpress.com/2018/11/sn-2018imf_20181116_gjcb.jpg",
       "alt": "SN 2018imf_20181116_GJCB",
       "type": "image",
-      "fecha": "20181116",
       "localizacion": "PGC 57660",
-      "url": "/galaxias/sn2018-imf",
-      "text": "sn 2018 imf 16Noviembre2018 7*120s b1"
+      "text": "sn 2018 imf 16Noviembre2018 7*120s b1",
+      "fecha": "20181116",
+      "url": "/galaxias/20181116-sn2018-imf"
     },
     {
       "id": "at2018-gjx",
       "src": "https://astroccd.files.wordpress.com/2018/09/at2018gjx_20180919_gjcb.png",
       "alt": "at2018gjx_20180919_GJCB",
       "type": "image",
+      "text": "at2018gjx 19 Septiembre 2018",
       "fecha": "20180919",
-      "url": "/galaxias/at2018-gjx",
-      "text": "at2018gjx 19 Septiembre 2018"
+      "url": "/galaxias/20180919-at2018-gjx"
     },
     {
       "id": "sn2018-cow",
       "src": "https://astroccd.files.wordpress.com/2018/07/sn2018cow.png",
       "alt": "sn2018cow",
       "type": "image",
-      "fecha": "201807",
       "localizacion": "PGC 57660",
-      "url": "/galaxias/sn2018-cow",
-      "text": "sn2018cow en pgc 57660 2 Julio 2018 1*1000segundos"
+      "text": "sn2018cow en pgc 57660 2 Julio 2018 1*1000segundos",
+      "fecha": "20180702",
+      "url": "/galaxias/20180702-sn2018-cow"
     },
     {
       "id": "m109",
       "src": "https://astroccd.files.wordpress.com/2018/05/m109.png",
       "alt": "m109",
       "type": "image",
-      "fecha": "201805",
-      "url": "/galaxias/m109",
-      "text": "M109 New 360mm 2730mm focal 11Mayo2018"
+      "text": "M109 New 360mm 2730mm focal 11Mayo2018",
+      "fecha": "20180511",
+      "url": "/galaxias/20180511-m109"
     },
     {
       "id": "sn2018-zd",
       "src": "https://astroccd.files.wordpress.com/2018/03/2018zd_20180321_i88.jpg",
       "alt": "2018zd_20180321_I88",
       "type": "image",
-      "fecha": "20180321",
       "localizacion": "NGC 2146",
-      "url": "/galaxias/sn2018-zd",
-      "text": "sn 2018zd en ngc 2146 21Marzo 2018"
+      "text": "sn 2018zd en ngc 2146 21Marzo 2018",
+      "fecha": "20180321",
+      "url": "/galaxias/20180321-sn2018-zd"
     },
     {
       "id": "at2018-gv",
       "src": "https://astroccd.files.wordpress.com/2018/02/at2018gv_20180202_i88.jpg",
       "alt": "",
       "type": "image",
-      "fecha": "20180202",
       "localizacion": "NGC 2525",
-      "url": "/galaxias/at2018-gv",
-      "text": "Supernova 2018 GV en ngc 2525 2 febrero 2018"
+      "text": "Supernova 2018 GV en ngc 2525 2 febrero 2018",
+      "fecha": "20180202",
+      "url": "/galaxias/20180202-at2018-gv"
     },
     {
       "id": "at2017-eaw",
       "src": "https://astroccd.files.wordpress.com/2012/12/2017eaw_20170702_i88.jpg",
       "alt": "2017EAW_20170702_I88",
       "type": "image",
-      "fecha": "20170702",
       "localizacion": "NGC 6946",
-      "url": "/galaxias/at2017-eaw",
-      "text": "SN 2017EAW en ngc 6946 2 Junio 2017"
+      "text": "SN 2017EAW en ngc 6946 2 Junio 2017",
+      "fecha": "20170602",
+      "url": "/galaxias/20170602-at2017-eaw"
     },
     {
       "id": "sn2017-eax",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2017eax_20170518_i88.jpg",
       "alt": "sn2017eax_20170518_I88",
       "type": "image",
+      "text": "SN2017eax 18Mayo 2017",
       "fecha": "20170518",
-      "url": "/galaxias/sn2017-eax",
-      "text": "SN2017eax 18Mayo 2017"
+      "url": "/galaxias/20170518-sn2017-eax"
     },
     {
       "id": "sn2017-dfc",
       "src": "https://astroccd.files.wordpress.com/2012/12/2017dfc_20170423_i88.jpg",
       "alt": "2017dfc_20170423_I88",
       "type": "image",
+      "text": "Supernova 2017dfc en un principio se penso que pertenecia a M63 pero su magnitud desconcertaba despues de su estudio espectral se comprobo que estaba a una distancia de casi 900millones años luz mientras que M63 esta a unos 30 millones es decir esta justo detras de la Galaxia en nuestro campo de vision",
       "fecha": "20170423",
-      "url": "/galaxias/sn2017-dfc",
-      "text": "Supernova 2017dfc en un principio se penso que pertenecia a M63 pero su magnitud desconcertaba despues de su estudio espectral se comprobo que estaba a una distancia de casi 900millones años luz mientras que M63 esta a unos 30 millones es decir esta justo detras de la Galaxia en nuestro campo de vision"
+      "url": "/galaxias/20170423-sn2017-dfc"
     },
     {
       "id": "sn2016-gfy",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2016gfy_ngc2276.jpg",
       "alt": "sn2016gfy_ngc2276",
       "type": "image",
+      "text": "sn2016gfy en ngc 2276 24 Septiembre 2016",
       "fecha": "201212",
-      "url": "/galaxias/sn2016-gfy",
-      "text": "sn2016gfy en ngc 2276 24 Septiembre 2016"
+      "url": "/galaxias/201212-sn2016-gfy"
     },
     {
       "id": "sn2016-cok",
       "src": "https://astroccd.files.wordpress.com/2012/12/m66m65_20160530_i881.jpg",
       "alt": "m66m65_20160530_I88",
       "type": "image",
-      "fecha": "20160530",
       "localizacion": "M66",
-      "url": "/galaxias/sn2016-cok",
-      "text": "Sn At2016cok en M66 30 Mayo 2016"
+      "text": "Sn At2016cok en M66 30 Mayo 2016",
+      "fecha": "20160530",
+      "url": "/galaxias/20160530-sn2016-cok"
     },
     {
       "id": "sn2016-coj",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2016coj_20160530_i881.jpg",
       "alt": "sn2016coj_20160530_i88",
       "type": "image",
-      "fecha": "20160530",
       "localizacion": "NGC 4125",
-      "url": "/galaxias/sn2016-coj",
-      "text": "SN 2016coj en NGC 4125 29 Mayo 2016"
+      "text": "SN 2016coj en NGC 4125 29 Mayo 2016",
+      "fecha": "20160529",
+      "url": "/galaxias/20160529-sn2016-coj"
     },
     {
       "id": "ngc-891",
       "src": "https://astroccd.files.wordpress.com/2012/12/ngc891pa.jpg",
       "alt": "ngc891PA",
       "type": "image",
+      "text": "NGC 891",
       "fecha": "201212",
-      "url": "/galaxias/ngc-891",
-      "text": "NGC 891"
+      "url": "/galaxias/201212-ngc-891"
     },
     {
       "id": "oj287",
       "src": "https://astroccd.files.wordpress.com/2012/12/oj287medidas.jpg",
       "alt": "OJ287medidas",
       "type": "image",
-      "fecha": "201212",
       "text": "Quasar OJ 287 situado en la constelacion de Cancer 3500 millones años",
-      "url": "/galaxias/oj287"
+      "fecha": "201212",
+      "url": "/galaxias/201212-oj287"
     },
     {
       "id": "oj287",
       "src": "https://astroccd.files.wordpress.com/2012/12/pulsar.jpg",
       "alt": "pulsar",
       "type": "image",
-      "fecha": "201212",
       "text": "<a href=\"http://www.caha.es/18-billions-of-suns-support-einstein_es.html\" target=\"_blank\" > OJ 287</a>\n\npublicacion <a href=\"https://astroccd.files.wordpress.com/2012/12/apjl_819_2_l37.pdf\">apjl_819_2_l37</a>",
-      "url": "/galaxias/oj287"
+      "fecha": "201212",
+      "url": "/galaxias/201212-oj287"
     },
     {
       "id": "m33",
       "src": "https://astroccd.files.wordpress.com/2012/12/m33lrgbpro.jpg",
       "alt": "m33lrgbpro",
       "type": "image",
+      "text": "M33",
       "fecha": "201212",
-      "url": "/galaxias/m33",
-      "text": "M33"
+      "url": "/galaxias/201212-m33"
     },
     {
       "id": "20151115-quinteto",
       "src": "https://astroccd.files.wordpress.com/2012/12/quinteto.png",
       "alt": "Quinteto",
       "type": "image",
-      "fecha": "201212",
-      "url": "/galaxias/20151115-quinteto",
-      "text": "Imagen del Quinteto 15 Noviembre 2015"
+      "text": "Imagen del Quinteto 15 Noviembre 2015",
+      "fecha": "20151115",
+      "url": "/galaxias/20151115-20151115-quinteto"
     },
     {
       "id": "ngc-7331",
       "src": "https://astroccd.files.wordpress.com/2012/12/ngc7331_9_600s_16102015.jpg",
       "alt": "NGC7331_9_600s_16102015",
       "type": "image",
-      "fecha": "16102015",
-      "url": "/galaxias/ngc-7331",
-      "text": "NGC7331 16 Octubre2015 9 tomas de 600s"
+      "text": "NGC7331 16 Octubre2015 9 tomas de 600s",
+      "fecha": "20151016",
+      "url": "/galaxias/20151016-ngc-7331"
     },
     {
       "id": "m82",
       "src": "https://astroccd.files.wordpress.com/2012/12/m82ha.jpg",
       "alt": "M82HA",
       "type": "image",
-      "fecha": "201212",
       "text": "M82 filtro h alfa",
-      "url": "/galaxias/m82"
+      "fecha": "201212",
+      "url": "/galaxias/201212-m82"
     },
     {
       "id": "psn-j17292918",
       "src": "https://astroccd.files.wordpress.com/2012/12/psn-j172929187542390_ngc6412_20150715_i88.jpg",
       "alt": "PSN J17292918+7542390_ngc6412_20150715_I88",
       "type": "image",
-      "fecha": "20150715",
       "localizacion": "NGC 6412",
-      "url": "/galaxias/psn-j17292918",
-      "text": "PSN J17292918+7542390 en NGC6412 15Julio 2015"
+      "text": "PSN J17292918+7542390 en NGC6412 15Julio 2015",
+      "fecha": "20150715",
+      "url": "/galaxias/20150715-psn-j17292918"
     },
     {
       "id": "psn-j20435314",
       "src": "https://astroccd.files.wordpress.com/2012/12/psn-j204353141230304ngc6956.jpg",
       "alt": "PSN J20435314+1230304ngc6956",
       "type": "image",
-      "fecha": "201212",
       "localizacion": "NGC 6956",
-      "url": "/galaxias/psn-j20435314",
-      "text": "Supernova en ngc 6956 12Julio2015"
+      "text": "Supernova en ngc 6956 12Julio2015",
+      "fecha": "20150712",
+      "url": "/galaxias/20150712-psn-j20435314"
     },
     {
       "id": "psn-j07285387",
       "src": "https://astroccd.files.wordpress.com/2012/12/psn-j072853873349106_ngc23882.jpg",
       "alt": "PSN J07285387+3349106_ngc2388",
       "type": "image",
-      "fecha": "201212",
       "text": "Supernova en ngc 2388 23 Febrero 2015",
       "localizacion": "NGC 23882",
-      "url": "/galaxias/psn-j07285387"
+      "fecha": "20150223",
+      "url": "/galaxias/20150223-psn-j07285387"
     },
     {
       "id": "psn-j14021678",
       "src": "https://astroccd.files.wordpress.com/2012/12/m101psn-j140216785426205.jpg",
       "alt": "m101PSN J14021678+5426205",
       "type": "image",
-      "fecha": "201212",
       "localizacion": "M101",
-      "url": "/galaxias/psn-j14021678"
+      "fecha": "201212",
+      "url": "/galaxias/201212-psn-j14021678"
     },
     {
       "id": "m110",
       "src": "https://astroccd.files.wordpress.com/2012/12/m110_e6_20141212.jpg",
       "alt": "M110_E6_20141212",
       "type": "image",
-      "fecha": "20141212",
       "text": "Supernova en M101 22Febrero 2015\n\nGalaxia eliptica M110_E6-20141212",
-      "url": "/galaxias/m110"
+      "fecha": "20150222",
+      "url": "/galaxias/20150222-m110"
     },
     {
       "id": "sn2014-dg",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014dg_ugc2855_20141217.jpg",
       "alt": "SN2014DG_UGC2855_20141217",
       "type": "image",
-      "fecha": "20141217",
       "localizacion": "UGC 2855",
-      "url": "/galaxias/sn2014-dg",
-      "text": "SN2014DG en ugc 2855 17diciembre2014"
+      "text": "SN2014DG en ugc 2855 17diciembre2014",
+      "fecha": "20141217",
+      "url": "/galaxias/20141217-sn2014-dg"
     },
     {
       "id": "psn-j22081243",
       "src": "https://astroccd.files.wordpress.com/2012/12/psn-j220812434110503_ugc11919_sbc2014121512.jpg",
       "alt": "PSN J22081243+4110503_UGC11919_Sbc201412151",
       "type": "image",
-      "fecha": "201212",
       "localizacion": "UGC 11919",
-      "url": "/galaxias/psn-j22081243",
-      "text": "PSN J22081243+4110503 en ugc 11919 12Diciembre 2014"
+      "text": "PSN J22081243+4110503 en ugc 11919 12Diciembre 2014",
+      "fecha": "20141212",
+      "url": "/galaxias/20141212-psn-j22081243"
     },
     {
       "id": "pnv-j03093063",
       "src": "https://astroccd.files.wordpress.com/2012/12/pnv_-j030930632638031.jpg",
       "alt": "PNV_ J03093063+2638031",
       "type": "image",
-      "fecha": "201212",
       "localizacion": "Aries",
-      "url": "/galaxias/pnv-j03093063",
-      "text": "NOVA En la costelacion de Aries 30Octubre 2014"
+      "text": "NOVA En la costelacion de Aries 30Octubre 2014",
+      "fecha": "20141030",
+      "url": "/galaxias/20141030-pnv-j03093063"
     },
     {
       "id": "sn2014-cx",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014cx20141030_i88.jpg",
       "alt": "sn2014cx20141030_I88",
       "type": "image",
-      "fecha": "201212",
-      "url": "/galaxias/sn2014-cx",
-      "text": "sn2014cx 30Octubre2014"
+      "text": "sn2014cx 30Octubre2014",
+      "fecha": "20141030",
+      "url": "/galaxias/20141030-sn2014-cx"
     },
     {
       "id": "snhunt260",
       "src": "https://astroccd.files.wordpress.com/2012/12/snhunt260-_20141021_i88.jpg",
       "alt": "SNhunt260 _20141021_I88",
       "type": "image",
+      "text": "SNhunt260 21Octubre2014",
       "fecha": "20141021",
-      "url": "/galaxias/snhunt260",
-      "text": "SNhunt260 21Octubre2014"
+      "url": "/galaxias/20141021-snhunt260"
     },
     {
       "id": "sn2014-cy",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014cy_20141018_gjcb1.jpg",
       "alt": "SN2014CY_20141018_GJCB",
       "type": "image",
-      "fecha": "20141018",
       "localizacion": "NGC 7742",
-      "url": "/galaxias/sn2014-cy",
-      "text": "SN2014CY en NGC7742"
+      "text": "SN2014CY en NGC7742",
+      "fecha": "20141018",
+      "url": "/galaxias/20141018-sn2014-cy"
     },
     {
       "id": "sn2014-bv",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014bv_20140714_i88-copia.jpg",
       "alt": "sn2014bv_20140714_I88 copia",
       "type": "image",
-      "fecha": "20140714",
       "localizacion": "NGC 4386",
-      "url": "/galaxias/sn2014-bv",
-      "text": "sn2014bv en ngc4386"
+      "text": "sn2014bv en ngc4386",
+      "fecha": "20140714",
+      "url": "/galaxias/20140714-sn2014-bv"
     },
     {
       "id": "sn2014-aa",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014aa_20140326_i88.jpg",
       "alt": "SN2014aa_20140326_I88",
       "type": "image",
+      "text": "sn2014aa 26marzo 2014",
       "fecha": "20140326",
-      "url": "/galaxias/sn2014-aa",
-      "text": "sn2014aa 26marzo 2014"
+      "url": "/galaxias/20140326-sn2014-aa"
     },
     {
       "id": "sn2014-ai",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014ai_20140326_i88.jpg",
       "alt": "SN2014ai_20140326_I88",
       "type": "image",
+      "text": "sn2014ai 26marzo2014",
       "fecha": "20140326",
-      "url": "/galaxias/sn2014-ai",
-      "text": "sn2014ai 26marzo2014"
+      "url": "/galaxias/20140326-sn2014-ai"
     },
     {
       "id": "sn2014-l",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014l_20140307_i88.jpg",
       "alt": "SN2014L_20140307_I88",
       "type": "image",
-      "fecha": "20140307",
       "localizacion": "M99",
-      "url": "/galaxias/sn2014-l",
-      "text": "SN2014L En M99 7marzo2014"
+      "text": "SN2014L En M99 7marzo2014",
+      "fecha": "20140307",
+      "url": "/galaxias/20140307-sn2014-l"
     },
     {
       "id": "sn2013-am",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014g_20140202_i88.jpg",
       "alt": "sn2014G_20140202_I88",
       "type": "image",
-      "fecha": "20140202",
       "localizacion": "NGC3448",
-      "url": "/galaxias/sn2013-am",
-      "text": "SN2014G en NGC3448 2 Febrero 2014"
+      "text": "SN2014G en NGC3448 2 Febrero 2014",
+      "fecha": "20140202",
+      "url": "/galaxias/20140202-sn2013-am"
     },
     {
       "id": "sn2014-j",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014jrgb_20140202_i88.jpg",
       "alt": "SN2014JRGB_20140202_I88",
       "type": "image",
-      "fecha": "20140202",
       "localizacion": "M82",
-      "url": "/galaxias/sn2014-j",
-      "text": "sn2014j 6 imagenes con cada filtro de 60segundos 2 febrero 2014"
+      "text": "sn2014j 6 imagenes con cada filtro de 60segundos 2 febrero 2014",
+      "fecha": "20140202",
+      "url": "/galaxias/20140202-sn2014-j"
     },
     {
       "id": "sn2014-j",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2014j_20140202_i88.jpg",
       "alt": "sn2014J_20140202_I88",
       "type": "image",
-      "fecha": "20140202",
       "localizacion": "M82",
-      "url": "/galaxias/sn2014-j",
-      "text": "Supernova 2014J en la galaxia M82 2Febrero 2014"
+      "text": "Supernova 2014J en la galaxia M82 2Febrero 2014",
+      "fecha": "20140202",
+      "url": "/galaxias/20140202-sn2014-j"
     },
     {
       "id": "arp-99",
       "src": "https://astroccd.files.wordpress.com/2012/12/arp99.jpg",
       "alt": "arp99",
       "type": "image",
-      "fecha": "201212",
       "text": "Arp 99 conjunto de Galaxias en Pegaso",
       "alias": "NGC 7547/49/50/53/58, Hickson 93",
       "localizacion": "Pegaso",
-      "url": "/galaxias/arp-99"
+      "fecha": "201212",
+      "url": "/galaxias/201212-arp-99"
     },
     {
       "id": "sn2013-ev",
       "src": "https://astroccd.files.wordpress.com/2012/12/sn2013ev-6-300sf.jpg",
       "alt": "SN2013EV 6 300sF",
       "type": "image",
-      "fecha": "201212",
       "text": "SN 2013ev en IC 1296suma de 6 imagenes de 300suna galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)",
-      "url": "/galaxias/sn2013-ev"
+      "fecha": "201212",
+      "url": "/galaxias/201212-sn2013-ev"
     },
     {
       "id": "sn2013-fa",
       "src": "https://astroccd.files.wordpress.com/2012/12/2013fa-2013-09-10-u.jpg",
       "alt": "2013fa 2013 09 10 u",
       "type": "image",
-      "fecha": "201212",
       "text": " sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
       "localizacion": "Delfín",
-      "url": "/galaxias/sn2013-fa"
+      "fecha": "201212",
+      "url": "/galaxias/201212-sn2013-fa"
     },
     {
       "id": "sn2014-g",
       "src": "https://astroccd.files.wordpress.com/2012/12/m65-3-600s-2abril-2013.jpg",
       "alt": "m65 3 600s 2abril 2013",
       "type": "image",
-      "fecha": "201212",
       "localizacion": "M65",
-      "url": "/galaxias/sn2014-g",
-      "text": "Supernova 2013am en M65"
+      "text": "Supernova 2013am en M65",
+      "fecha": "201212",
+      "url": "/galaxias/201212-sn2014-g"
     },
     {
       "id": "sn2011-dh",
@@ -550,43 +550,43 @@
       "alt": "M51-SC_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104",
       "type": "image",
       "fecha": "201212",
-      "url": "/galaxias/sn2011-dh"
+      "url": "/galaxias/201212-sn2011-dh"
     },
     {
       "id": "ngc-5033",
       "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5033-7-600s-10g-8-abril-2011pa2.jpg",
       "alt": "ngc 5033 7 600s 10g 8 abril 2011PA",
       "type": "image",
-      "fecha": "201212",
       "text": "<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >m51 22junio2011</a> <a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >NGC 5O33 7*600S</a>",
-      "url": "/galaxias/ngc-5033"
+      "fecha": "20110622",
+      "url": "/galaxias/20110622-ngc-5033"
     },
     {
       "id": "ngc-5317",
       "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5317-2-1200srr.jpg",
       "alt": "ngc 5317 2 1200sRR",
       "type": "image",
+      "text": "NGC 5317 2*1200S",
       "fecha": "201212",
-      "url": "/galaxias/ngc-5317",
-      "text": "NGC 5317 2*1200S"
+      "url": "/galaxias/201212-ngc-5317"
     },
     {
       "id": "ngc-5194",
       "src": "https://astroccd.files.wordpress.com/2019/05/m51-22h02m18s-dia-30junio-2005-exp120segundos-dos-imagenes.jpg",
       "alt": "M51 22h02m18s dia 30junio 2005 exp120segundos dos imagenes",
       "type": "image",
-      "fecha": "201905",
       "alias": "M51",
-      "url": "/galaxias/ngc-5194",
-      "text": "Supernova en M51"
+      "text": "Supernova en M51",
+      "fecha": "201905",
+      "url": "/galaxias/201905-ngc-5194"
     },
     {
       "id": "sn2005-cs",
       "src": "https://i0.wp.com/www.astrosurf.com/snweb2/images/rainbowl.gif",
       "type": "image",
+      "text": "Measures",
       "fecha": "",
-      "url": "/galaxias/sn2005-cs",
-      "text": "Measures"
+      "url": "/galaxias/sn2005-cs"
     }
   ]
 }

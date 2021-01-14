@@ -4,391 +4,391 @@
     {
       "type": "header",
       "text": "CONSTRUCCION DEL OBSERVATORIO",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "type": "text",
       "text": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" >REPARACION CCD SBIG</a>",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/11/franja.jpg?w=1024",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es franja.jpg",
       "type": "image",
       "fecha": "202011",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/11/obras_031.gif?w=127",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es obras_031.gif",
       "type": "image",
-      "fecha": "202011",
       "text": "Todo aficionado desea tener un buen telescopio en el interior de una cupula pero el principal problema es el presupuesto pues comprar todo lo necesario a las distintas casas comerciales cuesta una pequeña fortuna cosa que no me podia permitir asi que me arme de paciencia y me decidi a construirme todo lo necesario aun sabiendo que tardaria varios años\n\nEl diseño elegido es una cupula de 3mts de diametro construida en hierro sobre el dibujo se puede apreciar los distintos perfiles a cortar para formar el esqueleto . Hay que curvar los perfiles pefectamente con el dimatro requerido poniendo especial cuidado en los de la base y la compuerta pues esto determinara que posteriormente funcione sin problemas",
-      "url": "/construccion-del-observatorio"
+      "fecha": "202011",
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/esqueleto-cupula1.jpg",
       "alt": "",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cupula_sol1.jpg",
       "alt": "CUPULA_sol",
       "type": "image",
+      "text": "Para soldar las costillas dividiremos la base circular (flechas rojas) y colocar dos perfiles (azul/rojo) perpendicularmente para que nos siervan de referencia, solo hay que cortar y soldar cada costilla teniendo cuidado que coincida con el hierro azul (centro) en esta posicion cortar la costilla por la parte interior La soldadura con el perfil de la compuerta la realizaremos por el anterior corte (interior) de esta forma quedara libre una endidura para encajar las distintas piezas de chapa y no entre agua (flecha verde) una vez cortadas se iran montado una sobre otra despues se fijan con tornillos autorroscantes y un taladro aplicando entre chapa y chapa poliuretano para que la cupula sea estanca",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Para soldar las costillas dividiremos la base circular (flechas rojas) y colocar dos perfiles (azul/rojo) perpendicularmente para que nos siervan de referencia, solo hay que cortar y soldar cada costilla teniendo cuidado que coincida con el hierro azul (centro) en esta posicion cortar la costilla por la parte interior La soldadura con el perfil de la compuerta la realizaremos por el anterior corte (interior) de esta forma quedara libre una endidura para encajar las distintas piezas de chapa y no entre agua (flecha verde) una vez cortadas se iran montado una sobre otra despues se fijan con tornillos autorroscantes y un taladro aplicando entre chapa y chapa poliuretano para que la cupula sea estanca"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cupula2.jpg",
       "alt": "",
       "type": "image",
+      "text": "vista interior. Los rodamientos utilizados para que gire son de lavadora",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "vista interior. Los rodamientos utilizados para que gire son de lavadora"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cupula-base-int.jpg",
       "alt": "",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cupula3.jpg",
       "alt": "",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cupula.jpg",
       "alt": "",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/copy-cupula-fin.jpg",
       "alt": "",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cupula-noche.jpg",
       "alt": "",
       "type": "image",
+      "text": "Motorizacion Cupula",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Motorizacion Cupula"
+      "url": "/observatorio"
     },
     {
       "type": "header",
       "text": "LesveDome",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "type": "text",
       "text": "<a href=\"http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\" >http://www.dppobservatory.net/DomeAutomation/DomeDriver.php</a>\n\nSistema control",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/automatizacion-cupula.jpg",
       "alt": "",
       "type": "image",
-      "fecha": "201211",
       "text": "este es el sistema que hace rotar la cupula es un motor de 48vcc y un reductor relacion 1/200 de desecho regalado por un amigo la traccion es sobre una cadena doble de quark , el control de la posicion la realiza un encoder",
-      "url": "/construccion-del-observatorio"
+      "fecha": "201211",
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/rotacion-cupulapa2.jpg",
       "alt": "",
       "type": "image",
+      "text": "video motor rotacion cupula en movimiento",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "video motor rotacion cupula en movimiento"
+      "url": "/observatorio"
     },
     {
       "type": "header",
       "text": "UN NEWTON DE 360mm",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "type": "text",
       "text": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es deBVC(ceramico) comprado a Costas&amp;Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia\n\nEl material es BVC a primera vista sorprende pues tiene un color negro sin embargo este vidrio tiene unas buenas propiedades fisicas en cuanto a Reflexion de la luz y dilatacion termica",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/limpieza-27sep2015.jpg",
       "alt": "LIMPIEZA 27SEP2015",
       "type": "image",
+      "text": "Espejo 360mm F1810mm (limpieza 26 Septiembre 2015)",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Espejo 360mm F1810mm (limpieza 26 Septiembre 2015)"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura-3-vistas.gif",
       "alt": "",
       "type": "image",
+      "text": "este el del tubo",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "este el del tubo"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/tubo.gif",
       "alt": "",
       "type": "image",
+      "text": "simulacion de todo el conjuto en el interior de la cupula de 3mts de diametro",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "simulacion de todo el conjuto en el interior de la cupula de 3mts de diametro"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cupula.gif",
       "alt": "",
       "type": "image",
+      "text": "Portaocular 3″ con su soporte ajustable en horizontal y vertical",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Portaocular 3″ con su soporte ajustable en horizontal y vertical"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/pletina-porta.jpg",
       "alt": "pletina porta",
       "type": "image",
+      "text": "Celda del espejo primario contruida en DM triangulos de aluminio sobre canicas con 9 puntos de apoyo",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Celda del espejo primario contruida en DM triangulos de aluminio sobre canicas con 9 puntos de apoyo"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/celda-primario-web1.jpg",
       "alt": "Celda Primario web",
       "type": "image",
+      "text": "<a href=\"https://astroccd.files.wordpress.com/2012/11/bisinfin1.jpg\">Montura Tubo</a>",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "<a href=\"https://astroccd.files.wordpress.com/2012/11/bisinfin1.jpg\">Montura Tubo</a>"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura-tubo1.jpg",
       "alt": "montura tubo",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura-coche.jpg",
       "alt": "montura coche",
       "type": "image",
+      "text": "Para el ajuste de la montura he utilizado un laser y un comparador",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Para el ajuste de la montura he utilizado un laser y un comparador"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/img_18451.jpg",
       "alt": "IMG_1845",
       "type": "image",
+      "text": "Una vez que consigamos dar un giro completo y el laser describa un punto sobre la cupula lo tendremos centrado",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Una vez que consigamos dar un giro completo y el laser describa un punto sobre la cupula lo tendremos centrado"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura-laser.jpg",
       "alt": "montura laser",
       "type": "image",
+      "text": "solo resta apuntar a la polar",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "solo resta apuntar a la polar"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/ajuste-con-laser-21.jpg",
       "alt": "ajuste con laser 2",
       "type": "image",
+      "text": "La base esta compuesta de dos partes una fija mas pesada en forma de U y otra movil de hierro hueco cuadrado que gira sobre un eje central en la parte fija",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "La base esta compuesta de dos partes una fija mas pesada en forma de U y otra movil de hierro hueco cuadrado que gira sobre un eje central en la parte fija"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/base.jpg",
       "alt": "BASE",
       "type": "image",
-      "fecha": "201211",
       "text": "El eje de declinacion se ajusta con una visagra (V) toda la montura gira horizontalme con dos tornillos (A)",
-      "url": "/construccion-del-observatorio"
+      "fecha": "201211",
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/azimut2.jpg",
       "alt": "AZIMUT2",
       "type": "image",
+      "text": "La altura se calibra con 3 tornillos (B) se ajusta con el central y despues se aprietan los otros dos tornillos para repartir peso una vez ajustado se asegura con el tornillo (A) que aprieta en sentido contrario",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "La altura se calibra con 3 tornillos (B) se ajusta con el central y despues se aprietan los otros dos tornillos para repartir peso una vez ajustado se asegura con el tornillo (A) que aprieta en sentido contrario"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura2.jpg",
       "alt": "montura2",
       "type": "image",
+      "text": "2 unidades de 50mm de diametro en cada lado con sus correpondiente tornillos de ajuste algunos se retiraran despues de cumplir su funcion",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "2 unidades de 50mm de diametro en cada lado con sus correpondiente tornillos de ajuste algunos se retiraran despues de cumplir su funcion"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/cojinetes1.jpg",
       "alt": "cojinetes",
       "type": "image",
+      "text": "Ajuste",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Ajuste"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura-ajuste-32.jpg",
       "alt": "montura-ajuste-3",
       "type": "image",
+      "text": "hacer pasar por el centro del tubo calibrado el laser al mismo tiempo si damos un giro a todo el conjunto de 360º el relog comparador tiene que dar la misma lectura con lo cual el eje de declinacion estara ajustado con respecto al de ascension recta",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "hacer pasar por el centro del tubo calibrado el laser al mismo tiempo si damos un giro a todo el conjunto de 360º el relog comparador tiene que dar la misma lectura con lo cual el eje de declinacion estara ajustado con respecto al de ascension recta"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura-ajuste.jpg",
       "alt": "MONTURA AJUSTE",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/montura-ajuste-2.jpg",
       "alt": "MONTURA AJUSTE 2",
       "type": "image",
+      "text": "sistema de arrastre",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "sistema de arrastre"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/bisinfin1.jpg",
       "alt": "bisinfin",
       "type": "image",
+      "text": "corona dentada 360 dientes",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "corona dentada 360 dientes"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/corona-ar.jpg",
       "alt": "Corona AR",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/sistema-de-arrastre1.jpg",
       "alt": "OLYMPUS DIGITAL CAMERA",
       "type": "image",
+      "text": "Segundo ajuste con la polar",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Segundo ajuste con la polar"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/laser-polar2.jpg",
       "alt": "laser polar2",
       "type": "image",
+      "text": "Imagen del laser apuntando a la polar una vez colimado el telescopio con el laser veremos este en el centro del campo y al girar 360º permanecera la polar en el centro del ocular reticulado con lo cual tendremos montura telescopio “casi ” colimados",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Imagen del laser apuntando a la polar una vez colimado el telescopio con el laser veremos este en el centro del campo y al girar 360º permanecera la polar en el centro del ocular reticulado con lo cual tendremos montura telescopio “casi ” colimados"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/laser-polar.jpg",
       "alt": "laser polar",
       "type": "image",
-      "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Primera luz New 360mm F1810mm 30 agosto 2006 Camara digital Olympus"
+      "text": "Primera luz New 360mm F1810mm 30 agosto 2006 Camara digital Olympus",
+      "fecha": "20060830",
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/m27-358-2.jpg",
       "alt": "m27 358 2",
       "type": "image",
+      "text": "COMPUTERIZACION",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "COMPUTERIZACION"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/scope.gif",
       "alt": "scope",
       "type": "image",
+      "text": "Construccion de placa doble cara",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Construccion de placa doble cara"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/placa-doble-cara1.jpg",
       "alt": "Placa doble cara",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/placa-montada1.jpg",
       "alt": "Placa montada",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/electronica-interior1.jpg",
       "alt": "electronica interior",
       "type": "image",
-      "fecha": "201211",
       "text": " \n\nPanel trasero",
-      "url": "/construccion-del-observatorio"
+      "fecha": "201211",
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/electronica-panel-trasero-copy1.jpg",
       "alt": "electronica panel trasero copy",
       "type": "image",
+      "text": "Instalación Radiadores en zona de potencia",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Instalación Radiadores en zona de potencia"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/electronica-mel1.jpg",
       "alt": "ELECTRONICA MEL",
       "type": "image",
+      "text": "Telescopio terminado",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Telescopio terminado"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/nw-358-2.jpg",
       "alt": "NW 358 2",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/mosaico-358mm.jpg",
       "alt": "MOSAICO 358mm",
       "type": "image",
+      "text": "Primeras medidas conSensor de Calidad del Cielo y Detector de Nubes",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio",
-      "text": "Primeras medidas conSensor de Calidad del Cielo y Detector de Nubes"
+      "url": "/observatorio"
     },
     {
       "type": "header",
       "text": "<a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" >Tess</a>",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/calibrado.jpg",
       "alt": "calibrado",
       "type": "image",
       "fecha": "201211",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/11/franja.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202011",
-      "url": "/construccion-del-observatorio"
+      "url": "/observatorio"
     }
   ]
 }

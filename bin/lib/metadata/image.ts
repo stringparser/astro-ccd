@@ -2,7 +2,47 @@ import { ImageProps } from "../types";
 import { mapCometImageMetadata } from "./comet-image";
 import { mapGalaxyImageMetadata } from "./galaxy-image";
 
-export function mapImageFecha(src: string = '') {
+const mesMap = {
+  enero: '01',
+  febrero: '02',
+  marzo: '03',
+  abril: '04',
+  mayo: '05',
+  junio: '06',
+  julio: '07',
+  agosto: '08',
+  septembre: '09',
+  octubre: '10',
+  noviembre: '11',
+  diciembre: '12',
+};
+
+export function mapImageFecha(props: ImageProps) {
+  const {
+    src = '',
+    text,
+  } = props;
+
+  const fechaDeTexto = new RegExp([
+    '(\\d{1,2})',
+    '(?:\\s*(de)?\\s*)',
+    `(${Object.keys(mesMap).join('|')})`,
+    '(?:\\s*(de)?\\s*)',
+    '(\\d{4})'
+  ].join(''), 'i').exec(text);
+
+  if (fechaDeTexto) {
+    const [dia, mes, año] = fechaDeTexto.slice(1).filter(v => v);
+
+    const result = [
+      año,
+      mesMap[mes.toLowerCase()],
+      dia.length === 1 ? `0${dia}` : dia
+    ].join('');
+
+    return result;
+  }
+
   const fechaDeArchivo = (/_(\d{8})[_.i]/.exec((src.split('/').pop() || '')) || ['']).pop();
 
   if (fechaDeArchivo) {
@@ -13,7 +53,7 @@ export function mapImageFecha(src: string = '') {
     .join();
 
   if (fechaConMesDeArchivo) {
-    return fechaDeArchivo.replace(/julio/i, '7');
+    return fechaDeArchivo.replace(/julio/i, '07');
   }
 
   const fechaDeURL = (/\/(\d{4}\/\d{2})\//.exec(src) || ['']).pop().replace('/', '');
@@ -32,7 +72,6 @@ export default function mapImageMetadata(pageURL: string, el: cheerio.Cheerio, t
     src,
     alt,
     type: 'image',
-    fecha: mapImageFecha(src),
   };
 
   if (textContent) {

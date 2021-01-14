@@ -4,145 +4,145 @@
     {
       "type": "header",
       "text": "SISTEMA SOLAR",
-      "url": "/planetas-satelites"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/conjuncion.gif",
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "url": "/planetas-satelites"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/jupiter-saturno-20diciembre2020-2.png",
       "alt": "",
       "type": "image",
+      "text": "Conjuncion Jupiter &amp; Saturno",
       "fecha": "202012",
-      "url": "/planetas-satelites",
-      "text": "Conjuncion Jupiter &amp; Saturno"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/dsc05191.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202012",
-      "url": "/planetas-satelites"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/1_152049_l5_ap666.png",
       "alt": "",
       "type": "image",
-      "fecha": "202012",
       "text": "<figcaption>Imagen del sol dia 1 diciembre</figcaption>",
-      "url": "/planetas-satelites"
+      "fecha": "202012",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg?w=736",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es img-20201030-wa0020.jpg",
       "type": "image",
-      "fecha": "202011",
-      "url": "/planetas-satelites",
-      "text": "Marte 29 Octubre 2020"
+      "text": "Marte 29 Octubre 2020",
+      "fecha": "20201029",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/luna_14noviembre2016.jpg",
       "alt": "luna_14noviembre2016",
       "type": "image",
-      "fecha": "201404",
-      "url": "/planetas-satelites",
-      "text": "Superluna 14Noviembre2016"
+      "text": "Superluna 14Noviembre2016",
+      "fecha": "20161114",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/luna-110-2pa2.jpg",
       "alt": "LUNA 110  2PA",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/luna-358mmpa1.jpg",
       "alt": "LUNA 358MMPA",
       "type": "image",
-      "fecha": "201404",
-      "url": "/planetas-satelites",
-      "text": "Eclipse 20Marzo2015 (nublado)"
+      "text": "Eclipse 20Marzo2015 (nublado)",
+      "fecha": "20150320",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/ecclipse1_20marzo_2015-006.jpg",
       "alt": "ECCLIPSE1_20MARZO_2015 006",
       "type": "image",
-      "fecha": "201404",
       "text": "  \n\nImagen de la luna New 360mm F1810mm Camara Nikon D90",
-      "url": "/planetas-satelites"
+      "fecha": "201404",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/conjuncion-19-junio-venus-luna1.jpg",
       "alt": "OLYMPUS DIGITAL CAMERA",
       "type": "image",
-      "fecha": "201404",
-      "url": "/planetas-satelites",
-      "text": "CONJUNCION VENUS LUNA 18 JUNIO 2007 14H 19M TU REFLECTOR 358 F5+CAMARA OLYMPUS E1 imagen a pleno dia"
+      "text": "CONJUNCION VENUS LUNA 18 JUNIO 2007 14H 19M TU REFLECTOR 358 F5+CAMARA OLYMPUS E1 imagen a pleno dia",
+      "fecha": "20070618",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/eclipse-3-marzo-2007.jpg",
       "alt": "Eclipse 3 Marzo 2007",
       "type": "image",
-      "fecha": "201404",
-      "url": "/planetas-satelites",
-      "text": "Eclipse de luna 3 marzo 2007 Camara digital"
+      "text": "Eclipse de luna 3 marzo 2007 Camara digital",
+      "fecha": "20070303",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/eclipse-3-marzo-2007-ccd.jpg",
       "alt": "Eclipse 3 marzo 2007 ccd",
       "type": "image",
-      "fecha": "201404",
-      "url": "/planetas-satelites",
-      "text": "Eclipse de luna 3 marzo 2007 ccd filtro h alfa"
+      "text": "Eclipse de luna 3 marzo 2007 ccd filtro h alfa",
+      "fecha": "20070303",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/sol.jpg",
       "alt": "Sol",
       "type": "image",
+      "text": "El Sol captado con una camara digital y Reflector 150mm a F10",
       "fecha": "201404",
-      "url": "/planetas-satelites",
-      "text": "El Sol captado con una camara digital y Reflector 150mm a F10"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/transito-venus-camara-reflex.jpg",
       "alt": "transito venus camara reflex",
       "type": "image",
-      "fecha": "201404",
-      "url": "/planetas-satelites",
-      "text": "TRANSITO DE VENUS 8 JUNIO 2004"
+      "text": "TRANSITO DE VENUS 8 JUNIO 2004",
+      "fecha": "20040608",
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0007-copia.gif",
       "alt": "CCDCap0007 copia",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0017.jpg",
       "alt": "CCDCap0017",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0034.jpg",
       "alt": "CCDCap0034",
       "type": "image",
       "fecha": "201404",
-      "url": "/planetas-satelites"
+      "url": "/sistema-solar"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg",
       "alt": "CCDCap0050",
       "type": "image",
-      "fecha": "201404",
       "text": "<a href=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\">Mañana del dia 8 Junio 2004 8.30 /9.30 UT</a>\n\nSecuencia final del transitoWebcam+New 150mm",
-      "url": "/planetas-satelites"
+      "fecha": "20040608",
+      "url": "/sistema-solar"
     }
   ]
 }
