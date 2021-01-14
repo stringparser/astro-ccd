@@ -309,7 +309,7 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
   if (/^apophis-/.test(id)) {
     return {
       ...props,
-      id: '99942',
+      id: '99942 Apophis',
       alias: 'Apophis'
     };
   }
