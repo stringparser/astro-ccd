@@ -1,6 +1,6 @@
-import { ImageProps } from "../types";
+import { PageItemProps } from "../types";
 
-export function mapCometImageMetadata(props: ImageProps): ImageProps {
+export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   const { src, id } = props;
 
   if (/^c?2020-?f3/i.test(id) || src === 'https://astroccd.files.wordpress.com/2020/07/re3.jpg') {
@@ -17,6 +17,15 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
       id: 'C/2013 US10',
       alias: 'CATALINA',
     };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2012/12/tempel-dia-3-y-4-julio-2005.jpg') {
+    return {
+      ...props,
+      id: 'C/2006 P1',
+      alias: 'McNaught',
+      fecha: '20070112',
+    }
   }
 
   if (/^c?2019-?y1/i.test(id)) {
@@ -302,7 +311,8 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     return {
       ...props,
       id: 'C/2012 S1',
-      alias: 'ISON'
+      alias: 'ISON',
+      fecha: '20131116',
     };
   }
 

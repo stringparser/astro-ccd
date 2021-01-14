@@ -1,19 +1,8 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
-import { cleanHTML, mapTextToUrl } from './util';
+import { cleanHTML } from './util';
 import mapImageMetadata from './metadata/image';
-import { TextItem, TitleItem, ImageProps } from './types';
-
-export type PageItemProps =
-  TextItem |
-  TitleItem |
-  ImageProps
-;
-
-export type ParsedPageContent = {
-  url: string;
-  items: PageItemProps[];
-};
+import { PageItemProps, ParsedPageContent } from './types';
 
 export function fetchPageContent(url: string): Promise<ParsedPageContent> {
 

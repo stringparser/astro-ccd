@@ -2,73 +2,74 @@
   "url": "https://astro-ccd.com/ccd-2",
   "items": [
     {
+      "fecha": "202011",
+      "url": "/reparacion-ccd/202011",
       "type": "header",
-      "text": "REPARACION CCD SBIG",
-      "url": "/reparacion-ccd"
+      "text": "REPARACION CCD SBIG"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd/202012",
       "src": "https://astroccd.files.wordpress.com/2020/11/msaico-1.jpg",
       "alt": "",
       "type": "image",
-      "text": "Mi profesion es la venta&amp;reparacion de aparatos electronicos desde 1983",
-      "fecha": "202011",
-      "url": "/reparacion-ccd"
+      "text": "Mi profesion es la venta&amp;reparacion de aparatos electronicos desde 1983"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd/202012",
       "src": "https://astroccd.files.wordpress.com/2020/11/cb245.jpg",
       "alt": "",
       "type": "image",
-      "text": "Poco despues adquiri una sbig st2000xm de segunda mano de un compañero de aficion",
-      "fecha": "202011",
-      "url": "/reparacion-ccd"
+      "text": "Poco despues adquiri una sbig st2000xm de segunda mano de un compañero de aficion"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd/202012",
       "src": "https://astroccd.files.wordpress.com/2020/12/20201002_104339.jpg",
       "alt": "",
       "type": "image",
-      "text": "Fuente Alimentacion averiada por sobretensión",
-      "fecha": "202012",
-      "url": "/reparacion-ccd"
+      "text": "Fuente Alimentacion averiada por sobretensión"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd/202012",
       "src": "https://astroccd.files.wordpress.com/2020/12/20200522_184920.jpg?w=978",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es 20200522_184920.jpg",
       "type": "image",
-      "text": "Problemas causados por la humedad",
-      "fecha": "202012",
-      "url": "/reparacion-ccd"
+      "text": "Problemas causados por la humedad"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd/202012",
       "src": "https://astroccd.files.wordpress.com/2020/12/20200603_110317.jpg",
       "alt": "",
       "type": "image",
-      "text": "Fallos en el peltier",
-      "fecha": "202012",
-      "url": "/reparacion-ccd"
+      "text": "Fallos en el peltier"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd/202012",
       "src": "https://astroccd.files.wordpress.com/2020/12/cuentas.jpg?w=1024",
       "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es cuentas.jpg",
       "type": "image",
-      "text": "Lectura muy baja de ADUs en estrellas saturadas",
-      "fecha": "202012",
-      "url": "/reparacion-ccd"
+      "text": "Lectura muy baja de ADUs en estrellas saturadas"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd",
       "src": "https://astroccd.files.wordpress.com/2020/12/img-20200425-wa0014.jpg",
       "alt": "",
       "type": "image",
-      "text": "Lineas horizontales en las imagenes",
-      "fecha": "202012",
-      "url": "/reparacion-ccd"
+      "text": "Lineas horizontales en las imagenes"
     },
     {
+      "fecha": "202012",
+      "url": "/reparacion-ccd",
       "src": "https://astroccd.files.wordpress.com/2020/12/guiado.jpg",
       "alt": "",
       "type": "image",
-      "text": "Mal funcionamiento ccd de guiado",
-      "fecha": "202012",
-      "url": "/reparacion-ccd"
+      "text": "Mal funcionamiento ccd de guiado"
     }
   ]
 }

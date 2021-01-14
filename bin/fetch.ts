@@ -1,8 +1,8 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { mapTextToUrl, mapMDX } from './lib/util';
-import { fetchPageContent, PageItemProps, ParsedPageContent } from './lib';
-import { mapImageFecha } from './lib/metadata/image';
+import { fetchPageContent } from './lib';
+import { ParsedPageContent, PageItemProps } from './lib/types';
+import { mapTextToUrl, mapFecha, mapMDX, mapItemFecha } from './lib/util';
 
 const urlMap = {
   'ccd-2': 'reparacion-ccd',
@@ -49,42 +49,32 @@ Promise.all([
           return acc.concat(item);
         }, [])
         .map(item => {
-          switch (item.type) {
-            case 'image': {
-              return {
-                ...item,
-                fecha: mapImageFecha(item),
-              };
-            }
-            default: {
-              return item;
-            }
-          }
-        })
-        .map(item => {
-          const { id, ...it } = item;
+          const {
+            id: itemId,
+            url: itemUrl,
+            fecha: itemFecha,
+            ...it
+          } = item;
 
-          if (!id || it.type === 'header') {
-            return {
-              ...it,
-              url: `/${basename}`,
-            };
-          }
+          const id = mapTextToUrl(itemId);
+          const fecha = mapFecha(item);
 
-          const urlID = mapTextToUrl(id);
-          const basenameURLID = [
-            item.fecha,
-            urlMap[urlID] || urlID,
+          const urlID = [
+            fecha,
+            urlMap[id] || id,
           ].filter(v => v).join('-');
 
           return {
-            id: urlID,
-            ...it,
-            url: basenameURLID === basename
+            id: itemId,
+            fecha,
+            url: urlID === basename
               ? `/${basename}`
-              : `/${basename}/${basenameURLID}`,
+              : `/${basename}/${urlID}`,
+            ...it,
           };
         })
+        .map(mapItemFecha(basename))
+        .map(mapItemFecha(basename))
     }
   });
 
@@ -129,16 +119,20 @@ Promise.all([
       return acc;
     }
 
-    const key = item.url;
+    const key = (item.url).replace(/\/$/, '');
+    const index = acc[key]
+      ? acc[key].length - 1
+      : 0
+    ;
 
     return {
       ...acc,
-      [key]: (acc[key] || []).concat(mapMDX(item)),
+      [key]: (acc[key] || []).concat(mapMDX(item, index)),
     };
   }, {} as Record<string, string>);
 
   return fs.writeFile(
-    path.resolve(__dirname, '..', 'src', 'data', 'pages.json'),
+    path.resolve(__dirname, 'pages.json'),
     JSON.stringify(pages, null, 2),
   );
 });

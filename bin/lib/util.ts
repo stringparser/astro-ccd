@@ -1,4 +1,4 @@
-import { PageItemProps } from ".";
+import { PageItemProps } from "./types";
 
 export const cleanHTML = (html: string = '') => {
   return (html
@@ -43,7 +43,7 @@ export const mapTextToUrl = (input: string = '') => {
   );
 };
 
-export const mapMDX = (el: PageItemProps) => {
+export const mapMDX = (el: PageItemProps, index: number) => {
   switch (el.type) {
     case 'text': {
       return el.text;
@@ -58,4 +58,123 @@ export const mapMDX = (el: PageItemProps) => {
       ].filter(v => v).join('\n\n');
     }
   }
+}
+
+export const mapItemFecha =
+  (basename: string) =>
+  (item: PageItemProps, index: number, items: PageItemProps[]) => {
+    const { id, ...it } = item;
+
+    if (/Lista de códigos MPC/.test(item.text)) {
+      return {
+        ...it,
+        url: `/${basename}`,
+      };
+    }
+
+    if (!id || /^(text|header)$/.test(it.type)) {
+      const next = items[index + 1];
+
+      const result = {
+        ...it,
+        url: `/${basename}`,
+      };
+
+      if (
+        next?.fecha?.length >= 6
+        && !/^\/fuensanta/.test(next?.url)
+      ) {
+        result.url = next.url;
+        result.fecha = next.fecha;
+      }
+
+      return result;
+    }
+
+    return item;
+  }
+;
+
+export const mesMap = {
+  enero: '01',
+  febrero: '02',
+  marzo: '03',
+  abril: '04',
+  mayo: '05',
+  junio: '06',
+  julio: '07',
+  agosto: '08',
+  septembre: '09',
+  octubre: '10',
+  noviembre: '11',
+  diciembre: '12',
+};
+
+export function mapFecha(props: PageItemProps) {
+  const {
+    src = '',
+    text,
+    fecha,
+  } = props;
+
+  if (fecha) {
+    return fecha;
+  }
+
+  if (/youtu\.be\/po6as9H-_hk/i.test(text)) {
+    return '20140915';
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2020/07/2020f3hdr.jpg') {
+    return '20200719';
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2012/12/c2014j2_1_20.jpg') {
+    return '20140915';
+  }
+
+  if (/%28308635%29_2005_YU55/.test(text)) {
+    return
+  }
+
+  const fechaDeTexto = new RegExp([
+    '(\\d{1,2})',
+    '(?:\\s*(de)?\\s*)',
+    `(${Object.keys(mesMap).join('|')})`,
+    '(?:\\s*(de)?\\s*)',
+    '(\\d{4})'
+  ].join(''), 'i').exec(text);
+
+  if (fechaDeTexto) {
+    const [dia, mes, año] = fechaDeTexto.slice(1).filter(v => v);
+
+    const result = [
+      año,
+      mesMap[mes.toLowerCase()],
+      dia.length === 1 ? `0${dia}` : dia
+    ].join('');
+
+    return result;
+  }
+
+  const fechaDeArchivo = (/_(\d{8})[_.i]/.exec((src.split('/').pop() || '')) || ['']).pop();
+
+  if (fechaDeArchivo) {
+    return fechaDeArchivo;
+  }
+
+  const fechaConMesDeArchivo = (/_(\d{1,2})julio(\d{4})[_.i]/i.exec((src.split('/').pop() || '')) || [])
+    .join();
+
+  if (fechaConMesDeArchivo) {
+    return fechaDeArchivo.replace(/julio/i, '07');
+  }
+
+  const fechaDeURL = (/\/(\d{4}\/\d{2})\//.exec(src) || ['']).pop().replace('/', '');
+
+  if (fechaDeURL) {
+    return fechaDeURL;
+  }
+
+  return '';
 }

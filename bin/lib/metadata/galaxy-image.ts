@@ -1,4 +1,4 @@
-import { ImageProps } from "../types";
+import { PageItemProps } from "../types";
 
 const SN_RE = /(?:^|_)sn-?([^\s-_]+)/i;
 const IC_RE = /(?:^|[_\d-]+)ic[-_]?(\d+)/i;
@@ -16,7 +16,7 @@ const LOCATION_PROPS = {
   },
 };
 
-export function mapGalaxyImageMetadata(props: ImageProps): ImageProps {
+export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
   const { src, id } = props;
 
   if (
@@ -28,6 +28,46 @@ export function mapGalaxyImageMetadata(props: ImageProps): ImageProps {
       id: 'Abell 2151',
       alias: 'Hercules Cluster',
     };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2021/01/final.jpg') {
+    return {
+      ...props,
+      id: '20210112-zona-orion',
+      fecha: '20210112'
+    };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2020/03/img-20200302-wa0019.jpg') {
+    return {
+      ...props,
+      id: 'NGC 2024',
+      fecha: '20190929',
+    };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2012/10/user_556_medusa_pa.jpg') {
+    return {
+      ...props,
+      id: 'abel 21',
+    };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2012/11/comparativa.jpg') {
+    return {
+      ...props,
+      id: 'S106',
+      fecha: '20150715',
+    };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2018/08/1.png') {
+    return {
+      ...props,
+      id: 'NGC 7000',
+      fecha: '20180808',
+      alias: 'Nebulosa del pelícano',
+    }
   }
 
   if (/^sn2020jfo/i.test(id)) {
