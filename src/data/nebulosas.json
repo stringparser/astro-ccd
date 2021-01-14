@@ -2,45 +2,53 @@
   "url": "https://astro-ccd.com/nebulosas",
   "items": [
     {
-      "id": "nebulosas",
       "type": "header",
       "text": "NEBULOSAS",
       "url": "/nebulosas"
     },
     {
-      "id": "img-20200302",
+      "id": "final",
+      "src": "https://astroccd.files.wordpress.com/2021/01/final.jpg",
+      "alt": "final",
+      "type": "image",
+      "fecha": "202101",
+      "url": "/nebulosas/final",
+      "text": "zona de Orion 12 enero 2021"
+    },
+    {
+      "id": "img-20200302-wa0019",
       "src": "https://astroccd.files.wordpress.com/2020/03/img-20200302-wa0019.jpg",
       "alt": "",
       "type": "image",
       "fecha": "202003",
-      "url": "/nebulosas/img-20200302",
+      "url": "/nebulosas/img-20200302-wa0019",
       "text": "NGC 2237Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020"
     },
     {
-      "id": "NGC-2024",
+      "id": "ngc-2024",
       "src": "https://astroccd.files.wordpress.com/2019/10/ngc2024final.jpg",
       "alt": "NGC2024final",
       "type": "image",
       "fecha": "201910",
-      "url": "/nebulosas/NGC-2024",
+      "url": "/nebulosas/ngc-2024",
       "text": "NGC 2024 29 Septiembre 2019 T 200mm F 1400mm+Sony A7s"
     },
     {
-      "id": "M45",
+      "id": "m45",
       "src": "https://astroccd.files.wordpress.com/2019/10/m45final.jpg",
       "alt": "M45final",
       "type": "image",
       "fecha": "201910",
-      "url": "/nebulosas/M45",
+      "url": "/nebulosas/m45",
       "text": "M45 29 Septiembre 2019 T 200mm F 1400mm+Sony A7s"
     },
     {
-      "id": "M57",
+      "id": "m57",
       "src": "https://astroccd.files.wordpress.com/2018/10/m57_f.jpg",
       "alt": "m57_F",
       "type": "image",
       "fecha": "201810",
-      "url": "/nebulosas/M57",
+      "url": "/nebulosas/m57",
       "text": "M57 7 Octrubre 2018 New 360mm F 2730mm"
     },
     {
@@ -53,67 +61,67 @@
       "text": "Nebulosa del pelicano 8Agosto2018"
     },
     {
-      "id": "M97",
+      "id": "m97",
       "src": "https://astroccd.files.wordpress.com/2018/04/m97.jpg",
       "alt": "m97",
       "type": "image",
       "fecha": "201804",
-      "url": "/nebulosas/M97",
+      "url": "/nebulosas/m97",
       "text": "M97 20*180s B1 17Abril 2018"
     },
     {
-      "id": "M42",
+      "id": "m42",
       "src": "https://astroccd.files.wordpress.com/2012/11/m42f_re.jpg",
       "alt": "m42f_re",
       "type": "image",
       "fecha": "201211",
-      "url": "/nebulosas/M42",
+      "url": "/nebulosas/m42",
       "text": "M42 26Enero2016 nikon d90 sin modificar"
     },
     {
-      "id": "M1",
+      "id": "m1",
       "src": "https://astroccd.files.wordpress.com/2012/11/m1_20161111_i88.jpg",
       "alt": "m1_20161111_i88",
       "type": "image",
       "fecha": "20161111",
-      "url": "/nebulosas/M1",
+      "url": "/nebulosas/m1",
       "text": "M1 Noviembre 2016"
     },
     {
-      "id": "M42",
+      "id": "m42",
       "src": "https://astroccd.files.wordpress.com/2012/11/m42_20160101_i88.jpg",
       "alt": "M42_20160101_I88",
       "type": "image",
       "fecha": "20160101",
-      "url": "/nebulosas/M42",
+      "url": "/nebulosas/m42",
       "text": "M42 mosaico de dos imagenes"
     },
     {
-      "id": "IC-434",
+      "id": "ic-434",
       "src": "https://astroccd.files.wordpress.com/2012/11/zona_-ic434_re.jpg",
       "alt": "zona_ ic434_re",
       "type": "image",
       "fecha": "201211",
-      "url": "/nebulosas/IC-434",
+      "url": "/nebulosas/ic-434",
       "text": "Zona ic 434 rgb 600sR 600sG 600sB R ts65 f 420 +ccd"
     },
     {
-      "id": "IC-434",
+      "id": "ic-434",
       "src": "https://astroccd.files.wordpress.com/2012/11/2024-ic434-pp.jpg",
       "alt": "2024 ic434 PP",
       "type": "image",
       "fecha": "201211",
-      "url": "/nebulosas/IC-434",
+      "url": "/nebulosas/ic-434",
       "text": "Mosaico Zona ic 434 New 360 mm f 1810+ccd"
     },
     {
-      "id": "IC-5146",
+      "id": "ic-5146",
       "src": "https://astroccd.files.wordpress.com/2012/10/ic-5146-15-600s-pa2.jpg",
       "alt": "ic 5146 15 600s PA",
       "type": "image",
       "fecha": "201210",
       "text": "ngc5146",
-      "url": "/nebulosas/IC-5146"
+      "url": "/nebulosas/ic-5146"
     },
     {
       "id": "user_556_medusa_pa",
@@ -142,48 +150,48 @@
       "url": "/nebulosas/comparativa"
     },
     {
-      "id": "M27",
+      "id": "m27",
       "src": "https://astroccd.files.wordpress.com/2012/11/m27_19junio2015final.jpg",
       "alt": "M27_19jUNIO2015final",
       "type": "image",
       "fecha": "201211",
       "text": "S106 en la constelacion de Cisne 15Julio2015 (comparativa telescopio Subaru 8.2mts)\n\nM27RGB",
-      "url": "/nebulosas/M27"
+      "url": "/nebulosas/m27"
     },
     {
-      "id": "M27",
+      "id": "m27",
       "src": "https://astroccd.files.wordpress.com/2012/11/m27.jpg",
       "alt": "m27",
       "type": "image",
       "fecha": "201211",
-      "url": "/nebulosas/M27",
+      "url": "/nebulosas/m27",
       "text": "M27 Halfa"
     },
     {
-      "id": "M57",
+      "id": "m57",
       "src": "https://astroccd.files.wordpress.com/2012/11/rgbpix3.jpg",
       "alt": "RGBPIX3",
       "type": "image",
       "fecha": "201211",
       "text": "M57 RGB",
-      "url": "/nebulosas/M57"
+      "url": "/nebulosas/m57"
     },
     {
-      "id": "NGC-6888",
+      "id": "ngc-6888",
       "src": "https://astroccd.files.wordpress.com/2012/10/ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg",
       "alt": "Ngc 6888 RGB 8 2 4 IMAGE 1200S 21 AGO 2009",
       "type": "image",
       "fecha": "201210",
-      "url": "/nebulosas/NGC-6888",
+      "url": "/nebulosas/ngc-6888",
       "text": "NGC 6888 Ha 8 imagenes de 1200s"
     },
     {
-      "id": "NGC-7635",
+      "id": "ngc-7635",
       "src": "https://astroccd.files.wordpress.com/2012/10/l-ngc-7635-pa.jpg",
       "alt": "L ngc 7635 Pa",
       "type": "image",
       "fecha": "201210",
-      "url": "/nebulosas/NGC-7635",
+      "url": "/nebulosas/ngc-7635",
       "text": "Ngc 7635 filtro ha"
     }
   ]

@@ -3,11 +3,19 @@ import { ImageProps } from "../types";
 export function mapCometImageMetadata(props: ImageProps): ImageProps {
   const { src, id } = props;
 
-  if (/^c?2020f3/i.test(id) || src === 'https://astroccd.files.wordpress.com/2020/07/re3.jpg') {
+  if (/^c?2020-?f3/i.test(id) || src === 'https://astroccd.files.wordpress.com/2020/07/re3.jpg') {
     return {
       ...props,
       id: 'C/2020 F3',
       alias: 'neowise',
+    };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2012/12/rgbpro_2.jpg') {
+    return {
+      ...props,
+      id: 'C/2013 US10',
+      alias: 'CATALINA',
     };
   }
 
@@ -138,6 +146,14 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     };
   }
 
+  if (id === '2015v2_20171112_i88') {
+    return {
+      ...props,
+      id: 'C/2015 V1',
+      alias: 'panstars'
+    };
+  }
+
   if (/^c?2015-?V2/i.test(id)) {
     return {
       ...props,
@@ -170,7 +186,7 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     };
   }
 
-  if (/^c?2015-?01/i.test(id)) {
+  if (/^c?2015-?(O|0)1/i.test(id)) {
     return {
       ...props,
       id: 'C/2015 O1',
@@ -210,7 +226,7 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     };
   }
 
-  if (/^c?[-_]?2015-?F4/i.test(id)) {
+  if (/^c?[-_]?2015-?F4/i.test(id) || src === 'https://astroccd.files.wordpress.com/2012/12/20150913_i88.jpg') {
     return {
       ...props,
       id: 'C/2015 F4',
@@ -266,7 +282,11 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     };
   }
 
-  if (/^c?[-_]?2013-?R1/i.test(id) || src === 'https://astroccd.files.wordpress.com/2012/12/procesado.jpg') {
+  if (
+    /^c?[-_]?2013-?R1/i.test(id)
+    || src === 'https://astroccd.files.wordpress.com/2012/12/procesado.jpg'
+    || id === '15-febrero-2013-201da12-20-10-5-2-1'
+  ) {
     return {
       ...props,
       id: 'C/2013 R1',
@@ -274,7 +294,11 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     };
   }
 
-  if (/^(user_556_)?c?[-_]?2012-?S1/i.test(id)) {
+  if (
+    /^(user_556_)?c?[-_]?2012-?S1/i.test(id)
+    || src === 'https://i1.wp.com/iopscience.iop.org/img/i/apj-logo.gif'
+    || id === 'user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011'
+  ) {
     return {
       ...props,
       id: 'C/2012 S1',
@@ -306,7 +330,11 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     };
   }
 
-  if (/^(user_556_)?c?[-_]?2011-?L4/i.test(id)) {
+  if (
+    /^(user_556_)?c?[-_]?2011-?L4/i.test(id)
+    || id === 'user_556_c2011_l4pa_15_julio2012_1342515487_708930'
+    || src === 'https://astroccd.files.wordpress.com/2012/11/obras_031.gif'
+  ) {
     return {
       ...props,
       id: 'C/2011 L4',
@@ -314,10 +342,14 @@ export function mapCometImageMetadata(props: ImageProps): ImageProps {
     };
   }
 
-  if (/^2005yu55/.test(id)) {
+  if (
+    /c?2005[-_]?yu55/i.test(id)
+    || src === 'https://astroccd.files.wordpress.com/2012/12/lulin-26-60s-l-pag-24fe-2009.jpg'
+  ) {
     return {
       ...props,
-      id: '(308635) 2005 YU55',
+      id: '2005 YU55',
+      alias: '(308635) 2005 YU55'
     };
   }
 

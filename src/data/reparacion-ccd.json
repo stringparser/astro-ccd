@@ -2,10 +2,9 @@
   "url": "https://astro-ccd.com/ccd-2",
   "items": [
     {
-      "id": "reparacion-ccd-sbig",
       "type": "header",
       "text": "REPARACION CCD SBIG",
-      "url": "/reparacion-ccd/reparacion-ccd-sbig"
+      "url": "/reparacion-ccd"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/11/msaico-1.jpg",

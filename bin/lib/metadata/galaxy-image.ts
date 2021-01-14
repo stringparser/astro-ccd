@@ -19,7 +19,10 @@ const LOCATION_PROPS = {
 export function mapGalaxyImageMetadata(props: ImageProps): ImageProps {
   const { src, id } = props;
 
-  if (/^(abel-2151|hubble_sequence_photo|20170506_200443)/.test(id)) {
+  if (
+    /^(abel-2151|hubble_sequence_photo|20170506_200443)/.test(id)
+    || src === 'https://astroccd.files.wordpress.com/2014/02/logodef.png'
+  ) {
     return {
       ...props,
       id: 'Abell 2151',
@@ -180,10 +183,30 @@ export function mapGalaxyImageMetadata(props: ImageProps): ImageProps {
     }
   }
 
-  if (/^oj287/.test(id) || src === 'https://astroccd.files.wordpress.com/2012/12/oj287medidas.jpg') {
+  if (
+    /^oj287/.test(id)
+    || src === 'https://astroccd.files.wordpress.com/2012/12/oj287medidas.jpg'
+    || src === 'https://astroccd.files.wordpress.com/2012/12/pulsar.jpg'
+  ) {
     return {
       ...props,
       id: 'OJ287',
+    };
+  }
+
+  if (
+    src === 'https://astroccd.files.wordpress.com/2012/12/quinteto.png'
+  ) {
+    return {
+      ...props,
+      id: '20151115-quinteto'
+    };
+  }
+
+  if (src === 'https://i0.wp.com/www.astrosurf.com/snweb2/images/rainbowl.gif') {
+    return {
+      ...props,
+      id: 'SN 2005cs',
     };
   }
 

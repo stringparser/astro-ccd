@@ -2,10 +2,9 @@
   "url": "https://astro-ccd.com/planetas-satelites",
   "items": [
     {
-      "id": "sistema-solar",
       "type": "header",
       "text": "SISTEMA SOLAR",
-      "url": "/planetas-satelites/sistema-solar"
+      "url": "/planetas-satelites"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2020/12/conjuncion.gif",

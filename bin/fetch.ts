@@ -27,7 +27,7 @@ Promise.all([
       ...el,
       items: el.items
         .map(({ id, ...it }) => {
-          if (!id) {
+          if (!id || it.type === 'header') {
             return {
               ...it,
               url: `/${basename}`,
@@ -40,7 +40,7 @@ Promise.all([
           return {
             id: urlID,
             ...it,
-            url: basenameURLID === basename.toLowerCase()
+            url: basenameURLID === basename
               ? `/${basename}`
               : `/${basename}/${basenameURLID}`,
           };
@@ -72,57 +72,62 @@ Promise.all([
     JSON.stringify(results, null, 2)
   );
 
-  const pagesContent = await Promise.all(results.map(el => {
-      const baseURL = el.url.split('/').pop();
-      const basename = urlMap[baseURL] || baseURL;
+  await Promise.all(results.map(el => {
+    const baseURL = el.url.split('/').pop();
+    const basename = urlMap[baseURL] || baseURL;
 
+    const mdx = el.items.map(mapMDX)
+      .filter(value => value)
+      .join('\n\n')
+    ;
+
+    return Promise.all([
       fs.writeFile(
         path.resolve(__dirname, '..', 'src', 'data', `${basename}.json`),
         JSON.stringify(el, null, 2),
-      );
-
-      const mdx = el.items.map(mapMDX)
-        .filter(value => value)
-        .join('\n\n')
-      ;
-
-      return fs.writeFile(
+      ),
+      fs.writeFile(
         path.resolve(__dirname, '..', 'src', 'pages', basename, 'index.mdx'),
         mdx
-      ).then(() => results)
-    })
-  ).then(results => results
-    .flat()
+      )
+    ]);
+  }));
+
+  const pagesItems = results
     .map(el => el.items)
     .flat()
-  );
+  ;
 
   await fs.writeFile(
-    path.resolve(__dirname, 'pages-content.json'),
-    JSON.stringify(pagesContent, null, 2)
+    path.resolve(__dirname, 'pages-items.json'),
+    JSON.stringify(pagesItems, null, 2)
   );
 
-  const fileStream: Record<string, fs.WriteStream> = {};
-
-  pagesContent.forEach(item => {
+  const pages = pagesItems.reduce((acc, item) => {
     if (!item.url) {
-      return;
+      return acc;
     }
 
-    const stream = fileStream[item.url] || (
-      fileStream[item.url] = fs.createWriteStream(
-        /(\/[^\s\/]+){2,}/.test(item.url)
-          ? path.join(__dirname, '..', 'src', 'pages', `${item.url}.mdx`)
-          : path.join(__dirname, '..', 'src', 'pages', `${item.url}/index.mdx`)
-        ,
-        {
-          start: 0,
-          flags: 'w',
-          encoding: 'utf-8',
-        }
-      )
-    );
+    return {
+      ...acc,
+      [item.url]: (acc[item.url] || []).concat(mapMDX(item)),
+    };
+  }, {} as Record<string, string>);
 
-    stream.write(`${mapMDX(item)}\n\n`);
-  });
+  return fs.writeFile(
+    path.resolve(__dirname, '..', 'src', 'data', 'pages.json'),
+    JSON.stringify(pages, null, 2),
+  );
 });
+
+// fs.createWriteStream(
+//   /(\/[^\s\/]+){2,}/.test(item.url)
+//     ? path.join(__dirname, '..', 'src', 'pages', `${item.url}.mdx`)
+//     : path.join(__dirname, '..', 'src', 'pages', `${item.url}/index.mdx`)
+//   ,
+//   {
+//     start: 0,
+//     flags: 'w',
+//     encoding: 'utf-8',
+//   }
+// )

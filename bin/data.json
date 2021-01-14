@@ -3,7 +3,6 @@
     "url": "https://astro-ccd.com/fuensanta-3",
     "items": [
       {
-        "id": "fuensanta",
         "type": "header",
         "text": "FUENSANTA",
         "url": "/fuensanta"
@@ -202,7 +201,6 @@
     "url": "https://astro-ccd.com/cometasasteroides",
     "items": [
       {
-        "id": "cometasasteroides",
         "type": "header",
         "text": "COMETAS/ASTEROIDES",
         "url": "/cometas-asteroides"
@@ -213,251 +211,244 @@
         "url": "/cometas-asteroides"
       },
       {
-        "id": "C2020",
         "type": "header",
         "text": "C/2020 F3 (NEOWISE)",
-        "url": "/cometas-asteroides/C2020"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3.jpg",
         "alt": "2020F3",
         "type": "image",
         "fecha": "202007",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020",
+        "url": "/cometas-asteroides/c2020-f3",
         "text": "C/2020 F3 (NEOWISE) 19Julio2020"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3hdr.jpg",
         "alt": "2020F3HDR",
         "type": "image",
         "fecha": "202007",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020"
+        "url": "/cometas-asteroides/c2020-f3"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/re3.jpg",
         "alt": "RE3",
         "type": "image",
         "fecha": "202007",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020",
+        "url": "/cometas-asteroides/c2020-f3",
         "text": "C/2020 F3 (NEOWISE) 19Julio2020 Filtro hdr Pixlnsight"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200717_i88co.jpg",
         "alt": "2020F3_20200717_I88co",
         "type": "image",
         "fecha": "20200717",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020"
+        "url": "/cometas-asteroides/c2020-f3"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200717_i88pro.jpg",
         "alt": "2020F3_20200717_I88pro",
         "type": "image",
         "fecha": "20200717",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020"
+        "url": "/cometas-asteroides/c2020-f3"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200717_i88.jpg",
         "alt": "2020F3_20200717_I88",
         "type": "image",
         "fecha": "20200717",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020",
+        "url": "/cometas-asteroides/c2020-f3",
         "text": "C/2020 F3 (NEOWISE) 17Julio2020"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_50mm.gif",
         "alt": "2020F3_50mm",
         "type": "image",
         "fecha": "202007",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020",
+        "url": "/cometas-asteroides/c2020-f3",
         "text": "C/2020 F3 (NEOWISE) imagen objetivo 50mm 6Julio2020 Desde la Pandera"
       },
       {
-        "id": "C2020",
+        "id": "c2020-f3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200706_i88.jpg",
         "alt": "2020F3_20200706_I88",
         "type": "image",
         "fecha": "20200706",
         "alias": "neowise",
-        "url": "/cometas-asteroides/C2020",
+        "url": "/cometas-asteroides/c2020-f3",
         "text": "C/2020 F3 (NEOWISE) Recorte imagen TS 65mm 6Julio2020 Desde la Pandera"
       },
       {
-        "id": "C2019Y1",
         "type": "header",
         "text": "C/2019Y1 (ATLAS)",
-        "url": "/cometas-asteroides/C2019Y1"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y1",
         "src": "https://astroccd.files.wordpress.com/2020/05/c2019-y1_20200528_i88.jpg",
         "alt": "C2019 Y1_20200528_I88",
         "type": "image",
         "fecha": "20200528",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019",
+        "url": "/cometas-asteroides/c2019-y1",
         "text": "C/2019 Y1 (ATLAS) 28Mayo2019"
       },
       {
-        "id": "C2017",
         "type": "header",
         "text": "C/2017 T2 (PANSTARRS)",
-        "url": "/cometas-asteroides/C2017"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2017",
+        "id": "c2017-t2",
         "src": "https://astroccd.files.wordpress.com/2020/06/2017t2_20200614._i88.jpg",
         "alt": "2017T2_20200614._I88",
         "type": "image",
         "fecha": "20200614",
         "alias": "panstarrs",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-t2",
         "text": "C/2017 T2 (PANSTARRS) 14 Junio 2020 180s*19 b3"
       },
       {
-        "id": "C2017",
+        "id": "c2017-t2",
         "src": "https://astroccd.files.wordpress.com/2020/05/c2017t2_20200526_i88.jpg",
         "alt": "C2017t2_20200526_I88",
         "type": "image",
         "fecha": "20200526",
         "alias": "panstarrs",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-t2",
         "text": "C/2017 T2 (PANSTARRS) 26 Mayo 2020"
       },
       {
-        "id": "C2017",
+        "id": "c2017-t2",
         "src": "https://astroccd.files.wordpress.com/2020/05/2017t2_20200520_i88.jpg",
         "alt": "",
         "type": "image",
         "fecha": "20200520",
         "alias": "panstarrs",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-t2",
         "text": "C/2017 T2 (PANSTARRS) 20 Mayo 2020"
       },
       {
-        "id": "C2019",
         "type": "header",
         "text": "C/2019 Y4ATLAS",
-        "url": "/cometas-asteroides/C2019"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y4",
         "src": "https://astroccd.files.wordpress.com/2020/04/c2019y4_20200414_i88jpg.jpg",
         "alt": "C2019Y4_20200414_I88jpg",
         "type": "image",
         "fecha": "20200414",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019"
+        "url": "/cometas-asteroides/c2019-y4"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y4",
         "src": "https://astroccd.files.wordpress.com/2020/04/c2019y4_20200414._i88.jpg",
         "alt": "C2019Y4_20200414._I88",
         "type": "image",
         "fecha": "20200414",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019"
+        "url": "/cometas-asteroides/c2019-y4"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y4",
         "src": "https://astroccd.files.wordpress.com/2020/04/2019y4_20200414._i88.jpg",
         "alt": "2019Y4_20200414._I88",
         "type": "image",
         "fecha": "20200414",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019",
+        "url": "/cometas-asteroides/c2019-y4",
         "text": "C2019Y4 14 Abril 2020"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y4",
         "src": "https://astroccd.files.wordpress.com/2020/04/2019y4_20200413i_88.jpg",
         "alt": "2019Y4_20200413I_88",
         "type": "image",
         "fecha": "20200413",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019",
+        "url": "/cometas-asteroides/c2019-y4",
         "text": "C2019Y4 13 Abril 2020 13 Abril 2020"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y4",
         "src": "https://astroccd.files.wordpress.com/2020/04/c2019-y4-atlascolor_20200328_i88.jpg",
         "alt": "C2019 Y4 (ATLAS)Color_20200328_I88",
         "type": "image",
         "fecha": "20200328",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019",
+        "url": "/cometas-asteroides/c2019-y4",
         "text": "C2019Y4 28 Marzo 2020 10×RGB 120S b3"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y4",
         "src": "https://astroccd.files.wordpress.com/2020/03/c2019-y4-atlas_20200328_i88.jpg",
         "alt": "",
         "type": "image",
         "fecha": "20200328",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019",
+        "url": "/cometas-asteroides/c2019-y4",
         "text": "C2019Y4 28 Marzo 2020"
       },
       {
-        "id": "C2019",
+        "id": "c2019-y4",
         "src": "https://astroccd.files.wordpress.com/2020/03/2019y4_20190319_i88-1.jpg",
         "alt": "2019y4_20190319_I88",
         "type": "image",
         "fecha": "20190319",
         "alias": "atlas",
-        "url": "/cometas-asteroides/C2019",
+        "url": "/cometas-asteroides/c2019-y4",
         "text": "C2019Y4 19 Marzo 2020"
       },
       {
-        "id": "C2017",
         "type": "header",
         "text": "C/2017 T2 (PANSTARRS)",
-        "url": "/cometas-asteroides/C2017"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2017",
+        "id": "c2017-t2",
         "src": "https://astroccd.files.wordpress.com/2019/11/2017t2_20191123_i88.jpg",
         "alt": "2017T2_20191123_I88",
         "type": "image",
         "fecha": "20191123",
         "alias": "panstarrs",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-t2",
         "text": "C/2017 T2 (PANSTARRS) 23 Noviembre 2019"
       },
       {
-        "id": "C2018",
         "type": "header",
         "text": "C/2018 N2 (ASASSN)",
-        "url": "/cometas-asteroides/C2018"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2018",
+        "id": "c2018-n2",
         "src": "https://astroccd.files.wordpress.com/2019/10/2018n2_20191124_i88.jpg",
         "alt": "2018n2_20191124_I88",
         "type": "image",
         "fecha": "20191124",
         "alias": "ASASSN",
-        "url": "/cometas-asteroides/C2018",
+        "url": "/cometas-asteroides/c2018-n2",
         "text": "C/2018 N2 (ASASSN) 24 Octubre 2019"
       },
       {
-        "id": "2I",
         "type": "header",
         "text": "2I/Borisov",
-        "url": "/cometas-asteroides/2I"
+        "url": "/cometas-asteroides"
       },
       {
         "type": "text",
@@ -515,10 +506,9 @@
         "text": "2I/Borisov 29 Septiembre 2019"
       },
       {
-        "id": "260P",
         "type": "header",
         "text": "260P/McNaught",
-        "url": "/cometas-asteroides/260P"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "260P",
@@ -541,95 +531,93 @@
         "text": "260P/McNaught 9 Agosto 2019"
       },
       {
-        "id": "6478",
         "type": "header",
         "text": "(6478) Gault",
-        "url": "/cometas-asteroides/6478"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/04/6478-gault_20190426_i88.jpg",
         "alt": "(6478) Gault_20190426_I88",
         "type": "image",
         "fecha": "20190426",
-        "url": "/cometas-asteroides/6478",
+        "url": "/cometas-asteroides/6478-gault",
         "text": "(6478) Gault 26 Abril 2019"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/03/6478-gault_20190327_i88.jpg",
         "alt": "(6478) Gault_20190327_I88",
         "type": "image",
         "fecha": "20190327",
-        "url": "/cometas-asteroides/6478",
+        "url": "/cometas-asteroides/6478-gault",
         "text": "(6478) Gault 27 Marzo 2019 38×180s b2"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/03/11enero_8febrero_9marzo.gif",
         "alt": "11Enero_8Febrero_9Marzo",
         "type": "image",
         "fecha": "201903",
-        "url": "/cometas-asteroides/6478",
+        "url": "/cometas-asteroides/6478-gault",
         "text": "(6478) Gault Animacion dias 11Enero_8Febrero_9Marzo 2019"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/03/6478-gault_20190209_i88.jpg",
         "alt": "(6478) Gault_20190209_i88",
         "type": "image",
         "fecha": "20190209",
-        "url": "/cometas-asteroides/6478",
+        "url": "/cometas-asteroides/6478-gault",
         "text": "(6478) Gault 9 Marzo 2019"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/03/6478-gault._20190209_i88.jpg",
         "alt": "(6478) Gault._20190209_i88",
         "type": "image",
         "fecha": "20190209",
-        "url": "/cometas-asteroides/6478",
+        "url": "/cometas-asteroides/6478-gault",
         "text": "(6478) Gault 9 Marzo 2019"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/02/6478_20190208_i88.jpg",
         "alt": "6478_20190208_I88",
         "type": "image",
         "fecha": "20190208",
-        "url": "/cometas-asteroides/6478"
+        "url": "/cometas-asteroides/6478-gault"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/02/6478_re_20190208_i88.jpg",
         "alt": "6478_Re_20190208_I88.jpg",
         "type": "image",
         "fecha": "20190208",
-        "url": "/cometas-asteroides/6478",
+        "url": "/cometas-asteroides/6478-gault",
         "text": "(6478) Gault 7 Febrero 2019 12 tomas de 300s b2 f 1810mm"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/01/6478-gault_20190111_i88.jpg",
         "alt": "(6478) gault_20190111_i88",
         "type": "image",
         "fecha": "20190111",
-        "url": "/cometas-asteroides/6478"
+        "url": "/cometas-asteroides/6478-gault"
       },
       {
-        "id": "6478",
+        "id": "6478-gault",
         "src": "https://astroccd.files.wordpress.com/2019/01/6478-gault_com_20190111_i88.jpg",
         "alt": "(6478) Gault_com_20190111_I88.jpg",
         "type": "image",
         "fecha": "20190111",
-        "url": "/cometas-asteroides/6478",
+        "url": "/cometas-asteroides/6478-gault",
         "text": "(6478) Gault 12 Enero 2019 12 tomas de 300s b2 f 1810mm"
       },
       {
-        "id": "60P",
         "type": "header",
         "text": "60P/Tsuchinshan",
-        "url": "/cometas-asteroides/60P"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "60P",
@@ -652,10 +640,9 @@
         "text": "60P/Tsuchinshan 9 Marzo 2019"
       },
       {
-        "id": "38P",
         "type": "header",
         "text": "38P/Stephan-Oterma",
-        "url": "/cometas-asteroides/38P"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "38P",
@@ -678,10 +665,9 @@
         "text": "38P/Stephan-Oterma 30 Diciembre 2018"
       },
       {
-        "id": "46P",
         "type": "header",
         "text": "46P/Wirtanen",
-        "url": "/cometas-asteroides/46P"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "46P",
@@ -733,26 +719,24 @@
         "text": "46P/Wirtanen 26 Noviembre 2018"
       },
       {
-        "id": "C2018",
         "type": "header",
         "text": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)",
-        "url": "/cometas-asteroides/C2018"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2018",
+        "id": "c2018-v1",
         "src": "https://astroccd.files.wordpress.com/2018/11/2018v1_20181116_i88.jpg",
         "alt": "2018V1_20181116_I88",
         "type": "image",
         "fecha": "20181116",
         "alias": "Machholz-Fujikawa-Iwamoto",
-        "url": "/cometas-asteroides/C2018",
+        "url": "/cometas-asteroides/c2018-v1",
         "text": "C/2018 V1 (Machholz-Fujikawa-Iwamoto) 16Noviembre2018 1 *120s b1"
       },
       {
-        "id": "64P",
         "type": "header",
         "text": "64P/Swift-Gehrels",
-        "url": "/cometas-asteroides/64P"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "64P",
@@ -805,10 +789,9 @@
         "text": "64P/Swift-Gehrels 6 Noviembre 2018"
       },
       {
-        "id": "21P",
         "type": "header",
         "text": "21P/Giacobini-Zinner",
-        "url": "/cometas-asteroides/21P"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "21P",
@@ -861,141 +844,138 @@
         "text": "<a href=\"https://astroccd.files.wordpress.com/2018/08/21p_20180809_i88.jpg\">21/P 8Agosto 2018</a>"
       },
       {
-        "id": "C2017S3",
         "type": "header",
         "text": "C2017S3",
-        "url": "/cometas-asteroides/C2017S3"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2017",
+        "id": "c2017-s3",
         "src": "https://astroccd.files.wordpress.com/2018/07/c2017s3_20180719_i88.png",
         "alt": "C2017S3_20180719_I88",
         "type": "image",
         "fecha": "20180719",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2017"
+        "url": "/cometas-asteroides/c2017-s3"
       },
       {
-        "id": "C2017",
+        "id": "c2017-s3",
         "src": "https://astroccd.files.wordpress.com/2018/07/c2017s3_20180719_i88.jpg",
         "alt": "c2017S3_20180719_I88",
         "type": "image",
         "fecha": "20180719",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-s3",
         "text": "C2017S3 19Julio2018"
       },
       {
-        "id": "C2017",
+        "id": "c2017-s3",
         "src": "https://astroccd.files.wordpress.com/2018/07/c2017s3_20180705_i88.png",
         "alt": "C2017S3_20180705_I88",
         "type": "image",
         "fecha": "20180705",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-s3",
         "text": "C2017S3 5Julio2018"
       },
       {
-        "id": "C2016R2",
         "type": "header",
         "text": "C2016R2",
-        "url": "/cometas-asteroides/C2016R2"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/02/2016r2_20180213_i88.jpg",
         "alt": "2016R2_20180213_I88",
         "type": "image",
         "fecha": "20180213",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "C2016R2 13 Febrero 2018"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/02/2016r2_20180210_i88.jpg",
         "alt": "2016R2_20180210_I88",
         "type": "image",
         "fecha": "20180210",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "C2016R2 10 Febrero 2018"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/02/2016r2_20180202_i88.jpg",
         "alt": "",
         "type": "image",
         "fecha": "20180202",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "C2016R2 2 Febrero 2018"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/01/c2016r2_20180123_i88.jpg",
         "alt": "C2016R2_20180123_I88",
         "type": "image",
         "fecha": "20180123",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "C2016R2 23Enero 2018"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/01/2016r2_20180121_i88.jpg",
         "alt": "2016r2_20180121_I88",
         "type": "image",
         "fecha": "20180121",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "C2016R2 21 Enero 2018"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/01/2016r2_20180115_i88.jpg",
         "alt": "2016R2_20180115_I88",
         "type": "image",
         "fecha": "20180115",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "Cometa 2016R2 11Enero 2018 Filtro Azul Astrodon GenII"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/01/2016r2_20180111_i88.jpg",
         "alt": "2016R2_20180111_I88",
         "type": "image",
         "fecha": "20180111",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "Cometa 2016R2 11Enero 2018"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2018/01/c2016r2_20180108_i88.jpg",
         "alt": "c2016r2_20180108_I88",
         "type": "image",
         "fecha": "20180108",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "Cometa 2016R2 8 Enero 2018"
       },
       {
-        "id": "C2016",
+        "id": "c2016-r2",
         "src": "https://astroccd.files.wordpress.com/2017/12/c2016r2_20171223_i881.jpg",
         "alt": "C2016R2_20171223_I88",
         "type": "image",
         "fecha": "20171223",
         "alias": "panstars",
-        "url": "/cometas-asteroides/C2016",
+        "url": "/cometas-asteroides/c2016-r2",
         "text": "Cometa 2016R2 23 dicembre 2017"
       },
       {
-        "id": "Cometa-174p",
         "type": "header",
         "text": "Cometa 174p",
-        "url": "/cometas-asteroides/Cometa-174p"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "174P",
@@ -1008,68 +988,64 @@
         "text": "Cometa 174p 23 diciembre 2017"
       },
       {
-        "id": "2015V1",
         "type": "header",
         "text": "2015V1",
-        "url": "/cometas-asteroides/2015V1"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2015",
+        "id": "c2015-v1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20171112_i88.jpg",
         "alt": "2015v2_20171112_I88",
         "type": "image",
         "fecha": "20171112",
-        "alias": "JOHNSON",
-        "url": "/cometas-asteroides/C2015",
+        "alias": "panstars",
+        "url": "/cometas-asteroides/c2015-v1",
         "text": "2015V1 12Noviembre 2017"
       },
       {
-        "id": "C2015",
         "type": "header",
         "text": "C2015 ER61",
-        "url": "/cometas-asteroides/C2015"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2015",
+        "id": "c2015-er61",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2015er61_20171112_i88.jpg",
         "alt": "c2015ER61_20171112_I88",
         "type": "image",
         "fecha": "20171112",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-er61",
         "text": "C2015 ER61 12Noviembre2017"
       },
       {
-        "id": "C2015",
+        "id": "c2015-er61",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015er61_20170921_i88.jpg",
         "alt": "2015ER61_20170921_I88",
         "type": "image",
         "fecha": "20170921",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-er61",
         "text": "C2015 ER61 21septiembre2017"
       },
       {
-        "id": "C2017",
         "type": "header",
         "text": "C2017 O1",
-        "url": "/cometas-asteroides/C2017"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2017",
+        "id": "c2017-o1",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2017o1_20170921_i88.jpg",
         "alt": "C2017O1_20170921_I88",
         "type": "image",
         "fecha": "20170921",
         "alias": "ASASSN1",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-o1",
         "text": "C2017 O1 21Septiembre 2017"
       },
       {
-        "id": "29P",
         "type": "header",
         "text": "29P/Schwassmann-Wachmann",
-        "url": "/cometas-asteroides/29P"
+        "url": "/cometas-asteroides"
       },
       {
         "id": "29P",
@@ -1122,543 +1098,539 @@
         "text": "29P/Schwassmann-Wachmann 18Septiembre2017 imagen 500s B2"
       },
       {
-        "id": "C2015",
         "type": "header",
         "text": "C2015 O1",
-        "url": "/cometas-asteroides/C2015"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2015",
+        "id": "c2015-o1",
         "src": "https://astroccd.files.wordpress.com/2018/06/c2015-01_20180612i88.png",
         "alt": "c2015 01_20180612I88",
         "type": "image",
         "fecha": "20180612",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-o1",
         "text": "c2015 O1 12Junio 2018"
       },
       {
-        "id": "2015",
+        "id": "c2015-o1",
         "src": "https://astroccd.files.wordpress.com/2018/04/2015-o1_20180416_i88.jpg",
         "alt": "2015 O1_20180416_I88",
         "type": "image",
         "fecha": "20180416",
-        "url": "/cometas-asteroides/2015",
+        "alias": "PANSTARRS",
+        "url": "/cometas-asteroides/c2015-o1",
         "text": "c2015 O1 16 Abril 2018"
       },
       {
-        "id": "c2015o1_20170816_i88",
+        "id": "c2015-o1",
         "src": "https://astroccd.files.wordpress.com/2018/04/c2015o1_20170816_i88.jpg",
         "alt": "C2015O1_20170816_I88",
         "type": "image",
         "fecha": "20170816",
-        "url": "/cometas-asteroides/c2015o1_20170816_i88",
+        "alias": "PANSTARRS",
+        "url": "/cometas-asteroides/c2015-o1",
         "text": "c2015 O1 16 Aagosto 2017"
       },
       {
-        "id": "C2017K2",
         "type": "header",
         "text": "C2017K2",
-        "url": "/cometas-asteroides/C2017K2"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2020/09/c2017-k2-panstarrs_20200915_i88.jpg?w=1024",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es c2017-k2-panstarrs_20200915_i88.jpg",
         "type": "image",
         "fecha": "20200915",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C2017K2 15 Septiembre2020 distancia 8.3 UA"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2020/05/c2017k2_20200518_i88.jpg",
         "alt": "C2017k2_20200518_I88",
         "type": "image",
         "fecha": "20200518",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C2017K2 18 Mayo2020 distancia 8.8 UA"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2019/11/2017k2_20191116_i88.jpg",
         "alt": "2017k2_20191116_I88",
         "type": "image",
         "fecha": "20191116",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C2017K2 9 Agosto 2019 16 Noviembre 2019 distancia 10.7 UA"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2019/08/2017k2_20190809_i88.jpg",
         "alt": "2017K2_20190809_I88",
         "type": "image",
         "fecha": "20190809",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C2017K2 9 Agosto 2019 distancia 11.02 UA"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2019/06/c2017k2_20190619_i88.jpg",
         "alt": "c2017k2_20190619_I88",
         "type": "image",
         "fecha": "20190619",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C2017K2 19 Junio 2019 distancia 11.25 UA"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2019/05/copia-de-2017k2_20190427_i88.png",
         "alt": "Copia de 2017k2_20190427_I88",
         "type": "image",
         "fecha": "20190427",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C2017K2 26 Abril 2019 distancia 11.67UA"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2018/08/2017k2_20180814_i88.jpg",
         "alt": "2017k2_20180814_I88",
         "type": "image",
         "fecha": "20180814",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C2017K2 14 Agosto 2018 distancia 14.09UA"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017k2_201710_113.jpg",
         "alt": "",
         "type": "image",
         "fecha": "201212",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "C/2017k2 2017 Octubre 2017"
       },
       {
-        "id": "<a-href=\"https:drive.google.comopen?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc\">Video<a>",
         "type": "header",
         "text": "<a href=\"https://drive.google.com/open?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc\">Video</a>",
-        "url": "/cometas-asteroides/<a-href=\"https:drive.google.comopen?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc\">Video<a>"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2012/12/20171.jpg",
         "alt": "2017",
         "type": "image",
         "fecha": "201212",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "Cometa 2017k2 imagen de 500s B2 24Julio 2017 Mag 19.2 FC 19 fwhm 2.2 R 0.7″"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2012/12/111111111111.gif",
         "alt": "111111111111",
         "type": "image",
         "fecha": "201212",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "Animacion 2017k2 24Julio 2017"
       },
       {
-        "id": "C2017",
+        "id": "c2017-k2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017k2_20170720_i88-e1500715311717.jpg",
         "alt": "2017k2_20170720_i88.jpg",
         "type": "image",
         "fecha": "20170720",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2017",
+        "url": "/cometas-asteroides/c2017-k2",
         "text": "Cometa c2017k2 10 exposiciones de 180s a B1 20Julio 2017"
       },
       {
-        "id": "C2015V2",
         "type": "header",
         "text": "C2015V2",
-        "url": "/cometas-asteroides/C2015V2"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2015",
+        "id": "c2015-v2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20170517_i88.jpg",
         "alt": "2015v2_20170517_I88",
         "type": "image",
         "fecha": "20170517",
         "alias": "JOHNSON",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-v2",
         "text": "C2015V2 18Mayo 2017"
       },
       {
-        "id": "C2015",
+        "id": "c2015-v2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20170404_i88.jpg",
         "alt": "2015V2_20170404_I88",
         "type": "image",
         "fecha": "20170404",
         "alias": "JOHNSON",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-v2",
         "text": "C2015V2 4 Abril 2017"
       },
       {
-        "id": "C2015",
+        "id": "c2015-v2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20161118_i88.jpg",
         "alt": "2015v2_20161118_i88",
         "type": "image",
         "fecha": "20161118",
         "alias": "JOHNSON",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-v2",
         "text": "C2015V2 18Noviembre2016"
       },
       {
-        "id": "2013US10",
         "type": "header",
         "text": "2013US10",
-        "url": "/cometas-asteroides/2013US10"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2013",
+        "id": "c2013-us10",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10_20160306_i88.jpg",
         "alt": "2013us10_20160306_I88",
         "type": "image",
         "fecha": "20160306",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-us10",
         "text": "2013US10 6 Marzo 2016"
       },
       {
-        "id": "C2013",
+        "id": "c2013-us10",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10_20160223_i88.jpg",
         "alt": "2013us10_20160223_I88",
         "type": "image",
         "fecha": "20160223",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-us10",
         "text": "2013US10 23 Febrero 2016"
       },
       {
-        "id": "C2013",
+        "id": "c2013-us10",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10pro_20151220_i88.jpg",
         "alt": "2013US10pro_20151220_I88",
         "type": "image",
         "fecha": "20151220",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013"
+        "url": "/cometas-asteroides/c2013-us10"
       },
       {
-        "id": "rgbpro_2",
+        "id": "c2013-us10",
         "src": "https://astroccd.files.wordpress.com/2012/12/rgbpro_2.jpg",
         "alt": "RGBPRO_2",
         "type": "image",
         "fecha": "201212",
-        "url": "/cometas-asteroides/rgbpro_2"
+        "alias": "CATALINA",
+        "url": "/cometas-asteroides/c2013-us10"
       },
       {
-        "id": "C2013",
+        "id": "c2013-us10",
         "src": "https://astroccd.files.wordpress.com/2012/12/c_2013-us10-catalina_orbita.jpg",
         "alt": "C_2013 US10 (Catalina)_orbita",
         "type": "image",
         "fecha": "201212",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-us10",
         "text": "2013US10 20 diciembre 2015"
       },
       {
-        "id": "C2013",
+        "id": "c2013-us10",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10_20151217_i88.jpg",
         "alt": "2013US10_20151217_I88",
         "type": "image",
         "fecha": "20151217",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-us10",
         "text": "2013US10 17diciembre 2015- 420mm"
       },
       {
-        "id": "C2013",
+        "id": "c2013-us10",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013us10_20151206_i881.jpg",
         "alt": "C2013US10_20151206_i88",
         "type": "image",
         "fecha": "20151206",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-us10",
         "text": "2013US10 6diciembre 2015"
       },
       {
-        "id": "Cometa-C2013X1",
         "type": "header",
         "text": "Cometa C2013X1",
-        "url": "/cometas-asteroides/Cometa-C2013X1"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2013",
+        "id": "c2013-x1",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013x1_20160112_i88.jpg",
         "alt": "C2013X1_20160112_i88",
         "type": "image",
         "fecha": "20160112",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-x1",
         "text": "Cometa C2013X1 12 Enero 2016"
       },
       {
-        "id": "C2013",
+        "id": "c2013-x1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013x1_20151212_i88.jpg",
         "alt": "2013x1_20151212_I88",
         "type": "image",
         "fecha": "20151212",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2013"
+        "url": "/cometas-asteroides/c2013-x1"
       },
       {
-        "id": "C2013",
+        "id": "c2013-x1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013x1rgb_20151212_i88.jpg",
         "alt": "2013x1rgb_20151212_I88",
         "type": "image",
         "fecha": "20151212",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-x1",
         "text": "Cometa C2013X1 12 diciembre 2015"
       },
       {
-        "id": "C2013",
+        "id": "c2013-x1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013x1_20151119_i88.jpg",
         "alt": "2013X1_20151119_i88",
         "type": "image",
         "fecha": "20151119",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-x1",
         "text": "Cometa C2013X1 19 Noviembre 2015"
       },
       {
-        "id": "2014S2",
         "type": "header",
         "text": "2014S2",
-        "url": "/cometas-asteroides/2014S2"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2014",
+        "id": "c2014-s2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014s2_20160407_i88.jpg",
         "alt": "2014S2_20160407_i88.",
         "type": "image",
         "fecha": "20160407",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-s2",
         "text": "2014S2 7 Abril 2016"
       },
       {
-        "id": "C2014",
+        "id": "c2014-s2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014s2_20150913_i88.jpg",
         "alt": "2014S2_20150913_I88",
         "type": "image",
         "fecha": "20150913",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-s2",
         "text": "2014S2 13 septiembre2015"
       },
       {
-        "id": "C2015",
+        "id": "c2015-f4",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150914_i88.jpg",
         "alt": "2015F4_20150914_I88",
         "type": "image",
         "fecha": "20150914",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-f4",
         "text": "C2015F4 14Septiembre 2015"
       },
       {
-        "id": "20150913_i88",
+        "id": "c2015-f4",
         "src": "https://astroccd.files.wordpress.com/2012/12/20150913_i88.jpg",
         "alt": "_20150913_I88",
         "type": "image",
         "fecha": "201212",
         "text": "C2015F4 13Septiembre 2015",
-        "url": "/cometas-asteroides/20150913_i88"
+        "alias": "JACQUES",
+        "url": "/cometas-asteroides/c2015-f4"
       },
       {
-        "id": "C2015",
+        "id": "c2015-f4",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150910_i882.jpg",
         "alt": "2015F4_20150910_I88",
         "type": "image",
         "fecha": "20150910",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-f4",
         "text": "C2015F4 10Septiembre 2015"
       },
       {
-        "id": "C2015",
+        "id": "c2015-f4",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150713_i88.jpg",
         "alt": "2015F4_20150713_I88",
         "type": "image",
         "fecha": "20150713",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-f4",
         "text": "2015F4 12julio2015"
       },
       {
-        "id": "C2015",
+        "id": "c2015-f4",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150708_i88.jpg",
         "alt": "2015f4_20150708_I88",
         "type": "image",
         "fecha": "20150708",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2015",
+        "url": "/cometas-asteroides/c2015-f4",
         "text": "2015F4 9julio2015"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150914_i88.jpg",
         "alt": "2014Q2_20150914_I88",
         "type": "image",
         "fecha": "20150914",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-q2",
         "text": "C2014Q2 14Septiembre2015"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150708_i88.jpg",
         "alt": "2014Q2_20150708_I88",
         "type": "image",
         "fecha": "20150708",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-q2",
         "text": "C2014Q2 8julio2015"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_rgb.jpg",
         "alt": "2014Q2_RGB",
         "type": "image",
         "fecha": "201212",
         "text": " ",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q22.jpg",
         "alt": "2014Q2",
         "type": "image",
         "fecha": "201212",
         "text": " ",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2es.jpg",
         "alt": "2014Q2es",
         "type": "image",
         "fecha": "201212",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-q2",
         "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2i_20150119_i88.jpg\">C2014Q2 dia 8 Febrero 2015 New360mmF1810mm</a>"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_88.jpg",
         "alt": "2014q2_20150123_88",
         "type": "image",
         "fecha": "20150123",
         "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2i_20150119_i88.jpg\">C2014Q2 dia 23 Enero 2015 New360mmF1810mm</a>",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "<a-href=\"https:drive.google.comfiled0B9X-aeZtOZTwOUF2MlkwQWVoaG8view?usp=sharing\">Video-cometa2014q2_-2.avi<a>",
         "type": "header",
         "text": "<a href=\"https://drive.google.com/file/d/0B9X-aeZtOZTwOUF2MlkwQWVoaG8/view?usp=sharing\">Video cometa2014q2_ 2.avi</a>",
-        "url": "/cometas-asteroides/<a-href=\"https:drive.google.comfiled0B9X-aeZtOZTwOUF2MlkwQWVoaG8view?usp=sharing\">Video-cometa2014q2_-2.avi<a>"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_i88651.jpg",
         "alt": "2014q2_20150122_I8865",
         "type": "image",
         "fecha": "20150123",
         "text": "C2014Q2 dia 22 Enero 2015ts65mmF420mm",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2f1_20150122_i88.jpg",
         "alt": "2014q2f1_20150122_I88",
         "type": "image",
         "fecha": "20150122",
         "text": "C2014Q2 dia 22 Enero 2015 New360mmF1810mm",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014q2_20150107_i88.jpg",
         "alt": "C2014Q2_20150107_I88",
         "type": "image",
         "fecha": "20150107",
         "text": " \n\nC2014Q2 dia 7 Enero 2015",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2.jpg",
         "alt": "2014q2",
         "type": "image",
         "fecha": "201212",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2f.jpg",
         "alt": "2014q2f",
         "type": "image",
         "fecha": "201212",
         "text": "  ",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-q2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2inv.jpg",
         "alt": "2014q2inv",
         "type": "image",
         "fecha": "201212",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-q2",
         "text": "cometa 2014Q2 26diciembre2014"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20141223_i881.jpg",
         "alt": "2014q2_20141223_I88",
         "type": "image",
         "fecha": "20141223",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-q2",
         "text": "cometa 2014Q2 24diciembre2014"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2in_20141223_i88.jpg",
         "alt": "2014q2in_20141223_I88",
         "type": "image",
         "fecha": "20141223",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-q2",
         "text": "cometa 2014Q2 24diciembre2014"
       },
       {
-        "id": "C2014",
+        "id": "c2014-q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2rgb.jpg",
         "alt": "2014q2RGB",
         "type": "image",
         "fecha": "201212",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-q2",
         "text": "cometa 2014Q2 24diciembre2014"
       },
       {
@@ -1672,29 +1644,28 @@
         "text": "Outburst Cometa 15P20/12/2014"
       },
       {
-        "id": "C2011",
+        "id": "c2011-j2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2011j2_20140915_i88.jpg",
         "alt": "c2011J2_20140915_I88",
         "type": "image",
         "fecha": "20140915",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2011"
+        "url": "/cometas-asteroides/c2011-j2"
       },
       {
-        "id": "C2011",
+        "id": "c2011-j2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2011j2_20140915_i88dis_astr.jpg",
         "alt": "c2011J2_20140915_I88dis_astr",
         "type": "image",
         "fecha": "20140915",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2011",
+        "url": "/cometas-asteroides/c2011-j2",
         "text": "cometa C2011J2"
       },
       {
-        "id": "<a-href=\"http:youtu.bepo6as9H-_hk\"-target=\"_blank\"->-VIDEO<a>",
         "type": "header",
         "text": "<a href=\"http://youtu.be/po6as9H-_hk\" target=\"_blank\" > VIDEO</a>",
-        "url": "/cometas-asteroides/<a-href=\"http:youtu.bepo6as9H-_hk\"-target=\"_blank\"->-VIDEO<a>"
+        "url": "/cometas-asteroides"
       },
       {
         "type": "text",
@@ -1702,203 +1673,202 @@
         "url": "/cometas-asteroides"
       },
       {
-        "id": "C2011",
+        "id": "c2011-j2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014j2_1_20.jpg",
         "alt": "C2014J2_1_20",
         "type": "image",
         "fecha": "201212",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2011"
+        "url": "/cometas-asteroides/c2011-j2"
       },
       {
-        "id": "C2011",
+        "id": "c2011-j2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2011j2_20140914_i88iv.jpg",
         "alt": "C2011J2_20140914_I88iv",
         "type": "image",
         "fecha": "20140914",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2011",
+        "url": "/cometas-asteroides/c2011-j2",
         "text": "C2011J2 14Septiembre 2014 posible fragmentacion del nucleo"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140910_i88.jpg",
         "alt": "C2014E2_20140910_I88",
         "type": "image",
         "fecha": "20140910",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-e2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2i_20140910_i881.jpg",
         "alt": "C2014E2i_20140910_I88",
         "type": "image",
         "fecha": "20140910",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-e2",
         "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 10 Septiembre 2014</a>"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140828_i88.jpg",
         "alt": "c2014e2_20140828_I88",
         "type": "image",
         "fecha": "20140828",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-e2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140828_i88.jpg",
         "alt": "c2014e2inv_20140828_I88",
         "type": "image",
         "fecha": "20140828",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014",
+        "url": "/cometas-asteroides/c2014-e2",
         "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 27 Agosto 2014</a>"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140807_i88.jpg",
         "alt": "C2014E2_20140807_I88",
         "type": "image",
         "fecha": "20140807",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-e2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140807_i88.jpg",
         "alt": "C2014E2inv_20140807_I88",
         "type": "image",
         "fecha": "20140807",
         "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 7 Agosto 2014</a>",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-e2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i882.jpg",
         "alt": "C2014E2_20140729_I88",
         "type": "image",
         "fecha": "20140729",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-e2"
       },
       {
-        "id": "C2014",
+        "id": "c2014-e2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver2.jpg",
         "alt": "C2014E2_20140729_I88inver",
         "type": "image",
         "fecha": "20140729",
         "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 29Julio2014</a>",
         "alias": "JACQUES",
-        "url": "/cometas-asteroides/C2014"
+        "url": "/cometas-asteroides/c2014-e2"
       },
       {
-        "id": "C2013",
+        "id": "c2013-uq4",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013uq4_es.jpg",
         "alt": "C2013UQ4_es",
         "type": "image",
         "fecha": "201212",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013"
+        "url": "/cometas-asteroides/c2013-uq4"
       },
       {
-        "id": "C2013",
+        "id": "c2013-uq4",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013uq4_sig.jpg",
         "alt": "c2013uq4_SIG",
         "type": "image",
         "fecha": "201212",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013"
+        "url": "/cometas-asteroides/c2013-uq4"
       },
       {
-        "id": "C2013",
+        "id": "c2013-uq4",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013uq4_20140701_i88z.jpg",
         "alt": "c2013uq4_20140701_I88z",
         "type": "image",
         "fecha": "20140701",
         "alias": "CATALINA",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-uq4",
         "text": "C2013uq4 imagen madrugada 1julio2014"
       },
       {
-        "id": "C2012",
+        "id": "c2012-k1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012k1-pro.jpg",
         "alt": "2012k1 Parrafo",
         "type": "image",
         "fecha": "201212",
         "text": " C 2012K1 23 Mayo 2014 ¿Procesado?",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2012"
+        "url": "/cometas-asteroides/c2012-k1"
       },
       {
-        "id": "C2012",
+        "id": "c2012-k1",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012k1_20140522_i88.jpg",
         "alt": "C2012K1_20140522_I88",
         "type": "image",
         "fecha": "20140522",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-k1",
         "text": "2012K1 22 Mayo 2014"
       },
       {
-        "id": "C2012",
+        "id": "c2012-k1",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012k1_20140423_i881.jpg",
         "alt": "C2012K1_20140423_I88",
         "type": "image",
         "fecha": "20140423",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-k1",
         "text": "Comprometerse 2012K1 23 Abril 2014"
       },
       {
-        "id": "C2012",
+        "id": "c2012-k1",
         "src": "https://astroccd.files.wordpress.com/2014/03/2012k1lrgb_20140307_i88.jpg",
         "alt": "2012K1LRGB_20140307_I88",
         "type": "image",
         "fecha": "20140307",
         "alias": "PANSTARRS",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-k1",
         "text": "C2012K1 7 Marzo 2014"
       },
       {
-        "id": "C2013",
+        "id": "c2013-r1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013r1_20131204_i88.jpg",
         "alt": "30 imagenes de 20 ",
         "type": "image",
         "fecha": "20131204",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-r1",
         "text": "C2013R1 4diciembre 2013 30 20 Imagen “New360mmF1810mm st8xme + R = 1,03” Arco"
       },
       {
-        "id": "C2013",
+        "id": "c2013-r1",
         "src": "https://astroccd.files.wordpress.com/2012/12/procesado.jpg",
         "alt": "procesado",
         "type": "image",
         "fecha": "201212",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-r1",
         "text": "Procesado para visualizar estructura de la cabeza del cometa ¿procesado?"
       },
       {
-        "id": "C2013",
+        "id": "c2013-r1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013r1_20131117_i88_.jpg",
         "alt": "2013R1_20131117_I88_",
         "type": "image",
         "fecha": "20131117",
         "alias": "LOVEJOY",
-        "url": "/cometas-asteroides/C2013",
+        "url": "/cometas-asteroides/c2013-r1",
         "text": "C2013R1 17 Noviembre 2013 30 20 Imagen ”"
       },
       {
-        "id": "COMETA-c2012s1",
         "type": "header",
         "text": "COMETA c/2012s1",
-        "url": "/cometas-asteroides/COMETA-c2012s1"
+        "url": "/cometas-asteroides"
       },
       {
         "type": "text",
@@ -1906,98 +1876,101 @@
         "url": "/cometas-asteroides"
       },
       {
-        "id": "apj-logo",
+        "id": "c2012-s1",
         "src": "https://i1.wp.com/iopscience.iop.org/img/i/apj-logo.gif",
         "alt": "The Astrophysical Journal",
         "type": "image",
         "fecha": "",
-        "url": "/cometas-asteroides/apj-logo"
+        "alias": "ISON",
+        "url": "/cometas-asteroides/c2012-s1"
       },
       {
-        "id": "C2012",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012s1_20131116_i88.jpg",
         "alt": "C2012S1_20131116_I88",
         "type": "image",
         "fecha": "20131116",
         "alias": "ISON",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-s1",
         "text": "C2012S1 16/11/201325 2 x 2 binning de 10s Imagen"
       },
       {
-        "id": "C2012",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012s1rgb_20131116_i88.jpg",
         "alt": "2012s1RGB_20131116_i88",
         "type": "image",
         "fecha": "20131116",
         "alias": "ISON",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-s1",
         "text": "Composición 3x RGB 3 tres imágenes de 20 segundos en cada canal de la Resolución 2:06 “"
       },
       {
-        "id": "C2012",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012s1_20131107_i88.jpg",
         "alt": "C2012S1_20131107_I88",
         "type": "image",
         "fecha": "20131107",
         "alias": "ISON",
-        "url": "/cometas-asteroides/C2012"
+        "url": "/cometas-asteroides/c2012-s1"
       },
       {
-        "id": "C2012",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012s1_20131013_i88.jpg",
         "alt": "C2012S1_20131013_I88",
         "type": "image",
         "fecha": "20131013",
         "text": "C/2012S1 dia 7 Noviembre 2013 distancia 1 UAC2012S1 Imagen dia 12 Octubre 2013 distancia 1.7UA parece que no va a ser tan espectacular",
         "alias": "ISON",
-        "url": "/cometas-asteroides/C2012"
+        "url": "/cometas-asteroides/c2012-s1"
       },
       {
-        "id": "C2012",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012s1_20130407_i88.jpg",
         "alt": "2012S1_20130407_I88",
         "type": "image",
         "fecha": "20130407",
         "text": "C2012 S1 dia 7 Abril 2013",
         "alias": "ISON",
-        "url": "/cometas-asteroides/C2012"
+        "url": "/cometas-asteroides/c2012-s1"
       },
       {
-        "id": "C2012",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012s1-10-100s-31-enero-2013.jpg",
         "alt": "2012s1 10 100s 31 Enero 2013",
         "type": "image",
         "fecha": "201212",
         "text": "El cometa C2012 S1 el 30 Enero 20134:02 unidades astronómicas de distancia",
         "alias": "ISON",
-        "url": "/cometas-asteroides/C2012"
+        "url": "/cometas-asteroides/c2012-s1"
       },
       {
-        "id": "user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011.jpg",
         "alt": "user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011",
         "type": "image",
         "fecha": "201212",
-        "url": "/cometas-asteroides/user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011",
+        "alias": "ISON",
+        "url": "/cometas-asteroides/c2012-s1",
         "text": "C2012 S1 dia 6 Enero 201330 * 100 s DISTANCIA 4,2 UA"
       },
       {
-        "id": "C2012",
+        "id": "c2012-s1",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_2012s1_3__300s_22noviembre_2012pa.jpg",
         "alt": "user_556_2012s1_3__300s_22noviembre_2012pa",
         "type": "image",
         "fecha": "201212",
         "alias": "ISON",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-s1",
         "text": "C2012 S1 dia 22 de Noviembre de 2012 3 * 300s DISTANCIA 5.1UA"
       },
       {
-        "id": "15",
+        "id": "c2013-r1",
         "src": "https://astroccd.files.wordpress.com/2012/12/15-febrero-2013-201da12-20-10-5-2-1.jpg",
         "alt": "15 febrero 2013 201DA12 20 10 5 2 1",
         "type": "image",
         "fecha": "201212",
-        "url": "/cometas-asteroides/15",
+        "alias": "LOVEJOY",
+        "url": "/cometas-asteroides/c2013-r1",
         "text": "Asteroide 2012DA42 15Febrero 2013"
       },
       {
@@ -2011,23 +1984,23 @@
         "text": "Imagen del Asteroide 99942 (Apophis) 0.325 kilometros dos diametro"
       },
       {
-        "id": "C2012",
+        "id": "c2012-k5",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012k5_20120130_i88.jpg",
         "alt": "2012K5_20120130_I88",
         "type": "image",
         "fecha": "20120130",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-k5",
         "text": "Cometa 2012k5 dia 30 Enero despues del perihelio"
       },
       {
-        "id": "C2012",
+        "id": "c2012-k5",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012k5-150-10s-19didiem2012pa.jpg",
         "alt": "Comprometerse 2012k5 10s Imagen 140",
         "type": "image",
         "fecha": "201212",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2012",
+        "url": "/cometas-asteroides/c2012-k5",
         "text": "2012k5 10s Imagen 140"
       },
       {
@@ -2041,44 +2014,46 @@
         "text": "168P Octubre 2012"
       },
       {
-        "id": "user_556_c2011_l4pa_15_julio2012_1342515487_708930",
+        "id": "c2011-l4",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_c2011_l4pa_15_julio2012_1342515487_708930.jpg",
         "alt": "user_556_c2011_l4pa_15_julio2012_1342515487_708930",
         "type": "image",
         "fecha": "201212",
-        "url": "/cometas-asteroides/user_556_c2011_l4pa_15_julio2012_1342515487_708930",
+        "alias": "PANSTARRS",
+        "url": "/cometas-asteroides/c2011-l4",
         "text": "C2011L4 5 julio 2012"
       },
       {
-        "id": "obras_031",
+        "id": "c2011-l4",
         "src": "https://astroccd.files.wordpress.com/2012/11/obras_031.gif",
         "alt": "obras_03[1]",
         "type": "image",
         "fecha": "201211",
-        "url": "/cometas-asteroides/obras_031"
+        "alias": "PANSTARRS",
+        "url": "/cometas-asteroides/c2011-l4"
       },
       {
-        "id": "308635",
+        "id": "c2005-yu55",
         "src": "https://astroccd.files.wordpress.com/2012/12/2005yu559-noviembre2011pa.jpg",
         "alt": "2005YU559 Noviembre2011PA",
         "type": "image",
         "fecha": "201212",
-        "url": "/cometas-asteroides/308635"
+        "alias": "(308635) 2005 YU55",
+        "url": "/cometas-asteroides/c2005-yu55"
       },
       {
-        "id": "<a-href=\"http:es.wikipedia.orgwiki%28308635%29_2005_YU55\"-target=\"_blank\"-><b>308635",
         "type": "header",
         "text": "<a href=\"http://es.wikipedia.org/wiki/%28308635%29_2005_YU55\" target=\"_blank\" ><b>(308635) 2005 YU<sub>55</sub></b></a>",
-        "url": "/cometas-asteroides/<a-href=\"http:es.wikipedia.orgwiki%28308635%29_2005_YU55\"-target=\"_blank\"-><b>308635"
+        "url": "/cometas-asteroides"
       },
       {
-        "id": "C2007",
+        "id": "c2005-yu55",
         "src": "https://astroccd.files.wordpress.com/2012/12/lulin-26-60s-l-pag-24fe-2009.jpg",
         "alt": "lulin 26 años 60 L 24FE su página de 2009",
         "type": "image",
         "fecha": "201212",
-        "alias": "Lulin",
-        "url": "/cometas-asteroides/C2007"
+        "alias": "(308635) 2005 YU55",
+        "url": "/cometas-asteroides/c2005-yu55"
       },
       {
         "id": "17P",
@@ -2121,33 +2096,33 @@
         "text": "Cometa P/Holmes 17 P 28 Octubre 2007 22h dias despues de su espectacular aumento de brillo"
       },
       {
-        "id": "C2006",
+        "id": "c2006-vz13",
         "src": "https://astroccd.files.wordpress.com/2012/12/m3-c2006vz13-b1-30s-as-23ju-w.jpg",
         "alt": "23ju dos m3-c2006vz13-b1-30-COMO",
         "type": "image",
         "fecha": "201212",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2006",
+        "url": "/cometas-asteroides/c2006-vz13",
         "text": "Cometa c2006vz13 a su paso junto al cumulo M3 dia 23Julio 2007 toma de 30segundos"
       },
       {
-        "id": "C2006",
+        "id": "c2006-vz13",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2006-vz13-18-imagenes-60s-11julio2007.jpg",
         "alt": "C2006 18 60 vz13 Imagen 11julio2007",
         "type": "image",
         "fecha": "201212",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2006",
+        "url": "/cometas-asteroides/c2006-vz13",
         "text": "Cometa C2006vz13 18 imagenes de 60segundos cada una Reflector 358mm a F5+ccd art 11002 11 julio 2007"
       },
       {
-        "id": "C2006",
+        "id": "c2006-p1",
         "src": "https://astroccd.files.wordpress.com/2012/12/124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg",
         "alt": "reflecator comprometerse c2006p1 358 f5 12 Enero 2007 ISO 100 1 320s",
         "type": "image",
         "fecha": "201212",
         "alias": "McNaught",
-        "url": "/cometas-asteroides/C2006",
+        "url": "/cometas-asteroides/c2006-p1",
         "text": "McNaught C/2006p1 R 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz dedia12 de Enero de 2007 a las14H 10m"
       },
       {
@@ -2161,43 +2136,43 @@
         "text": "El cometa Tempel tercero Julio 04 de julio 2005"
       },
       {
-        "id": "C2001",
+        "id": "c2001-q4",
         "src": "https://astroccd.files.wordpress.com/2012/12/mosaico-c2001q4-4tomas-de-60s72pp.jpg",
         "alt": "4tomas C2001Q4 Mosaico de 60s72pp",
         "type": "image",
         "fecha": "201212",
         "alias": "NEAT",
-        "url": "/cometas-asteroides/C2001",
+        "url": "/cometas-asteroides/c2001-q4",
         "text": "C2001Q4 4 60 Imagen de diametro 15Mayo 2004"
       },
       {
-        "id": "C2002",
+        "id": "c2002-t7",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2002t7-22dicembre2003-suma-de-8-imagenes-de-60s.jpg",
         "alt": "C2002T7 22dicembre2003 suma de Imagen 8 60",
         "type": "image",
         "fecha": "201212",
         "alias": "LINEAR",
-        "url": "/cometas-asteroides/C2002",
+        "url": "/cometas-asteroides/c2002-t7",
         "text": "Mosaico cometa C2002T7 y M33 ( 8 Imagenes de 60s cada una) 22Diciembre 2003"
       },
       {
-        "id": "C1996",
+        "id": "c1996-b2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c1996b2.jpg",
         "alt": "c1996B2",
         "type": "image",
         "fecha": "201212",
         "alias": "Hyakutake",
-        "url": "/cometas-asteroides/C1996",
+        "url": "/cometas-asteroides/c1996-b2",
         "text": "Hyakutake (C/1996 B2) Marzo 1996"
       },
       {
-        "id": "C1996",
+        "id": "c1996-b2",
         "src": "https://astroccd.files.wordpress.com/2012/12/hyakutake_carta.gif",
         "alt": "hyakutake_carta",
         "type": "image",
         "fecha": "201212",
         "alias": "Hyakutake",
-        "url": "/cometas-asteroides/C1996"
+        "url": "/cometas-asteroides/c1996-b2"
       }
     ]
   },
@@ -2205,510 +2180,510 @@
     "url": "https://astro-ccd.com/galaxias",
     "items": [
       {
-        "id": "galaxiassupernovas",
         "type": "header",
         "text": "GALAXIAS/SUPERNOVAS",
-        "url": "/galaxias/galaxiassupernovas"
+        "url": "/galaxias"
       },
       {
-        "id": "logodef",
+        "id": "abell-2151",
         "src": "https://astroccd.files.wordpress.com/2014/02/logodef.png",
         "alt": "logodef",
         "type": "image",
         "fecha": "201402",
-        "url": "/galaxias/logodef",
+        "alias": "Hercules Cluster",
+        "url": "/galaxias/abell-2151",
         "text": "Abel 2151"
       },
       {
-        "id": "Abell-2151",
+        "id": "abell-2151",
         "src": "https://astroccd.files.wordpress.com/2012/12/abel-2151-2-1200s-27-mayo-2011pa.jpg",
         "alt": "abel 2151 2 1200s 27 mayo 2011PA",
         "type": "image",
         "fecha": "201212",
         "alias": "Hercules Cluster",
-        "url": "/galaxias/Abell-2151",
+        "url": "/galaxias/abell-2151",
         "text": "Nuestra galaxia mide aproximadamente 100–120mil años luz se cree que tiene unos 200—400 millones de estrellas"
       },
       {
-        "id": "Abell-2151",
+        "id": "abell-2151",
         "src": "https://astroccd.files.wordpress.com/2012/12/hubble_sequence_photo.png",
         "alt": "Hubble_sequence_photo",
         "type": "image",
         "fecha": "201212",
         "alias": "Hercules Cluster",
-        "url": "/galaxias/Abell-2151",
+        "url": "/galaxias/abell-2151",
         "text": "En la siguientesecuencia de Hubble se pueden apreciar los distintos tipos de Galaxias"
       },
       {
-        "id": "Abell-2151",
+        "id": "abell-2151",
         "src": "https://astroccd.files.wordpress.com/2018/10/20170506_200443.jpg",
         "alt": "20170506_200443",
         "type": "image",
         "fecha": "201810",
         "alias": "Hercules Cluster",
-        "url": "/galaxias/Abell-2151",
+        "url": "/galaxias/abell-2151",
         "text": "ngc7331 6 Mayo 2017"
       },
       {
-        "id": "SN-2020jfo",
+        "id": "sn2020-jfo",
         "src": "https://astroccd.files.wordpress.com/2020/05/sn2020jfo._20200517.jpg",
         "alt": "sn2020jfo._20200517",
         "type": "image",
         "fecha": "20200517",
         "localizacion": "NGC 4303",
-        "url": "/galaxias/SN-2020jfo",
+        "url": "/galaxias/sn2020-jfo",
         "text": "sn2020jfo en M61 17 Mayo 2020"
       },
       {
-        "id": "SN-219ein",
+        "id": "sn219-ein",
         "src": "https://astroccd.files.wordpress.com/2019/08/sn219ein_20190510_gjcb.png",
         "alt": "sn219ein_20190510_GJCB",
         "type": "image",
         "fecha": "20190510",
-        "url": "/galaxias/SN-219ein",
+        "url": "/galaxias/sn219-ein",
         "text": "sn2019ein 10 Mayo 2019"
       },
       {
-        "id": "SN-2019ein",
+        "id": "sn2019-ein",
         "src": "https://astroccd.files.wordpress.com/2019/05/snm51.jpg",
         "alt": "snm51",
         "type": "image",
         "fecha": "201905",
         "localizacion": "NGC 5353",
-        "url": "/galaxias/SN-2019ein",
+        "url": "/galaxias/sn2019-ein",
         "text": "sn2019ehk en M100 30Abril2019"
       },
       {
-        "id": "NGC-4627",
+        "id": "ngc-4627",
         "src": "https://astroccd.files.wordpress.com/2019/04/ngc4627.jpg",
         "alt": "ngc4627",
         "type": "image",
         "fecha": "201904",
-        "url": "/galaxias/NGC-4627",
+        "url": "/galaxias/ngc-4627",
         "text": "ngc 4627 26Abril 2019"
       },
       {
-        "id": "NGC-4656",
+        "id": "ngc-4656",
         "src": "https://astroccd.files.wordpress.com/2019/04/ngc4656.jpg",
         "alt": "ngc4656",
         "type": "image",
         "fecha": "201904",
-        "url": "/galaxias/NGC-4656",
+        "url": "/galaxias/ngc-4656",
         "text": "ngc 4656 26Abril 2019"
       },
       {
-        "id": "NGC-5194",
+        "id": "ngc-5194",
         "src": "https://astroccd.files.wordpress.com/2019/03/m51.jpg",
         "alt": "M51.jpg",
         "type": "image",
         "fecha": "201903",
         "alias": "M51",
-        "url": "/galaxias/NGC-5194",
+        "url": "/galaxias/ngc-5194",
         "text": "AT2019abn 2Marzo 2019"
       },
       {
-        "id": "AT2019ahd",
+        "id": "at2019-ahd",
         "src": "https://astroccd.files.wordpress.com/2019/03/at2019ahd_20190214_gjcb.jpg",
         "alt": "at2019ahd_20190214_GJCB",
         "type": "image",
         "fecha": "20190214",
         "localizacion": "NGC 3423",
-        "url": "/galaxias/AT2019ahd",
+        "url": "/galaxias/at2019-ahd",
         "text": "at2019ahd en NGC 3423 13 Febrero 2019"
       },
       {
-        "id": "AT2019ahd",
+        "id": "at2019-ahd",
         "src": "https://astroccd.files.wordpress.com/2019/01/rgb.jpg",
         "alt": "rgb",
         "type": "image",
         "fecha": "201901",
         "localizacion": "NGC 3423",
-        "url": "/galaxias/AT2019ahd",
+        "url": "/galaxias/at2019-ahd",
         "text": "sn 2019np en ngc 3254 14 Enero 2019 F2730 b2"
       },
       {
-        "id": "SN2019np",
+        "id": "sn2019-np",
         "src": "https://astroccd.files.wordpress.com/2019/01/sn2019np_20190112_gjcb-1.png",
         "alt": "sn2019np_20190112_gjcb",
         "type": "image",
         "fecha": "20190112",
         "localizacion": "NGC 3254",
-        "url": "/galaxias/SN2019np",
+        "url": "/galaxias/sn2019-np",
         "text": "sn 2019np en ngc 3254 12 Enero 2019 F1850 b1"
       },
       {
-        "id": "SN2018isq",
+        "id": "sn2018-isq",
         "src": "https://astroccd.files.wordpress.com/2018/12/2018isq_20181203_gjcb.jpg",
         "alt": "2018isq_20181203_GJCB",
         "type": "image",
         "fecha": "20181203",
-        "url": "/galaxias/SN2018isq",
+        "url": "/galaxias/sn2018-isq",
         "text": "sn2018isq 3 Diciembre 2018"
       },
       {
-        "id": "SN2018ivc",
+        "id": "sn2018-ivc",
         "src": "https://astroccd.files.wordpress.com/2018/11/sn2018ivc_20181126_gjcb.jpg",
         "alt": "SN2018IVC_20181126_GJCB",
         "type": "image",
         "fecha": "20181126",
         "localizacion": "M77",
-        "url": "/galaxias/SN2018ivc",
+        "url": "/galaxias/sn2018-ivc",
         "text": "sn 2018ivc en M77 26Noviembre 2018"
       },
       {
-        "id": "SN2018imf",
+        "id": "sn2018-imf",
         "src": "https://astroccd.files.wordpress.com/2018/11/sn-2018imf_20181116_gjcb.jpg",
         "alt": "SN 2018imf_20181116_GJCB",
         "type": "image",
         "fecha": "20181116",
         "localizacion": "PGC 57660",
-        "url": "/galaxias/SN2018imf",
+        "url": "/galaxias/sn2018-imf",
         "text": "sn 2018 imf 16Noviembre2018 7*120s b1"
       },
       {
-        "id": "AT2018gjx",
+        "id": "at2018-gjx",
         "src": "https://astroccd.files.wordpress.com/2018/09/at2018gjx_20180919_gjcb.png",
         "alt": "at2018gjx_20180919_GJCB",
         "type": "image",
         "fecha": "20180919",
-        "url": "/galaxias/AT2018gjx",
+        "url": "/galaxias/at2018-gjx",
         "text": "at2018gjx 19 Septiembre 2018"
       },
       {
-        "id": "SN-2018cow",
+        "id": "sn2018-cow",
         "src": "https://astroccd.files.wordpress.com/2018/07/sn2018cow.png",
         "alt": "sn2018cow",
         "type": "image",
         "fecha": "201807",
         "localizacion": "PGC 57660",
-        "url": "/galaxias/SN-2018cow",
+        "url": "/galaxias/sn2018-cow",
         "text": "sn2018cow en pgc 57660 2 Julio 2018 1*1000segundos"
       },
       {
-        "id": "M109",
+        "id": "m109",
         "src": "https://astroccd.files.wordpress.com/2018/05/m109.png",
         "alt": "m109",
         "type": "image",
         "fecha": "201805",
-        "url": "/galaxias/M109",
+        "url": "/galaxias/m109",
         "text": "M109 New 360mm 2730mm focal 11Mayo2018"
       },
       {
-        "id": "SN-2018zd",
+        "id": "sn2018-zd",
         "src": "https://astroccd.files.wordpress.com/2018/03/2018zd_20180321_i88.jpg",
         "alt": "2018zd_20180321_I88",
         "type": "image",
         "fecha": "20180321",
         "localizacion": "NGC 2146",
-        "url": "/galaxias/SN-2018zd",
+        "url": "/galaxias/sn2018-zd",
         "text": "sn 2018zd en ngc 2146 21Marzo 2018"
       },
       {
-        "id": "AT-2018gv",
+        "id": "at2018-gv",
         "src": "https://astroccd.files.wordpress.com/2018/02/at2018gv_20180202_i88.jpg",
         "alt": "",
         "type": "image",
         "fecha": "20180202",
         "localizacion": "NGC 2525",
-        "url": "/galaxias/AT-2018gv",
+        "url": "/galaxias/at2018-gv",
         "text": "Supernova 2018 GV en ngc 2525 2 febrero 2018"
       },
       {
-        "id": "AT-2017eaw",
+        "id": "at2017-eaw",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017eaw_20170702_i88.jpg",
         "alt": "2017EAW_20170702_I88",
         "type": "image",
         "fecha": "20170702",
         "localizacion": "NGC 6946",
-        "url": "/galaxias/AT-2017eaw",
+        "url": "/galaxias/at2017-eaw",
         "text": "SN 2017EAW en ngc 6946 2 Junio 2017"
       },
       {
-        "id": "SN-2017eax",
+        "id": "sn2017-eax",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2017eax_20170518_i88.jpg",
         "alt": "sn2017eax_20170518_I88",
         "type": "image",
         "fecha": "20170518",
-        "url": "/galaxias/SN-2017eax",
+        "url": "/galaxias/sn2017-eax",
         "text": "SN2017eax 18Mayo 2017"
       },
       {
-        "id": "SN-2017dfc",
+        "id": "sn2017-dfc",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017dfc_20170423_i88.jpg",
         "alt": "2017dfc_20170423_I88",
         "type": "image",
         "fecha": "20170423",
-        "url": "/galaxias/SN-2017dfc",
+        "url": "/galaxias/sn2017-dfc",
         "text": "Supernova 2017dfc en un principio se penso que pertenecia a M63 pero su magnitud desconcertaba despues de su estudio espectral se comprobo que estaba a una distancia de casi 900millones años luz mientras que M63 esta a unos 30 millones es decir esta justo detras de la Galaxia en nuestro campo de vision"
       },
       {
-        "id": "SN-2016gfy",
+        "id": "sn2016-gfy",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2016gfy_ngc2276.jpg",
         "alt": "sn2016gfy_ngc2276",
         "type": "image",
         "fecha": "201212",
-        "url": "/galaxias/SN-2016gfy",
+        "url": "/galaxias/sn2016-gfy",
         "text": "sn2016gfy en ngc 2276 24 Septiembre 2016"
       },
       {
-        "id": "SN-2016cok",
+        "id": "sn2016-cok",
         "src": "https://astroccd.files.wordpress.com/2012/12/m66m65_20160530_i881.jpg",
         "alt": "m66m65_20160530_I88",
         "type": "image",
         "fecha": "20160530",
         "localizacion": "M66",
-        "url": "/galaxias/SN-2016cok",
+        "url": "/galaxias/sn2016-cok",
         "text": "Sn At2016cok en M66 30 Mayo 2016"
       },
       {
-        "id": "SN-2016coj",
+        "id": "sn2016-coj",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2016coj_20160530_i881.jpg",
         "alt": "sn2016coj_20160530_i88",
         "type": "image",
         "fecha": "20160530",
         "localizacion": "NGC 4125",
-        "url": "/galaxias/SN-2016coj",
+        "url": "/galaxias/sn2016-coj",
         "text": "SN 2016coj en NGC 4125 29 Mayo 2016"
       },
       {
-        "id": "NGC-891",
+        "id": "ngc-891",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc891pa.jpg",
         "alt": "ngc891PA",
         "type": "image",
         "fecha": "201212",
-        "url": "/galaxias/NGC-891",
+        "url": "/galaxias/ngc-891",
         "text": "NGC 891"
       },
       {
-        "id": "OJ287",
+        "id": "oj287",
         "src": "https://astroccd.files.wordpress.com/2012/12/oj287medidas.jpg",
         "alt": "OJ287medidas",
         "type": "image",
         "fecha": "201212",
         "text": "Quasar OJ 287 situado en la constelacion de Cancer 3500 millones años",
-        "url": "/galaxias/OJ287"
+        "url": "/galaxias/oj287"
       },
       {
-        "id": "pulsar",
+        "id": "oj287",
         "src": "https://astroccd.files.wordpress.com/2012/12/pulsar.jpg",
         "alt": "pulsar",
         "type": "image",
         "fecha": "201212",
         "text": "<a href=\"http://www.caha.es/18-billions-of-suns-support-einstein_es.html\" target=\"_blank\" > OJ 287</a>\n\npublicacion <a href=\"https://astroccd.files.wordpress.com/2012/12/apjl_819_2_l37.pdf\">apjl_819_2_l37</a>",
-        "url": "/galaxias/pulsar"
+        "url": "/galaxias/oj287"
       },
       {
-        "id": "M33",
+        "id": "m33",
         "src": "https://astroccd.files.wordpress.com/2012/12/m33lrgbpro.jpg",
         "alt": "m33lrgbpro",
         "type": "image",
         "fecha": "201212",
-        "url": "/galaxias/M33",
+        "url": "/galaxias/m33",
         "text": "M33"
       },
       {
-        "id": "quinteto",
+        "id": "20151115-quinteto",
         "src": "https://astroccd.files.wordpress.com/2012/12/quinteto.png",
         "alt": "Quinteto",
         "type": "image",
         "fecha": "201212",
-        "url": "/galaxias/quinteto",
+        "url": "/galaxias/20151115-quinteto",
         "text": "Imagen del Quinteto 15 Noviembre 2015"
       },
       {
-        "id": "NGC-7331",
+        "id": "ngc-7331",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc7331_9_600s_16102015.jpg",
         "alt": "NGC7331_9_600s_16102015",
         "type": "image",
         "fecha": "16102015",
-        "url": "/galaxias/NGC-7331",
+        "url": "/galaxias/ngc-7331",
         "text": "NGC7331 16 Octubre2015 9 tomas de 600s"
       },
       {
-        "id": "M82",
+        "id": "m82",
         "src": "https://astroccd.files.wordpress.com/2012/12/m82ha.jpg",
         "alt": "M82HA",
         "type": "image",
         "fecha": "201212",
         "text": "M82 filtro h alfa",
-        "url": "/galaxias/M82"
+        "url": "/galaxias/m82"
       },
       {
-        "id": "PSN-J17292918",
+        "id": "psn-j17292918",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j172929187542390_ngc6412_20150715_i88.jpg",
         "alt": "PSN J17292918+7542390_ngc6412_20150715_I88",
         "type": "image",
         "fecha": "20150715",
         "localizacion": "NGC 6412",
-        "url": "/galaxias/PSN-J17292918",
+        "url": "/galaxias/psn-j17292918",
         "text": "PSN J17292918+7542390 en NGC6412 15Julio 2015"
       },
       {
-        "id": "PSN-J20435314",
+        "id": "psn-j20435314",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j204353141230304ngc6956.jpg",
         "alt": "PSN J20435314+1230304ngc6956",
         "type": "image",
         "fecha": "201212",
         "localizacion": "NGC 6956",
-        "url": "/galaxias/PSN-J20435314",
+        "url": "/galaxias/psn-j20435314",
         "text": "Supernova en ngc 6956 12Julio2015"
       },
       {
-        "id": "PSN-J07285387",
+        "id": "psn-j07285387",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j072853873349106_ngc23882.jpg",
         "alt": "PSN J07285387+3349106_ngc2388",
         "type": "image",
         "fecha": "201212",
         "text": "Supernova en ngc 2388 23 Febrero 2015",
         "localizacion": "NGC 23882",
-        "url": "/galaxias/PSN-J07285387"
+        "url": "/galaxias/psn-j07285387"
       },
       {
-        "id": "PSN-J14021678",
+        "id": "psn-j14021678",
         "src": "https://astroccd.files.wordpress.com/2012/12/m101psn-j140216785426205.jpg",
         "alt": "m101PSN J14021678+5426205",
         "type": "image",
         "fecha": "201212",
         "localizacion": "M101",
-        "url": "/galaxias/PSN-J14021678"
+        "url": "/galaxias/psn-j14021678"
       },
       {
-        "id": "M110",
+        "id": "m110",
         "src": "https://astroccd.files.wordpress.com/2012/12/m110_e6_20141212.jpg",
         "alt": "M110_E6_20141212",
         "type": "image",
         "fecha": "20141212",
         "text": "Supernova en M101 22Febrero 2015\n\nGalaxia eliptica M110_E6-20141212",
-        "url": "/galaxias/M110"
+        "url": "/galaxias/m110"
       },
       {
-        "id": "SN-2014dg",
+        "id": "sn2014-dg",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014dg_ugc2855_20141217.jpg",
         "alt": "SN2014DG_UGC2855_20141217",
         "type": "image",
         "fecha": "20141217",
         "localizacion": "UGC 2855",
-        "url": "/galaxias/SN-2014dg",
+        "url": "/galaxias/sn2014-dg",
         "text": "SN2014DG en ugc 2855 17diciembre2014"
       },
       {
-        "id": "PSN-J22081243",
+        "id": "psn-j22081243",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j220812434110503_ugc11919_sbc2014121512.jpg",
         "alt": "PSN J22081243+4110503_UGC11919_Sbc201412151",
         "type": "image",
         "fecha": "201212",
         "localizacion": "UGC 11919",
-        "url": "/galaxias/PSN-J22081243",
+        "url": "/galaxias/psn-j22081243",
         "text": "PSN J22081243+4110503 en ugc 11919 12Diciembre 2014"
       },
       {
-        "id": "PNV-J03093063",
+        "id": "pnv-j03093063",
         "src": "https://astroccd.files.wordpress.com/2012/12/pnv_-j030930632638031.jpg",
         "alt": "PNV_ J03093063+2638031",
         "type": "image",
         "fecha": "201212",
         "localizacion": "Aries",
-        "url": "/galaxias/PNV-J03093063",
+        "url": "/galaxias/pnv-j03093063",
         "text": "NOVA En la costelacion de Aries 30Octubre 2014"
       },
       {
-        "id": "SN-2014cx",
+        "id": "sn2014-cx",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014cx20141030_i88.jpg",
         "alt": "sn2014cx20141030_I88",
         "type": "image",
         "fecha": "201212",
-        "url": "/galaxias/SN-2014cx",
+        "url": "/galaxias/sn2014-cx",
         "text": "sn2014cx 30Octubre2014"
       },
       {
-        "id": "SNhunt260",
+        "id": "snhunt260",
         "src": "https://astroccd.files.wordpress.com/2012/12/snhunt260-_20141021_i88.jpg",
         "alt": "SNhunt260 _20141021_I88",
         "type": "image",
         "fecha": "20141021",
-        "url": "/galaxias/SNhunt260",
+        "url": "/galaxias/snhunt260",
         "text": "SNhunt260 21Octubre2014"
       },
       {
-        "id": "SN-2014CY",
+        "id": "sn2014-cy",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014cy_20141018_gjcb1.jpg",
         "alt": "SN2014CY_20141018_GJCB",
         "type": "image",
         "fecha": "20141018",
         "localizacion": "NGC 7742",
-        "url": "/galaxias/SN-2014CY",
+        "url": "/galaxias/sn2014-cy",
         "text": "SN2014CY en NGC7742"
       },
       {
-        "id": "SN-2014bv",
+        "id": "sn2014-bv",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014bv_20140714_i88-copia.jpg",
         "alt": "sn2014bv_20140714_I88 copia",
         "type": "image",
         "fecha": "20140714",
         "localizacion": "NGC 4386",
-        "url": "/galaxias/SN-2014bv",
+        "url": "/galaxias/sn2014-bv",
         "text": "sn2014bv en ngc4386"
       },
       {
-        "id": "SN-2014aa",
+        "id": "sn2014-aa",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014aa_20140326_i88.jpg",
         "alt": "SN2014aa_20140326_I88",
         "type": "image",
         "fecha": "20140326",
-        "url": "/galaxias/SN-2014aa",
+        "url": "/galaxias/sn2014-aa",
         "text": "sn2014aa 26marzo 2014"
       },
       {
-        "id": "SN-2014ai",
+        "id": "sn2014-ai",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014ai_20140326_i88.jpg",
         "alt": "SN2014ai_20140326_I88",
         "type": "image",
         "fecha": "20140326",
-        "url": "/galaxias/SN-2014ai",
+        "url": "/galaxias/sn2014-ai",
         "text": "sn2014ai 26marzo2014"
       },
       {
-        "id": "SN-2014l",
+        "id": "sn2014-l",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014l_20140307_i88.jpg",
         "alt": "SN2014L_20140307_I88",
         "type": "image",
         "fecha": "20140307",
         "localizacion": "M99",
-        "url": "/galaxias/SN-2014l",
+        "url": "/galaxias/sn2014-l",
         "text": "SN2014L En M99 7marzo2014"
       },
       {
-        "id": "SN-2013am",
+        "id": "sn2013-am",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014g_20140202_i88.jpg",
         "alt": "sn2014G_20140202_I88",
         "type": "image",
         "fecha": "20140202",
         "localizacion": "NGC3448",
-        "url": "/galaxias/SN-2013am",
+        "url": "/galaxias/sn2013-am",
         "text": "SN2014G en NGC3448 2 Febrero 2014"
       },
       {
-        "id": "SN-2014j",
+        "id": "sn2014-j",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014jrgb_20140202_i88.jpg",
         "alt": "SN2014JRGB_20140202_I88",
         "type": "image",
         "fecha": "20140202",
         "localizacion": "M82",
-        "url": "/galaxias/SN-2014j",
+        "url": "/galaxias/sn2014-j",
         "text": "sn2014j 6 imagenes con cada filtro de 60segundos 2 febrero 2014"
       },
       {
-        "id": "SN-2014j",
+        "id": "sn2014-j",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014j_20140202_i88.jpg",
         "alt": "sn2014J_20140202_I88",
         "type": "image",
         "fecha": "20140202",
         "localizacion": "M82",
-        "url": "/galaxias/SN-2014j",
+        "url": "/galaxias/sn2014-j",
         "text": "Supernova 2014J en la galaxia M82 2Febrero 2014"
       },
       {
-        "id": "Arp-99",
+        "id": "arp-99",
         "src": "https://astroccd.files.wordpress.com/2012/12/arp99.jpg",
         "alt": "arp99",
         "type": "image",
@@ -2716,79 +2691,79 @@
         "text": "Arp 99 conjunto de Galaxias en Pegaso",
         "alias": "NGC 7547/49/50/53/58, Hickson 93",
         "localizacion": "Pegaso",
-        "url": "/galaxias/Arp-99"
+        "url": "/galaxias/arp-99"
       },
       {
-        "id": "SN-2013ev",
+        "id": "sn2013-ev",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2013ev-6-300sf.jpg",
         "alt": "SN2013EV 6 300sF",
         "type": "image",
         "fecha": "201212",
         "text": "SN 2013ev en IC 1296suma de 6 imagenes de 300suna galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)",
-        "url": "/galaxias/SN-2013ev"
+        "url": "/galaxias/sn2013-ev"
       },
       {
-        "id": "SN-2013fa",
+        "id": "sn2013-fa",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013fa-2013-09-10-u.jpg",
         "alt": "2013fa 2013 09 10 u",
         "type": "image",
         "fecha": "201212",
         "text": " sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
         "localizacion": "Delfín",
-        "url": "/galaxias/SN-2013fa"
+        "url": "/galaxias/sn2013-fa"
       },
       {
-        "id": "SN-2014G",
+        "id": "sn2014-g",
         "src": "https://astroccd.files.wordpress.com/2012/12/m65-3-600s-2abril-2013.jpg",
         "alt": "m65 3 600s 2abril 2013",
         "type": "image",
         "fecha": "201212",
         "localizacion": "M65",
-        "url": "/galaxias/SN-2014G",
+        "url": "/galaxias/sn2014-g",
         "text": "Supernova 2013am en M65"
       },
       {
-        "id": "SN-2011dh",
+        "id": "sn2011-dh",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104.jpg",
         "alt": "M51-SC_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104",
         "type": "image",
         "fecha": "201212",
-        "url": "/galaxias/SN-2011dh"
+        "url": "/galaxias/sn2011-dh"
       },
       {
-        "id": "NGC-5033",
+        "id": "ngc-5033",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5033-7-600s-10g-8-abril-2011pa2.jpg",
         "alt": "ngc 5033 7 600s 10g 8 abril 2011PA",
         "type": "image",
         "fecha": "201212",
         "text": "<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >m51 22junio2011</a> <a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >NGC 5O33 7*600S</a>",
-        "url": "/galaxias/NGC-5033"
+        "url": "/galaxias/ngc-5033"
       },
       {
-        "id": "NGC-5317",
+        "id": "ngc-5317",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5317-2-1200srr.jpg",
         "alt": "ngc 5317 2 1200sRR",
         "type": "image",
         "fecha": "201212",
-        "url": "/galaxias/NGC-5317",
+        "url": "/galaxias/ngc-5317",
         "text": "NGC 5317 2*1200S"
       },
       {
-        "id": "NGC-5194",
+        "id": "ngc-5194",
         "src": "https://astroccd.files.wordpress.com/2019/05/m51-22h02m18s-dia-30junio-2005-exp120segundos-dos-imagenes.jpg",
         "alt": "M51 22h02m18s dia 30junio 2005 exp120segundos dos imagenes",
         "type": "image",
         "fecha": "201905",
         "alias": "M51",
-        "url": "/galaxias/NGC-5194",
+        "url": "/galaxias/ngc-5194",
         "text": "Supernova en M51"
       },
       {
-        "id": "rainbowl",
+        "id": "sn2005-cs",
         "src": "https://i0.wp.com/www.astrosurf.com/snweb2/images/rainbowl.gif",
         "type": "image",
         "fecha": "",
-        "url": "/galaxias/rainbowl",
+        "url": "/galaxias/sn2005-cs",
         "text": "Measures"
       }
     ]
@@ -2797,45 +2772,53 @@
     "url": "https://astro-ccd.com/nebulosas",
     "items": [
       {
-        "id": "nebulosas",
         "type": "header",
         "text": "NEBULOSAS",
         "url": "/nebulosas"
       },
       {
-        "id": "img-20200302",
+        "id": "final",
+        "src": "https://astroccd.files.wordpress.com/2021/01/final.jpg",
+        "alt": "final",
+        "type": "image",
+        "fecha": "202101",
+        "url": "/nebulosas/final",
+        "text": "zona de Orion 12 enero 2021"
+      },
+      {
+        "id": "img-20200302-wa0019",
         "src": "https://astroccd.files.wordpress.com/2020/03/img-20200302-wa0019.jpg",
         "alt": "",
         "type": "image",
         "fecha": "202003",
-        "url": "/nebulosas/img-20200302",
+        "url": "/nebulosas/img-20200302-wa0019",
         "text": "NGC 2237Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020"
       },
       {
-        "id": "NGC-2024",
+        "id": "ngc-2024",
         "src": "https://astroccd.files.wordpress.com/2019/10/ngc2024final.jpg",
         "alt": "NGC2024final",
         "type": "image",
         "fecha": "201910",
-        "url": "/nebulosas/NGC-2024",
+        "url": "/nebulosas/ngc-2024",
         "text": "NGC 2024 29 Septiembre 2019 T 200mm F 1400mm+Sony A7s"
       },
       {
-        "id": "M45",
+        "id": "m45",
         "src": "https://astroccd.files.wordpress.com/2019/10/m45final.jpg",
         "alt": "M45final",
         "type": "image",
         "fecha": "201910",
-        "url": "/nebulosas/M45",
+        "url": "/nebulosas/m45",
         "text": "M45 29 Septiembre 2019 T 200mm F 1400mm+Sony A7s"
       },
       {
-        "id": "M57",
+        "id": "m57",
         "src": "https://astroccd.files.wordpress.com/2018/10/m57_f.jpg",
         "alt": "m57_F",
         "type": "image",
         "fecha": "201810",
-        "url": "/nebulosas/M57",
+        "url": "/nebulosas/m57",
         "text": "M57 7 Octrubre 2018 New 360mm F 2730mm"
       },
       {
@@ -2848,67 +2831,67 @@
         "text": "Nebulosa del pelicano 8Agosto2018"
       },
       {
-        "id": "M97",
+        "id": "m97",
         "src": "https://astroccd.files.wordpress.com/2018/04/m97.jpg",
         "alt": "m97",
         "type": "image",
         "fecha": "201804",
-        "url": "/nebulosas/M97",
+        "url": "/nebulosas/m97",
         "text": "M97 20*180s B1 17Abril 2018"
       },
       {
-        "id": "M42",
+        "id": "m42",
         "src": "https://astroccd.files.wordpress.com/2012/11/m42f_re.jpg",
         "alt": "m42f_re",
         "type": "image",
         "fecha": "201211",
-        "url": "/nebulosas/M42",
+        "url": "/nebulosas/m42",
         "text": "M42 26Enero2016 nikon d90 sin modificar"
       },
       {
-        "id": "M1",
+        "id": "m1",
         "src": "https://astroccd.files.wordpress.com/2012/11/m1_20161111_i88.jpg",
         "alt": "m1_20161111_i88",
         "type": "image",
         "fecha": "20161111",
-        "url": "/nebulosas/M1",
+        "url": "/nebulosas/m1",
         "text": "M1 Noviembre 2016"
       },
       {
-        "id": "M42",
+        "id": "m42",
         "src": "https://astroccd.files.wordpress.com/2012/11/m42_20160101_i88.jpg",
         "alt": "M42_20160101_I88",
         "type": "image",
         "fecha": "20160101",
-        "url": "/nebulosas/M42",
+        "url": "/nebulosas/m42",
         "text": "M42 mosaico de dos imagenes"
       },
       {
-        "id": "IC-434",
+        "id": "ic-434",
         "src": "https://astroccd.files.wordpress.com/2012/11/zona_-ic434_re.jpg",
         "alt": "zona_ ic434_re",
         "type": "image",
         "fecha": "201211",
-        "url": "/nebulosas/IC-434",
+        "url": "/nebulosas/ic-434",
         "text": "Zona ic 434 rgb 600sR 600sG 600sB R ts65 f 420 +ccd"
       },
       {
-        "id": "IC-434",
+        "id": "ic-434",
         "src": "https://astroccd.files.wordpress.com/2012/11/2024-ic434-pp.jpg",
         "alt": "2024 ic434 PP",
         "type": "image",
         "fecha": "201211",
-        "url": "/nebulosas/IC-434",
+        "url": "/nebulosas/ic-434",
         "text": "Mosaico Zona ic 434 New 360 mm f 1810+ccd"
       },
       {
-        "id": "IC-5146",
+        "id": "ic-5146",
         "src": "https://astroccd.files.wordpress.com/2012/10/ic-5146-15-600s-pa2.jpg",
         "alt": "ic 5146 15 600s PA",
         "type": "image",
         "fecha": "201210",
         "text": "ngc5146",
-        "url": "/nebulosas/IC-5146"
+        "url": "/nebulosas/ic-5146"
       },
       {
         "id": "user_556_medusa_pa",
@@ -2937,48 +2920,48 @@
         "url": "/nebulosas/comparativa"
       },
       {
-        "id": "M27",
+        "id": "m27",
         "src": "https://astroccd.files.wordpress.com/2012/11/m27_19junio2015final.jpg",
         "alt": "M27_19jUNIO2015final",
         "type": "image",
         "fecha": "201211",
         "text": "S106 en la constelacion de Cisne 15Julio2015 (comparativa telescopio Subaru 8.2mts)\n\nM27RGB",
-        "url": "/nebulosas/M27"
+        "url": "/nebulosas/m27"
       },
       {
-        "id": "M27",
+        "id": "m27",
         "src": "https://astroccd.files.wordpress.com/2012/11/m27.jpg",
         "alt": "m27",
         "type": "image",
         "fecha": "201211",
-        "url": "/nebulosas/M27",
+        "url": "/nebulosas/m27",
         "text": "M27 Halfa"
       },
       {
-        "id": "M57",
+        "id": "m57",
         "src": "https://astroccd.files.wordpress.com/2012/11/rgbpix3.jpg",
         "alt": "RGBPIX3",
         "type": "image",
         "fecha": "201211",
         "text": "M57 RGB",
-        "url": "/nebulosas/M57"
+        "url": "/nebulosas/m57"
       },
       {
-        "id": "NGC-6888",
+        "id": "ngc-6888",
         "src": "https://astroccd.files.wordpress.com/2012/10/ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg",
         "alt": "Ngc 6888 RGB 8 2 4 IMAGE 1200S 21 AGO 2009",
         "type": "image",
         "fecha": "201210",
-        "url": "/nebulosas/NGC-6888",
+        "url": "/nebulosas/ngc-6888",
         "text": "NGC 6888 Ha 8 imagenes de 1200s"
       },
       {
-        "id": "NGC-7635",
+        "id": "ngc-7635",
         "src": "https://astroccd.files.wordpress.com/2012/10/l-ngc-7635-pa.jpg",
         "alt": "L ngc 7635 Pa",
         "type": "image",
         "fecha": "201210",
-        "url": "/nebulosas/NGC-7635",
+        "url": "/nebulosas/ngc-7635",
         "text": "Ngc 7635 filtro ha"
       }
     ]
@@ -2987,10 +2970,9 @@
     "url": "https://astro-ccd.com/planetas-satelites",
     "items": [
       {
-        "id": "sistema-solar",
         "type": "header",
         "text": "SISTEMA SOLAR",
-        "url": "/planetas-satelites/sistema-solar"
+        "url": "/planetas-satelites"
       },
       {
         "src": "https://astroccd.files.wordpress.com/2020/12/conjuncion.gif",
@@ -3136,7 +3118,6 @@
     "url": "https://astro-ccd.com/construccion-del-observatorio",
     "items": [
       {
-        "id": "construccion-del-observatorio",
         "type": "header",
         "text": "CONSTRUCCION DEL OBSERVATORIO",
         "url": "/construccion-del-observatorio"
@@ -3221,10 +3202,9 @@
         "text": "Motorizacion Cupula"
       },
       {
-        "id": "LesveDome",
         "type": "header",
         "text": "LesveDome",
-        "url": "/construccion-del-observatorio/LesveDome"
+        "url": "/construccion-del-observatorio"
       },
       {
         "type": "text",
@@ -3248,10 +3228,9 @@
         "text": "video motor rotacion cupula en movimiento"
       },
       {
-        "id": "UN-NEWTON-DE-360mm",
         "type": "header",
         "text": "UN NEWTON DE 360mm",
-        "url": "/construccion-del-observatorio/UN-NEWTON-DE-360mm"
+        "url": "/construccion-del-observatorio"
       },
       {
         "type": "text",
@@ -3509,10 +3488,9 @@
         "text": "Primeras medidas conSensor de Calidad del Cielo y Detector de Nubes"
       },
       {
-        "id": "<a-href=\"http:www.observatorioremoto.com\"-target=\"_blank\"->Tess<a>",
         "type": "header",
         "text": "<a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" >Tess</a>",
-        "url": "/construccion-del-observatorio/<a-href=\"http:www.observatorioremoto.com\"-target=\"_blank\"->Tess<a>"
+        "url": "/construccion-del-observatorio"
       },
       {
         "src": "https://astroccd.files.wordpress.com/2012/11/calibrado.jpg",
@@ -3534,10 +3512,9 @@
     "url": "https://astro-ccd.com/ccd-2",
     "items": [
       {
-        "id": "reparacion-ccd-sbig",
         "type": "header",
         "text": "REPARACION CCD SBIG",
-        "url": "/reparacion-ccd/reparacion-ccd-sbig"
+        "url": "/reparacion-ccd"
       },
       {
         "src": "https://astroccd.files.wordpress.com/2020/11/msaico-1.jpg",

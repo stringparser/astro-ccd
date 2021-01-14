@@ -2,7 +2,6 @@
   "url": "https://astro-ccd.com/construccion-del-observatorio",
   "items": [
     {
-      "id": "construccion-del-observatorio",
       "type": "header",
       "text": "CONSTRUCCION DEL OBSERVATORIO",
       "url": "/construccion-del-observatorio"
@@ -87,10 +86,9 @@
       "text": "Motorizacion Cupula"
     },
     {
-      "id": "LesveDome",
       "type": "header",
       "text": "LesveDome",
-      "url": "/construccion-del-observatorio/LesveDome"
+      "url": "/construccion-del-observatorio"
     },
     {
       "type": "text",
@@ -114,10 +112,9 @@
       "text": "video motor rotacion cupula en movimiento"
     },
     {
-      "id": "UN-NEWTON-DE-360mm",
       "type": "header",
       "text": "UN NEWTON DE 360mm",
-      "url": "/construccion-del-observatorio/UN-NEWTON-DE-360mm"
+      "url": "/construccion-del-observatorio"
     },
     {
       "type": "text",
@@ -375,10 +372,9 @@
       "text": "Primeras medidas conSensor de Calidad del Cielo y Detector de Nubes"
     },
     {
-      "id": "<a-href=\"http:www.observatorioremoto.com\"-target=\"_blank\"->Tess<a>",
       "type": "header",
       "text": "<a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" >Tess</a>",
-      "url": "/construccion-del-observatorio/<a-href=\"http:www.observatorioremoto.com\"-target=\"_blank\"->Tess<a>"
+      "url": "/construccion-del-observatorio"
     },
     {
       "src": "https://astroccd.files.wordpress.com/2012/11/calibrado.jpg",
