@@ -60,7 +60,7 @@ export const mapMDX = (el: PageItemProps, index: number) => {
   }
 }
 
-export const mapItemFecha =
+export const mapItemProps =
   (basename: string) =>
   (item: PageItemProps, index: number, items: PageItemProps[]) => {
     const { id, ...it } = item;
@@ -103,6 +103,7 @@ export const mesMap = {
   mayo: '05',
   junio: '06',
   julio: '07',
+  ago: '08',
   agosto: '08',
   septembre: '09',
   octubre: '10',
@@ -110,19 +111,30 @@ export const mesMap = {
   diciembre: '12',
 };
 
+const fechaTextRE = new RegExp([
+  '(\\d{1,2})',
+  '(?:\\s*(de)?\\s*)',
+  `(${Object.keys(mesMap).join('|')})`,
+  '(?:\\s*(de)?\\s*)',
+  '(\\d{4})'
+].join(''), 'i');
+
+const fechaNombreArchivoRE = new RegExp([
+  '(\\d{1,2})',
+  '-?',
+  `(${Object.keys(mesMap).join('|')})`,
+  '-?',
+  '(\\d{4})'
+].join(''), 'i');
+
 export function mapFecha(props: PageItemProps) {
   const {
     src = '',
-    text,
     fecha,
   } = props;
 
   if (fecha) {
     return fecha;
-  }
-
-  if (/youtu\.be\/po6as9H-_hk/i.test(text)) {
-    return '20140915';
   }
 
   if (src === 'https://astroccd.files.wordpress.com/2020/07/2020f3hdr.jpg') {
@@ -133,17 +145,17 @@ export function mapFecha(props: PageItemProps) {
     return '20140915';
   }
 
+  const text = [props.text, props.alt].filter(v => v).join('\n');
+
+  if (/youtu\.be\/po6as9H-_hk/i.test(text)) {
+    return '20140915';
+  }
+
   if (/%28308635%29_2005_YU55/.test(text)) {
     return
   }
 
-  const fechaDeTexto = new RegExp([
-    '(\\d{1,2})',
-    '(?:\\s*(de)?\\s*)',
-    `(${Object.keys(mesMap).join('|')})`,
-    '(?:\\s*(de)?\\s*)',
-    '(\\d{4})'
-  ].join(''), 'i').exec(text);
+  const fechaDeTexto = fechaTextRE.exec(text);
 
   if (fechaDeTexto) {
     const [dia, mes, año] = fechaDeTexto.slice(1).filter(v => v);
@@ -157,17 +169,22 @@ export function mapFecha(props: PageItemProps) {
     return result;
   }
 
+  const fechaConMesDeArchivo = fechaNombreArchivoRE.exec(src.split('/').pop() || '');
+
+  if (fechaConMesDeArchivo) {
+    const [dia, mes, año] = fechaConMesDeArchivo.slice(1).filter(v => v);
+
+    return [
+      año,
+      mesMap[mes.toLowerCase()],
+      dia.length === 1 ? `0${dia}` : dia
+    ].join('');
+  }
+
   const fechaDeArchivo = (/_(\d{8})[_.i]/.exec((src.split('/').pop() || '')) || ['']).pop();
 
   if (fechaDeArchivo) {
     return fechaDeArchivo;
-  }
-
-  const fechaConMesDeArchivo = (/_(\d{1,2})julio(\d{4})[_.i]/i.exec((src.split('/').pop() || '')) || [])
-    .join();
-
-  if (fechaConMesDeArchivo) {
-    return fechaDeArchivo.replace(/julio/i, '07');
   }
 
   const fechaDeURL = (/\/(\d{4}\/\d{2})\//.exec(src) || ['']).pop().replace('/', '');

@@ -67,7 +67,15 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
       id: 'NGC 7000',
       fecha: '20180808',
       alias: 'Nebulosa del pelícano',
-    }
+    };
+  }
+
+  if (id === 'integration_abe-copia') {
+    return {
+      ...props,
+      id: 'NGC 2237',
+      alias: 'Nebulosa Roseta'
+    };
   }
 
   if (/^sn2020jfo/i.test(id)) {
@@ -75,7 +83,7 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
       ...props,
       id: 'SN 2020jfo',
       localizacion: 'NGC 4303'
-    }
+    };
   }
 
   if (/^(sn2019ein|snm51)/i.test(id)) {
@@ -83,14 +91,14 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
       ...props,
       id: 'SN 2019ein',
       localizacion: 'NGC 5353'
-    }
+    };
   }
 
   if (/^AT2019abn/i.test(id)) {
     return {
       ...props,
       id: 'AT2019abn',
-    }
+    };
   }
 
   if (/^sn-?2019np/i.test(id)) {

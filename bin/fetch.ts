@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import { fetchPageContent } from './lib';
 import { ParsedPageContent, PageItemProps } from './lib/types';
-import { mapTextToUrl, mapFecha, mapMDX, mapItemFecha } from './lib/util';
+import { mapTextToUrl, mapFecha, mapMDX, mapItemProps } from './lib/util';
 
 const urlMap = {
   'ccd-2': 'reparacion-ccd',
@@ -24,7 +24,7 @@ Promise.all([
 .then(async (fetchResults) => {
   const results = fetchResults.map((el): ParsedPageContent => {
     const baseURL = el.url.split('/').pop();
-    const basename = urlMap[baseURL] || baseURL;
+    const basename = (urlMap[baseURL] || baseURL).replace(/\/$/, '');
 
     return {
       ...el,
@@ -37,7 +37,7 @@ Promise.all([
             case 'image': {
               if (item.type === 'text') {
                 prev.text = prev.text
-                  ? `${prev.text}\n\n${item.text}`
+                  ? [prev.text, item.text].filter(v => (v || '').trim()).join('\n\n')
                   : item.text
                 ;
 
@@ -60,7 +60,6 @@ Promise.all([
           const fecha = mapFecha(item);
 
           const urlID = [
-            fecha,
             urlMap[id] || id,
           ].filter(v => v).join('-');
 
@@ -73,13 +72,19 @@ Promise.all([
             ...it,
           };
         })
-        .map(mapItemFecha(basename))
-        .map(mapItemFecha(basename))
+        .map(mapItemProps(basename))
+        .map(mapItemProps(basename))
+        .map(({ url, ...el }) => {
+          return {
+            url: url.replace(/\/$/, ''),
+            ...el,
+          }
+        })
     }
   });
 
   await fs.writeFile(
-    path.join(__dirname, 'data.json'),
+    path.join(__dirname, 'data', 'index.json'),
     JSON.stringify(results, null, 2)
   );
 
@@ -87,16 +92,17 @@ Promise.all([
     const baseURL = el.url.split('/').pop();
     const basename = urlMap[baseURL] || baseURL;
 
-    const mdx = el.items.map(mapMDX)
+    const mdx = el.items
+      .map(mapMDX)
       .filter(value => value)
       .join('\n\n')
     ;
 
     return Promise.all([
-      fs.writeFile(
-        path.resolve(__dirname, '..', 'src', 'data', `${basename}.json`),
-        JSON.stringify(el, null, 2),
-      ),
+      // fs.writeFile(
+      //   path.resolve(__dirname, '..', 'src', 'data', `${basename}.json`),
+      //   JSON.stringify(el, null, 2),
+      // ),
       fs.writeFile(
         path.resolve(__dirname, '..', 'src', 'pages', basename, 'index.mdx'),
         mdx
@@ -109,31 +115,39 @@ Promise.all([
     .flat()
   ;
 
-  await fs.writeFile(
-    path.resolve(__dirname, 'pages-items.json'),
-    JSON.stringify(pagesItems, null, 2)
-  );
-
   const pages = pagesItems.reduce((acc, item) => {
     if (!item.url) {
       return acc;
     }
 
-    const key = (item.url).replace(/\/$/, '');
-    const index = acc[key]
-      ? acc[key].length - 1
-      : 0
-    ;
+    const key = item.url.replace(/\/$/, '');
+    const index = acc[key] ? acc[key].length - 1 : 0;
+    const result = mapMDX(item, index);
 
     return {
       ...acc,
-      [key]: (acc[key] || []).concat(mapMDX(item, index)),
+      [key]: (acc[key] || [])
+        .concat(index === 0 && /^#/.test(result)
+          ? null
+          : result
+        )
+      ,
     };
   }, {} as Record<string, string>);
 
   return fs.writeFile(
-    path.resolve(__dirname, 'pages.json'),
-    JSON.stringify(pages, null, 2),
+    path.resolve(__dirname, 'data', 'pages.json'),
+    JSON.stringify(
+      pages,
+      function (key, value) {
+        if (Array.isArray(value)) {
+          return value.filter(v => v);
+        }
+
+        return value;
+      },
+      2
+    ),
   );
 });
 
