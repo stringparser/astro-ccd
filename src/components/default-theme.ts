@@ -27,7 +27,6 @@ const defaultTheme = createMuiTheme({
           padding: '0',
           minHeight: '100vh',
           textAlign: 'center',
-          fontWeight: 'bold',
 
           display: 'flex',
           alignItems: 'center',
@@ -44,7 +43,6 @@ const defaultTheme = createMuiTheme({
 
         a: {
           color: '#ff0000',
-          fontWeight: 'bold',
         },
 
         img: {

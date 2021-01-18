@@ -23,12 +23,12 @@ const items = [
     text: 'nebulosas',
   },
   {
-    href: '/construccion-del-observatorio',
-    text: 'construccion-del-observatorio',
+    href: '/observatorio',
+    text: 'observatorio',
   },
   {
-    href: '/planetas-satelites',
-    text: 'planetas-satelites',
+    href: '/sistema-solar',
+    text: 'sistema-solar',
   },
 ];
 
@@ -57,7 +57,6 @@ const useStyles = makeStyles(theme => ({
   },
 
   link: {
-    fontWeight: 'bold',
     marginTop: '0.5rem',
     marginRight: '1rem',
     textTransform: 'uppercase',
@@ -68,6 +67,7 @@ const useStyles = makeStyles(theme => ({
   },
 
   currentLink: {
+    fontWeight: 'bold',
     textDecoration: 'underline',
   },
 }));
@@ -100,7 +100,7 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
                       isCurrentPage(router.route, href) && classes.currentLink,
                     )}
                   >
-                    {text}
+                    {text.replace(/\-/g, ' ')}
                   </MuiLink>
                 </Link>
               </Fragment>
