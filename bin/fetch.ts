@@ -115,31 +115,42 @@ Promise.all([
     .flat()
   ;
 
+  type PageItemContents = {
+    title: string;
+    isIndex: boolean;
+    content: string [];
+  };
+
   const pages = pagesItems.reduce((acc, item) => {
     if (!item.url) {
       return acc;
     }
 
-    const key = item.url.replace(/\/$/, '');
-    const index = acc[key] ? acc[key].length - 1 : 0;
+    const url = item.url.replace(/\/$/, '');
+    const index = acc[url] ? acc[url].content?.length - 1 : 0;
     const result = mapMDX(item, index);
+    const isIndex = /^\/[^\s+\/]+\/?$/.test(url);
+
+    const title = [
+      item.id && `# ${item.id}`,
+      item.alias && `(${item.alias})`,
+    ].filter(v => v).join(' ');
 
     return {
       ...acc,
-      [key]: (acc[key] || [])
-        .concat(index === 0 && /^#/.test(result)
-          ? null
-          : result
-        )
-      ,
+      [url]: {
+        title,
+        isIndex,
+        content: (acc[url]?.content || [title]).concat(result)
+      },
     };
-  }, {} as Record<string, string>);
+  }, {} as Record<string, PageItemContents>);
 
-  return fs.writeFile(
+  fs.writeFile(
     path.resolve(__dirname, 'data', 'pages.json'),
     JSON.stringify(
       pages,
-      function (key, value) {
+      (key, value) => {
         if (Array.isArray(value)) {
           return value.filter(v => v);
         }
@@ -149,6 +160,24 @@ Promise.all([
       2
     ),
   );
+
+  return pages;
+}).then(pages => {
+  return Promise.all(Object.entries(pages)
+    .map(([url, {isIndex, content}]) => {
+
+      if (isIndex) {
+        return undefined;
+      }
+
+      return fs.writeFile(
+        path.join('src', 'pages', `${url}.mdx`),
+        Array.isArray(content)
+          ? content.join('\n')
+          : content
+      );
+    })
+  )
 });
 
 // fs.createWriteStream(
