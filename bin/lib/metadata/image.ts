@@ -1,6 +1,8 @@
 import { PageItemProps } from "../types";
+import { ActualPageBasename } from "bin/fetch";
 import { mapCometImageMetadata } from "./comet-image";
 import { mapGalaxyImageMetadata } from "./galaxy-image";
+import { mapSolarSystemImageMetadata } from "./solar-system-image";
 
 export default function mapImageMetadata(
   pageURL: string,
@@ -10,13 +12,15 @@ export default function mapImageMetadata(
   const alt = el.attr('alt');
   const src = el.attr('data-orig-file') || el.attr('src');
 
-  const id = (/\/([^\/.]+)\.[^\/\s]+$/.exec(src) || ['']).pop().trim();
-  const basename = pageURL.split('/').pop();
+  const basename = pageURL.split('/').pop() as ActualPageBasename;
+  const objectId = (/\/([^\/.]+)\.[^\/\s]+$/.exec(src) || ['']).pop().trim();
 
   const props: PageItemProps = {
     src,
     alt,
+    objectId,
     type: 'image',
+    urlId: objectId,
   };
 
   if (textContent) {
@@ -24,12 +28,15 @@ export default function mapImageMetadata(
   }
 
   switch (basename) {
-    case 'cometasasteroides': {
-      return mapCometImageMetadata({ ...props, id });
-    }
     case 'galaxias':
     case 'nebulosas': {
-      return mapGalaxyImageMetadata({ ...props, id });
+      return mapGalaxyImageMetadata({ ...props, objectId });
+    }
+    case 'cometasasteroides': {
+      return mapCometImageMetadata({ ...props, objectId });
+    }
+    case 'planetas-satelites': {
+      return mapSolarSystemImageMetadata({ ...props, objectId });
     }
     default: {
       return props;

@@ -1,293 +1,312 @@
 import { PageItemProps } from "../types";
 
 export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
-  const { src, id } = props;
+  const { src, urlId, objectId: id } = props;
 
   if (/^c?2020-?f3/i.test(id) || src === 'https://astroccd.files.wordpress.com/2020/07/re3.jpg') {
     return {
       ...props,
-      id: 'C/2020 F3',
-      alias: 'neowise',
+      nombre: 'C/2020 F3 (NEOWISE)',
+      objectId: 'C/2020 F3',
     };
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2012/12/124cometa-c-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg') {
+    return {
+      ...props,
+      fecha: '20070112',
+      urlId: '20070112-c2006-p1',
+      nombre: 'C/2006 P1 (McNaught)',
+      objectId: 'C/2006 P1',
+    }
   }
 
   if (src === 'https://astroccd.files.wordpress.com/2012/12/rgbpro_2.jpg') {
     return {
       ...props,
-      id: 'C/2013 US10',
-      alias: 'CATALINA',
+      nombre: 'C/2013 US10 (CATALINA)',
+      objectId: 'C/2013 US10',
     };
   }
 
   if (src === 'https://astroccd.files.wordpress.com/2012/12/tempel-dia-3-y-4-julio-2005.jpg') {
     return {
       ...props,
-      id: 'C/2006 P1',
-      alias: 'McNaught',
       fecha: '20070112',
+      nombre: 'C/2006 P1 (McNaught)',
+      objectId: 'C/2006 P1',
+    }
+  }
+
+  if (src === 'https://astroccd.files.wordpress.com/2012/12/124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg') {
+    return {
+      ...props,
+      fecha: '20070112',
+      nombre: 'C/2006 P1 (McNaught)',
+      objectId: 'C/2006 P1',
     }
   }
 
   if (/^c?2019-?y1/i.test(id)) {
     return {
       ...props,
-      id: 'C/2019 Y1',
-      alias: 'atlas',
+      nombre: 'C/2019 Y1 (ATLAS)',
+      objectId: 'C/2019 Y1',
     }
   }
 
   if (/^c?2019-?y4/i.test(id)) {
     return {
       ...props,
-      id: 'C/2019 Y4',
-      alias: 'atlas',
+      nombre: 'C/2019 Y4 (ATLAS)',
+      objectId: 'C/2019 Y4',
     }
   }
 
   if (/^c?2017-?t2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2017 T2',
-      alias: 'panstarrs'
+      nombre: 'C/2017 T2 (PANSTARRS)',
+      objectId: 'C/2017 T2',
     };
   }
 
   if (/^c2018-?n2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2018 N2',
-      alias: 'asassn'
+      nombre: 'C/2018 N2 (ASASSN)',
+      objectId: 'C/2018 N2',
     };
   }
 
   if (/^2i-?borisov|^002i|^c2019q4/i.test(id)) {
     return {
       ...props,
-      id: '2I',
-      alias: 'Borisov',
+      nombre: '2I/Borisov',
+      objectId: '2I',
     };
   }
 
   if (/^260-?P/i.test(id)) {
     return {
       ...props,
-      id: '260P',
-      alias: 'McNaught',
+      nombre: '260P/McNaught',
+      objectId: '260P',
     };
   }
 
   if (/^6478(-gault)?/i.test(id) || /^11enero_8febrero/i.test(id)) {
     return {
       ...props,
-      id: '(6478) Gault',
+      objectId: '(6478) Gault',
     };
   }
 
   if (/^60p(tsuchinshan)?/i.test(id)) {
     return {
       ...props,
-      id: '60P',
-      alias: 'Tsuchinshan',
+      nombre: '60P/Tsuchinshan',
+      objectId: '60P',
     };
   }
 
   if (/^38p_/i.test(id)) {
     return {
       ...props,
-      id: '38P',
-      alias: 'Stephan-Oterma',
+      nombre: '38P/Stephan-Oterma',
+      objectId: '38P',
     }
   }
 
   if (/^46p_/i.test(id)) {
     return {
       ...props,
-      id: '46P',
-      alias: 'Wirtanen',
+      nombre: '46P/Wirtanen',
+      objectId: '46P',
     }
   }
 
   if (/^c?2018-?V1/i.test(id)) {
     return {
       ...props,
-      id: 'C/2018 V1',
-      alias: 'Machholz-Fujikawa-Iwamoto',
+      nombre: 'C/2018 V1 (Machholz-Fujikawa-Iwamoto)',
+      objectId: 'C/2018 V1',
     }
   }
 
   if (/^64p_/i.test(id)) {
     return {
       ...props,
-      id: '64P',
-      alias: 'Swift-Gehrels',
+      nombre: '64P/Swift-Gehrels',
+      objectId: '64P',
     }
   }
 
   if (/^21-?p_/i.test(id)) {
     return {
       ...props,
-      id: '21P',
-      alias: 'Giacobini-Zinner'
+      nombre: '21/P Giacobini-Zinner',
+      objectId: '21P',
     };
   }
 
   if (/^c?2017-?s3/i.test(id)) {
     return {
       ...props,
-      id: 'C/2017 S3',
-      alias: 'panstars',
+      nombre: 'C/2017 S3 (panstars)',
+      objectId: 'C/2017 S3',
     }
   }
 
   if (/^c?2016-?r2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2016 R2',
-      alias: 'panstars',
+      nombre: 'C/2016 R2 (PANSTARRS)',
+      objectId: 'C/2016 R2',
     }
   }
 
   if (/^174p_/.test(id)) {
     return {
       ...props,
-      id: '174P',
-      alias: 'ECHELUS'
+      nombre: '174P/ECHELUS',
+      objectId: '174P',
     };
   }
 
   if (id === '2015v2_20171112_i88') {
     return {
       ...props,
-      id: 'C/2015 V1',
-      alias: 'panstars'
+      nombre: 'C/2015 V1 (PANSTARRS)',
+      objectId: 'C/2015 V1',
     };
   }
 
   if (/^c?2015-?V2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2015 V2',
-      alias: 'JOHNSON'
+      nombre: 'C/2015 V2 (JOHNSON)',
+      objectId: 'C/2015 V2',
     };
   }
 
   if (/^c?2015-?er61/i.test(id)) {
     return {
       ...props,
-      id: 'C/2015 ER61',
-      alias: 'PANSTARRS'
+      nombre: 'C/2015 ER61 (PANSTARRS)',
+      objectId: 'C/2015 ER61',
     };
   }
 
   if (/^c?2017-?o1/i.test(id)) {
     return {
       ...props,
-      id: 'C/2017 O1',
-      alias: 'ASASSN1'
+      nombre: 'C/2017 O1 (ASASSN1)',
+      objectId: 'C/2017 O1',
     };
   }
 
   if (/^(00)?29p/i.test(id)) {
     return {
       ...props,
-      id: '29P',
-      alias: 'Schwassmann-Wachmann'
+      nombre: '29P/Schwassmann-Wachmann',
+      objectId: '29P',
     };
   }
 
   if (/^c?2015-?(O|0)1/i.test(id)) {
     return {
       ...props,
-      id: 'C/2015 O1',
-      alias: 'PANSTARRS'
+      nombre: 'C/2015 O1 (PANSTARRS)',
+      objectId: 'C/2015 O1',
     };
   }
 
-  if (/^(copia-de-)?c?2017-?k2(-panstarrs)?/i.test(id) || id === '20171' || id === '111111111111') {
+  if (/^(copia-de-)?c?2017-?k2(-PANSTARRS)?/i.test(id) || id === '20171' || id === '111111111111') {
     return {
       ...props,
-      id: 'C/2017 K2',
-      alias: 'PANSTARRS'
+      nombre: 'C/2017 K2 (PANSTARRS)',
+      objectId: 'C/2017 K2',
     };
   }
 
   if (/^c?[-_]?2013-?US10/i.test(id)) {
     return {
       ...props,
-      id: 'C/2013 US10',
-      alias: 'CATALINA'
+      nombre: 'C/2013 US10 (CATALINA)',
+      objectId: 'C/2013 US10',
     };
   }
 
   if (/^c?[-_]?2013-?X1/i.test(id)) {
     return {
       ...props,
-      id: 'C/2013 X1',
-      alias: 'PANSTARRS'
+      nombre: 'C/2013 X1 (PANSTARRS)',
+      objectId: 'C/2013 X1',
     };
   }
 
   if (/^c?[-_]?2014-?S2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2014 S2',
-      alias: 'PANSTARRS'
+      nombre: 'C/2014 S2 (PANSTARRS)',
+      objectId: 'C/2014 S2',
     };
   }
 
   if (/^c?[-_]?2015-?F4/i.test(id) || src === 'https://astroccd.files.wordpress.com/2012/12/20150913_i88.jpg') {
     return {
       ...props,
-      id: 'C/2015 F4',
-      alias: 'JACQUES'
+      nombre: 'C/2015 F4 (JACQUES)',
+      objectId: 'C/2015 F4',
     };
   }
 
   if (/^c?[-_]?2014-?Q2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2014 Q2',
-      alias: 'LOVEJOY'
+      nombre: 'C/2014 Q2 (LOVEJOY)',
+      objectId: 'C/2014 Q2',
     };
   }
 
   if (/^15p(_|\.)/i.test(id)) {
     return {
       ...props,
-      id: '15P',
-      alias: 'Finlay'
+      nombre: '15P/Finlay',
+      objectId: '15P',
     };
   }
 
   if (/^c?[-_]?2011-?J2/i.test(id) || id === 'c2014j2_1_20') {
     return {
       ...props,
-      id: 'C/2011 J2',
-      alias: 'LINEAR'
+      nombre: 'C/2011 J2 (LINEAR)',
+      objectId: 'C/2011 J2',
     };
   }
 
   if (/^c?[-_]?2014-?E2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2014 E2',
-      alias: 'JACQUES'
+      nombre: 'C/2014 E2 (JACQUES)',
+      objectId: 'C/2014 E2',
     };
   }
 
   if (/^c?[-_]?2013-?UQ4/i.test(id)) {
     return {
       ...props,
-      id: 'C/2013 UQ4',
-      alias: 'CATALINA'
+      nombre: 'C/2013 UQ4 (CATALINA)',
+      objectId: 'C/2013 UQ4',
     };
   }
 
   if (/^c?[-_]?2012-?K1/i.test(id)) {
     return {
       ...props,
-      id: 'C/2012 K1',
-      alias: 'PANSTARRS'
+      nombre: 'C/2012 K1 (PANSTARRS)',
+      objectId: 'C/2012 K1',
     };
   }
 
@@ -298,8 +317,8 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      id: 'C/2013 R1',
-      alias: 'LOVEJOY'
+      nombre: 'C/2013 R1 (LOVEJOY)',
+      objectId: 'C/2013 R1',
     };
   }
 
@@ -310,33 +329,33 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      id: 'C/2012 S1',
-      alias: 'ISON',
       fecha: '20131116',
+      nombre: 'C/2012 S1 (ISON)',
+      objectId: 'C/2012 S1',
     };
   }
 
   if (/^apophis-/.test(id)) {
     return {
       ...props,
-      id: '99942 Apophis',
-      alias: 'Apophis'
+      nombre: '99942 Apophis',
+      objectId: '99942 Apophis',
     };
   }
 
   if (/^c?[-_]?2012-?K5/i.test(id)) {
     return {
       ...props,
-      id: 'C/2012 K5',
-      alias: 'LINEAR'
+      nombre: 'C/2012 K5 (LINEAR)',
+      objectId: 'C/2012 K5',
     };
   }
 
   if (/^(user_556_)?168P/i.test(id)) {
     return {
       ...props,
-      id: '168P',
-      alias: 'Hergenrother'
+      nombre: '168P/Hergenrother',
+      objectId: '168P',
     };
   }
 
@@ -347,8 +366,8 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      id: 'C/2011 L4',
-      alias: 'PANSTARRS'
+      nombre: 'C/2011 L4 (PANSTARRS)',
+      objectId: 'C/2011 L4',
     };
   }
 
@@ -358,80 +377,80 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      id: '2005 YU55',
-      alias: '(308635) 2005 YU55'
+      nombre: '2005 YU55 (308635)',
+      objectId: '2005 YU55',
     };
   }
 
   if (/^lulin-26-60s/.test(id)) {
     return {
       ...props,
-      id: 'C/2007 N3',
-      alias: 'Lulin'
+      nombre: 'C/2007 N3 (Lulin)',
+      objectId: 'C/2007 N3',
     }
   }
 
   if (/^(11-18-2007-holmes-11|cometa-17p)/.test(id)) {
     return {
       ...props,
-      id: '17P',
-      alias: 'Holmes'
+      nombre: '17P/Holmes',
+      objectId: '17P',
     }
   }
 
   if (/^(m3-)?c?-?2006-?vz13/i.test(id)) {
     return {
       ...props,
-      id: 'C/2006 VZ13',
-      alias: 'LINEAR'
+      nombre: 'C/2006 VZ13 (LINEAR)',
+      objectId: 'C/2006 VZ13',
     }
   }
 
   if (/^(124cometa-)?c?-?2006-?p1/i.test(id)) {
     return {
       ...props,
-      id: 'C/2006 P1',
-      alias: 'McNaught'
+      nombre: 'C/2006 P1 (McNaught)',
+      objectId: 'C/2006 P1',
     }
   }
 
   if (/^tempel-dia-3-y-4-julio-2005/i.test(id)) {
     return {
       ...props,
-      id: '9P',
-      alias: 'Tempel 1'
+      nombre: '9P/Tempel 1',
+      objectId: '9P',
     }
   }
 
   if (/^(mosaico-)?c?-?2001-?Q4/i.test(id)) {
     return {
       ...props,
-      id: 'C/2001 Q4',
-      alias: 'NEAT',
+      nombre: 'C/2001 Q4 (NEAT)',
+      objectId: 'C/2001 Q4',
     }
   }
 
   if (/^c?-?2002-?t7/i.test(id)) {
     return {
       ...props,
-      id: 'C/2002 T7',
-      alias: 'LINEAR',
+      nombre: 'C/2002 T7 (LINEAR)',
+      objectId: 'C/2002 T7',
     }
   }
 
   if (/^c?-?1996-?b2/i.test(id) || id === 'hyakutake_carta') {
     return {
       ...props,
-      id: 'C/1996 B2',
-      alias: 'Hyakutake',
+      nombre: 'C/1996 B2 (Hyakutake)',
+      objectId: 'C/1996 B2',
     }
   }
 
   if (/^c?-?2018-?n2/i.test(id)) {
     return {
       ...props,
-      id: 'C/2018 N2',
-      alias: 'ASASSN',
+      nombre: 'C/2018 N2 (ASASSN)',
+      objectId: 'C/2018 N2',
     }
   }
 

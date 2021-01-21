@@ -5,10 +5,11 @@
   "scripts": {
     "test": "jest",
     "dev": "next",
+    "clean": "rm -f ./src/pages/**/*.mdx",
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "fetch:data": "ts-node ./bin/fetch.ts"
+    "fetch:data": "yarn clean && ts-node ./bin/fetch.ts"
   },
   "repository": {
     "type": "git",

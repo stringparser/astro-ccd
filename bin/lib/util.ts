@@ -60,32 +60,51 @@ export const mapMDX = (el: PageItemProps, index: number) => {
   }
 }
 
+export const urlIdsHarcoded = {
+  jupiterSaturno: '20201220-jupiter-saturno',
+};
+
 export const mapItemProps =
   (basename: string) =>
   (item: PageItemProps, index: number, items: PageItemProps[]) => {
-    const { id, ...it } = item;
+    const { urlId, ...props } = item;
 
-    if (/Lista de códigos MPC/.test(item.text)) {
+    if (item.text === 'jupiter-saturno-20diciembre2020-2') {
       return {
-        ...it,
-        url: `/${basename}`,
+        ...props,
+        text: 'Conjunción de Júpiter y Saturno',
+        urlId: urlIdsHarcoded.jupiterSaturno,
       };
     }
 
-    if (!id || /^(text|header)$/.test(it.type)) {
+    if (item.text === 'Conjuncion Jupiter &amp; Saturno') {
+      return {
+        ...props,
+        text: '',
+        urlId: urlIdsHarcoded.jupiterSaturno,
+      };
+    }
+
+    if (item.text === 'GALAXIAS/SUPERNOVAS' || /Lista de códigos MPC/.test(props.text)) {
+      return {
+        ...props,
+        urlId: 'galaxias',
+      };
+    }
+
+    if (!urlId || /^(text|header)$/.test(props.type)) {
       const next = items[index + 1];
 
-      const result = {
-        ...it,
-        url: `/${basename}`,
+      const result: PageItemProps = {
+        urlId: basename,
+        ...props,
       };
 
       if (
         next?.fecha?.length >= 6
-        && !/^\/fuensanta/.test(next?.url)
+        && !/^\/fuensanta/.test(next?.label)
       ) {
-        result.url = next.url;
-        result.fecha = next.fecha;
+        result.urlId = next.urlId;
       }
 
       return result;
@@ -105,13 +124,16 @@ export const mesMap = {
   julio: '07',
   ago: '08',
   agosto: '08',
-  septembre: '09',
+  Aagosto: '08',
+  sep: '09',
+  septiembre: '09',
+  ocubre: '10',
   octubre: '10',
   noviembre: '11',
   diciembre: '12',
 };
 
-const fechaTextRE = new RegExp([
+export const fechaTextRE = new RegExp([
   '(\\d{1,2})',
   '(?:\\s*(de)?\\s*)',
   `(${Object.keys(mesMap).join('|')})`,
@@ -127,32 +149,44 @@ const fechaNombreArchivoRE = new RegExp([
   '(\\d{4})'
 ].join(''), 'i');
 
-export function mapFecha(props: PageItemProps) {
+export function mapFecha(props: PageItemProps): PageItemProps & { fechaRE?: RegExp; } {
   const {
     src = '',
     fecha,
   } = props;
 
   if (fecha) {
-    return fecha;
+    return props;
   }
 
   if (src === 'https://astroccd.files.wordpress.com/2020/07/2020f3hdr.jpg') {
-    return '20200719';
+    return {
+      ...props,
+      fecha: '20200719'
+    };
   }
 
   if (src === 'https://astroccd.files.wordpress.com/2012/12/c2014j2_1_20.jpg') {
-    return '20140915';
+    return {
+      ...props,
+      fecha: '20140915',
+    };
   }
 
   const text = [props.text, props.alt].filter(v => v).join('\n');
 
   if (/youtu\.be\/po6as9H-_hk/i.test(text)) {
-    return '20140915';
+    return {
+      ...props,
+      fecha: '20140915',
+    };
   }
 
   if (/%28308635%29_2005_YU55/.test(text)) {
-    return
+    return {
+      ...props,
+      fecha: '20111100',
+    };
   }
 
   const fechaDeTexto = fechaTextRE.exec(text);
@@ -166,7 +200,11 @@ export function mapFecha(props: PageItemProps) {
       dia.length === 1 ? `0${dia}` : dia
     ].join('');
 
-    return result;
+    return {
+      ...props,
+      fecha: result,
+      fechaRE: fechaTextRE,
+    };
   }
 
   const fechaConMesDeArchivo = fechaNombreArchivoRE.exec(src.split('/').pop() || '');
@@ -174,24 +212,34 @@ export function mapFecha(props: PageItemProps) {
   if (fechaConMesDeArchivo) {
     const [dia, mes, año] = fechaConMesDeArchivo.slice(1).filter(v => v);
 
-    return [
-      año,
-      mesMap[mes.toLowerCase()],
-      dia.length === 1 ? `0${dia}` : dia
-    ].join('');
+    return {
+      ...props,
+      fecha: [
+        año,
+        mesMap[mes.toLowerCase()],
+        dia.length === 1 ? `0${dia}` : dia
+      ].join(''),
+      fechaRE: fechaNombreArchivoRE,
+    };
   }
 
   const fechaDeArchivo = (/_(\d{8})[_.i]/.exec((src.split('/').pop() || '')) || ['']).pop();
 
   if (fechaDeArchivo) {
-    return fechaDeArchivo;
+    return {
+      ...props,
+      fecha: fechaDeArchivo,
+    };
   }
 
   const fechaDeURL = (/\/(\d{4}\/\d{2})\//.exec(src) || ['']).pop().replace('/', '');
 
   if (fechaDeURL) {
-    return fechaDeURL;
+    return {
+      ...props,
+      fecha: `${fechaDeURL}00`
+    };
   }
 
-  return '';
+  return props;
 }
