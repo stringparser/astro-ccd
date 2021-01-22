@@ -2,13 +2,14 @@ import React from "react";
 import { create } from "jss"
 import { MDXProvider } from '@mdx-js/react'
 import { AppContext, AppProps } from "next/app";
-import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles } from "@material-ui/core";
+import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box } from "@material-ui/core";
 
 import { mdxComponents } from "src/lib/constants";
 
 import Navigation from "src/components/Navigation";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/ScrollToTopButton";
+import { Divider } from "material-ui";
 
 const jss = create({
   ...jssPreset(),
@@ -54,6 +55,21 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <CssBaseline />
               <Navigation />
               <Component {...pageProps} />
+              <hr />
+              <Box
+                color="red"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+              >
+                <p>
+                  Las imagenes  son de libre distribucion  siempre que se indique  su  procedencia
+                </p>
+                <div style={{padding: '1rem'}} />
+                <p>
+                  Contacto: jcgmilla@gmail.com
+                </p>
+              </Box>
               <ScrollToTopButton />
             </StylesProvider>
           </MDXProvider>

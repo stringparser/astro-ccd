@@ -28,7 +28,9 @@ export async function getStaticProps() {
 const CometasAsteroides: React.FC<CometasAsteroidesProps> = ({ items }) => {
   return (
     <Box>
-      <H1>Cometas y Asteroides</H1>
+      <H1>
+        Cometas y Asteroides
+      </H1>
       <Box
         display="flex"
         alignItems="center"
@@ -38,7 +40,7 @@ const CometasAsteroides: React.FC<CometasAsteroidesProps> = ({ items }) => {
           target="_blank"
           href="http://www.minorplanetcenter.net/iau/lists/ObsCodesF.html"
         >
-          <Typography component="p">
+          <Typography component="p" style={{margin: '1rem'}}>
             Lista de códigos MPC
           </Typography>
         </Link>

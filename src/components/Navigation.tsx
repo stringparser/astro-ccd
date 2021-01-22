@@ -58,9 +58,16 @@ const useStyles = makeStyles(theme => ({
   },
 
   link: {
+    opacity: .8,
     flexBasis: '20%',
     marginTop: '0.5rem',
+    transition: 'all linear 0.3s',
     textTransform: 'uppercase',
+
+    '&:hover': {
+      opacity: 1,
+      textDecoration: 'none',
+    }
   },
 
   homeLink: {
@@ -69,8 +76,8 @@ const useStyles = makeStyles(theme => ({
   },
 
   currentLink: {
+    color: 'red',
     fontWeight: 'bold',
-    textDecoration: 'underline',
   },
 }));
 
@@ -85,7 +92,7 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
     <header className={classes.header}>
         <nav className={classes.nav}>
           <aside className={classes.homeLink}>
-            <MuiLink href="/">
+            <MuiLink href="/" style={{color: 'royalblue'}}>
               OACM<br />Fuensanta
             </MuiLink>
           </aside>

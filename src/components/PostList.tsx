@@ -46,7 +46,7 @@ function PostList<T>({ items }: PostListProps) {
             href={`/objeto/${el.urlId.split('-').slice(1).join('-')}`}
             style={{width: '25%'}}
           >
-            <H2>
+            <H2 style={{color: 'red'}}>
               {el.objeto}
             </H2>
             <Image
