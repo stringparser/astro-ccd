@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import { fetchPageContent } from './lib/get-page-content';
 import { fechaTextRE, mapMDX, mapJSON, urlMap } from './lib/util';
-import { PageBasename, PageItemContents } from './lib/types';
+import { PageBasename, PageItemContents } from '../src/types';
 
 Promise.all([
   fetchPageContent('https://astro-ccd.com/fuensanta-3'),

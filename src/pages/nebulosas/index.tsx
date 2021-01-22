@@ -3,7 +3,7 @@ import { Divider } from "material-ui";
 
 import H1 from "src/components/Typography/H1";
 import PostList from "src/components/PostList";
-import { PageItemContents } from "bin/lib/types";
+import { PageItemContents } from "src/types";
 
 export type NebulosasPosts = {
   items: PageItemContents[];

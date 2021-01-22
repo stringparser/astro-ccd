@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 import mapMetadata from './metadata';
-import { PageBasename, PageItemProps, ParsedPageContent } from './types';
+import { PageBasename, PageItemProps, ParsedPageContent } from '../../src/types';
 import { ActualPageBasename, cleanHTML, mapFecha, mapTextToUrl, standalonePagesRE, urlMap } from './util';
 
 const skipForIndex = <T>(isIndex: boolean, handle: T) => isIndex

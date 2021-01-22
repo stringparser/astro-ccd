@@ -1,4 +1,4 @@
-import { PageBasename, PageItemProps } from "./types";
+import { PageBasename, PageItemProps } from "../../src/types";
 
 export const urlMap = {
   'ccd-2': PageBasename.reparacion,

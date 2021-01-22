@@ -1,4 +1,4 @@
-import { PageBasename, PageItemProps } from "../types";
+import { PageBasename, PageItemProps } from "../../../src/types";
 
 export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   const { src, type, text, objeto: id } = props;

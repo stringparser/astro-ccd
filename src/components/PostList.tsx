@@ -2,7 +2,7 @@
 import { Box, Link } from "@material-ui/core";
 
 import H2 from "src/components/Typography/H2";
-import { PageItemContents } from "bin/lib/types";
+import { PageItemContents } from "src/types";
 import Image from "./Image";
 
 export type PostListProps<T = PageItemContents> =  {

@@ -1,4 +1,4 @@
-import { PageItemProps } from "../types";
+import { PageItemProps } from "../../../src/types";
 import { urlIdsHarcoded } from "../util";
 
 export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps {

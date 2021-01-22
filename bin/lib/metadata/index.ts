@@ -1,4 +1,4 @@
-import { PageBasename, PageItemProps } from "../types";
+import { PageBasename, PageItemProps } from "../../../src/types";
 import { mapCometImageMetadata } from "./comet-image";
 import { mapGalaxyImageMetadata } from "./galaxy-image";
 import { mapSolarSystemImageMetadata } from "./solar-system-image";

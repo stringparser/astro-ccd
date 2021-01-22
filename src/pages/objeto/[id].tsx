@@ -1,10 +1,11 @@
 import { Fragment } from 'react';
-import { Box, Divider, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 
 import Image from 'src/components/Image';
 import H1 from 'src/components/Typography/H1';
-import cometas from 'src/data/cometas-asteroides.json';
+import pagesData from 'src/data/pages.json';
 import DisqusEmbed from 'src/components/DisqusEmbed';
+import { PageItemProps } from 'src/types';
 
 type PostParams = {
   params: {
@@ -17,10 +18,15 @@ type ObjetoByIdProps = {
 };
 
 const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
+  const searchId = post.params.id;
 
-  const results = cometas.items.filter(el =>
-    el.id === post.params.id
-  );
+  const results = Object.values(pagesData)
+    .filter(el => el.urlId === searchId)
+    .map(el => el.content as PageItemProps[])
+    .flat()
+    .sort((a, b) => (a.fecha || '').localeCompare(b.fecha || ''))
+    .reverse()
+  ;
 
   const result = results[0] || {};
 
@@ -49,7 +55,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
     }
   });
 
-  const title = results[0].alias || 'no-alias';
+  const title = results[0].objeto || 'no-alias';
   const identifier = `/objeto/${post.params.id}`;
 
   return (
@@ -78,15 +84,19 @@ export async function getStaticProps({ params }: PostParams): Promise<{ props: O
 
 export async function getStaticPaths() {
 
-  const uniqueSlugIds = cometas.items.reduce((acc: string[], el) => {
-    const id = el.id;
+  const uniqueSlugIds = Object.values(pagesData)
+    .map(el => el.content as PageItemProps[])
+    .flat()
+    .reduce((acc: string[], el) => {
+      const id = el.urlId;
 
-    if (!id || acc.includes(id)) {
-      return acc;
-    }
+      if (!id || acc.includes(id)) {
+        return acc;
+      }
 
-    return acc.concat(id);
-  }, []);
+      return acc.concat(id);
+    }, [])
+  ;
 
   return {
     paths: uniqueSlugIds.map(id => {

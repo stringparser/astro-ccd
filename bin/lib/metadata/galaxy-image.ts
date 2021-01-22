@@ -1,4 +1,4 @@
-import { PageItemProps } from "../types";
+import { PageItemProps } from "../../../src/types";
 
 const SN_RE = /(?:^|_)sn-?([^\s-_]+)/i;
 const IC_RE = /(?:^|[_\d-]+)ic[-_]?(\d+)/i;
