@@ -173,7 +173,7 @@ Promise.all([
 
       const filename = isIndex
         ? path.resolve(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
-        : path.resolve(__dirname, '..', 'src', 'registro', `${urlId}.mdx`)
+        : path.resolve(__dirname, '..', 'datos', `${urlId}.mdx`)
       ;
 
       const frontMatterKeys: Array<keyof typeof page> = isIndex
