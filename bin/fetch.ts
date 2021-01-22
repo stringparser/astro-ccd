@@ -162,9 +162,9 @@ Promise.all([
       }
 
       const frontMatterKeys: Array<keyof typeof page> = [
-        'title',
         'fecha',
         'label',
+        'title',
         'objeto',
       ];
 
@@ -190,6 +190,16 @@ Promise.all([
                 if (key === 'title') {
                   return page.title
                     ? `titulo: ${page.title.replace(/^\s*[#]\s*/, '')}`
+                    : null
+                  ;
+                }
+
+                if (key === 'label') {
+                  return page.label
+                    ? `etiquetas: ${
+                      page.label === 'cometas-asterides' && 'cometa, asteroide'
+                      || page.label
+                    }`
                     : null
                   ;
                 }

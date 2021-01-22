@@ -10,7 +10,7 @@ export type GalaxiasPosts = {
 };
 
 export async function getStaticProps() {
-  const values = (await import('../../data/galaxias.json')).default;
+  const values = (await import('../../data/nebulosas.json')).default;
 
   return {
     props: {

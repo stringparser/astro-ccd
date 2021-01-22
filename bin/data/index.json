@@ -1374,15 +1374,15 @@
         "isIndex": false
       },
       {
-        "urlId": "201716-c2015-o1",
+        "urlId": "20170816-c2015-o1",
         "type": "image",
         "alt": "C2015O1_20170816_I88",
         "src": "https://astroccd.files.wordpress.com/2018/04/c2015o1_20170816_i88.jpg",
         "objeto": "C/2015 O1",
         "label": "cometas-asteroides",
         "text": "c2015 O1 16 Aagosto 2017",
-        "nombre": "C/2015 O1 (PANSTARRS)",
-        "fecha": "201716",
+        "fecha": "20170816",
+        "nombre": "C/2015 O1 (PANSTARS)",
         "isIndex": false
       },
       {

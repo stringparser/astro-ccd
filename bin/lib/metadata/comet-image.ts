@@ -45,6 +45,18 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   }
 
   if (
+    src === 'https://astroccd.files.wordpress.com/2018/04/c2015o1_20170816_i88.jpg'
+  ) {
+    return {
+      ...props,
+      urlId: '20170816-c2015-o1',
+      fecha: '20170816',
+      objeto: 'C/2015 O1',
+      nombre: 'C/2015 O1 (PANSTARS)',
+    };
+  }
+
+  if (
     id === '2015-o1_20180416_i88'
     || id === 'c2015o1_20170816_i88'
   ) {
