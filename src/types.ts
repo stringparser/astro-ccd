@@ -1,21 +1,21 @@
 export type PageItemType = 'text' | 'image' | 'header';
 
 export enum PageBasename {
-  galaxias = 'galaxias',
   fuensanta = 'fuensanta',
-  nebulosas = 'nebulosas',
-  reparacion = 'reparacion-ccd',
-  sistemaSolar = 'sistema-solar',
   cometasAsteroides = 'cometas-asteroides',
+  galaxias = 'galaxias',
+  nebulosas = 'nebulosas',
+  sistemaSolar = 'sistema-solar',
   construccionObservatorio = 'construccion-del-observatorio',
+  reparacionCCD = 'reparacion-ccd',
 }
 
 export type PageBasenameList =
   PageBasename.galaxias |
   PageBasename.fuensanta |
   PageBasename.nebulosas |
-  PageBasename.reparacion |
   PageBasename.sistemaSolar |
+  PageBasename.reparacionCCD |
   PageBasename.cometasAsteroides |
   PageBasename.construccionObservatorio
 ;

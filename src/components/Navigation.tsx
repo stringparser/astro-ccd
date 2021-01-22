@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { Fragment } from 'react';
-import { makeStyles, Link as MuiLink } from "@material-ui/core";
+import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
 
-import { NextRouter, withRouter } from 'next/router';
+import H2 from "./Typography/H2";
 import { PageBasename } from "src/types";
+import { NextRouter, withRouter } from 'next/router';
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
@@ -13,6 +13,12 @@ const items = Object.entries(PageBasename)
         return {
           href: `/${href}`,
           text: 'cometas y asteroides',
+        };
+      }
+      case PageBasename.reparacionCCD: {
+        return {
+          href: `/${href}`,
+          text: 'reparación DE CCD SBIG',
         };
       }
       case PageBasename.construccionObservatorio: {
@@ -45,23 +51,42 @@ const useStyles = makeStyles(theme => ({
   },
 
   nav: {
+    width: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
+  homeLink: {
+    flex: '0.25',
+    display: 'flex',
+    fontSize: '1.45rem',
+    alignItems: 'center',
+    marginRight: '0.75rem',
+    justifyContent: 'center',
+  },
+
   pageLinks: {
-    flex: '1',
+    flex: '0.9',
     margin: '0 auto',
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
+    marginLeft: '0.75rem',
+  },
+
+  linkBox: {
+    flexBasis: '17%',
+    marginTop: '0.5rem',
+
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   link: {
+    width: '100px',
     opacity: .8,
-    flexBasis: '20%',
-    marginTop: '0.5rem',
     transition: 'all linear 0.3s',
     textTransform: 'uppercase',
 
@@ -69,11 +94,6 @@ const useStyles = makeStyles(theme => ({
       opacity: 1,
       textDecoration: 'none',
     }
-  },
-
-  homeLink: {
-    flex: '0.20',
-    fontSize: '1.45rem',
   },
 
   currentLink: {
@@ -99,7 +119,10 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
           </aside>
           <aside  className={classes.pageLinks}>
             {items.map(({ href, text }, index) =>
-              <Fragment key={index}>
+              <Box
+                key={index}
+                className={classes.linkBox}
+              >
                 <Link
                   href={href}
                   passHref={true}
@@ -113,7 +136,7 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
                     {text.replace(/\-/g, ' ')}
                   </MuiLink>
                 </Link>
-              </Fragment>
+              </Box>
             )}
           </aside>
         </nav>
