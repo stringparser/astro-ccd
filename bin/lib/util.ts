@@ -1,4 +1,24 @@
-import { PageItemProps } from "./types";
+import { PageBasenames, PageItemProps } from "./types";
+
+export const urlMap = {
+  'ccd-2': PageBasenames.reparacion,
+  'galaxias': PageBasenames.galaxias,
+  'nebulosas': PageBasenames.nebulosas,
+  'fuensanta-3': PageBasenames.fuensanta,
+  'cometasasteroides': PageBasenames.cometasAsteroides,
+  'planetas-satelites': PageBasenames.sistemaSolar,
+  'construccion-del-observatorio': PageBasenames.construccionObservatorio,
+};
+
+export type ActualPageBasename = keyof typeof urlMap;
+
+export const baseUrlMapsRE = new RegExp(`^${Object.values(urlMap).join('|')}$`, 'i');
+
+export const standalonePagesRE = new RegExp(`^${[
+  urlMap['ccd-2'],
+  urlMap['fuensanta-3'],
+  urlMap['construccion-del-observatorio'],
+].join('|')}$`, 'i');
 
 export const cleanHTML = (html: string = '') => {
   return (html
@@ -13,7 +33,8 @@ export const cleanHTML = (html: string = '') => {
   );
 }
 
-export const mapTextToUrl = (input: string = '') => {
+export const mapTextToUrl = (input: string) => {
+
   const text =
     /aeztoztwby1kc05sznhqmnc/i.test(input) && 'c2017-k2' 
     || /aeZtOZTwOUF2MlkwQWVoaG8/i.test(input) && 'c2014-q2'
@@ -25,7 +46,7 @@ export const mapTextToUrl = (input: string = '') => {
   return (text
     .replace(/[\/()]+/g, '')
     .trim()
-    .replace(/\s+/g, '-')
+    .replace(/[\s,._]+/g, '-')
     .replace(/^c/i, 'c')
     .replace(/^-|-$/g, '')
     .replace(/\+\d+$/, '')
@@ -43,7 +64,7 @@ export const mapTextToUrl = (input: string = '') => {
   );
 };
 
-export const mapMDX = (el: PageItemProps, index: number) => {
+export const mapMDX = (el: PageItemProps) => {
   switch (el.type) {
     case 'text': {
       return el.text;
@@ -63,56 +84,6 @@ export const mapMDX = (el: PageItemProps, index: number) => {
 export const urlIdsHarcoded = {
   jupiterSaturno: '20201220-jupiter-saturno',
 };
-
-export const mapItemProps =
-  (basename: string) =>
-  (item: PageItemProps, index: number, items: PageItemProps[]) => {
-    const { urlId, ...props } = item;
-
-    if (item.text === 'jupiter-saturno-20diciembre2020-2') {
-      return {
-        ...props,
-        text: 'Conjunción de Júpiter y Saturno',
-        urlId: urlIdsHarcoded.jupiterSaturno,
-      };
-    }
-
-    if (item.text === 'Conjuncion Jupiter &amp; Saturno') {
-      return {
-        ...props,
-        text: '',
-        urlId: urlIdsHarcoded.jupiterSaturno,
-      };
-    }
-
-    if (item.text === 'GALAXIAS/SUPERNOVAS' || /Lista de códigos MPC/.test(props.text)) {
-      return {
-        ...props,
-        urlId: 'galaxias',
-      };
-    }
-
-    if (!urlId || /^(text|header)$/.test(props.type)) {
-      const next = items[index + 1];
-
-      const result: PageItemProps = {
-        urlId: basename,
-        ...props,
-      };
-
-      if (
-        next?.fecha?.length >= 6
-        && !/^\/fuensanta/.test(next?.label)
-      ) {
-        result.urlId = next.urlId;
-      }
-
-      return result;
-    }
-
-    return item;
-  }
-;
 
 export const mesMap = {
   enero: '01',
@@ -135,9 +106,9 @@ export const mesMap = {
 
 export const fechaTextRE = new RegExp([
   '(\\d{1,2})',
-  '(?:\\s*(de)?\\s*)',
+  '(?:\\s*(de)?\\s*|[-_\\s]*)',
   `(${Object.keys(mesMap).join('|')})`,
-  '(?:\\s*(de)?\\s*)',
+  '(?:\\s*(de)?\\s*|[-_\\s]*)',
   '(\\d{4})'
 ].join(''), 'i');
 
@@ -243,3 +214,11 @@ export function mapFecha(props: PageItemProps): PageItemProps & { fechaRE?: RegE
 
   return props;
 }
+
+export const mapJSON = function (key: string, value: any) {
+  if (value instanceof RegExp) {
+    return undefined;
+  }
+
+  return value;
+};

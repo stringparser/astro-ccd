@@ -5,10 +5,11 @@
   "scripts": {
     "test": "jest",
     "dev": "next",
-    "clean": "rm -f ./src/pages/**/*.mdx",
+    "clean": "rm -f ./src/pages/*/*.mdx",
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "scrape": "ts-node -P tsconfig.json ./bin/scrape.ts",
     "fetch:data": "yarn clean && ts-node ./bin/fetch.ts"
   },
   "repository": {
@@ -39,6 +40,7 @@
     "@types/fs-extra": "^9.0.6",
     "@types/jest": "^26.0.13",
     "@types/material-ui": "^0.20.8",
+    "@types/mdx-js__react": "^1.5.3",
     "@types/node-fetch": "^2.5.7",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
@@ -46,8 +48,11 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
     "fs-extra": "^9.0.1",
+    "gray-matter": "^4.0.2",
     "jest": "^26.4.2",
+    "next-mdx-remote": "^2.1.2",
     "node-fetch": "^2.6.1",
+    "node-glob": "^1.2.0",
     "ts-jest": "^26.3.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.0.2"

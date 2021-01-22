@@ -12,5 +12,6 @@
       ".ts",
       ".tsx"
     ]
-  }
+  },
+  "javascript.preferences.importModuleSpecifier": "non-relative"
 }

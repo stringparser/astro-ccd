@@ -1,11 +1,18 @@
-// next.config.js
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
-})
+});
 
 exports = module.exports = withMDX({
   images: {
-    domains: ['astroccd.files.wordpress.com'],
+    domains: [
+      'astroccd.files.wordpress.com'
+    ],
   },
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-})
+  pageExtensions: [
+    'js',
+    'jsx',
+    'mdx',
+    'ts',
+    'tsx'
+  ],
+});

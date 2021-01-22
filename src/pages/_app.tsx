@@ -4,8 +4,8 @@ import { MDXProvider } from '@mdx-js/react'
 import { AppContext, AppProps } from "next/app";
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles } from "@material-ui/core";
 
-import H1 from "src/components/Typography/H1";
-import Image from "src/components/Image";
+import { mdxComponents } from "src/lib/constants";
+
 import Navigation from "src/components/Navigation";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/ScrollToTopButton";
@@ -32,13 +32,9 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const components = {
-  h1: H1,
-  img: Image
-};
-
-const WebApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const WebApp: React.FC<AppProps> = (props: AppProps) => {
   const classes = useStyles();
+  const { Component, pageProps } = props;
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -53,7 +49,7 @@ const WebApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     <>
       <main className={classes.root}>
         <ThemeProvider theme={defaultTheme}>
-          <MDXProvider components={components}>
+          <MDXProvider components={mdxComponents}>
             <StylesProvider jss={jss}>
               <CssBaseline />
               <Navigation />

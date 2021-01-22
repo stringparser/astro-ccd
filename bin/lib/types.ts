@@ -1,21 +1,30 @@
 export type PageItemType = 'text' | 'image' | 'header';
 
+export enum PageBasenames {
+  galaxias = 'galaxias',
+  fuensanta = 'fuensanta',
+  nebulosas = 'nebulosas',
+  reparacion = 'reparacion-ccd',
+  sistemaSolar = 'sistema-solar',
+  cometasAsteroides = 'cometas-asteroides',
+  construccionObservatorio = 'construccion-del-observatorio',
+}
+
 export type PageItemProps =
   {
     type: PageItemType;
     urlId: string;
-    objectId: string;
   }
   & Partial<{
     src: string;
     alt: string;
     text: string;
-    label: string;
+    label: PageBasenames;
     fecha: string;
     nombre: string;
+    objeto: string;
     isIndex: boolean;
-    objectId: string;
-    fechaRE?: RegExp;
+    fechaRE: RegExp;
     localizacion: string;
   }>
 ;

@@ -23,8 +23,8 @@ const items = [
     text: 'nebulosas',
   },
   {
-    href: '/observatorio',
-    text: 'observatorio',
+    href: '/construccion-del-observatorio',
+    text: 'construcción del observatorio',
   },
   {
     href: '/sistema-solar',

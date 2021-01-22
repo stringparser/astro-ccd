@@ -1,13 +1,65 @@
-import { PageItemProps } from "../types";
+import { PageBasenames, PageItemProps } from "../types";
 
 export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
-  const { src, urlId, objectId: id } = props;
+  const { src, type, text, objeto: id } = props;
+
+  if (
+    text
+    && /www\.minorplanetcenter\.net\/iau\/lists\/ObsCodesF\.html/i.test(text)
+  ) {
+    return {
+      ...props,
+      urlId: PageBasenames.cometasAsteroides,
+    };
+  }
+
+  if (
+    text
+    && type === 'header'
+    && /drive\.google\.com\/open\?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc/.test(text)
+  ) {
+
+    return {
+      ...props,
+      urlId: '20170724-c2017-k2',
+      fecha: '20170724',
+      objeto: 'C/2017 K2',
+    }
+  }
+
+  if (
+    /^c?[-_]?2014-?Q2/i.test(id)
+    || text && type === 'header' && text.includes('0B9X-aeZtOZTwOUF2MlkwQWVoaG8')
+  ) {
+
+    return {
+      ...props,
+      urlId: '20150122-c2014-q2',
+      nombre: 'C/2014 Q2 (LOVEJOY)',
+      objeto: 'C/2014 Q2',
+    };
+  }
+
+  if (!type || type !== 'image') {
+    return props;
+  }
+
+  if (
+    id === '2015-o1_20180416_i88'
+    || id === 'c2015o1_20170816_i88'
+  ) {
+    return {
+      ...props,
+      objeto: 'C/2015 O1',
+      nombre: 'C/2015 O1 (PANSTARRS)',
+    };
+  }
 
   if (/^c?2020-?f3/i.test(id) || src === 'https://astroccd.files.wordpress.com/2020/07/re3.jpg') {
     return {
       ...props,
       nombre: 'C/2020 F3 (NEOWISE)',
-      objectId: 'C/2020 F3',
+      objeto: 'C/2020 F3',
     };
   }
 
@@ -15,9 +67,8 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       fecha: '20070112',
-      urlId: '20070112-c2006-p1',
       nombre: 'C/2006 P1 (McNaught)',
-      objectId: 'C/2006 P1',
+      objeto: 'C/2006 P1',
     }
   }
 
@@ -25,7 +76,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2013 US10 (CATALINA)',
-      objectId: 'C/2013 US10',
+      objeto: 'C/2013 US10',
     };
   }
 
@@ -34,7 +85,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
       ...props,
       fecha: '20070112',
       nombre: 'C/2006 P1 (McNaught)',
-      objectId: 'C/2006 P1',
+      objeto: 'C/2006 P1',
     }
   }
 
@@ -43,7 +94,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
       ...props,
       fecha: '20070112',
       nombre: 'C/2006 P1 (McNaught)',
-      objectId: 'C/2006 P1',
+      objeto: 'C/2006 P1',
     }
   }
 
@@ -51,7 +102,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2019 Y1 (ATLAS)',
-      objectId: 'C/2019 Y1',
+      objeto: 'C/2019 Y1',
     }
   }
 
@@ -59,7 +110,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2019 Y4 (ATLAS)',
-      objectId: 'C/2019 Y4',
+      objeto: 'C/2019 Y4',
     }
   }
 
@@ -67,7 +118,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2017 T2 (PANSTARRS)',
-      objectId: 'C/2017 T2',
+      objeto: 'C/2017 T2',
     };
   }
 
@@ -75,7 +126,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2018 N2 (ASASSN)',
-      objectId: 'C/2018 N2',
+      objeto: 'C/2018 N2',
     };
   }
 
@@ -83,7 +134,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '2I/Borisov',
-      objectId: '2I',
+      objeto: '2I',
     };
   }
 
@@ -91,14 +142,14 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '260P/McNaught',
-      objectId: '260P',
+      objeto: '260P',
     };
   }
 
   if (/^6478(-gault)?/i.test(id) || /^11enero_8febrero/i.test(id)) {
     return {
       ...props,
-      objectId: '(6478) Gault',
+      objeto: '(6478) Gault',
     };
   }
 
@@ -106,7 +157,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '60P/Tsuchinshan',
-      objectId: '60P',
+      objeto: '60P',
     };
   }
 
@@ -114,7 +165,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '38P/Stephan-Oterma',
-      objectId: '38P',
+      objeto: '38P',
     }
   }
 
@@ -122,7 +173,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '46P/Wirtanen',
-      objectId: '46P',
+      objeto: '46P',
     }
   }
 
@@ -130,7 +181,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2018 V1 (Machholz-Fujikawa-Iwamoto)',
-      objectId: 'C/2018 V1',
+      objeto: 'C/2018 V1',
     }
   }
 
@@ -138,7 +189,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '64P/Swift-Gehrels',
-      objectId: '64P',
+      objeto: '64P',
     }
   }
 
@@ -146,7 +197,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '21/P Giacobini-Zinner',
-      objectId: '21P',
+      objeto: '21P',
     };
   }
 
@@ -154,7 +205,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2017 S3 (panstars)',
-      objectId: 'C/2017 S3',
+      objeto: 'C/2017 S3',
     }
   }
 
@@ -162,7 +213,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2016 R2 (PANSTARRS)',
-      objectId: 'C/2016 R2',
+      objeto: 'C/2016 R2',
     }
   }
 
@@ -170,7 +221,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '174P/ECHELUS',
-      objectId: '174P',
+      objeto: '174P',
     };
   }
 
@@ -178,7 +229,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2015 V1 (PANSTARRS)',
-      objectId: 'C/2015 V1',
+      objeto: 'C/2015 V1',
     };
   }
 
@@ -186,7 +237,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2015 V2 (JOHNSON)',
-      objectId: 'C/2015 V2',
+      objeto: 'C/2015 V2',
     };
   }
 
@@ -194,7 +245,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2015 ER61 (PANSTARRS)',
-      objectId: 'C/2015 ER61',
+      objeto: 'C/2015 ER61',
     };
   }
 
@@ -202,7 +253,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2017 O1 (ASASSN1)',
-      objectId: 'C/2017 O1',
+      objeto: 'C/2017 O1',
     };
   }
 
@@ -210,7 +261,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '29P/Schwassmann-Wachmann',
-      objectId: '29P',
+      objeto: '29P',
     };
   }
 
@@ -218,7 +269,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2015 O1 (PANSTARRS)',
-      objectId: 'C/2015 O1',
+      objeto: 'C/2015 O1',
     };
   }
 
@@ -226,7 +277,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2017 K2 (PANSTARRS)',
-      objectId: 'C/2017 K2',
+      objeto: 'C/2017 K2',
     };
   }
 
@@ -234,7 +285,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2013 US10 (CATALINA)',
-      objectId: 'C/2013 US10',
+      objeto: 'C/2013 US10',
     };
   }
 
@@ -242,7 +293,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2013 X1 (PANSTARRS)',
-      objectId: 'C/2013 X1',
+      objeto: 'C/2013 X1',
     };
   }
 
@@ -250,7 +301,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2014 S2 (PANSTARRS)',
-      objectId: 'C/2014 S2',
+      objeto: 'C/2014 S2',
     };
   }
 
@@ -258,15 +309,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2015 F4 (JACQUES)',
-      objectId: 'C/2015 F4',
-    };
-  }
-
-  if (/^c?[-_]?2014-?Q2/i.test(id)) {
-    return {
-      ...props,
-      nombre: 'C/2014 Q2 (LOVEJOY)',
-      objectId: 'C/2014 Q2',
+      objeto: 'C/2015 F4',
     };
   }
 
@@ -274,7 +317,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '15P/Finlay',
-      objectId: '15P',
+      objeto: '15P',
     };
   }
 
@@ -282,7 +325,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2011 J2 (LINEAR)',
-      objectId: 'C/2011 J2',
+      objeto: 'C/2011 J2',
     };
   }
 
@@ -290,7 +333,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2014 E2 (JACQUES)',
-      objectId: 'C/2014 E2',
+      objeto: 'C/2014 E2',
     };
   }
 
@@ -298,7 +341,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2013 UQ4 (CATALINA)',
-      objectId: 'C/2013 UQ4',
+      objeto: 'C/2013 UQ4',
     };
   }
 
@@ -306,7 +349,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2012 K1 (PANSTARRS)',
-      objectId: 'C/2012 K1',
+      objeto: 'C/2012 K1',
     };
   }
 
@@ -318,7 +361,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2013 R1 (LOVEJOY)',
-      objectId: 'C/2013 R1',
+      objeto: 'C/2013 R1',
     };
   }
 
@@ -331,7 +374,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
       ...props,
       fecha: '20131116',
       nombre: 'C/2012 S1 (ISON)',
-      objectId: 'C/2012 S1',
+      objeto: 'C/2012 S1',
     };
   }
 
@@ -339,7 +382,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '99942 Apophis',
-      objectId: '99942 Apophis',
+      objeto: '99942 Apophis',
     };
   }
 
@@ -347,7 +390,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2012 K5 (LINEAR)',
-      objectId: 'C/2012 K5',
+      objeto: 'C/2012 K5',
     };
   }
 
@@ -355,7 +398,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '168P/Hergenrother',
-      objectId: '168P',
+      objeto: '168P',
     };
   }
 
@@ -367,7 +410,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2011 L4 (PANSTARRS)',
-      objectId: 'C/2011 L4',
+      objeto: 'C/2011 L4',
     };
   }
 
@@ -378,7 +421,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '2005 YU55 (308635)',
-      objectId: '2005 YU55',
+      objeto: '2005 YU55',
     };
   }
 
@@ -386,7 +429,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2007 N3 (Lulin)',
-      objectId: 'C/2007 N3',
+      objeto: 'C/2007 N3',
     }
   }
 
@@ -394,7 +437,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '17P/Holmes',
-      objectId: '17P',
+      objeto: '17P',
     }
   }
 
@@ -402,7 +445,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2006 VZ13 (LINEAR)',
-      objectId: 'C/2006 VZ13',
+      objeto: 'C/2006 VZ13',
     }
   }
 
@@ -410,7 +453,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2006 P1 (McNaught)',
-      objectId: 'C/2006 P1',
+      objeto: 'C/2006 P1',
     }
   }
 
@@ -418,7 +461,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: '9P/Tempel 1',
-      objectId: '9P',
+      objeto: '9P',
     }
   }
 
@@ -426,7 +469,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2001 Q4 (NEAT)',
-      objectId: 'C/2001 Q4',
+      objeto: 'C/2001 Q4',
     }
   }
 
@@ -434,7 +477,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2002 T7 (LINEAR)',
-      objectId: 'C/2002 T7',
+      objeto: 'C/2002 T7',
     }
   }
 
@@ -442,7 +485,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/1996 B2 (Hyakutake)',
-      objectId: 'C/1996 B2',
+      objeto: 'C/1996 B2',
     }
   }
 
@@ -450,7 +493,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     return {
       ...props,
       nombre: 'C/2018 N2 (ASASSN)',
-      objectId: 'C/2018 N2',
+      objeto: 'C/2018 N2',
     }
   }
 
