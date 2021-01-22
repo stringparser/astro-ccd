@@ -80,7 +80,7 @@ Promise.all([
             label,
             title: (
               urlId === PageBasename.fuensanta && 'Fuensanta'
-              || urlId === PageBasename.reparacion && 'Reparación SBIG'
+              || urlId === PageBasename.reparacionCCD && 'Reparación SBIG'
               || urlId === PageBasename.cometasAsteroides && 'Cometas Asteroides'
               || urlId === PageBasename.construccionObservatorio && 'Construcción del Observatorio'
             ),
@@ -172,12 +172,15 @@ Promise.all([
       ;
 
       const shouldSkipIndex = isIndex
-        ? await fs.pathExists(filename.replace(/\.mdx$/, '.tsx'))
+        ? (
+          await fs.pathExists(filename.replace(/\.mdx$/, '.tsx'))
+          || await fs.pathExists(filename)
+        )
         : false
       ;
 
       if (shouldSkipIndex) {
-        console.log('.mdx file write skipped for', urlId);
+        console.log('index file write skipped for', urlId);
         return Promise.resolve();
       }
 
