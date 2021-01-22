@@ -43,7 +43,7 @@ function PostList<T>({ items }: PostListProps) {
         return (
           <Link
             key={el.urlId}
-            href={`/${el.label}/${el.urlId.split('-').slice(1).join('-')}`}
+            href={`/objeto/${el.urlId.split('-').slice(1).join('-')}`}
             style={{width: '25%'}}
           >
             <H2>

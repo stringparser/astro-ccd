@@ -9,6 +9,12 @@ import { PageBasename } from "src/types";
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
     switch (href) {
+      case PageBasename.cometasAsteroides: {
+        return {
+          href: `/${href}`,
+          text: 'cometas y asteroides',
+        };
+      }
       case PageBasename.construccionObservatorio: {
         return {
           href: `/${href}`,
@@ -40,22 +46,25 @@ const useStyles = makeStyles(theme => ({
   nav: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
   pageLinks: {
-    margin: '0 1rem',
+    flex: '1',
+    margin: '0 auto',
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
   },
 
   link: {
+    flexBasis: '20%',
     marginTop: '0.5rem',
-    marginRight: '1rem',
     textTransform: 'uppercase',
   },
 
   homeLink: {
+    flex: '0.20',
     fontSize: '1.45rem',
   },
 
@@ -77,7 +86,7 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
         <nav className={classes.nav}>
           <aside className={classes.homeLink}>
             <MuiLink href="/">
-              OACM Fuensanta
+              OACM<br />Fuensanta
             </MuiLink>
           </aside>
           <aside  className={classes.pageLinks}>
