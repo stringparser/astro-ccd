@@ -1,6 +1,6 @@
 export type PageItemType = 'text' | 'image' | 'header';
 
-export enum PageBasenames {
+export enum PageBasename {
   galaxias = 'galaxias',
   fuensanta = 'fuensanta',
   nebulosas = 'nebulosas',
@@ -9,6 +9,29 @@ export enum PageBasenames {
   cometasAsteroides = 'cometas-asteroides',
   construccionObservatorio = 'construccion-del-observatorio',
 }
+
+export type PageBasenameList =
+  PageBasename.galaxias |
+  PageBasename.fuensanta |
+  PageBasename.nebulosas |
+  PageBasename.reparacion |
+  PageBasename.sistemaSolar |
+  PageBasename.cometasAsteroides |
+  PageBasename.construccionObservatorio
+;
+
+export type PageItemContents = {
+  urlId: string;
+  title: string;
+  label: PageBasenameList;
+  fecha: string;
+  objeto: string;
+  isIndex: boolean;
+  fechaRE?: string;
+  content: Array<PageItemProps & {
+    mdx: string;
+  }>;
+};
 
 export type PageItemProps =
   {
@@ -19,7 +42,7 @@ export type PageItemProps =
     src: string;
     alt: string;
     text: string;
-    label: PageBasenames;
+    label: PageBasename;
     fecha: string;
     nombre: string;
     objeto: string;

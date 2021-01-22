@@ -1,7 +1,8 @@
 import fs from 'fs-extra';
 import path from 'path';
 import { fetchPageContent } from './lib/get-page-content';
-import { fechaTextRE, mapMDX, urlMap, mapTextToUrl, mapJSON } from './lib/util';
+import { fechaTextRE, mapMDX, mapJSON, urlMap } from './lib/util';
+import { PageBasename, PageItemContents } from './lib/types';
 
 Promise.all([
   fetchPageContent('https://astro-ccd.com/fuensanta-3'),
@@ -24,17 +25,6 @@ Promise.all([
     .flat()
   ;
 
-  type PageItemContents = {
-    urlId: string;
-    title: string;
-    label: string;
-    fecha: string;
-    objeto: string;
-    isIndex: boolean;
-    fechaRE?: string;
-    content: string[];
-  };
-
   const pages = pagesItems.reduce((acc, item) => {
     if (!item.urlId) {
       console.warn('no urlId for', item);
@@ -55,7 +45,6 @@ Promise.all([
     const title = pageItem?.title
       || item.nombre && `# ${item.nombre}`
       || /^\s*#/.test(result) && result
-      || pageItem?.content?.find(v => /^\s*#/.test(v))
       || objeto && `# ${objeto}`
       || null
     ;
@@ -67,7 +56,10 @@ Promise.all([
       fecha,
       objeto,
       isIndex,
-      content: (pageItem?.content || []).concat(result)
+      content: (pageItem?.content || []).concat({
+        ...item,
+        mdx: result,
+      })
     };
 
     return acc;
@@ -76,9 +68,26 @@ Promise.all([
   const pagesFiltered = Object.entries(pages)
     .reduce((acc, [urlId, page]) => {
       if (page.isIndex) {
+        const { title, label: pageLabel, ...pageProps } = page;
+        const label = urlId === PageBasename.fuensanta
+          ? 'fuensanta'
+          : urlId
+        ;
+
+        console.log('urlId', urlId, 'label', page.label);
+
         return {
           ...acc,
-          [urlId]: page,
+          [urlId]: {
+            label,
+            title: (
+              urlId === PageBasename.fuensanta && 'Fuensanta'
+              || urlId === PageBasename.reparacion && 'Reparación SBIG'
+              || urlId === PageBasename.cometasAsteroides && 'Cometas Asteroides'
+              || urlId === PageBasename.construccionObservatorio && 'Construcción del Observatorio'
+            ),
+            ...pageProps
+          },
         };
       }
 
@@ -103,37 +112,41 @@ Promise.all([
         ...acc,
         [urlId]: {
           ...page,
-          title: pageTitle || page.title,
+          title: pageTitle,
           content: !pageTitle
             ? pageContent
             : pageContent
-                .filter(v => !pageTitleRE.test(v))
-                .map(v => v
-                  .replace(/\s*#?\s*(Cometa)?\s*(\d{1,3}\/?p|(c\/)?\d{4}[a-z]\d)\s*/gi, '')
-                  .replace(/c\d{4}\s*[a-z]{1,2}\d{1,2}/ig, '')
-                  .replace(fechaTextRE, '')
-                  .replace(fechaRE, '')
-                  .replace(/(http)?s?\:?\/\/astroccd\.wordpress\.com\/([^\s'"\/]+)\/?/g,
-                    ($0, value: string) => {
-                      const mappedBaseUrl = urlMap[value as keyof typeof urlMap] || value;
+                .filter(v => !pageTitleRE.test(v.text))
+                .map(({ text = '', ...rest }) => {
+                  return {
+                    ...rest,
+                    text: text.replace(/\s*#?\s*(Cometa)?\s*(\d{1,3}\/?p|(c\/)?\d{4}[a-z]\d)\s*/gi, '')
+                    .replace(/c\d{4}\s*[a-z]{1,2}\d{1,2}/ig, '')
+                    .replace(fechaTextRE, '')
+                    .replace(fechaRE, '')
+                    .replace(/(http)?s?\:?\/\/astroccd\.wordpress\.com\/([^\s'"\/]+)\/?/g,
+                      ($0, value: string) => {
+                        const mappedBaseUrl = urlMap[value as keyof typeof urlMap] || value;
 
-                      return `/${mappedBaseUrl}`;
-                    }
-                  )
-                )
-                .map(v => v.trim())
-                .filter(v => v)
+                        return `/${mappedBaseUrl}`;
+                      }
+                    )
+                  }
+                })
+                .filter(v => v.text.trim())
         },
       };
     }, {} as Record<string, PageItemContents>)
   ;
 
-  return Promise.all([
+  await Promise.all([
     fs.writeFile(
       path.resolve(__dirname, 'data', 'pages.json'),
       JSON.stringify(pagesFiltered, mapJSON, 2),
     )
-  ]).then(() => pages);
+  ]);
+
+  return pagesFiltered;
 
 }).then(pages => {
 
@@ -143,12 +156,12 @@ Promise.all([
   // }
 
   return Promise.all(Object.entries(pages)
-    .map(async ([logId, page]) => {
+    .map(async ([urlId, page]) => {
       const {content, isIndex} = page;
 
       const filename = isIndex
-        ? path.join(__dirname, '..', 'src', 'pages', logId, 'index.mdx')
-        : path.join(__dirname, '..', 'src', 'pages', 'registro', `${logId}.mdx`)
+        ? path.join(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
+        : path.join(__dirname, '..', 'src', 'pages', 'registro', `${urlId}.mdx`)
       ;
 
       const shouldSkipIndex = isIndex
@@ -156,25 +169,23 @@ Promise.all([
         : false
       ;
 
+      if (urlId === 'fuensanta') {
+        console.log('urlId', urlId, 'label', page.label);
+      }
+
       if (shouldSkipIndex) {
-        console.log('.mdx file write skipped for', logId);
+        console.log('.mdx file write skipped for', urlId);
         return Promise.resolve();
       }
 
-      const frontMatterKeys: Array<keyof typeof page> = [
-        'fecha',
-        'label',
-        'title',
-        'objeto',
-      ];
+      const frontMatterKeys: Array<keyof typeof page> = isIndex
+        ? [ 'fecha', 'title', 'label' ]
+        : [ 'fecha', 'objeto', 'label', 'title' ];
 
-      const mergedContent = Array.isArray(content)
-        ? content.join('\n')
-        : content
-      ;
+      const mergedContent = content.map(el => el.mdx).join('\n');
 
-      if (!isIndex && /<(a|img|figure|table)/.test(mergedContent) === false) {
-        console.log('will skip page registry', logId, page);
+      if (!isIndex && /<(a|img|figure|table|Image)/.test(mergedContent) === false) {
+        console.log('skipping', urlId, page);
         return Promise.resolve();
       }
 
@@ -189,15 +200,15 @@ Promise.all([
 
                 if (key === 'title') {
                   return page.title
-                    ? `titulo: ${page.title.replace(/^\s*[#]\s*/, '')}`
+                    ? `${isIndex ? 'titulo' : 'descripcion'}: ${page.title.replace(/^\s*[#]\s*/, '')}`
                     : null
                   ;
                 }
 
-                if (key === 'label') {
+                if (key === 'label' && isIndex) {
                   return page.label
                     ? `etiquetas: ${
-                      page.label === 'cometas-asterides' && 'cometa, asteroide'
+                      page.label === 'cometas-asteroides' && 'cometa, asteroide'
                       || page.label
                     }`
                     : null

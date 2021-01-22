@@ -10,9 +10,12 @@ const Image: React.FC<ImageProps> = props => (
     justifyContent="center"
   >
     <img
-      width="75%"
+      width={/obras\S*\.gif/.test(props.src)
+          ? '250px'
+          : '75%'
+      }
       loading="lazy"
-      style={{border: '1px solid rgba(255,255,255,0.15)'}}
+      style={{border: '1px solid rgba(255,255,255,0.15)', margin: '1rem'}}
       {...props}
     />
   </Box>

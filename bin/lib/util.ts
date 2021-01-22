@@ -1,13 +1,13 @@
-import { PageBasenames, PageItemProps } from "./types";
+import { PageBasename, PageItemProps } from "./types";
 
 export const urlMap = {
-  'ccd-2': PageBasenames.reparacion,
-  'galaxias': PageBasenames.galaxias,
-  'nebulosas': PageBasenames.nebulosas,
-  'fuensanta-3': PageBasenames.fuensanta,
-  'cometasasteroides': PageBasenames.cometasAsteroides,
-  'planetas-satelites': PageBasenames.sistemaSolar,
-  'construccion-del-observatorio': PageBasenames.construccionObservatorio,
+  'ccd-2': PageBasename.reparacion,
+  'galaxias': PageBasename.galaxias,
+  'nebulosas': PageBasename.nebulosas,
+  'fuensanta-3': PageBasename.fuensanta,
+  'cometasasteroides': PageBasename.cometasAsteroides,
+  'planetas-satelites': PageBasename.sistemaSolar,
+  'construccion-del-observatorio': PageBasename.construccionObservatorio,
 };
 
 export type ActualPageBasename = keyof typeof urlMap;
@@ -74,7 +74,7 @@ export const mapMDX = (el: PageItemProps) => {
     }
     case 'image': {
       return [
-        `<img src="${el.src}" />`,
+        `<Imagen src="${el.src}" />`,
         cleanHTML(el.text)
       ].filter(v => v).join('\n\n');
     }

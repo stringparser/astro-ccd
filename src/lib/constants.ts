@@ -9,5 +9,6 @@ export const mdxComponents = {
   h2: H2,
   img: Image,
   head: Head,
+  Image: Image,
   Imagen: Image,
 };

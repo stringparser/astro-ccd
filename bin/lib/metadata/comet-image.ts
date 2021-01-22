@@ -1,4 +1,4 @@
-import { PageBasenames, PageItemProps } from "../types";
+import { PageBasename, PageItemProps } from "../types";
 
 export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   const { src, type, text, objeto: id } = props;
@@ -9,7 +9,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      urlId: PageBasenames.cometasAsteroides,
+      urlId: PageBasename.cometasAsteroides,
     };
   }
 

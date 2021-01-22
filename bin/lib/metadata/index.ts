@@ -1,4 +1,4 @@
-import { PageItemProps } from "../types";
+import { PageBasename, PageItemProps } from "../types";
 import { mapCometImageMetadata } from "./comet-image";
 import { mapGalaxyImageMetadata } from "./galaxy-image";
 import { mapSolarSystemImageMetadata } from "./solar-system-image";
@@ -7,14 +7,14 @@ export default function mapMetadata(props: PageItemProps): PageItemProps {
   const { label } = props;
 
   switch (label) {
-    case 'galaxias':
-    case 'nebulosas': {
+    case PageBasename.galaxias:
+    case PageBasename.nebulosas: {
       return mapGalaxyImageMetadata(props);
     }
-    case 'sistema-solar': {
+    case PageBasename.sistemaSolar: {
       return mapSolarSystemImageMetadata(props);
     }
-    case 'cometas-asteroides': {
+    case PageBasename.cometasAsteroides: {
       return mapCometImageMetadata(props);
     }
     default: {

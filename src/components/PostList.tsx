@@ -1,26 +1,54 @@
 
-import Link from "next/link";
-import { Box } from "@material-ui/core";
+import { Box, Link } from "@material-ui/core";
 
 import H2 from "src/components/Typography/H2";
-import { PageItemProps } from "bin/lib/types";
+import { PageItemContents } from "bin/lib/types";
+import Image from "./Image";
 
-export type PostListProps<T = PageItemProps> =  {
+export type PostListProps<T = PageItemContents> =  {
   items: T[];
 }
 
 function PostList<T>({ items }: PostListProps) {
+  const uniqueItems = items.reduce((acc, item) => {
+    const id = item.urlId.split('-').slice(1).join('-');
+    const image = item.content.find(el => el.type == 'image');
+
+    if (acc[id] || !image || !image.src) {
+      return acc;
+    }
+
+    return {
+      ...acc,
+      [id]: {
+        ...item,
+        image: image.src,
+      },
+    };
+  }, {} as Record<string, PageItemContents & { image: string; }>)
+
+  console.log('uniqueItems', uniqueItems);
 
   return (
     <Box
       display="flex"
-      flexDirection="column"
+      flexWrap="wrap"
+      alignItems="center"
       justifyContent="center"
     >
-      {items.map(el => {
+      {Object.values(uniqueItems).map(el => {
         return (
-          <Link href={el.url} key={el.url}>
-            <H2>{el.id}</H2>
+          <Link
+            key={el.urlId}
+            href={`/${el.label}/${el.urlId.split('-').slice(1).join('-')}`}
+            style={{width: '25%'}}
+          >
+            <H2>{el.objeto}</H2>
+            <Image
+              src={el.image}
+              width="auto"
+              height="100px"
+            />
           </Link>
         );
       })}

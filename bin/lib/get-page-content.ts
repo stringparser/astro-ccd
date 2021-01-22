@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 import mapMetadata from './metadata';
-import { PageBasenames, PageItemProps, ParsedPageContent } from './types';
+import { PageBasename, PageItemProps, ParsedPageContent } from './types';
 import { ActualPageBasename, cleanHTML, mapFecha, mapTextToUrl, standalonePagesRE, urlMap } from './util';
 
 const skipForIndex = <T>(isIndex: boolean, handle: T) => isIndex
@@ -191,13 +191,14 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
         .map(props => {
           return {
             ...props,
-            isIndex: Object.values(PageBasenames).includes(props.urlId as PageBasenames),
+            isIndex: Object.values(PageBasename).includes(props.urlId as PageBasename),
           };;
         })
       ;
 
       return {
         url,
+        label,
         title,
         items,
       }
