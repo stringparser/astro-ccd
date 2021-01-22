@@ -74,8 +74,6 @@ Promise.all([
           : urlId
         ;
 
-        console.log('urlId', urlId, 'label', page.label);
-
         return {
           ...acc,
           [urlId]: {
@@ -169,10 +167,6 @@ Promise.all([
         : false
       ;
 
-      if (urlId === 'fuensanta') {
-        console.log('urlId', urlId, 'label', page.label);
-      }
-
       if (shouldSkipIndex) {
         console.log('.mdx file write skipped for', urlId);
         return Promise.resolve();
@@ -188,6 +182,11 @@ Promise.all([
         console.log('skipping', urlId, page);
         return Promise.resolve();
       }
+
+      const imagenes = isIndex
+        ? []
+        : page.content.filter(el => el.type === 'image')
+      ;
 
       return fs.mkdirp(path.dirname(filename))
         .then(() =>
@@ -217,6 +216,10 @@ Promise.all([
 
                 return value ? `${key}: ${value}` : null;
               }),
+              imagenes.length
+                ? `imagenes:\n${imagenes.map(el => `\t- ${el.src}`).join('\n')}`
+                : null
+              ,
               '---\n',
               mergedContent
             ].filter(v => v).join('\n')

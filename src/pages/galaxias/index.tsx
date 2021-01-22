@@ -21,8 +21,6 @@ export async function getStaticProps() {
 };
 
 const Galaxias: React.FC<GalaxiasPosts> = ({ items }) => {
-  console.log('items', items);
-
   return (
     <Box>
       <H1>Galaxias</H1>

@@ -1847,7 +1847,6 @@
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_rgb.jpg",
         "objeto": "C/2014 Q2",
         "label": "cometas-asteroides",
-        "text": " ",
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false
@@ -1859,7 +1858,6 @@
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q22.jpg",
         "objeto": "C/2014 Q2",
         "label": "cometas-asteroides",
-        "text": " ",
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false
@@ -1951,7 +1949,6 @@
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2f.jpg",
         "objeto": "C/2014 Q2",
         "label": "cometas-asteroides",
-        "text": "  ",
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false
@@ -2213,7 +2210,7 @@
         "src": "https://astroccd.files.wordpress.com/2012/12/2012k1-pro.jpg",
         "objeto": "C/2012 K1",
         "label": "cometas-asteroides",
-        "text": " C 2012K1 23 Mayo 2014 ¿Procesado?",
+        "text": "C 2012K1 23 Mayo 2014 ¿Procesado?",
         "nombre": "C/2012 K1 (PANSTARRS)",
         "fecha": "20140523",
         "isIndex": false
@@ -3310,7 +3307,7 @@
         "src": "https://astroccd.files.wordpress.com/2012/12/2013fa-2013-09-10-u.jpg",
         "objeto": "SN 2013fa",
         "label": "galaxias",
-        "text": " sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
+        "text": "sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz",
         "localizacion": "Delfín",
         "fecha": "20121200",
         "isIndex": false

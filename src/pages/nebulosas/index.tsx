@@ -21,8 +21,6 @@ export async function getStaticProps() {
 };
 
 const Nebulosas: React.FC<NebulosasPosts> = ({ items }) => {
-  console.log('items', items);
-
   return (
     <Box>
       <H1>Nebulosas</H1>
