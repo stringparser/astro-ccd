@@ -164,25 +164,17 @@ Promise.all([
 
   return Promise.all(Object.entries(pages)
     .map(async ([urlId, page]) => {
-      const {content, isIndex} = page;
-
-      const filename = isIndex
-        ? path.join(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
-        : path.join(__dirname, '..', 'src', 'pages', 'registro', `${urlId}.mdx`)
-      ;
-
-      const shouldSkipIndex = isIndex
-        ? (
-          await fs.pathExists(filename.replace(/\.mdx$/, '.tsx'))
-          || await fs.pathExists(filename)
-        )
-        : false
-      ;
-
-      if (shouldSkipIndex) {
+      if (page.isIndex) {
         console.log('index file write skipped for', urlId);
         return Promise.resolve();
       }
+
+      const {content, isIndex} = page;
+
+      const filename = isIndex
+        ? path.resolve(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
+        : path.resolve(__dirname, '..', 'src', 'registro', `${urlId}.mdx`)
+      ;
 
       const frontMatterKeys: Array<keyof typeof page> = isIndex
         ? [ 'fecha', 'title', 'label' ]
@@ -191,7 +183,7 @@ Promise.all([
       const mergedContent = content.map(el => el.mdx).join('\n');
 
       if (!isIndex && /<(a|img|figure|table|Image)/.test(mergedContent) === false) {
-        console.log('skipping', urlId, page);
+        // console.log('skipping', urlId, page);
         return Promise.resolve();
       }
 

@@ -1,7 +1,7 @@
 import { PageBasename, PageItemProps } from "../../src/types";
 
 export const urlMap = {
-  'ccd-2': PageBasename.reparacion,
+  'ccd-2': PageBasename.reparacionCCD,
   'galaxias': PageBasename.galaxias,
   'nebulosas': PageBasename.nebulosas,
   'fuensanta-3': PageBasename.fuensanta,

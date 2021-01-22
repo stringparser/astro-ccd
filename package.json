@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "dev": "next",
-    "clean": "rm -f ./src/pages/*/*.mdx",
+    "clean": "rm -f ./src/registro/*.mdx",
     "build": "next build",
     "start": "next start",
     "export": "next export",
