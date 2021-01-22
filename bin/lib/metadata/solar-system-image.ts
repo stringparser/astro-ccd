@@ -112,7 +112,10 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     }
   }
 
-  if (id === '1_152049_l5_ap666') {
+  if (
+    id === '1_152049_l5_ap666'
+    || src === 'https://astroccd.files.wordpress.com/2020/12/dsc05191.jpg'
+  ) {
     return {
       ...props,
       fecha: '20201201',

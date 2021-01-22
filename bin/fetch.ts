@@ -131,7 +131,16 @@ Promise.all([
                     )
                   }
                 })
-                .filter(v => v.text.trim())
+                .filter(el => {
+                  switch (el.type) {
+                    case 'image': {
+                      return el.src != null;
+                    }
+                    default: {
+                      return el.text != null && el.text.trim() != '';
+                    }
+                  }
+                })
         },
       };
     }, {} as Record<string, PageItemContents>)
@@ -187,11 +196,6 @@ Promise.all([
         ? []
         : page.content.filter(el => el.type === 'image')
       ;
-
-      if (page.label === PageBasename.sistemaSolar) {
-        console.log(filename);
-        console.log('PageBasename.sistemaSolar', page);
-      }
 
       return fs.mkdirp(path.dirname(filename))
         .then(() =>

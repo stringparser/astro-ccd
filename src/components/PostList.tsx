@@ -46,11 +46,13 @@ function PostList<T>({ items }: PostListProps) {
             href={`/${el.label}/${el.urlId.split('-').slice(1).join('-')}`}
             style={{width: '25%'}}
           >
-            <H2>{el.objeto}</H2>
+            <H2>
+              {el.objeto}
+            </H2>
             <Image
               src={el.image}
               width="auto"
-              height="100px"
+              height="125px"
               title={el.fecha}
             />
           </Link>
