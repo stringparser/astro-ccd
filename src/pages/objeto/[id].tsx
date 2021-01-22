@@ -56,12 +56,12 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
   });
 
   const title = results[0].objeto || 'no-alias';
-  const identifier = `/objeto/${post.params.id}`;
+  const identifier = `/objeto/${searchId}`;
 
   return (
     <Box>
       <H1>
-        {post.params.id}
+        {searchId}
       </H1>
 
       {components}

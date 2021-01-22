@@ -188,6 +188,11 @@ Promise.all([
         : page.content.filter(el => el.type === 'image')
       ;
 
+      if (page.label === PageBasename.sistemaSolar) {
+        console.log(filename);
+        console.log('PageBasename.sistemaSolar', page);
+      }
+
       return fs.mkdirp(path.dirname(filename))
         .then(() =>
           fs.writeFile(

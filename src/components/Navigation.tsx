@@ -4,33 +4,26 @@ import { Fragment } from 'react';
 import { makeStyles, Link as MuiLink } from "@material-ui/core";
 
 import { NextRouter, withRouter } from 'next/router';
+import { PageBasename } from "src/types";
 
-const items = [
-  {
-    href: '/cometas-asteroides',
-    text: 'cometas-asteroides',
-  },
-  {
-    href: '/fuensanta',
-    text: 'fuensanta',
-  },
-  {
-    href: '/galaxias',
-    text: 'galaxias',
-  },
-  {
-    href: '/nebulosas',
-    text: 'nebulosas',
-  },
-  {
-    href: '/construccion-del-observatorio',
-    text: 'construcción del observatorio',
-  },
-  {
-    href: '/sistema-solar',
-    text: 'sistema-solar',
-  },
-];
+const items = Object.entries(PageBasename)
+  .map(([key, href]) => {
+    switch (href) {
+      case PageBasename.construccionObservatorio: {
+        return {
+          href: `/${href}`,
+          text: 'contrucción del observatorio',
+        };
+      }
+      default: {
+        return {
+          href: `/${href}`,
+          text: key,
+        };
+      }
+    }
+  })
+;
 
 const isCurrentPage = (currentHref: string, href: string) => (
   currentHref === href
