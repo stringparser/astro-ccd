@@ -27,7 +27,10 @@ function PostList<T>({ items }: PostListProps) {
     };
   }, {} as Record<string, PageItemContents & { image: string; }>)
 
-  console.log('uniqueItems', uniqueItems);
+  const orderedUniqueItems = Object.values(uniqueItems)
+    .sort((a, b) => (a.fecha || '').localeCompare(b.fecha || ''))
+    .reverse()
+  ;
 
   return (
     <Box
@@ -36,7 +39,7 @@ function PostList<T>({ items }: PostListProps) {
       alignItems="center"
       justifyContent="center"
     >
-      {Object.values(uniqueItems).map(el => {
+      {orderedUniqueItems.map(el => {
         return (
           <Link
             key={el.urlId}
@@ -48,6 +51,7 @@ function PostList<T>({ items }: PostListProps) {
               src={el.image}
               width="auto"
               height="100px"
+              title={el.fecha}
             />
           </Link>
         );
