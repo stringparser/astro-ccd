@@ -6,10 +6,10 @@ import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box 
 
 import { mdxComponents } from "src/lib/constants";
 
+import Footer from "src/components/Footer";
 import Navigation from "src/components/Navigation";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/ScrollToTopButton";
-import { Divider } from "material-ui";
 
 const jss = create({
   ...jssPreset(),
@@ -23,8 +23,8 @@ const useStyles = makeStyles(() => ({
 
     border: '0.25rem solid white',
     borderTop: 'none',
-    borderBottom: 'none',
     borderColor: 'rgba(255,255,255, 0.05)',
+    borderBottom: 'none',
 
     backgroundColor: 'black',
 
@@ -55,21 +55,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <CssBaseline />
               <Navigation />
               <Component {...pageProps} />
-              <hr />
-              <Box
-                color="red"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <p>
-                  Las imagenes  son de libre distribucion  siempre que se indique  su  procedencia
-                </p>
-                <div style={{padding: '1rem'}} />
-                <p>
-                  Contacto: jcgmilla@gmail.com
-                </p>
-              </Box>
+              <Footer />
               <ScrollToTopButton />
             </StylesProvider>
           </MDXProvider>

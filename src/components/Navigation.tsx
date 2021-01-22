@@ -40,6 +40,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     padding: '1.25rem 0',
     boxShadow: `0 1px 1px ${theme.palette.divider}`,
+    marginBottom: '2rem',
     justifyContent: 'center',
   },
 
