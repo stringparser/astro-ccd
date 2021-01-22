@@ -1,15 +1,34 @@
 
-import { Box, Link } from "@material-ui/core";
+import React from "react";
+import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
 import H2 from "src/components/Typography/H2";
-import { PageItemContents } from "src/types";
+
 import Image from "./Image";
+import { PageItemContents } from "src/types";
+
+const useStyles = makeStyles({
+  root: {
+    marginTop: '2rem',
+  },
+  linkWrapper: {
+    width: '25%',
+    opacity: .9,
+
+    '&:hover': {
+      opacity: 1,
+      textDecoration: 'none',
+    }
+  }
+});
 
 export type PostListProps<T = PageItemContents> =  {
   items: T[];
-}
+};
 
 function PostList<T>({ items }: PostListProps) {
+  const classes = useStyles();
+
   const uniqueItems = items.reduce((acc, item) => {
     const id = item.urlId.split('-').slice(1).join('-');
     const image = item.content.find(el =>
@@ -43,23 +62,39 @@ function PostList<T>({ items }: PostListProps) {
       flexWrap="wrap"
       alignItems="center"
       justifyContent="center"
+      className={classes.root}
     >
       {orderedUniqueItems.map(el => {
+        const dateString = (/(\d{4})(\d{2})(\d{2})/.exec(el.fecha) || [])
+          .slice(1)
+          .join('-')
+        ;
+
         return (
           <Link
             key={el.urlId}
             href={`/objeto/${el.urlId.split('-').slice(1).join('-')}`}
-            style={{width: '25%'}}
+            className={classes.linkWrapper}
           >
-            <H2 style={{color: 'red'}}>
-              {el.objeto}
-            </H2>
-            <Image
-              src={el.image}
-              width="auto"
-              height="125px"
-              title={el.fecha}
-            />
+            <Box
+                display="flex"
+                alignItems="center"
+                flexDirection="column"
+                justifyContent="center"
+              >
+                <H2 style={{color: 'red'}}>
+                  {el.objeto}
+                </H2>
+                <Image
+                  src={el.image}
+                  width="auto"
+                  height="125px"
+                  title={el.fecha}
+                />
+                <Typography variant="caption">
+                  {new Date(dateString).toLocaleDateString('es')}
+                </Typography>
+              </Box>
           </Link>
         );
       })}
