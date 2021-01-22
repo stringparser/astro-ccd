@@ -12,7 +12,12 @@ export type PostListProps<T = PageItemContents> =  {
 function PostList<T>({ items }: PostListProps) {
   const uniqueItems = items.reduce((acc, item) => {
     const id = item.urlId.split('-').slice(1).join('-');
-    const image = item.content.find(el => el.type == 'image');
+    const image = item.content.find(el =>
+      el.type == 'image'
+      && !/\/apj-logo.gif$/.test(el.src)
+      && el.src !== 'https://astroccd.files.wordpress.com/2014/02/logodef.png'
+      && el.src !== 'https://i0.wp.com/www.astrosurf.com/snweb2/images/rainbowl.gif'
+    );
 
     if (acc[id] || !image || !image.src) {
       return acc;

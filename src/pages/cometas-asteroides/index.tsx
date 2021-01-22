@@ -15,12 +15,6 @@ export async function getStaticProps() {
     props: {
       items: Object.values(values)
         .filter(el => el.label === PageBasename.cometasAsteroides)
-        .map(el => {
-          return {
-            ...el,
-            content: el.content.filter(el => !/\/apj-logo.gif$/.test(el.src))
-          }
-        })
     },
   };
 };

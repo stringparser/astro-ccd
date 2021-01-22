@@ -15,7 +15,7 @@ export async function getStaticProps() {
   return {
     props: {
       items: Object.values(values)
-        .filter(el => el.label === 'galaxias'),
+        .filter(el => el.label === 'galaxias')
     },
   };
 };
