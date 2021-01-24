@@ -1,11 +1,31 @@
-// next.config.js
+const frontmatter = require('remark-frontmatter');
+
 const withMDX = require('@next/mdx')({
+  options: {
+    remarkPlugins: [
+      frontmatter,
+    ],
+    rehypePlugins: [],
+  },
   extension: /\.mdx?$/,
-})
+});
 
 exports = module.exports = withMDX({
-  images: {
-    domains: ['astroccd.files.wordpress.com'],
+  i18n: {
+    locales: ['es-ES', 'fr', 'nl-NL'],
+    defaultLocale: 'es-ES',
   },
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-})
+
+  images: {
+    domains: [
+      'astroccd.files.wordpress.com'
+    ],
+  },
+  pageExtensions: [
+    'js',
+    'jsx',
+    'mdx',
+    'ts',
+    'tsx'
+  ],
+});

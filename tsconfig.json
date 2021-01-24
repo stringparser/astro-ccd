@@ -1,10 +1,11 @@
 {
   "include": [
-    "src",
-    "bin"
+    "./src",
+    "./bin"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "next.config.js"
   ],
   "compilerOptions": {
     "jsx": "preserve",
@@ -13,17 +14,21 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".",
     "paths": {
-      "src": [
+      "src/*": [
         "./src/*"
       ]
     },
-    "noEmit": true,
     "module": "commonjs",
+    "noEmit": true,
     "target": "es5",
     "strict": false,
-    "baseUrl": ".",
     "allowJs": true,
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "isolatedModules": true,
