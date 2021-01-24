@@ -3,7 +3,7 @@ import { Box, Typography } from '@material-ui/core';
 
 import Image from 'src/components/Image';
 import H1 from 'src/components/Typography/H1';
-import pagesData from 'src/data/pages.json';
+import pagesData from 'src/registro/pages.json';
 import DisqusEmbed from 'src/components/DisqusEmbed';
 import { PageItemProps } from 'src/types';
 import { mapTextToUrl } from 'src/lib/util';

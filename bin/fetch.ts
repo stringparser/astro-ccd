@@ -16,7 +16,7 @@ Promise.all([
 .then(async (results) => {
 
   await fs.writeFile(
-    path.join(__dirname, 'data', 'index.json'),
+    path.join(__dirname, 'datos', 'index.json'),
     JSON.stringify(results, mapJSON, 2)
   );
 
@@ -148,7 +148,7 @@ Promise.all([
 
   await Promise.all([
     fs.writeFile(
-      path.resolve(__dirname, 'data', 'pages.json'),
+      path.resolve(__dirname, 'datos', 'pages.json'),
       JSON.stringify(pagesFiltered, mapJSON, 2),
     )
   ]);
@@ -173,17 +173,18 @@ Promise.all([
 
       const filename = isIndex
         ? path.resolve(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
-        : path.resolve(__dirname, '..', 'datos', `${urlId}.mdx`)
+        : path.resolve(__dirname, '..', 'src', 'registro', `${urlId}.mdx`)
       ;
 
       const frontMatterKeys: Array<keyof typeof page> = isIndex
-        ? [ 'fecha', 'title', 'label' ]
-        : [ 'fecha', 'objeto', 'label', 'title' ];
+        ? [ 'fecha', 'label', 'title' ]
+        : [ 'fecha', 'label', 'objeto', 'title' ]
+      ;
 
       const mergedContent = content.map(el => el.mdx).join('\n');
 
       if (!isIndex && /<(a|img|figure|table|Image)/.test(mergedContent) === false) {
-        // console.log('skipping', urlId, page);
+        console.log('skipping page', page);
         return Promise.resolve();
       }
 
@@ -203,16 +204,16 @@ Promise.all([
 
                 if (key === 'title') {
                   return page.title
-                    ? `${isIndex ? 'titulo' : 'descripcion'}: ${page.title.replace(/^\s*[#]\s*/, '')}`
+                    ? `titulo: ${page.title.replace(/^\s*[#]\s*/, '')}`
                     : null
                   ;
                 }
 
                 if (key === 'label' && isIndex) {
                   return page.label
-                    ? `etiquetas: ${
+                    ? `etiquetas:\n\t${
                       page.label === 'cometas-asteroides' && 'cometa, asteroide'
-                      || page.label
+                      || `- ${page.label}`
                     }`
                     : null
                   ;
@@ -221,7 +222,18 @@ Promise.all([
                 return value ? `${key}: ${value}` : null;
               }),
               imagenes.length
-                ? `imagenes:\n${imagenes.map(el => `\t- ${el.src}`).join('\n')}`
+                ? `imagenes:\n${
+                  imagenes.map((el, index) =>
+                    `${[
+                      `\n\ttoma${index + 1}:`,
+                      `src: ${el.src}`,
+                      el.text && `texto: ${el.text}`,
+                      el.nombre && `nombre: ${el.nombre}`,
+                      el.objeto && `objeto: ${el.objeto}`,
+                      el.localizacion && `posicion: ${el.localizacion}`,
+                    ].filter(v => v).join('\n\t\t')}`
+                  ).join('\n')
+                }`
                 : null
               ,
               '---\n',

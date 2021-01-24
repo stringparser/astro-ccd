@@ -10,7 +10,7 @@ export type GalaxiasPosts = {
 };
 
 export async function getStaticProps() {
-  const values = (await import('src/data/pages.json')).default;
+  const values = (await import('src/registro/pages.json')).default;
 
   return {
     props: {

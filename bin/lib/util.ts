@@ -34,8 +34,6 @@ export const cleanHTML = (html: string = '') => {
   ;
 }
 
-
-
 export const mapMDX = (el: PageItemProps) => {
   switch (el.type) {
     case 'text': {
@@ -47,6 +45,7 @@ export const mapMDX = (el: PageItemProps) => {
     case 'image': {
       return [
         `<Imagen src="${el.src}" />`,
+        el.alt,
         cleanHTML(el.text)
       ].filter(v => v).join('\n\n');
     }

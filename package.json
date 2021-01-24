@@ -10,7 +10,7 @@
     "start": "next start",
     "export": "next export",
     "scrape": "ts-node -P tsconfig.json ./bin/scrape.ts",
-    "fetch:data": "yarn clean && ts-node ./bin/fetch.ts && cp bin/data/* src/data"
+    "fetch:data": "yarn clean && ts-node ./bin/fetch.ts && cp bin/datos/* src/registro"
   },
   "repository": {
     "type": "git",
