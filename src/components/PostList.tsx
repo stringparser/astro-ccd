@@ -69,7 +69,6 @@ function PostList<T>({ items }: PostListProps) {
     <Box
       display="flex"
       flexWrap="wrap"
-      alignItems="center"
       justifyContent="center"
       className={classes.root}
     >
@@ -77,7 +76,8 @@ function PostList<T>({ items }: PostListProps) {
         const dateString = (/(\d{4})(\d{2})(\d{2})/.exec(el.fecha) || [])
           .slice(1)
           .reverse()
-          .join('-')
+          .filter(el => el !== '00')
+          .join('/')
         ;
 
         return (
@@ -88,20 +88,19 @@ function PostList<T>({ items }: PostListProps) {
           >
             <Box
                 display="flex"
-                alignItems="center"
                 flexDirection="column"
                 justifyContent="center"
               >
                 <H2 style={{color: 'red'}}>
                   {el.objeto}
                 </H2>
+                <Typography variant="caption">
+                  {dateString}
+                </Typography>
                 <Image
                   src={`/imagenes/${el.image.split('/').pop()}`}
                   title={el.fecha}
                 />
-                <Typography variant="caption">
-                  {dateString}
-                </Typography>
               </Box>
           </Link>
         );
