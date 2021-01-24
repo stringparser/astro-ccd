@@ -59,8 +59,11 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
               </Box>
             )}
             <Image
-              src={el.src}
+              src={`/imagenes/${el.src}`}
               alt={el.alt}
+              width={150}
+              height={150}
+              layout="responsive"
               loading="lazy"
             />
             {el.text && <br />}
@@ -80,7 +83,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
 
   const titulo = [
     nombre || objeto,
-    nombre && !nombre.includes(objeto) && `(${objeto})`
+    nombre && !new RegExp(objeto, 'i').test(objeto) && `(${objeto})`
   ].filter(v => v).join(' ');
 
   const identifier = `/objeto/${astroObject.urlId}`;

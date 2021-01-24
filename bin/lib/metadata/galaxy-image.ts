@@ -3,7 +3,7 @@ import { PageItemProps } from "../../../src/types";
 const SN_RE = /(?:^|_)sn-?([^\s-_]+)/i;
 const IC_RE = /(?:^|[_\d-]+)ic[-_]?(\d+)/i;
 const NGC_RE = /(?:^|[_\d-]+)ngc-?(\d+)/i;
-const MESSIER_RE = /^m-?(\d+)/i;
+const MESSIER_RE = /^m-?(\d{1,3})/i;
 
 const LOCATION_PROPS = {
   'SN 2014j': {
@@ -45,7 +45,7 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
       ...props,
       urlId: '20210112-zona-orion',
       fecha: '20210112',
-      objeto: 'orion',
+      objeto: 'Orion',
       nombre: 'Zona de Orion',
     };
   }
@@ -273,8 +273,9 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
+      urlId: '20151115-quinteto',
       fecha: '20151115',
-      objeto: '20151115-quinteto'
+      objeto: 'quinteto'
     };
   }
 

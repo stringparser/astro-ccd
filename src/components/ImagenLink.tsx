@@ -10,6 +10,9 @@ type ImagenLinkProps = {
 const ImagenLink: React.FC<ImagenLinkProps> = ({ link, imagen, children, ...rest}) => {
   return (
     <Box
+      mt="3rem"
+      width="100%"
+      height="200px"
       display="flex"
       flexDirection="column"
       justifyContent="center"

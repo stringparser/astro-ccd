@@ -1,6 +1,6 @@
 import { html_beautify } from "js-beautify";
 
-import { mesMap } from "src/lib/constants";
+import { mesMap } from "../../src/lib/util";
 import { PageBasename, PageItemProps } from "../../src/types";
 
 export const urlMap = {

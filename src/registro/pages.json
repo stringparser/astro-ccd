@@ -5073,9 +5073,9 @@
   "20151115-quinteto": {
     "urlId": "20151115-quinteto",
     "label": "galaxias",
-    "title": "# 20151115-quinteto",
+    "title": "# quinteto",
     "fecha": "20151115",
-    "objeto": "20151115-quinteto",
+    "objeto": "quinteto",
     "isIndex": false,
     "content": [
       {
@@ -5083,7 +5083,7 @@
         "type": "image",
         "alt": "Quinteto",
         "src": "https://astroccd.files.wordpress.com/2012/12/quinteto.png",
-        "objeto": "20151115-quinteto",
+        "objeto": "quinteto",
         "label": "galaxias",
         "fecha": "20151115",
         "isIndex": false,
@@ -5763,7 +5763,7 @@
     "label": "nebulosas",
     "title": "# Zona de Orion",
     "fecha": "20210112",
-    "objeto": "orion",
+    "objeto": "Orion",
     "isIndex": false,
     "content": [
       {
@@ -5771,7 +5771,7 @@
         "type": "image",
         "alt": "final",
         "src": "https://astroccd.files.wordpress.com/2021/01/final.jpg",
-        "objeto": "orion",
+        "objeto": "Orion",
         "label": "nebulosas",
         "fecha": "20210112",
         "nombre": "Zona de Orion",

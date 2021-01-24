@@ -1,24 +1,35 @@
-import { Box } from '@material-ui/core';
-import { ImageProps as NextImageProps } from 'next/image'
+import { Box, makeStyles } from '@material-ui/core';
+import NextImage, { ImageProps as NextImageProps } from 'next/image'
 
-export type ImageProps = Partial<NextImageProps>;
+const useStyles = makeStyles(() => ({
+  image: (props: ImageProps) => ({
+    width: /obras\S*\.gif/.test(props.src)
+      ? 150
+      : '75%'
+    ,
+    margin: '2rem 0',
+    border: '1px solid rgba(255, 255, 255, 0.15)',
+  })
+}))
 
-const Image: React.FC<ImageProps> = props => (
-  <Box
-    display="flex"
-    alignItems="center"
-    justifyContent="center"
-  >
-    <img
-      width={/obras\S*\.gif/.test(props.src)
-          ? '150px'
-          : '75%'
-      }
-      loading="lazy"
-      style={{border: '1px solid rgba(255,255,255,0.15)', margin: '1rem'}}
-      {...props}
-    />
-  </Box>
-);
+export type ImageProps = NextImageProps;
+
+const Image: React.FC<ImageProps> = props => {
+  const classes = useStyles(props);
+
+  return (
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+    >
+      <img
+        loading="lazy"
+        className={classes.image}
+        {...props}
+      />
+    </Box>
+  );
+};
 
 export default Image;
