@@ -18,7 +18,6 @@ const jss = create({
 const useStyles = makeStyles(() => ({
   root: {
     margin: '0 auto',
-    maxWidth: '960px',
     minHeight: '100vh',
 
     border: '0.25rem solid white',
@@ -30,6 +29,10 @@ const useStyles = makeStyles(() => ({
 
     padding: '2rem 1rem',
     paddingTop: 0,
+
+    '@media (min-width: 960px)': {
+      maxWidth: '960px',
+    },
   }
 }));
 
