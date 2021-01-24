@@ -230,8 +230,7 @@ Promise.all([
               }).join('\n'),
               '',
               imagenes.map((el, index) => {
-                const sep = '\n\t\t\t';
-                const base = path.basename(el.src, path.extname(el.src));
+                const base = path.basename(el.src, path.extname(el.src)).replace(/\?[^\s]+/, '');
                 const srcRE = new RegExp(base.replace(/[-_]+/ig, '\\s+'), 'i');
 
                 const texto = (el.text || '')
