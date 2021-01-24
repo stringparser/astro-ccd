@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     },
   },
   linkWrapper: {
-    width: '25%',
+    width: '33%',
     opacity: .9,
 
     '&:hover': {
