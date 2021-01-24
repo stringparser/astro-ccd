@@ -9,7 +9,12 @@ import { PageItemContents } from "src/types";
 
 const useStyles = makeStyles({
   root: {
+    margin: '0 auto',
     marginTop: '2rem',
+
+    '@media (max-width: 376px)': {
+      flexDirection: 'column',
+    },
   },
   linkWrapper: {
     width: '25%',
@@ -18,7 +23,11 @@ const useStyles = makeStyles({
     '&:hover': {
       opacity: 1,
       textDecoration: 'none',
-    }
+    },
+
+    '@media (max-width: 376px)': {
+      width: 'auto',
+    },
   }
 });
 

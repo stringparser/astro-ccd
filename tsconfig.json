@@ -25,6 +25,10 @@
     "target": "es5",
     "strict": false,
     "allowJs": true,
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "isolatedModules": true,

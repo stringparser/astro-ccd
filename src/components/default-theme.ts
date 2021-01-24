@@ -3,6 +3,7 @@ import { createMuiTheme } from "@material-ui/core";
 const defaultTheme = createMuiTheme({
   palette: {
     type: 'dark',
+    divider: 'rgba(255, 255, 255, 0.2)'
   },
 
   typography: {
@@ -16,6 +17,20 @@ const defaultTheme = createMuiTheme({
   props: {
     MuiLink: {
       color: 'textSecondary',
+    },
+    MuiTypography: {
+      variantMapping: {
+        h1: 'h1',
+        h2: 'h2',
+        h3: 'h3',
+        h4: 'h4',
+        h5: 'h5',
+        h6: 'h6',
+        body1: 'span',
+        body2: 'span',
+        subtitle1: 'h2',
+        subtitle2: 'h2',
+      },
     },
   },
 
@@ -43,6 +58,14 @@ const defaultTheme = createMuiTheme({
 
         a: {
           color: '#ff0000',
+        },
+
+        p: {
+          margin: '1rem auto',
+          maxWidth: '80%',
+
+          fontSize: '1rem',
+          textAlign: 'left',
         },
 
         img: {

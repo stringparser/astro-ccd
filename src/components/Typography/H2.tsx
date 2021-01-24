@@ -1,18 +1,26 @@
 import React from "react";
-import { Box, Typography, TypographyProps } from "@material-ui/core";
+import { Box, makeStyles, Typography, TypographyProps } from "@material-ui/core";
 
-const H2: React.FC<TypographyProps> = ({ style, ...props }) => (
-  <Box margin="1rem 0">
-    <Typography
-      style={{
-        color: 'spanishblue',
-        fontSize: '1rem',
-        fontWeight: 'bold',
-        ...style,
-      }}
-      {...props}
-    />
-  </Box>
-);
+const useStyles = makeStyles({
+  root: {
+    color: 'royalblue',
+    fontSize: '1rem',
+    fontWeight: 'bold',
+  },
+});
+
+const H2: React.FC<TypographyProps> = ({ style, ...props }) => {
+  const classes = useStyles();
+
+  return (
+    <Box margin="1rem 0">
+      <Typography
+        variant="h2"
+        className={classes.root}
+        {...props}
+      />
+    </Box>
+  );
+};
 
 export default H2;

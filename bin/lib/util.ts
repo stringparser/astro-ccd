@@ -1,3 +1,4 @@
+import { html_beautify } from "js-beautify";
 import { PageBasename, PageItemProps } from "../../src/types";
 
 export const urlMap = {
@@ -29,7 +30,7 @@ export const cleanHTML = (html: string = '') => {
     .trim()
     .replace(/\s+/g, ' ')
     .replace(/allowfullscreen(=['"]true['"])?/, 'allowFullScreen')
-    .replace(/<a (target=['"]_blank['"])?\s*href=\s*\\?["'][^\s'"]+\\?["']\s*(target=['"]_blank['"])?\s*>[\s\n\t]*<\/a>/gm, '')
+    .replace(/<a (?:target=['"]_blank['"])?\s*href=\s*\\?["'][^\s'"]+\\?["']\s*(?:target=['"]_blank['"])?\s*>([^><]*)<\/a>/gm, '$1')
     .trim()
   ;
 }
@@ -43,11 +44,17 @@ export const mapMDX = (el: PageItemProps) => {
       return `# ${el.text}`;
     }
     case 'image': {
-      return [
-        `<Imagen src="${el.src}" />`,
-        el.alt,
-        cleanHTML(el.text)
-      ].filter(v => v).join('\n\n');
+      return html_beautify(
+        [
+          `\n<Imagen src="${el.src}" />`,
+          el.alt,
+          cleanHTML(el.text)
+        ].filter(v => v).join('\n\n'),
+        {
+          indent_char: ' ',
+          indent_size: 2,
+        }
+      );
     }
   }
 }

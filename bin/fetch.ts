@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import { fetchPageContent } from './lib/get-page-content';
 import { fechaTextRE, mapMDX, mapJSON, urlMap } from './lib/util';
-import { PageBasename, PageItemContents } from '../src/types';
+import { PageBasename, PageItemContents, PageItemProps } from '../src/types';
 
 Promise.all([
   fetchPageContent('https://astro-ccd.com/fuensanta-3'),
@@ -39,12 +39,12 @@ Promise.all([
       objeto,
     } = item;
 
-    const result = mapMDX(item);
+    const mdx = mapMDX(item);
     const pageItem = acc[urlId];
 
     const title = pageItem?.title
       || item.nombre && `# ${item.nombre}`
-      || /^\s*#/.test(result) && result
+      || /^\s*#/.test(mdx) && mdx
       || objeto && `# ${objeto}`
       || null
     ;
@@ -58,7 +58,7 @@ Promise.all([
       isIndex,
       content: (pageItem?.content || []).concat({
         ...item,
-        mdx: result,
+        mdx,
       })
     };
 
@@ -193,6 +193,14 @@ Promise.all([
         : page.content.filter(el => el.type === 'image')
       ;
 
+      const imagesREGroup = imagenes.map(el =>
+        path.basename(el.src, path.extname(el.src))
+          .trim()
+          .replace(/[-_]+/g, '\\s+')
+      ).join('|');
+
+      const basenamesRE = new RegExp(`\\s+(${imagesREGroup})|(${imagesREGroup})\\s+`, 'gim');
+
       return fs.mkdirp(path.dirname(filename))
         .then(() =>
           fs.writeFile(
@@ -223,22 +231,35 @@ Promise.all([
               }),
               imagenes.length
                 ? `imagenes:\n${
-                  imagenes.map((el, index) =>
-                    `${[
-                      `\n\ttoma${index + 1}:`,
+                  imagenes.map((el, index) => {
+                    const sep = '\n\t\t\t';
+                    const base = path.basename(el.src, path.extname(el.src));
+                    const srcRE = new RegExp(base.replace(/[-_]+/g, '\\s+'), 'i');
+
+                    const texto = `${el.alt && el.text ? sep : ''}${
+                      [el.alt, el.text]
+                        .filter(v => v)
+                        .join(sep)
+                      }`
+                      .replace(srcRE, '')
+                      .trim()
+                      .replace(/\s*([^\n]+)\s+([^\n]+)/gm, `${sep}$1${sep}$2`)
+                    ;
+
+                    return `\ttoma${index + 1}:\n\t\t${[
                       `src: ${el.src}`,
-                      el.text && `texto: ${el.text}`,
-                      el.nombre && `nombre: ${el.nombre}`,
-                      el.objeto && `objeto: ${el.objeto}`,
+                      texto && `texto: ${texto}`,
                       el.localizacion && `posicion: ${el.localizacion}`,
-                    ].filter(v => v).join('\n\t\t')}`
-                  ).join('\n')
+                    ].filter(v => v).join('\n\t\t')}`;
+                  }).join('\n')
                 }`
                 : null
               ,
               '---\n',
-              mergedContent
-            ].filter(v => v).join('\n')
+            ]
+            .filter(v => v)
+            .join('\n')
+            .replace(basenamesRE, '')
           )
         )
       ;

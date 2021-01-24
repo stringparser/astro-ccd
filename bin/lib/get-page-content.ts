@@ -50,7 +50,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             type,
             textContent: type === 'header'
               ? el.text()
-              : cleanHTML(el.html())
+              : cleanHTML(el.text())
             ,
           };
         })
@@ -61,7 +61,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
 
           switch (type) {
             case 'text': {
-              const text = cleanHTML(el.html());
+              const text = cleanHTML(el.text());
               return acc.concat({
                 urlId: isIndex ? label : '',
                 type,
@@ -70,7 +70,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
               });
             }
             case 'header': {
-              const text = cleanHTML(el.html());
+              const text = cleanHTML(el.text());
               return acc.concat({
                 urlId: isIndex ? label : '',
                 type,

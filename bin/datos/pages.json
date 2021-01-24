@@ -1,4 +1,12 @@
 {
+  "20171": {
+    "urlId": "20171",
+    "label": "cometas-asteroides",
+    "title": "# Video",
+    "objeto": "C/2017 K2",
+    "isIndex": false,
+    "content": []
+  },
   "fuensanta": {
     "label": "fuensanta",
     "title": "Fuensanta",
@@ -247,29 +255,22 @@
       }
     ]
   },
-  "cometas-asteroides": {
-    "label": "cometas-asteroides",
-    "title": "Cometas Asteroides",
-    "urlId": "cometas-asteroides",
-    "isIndex": true,
-    "content": [
-      {
-        "urlId": "cometas-asteroides",
-        "type": "text",
-        "label": "cometas-asteroides",
-        "text": "mpc I88 <a href=\"http://www.minorplanetcenter.net/iau/lists/ObsCodesF.html\" target=\"_blank\" >Lista de códigos MPC</a>",
-        "isIndex": true,
-        "mdx": "mpc I88 <a href=\"http://www.minorplanetcenter.net/iau/lists/ObsCodesF.html\" target=\"_blank\" >Lista de códigos MPC</a>"
-      }
-    ]
-  },
   "2020f3": {
     "urlId": "2020f3",
     "label": "cometas-asteroides",
-    "title": "# C/2020 F3 (NEOWISE)",
+    "title": "# C/2020 F3",
     "objeto": "C/2020 F3",
     "isIndex": false,
     "content": [
+      {
+        "urlId": "2020f3",
+        "type": "text",
+        "label": "cometas-asteroides",
+        "objeto": "C/2020 F3",
+        "isIndex": false,
+        "mdx": "mpc I88 Lista de códigos MPC",
+        "text": "mpc I88 Lista de códigos MPC"
+      },
       {
         "urlId": "2020f3",
         "type": "header",
@@ -545,7 +546,7 @@
   "c2019y4_20200414_i88jpg": {
     "urlId": "c2019y4_20200414_i88jpg",
     "label": "cometas-asteroides",
-    "title": "# C/2019 Y4ATLAS",
+    "title": "# C/2019 Y4 ATLAS",
     "objeto": "C/2019 Y4",
     "isIndex": false,
     "content": [
@@ -555,8 +556,8 @@
         "label": "cometas-asteroides",
         "objeto": "C/2019 Y4",
         "isIndex": false,
-        "mdx": "# C/2019 Y4ATLAS",
-        "text": "C/2019 Y4ATLAS"
+        "mdx": "# C/2019 Y4 ATLAS",
+        "text": "C/2019 Y4 ATLAS"
       }
     ]
   },
@@ -1658,8 +1659,8 @@
         "nombre": "21/P Giacobini-Zinner",
         "fecha": "20180808",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2018/08/21p_20180809_i88.jpg\" />\n\n21P_20180809_I88\n\n<a href=\"https://astroccd.files.wordpress.com/2018/08/21p_20180809_i88.jpg\">21/P 8Agosto 2018</a>",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2018/08/_20180809_i88.jpg\"></a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2018/08/21p_20180809_i88.jpg\" />\n\n21P_20180809_I88\n\n21/P 8Agosto 2018",
+        "text": ""
       }
     ]
   },
@@ -2465,21 +2466,11 @@
   "20170724-c2017-k2": {
     "urlId": "20170724-c2017-k2",
     "label": "cometas-asteroides",
-    "title": "# <a href=\"https://drive.google.com/open?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc\">Video</a>",
+    "title": "# C/2017 K2 (PANSTARRS)",
     "fecha": "20170724",
     "objeto": "C/2017 K2",
     "isIndex": false,
     "content": [
-      {
-        "urlId": "20170724-c2017-k2",
-        "type": "header",
-        "label": "cometas-asteroides",
-        "fecha": "20170724",
-        "objeto": "C/2017 K2",
-        "isIndex": false,
-        "mdx": "# <a href=\"https://drive.google.com/open?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc\">Video</a>",
-        "text": "<a href=\"https://drive.google.com/open?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc\">Video</a>"
-      },
       {
         "urlId": "20170724-c2017-k2",
         "type": "image",
@@ -3152,8 +3143,8 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150208",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2014q2es.jpg\" />\n\n2014Q2es\n\n<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2i_20150119_i88.jpg\">C2014Q2 dia 8 Febrero 2015 New360mmF1810mm</a>",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/i_20150119_i88.jpg\">Cdia  New360mmF1810mm</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2014q2es.jpg\" />\n\n2014Q2es\n\nC2014Q2 dia 8 Febrero 2015 New360mmF1810mm",
+        "text": "Cdia  New360mmF1810mm"
       }
     ]
   },
@@ -3175,29 +3166,19 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150123",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_88.jpg\" />\n\n2014q2_20150123_88\n\n<a href=\"https://astroccd.files.wordpress.com/2012/12/2014q2i_20150119_i88.jpg\">C2014Q2 dia 23 Enero 2015 New360mmF1810mm</a>",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/i_20150119_i88.jpg\">Cdia  New360mmF1810mm</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_88.jpg\" />\n\n2014q2_20150123_88\n\nC2014Q2 dia 23 Enero 2015 New360mmF1810mm",
+        "text": "Cdia  New360mmF1810mm"
       }
     ]
   },
   "20150122-c2014-q2": {
     "urlId": "20150122-c2014-q2",
     "label": "cometas-asteroides",
-    "title": "# C/2014 Q2 (LOVEJOY)",
+    "title": "# Video cometa 2014q2_ 2.avi",
     "fecha": "20150122",
     "objeto": "C/2014 Q2",
     "isIndex": false,
     "content": [
-      {
-        "urlId": "20150122-c2014-q2",
-        "type": "header",
-        "label": "cometas-asteroides",
-        "nombre": "C/2014 Q2 (LOVEJOY)",
-        "objeto": "C/2014 Q2",
-        "isIndex": false,
-        "mdx": "# <a href=\"https://drive.google.com/file/d/0B9X-aeZtOZTwOUF2MlkwQWVoaG8/view?usp=sharing\">Video cometa2014q2_ 2.avi</a>",
-        "text": "<a href=\"https://drive.google.com/file/d/0B9X-aeZtOZTwOUF2MlkwQWVoaG8/view?usp=sharing\">Video_ 2.avi</a>"
-      },
       {
         "urlId": "20150122-c2014-q2",
         "type": "image",
@@ -3208,8 +3189,8 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150122",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_i88651.jpg\" />\n\n2014q2_20150122_I8865\n\nC2014Q2 dia 22 Enero 2015ts65mmF420mm",
-        "text": "Cdia ts65mmF420mm"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_i88651.jpg\" />\n\n2014q2_20150122_I8865\n\nC2014Q2 dia 22 Enero 2015 ts65mmF420mm",
+        "text": "Cdia  ts65mmF420mm"
       },
       {
         "urlId": "20150122-c2014-q2",
@@ -3339,7 +3320,7 @@
         "nombre": "15P/Finlay",
         "fecha": "20141220",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/15p_20141220_i88_.jpg\" />\n\n15p_20141220_I88_\n\nOutburst Cometa 15P20/12/2014",
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/15p_20141220_i88_.jpg\" />\n\n15p_20141220_I88_\n\nOutburst Cometa 15P 20/12/2014",
         "text": "Outburst20/12/2014"
       }
     ]
@@ -3380,16 +3361,6 @@
       },
       {
         "urlId": "20140915-c2011-j2",
-        "type": "header",
-        "label": "cometas-asteroides",
-        "objeto": "C/2011 J2",
-        "fecha": "20140915",
-        "isIndex": false,
-        "mdx": "# <a href=\"http://youtu.be/po6as9H-_hk\" target=\"_blank\" > VIDEO</a>",
-        "text": "<a href=\"http://youtu.be/po6as9H-_hk\" target=\"_blank\" > VIDEO</a>"
-      },
-      {
-        "urlId": "20140915-c2011-j2",
         "type": "text",
         "label": "cometas-asteroides",
         "objeto": "C/2011 J2",
@@ -3412,6 +3383,14 @@
         "text": ""
       }
     ]
+  },
+  "c2014j2_1_20": {
+    "urlId": "c2014j2_1_20",
+    "label": "cometas-asteroides",
+    "title": "# VIDEO",
+    "objeto": "C/2011 J2",
+    "isIndex": false,
+    "content": []
   },
   "20140914-c2011-j2": {
     "urlId": "20140914-c2011-j2",
@@ -3467,8 +3446,8 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140910",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2i_20140910_i881.jpg\" />\n\nC2014E2i_20140910_I88\n\n<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 10 Septiembre 2014</a>",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c_20140729_i88inver.jpg\">C</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2i_20140910_i881.jpg\" />\n\nC2014E2i_20140910_I88\n\nC2014E2 10 Septiembre 2014",
+        "text": "C"
       }
     ]
   },
@@ -3513,8 +3492,8 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140827",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140828_i88.jpg\" />\n\nc2014e2inv_20140828_I88\n\n<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 27 Agosto 2014</a>",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c_20140729_i88inver.jpg\">C</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140828_i88.jpg\" />\n\nc2014e2inv_20140828_I88\n\nC2014E2 27 Agosto 2014",
+        "text": "C"
       }
     ]
   },
@@ -3549,8 +3528,8 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140807",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140807_i88.jpg\" />\n\nC2014E2inv_20140807_I88\n\n<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 7 Agosto 2014</a>",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c_20140729_i88inver.jpg\">C</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140807_i88.jpg\" />\n\nC2014E2inv_20140807_I88\n\nC2014E2 7 Agosto 2014",
+        "text": "C"
       }
     ]
   },
@@ -3585,8 +3564,8 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140729",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver2.jpg\" />\n\nC2014E2_20140729_I88inver\n\n<a href=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver.jpg\">C2014E2 29Julio2014</a>",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/c_20140729_i88inver.jpg\">C</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver2.jpg\" />\n\nC2014E2_20140729_I88inver\n\nC2014E2 29Julio2014",
+        "text": "C"
       }
     ]
   },
@@ -3759,7 +3738,7 @@
         "nombre": "C/2013 R1 (LOVEJOY)",
         "fecha": "20131204",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2013r1_20131204_i88.jpg\" />\n\n30 imagenes de 20 \n\nC2013R1 4diciembre 2013 30 20 Imagen “New360mmF1810mm st8xme + R = 1,03” Arco",
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2013r1_20131204_i88.jpg\" />\n\n30 imagenes de 20\n\nC2013R1 4diciembre 2013 30 20 Imagen “New360mmF1810mm st8xme + R = 1,03” Arco",
         "text": "C 30 20 Imagen “New360mmF1810mm st8xme + R = 1,03” Arco"
       }
     ]
@@ -3851,8 +3830,8 @@
         "fecha": "20131116",
         "nombre": "C/2012 S1 (ISON)",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2012s1_20131116_i88.jpg\" />\n\nC2012S1_20131116_I88\n\nC2012S1 16/11/201325 2 x 2 binning de 10s Imagen",
-        "text": "C16/11/201325 2 x 2 binning de 10s Imagen"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2012s1_20131116_i88.jpg\" />\n\nC2012S1_20131116_I88\n\nC2012S1 16/11/2013 25 2 x 2 binning de 10s Imagen",
+        "text": "C16/11/2013 25 2 x 2 binning de 10s Imagen"
       },
       {
         "urlId": "20131116-c2012-s1",
@@ -3890,8 +3869,8 @@
         "fecha": "20131116",
         "nombre": "C/2012 S1 (ISON)",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2012s1_20131013_i88.jpg\" />\n\nC2012S1_20131013_I88\n\nC/2012S1 dia 7 Noviembre 2013 distancia 1 UAC2012S1 Imagen dia 12 Octubre 2013 distancia 1.7UA parece que no va a ser tan espectacular",
-        "text": "dia  distancia 1 UACImagen dia  distancia 1.7UA parece que no va a ser tan espectacular"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/c2012s1_20131013_i88.jpg\" />\n\nC2012S1_20131013_I88\n\nC/2012S1 dia 7 Noviembre 2013 distancia 1 UA C2012S1 Imagen dia 12 Octubre 2013 distancia 1.7UA parece que no va a ser tan espectacular",
+        "text": "dia  distancia 1 UA CImagen dia  distancia 1.7UA parece que no va a ser tan espectacular"
       },
       {
         "urlId": "20131116-c2012-s1",
@@ -3916,8 +3895,8 @@
         "fecha": "20131116",
         "nombre": "C/2012 S1 (ISON)",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2012s1-10-100s-31-enero-2013.jpg\" />\n\n2012s1 10 100s 31 Enero 2013\n\nEl cometa C2012 S1 el 30 Enero 20134:02 unidades astronómicas de distancia",
-        "text": "El cometa  el 4:02 unidades astronómicas de distancia"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/2012s1-10-100s-31-enero-2013.jpg\" />\n\n2012s1 10 100s 31 Enero 2013\n\nEl cometa C2012 S1 el 30 Enero 2013 4:02 unidades astronómicas de distancia",
+        "text": "El cometa  el  4:02 unidades astronómicas de distancia"
       },
       {
         "urlId": "20131116-c2012-s1",
@@ -3929,8 +3908,8 @@
         "fecha": "20131116",
         "nombre": "C/2012 S1 (ISON)",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011.jpg\" />\n\nuser_556_6_enero_2012_c2012s1_30_100s_1357724375_527011\n\nC2012 S1 dia 6 Enero 201330 * 100 s DISTANCIA 4,2 UA",
-        "text": " dia 30 * 100 s DISTANCIA 4,2 UA"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011.jpg\" />\n\nuser_556_6_enero_2012_c2012s1_30_100s_1357724375_527011\n\nC2012 S1 dia 6 Enero 2013 30 * 100 s DISTANCIA 4,2 UA",
+        "text": " dia  30 * 100 s DISTANCIA 4,2 UA"
       },
       {
         "urlId": "20131116-c2012-s1",
@@ -4131,23 +4110,21 @@
       }
     ]
   },
-  "20111100-c2005-yu55": {
-    "urlId": "20111100-c2005-yu55",
+  "lulin-26-60s-l-pag-24fe-2009": {
+    "urlId": "lulin-26-60s-l-pag-24fe-2009",
     "label": "cometas-asteroides",
-    "title": "# <a href=\"http://es.wikipedia.org/wiki/%28308635%29_2005_YU55\" target=\"_blank\" ><b>(308635) 2005 YU<sub>55</sub></b></a>",
-    "fecha": "20111100",
+    "title": "# (308635) 2005 YU55",
     "objeto": "2005 YU55",
     "isIndex": false,
     "content": [
       {
-        "urlId": "20111100-c2005-yu55",
+        "urlId": "lulin-26-60s-l-pag-24fe-2009",
         "type": "header",
         "label": "cometas-asteroides",
         "objeto": "2005 YU55",
-        "fecha": "20111100",
         "isIndex": false,
-        "mdx": "# <a href=\"http://es.wikipedia.org/wiki/%28308635%29_2005_YU55\" target=\"_blank\" ><b>(308635) 2005 YU<sub>55</sub></b></a>",
-        "text": "<a href=\"http://es.wikipedia.org/wiki/%28308635%29_2005_YU55\" target=\"_blank\" ><b>(308635) 2005 YU<sub>55</sub></b></a>"
+        "mdx": "# (308635) 2005 YU55",
+        "text": "(308635) 2005 YU55"
       }
     ]
   },
@@ -4192,8 +4169,8 @@
         "nombre": "17P/Holmes",
         "fecha": "20071118",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg\" />\n\n11 18 11 2007 Holmes 30s Imagen b2 PA\n\n<a href=\"https://astroccd.files.wordpress.com/2012/12/11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg\">C2007N3 Lulin 26 60 Filtro infrarojo Imagen de febrero 24 2009 R + 110mm F770mm CCD</a> P Holmes Tomas 17 11 30 B2 18 Noviembre 2007 Reflector 358mm 1840mm F + CCD",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/12/11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg\">CLulin 26 60 Filtro infrarojo Imagen de febrero 24 2009 R + 110mm F770mm CCD</a>\n\nP Holmes Tomas 17 11 30 B2  Reflector 358mm 1840mm F + CCD"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg\" />\n\n11 18 11 2007 Holmes 30s Imagen b2 PA\n\nC2007N3 Lulin 26 60 Filtro infrarojo Imagen de febrero 24 2009 R + 110mm F770mm CCD P Holmes Tomas 17 11 30 B2 18 Noviembre 2007 Reflector 358mm 1840mm F + CCD",
+        "text": "CLulin 26 60 Filtro infrarojo Imagen de febrero 24 2009 R + 110mm F770mm CCD\n\nP Holmes Tomas 17 11 30 B2  Reflector 358mm 1840mm F + CCD"
       }
     ]
   },
@@ -4330,8 +4307,8 @@
         "fecha": "20070112",
         "nombre": "C/2006 P1 (McNaught)",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg\" />\n\nreflecator comprometerse c2006p1 358 f5 12 Enero 2007 ISO 100 1 320s\n\nMcNaught C/2006p1 R 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz dedia12 de Enero de 2007 a las14H 10m",
-        "text": "McNaughtR 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz dedia a las14H 10m"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg\" />\n\nreflecator comprometerse c2006p1 358 f5 12 Enero 2007 ISO 100 1 320s\n\nMcNaught C/2006p1 R 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz de dia 12 de Enero de 2007 a las 14H 10m",
+        "text": "McNaughtR 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz de dia  a las 14H 10m"
       },
       {
         "urlId": "20070112-c2006-p1",
@@ -4494,8 +4471,8 @@
         "nombre": "Hercules Cluster",
         "fecha": "20121200",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/hubble_sequence_photo.png\" />\n\nHubble_sequence_photo\n\nEn la siguientesecuencia de Hubble se pueden apreciar los distintos tipos de Galaxias",
-        "text": "En la siguientesecuencia de Hubble se pueden apreciar los distintos tipos de Galaxias"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/hubble_sequence_photo.png\" />\n\nHubble_sequence_photo\n\nEn la siguiente secuencia de Hubble se pueden apreciar los distintos tipos de Galaxias",
+        "text": "En la siguiente secuencia de Hubble se pueden apreciar los distintos tipos de Galaxias"
       }
     ]
   },
@@ -5079,8 +5056,8 @@
         "label": "galaxias",
         "fecha": "20121200",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/pulsar.jpg\" />\n\npulsar\n\n<a href=\"http://www.caha.es/18-billions-of-suns-support-einstein_es.html\" target=\"_blank\" > OJ 287</a> publicacion <a href=\"https://astroccd.files.wordpress.com/2012/12/apjl_819_2_l37.pdf\">apjl_819_2_l37</a>",
-        "text": "<a href=\"http://www.caha.es/18-billions-of-suns-support-einstein_es.html\" target=\"_blank\" > OJ 287</a>\n\npublicacion <a href=\"https://astroccd.files.wordpress.com/2012/12/apjl_819_2_l37.pdf\">apjl_819_2_l37</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/pulsar.jpg\" />\n\npulsar\n\nOJ 287 publicacion apjl_819_2_l37",
+        "text": "OJ 287\n\npublicacion apjl_819_2_l37"
       }
     ]
   },
@@ -5599,8 +5576,8 @@
         "label": "galaxias",
         "fecha": "20121200",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/sn2013ev-6-300sf.jpg\" />\n\nSN2013EV 6 300sF\n\nSN 2013ev en IC 1296suma de 6 imagenes de 300suna galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)",
-        "text": "SN 2013ev en IC 1296suma de 6 imagenes de 300suna galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/sn2013ev-6-300sf.jpg\" />\n\nSN2013EV 6 300sF\n\nSN 2013ev en IC 1296 suma de 6 imagenes de 300s una galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)",
+        "text": "SN 2013ev en IC 1296 suma de 6 imagenes de 300s una galaxia en la linea visual de m57 pero esta a ~ 221 millones de años luz (m57 esta a 2300años luz)"
       }
     ]
   },
@@ -5672,25 +5649,25 @@
       }
     ]
   },
-  "20110408-ngc-5033": {
-    "urlId": "20110408-ngc-5033",
+  "20110622-ngc-5033": {
+    "urlId": "20110622-ngc-5033",
     "label": "galaxias",
     "title": "# NGC 5033",
-    "fecha": "20110408",
+    "fecha": "20110622",
     "objeto": "NGC 5033",
     "isIndex": false,
     "content": [
       {
-        "urlId": "20110408-ngc-5033",
+        "urlId": "20110622-ngc-5033",
         "type": "image",
         "alt": "ngc 5033 7 600s 10g 8 abril 2011PA",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5033-7-600s-10g-8-abril-2011pa2.jpg",
         "objeto": "NGC 5033",
         "label": "galaxias",
-        "fecha": "20110408",
+        "fecha": "20110622",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/ngc-5033-7-600s-10g-8-abril-2011pa2.jpg\" />\n\nngc 5033 7 600s 10g 8 abril 2011PA\n\n<a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >m51 22junio2011</a> <a href=\"https://astroccd.wordpress.com/imagenes/galaxias/ngc-5033-7-600s-10g-8-abril-2011pa/#main\" >NGC 5O33 7*600S</a>",
-        "text": "<a href=\"/httpgalaxias/ngc-5033-7-600s-10g-8-abril-2a/#main\" >m51 </a> <a href=\"/httpgalaxias/ngc-5033-7-600s-10g-8-abril-2a/#main\" >NGC 5O33 7*600S</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/12/ngc-5033-7-600s-10g-8-abril-2011pa2.jpg\" />\n\nngc 5033 7 600s 10g 8 abril 2011PA\n\nm51 22junio2011 NGC 5O33 7*600S",
+        "text": "m51  NGC 5O33 7*600S"
       }
     ]
   },
@@ -5822,8 +5799,8 @@
         "nombre": "Nebulosa Roseta",
         "fecha": "20210100",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2021/01/integration_abe-copia.jpg?w=1024\" />\n\nLa imagen tiene un atributo ALT vacío; su nombre de archivo es integration_abe-copia.jpg\n\nNGC 2237Nebulosa Rosetats 65mm 420mm",
-        "text": "NGC 2237Nebulosa Rosetats 65mm 420mm"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2021/01/integration_abe-copia.jpg?w=1024\" />\n\nLa imagen tiene un atributo ALT vacío; su nombre de archivo es integration_abe-copia.jpg\n\nNGC 2237 Nebulosa Roseta ts 65mm 420mm",
+        "text": "NGC 2237 Nebulosa Roseta ts 65mm 420mm"
       }
     ]
   },
@@ -5844,8 +5821,8 @@
         "label": "nebulosas",
         "fecha": "20190929",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/03/img-20200302-wa0019.jpg\" />\n\nIMG-20200302-WA0019\n\nNGC 2237Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020",
-        "text": "NGC 2237Nebulosa Roseta T 200mm F 1400mm+Sony A7s "
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/03/img-20200302-wa0019.jpg\" />\n\nIMG-20200302-WA0019\n\nNGC 2237 Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020",
+        "text": "NGC 2237 Nebulosa Roseta T 200mm F 1400mm+Sony A7s "
       },
       {
         "urlId": "20190929-ngc-2024",
@@ -6296,8 +6273,8 @@
         "label": "sistema-solar",
         "fecha": "20201201",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/12/1_152049_l5_ap666.png\" />\n\n<figcaption>Imagen del sol dia 1 diciembre</figcaption>",
-        "text": "<figcaption>Imagen del sol dia 1 diciembre</figcaption>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/12/1_152049_l5_ap666.png\" />\n\nImagen del sol dia 1 diciembre",
+        "text": "Imagen del sol dia 1 diciembre"
       }
     ]
   },
@@ -6363,7 +6340,7 @@
         "fecha": "20150320",
         "nombre": "eclipse luna",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2014/04/luna-110-2pa2.jpg\" />\n\nLUNA 110  2PA",
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2014/04/luna-110-2pa2.jpg\" />\n\nLUNA 110 2PA",
         "text": ""
       },
       {
@@ -6545,8 +6522,8 @@
         "fecha": "20040608",
         "nombre": "transito de venus",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\" />\n\nCCDCap0050\n\n<a href=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\">Mañana del dia 8 Junio 2004 8.30 /9.30 UT</a> Secuencia final del transitoWebcam+New 150mm",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\">Mañana del dia  8.30 /9.30 UT</a>\n\nSecuencia final del transitoWebcam+New 150mm"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg\" />\n\nCCDCap0050\n\nMañana del dia 8 Junio 2004 8.30 /9.30 UT Secuencia final del transito Webcam+New 150mm",
+        "text": "Mañana del dia  8.30 /9.30 UT\n\nSecuencia final del transito Webcam+New 150mm"
       }
     ]
   },
@@ -6561,9 +6538,9 @@
         "urlId": "construccion-del-observatorio",
         "type": "text",
         "label": "construccion-del-observatorio",
-        "text": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" >REPARACION CCD SBIG</a>",
+        "text": "REPARACION CCD SBIG",
         "isIndex": true,
-        "mdx": "<a href=\"https://astroccd.wordpress.com/ccd-2/\" target=\"_blank\" >REPARACION CCD SBIG</a>"
+        "mdx": "REPARACION CCD SBIG"
       },
       {
         "urlId": "construccion-del-observatorio",
@@ -6664,9 +6641,9 @@
         "urlId": "construccion-del-observatorio",
         "type": "text",
         "label": "construccion-del-observatorio",
-        "text": "<a href=\"http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\" >http://www.dppobservatory.net/DomeAutomation/DomeDriver.php</a>\n\nSistema control",
+        "text": "http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\n\nSistema control",
         "isIndex": true,
-        "mdx": "<a href=\"http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\" >http://www.dppobservatory.net/DomeAutomation/DomeDriver.php</a>\n\nSistema control"
+        "mdx": "http://www.dppobservatory.net/DomeAutomation/DomeDriver.php\n\nSistema control"
       },
       {
         "urlId": "construccion-del-observatorio",
@@ -6698,9 +6675,9 @@
         "urlId": "construccion-del-observatorio",
         "type": "text",
         "label": "construccion-del-observatorio",
-        "text": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es deBVC(ceramico) comprado a Costas&amp;Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia\n\nEl material es BVC a primera vista sorprende pues tiene un color negro sin embargo este vidrio tiene unas buenas propiedades fisicas en cuanto a Reflexion de la luz y dilatacion termica",
+        "text": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es de BVC (ceramico) comprado a Costas&Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia\n\nEl material es BVC a primera vista sorprende pues tiene un color negro sin embargo este vidrio tiene unas buenas propiedades fisicas en cuanto a Reflexion de la luz y dilatacion termica",
         "isIndex": true,
-        "mdx": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es deBVC(ceramico) comprado a Costas&amp;Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia\n\nEl material es BVC a primera vista sorprende pues tiene un color negro sin embargo este vidrio tiene unas buenas propiedades fisicas en cuanto a Reflexion de la luz y dilatacion termica"
+        "mdx": "El diseño a construir es un Newton de 360mm y 1810mm de focal el primario es de BVC (ceramico) comprado a Costas&Aledo en el año 2001 por desgracia Costas que tanto a aportado a la astronomia amateur ya ha fallecido (Julio- 2011) Posteriormente aprovechando tareas de limpieza fue retocado por mi buen amigo E.Hidalgo mejorando aun mas la calidad optica que ya tenia\n\nEl material es BVC a primera vista sorprende pues tiene un color negro sin embargo este vidrio tiene unas buenas propiedades fisicas en cuanto a Reflexion de la luz y dilatacion termica"
       },
       {
         "urlId": "construccion-del-observatorio",
@@ -6754,10 +6731,10 @@
         "type": "image",
         "alt": "Celda Primario web",
         "src": "https://astroccd.files.wordpress.com/2012/11/celda-primario-web1.jpg",
-        "text": "<a href=\"https://astroccd.files.wordpress.com/2012/11/bisinfin1.jpg\">Montura Tubo</a>",
+        "text": "Montura Tubo",
         "fecha": "20121100",
         "isIndex": true,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/11/celda-primario-web1.jpg\" />\n\nCelda Primario web\n\n<a href=\"https://astroccd.files.wordpress.com/2012/11/bisinfin1.jpg\">Montura Tubo</a>"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/11/celda-primario-web1.jpg\" />\n\nCelda Primario web\n\nMontura Tubo"
       },
       {
         "urlId": "construccion-del-observatorio",
@@ -7008,18 +6985,18 @@
         "type": "image",
         "alt": "MOSAICO 358mm",
         "src": "https://astroccd.files.wordpress.com/2012/11/mosaico-358mm.jpg",
-        "text": "Primeras medidas conSensor de Calidad del Cielo y Detector de Nubes",
+        "text": "Primeras medidas con Sensor de Calidad del Cielo y Detector de Nubes",
         "fecha": "20121100",
         "isIndex": true,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/11/mosaico-358mm.jpg\" />\n\nMOSAICO 358mm\n\nPrimeras medidas conSensor de Calidad del Cielo y Detector de Nubes"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2012/11/mosaico-358mm.jpg\" />\n\nMOSAICO 358mm\n\nPrimeras medidas con Sensor de Calidad del Cielo y Detector de Nubes"
       },
       {
         "urlId": "construccion-del-observatorio",
         "type": "header",
         "label": "construccion-del-observatorio",
-        "text": "<a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" >Tess</a>",
+        "text": "Tess",
         "isIndex": true,
-        "mdx": "# <a href=\"http://www.observatorioremoto.com/\" target=\"_blank\" >Tess</a>"
+        "mdx": "# Tess"
       },
       {
         "urlId": "construccion-del-observatorio",
@@ -7051,10 +7028,10 @@
         "urlId": "reparacion-ccd",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2020/11/msaico-1.jpg",
-        "text": "Mi profesion es la venta&amp;reparacion de aparatos electronicos desde 1983",
+        "text": "Mi profesion es la venta&reparacion de aparatos electronicos desde 1983",
         "fecha": "20201100",
         "isIndex": true,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/11/msaico-1.jpg\" />\n\nMi profesion es la venta&amp;reparacion de aparatos electronicos desde 1983"
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/11/msaico-1.jpg\" />\n\nMi profesion es la venta&reparacion de aparatos electronicos desde 1983"
       },
       {
         "urlId": "reparacion-ccd",

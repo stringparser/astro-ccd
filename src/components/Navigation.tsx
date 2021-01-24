@@ -45,9 +45,10 @@ const useStyles = makeStyles(theme => ({
   header: {
     display: 'flex',
     padding: '1.25rem 0',
-    boxShadow: `0 1px 1px ${theme.palette.divider}`,
     marginBottom: '3rem',
     justifyContent: 'center',
+
+    borderBottom: `1px solid ${theme.palette.divider}`,
   },
 
   nav: {
@@ -64,6 +65,10 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     marginRight: '0.75rem',
     justifyContent: 'center',
+
+    '@media (max-width: 376px)': {
+      flex: '1',
+    },
   },
 
   pageLinks: {

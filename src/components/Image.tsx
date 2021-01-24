@@ -11,7 +11,7 @@ const Image: React.FC<ImageProps> = props => (
   >
     <img
       width={/obras\S*\.gif/.test(props.src)
-          ? '250px'
+          ? '150px'
           : '75%'
       }
       loading="lazy"
