@@ -42,7 +42,9 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
       case 'image': {
         const dateString = (/(\d{4})(\d{2})(\d{2})/.exec(el.fecha) || [])
           .slice(1)
-          .join('-')
+          .reverse()
+          .filter(el => el !== '00')
+          .join('/')
         ;
 
         return (
@@ -54,14 +56,13 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
                 justifyContent="center"
               >
                 <Typography>
-                  {new Date(dateString).toLocaleDateString('es')}
+                  {dateString}
                 </Typography>
               </Box>
             )}
             <Image
-              src={el.src}
+              src={`/imagenes/${el.src.split('/').pop().replace(/\?(\S+)$/, '')}`}
               alt={el.alt}
-              loading="lazy"
             />
             {el.text && <br />}
             {el.text && (
@@ -80,7 +81,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
 
   const titulo = [
     nombre || objeto,
-    nombre && !nombre.includes(objeto) && `(${objeto})`
+    nombre && !new RegExp(objeto, 'i').test(objeto) && `(${objeto})`
   ].filter(v => v).join(' ');
 
   const identifier = `/objeto/${astroObject.urlId}`;

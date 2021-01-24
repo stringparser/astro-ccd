@@ -269,7 +269,10 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     };
   }
 
-  if (/^(00)?29p/i.test(id)) {
+  if (
+    /^(00)?29p/i.test(id)
+    || src === 'https://astroccd.files.wordpress.com/2012/12/29p.jpg'
+  ) {
     return {
       ...props,
       nombre: '29P/Schwassmann-Wachmann',

@@ -1,7 +1,7 @@
 {
   "include": [
-    "./src",
-    "./bin"
+    "./src/**/*",
+    "./bin/**/*"
   ],
   "exclude": [
     "node_modules",
@@ -14,16 +14,19 @@
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": ".",
     "paths": {
       "src/*": [
         "./src/*"
+      ],
+      "bin/*": [
+        "./bin/*"
       ]
     },
     "module": "commonjs",
     "noEmit": true,
     "target": "es5",
     "strict": false,
+    "baseUrl": ".",
     "allowJs": true,
     "typeRoots": [
       "./src/types",

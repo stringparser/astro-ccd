@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     },
   },
   linkWrapper: {
-    width: '25%',
+    width: '33%',
     opacity: .9,
 
     '&:hover': {
@@ -43,8 +43,8 @@ function PostList<T>({ items }: PostListProps) {
     const image = item.content.find(el =>
       el.type == 'image'
       && !/\/apj-logo.gif$/.test(el.src)
-      && el.src !== 'https://astroccd.files.wordpress.com/2014/02/logodef.png'
-      && el.src !== 'https://i0.wp.com/www.astrosurf.com/snweb2/images/rainbowl.gif'
+      && !/2014\/02\/logodef\.png$/.test(el.src)
+      && !/\/snweb2\/images\/rainbowl\.gif$/.test(el.src)
     );
 
     if (acc[id] || !image || !image.src) {
@@ -69,7 +69,6 @@ function PostList<T>({ items }: PostListProps) {
     <Box
       display="flex"
       flexWrap="wrap"
-      alignItems="center"
       justifyContent="center"
       className={classes.root}
     >
@@ -77,7 +76,8 @@ function PostList<T>({ items }: PostListProps) {
         const dateString = (/(\d{4})(\d{2})(\d{2})/.exec(el.fecha) || [])
           .slice(1)
           .reverse()
-          .join('-')
+          .filter(el => el !== '00')
+          .join('/')
         ;
 
         return (
@@ -88,22 +88,19 @@ function PostList<T>({ items }: PostListProps) {
           >
             <Box
                 display="flex"
-                alignItems="center"
                 flexDirection="column"
                 justifyContent="center"
               >
                 <H2 style={{color: 'red'}}>
                   {el.objeto}
                 </H2>
-                <Image
-                  src={el.image}
-                  width="auto"
-                  height="125px"
-                  title={el.fecha}
-                />
                 <Typography variant="caption">
                   {dateString}
                 </Typography>
+                <Image
+                  src={`/imagenes/${el.image.split('/').pop()}`}
+                  title={el.fecha}
+                />
               </Box>
           </Link>
         );

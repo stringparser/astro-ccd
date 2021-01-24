@@ -1,8 +1,8 @@
 import fs from 'fs-extra';
 import path from 'path';
 import { fetchPageContent } from './lib/get-page-content';
+import { PageBasename, PageItemContents } from '../src/types';
 import { fechaTextRE, mapMDX, mapJSON, urlMap } from './lib/util';
-import { PageBasename, PageItemContents, PageItemProps } from '../src/types';
 
 Promise.all([
   fetchPageContent('https://astro-ccd.com/fuensanta-3'),
@@ -177,8 +177,8 @@ Promise.all([
       ;
 
       const frontMatterKeys: Array<keyof typeof page> = isIndex
-        ? [ 'fecha', 'label', 'title' ]
-        : [ 'fecha', 'label', 'objeto', 'title' ]
+        ? [ 'fecha', 'title', 'label' ]
+        : [ 'fecha', 'objeto', 'title', 'label' ]
       ;
 
       const mergedContent = content.map(el => el.mdx).join('\n');
@@ -193,73 +193,64 @@ Promise.all([
         : page.content.filter(el => el.type === 'image')
       ;
 
-      const imagesREGroup = imagenes.map(el =>
-        path.basename(el.src, path.extname(el.src))
-          .trim()
-          .replace(/[-_]+/g, '\\s+')
-      ).join('|');
-
-      const basenamesRE = new RegExp(`\\s+(${imagesREGroup})|(${imagesREGroup})\\s+`, 'gim');
-
       return fs.mkdirp(path.dirname(filename))
         .then(() =>
           fs.writeFile(
             filename,
             [
               '---',
-              ...frontMatterKeys.map(key => {
+              frontMatterKeys.map(key => {
                 const value = page[key];
 
+                if (typeof value !== 'string') {
+                  return null;
+                }
+
                 if (key === 'title') {
-                  return page.title
+                  return page.title.trim()
                     ? `titulo: ${page.title.replace(/^\s*[#]\s*/, '')}`
                     : null
                   ;
                 }
 
-                if (key === 'label' && isIndex) {
-                  return page.label
-                    ? `etiquetas:\n\t${
+                if (key === 'label') {
+                  return page.label.trim()
+                    ? `etiquetas: ${
                       page.label === 'cometas-asteroides' && 'cometa, asteroide'
-                      || `- ${page.label}`
+                      || `${page.label}`
                     }`
                     : null
                   ;
                 }
 
-                return value ? `${key}: ${value}` : null;
-              }),
-              imagenes.length
-                ? `imagenes:\n${
-                  imagenes.map((el, index) => {
-                    const sep = '\n\t\t\t';
-                    const base = path.basename(el.src, path.extname(el.src));
-                    const srcRE = new RegExp(base.replace(/[-_]+/g, '\\s+'), 'i');
+                return (value || '').trim()
+                  ? `${key}: ${value}`
+                  : null
+                ;
+              }).join('\n'),
+              '',
+              imagenes.map((el, index) => {
+                const sep = '\n\t\t\t';
+                const base = path.basename(el.src, path.extname(el.src));
+                const srcRE = new RegExp(base.replace(/[-_]+/ig, '\\s+'), 'i');
 
-                    const texto = `${el.alt && el.text ? sep : ''}${
-                      [el.alt, el.text]
-                        .filter(v => v)
-                        .join(sep)
-                      }`
-                      .replace(srcRE, '')
-                      .trim()
-                      .replace(/\s*([^\n]+)\s+([^\n]+)/gm, `${sep}$1${sep}$2`)
-                    ;
+                const texto = (el.text || '')
+                  .replace(srcRE, '')
+                  .replace(/\s+/g, ' ')
+                  .trim()
+                ;
 
-                    return `\ttoma${index + 1}:\n\t\t${[
-                      `src: ${el.src}`,
-                      texto && `texto: ${texto}`,
-                      el.localizacion && `posicion: ${el.localizacion}`,
-                    ].filter(v => v).join('\n\t\t')}`;
-                  }).join('\n')
-                }`
-                : null
+                return `imagen_${index + 1}:\n\t\t${[
+                  `src: ${el.src}`,
+                  texto && `texto: ${texto}`,
+                  el.localizacion && `posicion: ${el.localizacion}`,
+                ].filter(v => v).join('\n\t\t')}`;
+              }).join('\n')
               ,
               '---\n',
             ]
-            .filter(v => v)
             .join('\n')
-            .replace(basenamesRE, '')
+            .replace(/\t/g, '  ')
           )
         )
       ;
