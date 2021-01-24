@@ -1,11 +1,22 @@
-import { Box } from "@material-ui/core";
+import { Box, makeStyles } from "@material-ui/core";
 import { memo, useState } from "react";
 
-const DisqusEmbedPlaceholder = memo(() => (
-  <Box mt="1rem">
+const useStyles = makeStyles(theme => ({
+  root: {
+    marginTop: '4rem',
+    borderTop: `1px solid ${theme.palette.divider}`,
+  },
+}))
+
+const DisqusEmbedPlaceholder = memo(() => {
+  const classes = useStyles();
+
+  return (
+    <Box className={classes.root}>
       <div id="disqus_thread" style={{marginTop: '1rem'}}></div>
-  </Box>
-));
+    </Box>
+  );
+});
 
 export type DisqusEmbedProps = {
   url?: string;

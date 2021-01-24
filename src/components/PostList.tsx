@@ -76,6 +76,7 @@ function PostList<T>({ items }: PostListProps) {
       {orderedUniqueItems.map(el => {
         const dateString = (/(\d{4})(\d{2})(\d{2})/.exec(el.fecha) || [])
           .slice(1)
+          .reverse()
           .join('-')
         ;
 
@@ -101,7 +102,7 @@ function PostList<T>({ items }: PostListProps) {
                   title={el.fecha}
                 />
                 <Typography variant="caption">
-                  {new Date(dateString).toLocaleDateString('es')}
+                  {dateString}
                 </Typography>
               </Box>
           </Link>

@@ -11,6 +11,11 @@ const withMDX = require('@next/mdx')({
 });
 
 exports = module.exports = withMDX({
+  i18n: {
+    locales: ['es-ES', 'fr', 'nl-NL'],
+    defaultLocale: 'es-ES',
+  },
+
   images: {
     domains: [
       'astroccd.files.wordpress.com'

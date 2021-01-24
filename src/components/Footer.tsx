@@ -9,7 +9,7 @@ const Footer = () => {
       color="red"
       display="flex"
       marginTop="4rem"
-      borderBottom={`1px solid ${theme.palette.divider}`}
+      borderTop={`1px solid ${theme.palette.divider}`}
       alignItems="center"
       flexDirection="column"
       justifyContent="center"

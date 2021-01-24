@@ -68,6 +68,11 @@ const defaultTheme = createMuiTheme({
           textAlign: 'left',
         },
 
+        hr: {
+          margin: '4rem 0 0 0',
+          borderColor: 'rgba(255, 255, 255, 0.2)',
+        },
+
         img: {
           margin: '0 auto',
           maxWidth: '100%',
