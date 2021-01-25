@@ -1,5 +1,4 @@
 const path = require('path');
-const withImages = require('next-images');
 const frontmatter = require('remark-frontmatter');
 
 const withMDX = require('@next/mdx')({
@@ -12,7 +11,7 @@ const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
 });
 
-exports = module.exports = withMDX(withImages({
+exports = module.exports = withMDX({
   i18n: {
     locales: ['es-ES', 'fr', 'nl-NL'],
     defaultLocale: 'es-ES',
@@ -23,13 +22,6 @@ exports = module.exports = withMDX(withImages({
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
 
-  fileExtensions: [
-    'jpg',
-    'jpeg',
-    'png',
-    'gif'
-  ],
-
   pageExtensions: [
     'js',
     'jsx',
@@ -39,21 +31,47 @@ exports = module.exports = withMDX(withImages({
   ],
 
   webpack(config, options) {
-    return Object.assign(
-      config,
-      {
-        resolve: Object.assign(
-          config.resolve,
-          {
-            alias: Object.assign(
-              config.resolve.alias,
-              {
-                '@imagenes': path.join(__dirname, 'public', 'imagenes')
-              }
-            )
+    const { isServer } = options;
+
+    const baseConfig = {
+      basePath: "",
+      assetPrefix: "",
+      inlineImageLimit: 8192,
+      fileExtensions: ["jpg", "jpeg", "png", "svg", "gif", "ico", "webp", "jp2", "avif"],
+    };
+
+    const result = Object.assign(config, {
+      resolve: Object.assign(config.resolve, {
+
+        alias: Object.assign(config.resolve.alias, {
+          '@registro': path.join(__dirname, 'src', 'public', 'registro')
+        })
+      })
+    });
+
+    result.module.rules.push({
+      test: new RegExp(`\.(${baseConfig.fileExtensions.join('|')})$`),
+      include: [
+        path.join(__dirname, 'src', 'public')
+      ],
+      use: [
+        {
+          loader: require.resolve("url-loader"),
+          options: {
+            limit: baseConfig.inlineImageLimit,
+            fallback: require.resolve("file-loader"),
+            outputPath: `${isServer ? "../" : ""}static/images/`,
+            publicPath: `${
+              baseConfig.assetPrefix ||
+              baseConfig.basePath ||
+              ''
+            }/_next/static/images/`,
+            name: "[name]-[hash].[ext]",
           }
-        )
-      }
-    )
+        }
+      ]
+    });
+
+    return result;
   }
-}));
+});

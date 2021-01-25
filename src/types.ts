@@ -6,7 +6,7 @@ export enum PageBasename {
   galaxias = 'galaxias',
   nebulosas = 'nebulosas',
   sistemaSolar = 'sistema-solar',
-  construccionObservatorio = 'construccion-del-observatorio',
+  construccionObservatorio = 'observatorio',
   reparacionCCD = 'reparacion-ccd',
 }
 
@@ -35,12 +35,13 @@ export type PageItemContents = {
 
 export type PageItemProps =
   {
+    src: string;
     type: PageItemType;
     urlId: string;
   }
   & Partial<{
-    src: string;
     alt: string;
+    dest: string;
     text: string;
     label: PageBasename;
     fecha: string;

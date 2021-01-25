@@ -1,6 +1,9 @@
+import fs from 'fs-extra';
+import path from 'path';
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 import mapMetadata from './metadata';
+import downloadImage from './download-image';
 import { mapTextToUrl } from '../../src/lib/util';
 import { PageBasename, PageItemProps, ParsedPageContent } from '../../src/types';
 import { ActualPageBasename, cleanHTML, mapFecha, standalonePagesRE, urlMap } from './util';
@@ -63,6 +66,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             case 'text': {
               const text = cleanHTML(el.text());
               return acc.concat({
+                src: '',
                 urlId: isIndex ? label : '',
                 type,
                 label,
@@ -72,6 +76,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             case 'header': {
               const text = cleanHTML(el.text());
               return acc.concat({
+                src: '',
                 urlId: isIndex ? label : '',
                 type,
                 label,
@@ -84,6 +89,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
               const objeto = (/\/([^\/.]+)\.[^\/\s]+$/.exec(src) || ['']).pop().trim();
 
               const item: PageItemProps = {
+                src,
                 urlId: isIndex ? label : objeto,
                 type: 'image',
               };
@@ -179,10 +185,10 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           const { fecha } = props;
           const objetoSinFecha = (props.objeto || '').replace(/^\s*\d+\-/, '');
 
-          const urlId = fecha && props.objeto
-              ? mapTextToUrl(objetoSinFecha)
-              : mapTextToUrl(maybeEmptyUrlId || props.label)
-          ;
+          const urlId = mapTextToUrl(fecha && props.objeto
+            ? objetoSinFecha
+            : maybeEmptyUrlId || props.label
+          );
 
           return {
             urlId,
@@ -203,6 +209,58 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
         title,
         items,
       }
+    })
+    .then(async (result) => {
+      let countUrlId: Record<string, number> = {};
+
+      const updatedItems = await Promise.all<PageItemProps>(result.items
+        .map((el) => {
+          const { urlId } = el;
+
+          if (urlId && el.src) {
+            countUrlId[urlId] = (countUrlId[urlId] || 1) + 1;
+          }
+
+          return el;
+        })
+        .map(async (el) => {
+          switch (el.type) {
+            case 'image': {
+              const { urlId } = el;
+
+              const count = countUrlId[urlId] = (countUrlId[urlId] || 2) - 1;
+
+              const dest = el.isIndex
+                ? `public/${result.label}/${path.basename(el.src)}`
+                : `public/registro/${urlId}_${el.fecha}_${count}${path.extname(el.src)}`
+              ;
+
+              const oldFile = path.join('public', 'img', path.basename(el.src));
+              const oldFileExists = await fs.pathExists(oldFile);
+
+              if (oldFileExists) {
+                console.log('removing old file', oldFile);
+                await fs.remove(oldFile);
+              }
+
+              return downloadImage(el, dest)
+                .then(el => ({
+                  ...el,
+                  dest: path.basename(dest)
+                }))
+              ;
+            }
+            default: {
+              return el;
+            }
+          }
+        })
+      );
+
+      return {
+        ...result,
+        items: updatedItems,
+      };
     })
   ;
 }

@@ -190,8 +190,7 @@ Promise.all([
 
       const imagenes = isIndex
         ? []
-        : page.content
-          .filter(el => el.type === 'image')
+        : page.content.filter(el => el.type === 'image')
           .sort((a, b) => (b.fecha || '').localeCompare(a.fecha || ''))
       ;
 
@@ -237,14 +236,14 @@ Promise.all([
 
               imagesLength > 0 && '\n#\n# NOTA: entradas ordenadas por fecha (la primera es la última que se hizo)\n#',
               imagenes.map((el, index) => {
-                const base = path.basename(el.src, path.extname(el.src)).replace(/\?[^\s]+/, '');
+                const base = path.basename(el.dest, path.extname(el.dest)).replace(/\?[^\s]+/, '');
                 const srcRE = new RegExp(base.replace(/[-_]+/ig, '\\s+'), 'i');
 
                 const texto = (el.text || '')
                   .replace(srcRE, '')
                   .replace(/\s+/g, ' ')
                   .replace(pageTitle, '')
-                  .replace(/\/[^\s]{3,}/, '')
+                  .replace(/[A-Z]?\/[^\s]{3,}/, '')
                   .replace('Imagen del Asteroide 99942 (Apophis)', '')
                   .replace(/((P\s+\/\s+)?P\s+Holmes|Cometa\s+P\s+17\s+P)\s*/, '')
                   .trim()
@@ -252,8 +251,9 @@ Promise.all([
 
                 return `\nentrada_${imagesLength - index}:\n\t\t${[
                   `fecha: ${el.fecha}`,
-                  `imagen: ${path.basename(el.src)}`,
+                  `imagen: ${path.basename(el.dest)}`,
                   texto && `texto: ${texto}`,
+                  `imagenOriginal: ${path.basename(el.src)}`,
                 ].filter(v => v).join('\n\t\t')}`;
               }).join('\n')
               ,

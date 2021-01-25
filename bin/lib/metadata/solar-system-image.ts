@@ -117,7 +117,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     };
   }
 
-  if (src === 'https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg?w=736') {
+  if (src === 'https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg') {
     return {
       ...props,
       fecha: '20201029',

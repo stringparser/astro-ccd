@@ -47,7 +47,7 @@ function PostList<T>({ items }: PostListProps) {
       && !/\/snweb2\/images\/rainbowl\.gif$/.test(el.src)
     );
 
-    if (acc[id] || !image || !image.src) {
+    if (acc[id] || !image || !image.dest) {
       return acc;
     }
 
@@ -55,7 +55,7 @@ function PostList<T>({ items }: PostListProps) {
       ...acc,
       [id]: {
         ...item,
-        image: image.src,
+        image: image.dest,
       },
     };
   }, {} as Record<string, PageItemContents & { image: string; }>)
@@ -98,8 +98,7 @@ function PostList<T>({ items }: PostListProps) {
                   {dateString}
                 </Typography>
                 <Image
-                  src={`/imagenes/${el.image.split('/').pop()}`}
-                  title={el.fecha}
+                  src={require(`@registro/${el.image}`).default}
                 />
               </Box>
           </Link>
