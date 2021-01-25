@@ -4510,14 +4510,14 @@
       {
         "urlId": "20200517-sn2020-jfo",
         "type": "image",
-        "alt": "sn2020jfo._20200517",
-        "src": "https://astroccd.files.wordpress.com/2020/05/sn2020jfo._20200517.jpg",
+        "alt": "sn2020jfo_20200517.jpg",
+        "src": "https://astroccd.files.wordpress.com/2020/05/sn2020jfo_20200517.jpg",
         "objeto": "SN 2020jfo",
         "label": "galaxias",
         "localizacion": "NGC 4303",
         "fecha": "20200517",
         "isIndex": false,
-        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/05/sn2020jfo._20200517.jpg\" />\n\nsn2020jfo._20200517\n\nsn2020jfo en M61 17 Mayo 2020",
+        "mdx": "<Imagen src=\"https://astroccd.files.wordpress.com/2020/05/sn2020jfo_20200517.jpg\" />\n\nsn2020jfo_20200517.jpg\n\nsn2020jfo en M61 17 Mayo 2020",
         "text": "sn2020jfo en M61 "
       }
     ]
