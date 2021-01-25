@@ -2,7 +2,6 @@ import clsx from "clsx";
 import Link from "next/link";
 import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
 
-import H2 from "./Typography/H2";
 import { PageBasename } from "src/types";
 import { NextRouter, withRouter } from 'next/router';
 
@@ -13,6 +12,12 @@ const items = Object.entries(PageBasename)
         return {
           href: `/${href}`,
           text: 'cometas y asteroides',
+        };
+      }
+      case PageBasename.sistemaSolar: {
+        return {
+          href: `/${href}`,
+          text: 'sistema solar',
         };
       }
       case PageBasename.reparacionCCD: {
@@ -43,12 +48,15 @@ const isCurrentPage = (currentHref: string, href: string) => (
 
 const useStyles = makeStyles(theme => ({
   header: {
-    display: 'flex',
+    margin: '0 auto',
     padding: '1.25rem 0',
-    marginBottom: '3rem',
+    maxWidth: theme.maxWidth,
+
+    display: 'flex',
     justifyContent: 'center',
 
     borderBottom: `1px solid ${theme.palette.divider}`,
+    backgroundColor: theme.palette.background.default,
   },
 
   nav: {
@@ -102,7 +110,7 @@ const useStyles = makeStyles(theme => ({
   },
 
   currentLink: {
-    color: 'red',
+    color: 'rgb(200, 0, 0, 0.9)',
     fontWeight: 'bold',
   },
 }));

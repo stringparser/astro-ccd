@@ -61,7 +61,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
               </Box>
             )}
             <Image
-              src={`/img/${el.src.split('/').pop().replace(/\?(\S+)$/, '')}`}
+              src={`/registro/${el.dest}`}
               alt={el.alt}
             />
             {el.text && <br />}

@@ -1,9 +1,14 @@
 import { createMuiTheme } from "@material-ui/core";
 
 const defaultTheme = createMuiTheme({
+  maxWidth: '960px',
+
   palette: {
     type: 'dark',
-    divider: 'rgba(255, 255, 255, 0.2)'
+    divider: 'rgba(255, 255, 255, 0.2)',
+    background: {
+      default: 'black',
+    }
   },
 
   typography: {
@@ -54,6 +59,10 @@ const defaultTheme = createMuiTheme({
           lineHeight: '1.43',
           textRendering: 'optimizeLegibility',
           scrollBehavior: 'smooth',
+
+          '& > div': {
+            width: '100%',
+          }
         },
 
         a: {

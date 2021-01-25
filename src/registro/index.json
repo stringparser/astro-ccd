@@ -3996,7 +3996,7 @@
         "urlId": "sol",
         "src": "https://astroccd.files.wordpress.com/2020/12/dsc05191.jpg",
         "type": "image",
-        "objeto": "sol",
+        "objeto": "Sol",
         "label": "sistema-solar",
         "fecha": "20201201",
         "isIndex": false,
@@ -4018,7 +4018,7 @@
         "src": "https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es img-20201030-wa0020.jpg",
-        "objeto": "marte",
+        "objeto": "Marte",
         "label": "sistema-solar",
         "text": "Marte 29 Octubre 2020",
         "fecha": "20201029",
@@ -4030,7 +4030,7 @@
         "src": "https://astroccd.files.wordpress.com/2014/04/luna_14noviembre2016.jpg",
         "type": "image",
         "alt": "luna_14noviembre2016",
-        "objeto": "luna",
+        "objeto": "Luna",
         "label": "sistema-solar",
         "text": "Superluna 14Noviembre2016",
         "fecha": "20161114",
@@ -4045,7 +4045,7 @@
         "objeto": "luna",
         "label": "sistema-solar",
         "fecha": "20150320",
-        "nombre": "eclipse luna",
+        "nombre": "Eclipse de Luna",
         "isIndex": false,
         "dest": "luna_20150320_5.jpg"
       },
@@ -4058,7 +4058,7 @@
         "label": "sistema-solar",
         "text": "Eclipse 20Marzo2015 (nublado)",
         "fecha": "20150320",
-        "nombre": "eclipse luna",
+        "nombre": "Eclipse de Luna",
         "isIndex": false,
         "dest": "luna_20150320_4.jpg"
       },
@@ -4071,7 +4071,7 @@
         "label": "sistema-solar",
         "text": "Imagen de la luna New 360mm F1810mm Camara Nikon D90",
         "fecha": "20150320",
-        "nombre": "eclipse luna",
+        "nombre": "Eclipse de Luna",
         "isIndex": false,
         "dest": "luna_20150320_3.jpg"
       },
@@ -4080,11 +4080,11 @@
         "src": "https://astroccd.files.wordpress.com/2014/04/conjuncion-19-junio-venus-luna1.jpg",
         "type": "image",
         "alt": "OLYMPUS DIGITAL CAMERA",
-        "objeto": "luna,venus",
+        "objeto": "luna-venus",
         "label": "sistema-solar",
         "text": "CONJUNCION VENUS LUNA 18 JUNIO 2007 14H 19M TU REFLECTOR 358 F5+CAMARA OLYMPUS E1 imagen a pleno dia",
         "fecha": "20070618",
-        "nombre": "conjuncion luna venus",
+        "nombre": "Conjunción de Luna y Venus",
         "isIndex": false,
         "dest": "luna-venus_20070618_1.jpg"
       },
@@ -4135,7 +4135,7 @@
         "label": "sistema-solar",
         "text": "TRANSITO DE VENUS 8 JUNIO 2004",
         "fecha": "20040608",
-        "nombre": "transito de venus",
+        "nombre": "Transito de Venus",
         "isIndex": false,
         "dest": "venus_20040608_5.jpg"
       },
@@ -4147,7 +4147,7 @@
         "objeto": "venus",
         "label": "sistema-solar",
         "fecha": "20040608",
-        "nombre": "transito de venus",
+        "nombre": "Transito de Venus",
         "isIndex": false,
         "dest": "venus_20040608_4.gif"
       },
@@ -4159,7 +4159,7 @@
         "objeto": "venus",
         "label": "sistema-solar",
         "fecha": "20040608",
-        "nombre": "transito de venus",
+        "nombre": "Transito de Venus",
         "isIndex": false,
         "dest": "venus_20040608_3.jpg"
       },
@@ -4171,7 +4171,7 @@
         "objeto": "venus",
         "label": "sistema-solar",
         "fecha": "20040608",
-        "nombre": "transito de venus",
+        "nombre": "Transito de Venus",
         "isIndex": false,
         "dest": "venus_20040608_2.jpg"
       },
@@ -4184,7 +4184,7 @@
         "label": "sistema-solar",
         "text": "Mañana del dia 8 Junio 2004 8.30 /9.30 UT\n\nSecuencia final del transito Webcam+New 150mm",
         "fecha": "20040608",
-        "nombre": "transito de venus",
+        "nombre": "Transito de Venus",
         "isIndex": false,
         "dest": "venus_20040608_1.jpg"
       }

@@ -62,7 +62,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
       ...props,
       fecha: '20040608',
       objeto: 'venus',
-      nombre: 'transito de venus',
+      nombre: 'Transito de Venus',
     };
   }
 
@@ -85,7 +85,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
       ...props,
       fecha: '20150320',
       objeto: 'luna',
-      nombre: 'eclipse luna',
+      nombre: 'Eclipse de Luna',
     };
   }
 
@@ -93,8 +93,8 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20070618',
-      objeto: 'luna,venus',
-      nombre: 'conjuncion luna venus',
+      objeto: 'luna-venus',
+      nombre: 'Conjunción de Luna y Venus',
     };
   }
 
@@ -102,7 +102,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20161114',
-      objeto: 'luna'
+      objeto: 'Luna',
     }
   }
 
@@ -113,7 +113,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20201201',
-      objeto: 'sol',
+      objeto: 'Sol',
     };
   }
 
@@ -121,7 +121,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20201029',
-      objeto: 'marte',
+      objeto: 'Marte',
     }
   }
 

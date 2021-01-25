@@ -5,7 +5,7 @@ import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 import H2 from "src/components/Typography/H2";
 
 import Image from "./Image";
-import { PageItemContents } from "src/types";
+import { PageBasename, PageItemContents } from "src/types";
 
 const useStyles = makeStyles({
   root: {
@@ -39,7 +39,7 @@ function PostList<T>({ items }: PostListProps) {
   const classes = useStyles();
 
   const uniqueItems = items.reduce((acc, item) => {
-    const id = item.urlId.split('-').slice(1).join('-');
+    const id = item.urlId;
     const image = item.content.find(el =>
       el.type == 'image'
       && !/\/apj-logo.gif$/.test(el.src)
@@ -83,7 +83,7 @@ function PostList<T>({ items }: PostListProps) {
         return (
           <Link
             key={el.urlId}
-            href={`/objeto/${el.urlId.split('-').slice(1).join('-')}`}
+            href={`/objeto/${el.urlId}`}
             className={classes.linkWrapper}
           >
             <Box
@@ -91,10 +91,13 @@ function PostList<T>({ items }: PostListProps) {
                 flexDirection="column"
                 justifyContent="center"
               >
-                <H2 style={{color: 'red'}}>
-                  {el.objeto}
+                <H2 style={{color: 'red', maxWidth: '50%', margin: '0 auto'}}>
+                  {el.label === PageBasename.sistemaSolar
+                    ? el.title.replace(/^\s*#\s+/, '')
+                    : el.objeto
+                  }
                 </H2>
-                <Typography variant="caption">
+                <Typography variant="caption" style={{marginTop: '1rem'}}>
                   {dateString}
                 </Typography>
                 <Image

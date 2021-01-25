@@ -15,9 +15,10 @@ const jss = create({
   ...jssPreset(),
 });
 
-const useStyles = makeStyles(() => ({
-  root: {
+const useStyles = makeStyles(theme => ({
+  main: {
     margin: '0 auto',
+    padding: '5rem 1rem',
     minHeight: '100vh',
 
     border: '0.25rem solid white',
@@ -25,10 +26,7 @@ const useStyles = makeStyles(() => ({
     borderColor: 'rgba(255,255,255, 0.05)',
     borderBottom: 'none',
 
-    backgroundColor: 'black',
-
-    padding: '2rem 1rem',
-    paddingTop: 0,
+    backgroundColor: theme.palette.common.black,
 
     '@media (min-width: 960px)': {
       maxWidth: '960px',
@@ -51,19 +49,19 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
 
   return (
     <>
-      <main className={classes.root}>
-        <ThemeProvider theme={defaultTheme}>
-          <MDXProvider components={mdxComponents}>
-            <StylesProvider jss={jss}>
-              <CssBaseline />
-              <Navigation />
+      <ThemeProvider theme={defaultTheme}>
+        <MDXProvider components={mdxComponents}>
+          <StylesProvider jss={jss}>
+            <CssBaseline />
+            <Navigation />
+            <main className={classes.main}>
               <Component {...pageProps} />
-              <Footer />
-              <ScrollToTopButton />
-            </StylesProvider>
-          </MDXProvider>
-        </ThemeProvider>
-      </main>
+            </main>
+            <Footer />
+            <ScrollToTopButton />
+          </StylesProvider>
+        </MDXProvider>
+      </ThemeProvider>
     </>
   );
 }

@@ -7,14 +7,18 @@ const Footer = () => {
   return (
     <Box
       color="red"
+      margin="0 auto"
       display="flex"
-      marginTop="4rem"
+      padding="0.5rem 0"
+      maxWidth={theme.maxWidth}
       borderTop={`1px solid ${theme.palette.divider}`}
       alignItems="center"
       flexDirection="column"
       justifyContent="center"
+      style={{
+        backgroundColor: theme.palette.background.default
+      }}
     >
-      <div style={{padding: '0.5rem'}} />
       <p>
         Las imagenes  son de libre distribucion  siempre que se indique  su  procedencia
       </p>

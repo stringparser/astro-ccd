@@ -217,13 +217,7 @@ Promise.all([
 
                 if (key === 'label') {
                   return page.label.trim()
-                    ? `etiquetas: ${
-                      page.label === 'cometas-asteroides' && 'cometa, asteroide'
-                      || page.label === 'galaxias' && 'galaxia'
-                      || page.label === 'nebulosas' && 'nebulosa'
-                      || page.label === 'sistema-solar' && 'sistema solar'
-                      || page.label
-                    }`
+                    ? `etiquetas: ${page.label}`
                     : null
                   ;
                 }
