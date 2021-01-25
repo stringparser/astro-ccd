@@ -61,10 +61,6 @@ export const mapMDX = (el: PageItemProps) => {
   }
 }
 
-export const urlIdsHarcoded = {
-  jupiterSaturno: '20201220-jupiter-saturno',
-};
-
 export const fechaTextRE = new RegExp([
   '(\\d{1,2})',
   '(?:\\s*(de)?\\s*|[-_\\s]*)',

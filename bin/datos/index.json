@@ -226,7 +226,7 @@
     "title": "COMETAS/ASTEROIDES",
     "items": [
       {
-        "urlId": "2020f3",
+        "urlId": "c2020-f3",
         "type": "text",
         "label": "cometas-asteroides",
         "text": "mpc I88 Lista de códigos MPC",
@@ -234,7 +234,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2020f3",
+        "urlId": "c2020-f3",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C/2020 F3 (NEOWISE)",
@@ -242,7 +242,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200719-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "2020F3",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3.jpg",
@@ -254,7 +254,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200719-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "2020F3HDR",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3hdr.jpg",
@@ -265,7 +265,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200719-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "RE3",
         "src": "https://astroccd.files.wordpress.com/2020/07/re3.jpg",
@@ -277,7 +277,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200717-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "2020F3_20200717_I88co",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200717_i88co.jpg",
@@ -288,7 +288,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200717-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "2020F3_20200717_I88pro",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200717_i88pro.jpg",
@@ -299,7 +299,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200717-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "2020F3_20200717_I88",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200717_i88.jpg",
@@ -311,7 +311,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200706-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "2020F3_50mm",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_50mm.gif",
@@ -323,7 +323,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200706-c2020-f3",
+        "urlId": "c2020-f3",
         "type": "image",
         "alt": "2020F3_20200706_I88",
         "src": "https://astroccd.files.wordpress.com/2020/07/2020f3_20200706_i88.jpg",
@@ -335,7 +335,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2019-y1_20200528_i88",
+        "urlId": "c2019-y1-20200528-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C/2019Y1 (ATLAS)",
@@ -343,7 +343,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190528-c2019-y1",
+        "urlId": "c2019-y1",
         "type": "image",
         "alt": "C2019 Y1_20200528_I88",
         "src": "https://astroccd.files.wordpress.com/2020/05/c2019-y1_20200528_i88.jpg",
@@ -355,7 +355,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2017t2_20200614",
+        "urlId": "2017t2-20200614",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C/2017 T2 (PANSTARRS)",
@@ -363,7 +363,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200614-c2017-t2",
+        "urlId": "c2017-t2",
         "type": "image",
         "alt": "2017T2_20200614._I88",
         "src": "https://astroccd.files.wordpress.com/2020/06/2017t2_20200614._i88.jpg",
@@ -375,7 +375,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200526-c2017-t2",
+        "urlId": "c2017-t2",
         "type": "image",
         "alt": "C2017t2_20200526_I88",
         "src": "https://astroccd.files.wordpress.com/2020/05/c2017t2_20200526_i88.jpg",
@@ -387,7 +387,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200520-c2017-t2",
+        "urlId": "c2017-t2",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2020/05/2017t2_20200520_i88.jpg",
         "objeto": "C/2017 T2",
@@ -398,7 +398,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2019y4_20200414_i88jpg",
+        "urlId": "c2019y4-20200414-i88jpg",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C/2019 Y4 ATLAS",
@@ -406,7 +406,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200414-c2019-y4",
+        "urlId": "c2019-y4",
         "type": "image",
         "alt": "C2019Y4_20200414_I88jpg",
         "src": "https://astroccd.files.wordpress.com/2020/04/c2019y4_20200414_i88jpg.jpg",
@@ -417,7 +417,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200414-c2019-y4",
+        "urlId": "c2019-y4",
         "type": "image",
         "alt": "C2019Y4_20200414._I88",
         "src": "https://astroccd.files.wordpress.com/2020/04/c2019y4_20200414._i88.jpg",
@@ -428,7 +428,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200414-c2019-y4",
+        "urlId": "c2019-y4",
         "type": "image",
         "alt": "2019Y4_20200414._I88",
         "src": "https://astroccd.files.wordpress.com/2020/04/2019y4_20200414._i88.jpg",
@@ -440,7 +440,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200413-c2019-y4",
+        "urlId": "c2019-y4",
         "type": "image",
         "alt": "2019Y4_20200413I_88",
         "src": "https://astroccd.files.wordpress.com/2020/04/2019y4_20200413i_88.jpg",
@@ -452,7 +452,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200328-c2019-y4",
+        "urlId": "c2019-y4",
         "type": "image",
         "alt": "C2019 Y4 (ATLAS)Color_20200328_I88",
         "src": "https://astroccd.files.wordpress.com/2020/04/c2019-y4-atlascolor_20200328_i88.jpg",
@@ -464,7 +464,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200328-c2019-y4",
+        "urlId": "c2019-y4",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2020/03/c2019-y4-atlas_20200328_i88.jpg",
         "objeto": "C/2019 Y4",
@@ -475,7 +475,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200319-c2019-y4",
+        "urlId": "c2019-y4",
         "type": "image",
         "alt": "2019y4_20190319_I88",
         "src": "https://astroccd.files.wordpress.com/2020/03/2019y4_20190319_i88-1.jpg",
@@ -487,7 +487,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2017t2_20191123_i88",
+        "urlId": "2017t2-20191123-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C/2017 T2 (PANSTARRS)",
@@ -495,7 +495,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191123-c2017-t2",
+        "urlId": "c2017-t2",
         "type": "image",
         "alt": "2017T2_20191123_I88",
         "src": "https://astroccd.files.wordpress.com/2019/11/2017t2_20191123_i88.jpg",
@@ -507,7 +507,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2018n2_20191124_i88",
+        "urlId": "2018n2-20191124-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C/2018 N2 (ASASSN)",
@@ -515,7 +515,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191024-c2018-n2",
+        "urlId": "c2018-n2",
         "type": "image",
         "alt": "2018n2_20191124_I88",
         "src": "https://astroccd.files.wordpress.com/2019/10/2018n2_20191124_i88.jpg",
@@ -527,7 +527,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2iborisov_20191210_i88",
+        "urlId": "2I",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "2I/Borisov",
@@ -535,7 +535,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2iborisov_20191210_i88",
+        "urlId": "2I",
         "type": "text",
         "label": "cometas-asteroides",
         "text": "(2019Q4)",
@@ -543,7 +543,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191210-2I",
+        "urlId": "2I",
         "type": "image",
         "alt": "2IBorisov_20191210_I88",
         "src": "https://astroccd.files.wordpress.com/2019/12/2iborisov_20191210_i88.jpg",
@@ -555,7 +555,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191109-2I",
+        "urlId": "2I",
         "type": "image",
         "alt": "002I_20191109_I88",
         "src": "https://astroccd.files.wordpress.com/2019/11/002i_20191109_i88.jpg",
@@ -567,7 +567,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191026-2I",
+        "urlId": "2I",
         "type": "image",
         "alt": "2I-Borisov_20191026_I88",
         "src": "https://astroccd.files.wordpress.com/2019/10/2i-borisov_20191026_i88.jpg",
@@ -579,7 +579,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191005-2I",
+        "urlId": "2I",
         "type": "image",
         "alt": "2IBorisov-20191005_I88",
         "src": "https://astroccd.files.wordpress.com/2019/10/2iborisov-20191005_i88.jpg",
@@ -591,7 +591,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190929-2I",
+        "urlId": "2I",
         "type": "image",
         "alt": "C2019Q4_20190929_I88",
         "src": "https://astroccd.files.wordpress.com/2019/10/c2019q4_20190929_i88.jpg",
@@ -603,7 +603,7 @@
         "isIndex": false
       },
       {
-        "urlId": "260p_20191025_i88",
+        "urlId": "260P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "260P/McNaught",
@@ -611,7 +611,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191025-260P",
+        "urlId": "260P",
         "type": "image",
         "alt": "260p_20191025_I88",
         "src": "https://astroccd.files.wordpress.com/2019/10/260p_20191025_i88.jpg",
@@ -623,7 +623,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190809-260P",
+        "urlId": "260P",
         "type": "image",
         "alt": "260P_20190809i88",
         "src": "https://astroccd.files.wordpress.com/2019/08/260p_20190809i88.jpg",
@@ -635,7 +635,7 @@
         "isIndex": false
       },
       {
-        "urlId": "6478-gault_20190426_i88",
+        "urlId": "6478-gault-20190426-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "(6478) Gault",
@@ -643,7 +643,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190426-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "(6478) Gault_20190426_I88",
         "src": "https://astroccd.files.wordpress.com/2019/04/6478-gault_20190426_i88.jpg",
@@ -654,7 +654,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190327-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "(6478) Gault_20190327_I88",
         "src": "https://astroccd.files.wordpress.com/2019/03/6478-gault_20190327_i88.jpg",
@@ -665,7 +665,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190309-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "11Enero_8Febrero_9Marzo",
         "src": "https://astroccd.files.wordpress.com/2019/03/11enero_8febrero_9marzo.gif",
@@ -676,7 +676,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190309-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "(6478) Gault_20190209_i88",
         "src": "https://astroccd.files.wordpress.com/2019/03/6478-gault_20190209_i88.jpg",
@@ -687,7 +687,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190309-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "(6478) Gault._20190209_i88",
         "src": "https://astroccd.files.wordpress.com/2019/03/6478-gault._20190209_i88.jpg",
@@ -698,7 +698,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190208-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "6478_20190208_I88",
         "src": "https://astroccd.files.wordpress.com/2019/02/6478_20190208_i88.jpg",
@@ -708,7 +708,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190207-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "6478_Re_20190208_I88.jpg",
         "src": "https://astroccd.files.wordpress.com/2019/02/6478_re_20190208_i88.jpg",
@@ -719,7 +719,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190111-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "(6478) gault_20190111_i88",
         "src": "https://astroccd.files.wordpress.com/2019/01/6478-gault_20190111_i88.jpg",
@@ -729,7 +729,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190112-6478-gault",
+        "urlId": "6478-gault",
         "type": "image",
         "alt": "(6478) Gault_com_20190111_I88.jpg",
         "src": "https://astroccd.files.wordpress.com/2019/01/6478-gault_com_20190111_i88.jpg",
@@ -740,7 +740,7 @@
         "isIndex": false
       },
       {
-        "urlId": "60ptsuchinshan_20190426_i88",
+        "urlId": "60P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "60P/Tsuchinshan",
@@ -748,7 +748,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190426-60P",
+        "urlId": "60P",
         "type": "image",
         "alt": "60PTsuchinshan_20190426_I88",
         "src": "https://astroccd.files.wordpress.com/2019/04/60ptsuchinshan_20190426_i88.jpg",
@@ -760,7 +760,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190309-60P",
+        "urlId": "60P",
         "type": "image",
         "alt": "60p_20190209_I88jpg",
         "src": "https://astroccd.files.wordpress.com/2019/03/60p_20190209_i88jpg.jpg",
@@ -772,7 +772,7 @@
         "isIndex": false
       },
       {
-        "urlId": "38p_20190109_i88",
+        "urlId": "38P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "38P/Stephan-Oterma",
@@ -780,7 +780,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190109-38P",
+        "urlId": "38P",
         "type": "image",
         "alt": "38p_20190109_i88",
         "src": "https://astroccd.files.wordpress.com/2019/01/38p_20190109_i88.jpg",
@@ -792,7 +792,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181230-38P",
+        "urlId": "38P",
         "type": "image",
         "alt": "38p_20181230_I88",
         "src": "https://astroccd.files.wordpress.com/2018/12/38p_20181230_I88.jpg",
@@ -804,7 +804,7 @@
         "isIndex": false
       },
       {
-        "urlId": "46p_20190109_i88",
+        "urlId": "46P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "46P/Wirtanen",
@@ -812,7 +812,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190109-46P",
+        "urlId": "46P",
         "type": "image",
         "alt": "46p_20190109_i88",
         "src": "https://astroccd.files.wordpress.com/2019/01/46p_20190109_i88.jpg",
@@ -824,7 +824,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181230-46P",
+        "urlId": "46P",
         "type": "image",
         "alt": "46p_20181230_I88",
         "src": "https://astroccd.files.wordpress.com/2018/12/46p_20181230_I88.jpg",
@@ -836,7 +836,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181130-46P",
+        "urlId": "46P",
         "type": "image",
         "alt": "46P_20181130i88RGB",
         "src": "https://astroccd.files.wordpress.com/2018/12/46p_20181130i88rgb.jpg",
@@ -847,7 +847,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181130-46P",
+        "urlId": "46P",
         "type": "image",
         "alt": "46P_20181130_i88",
         "src": "https://astroccd.files.wordpress.com/2018/12/46p_20181130_i88.jpg",
@@ -859,7 +859,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181126-46P",
+        "urlId": "46P",
         "type": "image",
         "alt": "46p_20181126_I88",
         "src": "https://astroccd.files.wordpress.com/2018/11/46p_20181126_i88.jpg",
@@ -871,7 +871,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2018v1_20181116_i88",
+        "urlId": "2018v1-20181116-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)",
@@ -879,7 +879,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181116-c2018-v1",
+        "urlId": "c2018-v1",
         "type": "image",
         "alt": "2018V1_20181116_I88",
         "src": "https://astroccd.files.wordpress.com/2018/11/2018v1_20181116_i88.jpg",
@@ -891,7 +891,7 @@
         "isIndex": false
       },
       {
-        "urlId": "64p_20190109_i88",
+        "urlId": "64P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "64P/Swift-Gehrels",
@@ -899,7 +899,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190109-64P",
+        "urlId": "64P",
         "type": "image",
         "alt": "64p_20190109_i88",
         "src": "https://astroccd.files.wordpress.com/2019/01/64p_20190109_i88.jpg",
@@ -911,7 +911,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180106-64P",
+        "urlId": "64P",
         "type": "image",
         "alt": "64p_20190106_i88",
         "src": "https://astroccd.files.wordpress.com/2019/01/64p_20190106_i88.jpg",
@@ -923,7 +923,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181230-64P",
+        "urlId": "64P",
         "type": "image",
         "alt": "64p_20181230_I88",
         "src": "https://astroccd.files.wordpress.com/2018/12/64p_20181230_I88.jpg",
@@ -935,7 +935,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181111-64P",
+        "urlId": "64P",
         "type": "image",
         "alt": "64p_20181111_I88",
         "src": "https://astroccd.files.wordpress.com/2018/11/64p_20181111_i88.jpg",
@@ -947,7 +947,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181106-64P",
+        "urlId": "64P",
         "type": "image",
         "alt": "64p_20181106_I88",
         "src": "https://astroccd.files.wordpress.com/2018/11/64p_20181106_i88.png",
@@ -959,7 +959,7 @@
         "isIndex": false
       },
       {
-        "urlId": "21p_20180921_i88",
+        "urlId": "21P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "21P/Giacobini-Zinner",
@@ -967,7 +967,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180921-21P",
+        "urlId": "21P",
         "type": "image",
         "alt": "21P_20180921_I88",
         "src": "https://astroccd.files.wordpress.com/2018/09/21p_20180921_i88.jpg",
@@ -979,7 +979,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180914-21P",
+        "urlId": "21P",
         "type": "image",
         "alt": "21P_20180914_I88",
         "src": "https://astroccd.files.wordpress.com/2018/09/21p_20180914_i88.jpg",
@@ -991,7 +991,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180907-21P",
+        "urlId": "21P",
         "type": "image",
         "alt": "21P_20180907_I88_",
         "src": "https://astroccd.files.wordpress.com/2018/09/21p_20180907_i88_1.jpg",
@@ -1003,7 +1003,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180814-21P",
+        "urlId": "21P",
         "type": "image",
         "alt": "21P_20180815_I88",
         "src": "https://astroccd.files.wordpress.com/2018/08/21p_20180815_i88.png",
@@ -1015,7 +1015,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180808-21P",
+        "urlId": "21P",
         "type": "image",
         "alt": "21P_20180809_I88",
         "src": "https://astroccd.files.wordpress.com/2018/08/21p_20180809_i88.jpg",
@@ -1027,7 +1027,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2017s3_20180719_i88",
+        "urlId": "c2017s3-20180719-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C2017S3",
@@ -1035,7 +1035,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180719-c2017-s3",
+        "urlId": "c2017-s3",
         "type": "image",
         "alt": "C2017S3_20180719_I88",
         "src": "https://astroccd.files.wordpress.com/2018/07/c2017s3_20180719_i88.png",
@@ -1046,7 +1046,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180719-c2017-s3",
+        "urlId": "c2017-s3",
         "type": "image",
         "alt": "c2017S3_20180719_I88",
         "src": "https://astroccd.files.wordpress.com/2018/07/c2017s3_20180719_i88.jpg",
@@ -1058,7 +1058,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180705-c2017-s3",
+        "urlId": "c2017-s3",
         "type": "image",
         "alt": "C2017S3_20180705_I88",
         "src": "https://astroccd.files.wordpress.com/2018/07/c2017s3_20180705_i88.png",
@@ -1070,7 +1070,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2016r2_20180213_i88",
+        "urlId": "2016r2-20180213-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C2016R2",
@@ -1078,7 +1078,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180213-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "2016R2_20180213_I88",
         "src": "https://astroccd.files.wordpress.com/2018/02/2016r2_20180213_i88.jpg",
@@ -1090,7 +1090,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180210-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "2016R2_20180210_I88",
         "src": "https://astroccd.files.wordpress.com/2018/02/2016r2_20180210_i88.jpg",
@@ -1102,7 +1102,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180202-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2018/02/2016r2_20180202_i88.jpg",
         "objeto": "C/2016 R2",
@@ -1113,7 +1113,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180123-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "C2016R2_20180123_I88",
         "src": "https://astroccd.files.wordpress.com/2018/01/c2016r2_20180123_i88.jpg",
@@ -1125,7 +1125,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180121-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "2016r2_20180121_I88",
         "src": "https://astroccd.files.wordpress.com/2018/01/2016r2_20180121_i88.jpg",
@@ -1137,7 +1137,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180111-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "2016R2_20180115_I88",
         "src": "https://astroccd.files.wordpress.com/2018/01/2016r2_20180115_i88.jpg",
@@ -1149,7 +1149,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180111-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "2016R2_20180111_I88",
         "src": "https://astroccd.files.wordpress.com/2018/01/2016r2_20180111_i88.jpg",
@@ -1161,7 +1161,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180108-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "c2016r2_20180108_I88",
         "src": "https://astroccd.files.wordpress.com/2018/01/c2016r2_20180108_i88.jpg",
@@ -1173,7 +1173,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20171223-c2016-r2",
+        "urlId": "c2016-r2",
         "type": "image",
         "alt": "C2016R2_20171223_I88",
         "src": "https://astroccd.files.wordpress.com/2017/12/c2016r2_20171223_i881.jpg",
@@ -1185,7 +1185,7 @@
         "isIndex": false
       },
       {
-        "urlId": "174p_20171223_i88",
+        "urlId": "174P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "Cometa 174p",
@@ -1193,7 +1193,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20171223-174P",
+        "urlId": "174P",
         "type": "image",
         "alt": "174p_20171223_I88",
         "src": "https://astroccd.files.wordpress.com/2017/12/174p_20171223_i88.jpg",
@@ -1205,7 +1205,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2015v2_20171112_i88",
+        "urlId": "2015v2-20171112-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "2015V1",
@@ -1213,7 +1213,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20171112-c2015-v1",
+        "urlId": "c2015-v1",
         "type": "image",
         "alt": "2015v2_20171112_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20171112_i88.jpg",
@@ -1225,7 +1225,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2015er61_20171112_i88",
+        "urlId": "c2015er61-20171112-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C2015 ER61",
@@ -1233,7 +1233,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20171112-c2015-er61",
+        "urlId": "c2015-er61",
         "type": "image",
         "alt": "c2015ER61_20171112_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2015er61_20171112_i88.jpg",
@@ -1245,7 +1245,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170921-c2015-er61",
+        "urlId": "c2015-er61",
         "type": "image",
         "alt": "2015ER61_20170921_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015er61_20170921_i88.jpg",
@@ -1257,7 +1257,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2017o1_20170921_i88",
+        "urlId": "c2017o1-20170921-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C2017 O1",
@@ -1265,7 +1265,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170921-c2017-o1",
+        "urlId": "c2017-o1",
         "type": "image",
         "alt": "C2017O1_20170921_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2017o1_20170921_i88.jpg",
@@ -1277,7 +1277,7 @@
         "isIndex": false
       },
       {
-        "urlId": "0029p_20191005_i88",
+        "urlId": "0029P",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "29P/Schwassmann-Wachmann",
@@ -1285,7 +1285,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20191005-29P",
+        "urlId": "29P",
         "type": "image",
         "alt": "0029p_20191005_I88",
         "src": "https://astroccd.files.wordpress.com/2019/10/0029p_20191005_i88.jpg",
@@ -1297,7 +1297,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180928-29P",
+        "urlId": "29P",
         "type": "image",
         "alt": "29P_20180928_I88",
         "src": "https://astroccd.files.wordpress.com/2018/09/29p_20180928_i88.jpg",
@@ -1309,7 +1309,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180927-29P",
+        "urlId": "29P",
         "type": "image",
         "alt": "29P_20180927_i88",
         "src": "https://astroccd.files.wordpress.com/2018/09/29p_20180927_i88.jpg",
@@ -1321,7 +1321,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20171010-29P",
+        "urlId": "29P",
         "type": "image",
         "alt": "29P",
         "src": "https://astroccd.files.wordpress.com/2012/12/29p.jpg",
@@ -1333,7 +1333,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170918-29P",
+        "urlId": "29P",
         "type": "image",
         "alt": "29p_20170918_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/29p_20170918_i88.jpg",
@@ -1345,7 +1345,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2015-01_20180612i88",
+        "urlId": "c2015-01-20180612i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C2015 O1",
@@ -1353,7 +1353,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180612-c2015-o1",
+        "urlId": "c2015-o1",
         "type": "image",
         "alt": "c2015 01_20180612I88",
         "src": "https://astroccd.files.wordpress.com/2018/06/c2015-01_20180612i88.png",
@@ -1365,7 +1365,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180416-c2015-o1",
+        "urlId": "c2015-o1",
         "type": "image",
         "alt": "2015 O1_20180416_I88",
         "src": "https://astroccd.files.wordpress.com/2018/04/2015-o1_20180416_i88.jpg",
@@ -1377,7 +1377,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170816-c2015-o1",
+        "urlId": "c2015-o1",
         "type": "image",
         "alt": "C2015O1_20170816_I88",
         "src": "https://astroccd.files.wordpress.com/2018/04/c2015o1_20170816_i88.jpg",
@@ -1389,7 +1389,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2017-k2-panstarrs_20200915_i88",
+        "urlId": "c2017-k2-panstarrs-20200915-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C2017K2",
@@ -1397,10 +1397,10 @@
         "isIndex": false
       },
       {
-        "urlId": "20200915-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es c2017-k2-panstarrs_20200915_i88.jpg",
-        "src": "https://astroccd.files.wordpress.com/2020/09/c2017-k2-panstarrs_20200915_i88.jpg?w=1024",
+        "src": "https://astroccd.files.wordpress.com/2020/09/c2017-k2-panstarrs_20200915_i88.jpg",
         "objeto": "C/2017 K2",
         "label": "cometas-asteroides",
         "text": "C2017K2 15 Septiembre2020 distancia 8.3 UA",
@@ -1409,7 +1409,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200518-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "C2017k2_20200518_I88",
         "src": "https://astroccd.files.wordpress.com/2020/05/c2017k2_20200518_i88.jpg",
@@ -1421,7 +1421,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190809-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "2017k2_20191116_I88",
         "src": "https://astroccd.files.wordpress.com/2019/11/2017k2_20191116_i88.jpg",
@@ -1433,7 +1433,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190809-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "2017K2_20190809_I88",
         "src": "https://astroccd.files.wordpress.com/2019/08/2017k2_20190809_i88.jpg",
@@ -1445,7 +1445,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190619-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "c2017k2_20190619_I88",
         "src": "https://astroccd.files.wordpress.com/2019/06/c2017k2_20190619_i88.jpg",
@@ -1457,7 +1457,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190426-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "Copia de 2017k2_20190427_I88",
         "src": "https://astroccd.files.wordpress.com/2019/05/copia-de-2017k2_20190427_i88.png",
@@ -1469,7 +1469,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180814-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "2017k2_20180814_I88",
         "src": "https://astroccd.files.wordpress.com/2018/08/2017k2_20180814_i88.jpg",
@@ -1481,7 +1481,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20171017-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017k2_201710_113.jpg",
         "objeto": "C/2017 K2",
@@ -1500,7 +1500,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170724-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "2017",
         "src": "https://astroccd.files.wordpress.com/2012/12/20171.jpg",
@@ -1512,7 +1512,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170724-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "111111111111",
         "src": "https://astroccd.files.wordpress.com/2012/12/111111111111.gif",
@@ -1524,7 +1524,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170720-c2017-k2",
+        "urlId": "c2017-k2",
         "type": "image",
         "alt": "2017k2_20170720_i88.jpg",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017k2_20170720_i88-e1500715311717.jpg",
@@ -1536,7 +1536,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2015v2_20170517_i88",
+        "urlId": "2015v2-20170517-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "C2015V2",
@@ -1544,7 +1544,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170518-c2015-v2",
+        "urlId": "c2015-v2",
         "type": "image",
         "alt": "2015v2_20170517_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20170517_i88.jpg",
@@ -1556,7 +1556,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170404-c2015-v2",
+        "urlId": "c2015-v2",
         "type": "image",
         "alt": "2015V2_20170404_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20170404_i88.jpg",
@@ -1568,7 +1568,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20161118-c2015-v2",
+        "urlId": "c2015-v2",
         "type": "image",
         "alt": "2015v2_20161118_i88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015v2_20161118_i88.jpg",
@@ -1580,7 +1580,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2013us10_20160306_i88",
+        "urlId": "2013us10-20160306-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "2013US10",
@@ -1588,7 +1588,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160306-c2013-us10",
+        "urlId": "c2013-us10",
         "type": "image",
         "alt": "2013us10_20160306_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10_20160306_i88.jpg",
@@ -1600,7 +1600,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160223-c2013-us10",
+        "urlId": "c2013-us10",
         "type": "image",
         "alt": "2013us10_20160223_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10_20160223_i88.jpg",
@@ -1612,7 +1612,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151220-c2013-us10",
+        "urlId": "c2013-us10",
         "type": "image",
         "alt": "2013US10pro_20151220_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10pro_20151220_i88.jpg",
@@ -1623,7 +1623,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2013-us10",
+        "urlId": "c2013-us10",
         "type": "image",
         "alt": "RGBPRO_2",
         "src": "https://astroccd.files.wordpress.com/2012/12/rgbpro_2.jpg",
@@ -1634,7 +1634,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151220-c2013-us10",
+        "urlId": "c2013-us10",
         "type": "image",
         "alt": "C_2013 US10 (Catalina)_orbita",
         "src": "https://astroccd.files.wordpress.com/2012/12/c_2013-us10-catalina_orbita.jpg",
@@ -1646,7 +1646,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151217-c2013-us10",
+        "urlId": "c2013-us10",
         "type": "image",
         "alt": "2013US10_20151217_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013us10_20151217_i88.jpg",
@@ -1658,7 +1658,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151206-c2013-us10",
+        "urlId": "c2013-us10",
         "type": "image",
         "alt": "C2013US10_20151206_i88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013us10_20151206_i881.jpg",
@@ -1670,7 +1670,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2013x1_20160112_i88",
+        "urlId": "c2013x1-20160112-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "Cometa C2013X1",
@@ -1678,7 +1678,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160112-c2013-x1",
+        "urlId": "c2013-x1",
         "type": "image",
         "alt": "C2013X1_20160112_i88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013x1_20160112_i88.jpg",
@@ -1690,7 +1690,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151212-c2013-x1",
+        "urlId": "c2013-x1",
         "type": "image",
         "alt": "2013x1_20151212_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013x1_20151212_i88.jpg",
@@ -1701,7 +1701,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151212-c2013-x1",
+        "urlId": "c2013-x1",
         "type": "image",
         "alt": "2013x1rgb_20151212_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013x1rgb_20151212_i88.jpg",
@@ -1713,7 +1713,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151119-c2013-x1",
+        "urlId": "c2013-x1",
         "type": "image",
         "alt": "2013X1_20151119_i88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013x1_20151119_i88.jpg",
@@ -1725,7 +1725,7 @@
         "isIndex": false
       },
       {
-        "urlId": "2014s2_20160407_i88",
+        "urlId": "2014s2-20160407-i88",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "2014S2",
@@ -1733,7 +1733,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160407-c2014-s2",
+        "urlId": "c2014-s2",
         "type": "image",
         "alt": "2014S2_20160407_i88.",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014s2_20160407_i88.jpg",
@@ -1745,7 +1745,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150913-c2014-s2",
+        "urlId": "c2014-s2",
         "type": "image",
         "alt": "2014S2_20150913_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014s2_20150913_i88.jpg",
@@ -1757,7 +1757,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150914-c2015-f4",
+        "urlId": "c2015-f4",
         "type": "image",
         "alt": "2015F4_20150914_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150914_i88.jpg",
@@ -1769,7 +1769,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150913-c2015-f4",
+        "urlId": "c2015-f4",
         "type": "image",
         "alt": "_20150913_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/20150913_i88.jpg",
@@ -1781,7 +1781,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150910-c2015-f4",
+        "urlId": "c2015-f4",
         "type": "image",
         "alt": "2015F4_20150910_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150910_i882.jpg",
@@ -1793,7 +1793,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150712-c2015-f4",
+        "urlId": "c2015-f4",
         "type": "image",
         "alt": "2015F4_20150713_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150713_i88.jpg",
@@ -1805,7 +1805,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150709-c2015-f4",
+        "urlId": "c2015-f4",
         "type": "image",
         "alt": "2015f4_20150708_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2015f4_20150708_i88.jpg",
@@ -1817,7 +1817,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150914-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014Q2_20150914_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150914_i88.jpg",
@@ -1829,7 +1829,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150708-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014Q2_20150708_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150708_i88.jpg",
@@ -1841,7 +1841,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014Q2_RGB",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_rgb.jpg",
@@ -1852,7 +1852,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014Q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q22.jpg",
@@ -1863,7 +1863,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150208-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014Q2es",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2es.jpg",
@@ -1875,7 +1875,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150123-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2_20150123_88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_88.jpg",
@@ -1887,7 +1887,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150122-c2014-q2",
+        "urlId": "2014q2-20150123-i88651",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "Video cometa 2014q2_ 2.avi",
@@ -1895,7 +1895,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150122-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2_20150122_I8865",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20150123_i88651.jpg",
@@ -1907,7 +1907,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150122-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2f1_20150122_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2f1_20150122_i88.jpg",
@@ -1919,7 +1919,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150107-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "C2014Q2_20150107_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014q2_20150107_i88.jpg",
@@ -1931,7 +1931,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2.jpg",
@@ -1942,7 +1942,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2f",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2f.jpg",
@@ -1953,7 +1953,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141226-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2inv",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2inv.jpg",
@@ -1965,7 +1965,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141224-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2_20141223_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2_20141223_i881.jpg",
@@ -1977,7 +1977,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141224-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2in_20141223_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2in_20141223_i88.jpg",
@@ -1989,7 +1989,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141224-c2014-q2",
+        "urlId": "c2014-q2",
         "type": "image",
         "alt": "2014q2RGB",
         "src": "https://astroccd.files.wordpress.com/2012/12/2014q2rgb.jpg",
@@ -2001,7 +2001,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141220-15P",
+        "urlId": "15P",
         "type": "image",
         "alt": "15p_20141220_I88_",
         "src": "https://astroccd.files.wordpress.com/2012/12/15p_20141220_i88_.jpg",
@@ -2013,7 +2013,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140915-c2011-j2",
+        "urlId": "c2011-j2",
         "type": "image",
         "alt": "c2011J2_20140915_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2011j2_20140915_i88.jpg",
@@ -2024,7 +2024,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140915-c2011-j2",
+        "urlId": "c2011-j2",
         "type": "image",
         "alt": "c2011J2_20140915_I88dis_astr",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2011j2_20140915_i88dis_astr.jpg",
@@ -2036,7 +2036,7 @@
         "isIndex": false
       },
       {
-        "urlId": "c2014j2_1_20",
+        "urlId": "c2014j2-1-20",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "VIDEO",
@@ -2044,7 +2044,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140915-c2011-j2",
+        "urlId": "c2011-j2",
         "type": "text",
         "label": "cometas-asteroides",
         "text": "Imagenes del dia 15 Septiembre 2014",
@@ -2053,7 +2053,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140915-c2011-j2",
+        "urlId": "c2011-j2",
         "type": "image",
         "alt": "C2014J2_1_20",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014j2_1_20.jpg",
@@ -2064,7 +2064,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140914-c2011-j2",
+        "urlId": "c2011-j2",
         "type": "image",
         "alt": "C2011J2_20140914_I88iv",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2011j2_20140914_i88iv.jpg",
@@ -2076,7 +2076,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140910-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "C2014E2_20140910_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140910_i88.jpg",
@@ -2087,7 +2087,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140910-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "C2014E2i_20140910_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2i_20140910_i881.jpg",
@@ -2099,7 +2099,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140828-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "c2014e2_20140828_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140828_i88.jpg",
@@ -2110,7 +2110,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140827-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "c2014e2inv_20140828_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140828_i88.jpg",
@@ -2122,7 +2122,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140807-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "C2014E2_20140807_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140807_i88.jpg",
@@ -2133,7 +2133,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140807-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "C2014E2inv_20140807_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2inv_20140807_i88.jpg",
@@ -2145,7 +2145,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140729-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "C2014E2_20140729_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i882.jpg",
@@ -2156,7 +2156,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140729-c2014-e2",
+        "urlId": "c2014-e2",
         "type": "image",
         "alt": "C2014E2_20140729_I88inver",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2014e2_20140729_i88inver2.jpg",
@@ -2168,7 +2168,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2013-uq4",
+        "urlId": "c2013-uq4",
         "type": "image",
         "alt": "C2013UQ4_es",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013uq4_es.jpg",
@@ -2179,7 +2179,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2013-uq4",
+        "urlId": "c2013-uq4",
         "type": "image",
         "alt": "c2013uq4_SIG",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013uq4_sig.jpg",
@@ -2190,7 +2190,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140701-c2013-uq4",
+        "urlId": "c2013-uq4",
         "type": "image",
         "alt": "c2013uq4_20140701_I88z",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2013uq4_20140701_i88z.jpg",
@@ -2202,7 +2202,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140523-c2012-k1",
+        "urlId": "c2012-k1",
         "type": "image",
         "alt": "2012k1 Parrafo",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012k1-pro.jpg",
@@ -2214,7 +2214,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140522-c2012-k1",
+        "urlId": "c2012-k1",
         "type": "image",
         "alt": "C2012K1_20140522_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012k1_20140522_i88.jpg",
@@ -2226,7 +2226,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140423-c2012-k1",
+        "urlId": "c2012-k1",
         "type": "image",
         "alt": "C2012K1_20140423_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012k1_20140423_i881.jpg",
@@ -2238,7 +2238,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140307-c2012-k1",
+        "urlId": "c2012-k1",
         "type": "image",
         "alt": "2012K1LRGB_20140307_I88",
         "src": "https://astroccd.files.wordpress.com/2014/03/2012k1lrgb_20140307_i88.jpg",
@@ -2250,7 +2250,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131204-c2013-r1",
+        "urlId": "c2013-r1",
         "type": "image",
         "alt": "30 imagenes de 20 ",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013r1_20131204_i88.jpg",
@@ -2262,7 +2262,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2013-r1",
+        "urlId": "c2013-r1",
         "type": "image",
         "alt": "procesado",
         "src": "https://astroccd.files.wordpress.com/2012/12/procesado.jpg",
@@ -2274,7 +2274,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131117-c2013-r1",
+        "urlId": "c2013-r1",
         "type": "image",
         "alt": "2013R1_20131117_I88_",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013r1_20131117_i88_.jpg",
@@ -2286,7 +2286,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "header",
         "label": "cometas-asteroides",
         "text": "COMETA c/2012s1",
@@ -2295,7 +2295,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "text",
         "label": "cometas-asteroides",
         "text": "Articulo de colavoracion con el IA de Andalucia, CSIF",
@@ -2304,7 +2304,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "The Astrophysical Journal",
         "src": "https://i1.wp.com/iopscience.iop.org/img/i/apj-logo.gif",
@@ -2315,7 +2315,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "C2012S1_20131116_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012s1_20131116_i88.jpg",
@@ -2327,7 +2327,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "2012s1RGB_20131116_i88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012s1rgb_20131116_i88.jpg",
@@ -2339,7 +2339,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "C2012S1_20131107_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012s1_20131107_i88.jpg",
@@ -2350,7 +2350,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "C2012S1_20131013_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2012s1_20131013_i88.jpg",
@@ -2362,7 +2362,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "2012S1_20130407_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012s1_20130407_i88.jpg",
@@ -2374,7 +2374,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "2012s1 10 100s 31 Enero 2013",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012s1-10-100s-31-enero-2013.jpg",
@@ -2386,7 +2386,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011.jpg",
@@ -2398,7 +2398,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20131116-c2012-s1",
+        "urlId": "c2012-s1",
         "type": "image",
         "alt": "user_556_2012s1_3__300s_22noviembre_2012pa",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_2012s1_3__300s_22noviembre_2012pa.jpg",
@@ -2410,7 +2410,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20130215-c2013-r1",
+        "urlId": "c2013-r1",
         "type": "image",
         "alt": "15 febrero 2013 201DA12 20 10 5 2 1",
         "src": "https://astroccd.files.wordpress.com/2012/12/15-febrero-2013-201da12-20-10-5-2-1.jpg",
@@ -2422,7 +2422,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20130208-99942-apophis",
+        "urlId": "99942-apophis",
         "type": "image",
         "alt": "apophis 8Febrero 2013",
         "src": "https://astroccd.files.wordpress.com/2012/12/apophis-8febrero-2013.jpg",
@@ -2434,7 +2434,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20120130-c2012-k5",
+        "urlId": "c2012-k5",
         "type": "image",
         "alt": "2012K5_20120130_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012k5_20120130_i88.jpg",
@@ -2446,7 +2446,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2012-k5",
+        "urlId": "c2012-k5",
         "type": "image",
         "alt": "Comprometerse 2012k5 10s Imagen 140",
         "src": "https://astroccd.files.wordpress.com/2012/12/2012k5-150-10s-19didiem2012pa.jpg",
@@ -2458,7 +2458,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121016-168P",
+        "urlId": "168P",
         "type": "image",
         "alt": "user_556_168p_20121016_i88_1_",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_168p_20121016_i88_1_.jpg",
@@ -2470,7 +2470,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20120705-c2011-l4",
+        "urlId": "c2011-l4",
         "type": "image",
         "alt": "user_556_c2011_l4pa_15_julio2012_1342515487_708930",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_c2011_l4pa_15_julio2012_1342515487_708930.jpg",
@@ -2482,7 +2482,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121100-c2011-l4",
+        "urlId": "c2011-l4",
         "type": "image",
         "alt": "obras_03[1]",
         "src": "https://astroccd.files.wordpress.com/2012/11/obras_031.gif",
@@ -2493,7 +2493,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20111159-c2005-yu55",
+        "urlId": "c2005-yu55",
         "type": "image",
         "alt": "2005YU559 Noviembre2011PA",
         "src": "https://astroccd.files.wordpress.com/2012/12/2005yu559-noviembre2011pa.jpg",
@@ -2512,7 +2512,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c2005-yu55",
+        "urlId": "c2005-yu55",
         "type": "image",
         "alt": "lulin 26 años 60 L 24FE su página de 2009",
         "src": "https://astroccd.files.wordpress.com/2012/12/lulin-26-60s-l-pag-24fe-2009.jpg",
@@ -2523,7 +2523,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20071118-17P",
+        "urlId": "17P",
         "type": "image",
         "alt": "11 18 11 2007 Holmes 30s Imagen b2 PA",
         "src": "https://astroccd.files.wordpress.com/2012/12/11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg",
@@ -2535,7 +2535,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20071114-17P",
+        "urlId": "17P",
         "type": "image",
         "alt": "Comprometerse 17P 14 25 30 PA Tomas Nobiembre2007",
         "src": "https://astroccd.files.wordpress.com/2012/12/cometa-17p-14-nobiembre2007-25-tomas-30s-pa.jpg",
@@ -2547,7 +2547,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20071108-17P",
+        "urlId": "17P",
         "type": "image",
         "alt": "cometa 17P 8 Noviembre 2007 PG",
         "src": "https://astroccd.files.wordpress.com/2012/12/cometa-17p-8-noviembre-2007-pg1.jpg",
@@ -2559,7 +2559,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20071028-17P",
+        "urlId": "17P",
         "type": "image",
         "alt": "cometa 17P 28 octubre 20h 27m TU PA",
         "src": "https://astroccd.files.wordpress.com/2012/12/cometa-17p-28-octubre-20h-27m-tu-pa.jpg",
@@ -2571,7 +2571,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20070723-c2006-vz13",
+        "urlId": "c2006-vz13",
         "type": "image",
         "alt": "23ju dos m3-c2006vz13-b1-30-COMO",
         "src": "https://astroccd.files.wordpress.com/2012/12/m3-c2006vz13-b1-30s-as-23ju-w.jpg",
@@ -2583,7 +2583,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20070711-c2006-vz13",
+        "urlId": "c2006-vz13",
         "type": "image",
         "alt": "C2006 18 60 vz13 Imagen 11julio2007",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2006-vz13-18-imagenes-60s-11julio2007.jpg",
@@ -2595,7 +2595,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20070112-c2006-p1",
+        "urlId": "c2006-p1",
         "type": "image",
         "alt": "reflecator comprometerse c2006p1 358 f5 12 Enero 2007 ISO 100 1 320s",
         "src": "https://astroccd.files.wordpress.com/2012/12/124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg",
@@ -2607,7 +2607,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20070112-c2006-p1",
+        "urlId": "c2006-p1",
         "type": "image",
         "alt": "Le Pegue 3 y 4 julio 2005",
         "src": "https://astroccd.files.wordpress.com/2012/12/tempel-dia-3-y-4-julio-2005.jpg",
@@ -2619,7 +2619,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20040515-c2001-q4",
+        "urlId": "c2001-q4",
         "type": "image",
         "alt": "4tomas C2001Q4 Mosaico de 60s72pp",
         "src": "https://astroccd.files.wordpress.com/2012/12/mosaico-c2001q4-4tomas-de-60s72pp.jpg",
@@ -2631,7 +2631,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20031222-c2002-t7",
+        "urlId": "c2002-t7",
         "type": "image",
         "alt": "C2002T7 22dicembre2003 suma de Imagen 8 60",
         "src": "https://astroccd.files.wordpress.com/2012/12/c2002t7-22dicembre2003-suma-de-8-imagenes-de-60s.jpg",
@@ -2643,7 +2643,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c1996-b2",
+        "urlId": "c1996-b2",
         "type": "image",
         "alt": "c1996B2",
         "src": "https://astroccd.files.wordpress.com/2012/12/c1996b2.jpg",
@@ -2655,7 +2655,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-c1996-b2",
+        "urlId": "c1996-b2",
         "type": "image",
         "alt": "hyakutake_carta",
         "src": "https://astroccd.files.wordpress.com/2012/12/hyakutake_carta.gif",
@@ -2673,7 +2673,7 @@
     "title": "GALAXIAS/SUPERNOVAS",
     "items": [
       {
-        "urlId": "20140200-abell-2151",
+        "urlId": "abell-2151",
         "type": "image",
         "alt": "logodef",
         "src": "https://astroccd.files.wordpress.com/2014/02/logodef.png",
@@ -2685,7 +2685,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20110527-abell-2151",
+        "urlId": "abell-2151",
         "type": "image",
         "alt": "abel 2151 2 1200s 27 mayo 2011PA",
         "src": "https://astroccd.files.wordpress.com/2012/12/abel-2151-2-1200s-27-mayo-2011pa.jpg",
@@ -2697,7 +2697,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-abell-2151",
+        "urlId": "abell-2151",
         "type": "image",
         "alt": "Hubble_sequence_photo",
         "src": "https://astroccd.files.wordpress.com/2012/12/hubble_sequence_photo.png",
@@ -2709,7 +2709,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170506-abell-2151",
+        "urlId": "abell-2151",
         "type": "image",
         "alt": "20170506_200443",
         "src": "https://astroccd.files.wordpress.com/2018/10/20170506_200443.jpg",
@@ -2721,7 +2721,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20200517-sn2020-jfo",
+        "urlId": "sn2020-jfo",
         "type": "image",
         "alt": "sn2020jfo._20200517",
         "src": "https://astroccd.files.wordpress.com/2020/05/sn2020jfo._20200517.jpg",
@@ -2733,7 +2733,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190510-sn219-ein",
+        "urlId": "sn219-ein",
         "type": "image",
         "alt": "sn219ein_20190510_GJCB",
         "src": "https://astroccd.files.wordpress.com/2019/08/sn219ein_20190510_gjcb.png",
@@ -2744,7 +2744,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190430-sn2019-ein",
+        "urlId": "sn2019-ein",
         "type": "image",
         "alt": "snm51",
         "src": "https://astroccd.files.wordpress.com/2019/05/snm51.jpg",
@@ -2756,7 +2756,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190426-ngc-4627",
+        "urlId": "ngc-4627",
         "type": "image",
         "alt": "ngc4627",
         "src": "https://astroccd.files.wordpress.com/2019/04/ngc4627.jpg",
@@ -2767,7 +2767,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190426-ngc-4656",
+        "urlId": "ngc-4656",
         "type": "image",
         "alt": "ngc4656",
         "src": "https://astroccd.files.wordpress.com/2019/04/ngc4656.jpg",
@@ -2778,7 +2778,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190302-ngc-5194",
+        "urlId": "ngc-5194",
         "type": "image",
         "alt": "M51.jpg",
         "src": "https://astroccd.files.wordpress.com/2019/03/m51.jpg",
@@ -2790,7 +2790,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190213-at2019-ahd",
+        "urlId": "at2019-ahd",
         "type": "image",
         "alt": "at2019ahd_20190214_GJCB",
         "src": "https://astroccd.files.wordpress.com/2019/03/at2019ahd_20190214_gjcb.jpg",
@@ -2802,7 +2802,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190114-at2019-ahd",
+        "urlId": "at2019-ahd",
         "type": "image",
         "alt": "rgb",
         "src": "https://astroccd.files.wordpress.com/2019/01/rgb.jpg",
@@ -2814,7 +2814,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190112-sn2019-np",
+        "urlId": "sn2019-np",
         "type": "image",
         "alt": "sn2019np_20190112_gjcb",
         "src": "https://astroccd.files.wordpress.com/2019/01/sn2019np_20190112_gjcb-1.png",
@@ -2826,7 +2826,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181203-sn2018-isq",
+        "urlId": "sn2018-isq",
         "type": "image",
         "alt": "2018isq_20181203_GJCB",
         "src": "https://astroccd.files.wordpress.com/2018/12/2018isq_20181203_gjcb.jpg",
@@ -2837,7 +2837,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181126-sn2018-ivc",
+        "urlId": "sn2018-ivc",
         "type": "image",
         "alt": "SN2018IVC_20181126_GJCB",
         "src": "https://astroccd.files.wordpress.com/2018/11/sn2018ivc_20181126_gjcb.jpg",
@@ -2849,7 +2849,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181116-sn2018-imf",
+        "urlId": "sn2018-imf",
         "type": "image",
         "alt": "SN 2018imf_20181116_GJCB",
         "src": "https://astroccd.files.wordpress.com/2018/11/sn-2018imf_20181116_gjcb.jpg",
@@ -2861,7 +2861,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180919-at2018-gjx",
+        "urlId": "at2018-gjx",
         "type": "image",
         "alt": "at2018gjx_20180919_GJCB",
         "src": "https://astroccd.files.wordpress.com/2018/09/at2018gjx_20180919_gjcb.png",
@@ -2872,7 +2872,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180702-sn2018-cow",
+        "urlId": "sn2018-cow",
         "type": "image",
         "alt": "sn2018cow",
         "src": "https://astroccd.files.wordpress.com/2018/07/sn2018cow.png",
@@ -2884,7 +2884,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180511-m109",
+        "urlId": "m109",
         "type": "image",
         "alt": "m109",
         "src": "https://astroccd.files.wordpress.com/2018/05/m109.png",
@@ -2895,7 +2895,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180321-sn2018-zd",
+        "urlId": "sn2018-zd",
         "type": "image",
         "alt": "2018zd_20180321_I88",
         "src": "https://astroccd.files.wordpress.com/2018/03/2018zd_20180321_i88.jpg",
@@ -2907,7 +2907,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180202-at2018-gv",
+        "urlId": "at2018-gv",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2018/02/at2018gv_20180202_i88.jpg",
         "objeto": "AT 2018gv",
@@ -2918,7 +2918,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170602-at2017-eaw",
+        "urlId": "at2017-eaw",
         "type": "image",
         "alt": "2017EAW_20170702_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017eaw_20170702_i88.jpg",
@@ -2930,7 +2930,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170518-sn2017-eax",
+        "urlId": "sn2017-eax",
         "type": "image",
         "alt": "sn2017eax_20170518_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2017eax_20170518_i88.jpg",
@@ -2941,7 +2941,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20170423-sn2017-dfc",
+        "urlId": "sn2017-dfc",
         "type": "image",
         "alt": "2017dfc_20170423_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/2017dfc_20170423_i88.jpg",
@@ -2952,7 +2952,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160924-sn2016-gfy",
+        "urlId": "sn2016-gfy",
         "type": "image",
         "alt": "sn2016gfy_ngc2276",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2016gfy_ngc2276.jpg",
@@ -2963,7 +2963,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160530-sn2016-cok",
+        "urlId": "sn2016-cok",
         "type": "image",
         "alt": "m66m65_20160530_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/m66m65_20160530_i881.jpg",
@@ -2975,7 +2975,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160529-sn2016-coj",
+        "urlId": "sn2016-coj",
         "type": "image",
         "alt": "sn2016coj_20160530_i88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2016coj_20160530_i881.jpg",
@@ -2987,7 +2987,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-ngc-891",
+        "urlId": "ngc-891",
         "type": "image",
         "alt": "ngc891PA",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc891pa.jpg",
@@ -2998,7 +2998,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-oj287",
+        "urlId": "oj287",
         "type": "image",
         "alt": "OJ287medidas",
         "src": "https://astroccd.files.wordpress.com/2012/12/oj287medidas.jpg",
@@ -3009,7 +3009,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-oj287",
+        "urlId": "oj287",
         "type": "image",
         "alt": "pulsar",
         "src": "https://astroccd.files.wordpress.com/2012/12/pulsar.jpg",
@@ -3020,7 +3020,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-m33",
+        "urlId": "m33",
         "type": "image",
         "alt": "m33lrgbpro",
         "src": "https://astroccd.files.wordpress.com/2012/12/m33lrgbpro.jpg",
@@ -3031,7 +3031,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151115-quinteto",
+        "urlId": "quinteto",
         "type": "image",
         "alt": "Quinteto",
         "src": "https://astroccd.files.wordpress.com/2012/12/quinteto.png",
@@ -3042,7 +3042,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20151016-ngc-7331",
+        "urlId": "ngc-7331",
         "type": "image",
         "alt": "NGC7331_9_600s_16102015",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc7331_9_600s_16102015.jpg",
@@ -3053,7 +3053,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-m82",
+        "urlId": "m82",
         "type": "image",
         "alt": "M82HA",
         "src": "https://astroccd.files.wordpress.com/2012/12/m82ha.jpg",
@@ -3064,7 +3064,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150715-psn-j17292918",
+        "urlId": "psn-j17292918",
         "type": "image",
         "alt": "PSN J17292918+7542390_ngc6412_20150715_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j172929187542390_ngc6412_20150715_i88.jpg",
@@ -3076,7 +3076,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150712-psn-j20435314",
+        "urlId": "psn-j20435314",
         "type": "image",
         "alt": "PSN J20435314+1230304ngc6956",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j204353141230304ngc6956.jpg",
@@ -3088,7 +3088,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150223-psn-j07285387",
+        "urlId": "psn-j07285387",
         "type": "image",
         "alt": "PSN J07285387+3349106_ngc2388",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j072853873349106_ngc23882.jpg",
@@ -3100,7 +3100,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-psn-j14021678",
+        "urlId": "psn-j14021678",
         "type": "image",
         "alt": "m101PSN J14021678+5426205",
         "src": "https://astroccd.files.wordpress.com/2012/12/m101psn-j140216785426205.jpg",
@@ -3111,7 +3111,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150222-m110",
+        "urlId": "m110",
         "type": "image",
         "alt": "M110_E6_20141212",
         "src": "https://astroccd.files.wordpress.com/2012/12/m110_e6_20141212.jpg",
@@ -3122,7 +3122,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141217-sn2014-dg",
+        "urlId": "sn2014-dg",
         "type": "image",
         "alt": "SN2014DG_UGC2855_20141217",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014dg_ugc2855_20141217.jpg",
@@ -3134,7 +3134,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141212-psn-j22081243",
+        "urlId": "psn-j22081243",
         "type": "image",
         "alt": "PSN J22081243+4110503_UGC11919_Sbc201412151",
         "src": "https://astroccd.files.wordpress.com/2012/12/psn-j220812434110503_ugc11919_sbc2014121512.jpg",
@@ -3146,7 +3146,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141030-pnv-j03093063",
+        "urlId": "pnv-j03093063",
         "type": "image",
         "alt": "PNV_ J03093063+2638031",
         "src": "https://astroccd.files.wordpress.com/2012/12/pnv_-j030930632638031.jpg",
@@ -3158,7 +3158,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141030-sn2014-cx",
+        "urlId": "sn2014-cx",
         "type": "image",
         "alt": "sn2014cx20141030_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014cx20141030_i88.jpg",
@@ -3169,7 +3169,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141021-snhunt260",
+        "urlId": "snhunt260",
         "type": "image",
         "alt": "SNhunt260 _20141021_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/snhunt260-_20141021_i88.jpg",
@@ -3180,7 +3180,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20141018-sn2014-cy",
+        "urlId": "sn2014-cy",
         "type": "image",
         "alt": "SN2014CY_20141018_GJCB",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014cy_20141018_gjcb1.jpg",
@@ -3192,7 +3192,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140714-sn2014-bv",
+        "urlId": "sn2014-bv",
         "type": "image",
         "alt": "sn2014bv_20140714_I88 copia",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014bv_20140714_i88-copia.jpg",
@@ -3204,7 +3204,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140326-sn2014-aa",
+        "urlId": "sn2014-aa",
         "type": "image",
         "alt": "SN2014aa_20140326_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014aa_20140326_i88.jpg",
@@ -3215,7 +3215,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140326-sn2014-ai",
+        "urlId": "sn2014-ai",
         "type": "image",
         "alt": "SN2014ai_20140326_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014ai_20140326_i88.jpg",
@@ -3226,7 +3226,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140307-sn2014-l",
+        "urlId": "sn2014-l",
         "type": "image",
         "alt": "SN2014L_20140307_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014l_20140307_i88.jpg",
@@ -3238,7 +3238,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140202-sn2013-am",
+        "urlId": "sn2013-am",
         "type": "image",
         "alt": "sn2014G_20140202_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014g_20140202_i88.jpg",
@@ -3250,7 +3250,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140202-sn2014-j",
+        "urlId": "sn2014-j",
         "type": "image",
         "alt": "SN2014JRGB_20140202_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014jrgb_20140202_i88.jpg",
@@ -3262,7 +3262,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140202-sn2014-j",
+        "urlId": "sn2014-j",
         "type": "image",
         "alt": "sn2014J_20140202_I88",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2014j_20140202_i88.jpg",
@@ -3274,7 +3274,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-arp-99",
+        "urlId": "arp-99",
         "type": "image",
         "alt": "arp99",
         "src": "https://astroccd.files.wordpress.com/2012/12/arp99.jpg",
@@ -3287,7 +3287,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-sn2013-ev",
+        "urlId": "sn2013-ev",
         "type": "image",
         "alt": "SN2013EV 6 300sF",
         "src": "https://astroccd.files.wordpress.com/2012/12/sn2013ev-6-300sf.jpg",
@@ -3298,7 +3298,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-sn2013-fa",
+        "urlId": "sn2013-fa",
         "type": "image",
         "alt": "2013fa 2013 09 10 u",
         "src": "https://astroccd.files.wordpress.com/2012/12/2013fa-2013-09-10-u.jpg",
@@ -3310,7 +3310,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20130402-sn2014-g",
+        "urlId": "sn2014-g",
         "type": "image",
         "alt": "m65 3 600s 2abril 2013",
         "src": "https://astroccd.files.wordpress.com/2012/12/m65-3-600s-2abril-2013.jpg",
@@ -3322,7 +3322,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20110622-sn2011-dh",
+        "urlId": "sn2011-dh",
         "type": "image",
         "alt": "M51-SC_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104",
         "src": "https://astroccd.files.wordpress.com/2012/12/user_556_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104.jpg",
@@ -3332,7 +3332,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20110622-ngc-5033",
+        "urlId": "ngc-5033",
         "type": "image",
         "alt": "ngc 5033 7 600s 10g 8 abril 2011PA",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5033-7-600s-10g-8-abril-2011pa2.jpg",
@@ -3343,7 +3343,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121200-ngc-5317",
+        "urlId": "ngc-5317",
         "type": "image",
         "alt": "ngc 5317 2 1200sRR",
         "src": "https://astroccd.files.wordpress.com/2012/12/ngc-5317-2-1200srr.jpg",
@@ -3354,7 +3354,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20050630-ngc-5194",
+        "urlId": "ngc-5194",
         "type": "image",
         "alt": "M51 22h02m18s dia 30junio 2005 exp120segundos dos imagenes",
         "src": "https://astroccd.files.wordpress.com/2019/05/m51-22h02m18s-dia-30junio-2005-exp120segundos-dos-imagenes.jpg",
@@ -3366,7 +3366,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20050630-sn2005-cs",
+        "urlId": "sn2005-cs",
         "type": "image",
         "src": "https://i0.wp.com/www.astrosurf.com/snweb2/images/rainbowl.gif",
         "objeto": "SN 2005cs",
@@ -3383,7 +3383,7 @@
     "title": "NEBULOSAS",
     "items": [
       {
-        "urlId": "20210121-m42",
+        "urlId": "m42",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2021/01/img-20210121-wa0011-1.jpg",
         "objeto": "M42",
@@ -3392,7 +3392,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20210112-orion",
+        "urlId": "orion",
         "type": "image",
         "alt": "final",
         "src": "https://astroccd.files.wordpress.com/2021/01/final.jpg",
@@ -3404,10 +3404,10 @@
         "isIndex": false
       },
       {
-        "urlId": "20210100-ngc-2237",
+        "urlId": "ngc-2237",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es integration_abe-copia.jpg",
-        "src": "https://astroccd.files.wordpress.com/2021/01/integration_abe-copia.jpg?w=1024",
+        "src": "https://astroccd.files.wordpress.com/2021/01/integration_abe-copia.jpg",
         "objeto": "NGC 2237",
         "label": "nebulosas",
         "text": "NGC 2237 Nebulosa Roseta ts 65mm 420mm",
@@ -3416,7 +3416,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190929-ngc-2024",
+        "urlId": "ngc-2024",
         "type": "image",
         "alt": "IMG-20200302-WA0019",
         "src": "https://astroccd.files.wordpress.com/2020/03/img-20200302-wa0019.jpg",
@@ -3427,7 +3427,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190929-ngc-2024",
+        "urlId": "ngc-2024",
         "type": "image",
         "alt": "NGC2024final",
         "src": "https://astroccd.files.wordpress.com/2019/10/ngc2024final.jpg",
@@ -3438,7 +3438,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20190929-m45",
+        "urlId": "m45",
         "type": "image",
         "alt": "M45final",
         "src": "https://astroccd.files.wordpress.com/2019/10/m45final.jpg",
@@ -3449,7 +3449,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20181000-m57",
+        "urlId": "m57",
         "type": "image",
         "alt": "m57_F",
         "src": "https://astroccd.files.wordpress.com/2018/10/m57_f.jpg",
@@ -3460,7 +3460,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180808-ngc-7000",
+        "urlId": "ngc-7000",
         "type": "image",
         "alt": "1",
         "src": "https://astroccd.files.wordpress.com/2018/08/1.png",
@@ -3472,7 +3472,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20180417-m97",
+        "urlId": "m97",
         "type": "image",
         "alt": "m97",
         "src": "https://astroccd.files.wordpress.com/2018/04/m97.jpg",
@@ -3483,7 +3483,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160126-m42",
+        "urlId": "m42",
         "type": "image",
         "alt": "m42f_re",
         "src": "https://astroccd.files.wordpress.com/2012/11/m42f_re.jpg",
@@ -3494,7 +3494,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20161101-m1",
+        "urlId": "m1",
         "type": "image",
         "alt": "m1_20161111_i88",
         "src": "https://astroccd.files.wordpress.com/2012/11/m1_20161111_i88.jpg",
@@ -3505,7 +3505,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20160101-m42",
+        "urlId": "m42",
         "type": "image",
         "alt": "M42_20160101_I88",
         "src": "https://astroccd.files.wordpress.com/2012/11/m42_20160101_i88.jpg",
@@ -3516,7 +3516,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121100-ic-434",
+        "urlId": "ic-434",
         "type": "image",
         "alt": "zona_ ic434_re",
         "src": "https://astroccd.files.wordpress.com/2012/11/zona_-ic434_re.jpg",
@@ -3527,7 +3527,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121100-ic-434",
+        "urlId": "ic-434",
         "type": "image",
         "alt": "2024 ic434 PP",
         "src": "https://astroccd.files.wordpress.com/2012/11/2024-ic434-pp.jpg",
@@ -3538,7 +3538,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121000-ic-5146",
+        "urlId": "ic-5146",
         "type": "image",
         "alt": "ic 5146 15 600s PA",
         "src": "https://astroccd.files.wordpress.com/2012/10/ic-5146-15-600s-pa2.jpg",
@@ -3549,7 +3549,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121000-abel-21",
+        "urlId": "abel-21",
         "type": "image",
         "alt": "user_556_medusa_pa",
         "src": "https://astroccd.files.wordpress.com/2012/10/user_556_medusa_pa.jpg",
@@ -3560,7 +3560,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150715-s106",
+        "urlId": "s106",
         "type": "image",
         "alt": "s106",
         "src": "https://astroccd.files.wordpress.com/2012/11/s106.jpg",
@@ -3571,7 +3571,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150715-s106",
+        "urlId": "s106",
         "type": "image",
         "alt": "comparativa",
         "src": "https://astroccd.files.wordpress.com/2012/11/comparativa.jpg",
@@ -3581,7 +3581,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150715-m27",
+        "urlId": "m27",
         "type": "image",
         "alt": "M27_19jUNIO2015final",
         "src": "https://astroccd.files.wordpress.com/2012/11/m27_19junio2015final.jpg",
@@ -3592,7 +3592,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121100-m27",
+        "urlId": "m27",
         "type": "image",
         "alt": "m27",
         "src": "https://astroccd.files.wordpress.com/2012/11/m27.jpg",
@@ -3603,7 +3603,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121100-m57",
+        "urlId": "m57",
         "type": "image",
         "alt": "RGBPIX3",
         "src": "https://astroccd.files.wordpress.com/2012/11/rgbpix3.jpg",
@@ -3614,7 +3614,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20090821-ngc-6888",
+        "urlId": "ngc-6888",
         "type": "image",
         "alt": "Ngc 6888 RGB 8 2 4 IMAGE 1200S 21 AGO 2009",
         "src": "https://astroccd.files.wordpress.com/2012/10/ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg",
@@ -3625,7 +3625,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20121000-ngc-7635",
+        "urlId": "ngc-7635",
         "type": "image",
         "alt": "L ngc 7635 Pa",
         "src": "https://astroccd.files.wordpress.com/2012/10/l-ngc-7635-pa.jpg",
@@ -3643,7 +3643,7 @@
     "title": "SISTEMA SOLAR",
     "items": [
       {
-        "urlId": "20211221-jupiter-saturno",
+        "urlId": "jupiter-saturno",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2020/12/conjuncion.gif",
         "objeto": "jupiter,saturno",
@@ -3653,17 +3653,17 @@
         "isIndex": false
       },
       {
-        "urlId": "20201220-jupiter-saturno",
+        "urlId": "jupiter-saturno",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2020/12/jupiter-saturno-20diciembre2020-2.png",
-        "objeto": "jupiter,saturno",
+        "objeto": "jupiter-saturno",
         "label": "sistema-solar",
         "fecha": "20201220",
         "nombre": "Conjunción Júpiter y Saturno",
         "isIndex": false
       },
       {
-        "urlId": "20201201-sol",
+        "urlId": "sol",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2020/12/dsc05191.jpg",
         "objeto": "sol",
@@ -3672,7 +3672,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20201201-sol",
+        "urlId": "sol",
         "type": "image",
         "src": "https://astroccd.files.wordpress.com/2020/12/1_152049_l5_ap666.png",
         "objeto": "sol",
@@ -3682,18 +3682,18 @@
         "isIndex": false
       },
       {
-        "urlId": "20201029-marte",
+        "urlId": "img-20201030-wa0020",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es img-20201030-wa0020.jpg",
-        "src": "https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg?w=736",
-        "objeto": "marte",
+        "src": "https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg",
+        "objeto": "img-20201030-wa0020",
         "label": "sistema-solar",
         "text": "Marte 29 Octubre 2020",
         "fecha": "20201029",
         "isIndex": false
       },
       {
-        "urlId": "20161114-luna",
+        "urlId": "luna",
         "type": "image",
         "alt": "luna_14noviembre2016",
         "src": "https://astroccd.files.wordpress.com/2014/04/luna_14noviembre2016.jpg",
@@ -3704,7 +3704,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150320-luna",
+        "urlId": "luna",
         "type": "image",
         "alt": "LUNA 110  2PA",
         "src": "https://astroccd.files.wordpress.com/2014/04/luna-110-2pa2.jpg",
@@ -3715,7 +3715,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150320-luna",
+        "urlId": "luna",
         "type": "image",
         "alt": "LUNA 358MMPA",
         "src": "https://astroccd.files.wordpress.com/2014/04/luna-358mmpa1.jpg",
@@ -3727,7 +3727,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20150320-luna",
+        "urlId": "luna",
         "type": "image",
         "alt": "ECCLIPSE1_20MARZO_2015 006",
         "src": "https://astroccd.files.wordpress.com/2014/04/ecclipse1_20marzo_2015-006.jpg",
@@ -3739,7 +3739,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20070618-luna-venus",
+        "urlId": "luna-venus",
         "type": "image",
         "alt": "OLYMPUS DIGITAL CAMERA",
         "src": "https://astroccd.files.wordpress.com/2014/04/conjuncion-19-junio-venus-luna1.jpg",
@@ -3751,7 +3751,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20070303-luna",
+        "urlId": "luna",
         "type": "image",
         "alt": "Eclipse 3 Marzo 2007",
         "src": "https://astroccd.files.wordpress.com/2014/04/eclipse-3-marzo-2007.jpg",
@@ -3763,7 +3763,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20070303-luna",
+        "urlId": "luna",
         "type": "image",
         "alt": "Eclipse 3 marzo 2007 ccd",
         "src": "https://astroccd.files.wordpress.com/2014/04/eclipse-3-marzo-2007-ccd.jpg",
@@ -3775,7 +3775,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20140400-sol",
+        "urlId": "sol",
         "type": "image",
         "alt": "Sol",
         "src": "https://astroccd.files.wordpress.com/2014/04/sol.jpg",
@@ -3786,7 +3786,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20040608-venus",
+        "urlId": "venus",
         "type": "image",
         "alt": "transito venus camara reflex",
         "src": "https://astroccd.files.wordpress.com/2014/04/transito-venus-camara-reflex.jpg",
@@ -3798,7 +3798,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20040608-venus",
+        "urlId": "venus",
         "type": "image",
         "alt": "CCDCap0007 copia",
         "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0007-copia.gif",
@@ -3809,7 +3809,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20040608-venus",
+        "urlId": "venus",
         "type": "image",
         "alt": "CCDCap0017",
         "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0017.jpg",
@@ -3820,7 +3820,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20040608-venus",
+        "urlId": "venus",
         "type": "image",
         "alt": "CCDCap0034",
         "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0034.jpg",
@@ -3831,7 +3831,7 @@
         "isIndex": false
       },
       {
-        "urlId": "20040608-venus",
+        "urlId": "venus",
         "type": "image",
         "alt": "CCDCap0050",
         "src": "https://astroccd.files.wordpress.com/2014/04/ccdcap0050.jpg",
@@ -3860,7 +3860,7 @@
         "urlId": "construccion-del-observatorio",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es franja.jpg",
-        "src": "https://astroccd.files.wordpress.com/2020/11/franja.jpg?w=1024",
+        "src": "https://astroccd.files.wordpress.com/2020/11/franja.jpg",
         "fecha": "20201100",
         "isIndex": true
       },
@@ -3868,7 +3868,7 @@
         "urlId": "construccion-del-observatorio",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es obras_031.gif",
-        "src": "https://astroccd.files.wordpress.com/2020/11/obras_031.gif?w=127",
+        "src": "https://astroccd.files.wordpress.com/2020/11/obras_031.gif",
         "text": "Todo aficionado desea tener un buen telescopio en el interior de una cupula pero el principal problema es el presupuesto pues comprar todo lo necesario a las distintas casas comerciales cuesta una pequeña fortuna cosa que no me podia permitir asi que me arme de paciencia y me decidi a construirme todo lo necesario aun sabiendo que tardaria varios años\n\nEl diseño elegido es una cupula de 3mts de diametro construida en hierro sobre el dibujo se puede apreciar los distintos perfiles a cortar para formar el esqueleto . Hay que curvar los perfiles pefectamente con el dimatro requerido poniendo especial cuidado en los de la base y la compuerta pues esto determinara que posteriormente funcione sin problemas",
         "fecha": "20201100",
         "isIndex": true
@@ -4313,7 +4313,7 @@
         "urlId": "reparacion-ccd",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es 20200522_184920.jpg",
-        "src": "https://astroccd.files.wordpress.com/2020/12/20200522_184920.jpg?w=978",
+        "src": "https://astroccd.files.wordpress.com/2020/12/20200522_184920.jpg",
         "text": "Problemas causados por la humedad",
         "fecha": "20201200",
         "isIndex": true
@@ -4330,7 +4330,7 @@
         "urlId": "reparacion-ccd",
         "type": "image",
         "alt": "La imagen tiene un atributo ALT vacío; su nombre de archivo es cuentas.jpg",
-        "src": "https://astroccd.files.wordpress.com/2020/12/cuentas.jpg?w=1024",
+        "src": "https://astroccd.files.wordpress.com/2020/12/cuentas.jpg",
         "text": "Lectura muy baja de ADUs en estrellas saturadas",
         "fecha": "20201200",
         "isIndex": true

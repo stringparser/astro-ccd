@@ -30,7 +30,7 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
     const { text, ...rest } = props;
     const result = {
       ...rest,
-      urlId: '20210121-M42',
+      urlId: 'M42',
       fecha: '20210121',
       objeto: 'M42',
     };
@@ -43,7 +43,7 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
   if (src === 'https://astroccd.files.wordpress.com/2021/01/final.jpg') {
     return {
       ...props,
-      urlId: '20210112-zona-orion',
+      urlId: 'zona-orion',
       fecha: '20210112',
       objeto: 'Orion',
       nombre: 'Zona de Orion',
@@ -273,7 +273,7 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      urlId: '20151115-quinteto',
+      urlId: 'quinteto',
       fecha: '20151115',
       objeto: 'quinteto'
     };

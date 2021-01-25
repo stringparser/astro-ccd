@@ -80,7 +80,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             }
             case 'image': {
               const alt = el.attr('alt');
-              const src = el.attr('data-orig-file') || el.attr('src');
+              const src = (el.attr('data-orig-file') || el.attr('src') || '').replace(/\?[^\s]+$/, '');
               const objeto = (/\/([^\/.]+)\.[^\/\s]+$/.exec(src) || ['']).pop().trim();
 
               const item: PageItemProps = {
@@ -180,8 +180,8 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           const objetoSinFecha = (props.objeto || '').replace(/^\s*\d+\-/, '');
 
           const urlId = fecha && props.objeto
-              ? `${fecha}-${mapTextToUrl(objetoSinFecha)}`
-              : maybeEmptyUrlId || props.label
+              ? mapTextToUrl(objetoSinFecha)
+              : mapTextToUrl(maybeEmptyUrlId || props.label)
           ;
 
           return {
