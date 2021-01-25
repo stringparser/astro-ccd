@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const path = require('path');
 const frontmatter = require('remark-frontmatter');
 
@@ -52,6 +53,7 @@ exports = module.exports = withMDX({
     result.module.rules.push({
       test: new RegExp(`\.(${baseConfig.fileExtensions.join('|')})$`),
       include: [
+        path.join(__dirname, 'src'),
         path.join(__dirname, 'public')
       ],
       use: [
