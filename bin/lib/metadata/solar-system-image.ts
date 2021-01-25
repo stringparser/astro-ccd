@@ -63,7 +63,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
       fecha: '20040608',
       objeto: 'venus',
       nombre: 'transito de venus',
-    }
+    };
   }
 
   if (
