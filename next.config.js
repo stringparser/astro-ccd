@@ -44,7 +44,7 @@ exports = module.exports = withMDX({
       resolve: Object.assign(config.resolve, {
 
         alias: Object.assign(config.resolve.alias, {
-          '@registro': path.join(__dirname, 'src', 'public', 'registro')
+          '@registro': path.join(__dirname, 'public', 'registro')
         })
       })
     });
@@ -52,7 +52,7 @@ exports = module.exports = withMDX({
     result.module.rules.push({
       test: new RegExp(`\.(${baseConfig.fileExtensions.join('|')})$`),
       include: [
-        path.join(__dirname, 'src', 'public')
+        path.join(__dirname, 'public')
       ],
       use: [
         {
