@@ -6,9 +6,11 @@ import { PageBasename } from "src/types";
 
 const useStyles = makeStyles(() => ({
   root: {
+    margin: '1rem 0',
+    position: 'relative',
+
     color: '#00ff00',
     fontSize: '1.25rem',
-    position: 'relative',
     fontWeight: 'bold',
   },
   enlace: {
@@ -16,9 +18,12 @@ const useStyles = makeStyles(() => ({
     userSelect: 'none',
   },
   imagen: {
-    width: '80%',
     height: '150px',
-    margin: '0 auto',
+  },
+  imageWrapper: {
+    width: '80%',
+    margin: '1rem auto',
+    height: '150px',
   },
   titulo: {
     color: 'currentColor',
@@ -38,8 +43,9 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
   return (
     <Box
       width="100%"
-      height="250px"
+      height="200px"
       display="flex"
+      position="relative"
       flexDirection="column"
       justifyContent="center"
       className={classes.root}
@@ -56,7 +62,9 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
         </Typography>
         <Image
           src={require('@public/observatorio/franja.jpg').default}
-          className={classes.imagen}
+          layout="fill"
+          className={classes.imageWrapper}
+          imageClassName={classes.imagen}
         />
       </Link>
     </Box>

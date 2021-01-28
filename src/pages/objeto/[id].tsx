@@ -75,7 +75,8 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
             )}
             <Image
               src={require(`@public/${el.imagen}`).default}
-              className={clsx(
+              layout="fill"
+              imageClassName={clsx(
                 classes.imageDefaults,
                 isAPLLogo
                   ? classes.image_APLLogo
@@ -84,9 +85,11 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
             />
             {el.texto && <br />}
             {el.texto && (
-              <Typography>
-                {el.texto}
-              </Typography>
+              <Box mb="2rem">
+                <Typography>
+                  {el.texto}
+                </Typography>
+              </Box>
             )}
           </Fragment>
         )

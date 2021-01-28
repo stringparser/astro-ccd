@@ -2,25 +2,21 @@ import clsx from 'clsx';
 import { Box, makeStyles } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
 
-export type ImageProps = NextImageProps & {
-  className?: string;
-};
-
 const useStyles = makeStyles(() => ({
   root: (props: ImageProps) => {
-    const esObras = /obras[^.\s]+\.gif$/.test(props.src);
+    const esObras = /obras[^.\s]+\.gif/.test(props.src);
 
     return {
       cursor: 'pointer',
       position: 'relative',
 
       width: esObras
-        ? 150
+        ? 200
         : undefined
       ,
 
       height: esObras
-        ? 150
+        ? 200
         : 450
       ,
 
@@ -31,6 +27,11 @@ const useStyles = makeStyles(() => ({
     };
   },
 }));
+
+export type ImageProps = NextImageProps & {
+  className?: string;
+  imageClassName?: string;
+};
 
 const Image: React.FC<ImageProps> = props => {
   const classes = useStyles(props);
@@ -43,10 +44,10 @@ const Image: React.FC<ImageProps> = props => {
       className={clsx(classes.root, props.className)}
     >
       <NextImage
-        {...props}
         layout="fill"
-        loading="lazy"
         objectFit="contain"
+        {...props}
+        className={props.imageClassName}
       />
     </Box>
   );

@@ -48,7 +48,9 @@ const isCurrentPage = (currentHref: string, href: string) => (
 
 const useStyles = makeStyles(theme => ({
   header: {
-    padding: '0.5rem 1rem',
+    margin: '0 auto',
+    padding: '1.5rem 1rem',
+    maxWidth: theme.maxWidth,
 
     display: 'flex',
     justifyContent: 'center',
@@ -76,13 +78,13 @@ const useStyles = makeStyles(theme => ({
     flex: 1,
 
     display: 'flex',
-    flexWrap: 'nowrap',
+    flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
 
   linkBox: {
-    width: '100px',
+    width: '80px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
