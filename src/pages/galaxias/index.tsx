@@ -2,7 +2,7 @@ import { Box } from "@material-ui/core";
 import { Divider } from "material-ui";
 
 import H1 from "src/components/Typography/H1";
-import PostList from "src/components/PostList";
+import PostList from "src/components/PostsList/PostList";
 import { PageItemContents } from "src/types";
 
 export type GalaxiasPosts = {

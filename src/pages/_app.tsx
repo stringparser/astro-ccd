@@ -26,6 +26,9 @@ const useStyles = makeStyles(theme => ({
     borderColor: 'rgba(255,255,255, 0.05)',
     borderBottom: 'none',
 
+    display: 'flex',
+    flexDirection: 'column',
+
     backgroundColor: theme.palette.common.black,
 
     '@media (min-width: 960px)': {
@@ -55,9 +58,11 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
             <CssBaseline />
             <Navigation />
             <main className={classes.main}>
-              <Component {...pageProps} />
+              <Box flex="1">
+                <Component {...pageProps} />
+              </Box>
+              <Footer />
             </main>
-            <Footer />
             <ScrollToTopButton />
           </StylesProvider>
         </MDXProvider>

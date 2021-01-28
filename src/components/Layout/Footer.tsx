@@ -7,10 +7,8 @@ const Footer = () => {
   return (
     <Box
       color="red"
-      margin="0 auto"
       display="flex"
       padding="0.5rem 0"
-      maxWidth={theme.maxWidth}
       borderTop={`1px solid ${theme.palette.divider}`}
       alignItems="center"
       flexDirection="column"

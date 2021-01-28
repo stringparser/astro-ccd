@@ -4,7 +4,7 @@ import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
 import H2 from "src/components/Typography/H2";
 
-import Image from "./Image/Image";
+import Image from "../Image/Image";
 import { PageBasename, PageItemContents } from "src/types";
 
 const useStyles = makeStyles({
