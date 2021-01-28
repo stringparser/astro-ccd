@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
   linkWrapper: {
     ...opacityMixin,
 
-    width: '33%',
+    width: '30%',
     margin: '0 auto',
     display: 'flex',
     flexDirection: 'column',
@@ -45,8 +45,6 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-
-    border: '1px solid rgba(255, 255, 255, 0.15)'
   }
 }));
 

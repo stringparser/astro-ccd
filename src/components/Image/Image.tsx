@@ -6,7 +6,7 @@ import ImageFullScreen from './ImageFullScreen';
 
 const useStyles = makeStyles({
   root: (props: ImageProps) => ({
-    margin: '2rem 0',
+    margin: '2rem 1rem',
 
     cursor: 'pointer',
     position: 'relative',
@@ -16,8 +16,20 @@ const useStyles = makeStyles({
     justifyContent: 'center',
 
     width: 'auto',
-    height: '400px',
+    minHeight: '350px',
+    maxHeight: '400px',
   }),
+  image: {
+    width: 'auto !important',
+    height: 'auto !important',
+    margin: '0 auto !important',
+    minWidth: 'unset !important',
+    // @ts-ignore
+    position: 'unset !important',
+
+    border: '1px solid rgba(255, 255, 255, 0.15) !important',
+    borderRadius: '4px',
+  }
 });
 
 export type ImageProps = NextImageProps & {
@@ -54,7 +66,7 @@ const Image: React.FC<ImageProps> = ({
         objectFit="contain"
         {...props}
         onClick={canOpenOrginal ? handleOpen : undefined}
-        className={imageClassName}
+        className={clsx(classes.image, imageClassName)}
       />
     </Box>
   );

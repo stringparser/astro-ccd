@@ -9,12 +9,10 @@ import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
 import ReparacionSBIG from 'src/components/Destacado/ReparacionSBIG';
 
 export const mdxComponents = {
-  ImagenObras,
-  ReparacionSBIG,
+  head: Head,
 
   h1: H1,
   h2: H2,
-  head: Head,
 
   a: Link,
   Link,
@@ -22,6 +20,9 @@ export const mdxComponents = {
   Image,
   img: Image,
   Imagen: Image,
+
+  ImagenObras,
+  ReparacionSBIG,
 
   Comentarios: DisqusEmbed,
 };
