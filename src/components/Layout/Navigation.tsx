@@ -94,10 +94,14 @@ const useStyles = makeStyles(theme => ({
   },
 
   link: {
+    padding: '0.25rem 0',
+
     opacity: .8,
     fontWeight: 'bold',
-    transition: 'all linear 0.3s',
+    borderBottom: '1px solid transparent',
     textTransform: 'uppercase',
+
+    transition: 'all linear 0.3s',
 
     '&:hover': {
       opacity: 1,
@@ -106,8 +110,7 @@ const useStyles = makeStyles(theme => ({
   },
 
   currentLink: {
-    color: 'rgb(200, 0, 0, 0.9)',
-    fontWeight: 'bold',
+    borderBottomColor: 'rgb(255, 0, 0, 0.6)',
   },
 }));
 
