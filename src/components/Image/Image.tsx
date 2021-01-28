@@ -5,7 +5,7 @@ import { useCallback, useState } from 'react';
 import ImageFullScreen from './ImageFullScreen';
 
 const useStyles = makeStyles({
-  root: (props: ImageProps) => ({
+  root: {
     margin: '2rem 1rem',
 
     cursor: 'pointer',
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     width: 'auto',
     minHeight: '350px',
     maxHeight: '400px',
-  }),
+  },
   image: {
     width: 'auto !important',
     height: 'auto !important',
@@ -41,16 +41,26 @@ export type ImageProps = NextImageProps & {
 };
 
 const Image: React.FC<ImageProps> = ({
+  src,
   className,
   imageClassName,
-  canOpenOrginal = true,
+  canOpenOrginal,
   ...props
 }) => {
   const classes = useStyles(props);
 
   const handleOpen = useCallback(
-    () => window.open(props.src, '_blank'),
+    () => {
+      if (canOpenOrginal && /(\/objeto\/)/.test(location.pathname)) {
+        window.open(src, '_blank')
+      }
+    },
     []
+  );
+
+  const hasPriority = /(\/objeto\/)/.test(typeof window === 'undefined'
+    ? '/'
+    : window.location.pathname
   );
 
   return (
@@ -61,11 +71,16 @@ const Image: React.FC<ImageProps> = ({
       className={clsx(classes.root, className)}
     >
       <NextImage
+        src={src}
         layout="fill"
-        loading="lazy"
+        loading={hasPriority ? 'eager' : 'lazy'}
+        priority={hasPriority}
         objectFit="contain"
         {...props}
-        onClick={canOpenOrginal ? handleOpen : undefined}
+        onClick={canOpenOrginal
+          ? handleOpen
+          : undefined
+        }
         className={clsx(classes.image, imageClassName)}
       />
     </Box>
