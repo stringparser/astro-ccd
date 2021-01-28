@@ -1,10 +1,12 @@
 export const opacityMixin = {
-  opacity: .8,
-  transition: 'opacity linear 0.3s',
+  '@media (min-width: 1024px)': {
+    opacity: .8,
+    transition: 'opacity linear 0.3s',
 
-  '&:hover': {
-    opacity: 1,
-  }
+    '&:hover': {
+      opacity: 1,
+    },
+  },
 };
 
 export const maxWidthMixin = {
