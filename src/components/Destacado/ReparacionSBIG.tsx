@@ -71,6 +71,4 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
   )
 }
 
-
-
 export default ReparacionSBIG;

@@ -2,31 +2,15 @@ import clsx from 'clsx';
 import { Box, makeStyles } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
 
-const useStyles = makeStyles(() => ({
-  root: (props: ImageProps) => {
-    const esObras = /obras[^.\s]+\.gif/.test(props.src);
+const useStyles = makeStyles({
+  root: {
+    cursor: 'pointer',
+    position: 'relative',
 
-    return {
-      cursor: 'pointer',
-      position: 'relative',
-
-      width: esObras
-        ? 200
-        : undefined
-      ,
-
-      height: esObras
-        ? 200
-        : 450
-      ,
-
-      margin: esObras
-        ? '0 auto'
-        : '2rem auto'
-      ,
-    };
+    height: '450px',
+    margin: '2rem auto',
   },
-}));
+});
 
 export type ImageProps = NextImageProps & {
   width?: never;
