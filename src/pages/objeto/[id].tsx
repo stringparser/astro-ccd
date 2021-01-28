@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Box, makeStyles, Typography } from '@material-ui/core';
+import { Box, Link, makeStyles, Typography } from '@material-ui/core';
 import { getRegistro, ordenarPorFecha, RegistroItem } from 'src/lib/staticProps';
 
 import H1 from 'src/components/Typography/H1';
@@ -60,6 +60,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
         ;
 
         const isAPLLogo = /apj-logo\.gif/.test(el.imagen);
+        const imageSrc = require(`@public/${el.imagen}`).default;
 
         return (
           <Fragment key={index}>
@@ -75,20 +76,22 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
                 </Typography>
               </Box>
             )}
-            <Image
-              src={require(`@public/${el.imagen}`).default}
-              layout="fill"
-              className={isAPLLogo
-                ? classes.imageContainer
-                : undefined
-              }
-              imageClassName={clsx(
-                classes.imageDefaults,
-                isAPLLogo
-                  ? classes.image_APLLogo
-                  : classes.image,
-              )}
-            />
+            <Link href={imageSrc} target="_blank">
+              <Image
+                src={imageSrc}
+                layout="fill"
+                className={isAPLLogo
+                  ? classes.imageContainer
+                  : undefined
+                }
+                imageClassName={clsx(
+                  classes.imageDefaults,
+                  isAPLLogo
+                    ? classes.image_APLLogo
+                    : classes.image,
+                )}
+              />
+            </Link>
             {el.texto && <br />}
             {el.texto && (
               <Box mb="2rem">

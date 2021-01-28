@@ -1,28 +1,45 @@
 import clsx from 'clsx';
 import { Box, makeStyles } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
+import { useCallback, useState } from 'react';
+import ImageFullScreen from './ImageFullScreen';
 
 const useStyles = makeStyles({
-  root: {
-    margin: '2rem auto',
+  root: (props: ImageProps) => ({
+    margin: '2rem 0',
 
-    cursor: 'pointer',
+    cursor: props.hasLink ? 'pointer' : undefined,
     position: 'relative',
 
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    width: 'auto',
     height: '400px',
-    maxWidth: '80%',
-  },
+  }),
 });
 
 export type ImageProps = NextImageProps & {
   width?: never;
   height?: never;
+  hasLink?: boolean;
   className?: string;
   imageClassName?: string;
 };
 
-const Image: React.FC<ImageProps> = ({ className, imageClassName, ...props }) => {
+const Image: React.FC<ImageProps> = ({
+  hasLink = true,
+  className,
+  imageClassName,
+  ...props
+}) => {
   const classes = useStyles(props);
+
+  const handleOpen = useCallback(
+    () => window.open(props.src, '_blank'),
+    []
+  );
 
   return (
     <Box
@@ -33,8 +50,10 @@ const Image: React.FC<ImageProps> = ({ className, imageClassName, ...props }) =>
     >
       <NextImage
         layout="fill"
+        loading="lazy"
         objectFit="contain"
         {...props}
+        onClick={hasLink ? handleOpen : undefined}
         className={imageClassName}
       />
     </Box>

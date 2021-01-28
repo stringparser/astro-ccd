@@ -1,14 +1,12 @@
 
 import React from "react";
-import NextImage from "next/image";
 import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
-import { PageBasename } from "src/types";
 import { RegistroItem } from "src/lib/staticProps";
 
 import H2 from "src/components/Typography/H2";
+import Image from "../Image/Image";
 import { opacityMixin } from "src/components/styles";
-import { esEntradaValidaConImagen } from "src/lib/util";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,6 +37,16 @@ const useStyles = makeStyles(theme => ({
     '@media (max-width: 376px)': {
       width: 'auto',
     },
+  },
+  imageContainer: {
+    height: '200px',
+    margin: '1rem 2rem',
+
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    border: '1px solid rgba(255, 255, 255, 0.15)'
   }
 }));
 
@@ -87,23 +95,14 @@ function PostsList<T>({ items }: PostsListProps) {
             <Typography variant="caption">
               {dateString}
             </Typography>
-            <Box
-              margin="1rem 2rem"
-              height="200px"
-              display="flex"
-              position="relative"
-              alignItems="center"
-              justifyContent="center"
-              border="1px solid rgba(255, 255, 255, 0.15)"
-            >
-              <NextImage
-                src={require(`@public/${imagen}`).default}
-                layout="fill"
-                loading="lazy"
-                quality={65}
-                objectFit="contain"
-              />
-            </Box>
+
+            <Image
+              src={require(`@public/${imagen}`).default}
+              layout="fill"
+              quality={65}
+              hasLink={false}
+              className={classes.imageContainer}
+            />
           </Link>
         );
       })}

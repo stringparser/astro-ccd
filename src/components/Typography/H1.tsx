@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     padding: '2rem 0',
   },
   header: {
-    color: 'white',
+    color: 'royalblue',
     fontSize: '2.25rem',
     fontWeight: 'bold',
     textTransform: 'uppercase',
