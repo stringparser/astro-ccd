@@ -3,6 +3,7 @@ import { memo, useState } from "react";
 
 const useStyles = makeStyles(theme => ({
   root: {
+    padding: '0.5rem 1.25rem',
     marginTop: '4rem',
     borderTop: `1px solid ${theme.palette.divider}`,
   },

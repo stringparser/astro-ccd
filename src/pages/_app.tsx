@@ -11,6 +11,7 @@ import Navigation from "src/components/Layout/Navigation";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
 import { maxWidthMixin } from "src/components/styles";
+import { APP_ROOT_PORTAL_ID } from "src/lib/portal";
 
 const jss = create({
   ...jssPreset(),
@@ -63,6 +64,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               </Box>
               <Footer />
             </main>
+            <div id={APP_ROOT_PORTAL_ID}></div>
             <ScrollToTopButton />
           </StylesProvider>
         </MDXProvider>
