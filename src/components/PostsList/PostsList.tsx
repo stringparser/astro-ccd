@@ -99,7 +99,6 @@ function PostsList<T>({ items }: PostsListProps) {
               layout="fill"
               quality={65}
               className={classes.imageContainer}
-              canOpenOrginal={false}
             />
           </Link>
         );

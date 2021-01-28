@@ -37,21 +37,21 @@ export type ImageProps = NextImageProps & {
   height?: never;
   className?: string;
   imageClassName?: string;
-  canOpenOrginal?: boolean;
+  canOpenOrginial?: boolean;
 };
 
 const Image: React.FC<ImageProps> = ({
   src,
   className,
   imageClassName,
-  canOpenOrginal,
+  canOpenOrginial,
   ...props
 }) => {
   const classes = useStyles(props);
 
   const handleOpen = useCallback(
     () => {
-      if (canOpenOrginal && /(\/objeto\/)/.test(location.pathname)) {
+      if (canOpenOrginial && /(\/objeto\/)/.test(location.pathname)) {
         window.open(src, '_blank')
       }
     },
@@ -77,7 +77,7 @@ const Image: React.FC<ImageProps> = ({
         priority={hasPriority}
         objectFit="contain"
         {...props}
-        onClick={canOpenOrginal
+        onClick={canOpenOrginial
           ? handleOpen
           : undefined
         }
