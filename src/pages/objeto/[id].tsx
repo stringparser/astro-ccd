@@ -1,12 +1,11 @@
-import NextImage from 'next/image';
 import { Fragment } from 'react';
 import { Box, makeStyles, Typography } from '@material-ui/core';
 import { getRegistro, ordenarPorFecha, RegistroItem } from 'src/lib/staticProps';
 
 import H1 from 'src/components/Typography/H1';
-import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
-import Image from 'src/components/Image/Image';
 import clsx from 'clsx';
+import Image from 'src/components/Image/Image';
+import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
 import { opacityMixin } from 'src/components/styles';
 
 const useStyles = makeStyles({
@@ -22,6 +21,9 @@ const useStyles = makeStyles({
   image_APLLogo: {
     height: '50px',
   },
+  imageContainer: {
+    height: '50px',
+  }
 });
 
 type PostParams = {
@@ -76,6 +78,10 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
             <Image
               src={require(`@public/${el.imagen}`).default}
               layout="fill"
+              className={isAPLLogo
+                ? classes.imageContainer
+                : undefined
+              }
               imageClassName={clsx(
                 classes.imageDefaults,
                 isAPLLogo

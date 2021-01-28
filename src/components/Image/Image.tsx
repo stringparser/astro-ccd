@@ -33,7 +33,7 @@ export type ImageProps = NextImageProps & {
   imageClassName?: string;
 };
 
-const Image: React.FC<ImageProps> = props => {
+const Image: React.FC<ImageProps> = ({ className, imageClassName, ...props }) => {
   const classes = useStyles(props);
 
   return (
@@ -41,13 +41,13 @@ const Image: React.FC<ImageProps> = props => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      className={clsx(classes.root, props.className)}
+      className={clsx(classes.root, className)}
     >
       <NextImage
         layout="fill"
         objectFit="contain"
         {...props}
-        className={props.imageClassName}
+        className={imageClassName}
       />
     </Box>
   );
