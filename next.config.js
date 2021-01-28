@@ -52,7 +52,6 @@ exports = module.exports = withMDX({
 
         alias: Object.assign(config.resolve.alias, {
           '@public': path.join(__dirname, 'public'),
-          '@registro': path.join(__dirname, 'public', 'registro')
         })
       })
     });

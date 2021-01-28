@@ -13,7 +13,6 @@ export type RegistroItemEntrada = {
   width?: number;
   height?: number;
   imagen?: string;
-  imagenOriginal?: string;
 };
 
 export type RegistroItem = {
@@ -74,7 +73,7 @@ export const getRegistro = async (): Promise<RegistroItem[]> => {
             return el;
           }
 
-          const { width, height } = await imageSize(path.join('public', 'registro', el.imagen));
+          const { width, height } = await imageSize(path.join('public', el.imagen));
 
           return {
             ...el,

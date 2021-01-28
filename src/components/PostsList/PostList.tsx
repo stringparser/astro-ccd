@@ -48,7 +48,7 @@ function PostsList<T>({ items }: PostsListProps) {
   const postsItems = items.reduce((acc, item) => {
     const id = item.urlId;
     const entrada = item.entradas.find((el) => {
-      const src = el.imagenOriginal || el.imagen;
+      const src = el.imagen;
 
       return (
         src

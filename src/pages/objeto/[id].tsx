@@ -57,7 +57,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
           .join('/')
         ;
 
-        const isAPLLogo = /apj-logo\.gif/.test(el.imagenOriginal || el.imagen);
+        const isAPLLogo = /apj-logo\.gif/.test(el.imagen);
 
         return (
           <Fragment key={index}>
