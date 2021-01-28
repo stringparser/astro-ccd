@@ -1,4 +1,4 @@
-import { mapTextToUrl } from './util';
+import { esEntradaValidaConImagen, mapearEntradasValidas, mapTextToUrl } from './util';
 import { PageBasename } from 'src/types';
 
 export type StaticItemsProps<T> = {
@@ -113,6 +113,7 @@ export const getNebulosas = async () => {
 
   return registro
     .filter(el => el.etiquetas === PageBasename.nebulosas)
+    .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)
   ;
 };
@@ -122,6 +123,7 @@ export const getSistemaSolar = async () => {
 
   return registro
     .filter(el => el.etiquetas === PageBasename.sistemaSolar)
+    .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)
   ;
 };
@@ -131,6 +133,7 @@ export const getCometasAsteroides = async () => {
 
   return registro
     .filter(el => el.etiquetas === PageBasename.cometasAsteroides)
+    .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)
   ;
 };

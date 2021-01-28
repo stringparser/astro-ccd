@@ -8,6 +8,7 @@ import { RegistroItem } from "src/lib/staticProps";
 
 import H2 from "src/components/Typography/H2";
 import { opacityMixin } from "src/components/styles";
+import { esEntradaValidaConImagen } from "src/lib/util";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -47,18 +48,8 @@ function PostsList<T>({ items }: PostsListProps) {
 
   const postsItems = items.reduce((acc, item) => {
     const id = item.urlId;
-    const entrada = item.entradas.find((el) => {
-      const src = el.imagen;
 
-      return (
-        src
-        && !/apj-logo\.gif$/.test(src)
-        && !/logodef\.png$/.test(src)
-        && !/rainbowl\.gif$/.test(src)
-      );
-    });
-
-    if (acc[id] || !entrada || !entrada.imagen) {
+    if (acc[id]) {
       return acc;
     }
 
@@ -73,7 +64,8 @@ function PostsList<T>({ items }: PostsListProps) {
       className={classes.root}
     >
       {postsItems.map(el => {
-        const { fecha, imagen } = el.entradas.find(el => el.fecha && el.imagen);
+        const { fecha, imagen } = el.entradas.find(el => el.imagen);
+
         const { objeto, titulo, etiquetas } = el;
 
         const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(fecha) || [])
@@ -110,6 +102,7 @@ function PostsList<T>({ items }: PostsListProps) {
                 src={require(`@public/${imagen}`).default}
                 layout="fill"
                 loading="lazy"
+                quality={65}
                 objectFit="contain"
               />
             </Box>

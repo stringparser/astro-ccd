@@ -8,7 +8,7 @@ export type ImageProps = NextImageProps & {
 
 const useStyles = makeStyles(() => ({
   root: (props: ImageProps) => {
-    const esObras = /\/obras[^.\s]+\.gif/.test(props.src);
+    const esObras = /obras[^.\s]+\.gif$/.test(props.src);
 
     return {
       cursor: 'pointer',
