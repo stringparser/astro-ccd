@@ -67,6 +67,10 @@ Promise.all([
 
   const pagesFiltered = Object.entries(pages)
     .reduce((acc, [urlId, page]) => {
+      if (urlId === 'apj-logo') {
+        return acc;
+      }
+
       if (page.isIndex) {
         const { title, label: pageLabel, ...pageProps } = page;
         const label = urlId === PageBasename.fuensanta
@@ -177,8 +181,8 @@ Promise.all([
       ;
 
       const frontMatterKeys: Array<keyof typeof page> = isIndex
-        ? [ 'fecha', 'title', 'label' ]
-        : [ 'fecha', 'objeto', 'title', 'label' ]
+        ? [ 'label' ]
+        : [ 'objeto', 'label' ]
       ;
 
       const mergedContent = content.map(el => el.mdx).join('\n');
@@ -191,7 +195,15 @@ Promise.all([
       const imagenes = isIndex
         ? []
         : page.content.filter(el => el.type === 'image')
+          .sort((a, b) => (b.fecha || '').localeCompare(a.fecha || ''))
       ;
+
+      const pageTitle = page.title.trim()
+        ? page.title.replace(/^\s*[#]\s*/, '')
+        : null
+      ;
+
+      const imagesLength = imagenes.length;
 
       return fs.mkdirp(path.dirname(filename))
         .then(() =>
@@ -199,6 +211,7 @@ Promise.all([
             filename,
             [
               '---',
+              pageTitle && `titulo: ${pageTitle}`,
               frontMatterKeys.map(key => {
                 const value = page[key];
 
@@ -206,19 +219,9 @@ Promise.all([
                   return null;
                 }
 
-                if (key === 'title') {
-                  return page.title.trim()
-                    ? `titulo: ${page.title.replace(/^\s*[#]\s*/, '')}`
-                    : null
-                  ;
-                }
-
                 if (key === 'label') {
                   return page.label.trim()
-                    ? `etiquetas: ${
-                      page.label === 'cometas-asteroides' && 'cometa, asteroide'
-                      || `${page.label}`
-                    }`
+                    ? `etiquetas: ${page.label}`
                     : null
                   ;
                 }
@@ -228,21 +231,27 @@ Promise.all([
                   : null
                 ;
               }).join('\n'),
-              '',
+
+              imagesLength > 0 && '\n#\n# NOTA: entradas ordenadas por fecha (la primera es la última que se hizo)\n#',
               imagenes.map((el, index) => {
-                const base = path.basename(el.src, path.extname(el.src)).replace(/\?[^\s]+/, '');
+                const base = path.basename(el.dest, path.extname(el.dest)).replace(/\?[^\s]+/, '');
                 const srcRE = new RegExp(base.replace(/[-_]+/ig, '\\s+'), 'i');
 
                 const texto = (el.text || '')
                   .replace(srcRE, '')
                   .replace(/\s+/g, ' ')
+                  .replace(pageTitle, '')
+                  .replace(/[A-Z]?\/[^\s]{3,}/, '')
+                  .replace('Imagen del Asteroide 99942 (Apophis)', '')
+                  .replace(/((P\s+\/\s+)?P\s+Holmes|Cometa\s+P\s+17\s+P)\s*/, '')
+                  .replace(/^\s*C\s*$/, '')
                   .trim()
                 ;
 
-                return `imagen_${index + 1}:\n\t\t${[
-                  `src: ${el.src}`,
+                return `\nentrada_${imagesLength - index}:\n\t\t${[
+                  `fecha: ${el.fecha}`,
+                  `imagen: ${el.dest}`,
                   texto && `texto: ${texto}`,
-                  el.localizacion && `posicion: ${el.localizacion}`,
                 ].filter(v => v).join('\n\t\t')}`;
               }).join('\n')
               ,

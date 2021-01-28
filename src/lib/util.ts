@@ -1,3 +1,5 @@
+import { RegistroItem, RegistroItemEntrada } from "./staticProps";
+
 export const mesMap = {
   enero: '01',
   febrero: '02',
@@ -30,7 +32,7 @@ export const mapTextToUrl = (input: string) => {
   return (text
     .replace(/[\/()]+/g, '')
     .trim()
-    .replace(/[\s,._]+/g, '-')
+    .replace(/[\s,._+]+/g, '-')
     .replace(/^c/i, 'c')
     .replace(/^-|-$/g, '')
     .replace(/\+\d+$/, '')
@@ -47,3 +49,19 @@ export const mapTextToUrl = (input: string) => {
     .replace(/-[-]+/g, '-')
   );
 };
+
+export const esEntradaValidaConImagen = ({ fecha, imagen: src }: RegistroItemEntrada) => (
+  fecha
+  && src
+  && !/apj-logo\.gif$/.test(src)
+  && !/logodef\.png$/.test(src)
+  && !/rainbowl\.gif$/.test(src)
+  && !/obras[^.\s]+\.gif$/.test(src)
+);
+
+export const mapearEntradasValidas = (el: RegistroItem) => {
+  return {
+    ...el,
+    entradas: el.entradas.filter(esEntradaValidaConImagen),
+  }
+}

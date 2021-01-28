@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+const path = require('path');
 const frontmatter = require('remark-frontmatter');
 
 const withMDX = require('@next/mdx')({
@@ -11,10 +13,10 @@ const withMDX = require('@next/mdx')({
 });
 
 exports = module.exports = withMDX({
-  i18n: {
-    locales: ['es-ES', 'fr', 'nl-NL'],
-    defaultLocale: 'es-ES',
-  },
+  // i18n: {
+  //   locales: ['es-ES', 'fr', 'nl-NL'],
+  //   defaultLocale: 'es-ES',
+  // },
 
   images: {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -28,4 +30,55 @@ exports = module.exports = withMDX({
     'ts',
     'tsx'
   ],
+
+  webpack(config, options) {
+    const { isServer } = options;
+
+    if (!isServer) {
+      config.node = {
+        fs: 'empty'
+      };
+    }
+
+    const baseConfig = {
+      basePath: "",
+      assetPrefix: "",
+      inlineImageLimit: 8192,
+      fileExtensions: ["jpg", "jpeg", "png", "svg", "gif", "ico", "webp", "jp2", "avif"],
+    };
+
+    const result = Object.assign(config, {
+      resolve: Object.assign(config.resolve, {
+
+        alias: Object.assign(config.resolve.alias, {
+          '@public': path.join(__dirname, 'public'),
+        })
+      })
+    });
+
+    result.module.rules.push({
+      test: new RegExp(`\.(${baseConfig.fileExtensions.join('|')})$`),
+      include: [
+        path.join(__dirname, 'src'),
+        path.join(__dirname, 'public')
+      ],
+      use: [
+        {
+          loader: require.resolve("url-loader"),
+          options: {
+            limit: baseConfig.inlineImageLimit,
+            fallback: require.resolve("file-loader"),
+            outputPath: `${isServer ? "../" : ""}static/images/`,
+            publicPath: `${baseConfig.assetPrefix ||
+              baseConfig.basePath ||
+              ''
+              }/_next/static/images/`,
+            name: "[name]-[hash].[ext]",
+          }
+        }
+      ]
+    });
+
+    return result;
+  }
 });

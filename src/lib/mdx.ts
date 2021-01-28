@@ -1,6 +1,7 @@
 
 import matter from 'gray-matter';
 import renderToString from 'next-mdx-remote/render-to-string';
+
 import { mdxComponents } from 'src/lib/constants';
 
 export const renderMDX = async (source: string) => {

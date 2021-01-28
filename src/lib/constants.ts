@@ -1,23 +1,27 @@
+import Head from 'next/head';
 import { Link } from '@material-ui/core';
 
-import Head from 'next/head';
-
-import H1 from '../components/Typography/H1';
-import H2 from '../components/Typography/H2';
-import Image from '../components/Image';
-import ImagenLink from '../components/ImagenLink';
-import DisqusEmbed from 'src/components/DisqusEmbed';
+import H1 from 'src/components/Typography/H1';
+import H2 from 'src/components/Typography/H2';
+import Image from 'src/components/Image/Image';
+import ImagenObras from 'src/components/Image/ImagenObras';
+import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
+import ReparacionSBIG from 'src/components/Destacado/ReparacionSBIG';
 
 export const mdxComponents = {
-  Link,
-  Image,
-  ImagenLink,
+  ImagenObras,
+  ReparacionSBIG,
 
   h1: H1,
   h2: H2,
-  img: Image,
   head: Head,
+
+  a: Link,
+  Link,
+
+  Image,
+  img: Image,
   Imagen: Image,
 
-  Comentarios: DisqusEmbed
+  Comentarios: DisqusEmbed,
 };

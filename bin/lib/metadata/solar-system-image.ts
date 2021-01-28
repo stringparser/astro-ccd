@@ -1,5 +1,4 @@
 import { PageItemProps } from "../../../src/types";
-import { urlIdsHarcoded } from "../util";
 
 export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps {
   const { src, text, objeto: id } = props;
@@ -11,9 +10,8 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
 
     return {
       ...rest,
-      urlId: urlIdsHarcoded.jupiterSaturno,
       fecha: '20201220',
-      objeto: 'jupiter,saturno',
+      objeto: 'jupiter+saturno',
       nombre: 'Conjunción Júpiter y Saturno',
     };
   }
@@ -21,7 +19,8 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
   if (text === 'jupiter-saturno-20diciembre2020-2') {
     return {
       ...props,
-      urlId: urlIdsHarcoded.jupiterSaturno,
+      fecha: '20201220',
+      objeto: 'jupiter+saturno',
       text: 'Conjunción de Júpiter y Saturno',
     };
   }
@@ -29,7 +28,9 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
   if (text === 'Conjuncion Jupiter &amp; Saturno') {
     return {
       ...props,
-      urlId: urlIdsHarcoded.jupiterSaturno,
+      fecha: '20201220',
+      objeto: 'jupiter+saturno',
+      nombre: 'Conjunción Júpiter y Saturno',
     };
   }
 
@@ -37,7 +38,6 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20201201',
-      urlId: '20201201-sol',
       objeto: 'sol'
     };
   }
@@ -45,7 +45,6 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
   if (/eclipse-3-marzo-2007/.test(src)) {
     return {
       ...props,
-      urlId: '20070303-eclipse-lunar',
       fecha: '20070303',
       objeto: 'luna',
       nombre: 'eclipse lunar'
@@ -61,11 +60,10 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
   ) {
     return {
       ...props,
-      urlId: '20040608-transito-venus',
       fecha: '20040608',
       objeto: 'venus',
-      nombre: 'transito de venus',
-    }
+      nombre: 'Transito de Venus',
+    };
   }
 
   if (
@@ -76,9 +74,8 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
 
     return {
       ...props,
-      urlId: '20211221-conjuncion-jupiter-saturno',
       fecha: '20211221',
-      objeto: 'jupiter,saturno',
+      objeto: 'jupiter+saturno',
       nombre: 'Conjunción de Jupiter y Saturno'
     };
   }
@@ -86,20 +83,18 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
   if (/2014\/04\/(luna-|ecclipse1_20marzo)/.test(src)) {
     return {
       ...props,
-      urlId: '20150320-eclipse-luna',
       fecha: '20150320',
       objeto: 'luna',
-      nombre: 'eclipse luna',
+      nombre: 'Eclipse de Luna',
     };
   }
 
   if (/conjuncion-19-junio-venus-luna/.test(src)) {
     return {
       ...props,
-      urlId: '20070618-conjuncion-luna-venus',
       fecha: '20070618',
-      objeto: 'luna,venus',
-      nombre: 'conjuncion luna venus',
+      objeto: 'luna+venus',
+      nombre: 'Conjunción de Luna y Venus',
     };
   }
 
@@ -107,8 +102,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20161114',
-      urlId: '20161114-luna',
-      objeto: 'luna'
+      objeto: 'Luna',
     }
   }
 
@@ -119,17 +113,15 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20201201',
-      urlId: '20201200-sol',
-      objeto: 'sol',
+      objeto: 'Sol',
     };
   }
 
-  if (src === 'https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg?w=736') {
+  if (src === 'https://astroccd.files.wordpress.com/2020/11/img-20201030-wa0020.jpg') {
     return {
       ...props,
       fecha: '20201029',
-      urlId: '20201029-marte',
-      objeto: 'marte',
+      objeto: 'Marte',
     }
   }
 

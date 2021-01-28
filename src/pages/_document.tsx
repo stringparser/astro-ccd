@@ -2,7 +2,7 @@ import React from 'react';
 import { ServerStyleSheets } from '@material-ui/core';
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 
-class MyDocument extends Document {
+class ApplicationDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     // Render app and page and get the context of the page with collected side effects.
     const sheets = new ServerStyleSheets();
@@ -28,7 +28,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="es">
         <Head />
         <body>
           <Main />
@@ -39,4 +39,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default ApplicationDocument;

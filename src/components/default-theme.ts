@@ -1,9 +1,25 @@
 import { createMuiTheme } from "@material-ui/core";
 
+const fondoTintineo = require('@public/img/fondo-estrellas-tintineo.gif').default;
+
 const defaultTheme = createMuiTheme({
+  maxWidth: '1024px',
+
   palette: {
     type: 'dark',
-    divider: 'rgba(255, 255, 255, 0.2)'
+    divider: 'rgba(255, 255, 255, 0.2)',
+    background: {
+      default: 'black',
+    }
+  },
+
+  transitions: {
+    easing: {
+      easeIn: 'linear',
+    },
+    duration: {
+      standard: 0.3,
+    },
   },
 
   typography: {
@@ -49,11 +65,17 @@ const defaultTheme = createMuiTheme({
           justifyContent: 'center',
 
           color: '#fff',
-          backgroundImage: 'url("https://astroccd.files.wordpress.com/2012/12/fondo-estrellas-tintineo.gif")',
+          backgroundImage: `url(${fondoTintineo})`,
 
           lineHeight: '1.43',
           textRendering: 'optimizeLegibility',
           scrollBehavior: 'smooth',
+
+          '& > div': {
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+          }
         },
 
         a: {

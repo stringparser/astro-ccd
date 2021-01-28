@@ -21,7 +21,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
 
     return {
       ...props,
-      urlId: '20170724-c2017-k2',
+
       fecha: '20170724',
       objeto: 'C/2017 K2',
     }
@@ -34,7 +34,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
 
     return {
       ...props,
-      urlId: '20150122-c2014-q2',
+
       nombre: 'C/2014 Q2 (LOVEJOY)',
       objeto: 'C/2014 Q2',
     };
@@ -49,7 +49,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      urlId: '20170816-c2015-o1',
+
       fecha: '20170816',
       objeto: 'C/2015 O1',
       nombre: 'C/2015 O1 (PANSTARS)',
@@ -387,7 +387,6 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      fecha: '20131116',
       nombre: 'C/2012 S1 (ISON)',
       objeto: 'C/2012 S1',
     };
