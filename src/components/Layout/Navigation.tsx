@@ -4,6 +4,7 @@ import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
 
 import { PageBasename } from "src/types";
 import { NextRouter, withRouter } from 'next/router';
+import { maxWidthMixin } from "../styles";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
@@ -48,9 +49,9 @@ const isCurrentPage = (currentHref: string, href: string) => (
 
 const useStyles = makeStyles(theme => ({
   header: {
+    width: '100%',
     margin: '0 auto',
-    padding: '1.5rem 1rem',
-    maxWidth: theme.maxWidth,
+    padding: '0.5rem',
 
     display: 'flex',
     justifyContent: 'center',
@@ -67,7 +68,7 @@ const useStyles = makeStyles(theme => ({
   },
 
   homeLink: {
-    padding: '0 2rem',
+    padding: '0 1rem',
     display: 'flex',
     fontSize: '1.45rem',
     alignItems: 'center',
@@ -80,10 +81,12 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
-    justifyContent: 'space-between',
+
+    ...maxWidthMixin,
   },
 
   linkBox: {
+    margin: '0.5rem 2rem',
     width: '80px',
     display: 'flex',
     alignItems: 'center',

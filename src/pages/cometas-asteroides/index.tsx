@@ -1,7 +1,7 @@
 import { Box, Link, Typography } from "@material-ui/core";
 
 import H1 from "src/components/Typography/H1";
-import PostsList from "src/components/PostsList/PostList";
+import PostsList from "src/components/PostsList/PostsList";
 import { getCometasAsteroides, RegistroItem, StaticItemsProps } from "src/lib/staticProps";
 
 export type CometasAsteroidesProps = {

@@ -103,7 +103,10 @@ export const getGalaxias = async () => {
   const registro = await getRegistro();
 
   return registro
-    .filter(el => el.etiquetas === PageBasename.galaxias)
+    .filter(el =>
+      el.etiquetas.includes('galaxia')
+      || el.etiquetas.includes('supernova')
+    )
     .sort(ordenarPorFecha)
   ;
 };
@@ -112,7 +115,9 @@ export const getNebulosas = async () => {
   const registro = await getRegistro();
 
   return registro
-    .filter(el => el.etiquetas === PageBasename.nebulosas)
+    .filter(el =>
+      el.etiquetas.includes('nebulosa')
+    )
     .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)
   ;
@@ -122,7 +127,9 @@ export const getSistemaSolar = async () => {
   const registro = await getRegistro();
 
   return registro
-    .filter(el => el.etiquetas === PageBasename.sistemaSolar)
+    .filter(el =>
+      el.etiquetas.includes('sistema solar')
+    )
     .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)
   ;
@@ -132,7 +139,10 @@ export const getCometasAsteroides = async () => {
   const registro = await getRegistro();
 
   return registro
-    .filter(el => el.etiquetas === PageBasename.cometasAsteroides)
+    .filter(el =>
+      el.etiquetas.includes('cometa')
+      || el.etiquetas.includes('asteroide')
+    )
     .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)
   ;

@@ -12,8 +12,11 @@ import { esEntradaValidaConImagen } from "src/lib/util";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    margin: '0 auto',
-    marginTop: '2rem',
+    margin: '3rem auto',
+
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
 
     '@media (max-width: 376px)': {
       flexDirection: 'column',
@@ -57,12 +60,7 @@ function PostsList<T>({ items }: PostsListProps) {
   }, [] as RegistroItem[]);
 
   return (
-    <Box
-      display="flex"
-      flexWrap="wrap"
-      justifyContent="center"
-      className={classes.root}
-    >
+    <Box className={classes.root}>
       {postsItems.map(el => {
         const { fecha, imagen } = el.entradas.find(el => el.imagen);
 
@@ -81,7 +79,7 @@ function PostsList<T>({ items }: PostsListProps) {
             className={classes.linkWrapper}
           >
             <H2 style={{color: 'red', maxWidth: '50%', margin: '0 auto'}}>
-              {etiquetas === PageBasename.sistemaSolar
+              {etiquetas.includes('sistema solar')
                 ? titulo
                 : objeto
               }

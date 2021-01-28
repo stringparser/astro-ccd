@@ -32,7 +32,7 @@ export const mapTextToUrl = (input: string) => {
   return (text
     .replace(/[\/()]+/g, '')
     .trim()
-    .replace(/[\s,._]+/g, '-')
+    .replace(/[\s,._+]+/g, '-')
     .replace(/^c/i, 'c')
     .replace(/^-|-$/g, '')
     .replace(/\+\d+$/, '')

@@ -3,7 +3,7 @@ import { createMuiTheme } from "@material-ui/core";
 const fondoTintineo = require('@public/img/fondo-estrellas-tintineo.gif').default;
 
 const defaultTheme = createMuiTheme({
-  maxWidth: '960px',
+  maxWidth: '1024px',
 
   palette: {
     type: 'dark',
@@ -73,6 +73,8 @@ const defaultTheme = createMuiTheme({
 
           '& > div': {
             width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
           }
         },
 

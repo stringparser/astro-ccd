@@ -1,7 +1,7 @@
 import React from "react";
 import { create } from "jss"
+import { AppProps } from "next/app";
 import { MDXProvider } from '@mdx-js/react'
-import { AppContext, AppProps } from "next/app";
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box } from "@material-ui/core";
 
 import { mdxComponents } from "src/lib/constants";
@@ -10,7 +10,7 @@ import Footer from "src/components/Layout/Footer";
 import Navigation from "src/components/Layout/Navigation";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
-import { getRegistro } from "src/lib/staticProps";
+import { maxWidthMixin } from "src/components/styles";
 
 const jss = create({
   ...jssPreset(),
@@ -18,6 +18,7 @@ const jss = create({
 
 const useStyles = makeStyles(theme => ({
   main: {
+    flex: 1,
     margin: '0 auto',
     padding: '2rem 0.5rem',
     minHeight: '100vh',
@@ -32,9 +33,7 @@ const useStyles = makeStyles(theme => ({
 
     backgroundColor: theme.palette.common.black,
 
-    '@media (min-width: 960px)': {
-      maxWidth: '960px',
-    },
+    ...maxWidthMixin,
   }
 }));
 

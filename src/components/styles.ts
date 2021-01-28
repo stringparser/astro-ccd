@@ -6,3 +6,13 @@ export const opacityMixin = {
     opacity: 1,
   }
 };
+
+export const maxWidthMixin = {
+  '@media (max-width: 960px)': {
+    width: '100%',
+  },
+
+  '@media (min-width: 1024px)': {
+    width: '1024px',
+  },
+};
