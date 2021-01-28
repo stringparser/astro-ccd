@@ -100,8 +100,8 @@ function PostsList<T>({ items }: PostsListProps) {
               src={require(`@public/${imagen}`).default}
               layout="fill"
               quality={65}
-              hasLink={false}
               className={classes.imageContainer}
+              canOpenOrginal={false}
             />
           </Link>
         );

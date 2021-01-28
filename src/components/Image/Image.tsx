@@ -8,7 +8,7 @@ const useStyles = makeStyles({
   root: (props: ImageProps) => ({
     margin: '2rem 0',
 
-    cursor: props.hasLink ? 'pointer' : undefined,
+    cursor: 'pointer',
     position: 'relative',
 
     display: 'flex',
@@ -23,15 +23,15 @@ const useStyles = makeStyles({
 export type ImageProps = NextImageProps & {
   width?: never;
   height?: never;
-  hasLink?: boolean;
   className?: string;
   imageClassName?: string;
+  canOpenOrginal?: boolean;
 };
 
 const Image: React.FC<ImageProps> = ({
-  hasLink = true,
   className,
   imageClassName,
+  canOpenOrginal = true,
   ...props
 }) => {
   const classes = useStyles(props);
@@ -53,7 +53,7 @@ const Image: React.FC<ImageProps> = ({
         loading="lazy"
         objectFit="contain"
         {...props}
-        onClick={hasLink ? handleOpen : undefined}
+        onClick={canOpenOrginal ? handleOpen : undefined}
         className={imageClassName}
       />
     </Box>
