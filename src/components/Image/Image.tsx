@@ -29,6 +29,8 @@ const useStyles = makeStyles(() => ({
 }));
 
 export type ImageProps = NextImageProps & {
+  width?: never;
+  height?: never;
   className?: string;
   imageClassName?: string;
 };
