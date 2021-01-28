@@ -8,26 +8,31 @@ const useStyles = makeStyles(() => ({
   root: {
     color: '#00ff00',
     fontSize: '1.25rem',
-    fontWeight: 'bold',
-    textDecoration: 'none',
     position: 'relative',
+    fontWeight: 'bold',
   },
-  link: {
+  enlace: {
     color: 'currentColor',
     userSelect: 'none',
   },
-  image: {
+  imagen: {
     width: '80%',
     height: '150px',
     margin: '0 auto',
   },
-  content: {
+  titulo: {
     color: 'currentColor',
     fontWeight: 'bold',
   },
-}))
+}));
 
-const ReparacionSBIG = () => {
+export type ReparacionSBIGProps = {
+  titulo?: string;
+};
+
+const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
+  titulo = 'REPARACIÓN CCD SBIG'
+}) => {
   const classes = useStyles();
 
   return (
@@ -41,17 +46,17 @@ const ReparacionSBIG = () => {
     >
       <Link
         href={PageBasename.reparacionCCD}
-        className={classes.link}
+        className={classes.enlace}
       >
         <Typography
           component="h2"
-          className={classes.content}
+          className={classes.titulo}
         >
-          REPARACIÓN CCD SBIG
+          {titulo}
         </Typography>
         <Image
           src={require('@public/observatorio/franja.jpg').default}
-          className={classes.image}
+          className={classes.imagen}
         />
       </Link>
     </Box>

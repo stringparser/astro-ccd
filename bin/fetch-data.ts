@@ -67,6 +67,10 @@ Promise.all([
 
   const pagesFiltered = Object.entries(pages)
     .reduce((acc, [urlId, page]) => {
+      if (urlId === 'apj-logo') {
+        return acc;
+      }
+
       if (page.isIndex) {
         const { title, label: pageLabel, ...pageProps } = page;
         const label = urlId === PageBasename.fuensanta
@@ -240,14 +244,14 @@ Promise.all([
                   .replace(/[A-Z]?\/[^\s]{3,}/, '')
                   .replace('Imagen del Asteroide 99942 (Apophis)', '')
                   .replace(/((P\s+\/\s+)?P\s+Holmes|Cometa\s+P\s+17\s+P)\s*/, '')
+                  .replace(/^\s*C\s*$/, '')
                   .trim()
                 ;
 
                 return `\nentrada_${imagesLength - index}:\n\t\t${[
                   `fecha: ${el.fecha}`,
-                  `imagen: ${path.basename(el.dest)}`,
+                  `imagen: ${el.dest}`,
                   texto && `texto: ${texto}`,
-                  `imagenOriginal: ${path.basename(el.src)}`,
                 ].filter(v => v).join('\n\t\t')}`;
               }).join('\n')
               ,

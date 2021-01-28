@@ -232,7 +232,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
 
               const dest = el.isIndex
                 ? `public/${result.label}/${path.basename(el.src)}`
-                : `public/registro/${urlId}_${el.fecha}_${count}${path.extname(el.src)}`
+                : `public/registro/${urlId}_${el.fecha}_${count}_${path.basename(el.src)}`
               ;
 
               const oldFile = path.join('public', 'img', path.basename(el.src));
@@ -246,7 +246,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
               return downloadImage(el, dest)
                 .then(el => ({
                   ...el,
-                  dest: path.basename(dest)
+                  dest: dest.replace(/^public\//, '')
                 }))
               ;
             }

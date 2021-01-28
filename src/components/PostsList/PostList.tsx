@@ -107,7 +107,7 @@ function PostsList<T>({ items }: PostsListProps) {
               border="1px solid rgba(255, 255, 255, 0.15)"
             >
               <NextImage
-                src={require(`@registro/${imagen}`).default}
+                src={require(`@public/${imagen}`).default}
                 layout="fill"
                 loading="lazy"
                 objectFit="contain"

@@ -387,7 +387,6 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   ) {
     return {
       ...props,
-      text: 'Artículo de colaboración con el IA de Andalucía, CSIF',
       nombre: 'C/2012 S1 (ISON)',
       objeto: 'C/2012 S1',
     };

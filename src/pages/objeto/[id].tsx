@@ -74,7 +74,7 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
               </Box>
             )}
             <Image
-              src={require(`@registro/${el.imagen}`).default}
+              src={require(`@public/${el.imagen}`).default}
               className={clsx(
                 classes.imageDefaults,
                 isAPLLogo

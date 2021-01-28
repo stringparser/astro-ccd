@@ -48,9 +48,7 @@ const isCurrentPage = (currentHref: string, href: string) => (
 
 const useStyles = makeStyles(theme => ({
   header: {
-    margin: '0 auto',
-    padding: '1.25rem 0',
-    maxWidth: theme.maxWidth,
+    padding: '0.5rem 1rem',
 
     display: 'flex',
     justifyContent: 'center',
@@ -67,39 +65,32 @@ const useStyles = makeStyles(theme => ({
   },
 
   homeLink: {
-    flex: '0.25',
+    padding: '0 2rem',
     display: 'flex',
     fontSize: '1.45rem',
     alignItems: 'center',
-    marginRight: '0.75rem',
     justifyContent: 'center',
-
-    '@media (max-width: 376px)': {
-      flex: '1',
-    },
   },
 
   pageLinks: {
-    flex: '0.9',
-    margin: '0 auto',
+    flex: 1,
+
     display: 'flex',
-    flexWrap: 'wrap',
+    flexWrap: 'nowrap',
     alignItems: 'center',
-    marginLeft: '0.75rem',
+    justifyContent: 'space-between',
   },
 
   linkBox: {
-    flexBasis: '17%',
-    marginTop: '0.5rem',
-
+    width: '100px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   link: {
-    width: '100px',
     opacity: .8,
+    fontWeight: 'bold',
     transition: 'all linear 0.3s',
     textTransform: 'uppercase',
 

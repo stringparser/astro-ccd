@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
 
       margin: esObras
         ? '0 auto'
-        : undefined
+        : '2rem auto'
       ,
     };
   },
