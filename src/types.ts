@@ -7,7 +7,7 @@ export enum PageBasename {
   nebulosas = 'nebulosas',
   sistemaSolar = 'sistema-solar',
   construccionObservatorio = 'observatorio',
-  reparacionCCD = 'reparacion-ccd',
+  reparacionCCD = 'reparacion/ccd',
 }
 
 export type PageBasenameList =

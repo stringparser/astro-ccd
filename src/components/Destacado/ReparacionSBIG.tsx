@@ -12,6 +12,8 @@ const useStyles = makeStyles(() => ({
     color: '#00ff00',
     fontSize: '1.25rem',
     fontWeight: 'bold',
+
+    borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
   },
   enlace: {
     color: 'currentColor',
@@ -43,7 +45,6 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
   return (
     <Box
       width="100%"
-      height="200px"
       display="flex"
       position="relative"
       flexDirection="column"

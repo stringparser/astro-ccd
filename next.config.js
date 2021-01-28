@@ -31,6 +31,41 @@ exports = module.exports = withMDX({
     'tsx'
   ],
 
+  async redirects() {
+    return [
+      {
+        source: '/fuensanta-3',
+        permanent: false,
+        destination: '/fuensanta',
+      },
+      {
+        source: '/cometasasteroides',
+        permanent: false,
+        destination: '/cometas-asteroides',
+      },
+      {
+        source: '/planetas-satelites',
+        permanent: false,
+        destination: '/sistema-solar',
+      },
+      {
+        source: '/construccion-del-observatorio',
+        permanent: false,
+        destination: '/observatorio',
+      },
+      {
+        source: '/ccd-2',
+        permanent: false,
+        destination: '/reparacion/ccd',
+      },
+      {
+        source: '/reparacion',
+        permanent: false,
+        destination: '/reparacion/ccd',
+      },
+    ];
+  },
+
   webpack(config, options) {
     const { isServer } = options;
 
