@@ -20,12 +20,14 @@ const useStyles = makeStyles(() => ({
     userSelect: 'none',
   },
   imagen: {
-    height: '150px',
+    height: '150px !important',
+    borderColor: 'transparent !important',
   },
   imageWrapper: {
     width: '80%',
     margin: '1rem auto',
     height: '150px',
+    minHeight: 'unset !important',
   },
   titulo: {
     color: 'currentColor',

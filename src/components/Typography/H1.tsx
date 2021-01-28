@@ -9,7 +9,6 @@ const useStyles = makeStyles({
     color: 'royalblue',
     fontSize: '2.25rem',
     fontWeight: 'bold',
-    textTransform: 'uppercase',
   },
 });
 

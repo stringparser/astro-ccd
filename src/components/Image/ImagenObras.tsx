@@ -4,10 +4,19 @@ import Image from "./Image";
 
 const useStyles = makeStyles({
   root: {
-
-    width: '150px',
+    width: 'auto !important',
     height: '150px',
-    margin: '0 auto',
+    minHeight: 'unset !important',
+
+    border: 'none',
+  },
+  image: {
+
+    width: '150px !important',
+    height: '150px !important',
+    margin: '0 auto !important',
+
+    borderColor: 'transparent !important',
   }
 });
 
@@ -20,6 +29,7 @@ const ImagenObras = () => {
       layout="fill"
       objectFit="contain"
       className={classes.root}
+      imageClassName={classes.image}
     />
   );
 }
