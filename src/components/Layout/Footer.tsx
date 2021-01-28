@@ -6,23 +6,20 @@ const Footer = () => {
 
   return (
     <Box
+      mt="3rem"
       color="red"
       display="flex"
-      padding="3rem 0"
+      padding="2rem 1rem 3rem 1rem"
       borderTop={`1px solid ${theme.palette.divider}`}
       alignItems="center"
-      flexDirection="column"
-      justifyContent="center"
-      style={{
-        backgroundColor: theme.palette.background.default
-      }}
+      justifyContent="space-between"
     >
-      <p>
+      <span>
         Las imagenes  son de libre distribucion  siempre que se indique  su  procedencia
-      </p>
-      <p>
+      </span>
+      <span>
         Contacto: jcgmilla@gmail.com
-      </p>
+      </span>
     </Box>
   )
 };

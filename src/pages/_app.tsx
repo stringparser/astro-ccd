@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   main: {
     flex: 1,
     margin: '0 auto',
-    padding: '2rem 0.5rem',
+    padding: '2rem 0.5rem 0 0.5rem',
     minHeight: '100vh',
 
     border: '0.25rem solid white',

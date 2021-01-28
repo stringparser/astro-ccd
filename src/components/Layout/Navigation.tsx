@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
   },
 
   homeLink: {
-    padding: '0 1rem',
+    padding: '0.5rem 2rem',
     display: 'flex',
     fontSize: '1.45rem',
     alignItems: 'center',

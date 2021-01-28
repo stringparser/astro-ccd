@@ -84,7 +84,7 @@ function PostsList<T>({ items }: PostsListProps) {
                 : objeto
               }
             </H2>
-            <Typography variant="caption" style={{marginTop: '1rem'}}>
+            <Typography variant="caption">
               {dateString}
             </Typography>
             <Box
