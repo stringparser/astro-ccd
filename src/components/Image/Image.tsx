@@ -4,11 +4,13 @@ import NextImage, { ImageProps as NextImageProps } from 'next/image'
 
 const useStyles = makeStyles({
   root: {
+    margin: '2rem auto',
+
     cursor: 'pointer',
     position: 'relative',
 
-    height: '450px',
-    margin: '2rem auto',
+    height: '400px',
+    maxWidth: '80%',
   },
 });
 
