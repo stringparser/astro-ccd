@@ -10,6 +10,7 @@ import Footer from "src/components/Layout/Footer";
 import Navigation from "src/components/Layout/Navigation";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
+import { getRegistro } from "src/lib/staticProps";
 
 const jss = create({
   ...jssPreset(),
@@ -18,7 +19,7 @@ const jss = create({
 const useStyles = makeStyles(theme => ({
   main: {
     margin: '0 auto',
-    padding: '5rem 1rem',
+    padding: '2rem 0.5rem',
     minHeight: '100vh',
 
     border: '0.25rem solid white',
@@ -69,17 +70,6 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
       </ThemeProvider>
     </>
   );
-}
-
-export async function getStaticProps({ Component, router, ctx }: AppContext) {
-  const props = typeof window === 'undefined' && Component.getInitialProps
-    ? await Component.getInitialProps(ctx)
-    : {}
-  ;
-
-  return {
-    props
-  };
 }
 
 export default WebApp;

@@ -8,7 +8,7 @@ const Footer = () => {
     <Box
       color="red"
       display="flex"
-      padding="0.5rem 0"
+      padding="3rem 0"
       borderTop={`1px solid ${theme.palette.divider}`}
       alignItems="center"
       flexDirection="column"

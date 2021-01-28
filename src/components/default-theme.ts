@@ -13,6 +13,15 @@ const defaultTheme = createMuiTheme({
     }
   },
 
+  transitions: {
+    easing: {
+      easeIn: 'linear',
+    },
+    duration: {
+      standard: 0.3,
+    },
+  },
+
   typography: {
     fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif',
 

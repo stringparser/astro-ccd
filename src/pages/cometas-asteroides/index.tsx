@@ -1,22 +1,11 @@
 import { Box, Link, Typography } from "@material-ui/core";
 
 import H1 from "src/components/Typography/H1";
-import PostList from "src/components/PostsList/PostList";
-import { PageBasename, PageItemContents } from "src/types";
+import PostsList from "src/components/PostsList/PostList";
+import { getCometasAsteroides, RegistroItem, StaticItemsProps } from "src/lib/staticProps";
 
 export type CometasAsteroidesProps = {
-  items: PageItemContents[];
-};
-
-export async function getStaticProps() {
-  const values = (await import('src/registro/pages.json')).default;
-
-  return {
-    props: {
-      items: Object.values(values)
-        .filter(el => el.label === PageBasename.cometasAsteroides)
-    },
-  };
+  items: RegistroItem[];
 };
 
 const CometasAsteroides: React.FC<CometasAsteroidesProps> = ({ items }) => {
@@ -27,21 +16,30 @@ const CometasAsteroides: React.FC<CometasAsteroidesProps> = ({ items }) => {
       </H1>
       <Box
         display="flex"
+        whiteSpace="nowrap"
         alignItems="center"
         justifyContent="center"
       >
         <Link
-          target="_blank"
           href="http://www.minorplanetcenter.net/iau/lists/ObsCodesF.html"
+          target="_blank"
         >
-          <Typography component="p" style={{margin: '1rem'}}>
+          <Typography component="p" style={{color: 'crimson'}}>
             Lista de códigos MPC
           </Typography>
         </Link>
       </Box>
-      <PostList items={items} />
+      <PostsList items={items} />
     </Box>
   )
-}
+};
+
+export async function getStaticProps(): Promise<StaticItemsProps<RegistroItem>> {
+  return {
+    props: {
+      items: await getCometasAsteroides(),
+    },
+  };
+};
 
 export default CometasAsteroides;

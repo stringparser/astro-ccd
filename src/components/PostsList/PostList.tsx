@@ -1,13 +1,15 @@
 
 import React from "react";
+import NextImage from "next/image";
 import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
+import { PageBasename } from "src/types";
+import { RegistroItem } from "src/lib/staticProps";
+
 import H2 from "src/components/Typography/H2";
+import { opacityMixin } from "src/components/styles";
 
-import Image from "../Image/Image";
-import { PageBasename, PageItemContents } from "src/types";
-
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     margin: '0 auto',
     marginTop: '2rem',
@@ -17,8 +19,13 @@ const useStyles = makeStyles({
     },
   },
   linkWrapper: {
+    ...opacityMixin,
+
     width: '33%',
-    opacity: .9,
+    margin: '0 auto',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
 
     '&:hover': {
       opacity: 1,
@@ -29,41 +36,34 @@ const useStyles = makeStyles({
       width: 'auto',
     },
   }
-});
+}));
 
-export type PostListProps<T = PageItemContents> =  {
+export type PostsListProps<T = RegistroItem> =  {
   items: T[];
 };
 
-function PostList<T>({ items }: PostListProps) {
+function PostsList<T>({ items }: PostsListProps) {
   const classes = useStyles();
 
-  const uniqueItems = items.reduce((acc, item) => {
+  const postsItems = items.reduce((acc, item) => {
     const id = item.urlId;
-    const image = item.content.find(el =>
-      el.type == 'image'
-      && !/\/apj-logo.gif$/.test(el.src)
-      && !/2014\/02\/logodef\.png$/.test(el.src)
-      && !/\/snweb2\/images\/rainbowl\.gif$/.test(el.src)
-    );
+    const entrada = item.entradas.find((el) => {
+      const src = el.imagenOriginal || el.imagen;
 
-    if (acc[id] || !image || !image.dest) {
+      return (
+        src
+        && !/apj-logo\.gif$/.test(src)
+        && !/logodef\.png$/.test(src)
+        && !/rainbowl\.gif$/.test(src)
+      );
+    });
+
+    if (acc[id] || !entrada || !entrada.imagen) {
       return acc;
     }
 
-    return {
-      ...acc,
-      [id]: {
-        ...item,
-        image: image.dest,
-      },
-    };
-  }, {} as Record<string, PageItemContents & { image: string; }>)
-
-  const orderedUniqueItems = Object.values(uniqueItems)
-    .sort((a, b) => (a.fecha || '').localeCompare(b.fecha || ''))
-    .reverse()
-  ;
+    return acc.concat(item);
+  }, [] as RegistroItem[]);
 
   return (
     <Box
@@ -72,11 +72,13 @@ function PostList<T>({ items }: PostListProps) {
       justifyContent="center"
       className={classes.root}
     >
-      {orderedUniqueItems.map(el => {
-        const dateString = (/(\d{4})(\d{2})(\d{2})/.exec(el.fecha) || [])
+      {postsItems.map(el => {
+        const { fecha, imagen } = el.entradas.find(el => el.fecha && el.imagen);
+        const { objeto, titulo, etiquetas } = el;
+
+        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(fecha) || [])
           .slice(1)
           .reverse()
-          .filter(el => el !== '00')
           .join('/')
         ;
 
@@ -86,24 +88,31 @@ function PostList<T>({ items }: PostListProps) {
             href={`/objeto/${el.urlId}`}
             className={classes.linkWrapper}
           >
+            <H2 style={{color: 'red', maxWidth: '50%', margin: '0 auto'}}>
+              {etiquetas === PageBasename.sistemaSolar
+                ? titulo
+                : objeto
+              }
+            </H2>
+            <Typography variant="caption" style={{marginTop: '1rem'}}>
+              {dateString}
+            </Typography>
             <Box
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-              >
-                <H2 style={{color: 'red', maxWidth: '50%', margin: '0 auto'}}>
-                  {el.label === PageBasename.sistemaSolar
-                    ? el.title.replace(/^\s*#\s+/, '')
-                    : el.objeto
-                  }
-                </H2>
-                <Typography variant="caption" style={{marginTop: '1rem'}}>
-                  {dateString}
-                </Typography>
-                <Image
-                  src={require(`@registro/${el.image}`).default}
-                />
-              </Box>
+              margin="1rem 2rem"
+              height="200px"
+              display="flex"
+              position="relative"
+              alignItems="center"
+              justifyContent="center"
+              border="1px solid rgba(255, 255, 255, 0.15)"
+            >
+              <NextImage
+                src={require(`@registro/${imagen}`).default}
+                layout="fill"
+                loading="lazy"
+                objectFit="contain"
+              />
+            </Box>
           </Link>
         );
       })}
@@ -111,4 +120,4 @@ function PostList<T>({ items }: PostListProps) {
   )
 }
 
-export default PostList;
+export default PostsList;

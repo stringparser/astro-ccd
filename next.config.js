@@ -13,10 +13,10 @@ const withMDX = require('@next/mdx')({
 });
 
 exports = module.exports = withMDX({
-  i18n: {
-    locales: ['es-ES', 'fr', 'nl-NL'],
-    defaultLocale: 'es-ES',
-  },
+  // i18n: {
+  //   locales: ['es-ES', 'fr', 'nl-NL'],
+  //   defaultLocale: 'es-ES',
+  // },
 
   images: {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -33,6 +33,12 @@ exports = module.exports = withMDX({
 
   webpack(config, options) {
     const { isServer } = options;
+
+    if (!isServer) {
+      config.node = {
+        fs: 'empty'
+      };
+    }
 
     const baseConfig = {
       basePath: "",

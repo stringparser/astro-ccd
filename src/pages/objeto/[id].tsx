@@ -1,12 +1,28 @@
+import NextImage from 'next/image';
 import { Fragment } from 'react';
-import { Box, Typography } from '@material-ui/core';
+import { Box, makeStyles, Typography } from '@material-ui/core';
+import { getRegistro, ordenarPorFecha, RegistroItem } from 'src/lib/staticProps';
 
-import Image from 'src/components/Image/Image';
 import H1 from 'src/components/Typography/H1';
-import pagesData from 'src/registro/pages.json';
 import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
-import { PageItemProps } from 'src/types';
-import { mapTextToUrl } from 'src/lib/util';
+import Image from 'src/components/Image/Image';
+import clsx from 'clsx';
+import { opacityMixin } from 'src/components/styles';
+
+const useStyles = makeStyles({
+  imageDefaults: {
+    ...opacityMixin,
+
+    margin: '2rem auto',
+  },
+  image: {
+    width: '60%',
+    height: '400px',
+  },
+  image_APLLogo: {
+    height: '50px',
+  },
+});
 
 type PostParams = {
   params: {
@@ -16,41 +32,38 @@ type PostParams = {
 
 type ObjetoByIdProps = {
   post: PostParams;
+  results: RegistroItem[];
 };
 
-const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
-  const searchId = post.params.id;
-  const searchIdRE = new RegExp(post.params.id, 'i');
+const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
+  const classes = useStyles();
 
-  const results = Object.values(pagesData)
-    .map(el => el.content as PageItemProps[])
-    .flat()
-    .filter(el => searchIdRE.test(el.urlId))
-    .sort((a, b) => (a.fecha || '').localeCompare(b.fecha || ''))
-    .reverse()
-  ;
-
-  const components = results.map((el, index) => {
-    switch (el.type) {
-      case 'text': {
+  const components = results
+    .flatMap(el => el.entradas)
+    .map((el, index) => {
+      if (el.texto != null && el.imagen == null) {
         return (
           <Typography key={index}>
-            {el.text}
+            {el.texto}
           </Typography>
         );
       }
-      case 'image': {
-        const dateString = (/(\d{4})(\d{2})(\d{2})/.exec(el.fecha) || [])
+
+      if (el.imagen != null) {
+        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(el.fecha) || [])
           .slice(1)
           .reverse()
           .filter(el => el !== '00')
           .join('/')
         ;
 
+        const isAPLLogo = /apj-logo\.gif/.test(el.imagenOriginal || el.imagen);
+
         return (
           <Fragment key={index}>
             {dateString && (
               <Box
+                key={index}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -61,30 +74,38 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
               </Box>
             )}
             <Image
-              src={`/registro/${el.dest}`}
-              alt={el.alt}
+              src={require(`@registro/${el.imagen}`).default}
+              className={clsx(
+                classes.imageDefaults,
+                isAPLLogo
+                  ? classes.image_APLLogo
+                  : classes.image,
+              )}
             />
-            {el.text && <br />}
-            {el.text && (
+            {el.texto && <br />}
+            {el.texto && (
               <Typography>
-                {el.text}
+                {el.texto}
               </Typography>
             )}
           </Fragment>
         )
       }
-    }
-  });
+    })
+  ;
 
-  const [astroObject] = results || [{} as PageItemProps];
-  const { nombre, objeto } = astroObject;
+  const [{
+    urlId,
+    objeto,
+    titulo: text,
+  }] = results || [{} as RegistroItem];
 
   const titulo = [
-    nombre || objeto,
-    nombre && !new RegExp(objeto, 'i').test(objeto) && `(${objeto})`
+    text || objeto,
+    text && !new RegExp(objeto, 'i').test(objeto) && `(${objeto})`
   ].filter(v => v).join(' ');
 
-  const identifier = `/objeto/${astroObject.urlId}`;
+  const identifier = `/objeto/${urlId}`;
 
   return (
     <Box>
@@ -95,34 +116,46 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ post }) => {
       {components}
 
       <DisqusEmbed
-          title={titulo}
-          identifier={identifier}
+        title={titulo}
+        identifier={identifier}
       />
     </Box>
   )
 };
 
-export async function getStaticProps({ params }: PostParams): Promise<{ props: ObjetoByIdProps }> {
+export async function getStaticProps({ params }: PostParams): Promise<{ props: ObjetoByIdProps; }> {
+  const pagesData = await getRegistro();
+
+  const searchIdRE = params.id
+    ? new RegExp(params.id, 'i')
+    : /[]/
+  ;
+
+  const results = pagesData
+    .filter(el => searchIdRE.test(el.urlId))
+    .sort(ordenarPorFecha)
+  ;
+
   return {
     props: {
+      results,
       post: { params },
     },
   };
 };
 
 export async function getStaticPaths() {
+  const pageData = await getRegistro();
 
-  const uniqueSlugIds = Object.values(pagesData)
-    .map(el => el.content as PageItemProps[])
-    .flat()
+  const uniqueSlugIds = Object.values(pageData)
     .reduce((acc: string[], el) => {
-      const id = el.objeto;
+      const { urlId } = el;
 
-      if (!id || acc.includes(id)) {
+      if (!urlId || acc.includes(urlId)) {
         return acc;
       }
 
-      return acc.concat(mapTextToUrl(id));
+      return acc.concat(urlId);
     }, [])
   ;
 
