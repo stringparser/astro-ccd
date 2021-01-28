@@ -45,6 +45,7 @@ exports = module.exports = withMDX({
       resolve: Object.assign(config.resolve, {
 
         alias: Object.assign(config.resolve.alias, {
+          '@public': path.join(__dirname, 'public'),
           '@registro': path.join(__dirname, 'public', 'registro')
         })
       })
@@ -63,11 +64,10 @@ exports = module.exports = withMDX({
             limit: baseConfig.inlineImageLimit,
             fallback: require.resolve("file-loader"),
             outputPath: `${isServer ? "../" : ""}static/images/`,
-            publicPath: `${
-              baseConfig.assetPrefix ||
+            publicPath: `${baseConfig.assetPrefix ||
               baseConfig.basePath ||
               ''
-            }/_next/static/images/`,
+              }/_next/static/images/`,
             name: "[name]-[hash].[ext]",
           }
         }

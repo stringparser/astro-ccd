@@ -4,9 +4,9 @@ import Head from 'next/head';
 
 import H1 from '../components/Typography/H1';
 import H2 from '../components/Typography/H2';
-import Image from '../components/Image';
-import ImagenLink from '../components/ImagenLink';
-import DisqusEmbed from 'src/components/DisqusEmbed';
+import Image from '../components/Image/Image';
+import ImagenLink from '../components/Image/ImagenLink';
+import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
 
 export const mdxComponents = {
   Link,

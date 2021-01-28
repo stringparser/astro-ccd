@@ -6,10 +6,10 @@ import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box 
 
 import { mdxComponents } from "src/lib/constants";
 
-import Footer from "src/components/Footer";
-import Navigation from "src/components/Navigation";
+import Footer from "src/components/Layout/Footer";
+import Navigation from "src/components/Layout/Navigation";
 import defaultTheme from "src/components/default-theme";
-import ScrollToTopButton from "src/components/ScrollToTopButton";
+import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
 
 const jss = create({
   ...jssPreset(),

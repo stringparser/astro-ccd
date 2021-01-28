@@ -1,5 +1,7 @@
 import { createMuiTheme } from "@material-ui/core";
 
+const fondoTintineo = require('@public/img/fondo-estrellas-tintineo.gif').default;
+
 const defaultTheme = createMuiTheme({
   maxWidth: '960px',
 
@@ -54,7 +56,7 @@ const defaultTheme = createMuiTheme({
           justifyContent: 'center',
 
           color: '#fff',
-          backgroundImage: 'url("https://astroccd.files.wordpress.com/2012/12/fondo-estrellas-tintineo.gif")',
+          backgroundImage: `url(${fondoTintineo})`,
 
           lineHeight: '1.43',
           textRendering: 'optimizeLegibility',
