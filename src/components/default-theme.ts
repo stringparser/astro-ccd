@@ -42,8 +42,8 @@ const defaultTheme = createMuiTheme({
         h4: 'h4',
         h5: 'h5',
         h6: 'h6',
-        body1: 'span',
-        body2: 'span',
+        body1: 'p',
+        body2: 'p',
         subtitle1: 'h2',
         subtitle2: 'h2',
       },
@@ -82,9 +82,8 @@ const defaultTheme = createMuiTheme({
           color: '#ff0000',
         },
 
-        p: {
-          margin: '1rem auto',
-          maxWidth: '80%',
+        'p, p.MuiTypography-root': {
+          margin: '0 10%',
 
           fontSize: '1rem',
           textAlign: 'left',
