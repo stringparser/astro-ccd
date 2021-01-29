@@ -1,10 +1,11 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
+import HomeIcon from '@material-ui/icons/Home';
+import { makeStyles, Link as MuiLink, Box, TextField } from "@material-ui/core";
 
 import { PageBasename } from "src/types";
 import { NextRouter, withRouter } from 'next/router';
-import { maxWidthMixin } from "../styles";
+import { maxWidthMixin, opacityMixin } from "../styles";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
@@ -49,8 +50,6 @@ const isCurrentPage = (currentHref: string, href: string) => (
 
 const useStyles = makeStyles(theme => ({
   header: {
-    width: '100%',
-    margin: '0 auto',
     padding: '0.5rem',
 
     display: 'flex',
@@ -62,41 +61,57 @@ const useStyles = makeStyles(theme => ({
 
   nav: {
     width: '100%',
+
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
+  pageHomeAndSearch: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+
   homeLink: {
-    padding: '0.5rem 2rem',
     display: 'flex',
     fontSize: '1.45rem',
     alignItems: 'center',
     justifyContent: 'center',
+
+    ...opacityMixin
+  },
+
+  pagesSearch: {
+    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
   },
 
   pageLinks: {
-    flex: 1,
+    width: '100%',
+    marginTop: '1.5rem',
 
     display: 'flex',
-    flexWrap: 'wrap',
     alignItems: 'center',
-
-    ...maxWidthMixin,
+    justifyContent: 'space-between'
   },
 
-  linkBox: {
-    margin: '0.5rem 2rem',
-    width: '80px',
+  linkContainer: {
+    margin: '0.5rem 1.5rem',
+
+    maxWidth: '80px',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
   },
 
   link: {
     padding: '0.25rem 0',
 
-    opacity: .8,
     fontWeight: 'bold',
     borderBottom: '1px solid transparent',
     textTransform: 'uppercase',
@@ -104,9 +119,10 @@ const useStyles = makeStyles(theme => ({
     transition: 'all linear 0.3s',
 
     '&:hover': {
-      opacity: 1,
       textDecoration: 'none',
-    }
+    },
+
+    ...opacityMixin
   },
 
   currentLink: {
@@ -124,16 +140,21 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
   return (
     <header className={classes.header}>
         <nav className={classes.nav}>
-          <aside className={classes.homeLink}>
-            <MuiLink href="/" style={{color: 'royalblue'}}>
-              OACM<br />Fuensanta
+          <aside className={classes.pageHomeAndSearch}>
+            <MuiLink href="/" className={classes.homeLink}>
+              <HomeIcon />
+              <Box p="0.25rem" />
+              OACM Fuensanta
             </MuiLink>
+            <Box className={classes.pagesSearch}>
+              <TextField placeholder="Buscar" />
+            </Box>
           </aside>
           <aside  className={classes.pageLinks}>
             {items.map(({ href, text }, index) =>
               <Box
                 key={index}
-                className={classes.linkBox}
+                className={classes.linkContainer}
               >
                 <Link
                   href={href}

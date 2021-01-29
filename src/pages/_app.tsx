@@ -57,8 +57,8 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
         <MDXProvider components={mdxComponents}>
           <StylesProvider jss={jss}>
             <CssBaseline />
-            <Navigation />
             <main className={classes.main}>
+              <Navigation />
               <Box flex="1">
                 <Component {...pageProps} />
               </Box>
@@ -71,6 +71,10 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
       </ThemeProvider>
     </>
   );
+}
+
+export function getStaticProps() {
+  console.log('app static props');
 }
 
 export default WebApp;
