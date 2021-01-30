@@ -200,6 +200,7 @@ Promise.all([
         })
         .join('\n')
         .trim()
+        .replace('colavoracion', 'colaboración')
       ;
 
       if (!isIndex && /<(a|img|figure|table|Image)/.test(mergedContent) === false) {
