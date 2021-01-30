@@ -1,30 +1,16 @@
-import { Fragment } from 'react';
-import { Box, Link, makeStyles, Typography } from '@material-ui/core';
-import { getRegistro, ordenarPorFecha, RegistroItem } from 'src/lib/staticProps';
+import fs from 'fs-extra';
+import path from 'path';
+import matter from 'gray-matter';
+import { Box } from '@material-ui/core';
 
-import H1 from 'src/components/Typography/H1';
-import clsx from 'clsx';
-import Image from 'src/components/Image/Image';
+import hydrate from 'next-mdx-remote/hydrate'
+import { MdxRemote } from 'next-mdx-remote/types';
+import renderToString from 'next-mdx-remote/render-to-string';
+
 import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
-import { opacityMixin } from 'src/components/styles';
 
-const useStyles = makeStyles({
-  imageDefaults: {
-    ...opacityMixin,
-
-    margin: '2rem auto',
-  },
-  image: {
-    width: '60%',
-    height: '400px',
-  },
-  image_APLLogo: {
-    height: '50px',
-  },
-  imageContainer: {
-    height: '50px',
-  }
-});
+import { mdxComponents } from 'src/lib/constants';
+import { ParsedMDXResult, parseMDX } from 'src/lib/parseMDX';
 
 type PostParams = {
   params: {
@@ -32,142 +18,51 @@ type PostParams = {
   }
 };
 
-type ObjetoByIdProps = {
-  post: PostParams;
-  results: RegistroItem[];
+type ObjetoByIdProps = ParsedMDXResult & {
+  urlId: string;
+  mdxSource: MdxRemote.Source;
 };
 
-const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
-  const classes = useStyles();
+const ObjetoById: React.FC<ObjetoByIdProps> = (props) => {
+  const { urlId, meta, mdxSource } = props;
+  const { titulo } = meta;
 
-  const components = results
-    .flatMap(el => el.entradas)
-    .map((el, index) => {
-      if (el.text != null) {
-        return (
-          <Typography key={index}>
-            {el.text}
-          </Typography>
-        );
-      }
-
-      if (el.src != null) {
-        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(el.date) || [])
-          .slice(1)
-          .reverse()
-          .filter(el => el !== '00')
-          .join('/')
-        ;
-
-        const isAPLLogo = /apj-logo\.gif/.test(el.src);
-        const imageSrc = require(`@public/${el.src}`).default;
-
-        return (
-          <Fragment key={index}>
-            {dateString && (
-              <Box
-                key={index}
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Typography>
-                  {dateString}
-                </Typography>
-              </Box>
-            )}
-            <Link href={imageSrc} target="_blank">
-              <Image
-                src={imageSrc}
-                layout="fill"
-                className={isAPLLogo
-                  ? classes.imageContainer
-                  : undefined
-                }
-                imageClassName={clsx(
-                  classes.imageDefaults,
-                  isAPLLogo
-                    ? classes.image_APLLogo
-                    : classes.image,
-                )}
-              />
-            </Link>
-            {el.text && <br />}
-            {el.text && (
-              <Box mb="2rem">
-                <Typography>
-                  {el.text}
-                </Typography>
-              </Box>
-            )}
-          </Fragment>
-        )
-      }
-    })
-  ;
-
-  const [{
-    urlId,
-    objeto,
-    titulo: text,
-  }] = results || [{} as RegistroItem];
-
-  const titulo = [
-    text || objeto,
-    text && !new RegExp(objeto, 'i').test(objeto) && `(${objeto})`
-  ].filter(v => v).join(' ');
-
-  const identifier = `/objeto/${urlId}`;
+  const children = hydrate(mdxSource, { components: mdxComponents })
 
   return (
     <Box>
-      <H1>
-        {titulo}
-      </H1>
-
-      {components}
+      {children}
 
       <DisqusEmbed
         title={titulo}
-        identifier={identifier}
+        identifier={`/objeto/${urlId}`}
       />
     </Box>
   )
 };
 
 export async function getStaticProps({ params }: PostParams): Promise<{ props: ObjetoByIdProps; }> {
-  const pagesData = await getRegistro();
-
-  const searchIdRE = params.id
-    ? new RegExp(params.id, 'i')
-    : /[]/
-  ;
-
-  const results = pagesData
-    .filter(el => searchIdRE.test(el.urlId))
-    .sort(ordenarPorFecha)
-  ;
+  const result = await parseMDX(`src/registro/${params.id}.mdx`);
+  const mdxSource = await renderToString(result.content);
 
   return {
     props: {
-      results,
-      post: { params },
+      ...result,
+      mdxSource,
+      urlId: params.id,
     },
   };
 };
 
 export async function getStaticPaths() {
-  const pageData = await getRegistro();
+  const objectPages = await fs.readdir('src/registro');
 
-  const uniqueSlugIds = Object.values(pageData)
+  const uniqueSlugIds = objectPages
     .reduce((acc: string[], el) => {
-      const { urlId } = el;
-
-      if (!urlId || acc.includes(urlId)) {
-        return acc;
-      }
-
-      return acc.concat(urlId);
+      return /\.mdx$/.test(el)
+        ? acc.concat(path.basename(el, path.extname(el)))
+        : acc
+      ;
     }, [])
   ;
 

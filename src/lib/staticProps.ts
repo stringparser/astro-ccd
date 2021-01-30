@@ -1,5 +1,5 @@
 import { mapearEntradasValidas } from './util';
-import { ParsedRemarkImage, parseMDX } from './parseMDX';
+import { ParsedRemarkResult, parseMDX } from './parseMDX';
 
 export type StaticItemsProps<T> = {
   props: {
@@ -8,6 +8,7 @@ export type StaticItemsProps<T> = {
 };
 
 export type RegistroItemEntrada = {
+  type: ParsedRemarkResult['type'];
   src?: string;
   date?: string;
   text?: string;
@@ -57,52 +58,33 @@ export const getRegistro = async (): Promise<RegistroItem[]> => {
     .map(async (el) => {
       const urlId = path.basename(el, path.extname(el));
       const filename = path.join('src', 'registro', el);
-      const fileContents = await fs.readFile(filename, 'utf8');
 
-      const { data, content: restContent } = matter(fileContents);
+      const result = await parseMDX(filename);
 
-      const {
-        objeto = '',
-        etiquetas = '',
-      } = data;
-
-      const contents = await parseMDX(filename, restContent);
-
-      const titulo = contents.reduce((acc, el) => {
-        if (acc) {
-          return acc;
-        }
-
-        return el.type === 'heading' && el.text
-          ? el.text
-          : acc
-        ;
-      }, '');
-
-      const entradas = await Promise.all(contents
-        .filter(el =>
-          el.type === 'image'
-        )
-        .map(async (el: ParsedRemarkImage) => {
-          const { width, height } = await imageSize(path.join('public', el.src));
+      const entradas = await Promise.all(result.items
+        .map(async (el) => {
+          if (el.type === 'image') {
+            const { width, height } = await imageSize(path.join('public', el.src));
 
             return {
+              type: el.type,
               src: el.src,
               date: el.date || el.fecha,
               urlId,
               width,
               height,
             };
+          }
+
+          return el;
         })
       );
 
       return {
+        ...result.meta,
         urlId,
-        titulo,
-        objeto,
         filename,
         entradas,
-        etiquetas,
       };
     })
   );

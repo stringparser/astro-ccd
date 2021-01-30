@@ -78,7 +78,7 @@ exports = module.exports = withMDX({
     const baseConfig = {
       basePath: "",
       assetPrefix: "",
-      inlineImageLimit: 8192,
+      inlineImageLimit: 0,
       fileExtensions: ["jpg", "jpeg", "png", "svg", "gif", "ico", "webp", "jp2", "avif"],
     };
 

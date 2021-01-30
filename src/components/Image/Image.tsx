@@ -71,7 +71,10 @@ const Image: React.FC<ImageProps> = ({
       className={clsx(classes.root, className)}
     >
       <NextImage
-        src={src}
+        src={/^(\/_next\/|data:image)/.test(src)
+          ? src
+          : require(`@public/${src.replace(/^[\/.]+/, '')}`).default
+        }
         layout="fill"
         loading={hasPriority ? 'eager' : 'lazy'}
         priority={hasPriority}

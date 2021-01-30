@@ -86,7 +86,7 @@ const defaultTheme = createMuiTheme({
           margin: '0 10%',
 
           fontSize: '1rem',
-          textAlign: 'left',
+          textAlign: 'center',
         },
 
         hr: {
