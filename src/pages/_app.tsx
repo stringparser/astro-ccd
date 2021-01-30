@@ -1,7 +1,7 @@
 import React from "react";
 import { create } from "jss"
-import { AppProps } from "next/app";
 import { MDXProvider } from '@mdx-js/react'
+import { AppContext, AppProps } from "next/app";
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box } from "@material-ui/core";
 
 import { mdxComponents } from "src/lib/constants";
@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
 
 const WebApp: React.FC<AppProps> = (props: AppProps) => {
   const classes = useStyles();
-  const { Component, pageProps } = props;
+  const { router, Component, pageProps } = props;
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -58,23 +58,32 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
           <StylesProvider jss={jss}>
             <CssBaseline />
             <main className={classes.main}>
-              <Navigation />
+              <Navigation router={router} />
               <Box flex="1">
                 <Component {...pageProps} />
               </Box>
               <Footer />
             </main>
-            <div id={APP_ROOT_PORTAL_ID}></div>
             <ScrollToTopButton />
           </StylesProvider>
         </MDXProvider>
       </ThemeProvider>
+      <div id={APP_ROOT_PORTAL_ID}></div>
     </>
   );
-}
+};
 
-export function getStaticProps() {
-  console.log('app static props');
+// @ts-ignore
+WebApp.getInitialProps = async (context: AppContext) => {
+  const { getRegistro } = await import('src/lib/staticProps');
+
+  const registro = await getRegistro();
+
+  return {
+    pageProps: {
+      registro,
+    }
+  };
 }
 
 export default WebApp;

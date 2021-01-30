@@ -43,24 +43,24 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
   const components = results
     .flatMap(el => el.entradas)
     .map((el, index) => {
-      if (el.texto != null && el.imagen == null) {
+      if (el.text != null) {
         return (
           <Typography key={index}>
-            {el.texto}
+            {el.text}
           </Typography>
         );
       }
 
-      if (el.imagen != null) {
-        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(el.fecha) || [])
+      if (el.src != null) {
+        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(el.date) || [])
           .slice(1)
           .reverse()
           .filter(el => el !== '00')
           .join('/')
         ;
 
-        const isAPLLogo = /apj-logo\.gif/.test(el.imagen);
-        const imageSrc = require(`@public/${el.imagen}`).default;
+        const isAPLLogo = /apj-logo\.gif/.test(el.src);
+        const imageSrc = require(`@public/${el.src}`).default;
 
         return (
           <Fragment key={index}>
@@ -92,11 +92,11 @@ const ObjetoById: React.FC<ObjetoByIdProps> = ({ results }) => {
                 )}
               />
             </Link>
-            {el.texto && <br />}
-            {el.texto && (
+            {el.text && <br />}
+            {el.text && (
               <Box mb="2rem">
                 <Typography>
-                  {el.texto}
+                  {el.text}
                 </Typography>
               </Box>
             )}

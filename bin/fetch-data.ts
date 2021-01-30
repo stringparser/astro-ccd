@@ -180,30 +180,37 @@ Promise.all([
         : path.resolve(__dirname, '..', 'src', 'registro', `${urlId}.mdx`)
       ;
 
-      const frontMatterKeys: Array<keyof typeof page> = isIndex
-        ? [ 'label' ]
-        : [ 'objeto', 'label' ]
-      ;
+      const mergedContent = content
+        .map(el => el.mdx)
+        .filter(v => v.trim() != '')
+        .join('\n')
+        .replace(/\n*\#\s*[^\n]+/g, '')
+        .replace(/\n</gm, '\n\n<')
+        .replace(/\n\n\n/gm, '\n\n')
+        .split('\n')
+        .map(v => {
+          if (/^\s*<|\/>/.test(v) || /\S+\=['"]\S+['"]/.test(v)) {
+            return v;
+          }
 
-      const mergedContent = content.map(el => el.mdx).join('\n');
+          return v
+            .replace(pageTitle, '')
+            .replace(/(2I)?\/\s*Borisov\s*/, '')
+          ;
+        })
+        .join('\n')
+        .trim()
+      ;
 
       if (!isIndex && /<(a|img|figure|table|Image)/.test(mergedContent) === false) {
         console.log('skipping page', page);
         return Promise.resolve();
       }
 
-      const imagenes = isIndex
-        ? []
-        : page.content.filter(el => el.type === 'image')
-          .sort((a, b) => (b.fecha || '').localeCompare(a.fecha || ''))
-      ;
-
       const pageTitle = page.title.trim()
         ? page.title.replace(/^\s*[#]\s*/, '')
         : null
       ;
-
-      const imagesLength = imagenes.length;
 
       return fs.mkdirp(path.dirname(filename))
         .then(() =>
@@ -211,51 +218,18 @@ Promise.all([
             filename,
             [
               '---',
-              pageTitle && `titulo: ${pageTitle}`,
-              frontMatterKeys.map(key => {
-                const value = page[key];
-
-                if (typeof value !== 'string') {
-                  return null;
-                }
-
-                if (key === 'label') {
-                  return page.label.trim()
-                    ? `etiquetas: ${page.label}`
-                    : null
-                  ;
-                }
-
-                return (value || '').trim()
-                  ? `${key}: ${value}`
-                  : null
-                ;
-              }).join('\n'),
-
-              imagesLength > 0 && '\n#\n# NOTA: entradas ordenadas por fecha (la primera es la última que se hizo)\n#',
-              imagenes.map((el, index) => {
-                const base = path.basename(el.dest, path.extname(el.dest)).replace(/\?[^\s]+/, '');
-                const srcRE = new RegExp(base.replace(/[-_]+/ig, '\\s+'), 'i');
-
-                const texto = (el.text || '')
-                  .replace(srcRE, '')
-                  .replace(/\s+/g, ' ')
-                  .replace(pageTitle, '')
-                  .replace(/[A-Z]?\/[^\s]{3,}/, '')
-                  .replace('Imagen del Asteroide 99942 (Apophis)', '')
-                  .replace(/((P\s+\/\s+)?P\s+Holmes|Cometa\s+P\s+17\s+P)\s*/, '')
-                  .replace(/^\s*C\s*$/, '')
-                  .trim()
-                ;
-
-                return `\nentrada_${imagesLength - index}:\n\t\t${[
-                  `fecha: ${el.fecha}`,
-                  `imagen: ${el.dest}`,
-                  texto && `texto: ${texto}`,
-                ].filter(v => v).join('\n\t\t')}`;
-              }).join('\n')
+              page.label
+                ? `etiquetas: ${
+                  page.label === PageBasename.sistemaSolar && 'sistema solar'
+                  || page.label === PageBasename.cometasAsteroides && 'cometa, asteroide'
+                  || page.label
+                }`
+                : null
               ,
+              page.objeto && `objeto: ${page.objeto}`,
               '---\n',
+              pageTitle && `# ${pageTitle}\n`,
+              mergedContent
             ]
             .join('\n')
             .replace(/\t/g, '  ')

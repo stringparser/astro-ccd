@@ -1,5 +1,5 @@
-import { esEntradaValidaConImagen, mapearEntradasValidas, mapTextToUrl } from './util';
-import { PageBasename } from 'src/types';
+import { mapearEntradasValidas } from './util';
+import { ParsedRemarkImage, parseMDX } from './parseMDX';
 
 export type StaticItemsProps<T> = {
   props: {
@@ -8,16 +8,16 @@ export type StaticItemsProps<T> = {
 };
 
 export type RegistroItemEntrada = {
-  texto?: string;
-  fecha?: string;
+  src?: string;
+  date?: string;
+  text?: string;
   width?: number;
   height?: number;
-  imagen?: string;
 };
 
 export type RegistroItem = {
   urlId: string;
-  fecha?: string;
+  date?: string;
   titulo: string;
   objeto: string;
   filename: string;
@@ -26,11 +26,11 @@ export type RegistroItem = {
   entradas: Array<RegistroItemEntrada>;
 };
 
-export type OrdenablePor<T extends keyof RegistroItem = 'fecha'> = Pick<RegistroItem, T>;
+export type OrdenablePor<T extends keyof RegistroItem = 'date'> = Pick<RegistroItem, T>;
 
 export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
-  let aFecha = a.entradas.find(el => el.fecha)?.fecha;
-  let bFecha = b.entradas.find(el => el.fecha)?.fecha;
+  let aFecha = a.entradas.find(el => el.date)?.date;
+  let bFecha = b.entradas.find(el => el.date)?.date;
 
   if (aFecha && aFecha.length === 6) {
     aFecha = `${aFecha}00`;
@@ -55,43 +55,54 @@ export const getRegistro = async (): Promise<RegistroItem[]> => {
     (await fs.readdir('src/registro'))
     .filter(el => /\.mdx$/.test(el))
     .map(async (el) => {
+      const urlId = path.basename(el, path.extname(el));
       const filename = path.join('src', 'registro', el);
-      const contents = await fs.readFile(filename, 'utf8');
-      const { data } = matter(contents);
+      const fileContents = await fs.readFile(filename, 'utf8');
 
-      const objeto = data.objeto as string;
+      const { data, content: restContent } = matter(fileContents);
 
-      const entradas = await Promise.all(Object.entries(data)
-        .reduce((acc, [key, value]) => {
-          return /_\d+$/.test(key)
-            ? acc.concat(value)
-            : acc
-          ;
-        }, [] as RegistroItem['entradas'])
-        .map(async (el) => {
-          if (el.imagen == null) {
-            return el;
-          }
+      const {
+        objeto = '',
+        etiquetas = '',
+      } = data;
 
-          const { width, height } = await imageSize(path.join('public', el.imagen));
+      const contents = await parseMDX(filename, restContent);
 
-          return {
-            ...el,
-            width,
-            height,
-          };
+      const titulo = contents.reduce((acc, el) => {
+        if (acc) {
+          return acc;
+        }
+
+        return el.type === 'heading' && el.text
+          ? el.text
+          : acc
+        ;
+      }, '');
+
+      const entradas = await Promise.all(contents
+        .filter(el =>
+          el.type === 'image'
+        )
+        .map(async (el: ParsedRemarkImage) => {
+          const { width, height } = await imageSize(path.join('public', el.src));
+
+            return {
+              src: el.src,
+              date: el.date || el.fecha,
+              urlId,
+              width,
+              height,
+            };
         })
       );
 
-      const urlId = mapTextToUrl(objeto);
-
       return {
         urlId,
-        titulo: data.titulo || '',
+        titulo,
         objeto,
-        etiquetas: data.etiquetas || '',
         filename,
         entradas,
+        etiquetas,
       };
     })
   );
@@ -128,7 +139,7 @@ export const getSistemaSolar = async () => {
 
   return registro
     .filter(el =>
-      el.etiquetas.includes('sistema solar')
+      /sistema[-\s]solar/.test(el.etiquetas)
     )
     .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)

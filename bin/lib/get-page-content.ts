@@ -24,9 +24,20 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
       const post = $('#content > article');
       const title = cleanHTML(post.find('.entry-header').text() || '');
 
-      const items = post.find('.entry-content > p,h1,h2,h3,h4,h5,h6,video,figure')
+      const items = post.find('.entry-content > *')
         .toArray()
-        .map(el => $(el))
+        .map(function mapChildren(el) {
+          const $el = $(el);
+          const children = $(el).children().toArray();
+
+          const elements = children.length > 1
+            ? children.map(el => mapChildren(el))
+            : [$el]
+          ;
+
+          return elements;
+        })
+        .flat(10)
         .map(el => {
           const image = el.find('img');
           const hasImage = image.length > 0;
@@ -64,7 +75,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
 
           switch (type) {
             case 'text': {
-              const text = cleanHTML(el.text());
+              const text = cleanHTML(el.html());
               return acc.concat({
                 src: '',
                 urlId: isIndex ? label : '',
@@ -143,6 +154,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           return acc.concat(item);
         }, [])
         .map(mapMetadata)
+        .map(mapFecha)
         .map(skipForIndex(isIndex, ({ urlId, ...props }, index, items): PageItemProps => {
           if (urlId != '') {
             return {
@@ -151,14 +163,40 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             };
           }
 
-          const found = items.slice(index).find(el => el.urlId);
+          const found = (() => {
+            switch (props.type) {
+              case 'text': {
+                return items.slice(0, index).reverse().find(el =>
+                  el.type === 'image'
+                  && el.urlId
+                );
+              }
+              case 'image': {
+                return undefined;
+              }
+              case 'header': {
+                return items.slice(index).find(el =>
+                  el.type === 'image'
+                  && el.urlId
+                );
+              }
+            }
+          })();
 
           if (found && found.urlId) {
-            const result = { urlId: found.urlId, ...props };
-            const { fecha, objeto } = found;
+            const result = {
+              urlId: found.urlId,
+              ...props
+            };
+
+            const { fecha, objeto, nombre } = found;
 
             if (fecha) {
               result.fecha = fecha;
+            }
+
+            if (nombre) {
+              result.nombre = nombre;
             }
 
             if (objeto) {
@@ -173,7 +211,6 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             ...props,
           };
         }))
-        .map(mapFecha)
         .map(({ urlId: maybeEmptyUrlId, ...props }) => {
           if (isIndex || /^\d{6}(-\S+)+/.test(maybeEmptyUrlId)) {
             return {

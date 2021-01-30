@@ -1,10 +1,13 @@
 import fs from 'fs-extra';
 import path from 'path';
-import matter from 'gray-matter';
+
+import { parseMDX } from '../src/lib/parseMDX';
 
 (async () => {
-  await fs.readFile(path.join('src', 'pages', 'index.mdx'), 'utf8')
-    .then(content => matter(content))
-    .then(result => console.log(result))
+  const filename = path.join(__dirname, '..', 'src', 'registro', '2I.mdx');
+  const fileContents = await fs.readFile(filename, 'utf8');
+
+  await parseMDX(filename, fileContents)
+    .then(result => console.log('result', result))
   ;
 })();

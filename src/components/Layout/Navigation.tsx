@@ -1,21 +1,15 @@
 import clsx from "clsx";
 import Link from "next/link";
 import HomeIcon from '@material-ui/icons/Home';
+import { NextRouter } from 'next/router';
 import { makeStyles, Link as MuiLink, Box, TextField } from "@material-ui/core";
 
 import { PageBasename } from "src/types";
-import { NextRouter, withRouter } from 'next/router';
-import { maxWidthMixin, opacityMixin } from "../styles";
+import { opacityMixin } from "src/components/styles";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
     switch (href) {
-      case PageBasename.cometasAsteroides: {
-        return {
-          href: `/${href}`,
-          text: 'cometas y asteroides',
-        };
-      }
       case PageBasename.sistemaSolar: {
         return {
           href: `/${href}`,
@@ -26,6 +20,12 @@ const items = Object.entries(PageBasename)
         return {
           href: `/${href}`,
           text: 'reparación DE CCD SBIG',
+        };
+      }
+      case PageBasename.cometasAsteroides: {
+        return {
+          href: `/${href}`,
+          text: 'cometas y asteroides',
         };
       }
       case PageBasename.construccionObservatorio: {
@@ -175,6 +175,6 @@ const Navigation: React.FC<NavigationProps> = ({ router }) => {
         </nav>
       </header>
   );
-}
+};
 
-export default withRouter(Navigation);
+export default Navigation;

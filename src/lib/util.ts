@@ -50,8 +50,8 @@ export const mapTextToUrl = (input: string) => {
   );
 };
 
-export const esEntradaValidaConImagen = ({ fecha, imagen: src }: RegistroItemEntrada) => (
-  fecha
+export const esEntradaValidaConImagen = ({ date, src }: RegistroItemEntrada) => (
+  date
   && src
   && !/apj-logo\.gif$/.test(src)
   && !/logodef\.png$/.test(src)

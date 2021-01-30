@@ -13,28 +13,29 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     };
   }
 
-  if (
-    text
-    && type === 'header'
-    && /drive\.google\.com\/open\?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc/.test(text)
-  ) {
+  // if (
+  //   text
+  //   && type === 'header'
+  //   && /drive\.google\.com\/open\?id=0B9X-aeZtOZTwby1Kc05SZnhQMnc/.test(text)
+  // ) {
 
-    return {
-      ...props,
-
-      fecha: '20170724',
-      objeto: 'C/2017 K2',
-    }
-  }
+  //   return {
+  //     ...props,
+  //     urlId: 'c2017-k2',
+  //     fecha: '20170724',
+  //     objeto: 'C/2017 K2',
+  //   }
+  // }
 
   if (
     /^c?[-_]?2014-?Q2/i.test(id)
-    || text && type === 'header' && text.includes('0B9X-aeZtOZTwOUF2MlkwQWVoaG8')
+    || /video-5.png/.test(src)
+    // || text && type === 'header' && text.includes('0B9X-aeZtOZTwOUF2MlkwQWVoaG8')
   ) {
 
     return {
       ...props,
-
+      urlId: 'c2014-q2',
       nombre: 'C/2014 Q2 (LOVEJOY)',
       objeto: 'C/2014 Q2',
     };
@@ -208,7 +209,7 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
   if (/^21-?p_/i.test(id)) {
     return {
       ...props,
-      nombre: '21/P Giacobini-Zinner',
+      nombre: '21P/Giacobini-Zinner',
       objeto: '21P',
     };
   }
@@ -221,7 +222,10 @@ export function mapCometImageMetadata(props: PageItemProps): PageItemProps {
     }
   }
 
-  if (/^c?2016-?r2/i.test(id)) {
+  if (
+    /^c?2016-?r2/i.test(id)
+    || /grafe\.jpg/.test(src)
+  ) {
     return {
       ...props,
       nombre: 'C/2016 R2 (PANSTARRS)',

@@ -445,6 +445,15 @@ export function mapGalaxyImageMetadata(props: PageItemProps): PageItemProps {
     };
   }
 
+  if (/trompa-pa\.jpg/.test(src)) {
+    return {
+      ...props,
+      urlId: 'ic-1398',
+      objeto: 'IC 1398',
+      nombre: 'Trompa de Elefante'
+    };
+  }
+
   if (SN_RE.test(id)) {
     const value = (SN_RE.exec(id) || ['']).pop();
     const valueId = `SN ${value}`;

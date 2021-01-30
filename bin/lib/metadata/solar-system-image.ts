@@ -80,7 +80,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     };
   }
 
-  if (/2014\/04\/(luna-|ecclipse1_20marzo)/.test(src)) {
+  if (/2014\/04\/(luna-|ecclipse\d_20marzo)/.test(src)) {
     return {
       ...props,
       fecha: '20150320',
@@ -93,8 +93,8 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20070618',
-      objeto: 'luna+venus',
-      nombre: 'Conjunción de Luna y Venus',
+      objeto: 'venus+luna',
+      nombre: 'Conjunción de Venus y Luna',
     };
   }
 

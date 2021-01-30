@@ -68,14 +68,15 @@ function PostsList<T>({ items }: PostsListProps) {
   return (
     <Box className={classes.root}>
       {postsItems.map(el => {
-        const { fecha, imagen } = el.entradas.find(el => el.imagen);
+        const { date, src } = el.entradas.find(el => el.src);
 
         const { objeto, titulo, etiquetas } = el;
 
-        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(fecha) || [])
+        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(date) || [])
           .slice(1)
           .reverse()
           .join('/')
+          .replace(/^00\//, '')
         ;
 
         return (
@@ -95,7 +96,7 @@ function PostsList<T>({ items }: PostsListProps) {
             </Typography>
 
             <Image
-              src={require(`@public/${imagen}`).default}
+              src={require(`@public/${src}`).default}
               layout="fill"
               quality={65}
               className={classes.imageContainer}
