@@ -71,7 +71,7 @@ exports = module.exports = withMDX({
 
     if (!isServer) {
       config.node = {
-        fs: 'empty'
+        fs: 'empty',
       };
     }
 

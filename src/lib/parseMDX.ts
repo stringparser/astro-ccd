@@ -1,4 +1,3 @@
-import fs from 'fs-extra';
 import matter from 'gray-matter';
 import toVFile from 'to-vfile';
 
@@ -100,6 +99,7 @@ export type ParsedMDXResult = {
 };
 
 export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
+  const fs = await import('fs-extra');
   const fileContents = await fs.readFile(filename, 'utf8');
 
   const {

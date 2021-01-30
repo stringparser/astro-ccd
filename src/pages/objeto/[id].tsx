@@ -1,6 +1,4 @@
-import fs from 'fs-extra';
 import path from 'path';
-import matter from 'gray-matter';
 import { Box } from '@material-ui/core';
 
 import hydrate from 'next-mdx-remote/hydrate'
@@ -55,6 +53,7 @@ export async function getStaticProps({ params }: PostParams): Promise<{ props: O
 };
 
 export async function getStaticPaths() {
+  const fs = await import('fs-extra');
   const objectPages = await fs.readdir('src/registro');
 
   const uniqueSlugIds = objectPages
