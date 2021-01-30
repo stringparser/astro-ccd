@@ -177,7 +177,7 @@ Promise.all([
 
       const filename = isIndex
         ? path.resolve(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
-        : path.resolve(__dirname, '..', 'src', 'registro', `${urlId}.mdx`)
+        : path.resolve(__dirname, '..', 'src', 'pages', 'objeto', `${urlId}.mdx`)
       ;
 
       const mergedContent = content
@@ -217,17 +217,15 @@ Promise.all([
           fs.writeFile(
             filename,
             [
-              '---',
-              page.label
-                ? `etiquetas: ${
+              '\nexport const meta = {',
+                page.objeto && `\tobjeto: '${page.objeto}',`,
+                pageTitle && `\ttitulo: '${pageTitle}',`,
+                page.label && `\tetiquetas: '${
                   page.label === PageBasename.sistemaSolar && 'sistema solar'
                   || page.label === PageBasename.cometasAsteroides && 'cometa, asteroide'
                   || page.label
-                }`
-                : null
-              ,
-              page.objeto && `objeto: ${page.objeto}`,
-              '---\n',
+                }',`,
+              '};\n',
               pageTitle && `# ${pageTitle}\n`,
               mergedContent
             ]

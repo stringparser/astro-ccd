@@ -7,10 +7,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "clean": "rm -f ./src/registro/*.mdx",
+    "clean": "rm -f ./src/objeto/*.mdx",
     "export": "next export",
     "scrape": "ts-node -P tsconfig.json ./bin/scrape.ts",
-    "fetch:data": "yarn clean && ts-node ./bin/fetch-data.ts && cp bin/datos/* src/registro"
+    "fetch:data": "yarn clean && ts-node ./bin/fetch-data.ts"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "file-loader": "^6.2.0",
     "glob": "^7.1.6",
     "image-size": "^0.9.3",
+    "json5": "^2.1.3",
     "material-ui": "^0.20.2",
     "next": "^10.0.5",
     "react": "^16.13.1",
@@ -49,6 +50,7 @@
     "@types/glob": "^7.1.3",
     "@types/jest": "^26.0.13",
     "@types/js-beautify": "^1.13.1",
+    "@types/json5": "^0.0.30",
     "@types/material-ui": "^0.20.8",
     "@types/node-fetch": "^2.5.7",
     "@types/react": "^16.9.49",

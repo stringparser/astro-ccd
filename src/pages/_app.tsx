@@ -84,6 +84,6 @@ WebApp.getInitialProps = async (context: AppContext) => {
       registro,
     }
   };
-}
+};
 
 export default WebApp;

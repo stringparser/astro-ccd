@@ -1,12 +1,9 @@
 /* eslint-disable no-undef */
 const path = require('path');
-const frontmatter = require('remark-frontmatter');
 
 const withMDX = require('@next/mdx')({
   options: {
-    remarkPlugins: [
-      frontmatter,
-    ],
+    remarkPlugins: [],
     rehypePlugins: [],
   },
   extension: /\.mdx?$/,
@@ -19,6 +16,7 @@ exports = module.exports = withMDX({
   // },
 
   images: {
+
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
@@ -72,14 +70,25 @@ exports = module.exports = withMDX({
     if (!isServer) {
       config.node = {
         fs: 'empty',
+        'fs-extra': 'empty',
       };
     }
 
     const baseConfig = {
-      basePath: "",
-      assetPrefix: "",
-      inlineImageLimit: 0,
-      fileExtensions: ["jpg", "jpeg", "png", "svg", "gif", "ico", "webp", "jp2", "avif"],
+      basePath: '',
+      assetPrefix: '',
+      inlineImageLimit: 1,
+      fileExtensions: [
+        'jpg',
+        'jpeg',
+        'png',
+        'svg',
+        'gif',
+        'ico',
+        'webp',
+        'jp2',
+        'avif'
+      ],
     };
 
     const result = Object.assign(config, {
@@ -99,16 +108,11 @@ exports = module.exports = withMDX({
       ],
       use: [
         {
-          loader: require.resolve("url-loader"),
+          loader: require.resolve('file-loader'),
           options: {
-            limit: baseConfig.inlineImageLimit,
-            fallback: require.resolve("file-loader"),
-            outputPath: `${isServer ? "../" : ""}static/images/`,
-            publicPath: `${baseConfig.assetPrefix ||
-              baseConfig.basePath ||
-              ''
-              }/_next/static/images/`,
-            name: "[name]-[hash].[ext]",
+            name: '[name]-[hash].[ext]',
+            outputPath: `${isServer ? '../' : ''}static/images/`,
+            publicPath: `${baseConfig.assetPrefix || baseConfig.basePath || ''}/_next/static/images/`,
           }
         }
       ]

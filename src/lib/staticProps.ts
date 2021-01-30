@@ -47,17 +47,16 @@ export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
 export const getRegistro = async (): Promise<RegistroItem[]> => {
   const fs = await import('fs-extra');
   const path = await import('path');
-  const matter = (await import('gray-matter')).default;
   const { promisify } = await import('util');
 
   const imageSize = promisify((await import('image-size')).default);
 
   const items = await Promise.all(
-    (await fs.readdir('src/registro'))
+    (await fs.readdir('src/pages/objeto'))
     .filter(el => /\.mdx$/.test(el))
     .map(async (el) => {
       const urlId = path.basename(el, path.extname(el));
-      const filename = path.join('src', 'registro', el);
+      const filename = path.join('src', 'pages', 'objeto', el);
 
       const result = await parseMDX(filename);
 

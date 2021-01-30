@@ -99,6 +99,7 @@ function PostsList<T>({ items }: PostsListProps) {
               src={require(`@public/${src}`).default}
               layout="fill"
               quality={65}
+              canOpenOrginial={false}
               className={classes.imageContainer}
             />
           </Link>

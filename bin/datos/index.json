@@ -298,7 +298,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200719",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200719_8_2020f3.jpg"
+        "dest": "objeto/c2020-f3_20200719_8_2020f3.jpg"
       },
       {
         "urlId": "c2020-f3",
@@ -310,7 +310,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200719",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200719_7_2020f3hdr.jpg"
+        "dest": "objeto/c2020-f3_20200719_7_2020f3hdr.jpg"
       },
       {
         "urlId": "c2020-f3",
@@ -323,7 +323,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200719",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200719_6_re3.jpg"
+        "dest": "objeto/c2020-f3_20200719_6_re3.jpg"
       },
       {
         "urlId": "c2020-f3",
@@ -335,7 +335,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200717",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200717_5_2020f3_20200717_i88co.jpg"
+        "dest": "objeto/c2020-f3_20200717_5_2020f3_20200717_i88co.jpg"
       },
       {
         "urlId": "c2020-f3",
@@ -347,7 +347,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200717",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200717_4_2020f3_20200717_i88pro.jpg"
+        "dest": "objeto/c2020-f3_20200717_4_2020f3_20200717_i88pro.jpg"
       },
       {
         "urlId": "c2020-f3",
@@ -360,7 +360,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200717",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200717_3_2020f3_20200717_i88.jpg"
+        "dest": "objeto/c2020-f3_20200717_3_2020f3_20200717_i88.jpg"
       },
       {
         "urlId": "c2020-f3",
@@ -373,7 +373,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200706",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200706_2_2020f3_50mm.gif"
+        "dest": "objeto/c2020-f3_20200706_2_2020f3_50mm.gif"
       },
       {
         "urlId": "c2020-f3",
@@ -386,7 +386,7 @@
         "nombre": "C/2020 F3 (NEOWISE)",
         "fecha": "20200706",
         "isIndex": false,
-        "dest": "registro/c2020-f3_20200706_1_2020f3_20200706_i88.jpg"
+        "dest": "objeto/c2020-f3_20200706_1_2020f3_20200706_i88.jpg"
       },
       {
         "urlId": "c2019-y1",
@@ -410,7 +410,7 @@
         "nombre": "C/2019 Y1 (ATLAS)",
         "fecha": "20190528",
         "isIndex": false,
-        "dest": "registro/c2019-y1_20190528_1_c2019-y1_20200528_i88.jpg"
+        "dest": "objeto/c2019-y1_20190528_1_c2019-y1_20200528_i88.jpg"
       },
       {
         "urlId": "c2017-t2",
@@ -434,7 +434,7 @@
         "nombre": "C/2017 T2 (PANSTARRS)",
         "fecha": "20200614",
         "isIndex": false,
-        "dest": "registro/c2017-t2_20200614_4_2017t2_20200614._i88.jpg"
+        "dest": "objeto/c2017-t2_20200614_4_2017t2_20200614._i88.jpg"
       },
       {
         "urlId": "c2017-t2",
@@ -447,7 +447,7 @@
         "nombre": "C/2017 T2 (PANSTARRS)",
         "fecha": "20200526",
         "isIndex": false,
-        "dest": "registro/c2017-t2_20200526_3_c2017t2_20200526_i88.jpg"
+        "dest": "objeto/c2017-t2_20200526_3_c2017t2_20200526_i88.jpg"
       },
       {
         "urlId": "c2017-t2",
@@ -459,7 +459,7 @@
         "nombre": "C/2017 T2 (PANSTARRS)",
         "fecha": "20200520",
         "isIndex": false,
-        "dest": "registro/c2017-t2_20200520_2_2017t2_20200520_i88.jpg"
+        "dest": "objeto/c2017-t2_20200520_2_2017t2_20200520_i88.jpg"
       },
       {
         "urlId": "c2019-y4",
@@ -482,7 +482,7 @@
         "nombre": "C/2019 Y4 (ATLAS)",
         "fecha": "20200414",
         "isIndex": false,
-        "dest": "registro/c2019-y4_20200414_7_c2019y4_20200414_i88jpg.jpg"
+        "dest": "objeto/c2019-y4_20200414_7_c2019y4_20200414_i88jpg.jpg"
       },
       {
         "urlId": "c2019-y4",
@@ -494,7 +494,7 @@
         "nombre": "C/2019 Y4 (ATLAS)",
         "fecha": "20200414",
         "isIndex": false,
-        "dest": "registro/c2019-y4_20200414_6_c2019y4_20200414._i88.jpg"
+        "dest": "objeto/c2019-y4_20200414_6_c2019y4_20200414._i88.jpg"
       },
       {
         "urlId": "c2019-y4",
@@ -507,7 +507,7 @@
         "nombre": "C/2019 Y4 (ATLAS)",
         "fecha": "20200414",
         "isIndex": false,
-        "dest": "registro/c2019-y4_20200414_5_2019y4_20200414._i88.jpg"
+        "dest": "objeto/c2019-y4_20200414_5_2019y4_20200414._i88.jpg"
       },
       {
         "urlId": "c2019-y4",
@@ -520,7 +520,7 @@
         "nombre": "C/2019 Y4 (ATLAS)",
         "fecha": "20200413",
         "isIndex": false,
-        "dest": "registro/c2019-y4_20200413_4_2019y4_20200413i_88.jpg"
+        "dest": "objeto/c2019-y4_20200413_4_2019y4_20200413i_88.jpg"
       },
       {
         "urlId": "c2019-y4",
@@ -533,7 +533,7 @@
         "nombre": "C/2019 Y4 (ATLAS)",
         "fecha": "20200328",
         "isIndex": false,
-        "dest": "registro/c2019-y4_20200328_3_c2019-y4-atlascolor_20200328_i88.jpg"
+        "dest": "objeto/c2019-y4_20200328_3_c2019-y4-atlascolor_20200328_i88.jpg"
       },
       {
         "urlId": "c2019-y4",
@@ -545,7 +545,7 @@
         "nombre": "C/2019 Y4 (ATLAS)",
         "fecha": "20200328",
         "isIndex": false,
-        "dest": "registro/c2019-y4_20200328_2_c2019-y4-atlas_20200328_i88.jpg"
+        "dest": "objeto/c2019-y4_20200328_2_c2019-y4-atlas_20200328_i88.jpg"
       },
       {
         "urlId": "c2019-y4",
@@ -558,7 +558,7 @@
         "nombre": "C/2019 Y4 (ATLAS)",
         "fecha": "20200319",
         "isIndex": false,
-        "dest": "registro/c2019-y4_20200319_1_2019y4_20190319_i88-1.jpg"
+        "dest": "objeto/c2019-y4_20200319_1_2019y4_20190319_i88-1.jpg"
       },
       {
         "urlId": "c2017-t2",
@@ -582,7 +582,7 @@
         "nombre": "C/2017 T2 (PANSTARRS)",
         "fecha": "20191123",
         "isIndex": false,
-        "dest": "registro/c2017-t2_20191123_1_2017t2_20191123_i88.jpg"
+        "dest": "objeto/c2017-t2_20191123_1_2017t2_20191123_i88.jpg"
       },
       {
         "urlId": "c2018-n2",
@@ -606,7 +606,7 @@
         "nombre": "C/2018 N2 (ASASSN)",
         "fecha": "20191024",
         "isIndex": false,
-        "dest": "registro/c2018-n2_20191024_1_2018n2_20191124_i88.jpg"
+        "dest": "objeto/c2018-n2_20191024_1_2018n2_20191124_i88.jpg"
       },
       {
         "urlId": "2I",
@@ -641,7 +641,7 @@
         "nombre": "2I/Borisov",
         "fecha": "20191210",
         "isIndex": false,
-        "dest": "registro/2I_20191210_5_2iborisov_20191210_i88.jpg"
+        "dest": "objeto/2I_20191210_5_2iborisov_20191210_i88.jpg"
       },
       {
         "urlId": "2I",
@@ -654,7 +654,7 @@
         "nombre": "2I/Borisov",
         "fecha": "20191109",
         "isIndex": false,
-        "dest": "registro/2I_20191109_4_002i_20191109_i88.jpg"
+        "dest": "objeto/2I_20191109_4_002i_20191109_i88.jpg"
       },
       {
         "urlId": "2I",
@@ -667,7 +667,7 @@
         "nombre": "2I/Borisov",
         "fecha": "20191026",
         "isIndex": false,
-        "dest": "registro/2I_20191026_3_2i-borisov_20191026_i88.jpg"
+        "dest": "objeto/2I_20191026_3_2i-borisov_20191026_i88.jpg"
       },
       {
         "urlId": "2I",
@@ -680,7 +680,7 @@
         "nombre": "2I/Borisov",
         "fecha": "20191005",
         "isIndex": false,
-        "dest": "registro/2I_20191005_2_2iborisov-20191005_i88.jpg"
+        "dest": "objeto/2I_20191005_2_2iborisov-20191005_i88.jpg"
       },
       {
         "urlId": "2I",
@@ -693,7 +693,7 @@
         "nombre": "2I/Borisov",
         "fecha": "20190929",
         "isIndex": false,
-        "dest": "registro/2I_20190929_1_c2019q4_20190929_i88.jpg"
+        "dest": "objeto/2I_20190929_1_c2019q4_20190929_i88.jpg"
       },
       {
         "urlId": "260P",
@@ -717,7 +717,7 @@
         "nombre": "260P/McNaught",
         "fecha": "20191025",
         "isIndex": false,
-        "dest": "registro/260P_20191025_2_260p_20191025_i88.jpg"
+        "dest": "objeto/260P_20191025_2_260p_20191025_i88.jpg"
       },
       {
         "urlId": "260P",
@@ -730,7 +730,7 @@
         "nombre": "260P/McNaught",
         "fecha": "20190809",
         "isIndex": false,
-        "dest": "registro/260P_20190809_1_260p_20190809i88.jpg"
+        "dest": "objeto/260P_20190809_1_260p_20190809i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -752,7 +752,7 @@
         "text": "(6478) Gault 26 Abril 2019",
         "fecha": "20190426",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190426_9_6478-gault_20190426_i88.jpg"
+        "dest": "objeto/6478-gault_20190426_9_6478-gault_20190426_i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -764,7 +764,7 @@
         "text": "(6478) Gault 27 Marzo 2019 38×180s b2",
         "fecha": "20190327",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190327_8_6478-gault_20190327_i88.jpg"
+        "dest": "objeto/6478-gault_20190327_8_6478-gault_20190327_i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -776,7 +776,7 @@
         "text": "(6478) Gault Animacion dias 11Enero_8Febrero_9Marzo 2019",
         "fecha": "20190309",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190309_7_11enero_8febrero_9marzo.gif"
+        "dest": "objeto/6478-gault_20190309_7_11enero_8febrero_9marzo.gif"
       },
       {
         "urlId": "6478-gault",
@@ -788,7 +788,7 @@
         "text": "(6478) Gault 9 Marzo 2019",
         "fecha": "20190309",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190309_6_6478-gault_20190209_i88.jpg"
+        "dest": "objeto/6478-gault_20190309_6_6478-gault_20190209_i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -800,7 +800,7 @@
         "text": "(6478) Gault 9 Marzo 2019",
         "fecha": "20190309",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190309_5_6478-gault._20190209_i88.jpg"
+        "dest": "objeto/6478-gault_20190309_5_6478-gault._20190209_i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -811,7 +811,7 @@
         "label": "cometas-asteroides",
         "fecha": "20190208",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190208_4_6478_20190208_i88.jpg"
+        "dest": "objeto/6478-gault_20190208_4_6478_20190208_i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -823,7 +823,7 @@
         "text": "(6478) Gault 7 Febrero 2019 12 tomas de 300s b2 f 1810mm",
         "fecha": "20190207",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190207_3_6478_re_20190208_i88.jpg"
+        "dest": "objeto/6478-gault_20190207_3_6478_re_20190208_i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -834,7 +834,7 @@
         "label": "cometas-asteroides",
         "fecha": "20190111",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190111_2_6478-gault_20190111_i88.jpg"
+        "dest": "objeto/6478-gault_20190111_2_6478-gault_20190111_i88.jpg"
       },
       {
         "urlId": "6478-gault",
@@ -846,7 +846,7 @@
         "text": "(6478) Gault 12 Enero 2019 12 tomas de 300s b2 f 1810mm",
         "fecha": "20190112",
         "isIndex": false,
-        "dest": "registro/6478-gault_20190112_1_6478-gault_com_20190111_i88.jpg"
+        "dest": "objeto/6478-gault_20190112_1_6478-gault_com_20190111_i88.jpg"
       },
       {
         "urlId": "60P",
@@ -870,7 +870,7 @@
         "nombre": "60P/Tsuchinshan",
         "fecha": "20190426",
         "isIndex": false,
-        "dest": "registro/60P_20190426_2_60ptsuchinshan_20190426_i88.jpg"
+        "dest": "objeto/60P_20190426_2_60ptsuchinshan_20190426_i88.jpg"
       },
       {
         "urlId": "60P",
@@ -883,7 +883,7 @@
         "nombre": "60P/Tsuchinshan",
         "fecha": "20190309",
         "isIndex": false,
-        "dest": "registro/60P_20190309_1_60p_20190209_i88jpg.jpg"
+        "dest": "objeto/60P_20190309_1_60p_20190209_i88jpg.jpg"
       },
       {
         "urlId": "38P",
@@ -907,7 +907,7 @@
         "nombre": "38P/Stephan-Oterma",
         "fecha": "20190109",
         "isIndex": false,
-        "dest": "registro/38P_20190109_2_38p_20190109_i88.jpg"
+        "dest": "objeto/38P_20190109_2_38p_20190109_i88.jpg"
       },
       {
         "urlId": "38P",
@@ -920,7 +920,7 @@
         "nombre": "38P/Stephan-Oterma",
         "fecha": "20181230",
         "isIndex": false,
-        "dest": "registro/38P_20181230_1_38p_20181230_I88.jpg"
+        "dest": "objeto/38P_20181230_1_38p_20181230_I88.jpg"
       },
       {
         "urlId": "46P",
@@ -944,7 +944,7 @@
         "nombre": "46P/Wirtanen",
         "fecha": "20190109",
         "isIndex": false,
-        "dest": "registro/46P_20190109_5_46p_20190109_i88.jpg"
+        "dest": "objeto/46P_20190109_5_46p_20190109_i88.jpg"
       },
       {
         "urlId": "46P",
@@ -957,7 +957,7 @@
         "nombre": "46P/Wirtanen",
         "fecha": "20181230",
         "isIndex": false,
-        "dest": "registro/46P_20181230_4_46p_20181230_I88.jpg"
+        "dest": "objeto/46P_20181230_4_46p_20181230_I88.jpg"
       },
       {
         "urlId": "46P",
@@ -969,7 +969,7 @@
         "nombre": "46P/Wirtanen",
         "fecha": "20181130",
         "isIndex": false,
-        "dest": "registro/46P_20181130_3_46p_20181130i88rgb.jpg"
+        "dest": "objeto/46P_20181130_3_46p_20181130i88rgb.jpg"
       },
       {
         "urlId": "46P",
@@ -982,7 +982,7 @@
         "nombre": "46P/Wirtanen",
         "fecha": "20181130",
         "isIndex": false,
-        "dest": "registro/46P_20181130_2_46p_20181130_i88.jpg"
+        "dest": "objeto/46P_20181130_2_46p_20181130_i88.jpg"
       },
       {
         "urlId": "46P",
@@ -995,7 +995,7 @@
         "nombre": "46P/Wirtanen",
         "fecha": "20181126",
         "isIndex": false,
-        "dest": "registro/46P_20181126_1_46p_20181126_i88.jpg"
+        "dest": "objeto/46P_20181126_1_46p_20181126_i88.jpg"
       },
       {
         "urlId": "c2018-v1",
@@ -1019,7 +1019,7 @@
         "nombre": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)",
         "fecha": "20181116",
         "isIndex": false,
-        "dest": "registro/c2018-v1_20181116_1_2018v1_20181116_i88.jpg"
+        "dest": "objeto/c2018-v1_20181116_1_2018v1_20181116_i88.jpg"
       },
       {
         "urlId": "64P",
@@ -1043,7 +1043,7 @@
         "nombre": "64P/Swift-Gehrels",
         "fecha": "20190109",
         "isIndex": false,
-        "dest": "registro/64P_20190109_5_64p_20190109_i88.jpg"
+        "dest": "objeto/64P_20190109_5_64p_20190109_i88.jpg"
       },
       {
         "urlId": "64P",
@@ -1056,7 +1056,7 @@
         "nombre": "64P/Swift-Gehrels",
         "fecha": "20180106",
         "isIndex": false,
-        "dest": "registro/64P_20180106_4_64p_20190106_i88.jpg"
+        "dest": "objeto/64P_20180106_4_64p_20190106_i88.jpg"
       },
       {
         "urlId": "64P",
@@ -1069,7 +1069,7 @@
         "nombre": "64P/Swift-Gehrels",
         "fecha": "20181230",
         "isIndex": false,
-        "dest": "registro/64P_20181230_3_64p_20181230_I88.jpg"
+        "dest": "objeto/64P_20181230_3_64p_20181230_I88.jpg"
       },
       {
         "urlId": "64P",
@@ -1082,7 +1082,7 @@
         "nombre": "64P/Swift-Gehrels",
         "fecha": "20181111",
         "isIndex": false,
-        "dest": "registro/64P_20181111_2_64p_20181111_i88.jpg"
+        "dest": "objeto/64P_20181111_2_64p_20181111_i88.jpg"
       },
       {
         "urlId": "64P",
@@ -1095,7 +1095,7 @@
         "nombre": "64P/Swift-Gehrels",
         "fecha": "20181106",
         "isIndex": false,
-        "dest": "registro/64P_20181106_1_64p_20181106_i88.png"
+        "dest": "objeto/64P_20181106_1_64p_20181106_i88.png"
       },
       {
         "urlId": "21P",
@@ -1119,7 +1119,7 @@
         "nombre": "21P/Giacobini-Zinner",
         "fecha": "20180921",
         "isIndex": false,
-        "dest": "registro/21P_20180921_5_21p_20180921_i88.jpg"
+        "dest": "objeto/21P_20180921_5_21p_20180921_i88.jpg"
       },
       {
         "urlId": "21P",
@@ -1132,7 +1132,7 @@
         "nombre": "21P/Giacobini-Zinner",
         "fecha": "20180914",
         "isIndex": false,
-        "dest": "registro/21P_20180914_4_21p_20180914_i88.jpg"
+        "dest": "objeto/21P_20180914_4_21p_20180914_i88.jpg"
       },
       {
         "urlId": "21P",
@@ -1145,7 +1145,7 @@
         "nombre": "21P/Giacobini-Zinner",
         "fecha": "20180907",
         "isIndex": false,
-        "dest": "registro/21P_20180907_3_21p_20180907_i88_1.jpg"
+        "dest": "objeto/21P_20180907_3_21p_20180907_i88_1.jpg"
       },
       {
         "urlId": "21P",
@@ -1158,7 +1158,7 @@
         "nombre": "21P/Giacobini-Zinner",
         "fecha": "20180814",
         "isIndex": false,
-        "dest": "registro/21P_20180814_2_21p_20180815_i88.png"
+        "dest": "objeto/21P_20180814_2_21p_20180815_i88.png"
       },
       {
         "urlId": "21P",
@@ -1171,7 +1171,7 @@
         "nombre": "21P/Giacobini-Zinner",
         "fecha": "20180808",
         "isIndex": false,
-        "dest": "registro/21P_20180808_1_21p_20180809_i88.jpg"
+        "dest": "objeto/21P_20180808_1_21p_20180809_i88.jpg"
       },
       {
         "urlId": "c2017-s3",
@@ -1194,7 +1194,7 @@
         "nombre": "C/2017 S3 (panstars)",
         "fecha": "20180719",
         "isIndex": false,
-        "dest": "registro/c2017-s3_20180719_3_c2017s3_20180719_i88.png"
+        "dest": "objeto/c2017-s3_20180719_3_c2017s3_20180719_i88.png"
       },
       {
         "urlId": "c2017-s3",
@@ -1207,7 +1207,7 @@
         "nombre": "C/2017 S3 (panstars)",
         "fecha": "20180719",
         "isIndex": false,
-        "dest": "registro/c2017-s3_20180719_2_c2017s3_20180719_i88.jpg"
+        "dest": "objeto/c2017-s3_20180719_2_c2017s3_20180719_i88.jpg"
       },
       {
         "urlId": "c2017-s3",
@@ -1220,7 +1220,7 @@
         "nombre": "C/2017 S3 (panstars)",
         "fecha": "20180705",
         "isIndex": false,
-        "dest": "registro/c2017-s3_20180705_1_c2017s3_20180705_i88.png"
+        "dest": "objeto/c2017-s3_20180705_1_c2017s3_20180705_i88.png"
       },
       {
         "urlId": "c2016-r2",
@@ -1244,7 +1244,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180213",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180213_9_2016r2_20180213_i88.jpg"
+        "dest": "objeto/c2016-r2_20180213_9_2016r2_20180213_i88.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1257,7 +1257,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180210",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180210_8_2016r2_20180210_i88.jpg"
+        "dest": "objeto/c2016-r2_20180210_8_2016r2_20180210_i88.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1269,7 +1269,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180202",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180202_7_2016r2_20180202_i88.jpg"
+        "dest": "objeto/c2016-r2_20180202_7_2016r2_20180202_i88.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1282,7 +1282,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180123",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180123_6_c2016r2_20180123_i88.jpg"
+        "dest": "objeto/c2016-r2_20180123_6_c2016r2_20180123_i88.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1295,7 +1295,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180121",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180121_5_2016r2_20180121_i88.jpg"
+        "dest": "objeto/c2016-r2_20180121_5_2016r2_20180121_i88.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1308,7 +1308,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180111",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180111_4_grafe.jpg"
+        "dest": "objeto/c2016-r2_20180111_4_grafe.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1321,7 +1321,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180111",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180111_3_2016r2_20180111_i88.jpg"
+        "dest": "objeto/c2016-r2_20180111_3_2016r2_20180111_i88.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1334,7 +1334,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20180108",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20180108_2_c2016r2_20180108_i88.jpg"
+        "dest": "objeto/c2016-r2_20180108_2_c2016r2_20180108_i88.jpg"
       },
       {
         "urlId": "c2016-r2",
@@ -1347,7 +1347,7 @@
         "nombre": "C/2016 R2 (PANSTARRS)",
         "fecha": "20171223",
         "isIndex": false,
-        "dest": "registro/c2016-r2_20171223_1_c2016r2_20171223_i881.jpg"
+        "dest": "objeto/c2016-r2_20171223_1_c2016r2_20171223_i881.jpg"
       },
       {
         "urlId": "174P",
@@ -1371,7 +1371,7 @@
         "nombre": "174P/ECHELUS",
         "fecha": "20171223",
         "isIndex": false,
-        "dest": "registro/174P_20171223_1_174p_20171223_i88.jpg"
+        "dest": "objeto/174P_20171223_1_174p_20171223_i88.jpg"
       },
       {
         "urlId": "c2015-v1",
@@ -1395,7 +1395,7 @@
         "nombre": "C/2015 V1 (PANSTARRS)",
         "fecha": "20171112",
         "isIndex": false,
-        "dest": "registro/c2015-v1_20171112_1_2015v2_20171112_i88.jpg"
+        "dest": "objeto/c2015-v1_20171112_1_2015v2_20171112_i88.jpg"
       },
       {
         "urlId": "c2015-er61",
@@ -1419,7 +1419,7 @@
         "nombre": "C/2015 ER61 (PANSTARRS)",
         "fecha": "20171112",
         "isIndex": false,
-        "dest": "registro/c2015-er61_20171112_2_c2015er61_20171112_i88.jpg"
+        "dest": "objeto/c2015-er61_20171112_2_c2015er61_20171112_i88.jpg"
       },
       {
         "urlId": "c2015-er61",
@@ -1432,7 +1432,7 @@
         "nombre": "C/2015 ER61 (PANSTARRS)",
         "fecha": "20170921",
         "isIndex": false,
-        "dest": "registro/c2015-er61_20170921_1_2015er61_20170921_i88.jpg"
+        "dest": "objeto/c2015-er61_20170921_1_2015er61_20170921_i88.jpg"
       },
       {
         "urlId": "c2017-o1",
@@ -1456,7 +1456,7 @@
         "nombre": "C/2017 O1 (ASASSN1)",
         "fecha": "20170921",
         "isIndex": false,
-        "dest": "registro/c2017-o1_20170921_1_c2017o1_20170921_i88.jpg"
+        "dest": "objeto/c2017-o1_20170921_1_c2017o1_20170921_i88.jpg"
       },
       {
         "urlId": "29P",
@@ -1480,7 +1480,7 @@
         "nombre": "29P/Schwassmann-Wachmann",
         "fecha": "20191005",
         "isIndex": false,
-        "dest": "registro/29P_20191005_5_0029p_20191005_i88.jpg"
+        "dest": "objeto/29P_20191005_5_0029p_20191005_i88.jpg"
       },
       {
         "urlId": "29P",
@@ -1493,7 +1493,7 @@
         "nombre": "29P/Schwassmann-Wachmann",
         "fecha": "20180928",
         "isIndex": false,
-        "dest": "registro/29P_20180928_4_29p_20180928_i88.jpg"
+        "dest": "objeto/29P_20180928_4_29p_20180928_i88.jpg"
       },
       {
         "urlId": "29P",
@@ -1506,7 +1506,7 @@
         "nombre": "29P/Schwassmann-Wachmann",
         "fecha": "20180927",
         "isIndex": false,
-        "dest": "registro/29P_20180927_3_29p_20180927_i88.jpg"
+        "dest": "objeto/29P_20180927_3_29p_20180927_i88.jpg"
       },
       {
         "urlId": "29P",
@@ -1519,7 +1519,7 @@
         "nombre": "29P/Schwassmann-Wachmann",
         "fecha": "20171010",
         "isIndex": false,
-        "dest": "registro/29P_20171010_2_29p.jpg"
+        "dest": "objeto/29P_20171010_2_29p.jpg"
       },
       {
         "urlId": "29P",
@@ -1532,7 +1532,7 @@
         "nombre": "29P/Schwassmann-Wachmann",
         "fecha": "20170918",
         "isIndex": false,
-        "dest": "registro/29P_20170918_1_29p_20170918_i88.jpg"
+        "dest": "objeto/29P_20170918_1_29p_20170918_i88.jpg"
       },
       {
         "urlId": "c2015-o1",
@@ -1556,7 +1556,7 @@
         "nombre": "C/2015 O1 (PANSTARRS)",
         "fecha": "20180612",
         "isIndex": false,
-        "dest": "registro/c2015-o1_20180612_3_c2015-01_20180612i88.png"
+        "dest": "objeto/c2015-o1_20180612_3_c2015-01_20180612i88.png"
       },
       {
         "urlId": "c2015-o1",
@@ -1569,7 +1569,7 @@
         "nombre": "C/2015 O1 (PANSTARRS)",
         "fecha": "20180416",
         "isIndex": false,
-        "dest": "registro/c2015-o1_20180416_2_2015-o1_20180416_i88.jpg"
+        "dest": "objeto/c2015-o1_20180416_2_2015-o1_20180416_i88.jpg"
       },
       {
         "urlId": "c2015-o1",
@@ -1582,7 +1582,7 @@
         "fecha": "20170816",
         "nombre": "C/2015 O1 (PANSTARS)",
         "isIndex": false,
-        "dest": "registro/c2015-o1_20170816_1_c2015o1_20170816_i88.jpg"
+        "dest": "objeto/c2015-o1_20170816_1_c2015o1_20170816_i88.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1606,7 +1606,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20200915",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20200915_11_c2017-k2-panstarrs_20200915_i88.jpg"
+        "dest": "objeto/c2017-k2_20200915_11_c2017-k2-panstarrs_20200915_i88.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1619,7 +1619,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20200518",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20200518_10_c2017k2_20200518_i88.jpg"
+        "dest": "objeto/c2017-k2_20200518_10_c2017k2_20200518_i88.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1632,7 +1632,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20190809",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20190809_9_2017k2_20191116_i88.jpg"
+        "dest": "objeto/c2017-k2_20190809_9_2017k2_20191116_i88.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1645,7 +1645,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20190809",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20190809_8_2017k2_20190809_i88.jpg"
+        "dest": "objeto/c2017-k2_20190809_8_2017k2_20190809_i88.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1658,7 +1658,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20190619",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20190619_7_c2017k2_20190619_i88.jpg"
+        "dest": "objeto/c2017-k2_20190619_7_c2017k2_20190619_i88.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1671,7 +1671,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20190426",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20190426_6_copia-de-2017k2_20190427_i88.png"
+        "dest": "objeto/c2017-k2_20190426_6_copia-de-2017k2_20190427_i88.png"
       },
       {
         "urlId": "c2017-k2",
@@ -1684,7 +1684,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20180814",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20180814_5_2017k2_20180814_i88.jpg"
+        "dest": "objeto/c2017-k2_20180814_5_2017k2_20180814_i88.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1696,7 +1696,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20171017",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20171017_4_2017k2_201710_113.jpg"
+        "dest": "objeto/c2017-k2_20171017_4_2017k2_201710_113.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1720,7 +1720,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20170724",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20170724_3_20171.jpg"
+        "dest": "objeto/c2017-k2_20170724_3_20171.jpg"
       },
       {
         "urlId": "c2017-k2",
@@ -1733,7 +1733,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20170724",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20170724_2_111111111111.gif"
+        "dest": "objeto/c2017-k2_20170724_2_111111111111.gif"
       },
       {
         "urlId": "c2017-k2",
@@ -1746,7 +1746,7 @@
         "nombre": "C/2017 K2 (PANSTARRS)",
         "fecha": "20170720",
         "isIndex": false,
-        "dest": "registro/c2017-k2_20170720_1_2017k2_20170720_i88-e1500715311717.jpg"
+        "dest": "objeto/c2017-k2_20170720_1_2017k2_20170720_i88-e1500715311717.jpg"
       },
       {
         "urlId": "c2015-v2",
@@ -1770,7 +1770,7 @@
         "nombre": "C/2015 V2 (JOHNSON)",
         "fecha": "20170518",
         "isIndex": false,
-        "dest": "registro/c2015-v2_20170518_3_2015v2_20170517_i88.jpg"
+        "dest": "objeto/c2015-v2_20170518_3_2015v2_20170517_i88.jpg"
       },
       {
         "urlId": "c2015-v2",
@@ -1783,7 +1783,7 @@
         "nombre": "C/2015 V2 (JOHNSON)",
         "fecha": "20170404",
         "isIndex": false,
-        "dest": "registro/c2015-v2_20170404_2_2015v2_20170404_i88.jpg"
+        "dest": "objeto/c2015-v2_20170404_2_2015v2_20170404_i88.jpg"
       },
       {
         "urlId": "c2015-v2",
@@ -1796,7 +1796,7 @@
         "nombre": "C/2015 V2 (JOHNSON)",
         "fecha": "20161118",
         "isIndex": false,
-        "dest": "registro/c2015-v2_20161118_1_2015v2_20161118_i88.jpg"
+        "dest": "objeto/c2015-v2_20161118_1_2015v2_20161118_i88.jpg"
       },
       {
         "urlId": "c2013-us10",
@@ -1820,7 +1820,7 @@
         "nombre": "C/2013 US10 (CATALINA)",
         "fecha": "20160306",
         "isIndex": false,
-        "dest": "registro/c2013-us10_20160306_7_2013us10_20160306_i88.jpg"
+        "dest": "objeto/c2013-us10_20160306_7_2013us10_20160306_i88.jpg"
       },
       {
         "urlId": "c2013-us10",
@@ -1833,7 +1833,7 @@
         "nombre": "C/2013 US10 (CATALINA)",
         "fecha": "20160223",
         "isIndex": false,
-        "dest": "registro/c2013-us10_20160223_6_2013us10_20160223_i88.jpg"
+        "dest": "objeto/c2013-us10_20160223_6_2013us10_20160223_i88.jpg"
       },
       {
         "urlId": "c2013-us10",
@@ -1845,7 +1845,7 @@
         "nombre": "C/2013 US10 (CATALINA)",
         "fecha": "20151220",
         "isIndex": false,
-        "dest": "registro/c2013-us10_20151220_5_2013us10pro_20151220_i88.jpg"
+        "dest": "objeto/c2013-us10_20151220_5_2013us10pro_20151220_i88.jpg"
       },
       {
         "urlId": "c2013-us10",
@@ -1857,7 +1857,7 @@
         "nombre": "C/2013 US10 (CATALINA)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2013-us10_20121200_4_rgbpro_2.jpg"
+        "dest": "objeto/c2013-us10_20121200_4_rgbpro_2.jpg"
       },
       {
         "urlId": "c2013-us10",
@@ -1870,7 +1870,7 @@
         "nombre": "C/2013 US10 (CATALINA)",
         "fecha": "20151220",
         "isIndex": false,
-        "dest": "registro/c2013-us10_20151220_3_c_2013-us10-catalina_orbita.jpg"
+        "dest": "objeto/c2013-us10_20151220_3_c_2013-us10-catalina_orbita.jpg"
       },
       {
         "urlId": "c2013-us10",
@@ -1883,7 +1883,7 @@
         "nombre": "C/2013 US10 (CATALINA)",
         "fecha": "20151217",
         "isIndex": false,
-        "dest": "registro/c2013-us10_20151217_2_2013us10_20151217_i88.jpg"
+        "dest": "objeto/c2013-us10_20151217_2_2013us10_20151217_i88.jpg"
       },
       {
         "urlId": "c2013-us10",
@@ -1896,7 +1896,7 @@
         "nombre": "C/2013 US10 (CATALINA)",
         "fecha": "20151206",
         "isIndex": false,
-        "dest": "registro/c2013-us10_20151206_1_c2013us10_20151206_i881.jpg"
+        "dest": "objeto/c2013-us10_20151206_1_c2013us10_20151206_i881.jpg"
       },
       {
         "urlId": "c2013-x1",
@@ -1920,7 +1920,7 @@
         "nombre": "C/2013 X1 (PANSTARRS)",
         "fecha": "20160112",
         "isIndex": false,
-        "dest": "registro/c2013-x1_20160112_4_c2013x1_20160112_i88.jpg"
+        "dest": "objeto/c2013-x1_20160112_4_c2013x1_20160112_i88.jpg"
       },
       {
         "urlId": "c2013-x1",
@@ -1932,7 +1932,7 @@
         "nombre": "C/2013 X1 (PANSTARRS)",
         "fecha": "20151212",
         "isIndex": false,
-        "dest": "registro/c2013-x1_20151212_3_2013x1_20151212_i88.jpg"
+        "dest": "objeto/c2013-x1_20151212_3_2013x1_20151212_i88.jpg"
       },
       {
         "urlId": "c2013-x1",
@@ -1945,7 +1945,7 @@
         "nombre": "C/2013 X1 (PANSTARRS)",
         "fecha": "20151212",
         "isIndex": false,
-        "dest": "registro/c2013-x1_20151212_2_2013x1rgb_20151212_i88.jpg"
+        "dest": "objeto/c2013-x1_20151212_2_2013x1rgb_20151212_i88.jpg"
       },
       {
         "urlId": "c2013-x1",
@@ -1958,7 +1958,7 @@
         "nombre": "C/2013 X1 (PANSTARRS)",
         "fecha": "20151119",
         "isIndex": false,
-        "dest": "registro/c2013-x1_20151119_1_2013x1_20151119_i88.jpg"
+        "dest": "objeto/c2013-x1_20151119_1_2013x1_20151119_i88.jpg"
       },
       {
         "urlId": "c2014-s2",
@@ -1982,7 +1982,7 @@
         "nombre": "C/2014 S2 (PANSTARRS)",
         "fecha": "20160407",
         "isIndex": false,
-        "dest": "registro/c2014-s2_20160407_2_2014s2_20160407_i88.jpg"
+        "dest": "objeto/c2014-s2_20160407_2_2014s2_20160407_i88.jpg"
       },
       {
         "urlId": "c2014-s2",
@@ -1995,7 +1995,7 @@
         "nombre": "C/2014 S2 (PANSTARRS)",
         "fecha": "20150913",
         "isIndex": false,
-        "dest": "registro/c2014-s2_20150913_1_2014s2_20150913_i88.jpg"
+        "dest": "objeto/c2014-s2_20150913_1_2014s2_20150913_i88.jpg"
       },
       {
         "urlId": "c2015-f4",
@@ -2008,7 +2008,7 @@
         "nombre": "C/2015 F4 (JACQUES)",
         "fecha": "20150914",
         "isIndex": false,
-        "dest": "registro/c2015-f4_20150914_5_2015f4_20150914_i88.jpg"
+        "dest": "objeto/c2015-f4_20150914_5_2015f4_20150914_i88.jpg"
       },
       {
         "urlId": "c2015-f4",
@@ -2021,7 +2021,7 @@
         "nombre": "C/2015 F4 (JACQUES)",
         "fecha": "20150913",
         "isIndex": false,
-        "dest": "registro/c2015-f4_20150913_4_20150913_i88.jpg"
+        "dest": "objeto/c2015-f4_20150913_4_20150913_i88.jpg"
       },
       {
         "urlId": "c2015-f4",
@@ -2034,7 +2034,7 @@
         "nombre": "C/2015 F4 (JACQUES)",
         "fecha": "20150910",
         "isIndex": false,
-        "dest": "registro/c2015-f4_20150910_3_2015f4_20150910_i882.jpg"
+        "dest": "objeto/c2015-f4_20150910_3_2015f4_20150910_i882.jpg"
       },
       {
         "urlId": "c2015-f4",
@@ -2047,7 +2047,7 @@
         "nombre": "C/2015 F4 (JACQUES)",
         "fecha": "20150712",
         "isIndex": false,
-        "dest": "registro/c2015-f4_20150712_2_2015f4_20150713_i88.jpg"
+        "dest": "objeto/c2015-f4_20150712_2_2015f4_20150713_i88.jpg"
       },
       {
         "urlId": "c2015-f4",
@@ -2060,7 +2060,7 @@
         "nombre": "C/2015 F4 (JACQUES)",
         "fecha": "20150709",
         "isIndex": false,
-        "dest": "registro/c2015-f4_20150709_1_2015f4_20150708_i88.jpg"
+        "dest": "objeto/c2015-f4_20150709_1_2015f4_20150708_i88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2073,7 +2073,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150914",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150914_21_2014q2_20150914_i88.jpg"
+        "dest": "objeto/c2014-q2_20150914_21_2014q2_20150914_i88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2086,7 +2086,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150708",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150708_20_2014q2_20150708_i88.jpg"
+        "dest": "objeto/c2014-q2_20150708_20_2014q2_20150708_i88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2098,7 +2098,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20121200_19_2014q2_rgb.jpg"
+        "dest": "objeto/c2014-q2_20121200_19_2014q2_rgb.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2111,7 +2111,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150222",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150222_18_2014q2sigjpg.jpg"
+        "dest": "objeto/c2014-q2_20150222_18_2014q2sigjpg.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2123,7 +2123,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20121200_17_2014q22.jpg"
+        "dest": "objeto/c2014-q2_20121200_17_2014q22.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2136,7 +2136,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150208",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150208_16_2014q2es.jpg"
+        "dest": "objeto/c2014-q2_20150208_16_2014q2es.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2148,7 +2148,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150123",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150123_15_2014q2_20150123_88.jpg"
+        "dest": "objeto/c2014-q2_20150123_15_2014q2_20150123_88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2161,7 +2161,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150123",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150123_14_2014q2_20152301_i88i.jpg"
+        "dest": "objeto/c2014-q2_20150123_14_2014q2_20152301_i88i.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2172,7 +2172,7 @@
         "label": "cometas-asteroides",
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "isIndex": false,
-        "dest": "registro/c2014-q2_undefined_13_video-5.png"
+        "dest": "objeto/c2014-q2_undefined_13_video-5.png"
       },
       {
         "urlId": "c2014-q2",
@@ -2195,7 +2195,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150123",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150123_12_2014q2_20150123_i88651.jpg"
+        "dest": "objeto/c2014-q2_20150123_12_2014q2_20150123_i88651.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2208,7 +2208,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150122",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150122_11_2014q2_20150123_i88f651.jpg"
+        "dest": "objeto/c2014-q2_20150122_11_2014q2_20150123_i88f651.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2221,7 +2221,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150122",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150122_10_2014q2f1_20150122_i88.jpg"
+        "dest": "objeto/c2014-q2_20150122_10_2014q2f1_20150122_i88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2233,7 +2233,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150107",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150107_9_c2014q2_20150107_i88.jpg"
+        "dest": "objeto/c2014-q2_20150107_9_c2014q2_20150107_i88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2245,7 +2245,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150107",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150107_8_c2014q2fil_20150107_i88.jpg"
+        "dest": "objeto/c2014-q2_20150107_8_c2014q2fil_20150107_i88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2258,7 +2258,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20150107",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20150107_7_c2014q2fil2_20150107_i881.jpg"
+        "dest": "objeto/c2014-q2_20150107_7_c2014q2fil2_20150107_i881.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2270,7 +2270,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20121200_6_2014q2.jpg"
+        "dest": "objeto/c2014-q2_20121200_6_2014q2.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2282,7 +2282,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20121200_5_2014q2f.jpg"
+        "dest": "objeto/c2014-q2_20121200_5_2014q2f.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2295,7 +2295,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20141226",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20141226_4_2014q2inv.jpg"
+        "dest": "objeto/c2014-q2_20141226_4_2014q2inv.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2308,7 +2308,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20141224",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20141224_3_2014q2_20141223_i881.jpg"
+        "dest": "objeto/c2014-q2_20141224_3_2014q2_20141223_i881.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2321,7 +2321,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20141224",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20141224_2_2014q2in_20141223_i88.jpg"
+        "dest": "objeto/c2014-q2_20141224_2_2014q2in_20141223_i88.jpg"
       },
       {
         "urlId": "c2014-q2",
@@ -2334,7 +2334,7 @@
         "nombre": "C/2014 Q2 (LOVEJOY)",
         "fecha": "20141224",
         "isIndex": false,
-        "dest": "registro/c2014-q2_20141224_1_2014q2rgb.jpg"
+        "dest": "objeto/c2014-q2_20141224_1_2014q2rgb.jpg"
       },
       {
         "urlId": "15P",
@@ -2347,7 +2347,7 @@
         "nombre": "15P/Finlay",
         "fecha": "20141220",
         "isIndex": false,
-        "dest": "registro/15P_20141220_1_15p_20141220_i88_.jpg"
+        "dest": "objeto/15P_20141220_1_15p_20141220_i88_.jpg"
       },
       {
         "urlId": "c2011-j2",
@@ -2359,7 +2359,7 @@
         "nombre": "C/2011 J2 (LINEAR)",
         "fecha": "20140915",
         "isIndex": false,
-        "dest": "registro/c2011-j2_20140915_4_c2011j2_20140915_i88.jpg"
+        "dest": "objeto/c2011-j2_20140915_4_c2011j2_20140915_i88.jpg"
       },
       {
         "urlId": "c2011-j2",
@@ -2372,7 +2372,7 @@
         "nombre": "C/2011 J2 (LINEAR)",
         "fecha": "20140915",
         "isIndex": false,
-        "dest": "registro/c2011-j2_20140915_3_c2011j2_20140915_i88dis_astr.jpg"
+        "dest": "objeto/c2011-j2_20140915_3_c2011j2_20140915_i88dis_astr.jpg"
       },
       {
         "urlId": "c2011-j2",
@@ -2406,7 +2406,7 @@
         "nombre": "C/2011 J2 (LINEAR)",
         "fecha": "20140915",
         "isIndex": false,
-        "dest": "registro/c2011-j2_20140915_2_c2014j2_1_20.jpg"
+        "dest": "objeto/c2011-j2_20140915_2_c2014j2_1_20.jpg"
       },
       {
         "urlId": "c2011-j2",
@@ -2419,7 +2419,7 @@
         "nombre": "C/2011 J2 (LINEAR)",
         "fecha": "20140914",
         "isIndex": false,
-        "dest": "registro/c2011-j2_20140914_1_c2011j2_20140914_i88iv.jpg"
+        "dest": "objeto/c2011-j2_20140914_1_c2011j2_20140914_i88iv.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2431,7 +2431,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140910",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140910_8_c2014e2_20140910_i88.jpg"
+        "dest": "objeto/c2014-e2_20140910_8_c2014e2_20140910_i88.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2444,7 +2444,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140910",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140910_7_c2014e2i_20140910_i881.jpg"
+        "dest": "objeto/c2014-e2_20140910_7_c2014e2i_20140910_i881.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2456,7 +2456,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140828",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140828_6_c2014e2_20140828_i88.jpg"
+        "dest": "objeto/c2014-e2_20140828_6_c2014e2_20140828_i88.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2469,7 +2469,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140827",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140827_5_c2014e2inv_20140828_i88.jpg"
+        "dest": "objeto/c2014-e2_20140827_5_c2014e2inv_20140828_i88.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2481,7 +2481,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140807",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140807_4_c2014e2_20140807_i88.jpg"
+        "dest": "objeto/c2014-e2_20140807_4_c2014e2_20140807_i88.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2494,7 +2494,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140807",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140807_3_c2014e2inv_20140807_i88.jpg"
+        "dest": "objeto/c2014-e2_20140807_3_c2014e2inv_20140807_i88.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2506,7 +2506,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140729",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140729_2_c2014e2_20140729_i882.jpg"
+        "dest": "objeto/c2014-e2_20140729_2_c2014e2_20140729_i882.jpg"
       },
       {
         "urlId": "c2014-e2",
@@ -2519,7 +2519,7 @@
         "nombre": "C/2014 E2 (JACQUES)",
         "fecha": "20140729",
         "isIndex": false,
-        "dest": "registro/c2014-e2_20140729_1_c2014e2_20140729_i88inver2.jpg"
+        "dest": "objeto/c2014-e2_20140729_1_c2014e2_20140729_i88inver2.jpg"
       },
       {
         "urlId": "c2013-uq4",
@@ -2531,7 +2531,7 @@
         "nombre": "C/2013 UQ4 (CATALINA)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2013-uq4_20121200_3_c2013uq4_es.jpg"
+        "dest": "objeto/c2013-uq4_20121200_3_c2013uq4_es.jpg"
       },
       {
         "urlId": "c2013-uq4",
@@ -2543,7 +2543,7 @@
         "nombre": "C/2013 UQ4 (CATALINA)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2013-uq4_20121200_2_c2013uq4_sig.jpg"
+        "dest": "objeto/c2013-uq4_20121200_2_c2013uq4_sig.jpg"
       },
       {
         "urlId": "c2013-uq4",
@@ -2556,7 +2556,7 @@
         "nombre": "C/2013 UQ4 (CATALINA)",
         "fecha": "20140701",
         "isIndex": false,
-        "dest": "registro/c2013-uq4_20140701_1_c2013uq4_20140701_i88z.jpg"
+        "dest": "objeto/c2013-uq4_20140701_1_c2013uq4_20140701_i88z.jpg"
       },
       {
         "urlId": "c2012-k1",
@@ -2569,7 +2569,7 @@
         "nombre": "C/2012 K1 (PANSTARRS)",
         "fecha": "20140523",
         "isIndex": false,
-        "dest": "registro/c2012-k1_20140523_4_2012k1-pro.jpg"
+        "dest": "objeto/c2012-k1_20140523_4_2012k1-pro.jpg"
       },
       {
         "urlId": "c2012-k1",
@@ -2582,7 +2582,7 @@
         "nombre": "C/2012 K1 (PANSTARRS)",
         "fecha": "20140522",
         "isIndex": false,
-        "dest": "registro/c2012-k1_20140522_3_c2012k1_20140522_i88.jpg"
+        "dest": "objeto/c2012-k1_20140522_3_c2012k1_20140522_i88.jpg"
       },
       {
         "urlId": "c2012-k1",
@@ -2595,7 +2595,7 @@
         "nombre": "C/2012 K1 (PANSTARRS)",
         "fecha": "20140423",
         "isIndex": false,
-        "dest": "registro/c2012-k1_20140423_2_c2012k1_20140423_i881.jpg"
+        "dest": "objeto/c2012-k1_20140423_2_c2012k1_20140423_i881.jpg"
       },
       {
         "urlId": "c2012-k1",
@@ -2608,7 +2608,7 @@
         "nombre": "C/2012 K1 (PANSTARRS)",
         "fecha": "20140307",
         "isIndex": false,
-        "dest": "registro/c2012-k1_20140307_1_2012k1lrgb_20140307_i88.jpg"
+        "dest": "objeto/c2012-k1_20140307_1_2012k1lrgb_20140307_i88.jpg"
       },
       {
         "urlId": "c2013-r1",
@@ -2621,7 +2621,7 @@
         "nombre": "C/2013 R1 (LOVEJOY)",
         "fecha": "20131204",
         "isIndex": false,
-        "dest": "registro/c2013-r1_20131204_4_2013r1_20131204_i88.jpg"
+        "dest": "objeto/c2013-r1_20131204_4_2013r1_20131204_i88.jpg"
       },
       {
         "urlId": "c2013-r1",
@@ -2634,7 +2634,7 @@
         "nombre": "C/2013 R1 (LOVEJOY)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2013-r1_20121200_3_procesado.jpg"
+        "dest": "objeto/c2013-r1_20121200_3_procesado.jpg"
       },
       {
         "urlId": "c2013-r1",
@@ -2647,7 +2647,7 @@
         "nombre": "C/2013 R1 (LOVEJOY)",
         "fecha": "20131117",
         "isIndex": false,
-        "dest": "registro/c2013-r1_20131117_2_2013r1_20131117_i88_.jpg"
+        "dest": "objeto/c2013-r1_20131117_2_2013r1_20131117_i88_.jpg"
       },
       {
         "urlId": "apj-logo",
@@ -2679,7 +2679,7 @@
         "label": "cometas-asteroides",
         "nombre": "C/2012 S1 (ISON)",
         "isIndex": false,
-        "dest": "registro/apj-logo_undefined_1_apj-logo.gif"
+        "dest": "objeto/apj-logo_undefined_1_apj-logo.gif"
       },
       {
         "urlId": "c2012-s1",
@@ -2692,7 +2692,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "20131116",
         "isIndex": false,
-        "dest": "registro/c2012-s1_20131116_8_c2012s1_20131116_i88.jpg"
+        "dest": "objeto/c2012-s1_20131116_8_c2012s1_20131116_i88.jpg"
       },
       {
         "urlId": "c2012-s1",
@@ -2705,7 +2705,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "20131116",
         "isIndex": false,
-        "dest": "registro/c2012-s1_20131116_7_2012s1rgb_20131116_i88.jpg"
+        "dest": "objeto/c2012-s1_20131116_7_2012s1rgb_20131116_i88.jpg"
       },
       {
         "urlId": "c2012-s1",
@@ -2718,7 +2718,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "20131107",
         "isIndex": false,
-        "dest": "registro/c2012-s1_20131107_6_c2012s1_20131107_i88.jpg"
+        "dest": "objeto/c2012-s1_20131107_6_c2012s1_20131107_i88.jpg"
       },
       {
         "urlId": "c2012-s1",
@@ -2731,7 +2731,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "20131012",
         "isIndex": false,
-        "dest": "registro/c2012-s1_20131012_5_c2012s1_20131013_i88.jpg"
+        "dest": "objeto/c2012-s1_20131012_5_c2012s1_20131013_i88.jpg"
       },
       {
         "urlId": "c2012-s1",
@@ -2744,7 +2744,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "20130407",
         "isIndex": false,
-        "dest": "registro/c2012-s1_20130407_4_2012s1_20130407_i88.jpg"
+        "dest": "objeto/c2012-s1_20130407_4_2012s1_20130407_i88.jpg"
       },
       {
         "urlId": "c2012-s1",
@@ -2757,7 +2757,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "20130130",
         "isIndex": false,
-        "dest": "registro/c2012-s1_20130130_3_2012s1-10-100s-31-enero-2013.jpg"
+        "dest": "objeto/c2012-s1_20130130_3_2012s1-10-100s-31-enero-2013.jpg"
       },
       {
         "urlId": "c2012-s1",
@@ -2770,7 +2770,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "20130106",
         "isIndex": false,
-        "dest": "registro/c2012-s1_20130106_2_user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011.jpg"
+        "dest": "objeto/c2012-s1_20130106_2_user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011.jpg"
       },
       {
         "urlId": "c2012-s1",
@@ -2783,7 +2783,7 @@
         "nombre": "C/2012 S1 (ISON)",
         "fecha": "Noviembre22",
         "isIndex": false,
-        "dest": "registro/c2012-s1_Noviembre22_1_user_556_2012s1_3__300s_22noviembre_2012pa.jpg"
+        "dest": "objeto/c2012-s1_Noviembre22_1_user_556_2012s1_3__300s_22noviembre_2012pa.jpg"
       },
       {
         "urlId": "c2013-r1",
@@ -2796,7 +2796,7 @@
         "nombre": "C/2013 R1 (LOVEJOY)",
         "fecha": "20130215",
         "isIndex": false,
-        "dest": "registro/c2013-r1_20130215_1_15-febrero-2013-201da12-20-10-5-2-1.jpg"
+        "dest": "objeto/c2013-r1_20130215_1_15-febrero-2013-201da12-20-10-5-2-1.jpg"
       },
       {
         "urlId": "99942-apophis",
@@ -2809,7 +2809,7 @@
         "nombre": "99942 Apophis",
         "fecha": "20130208",
         "isIndex": false,
-        "dest": "registro/99942-apophis_20130208_1_apophis-8febrero-2013.jpg"
+        "dest": "objeto/99942-apophis_20130208_1_apophis-8febrero-2013.jpg"
       },
       {
         "urlId": "c2012-k5",
@@ -2822,7 +2822,7 @@
         "nombre": "C/2012 K5 (LINEAR)",
         "fecha": "20120130",
         "isIndex": false,
-        "dest": "registro/c2012-k5_20120130_2_2012k5_20120130_i88.jpg"
+        "dest": "objeto/c2012-k5_20120130_2_2012k5_20120130_i88.jpg"
       },
       {
         "urlId": "c2012-k5",
@@ -2835,7 +2835,7 @@
         "nombre": "C/2012 K5 (LINEAR)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2012-k5_20121200_1_2012k5-150-10s-19didiem2012pa.jpg"
+        "dest": "objeto/c2012-k5_20121200_1_2012k5-150-10s-19didiem2012pa.jpg"
       },
       {
         "urlId": "168P",
@@ -2848,7 +2848,7 @@
         "nombre": "168P/Hergenrother",
         "fecha": "20121016",
         "isIndex": false,
-        "dest": "registro/168P_20121016_1_user_556_168p_20121016_i88_1_.jpg"
+        "dest": "objeto/168P_20121016_1_user_556_168p_20121016_i88_1_.jpg"
       },
       {
         "urlId": "c2011-l4",
@@ -2861,7 +2861,7 @@
         "nombre": "C/2011 L4 (PANSTARRS)",
         "fecha": "20130421",
         "isIndex": false,
-        "dest": "registro/c2011-l4_20130421_3_2011l4_20130421_i88.jpg"
+        "dest": "objeto/c2011-l4_20130421_3_2011l4_20130421_i88.jpg"
       },
       {
         "urlId": "c2011-l4",
@@ -2874,7 +2874,7 @@
         "nombre": "C/2011 L4 (PANSTARRS)",
         "fecha": "20120705",
         "isIndex": false,
-        "dest": "registro/c2011-l4_20120705_2_user_556_c2011_l4pa_15_julio2012_1342515487_708930.jpg"
+        "dest": "objeto/c2011-l4_20120705_2_user_556_c2011_l4pa_15_julio2012_1342515487_708930.jpg"
       },
       {
         "urlId": "c2011-l4",
@@ -2886,7 +2886,7 @@
         "nombre": "C/2011 L4 (PANSTARRS)",
         "fecha": "20121100",
         "isIndex": false,
-        "dest": "registro/c2011-l4_20121100_1_obras_031.gif"
+        "dest": "objeto/c2011-l4_20121100_1_obras_031.gif"
       },
       {
         "urlId": "c2005-yu55",
@@ -2898,7 +2898,7 @@
         "nombre": "2005 YU55 (308635)",
         "fecha": "20111159",
         "isIndex": false,
-        "dest": "registro/c2005-yu55_20111159_2_2005yu559-noviembre2011pa.jpg"
+        "dest": "objeto/c2005-yu55_20111159_2_2005yu559-noviembre2011pa.jpg"
       },
       {
         "urlId": "c2005-yu55",
@@ -2921,7 +2921,7 @@
         "nombre": "2005 YU55 (308635)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c2005-yu55_20121200_1_lulin-26-60s-l-pag-24fe-2009.jpg"
+        "dest": "objeto/c2005-yu55_20121200_1_lulin-26-60s-l-pag-24fe-2009.jpg"
       },
       {
         "urlId": "17P",
@@ -2934,7 +2934,7 @@
         "nombre": "17P/Holmes",
         "fecha": "20071118",
         "isIndex": false,
-        "dest": "registro/17P_20071118_4_11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg"
+        "dest": "objeto/17P_20071118_4_11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg"
       },
       {
         "urlId": "17P",
@@ -2947,7 +2947,7 @@
         "nombre": "17P/Holmes",
         "fecha": "20071114",
         "isIndex": false,
-        "dest": "registro/17P_20071114_3_cometa-17p-14-nobiembre2007-25-tomas-30s-pa.jpg"
+        "dest": "objeto/17P_20071114_3_cometa-17p-14-nobiembre2007-25-tomas-30s-pa.jpg"
       },
       {
         "urlId": "17P",
@@ -2960,7 +2960,7 @@
         "nombre": "17P/Holmes",
         "fecha": "20071108",
         "isIndex": false,
-        "dest": "registro/17P_20071108_2_cometa-17p-8-noviembre-2007-pg1.jpg"
+        "dest": "objeto/17P_20071108_2_cometa-17p-8-noviembre-2007-pg1.jpg"
       },
       {
         "urlId": "17P",
@@ -2973,7 +2973,7 @@
         "nombre": "17P/Holmes",
         "fecha": "20071028",
         "isIndex": false,
-        "dest": "registro/17P_20071028_1_cometa-17p-28-octubre-20h-27m-tu-pa.jpg"
+        "dest": "objeto/17P_20071028_1_cometa-17p-28-octubre-20h-27m-tu-pa.jpg"
       },
       {
         "urlId": "c2006-vz13",
@@ -2986,7 +2986,7 @@
         "nombre": "C/2006 VZ13 (LINEAR)",
         "fecha": "20070723",
         "isIndex": false,
-        "dest": "registro/c2006-vz13_20070723_2_m3-c2006vz13-b1-30s-as-23ju-w.jpg"
+        "dest": "objeto/c2006-vz13_20070723_2_m3-c2006vz13-b1-30s-as-23ju-w.jpg"
       },
       {
         "urlId": "c2006-vz13",
@@ -2999,7 +2999,7 @@
         "nombre": "C/2006 VZ13 (LINEAR)",
         "fecha": "20070711",
         "isIndex": false,
-        "dest": "registro/c2006-vz13_20070711_1_c2006-vz13-18-imagenes-60s-11julio2007.jpg"
+        "dest": "objeto/c2006-vz13_20070711_1_c2006-vz13-18-imagenes-60s-11julio2007.jpg"
       },
       {
         "urlId": "c2006-p1",
@@ -3012,7 +3012,7 @@
         "fecha": "20070112",
         "nombre": "C/2006 P1 (McNaught)",
         "isIndex": false,
-        "dest": "registro/c2006-p1_20070112_2_124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg"
+        "dest": "objeto/c2006-p1_20070112_2_124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg"
       },
       {
         "urlId": "c2006-p1",
@@ -3025,7 +3025,7 @@
         "fecha": "20070112",
         "nombre": "C/2006 P1 (McNaught)",
         "isIndex": false,
-        "dest": "registro/c2006-p1_20070112_1_tempel-dia-3-y-4-julio-2005.jpg"
+        "dest": "objeto/c2006-p1_20070112_1_tempel-dia-3-y-4-julio-2005.jpg"
       },
       {
         "urlId": "c2001-q4",
@@ -3038,7 +3038,7 @@
         "nombre": "C/2001 Q4 (NEAT)",
         "fecha": "20040515",
         "isIndex": false,
-        "dest": "registro/c2001-q4_20040515_1_mosaico-c2001q4-4tomas-de-60s72pp.jpg"
+        "dest": "objeto/c2001-q4_20040515_1_mosaico-c2001q4-4tomas-de-60s72pp.jpg"
       },
       {
         "urlId": "c2002-t7",
@@ -3051,7 +3051,7 @@
         "nombre": "C/2002 T7 (LINEAR)",
         "fecha": "20031222",
         "isIndex": false,
-        "dest": "registro/c2002-t7_20031222_1_c2002t7-22dicembre2003-suma-de-8-imagenes-de-60s.jpg"
+        "dest": "objeto/c2002-t7_20031222_1_c2002t7-22dicembre2003-suma-de-8-imagenes-de-60s.jpg"
       },
       {
         "urlId": "c1996-b2",
@@ -3064,7 +3064,7 @@
         "nombre": "C/1996 B2 (Hyakutake)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c1996-b2_20121200_2_c1996b2.jpg"
+        "dest": "objeto/c1996-b2_20121200_2_c1996b2.jpg"
       },
       {
         "urlId": "c1996-b2",
@@ -3076,7 +3076,7 @@
         "nombre": "C/1996 B2 (Hyakutake)",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/c1996-b2_20121200_1_hyakutake_carta.gif"
+        "dest": "objeto/c1996-b2_20121200_1_hyakutake_carta.gif"
       }
     ]
   },
@@ -3096,7 +3096,7 @@
         "nombre": "Hercules Cluster",
         "fecha": "20140200",
         "isIndex": false,
-        "dest": "registro/abell-2151_20140200_4_logodef.png"
+        "dest": "objeto/abell-2151_20140200_4_logodef.png"
       },
       {
         "urlId": "abell-2151",
@@ -3109,7 +3109,7 @@
         "nombre": "Hercules Cluster",
         "fecha": "20110527",
         "isIndex": false,
-        "dest": "registro/abell-2151_20110527_3_abel-2151-2-1200s-27-mayo-2011pa.jpg"
+        "dest": "objeto/abell-2151_20110527_3_abel-2151-2-1200s-27-mayo-2011pa.jpg"
       },
       {
         "urlId": "abell-2151",
@@ -3122,7 +3122,7 @@
         "nombre": "Hercules Cluster",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/abell-2151_20121200_2_hubble_sequence_photo.png"
+        "dest": "objeto/abell-2151_20121200_2_hubble_sequence_photo.png"
       },
       {
         "urlId": "abell-2151",
@@ -3135,7 +3135,7 @@
         "nombre": "Hercules Cluster",
         "fecha": "20170506",
         "isIndex": false,
-        "dest": "registro/abell-2151_20170506_1_20170506_200443.jpg"
+        "dest": "objeto/abell-2151_20170506_1_20170506_200443.jpg"
       },
       {
         "urlId": "sn2020-jfo",
@@ -3148,7 +3148,7 @@
         "localizacion": "NGC 4303",
         "fecha": "20200517",
         "isIndex": false,
-        "dest": "registro/sn2020-jfo_20200517_1_sn2020jfo._20200517.jpg"
+        "dest": "objeto/sn2020-jfo_20200517_1_sn2020jfo._20200517.jpg"
       },
       {
         "urlId": "sn219-ein",
@@ -3160,7 +3160,7 @@
         "text": "sn2019ein 10 Mayo 2019",
         "fecha": "20190510",
         "isIndex": false,
-        "dest": "registro/sn219-ein_20190510_1_sn219ein_20190510_gjcb.png"
+        "dest": "objeto/sn219-ein_20190510_1_sn219ein_20190510_gjcb.png"
       },
       {
         "urlId": "sn2019-ein",
@@ -3173,7 +3173,7 @@
         "localizacion": "NGC 5353",
         "fecha": "20190430",
         "isIndex": false,
-        "dest": "registro/sn2019-ein_20190430_1_snm51.jpg"
+        "dest": "objeto/sn2019-ein_20190430_1_snm51.jpg"
       },
       {
         "urlId": "ngc-4627",
@@ -3185,7 +3185,7 @@
         "text": "ngc 4627 26Abril 2019",
         "fecha": "20190426",
         "isIndex": false,
-        "dest": "registro/ngc-4627_20190426_1_ngc4627.jpg"
+        "dest": "objeto/ngc-4627_20190426_1_ngc4627.jpg"
       },
       {
         "urlId": "ngc-4656",
@@ -3197,7 +3197,7 @@
         "text": "ngc 4656 26Abril 2019",
         "fecha": "20190426",
         "isIndex": false,
-        "dest": "registro/ngc-4656_20190426_1_ngc4656.jpg"
+        "dest": "objeto/ngc-4656_20190426_1_ngc4656.jpg"
       },
       {
         "urlId": "ngc-5194",
@@ -3210,7 +3210,7 @@
         "nombre": "M51",
         "fecha": "20190302",
         "isIndex": false,
-        "dest": "registro/ngc-5194_20190302_2_m51.jpg"
+        "dest": "objeto/ngc-5194_20190302_2_m51.jpg"
       },
       {
         "urlId": "at2019-ahd",
@@ -3223,7 +3223,7 @@
         "localizacion": "NGC 3423",
         "fecha": "20190213",
         "isIndex": false,
-        "dest": "registro/at2019-ahd_20190213_2_at2019ahd_20190214_gjcb.jpg"
+        "dest": "objeto/at2019-ahd_20190213_2_at2019ahd_20190214_gjcb.jpg"
       },
       {
         "urlId": "at2019-ahd",
@@ -3236,7 +3236,7 @@
         "localizacion": "NGC 3423",
         "fecha": "20190114",
         "isIndex": false,
-        "dest": "registro/at2019-ahd_20190114_1_rgb.jpg"
+        "dest": "objeto/at2019-ahd_20190114_1_rgb.jpg"
       },
       {
         "urlId": "sn2019-np",
@@ -3249,7 +3249,7 @@
         "localizacion": "NGC 3254",
         "fecha": "20190112",
         "isIndex": false,
-        "dest": "registro/sn2019-np_20190112_1_sn2019np_20190112_gjcb-1.png"
+        "dest": "objeto/sn2019-np_20190112_1_sn2019np_20190112_gjcb-1.png"
       },
       {
         "urlId": "sn2018-isq",
@@ -3261,7 +3261,7 @@
         "text": "sn2018isq 3 Diciembre 2018",
         "fecha": "20181203",
         "isIndex": false,
-        "dest": "registro/sn2018-isq_20181203_1_2018isq_20181203_gjcb.jpg"
+        "dest": "objeto/sn2018-isq_20181203_1_2018isq_20181203_gjcb.jpg"
       },
       {
         "urlId": "sn2018-ivc",
@@ -3274,7 +3274,7 @@
         "localizacion": "M77",
         "fecha": "20181126",
         "isIndex": false,
-        "dest": "registro/sn2018-ivc_20181126_1_sn2018ivc_20181126_gjcb.jpg"
+        "dest": "objeto/sn2018-ivc_20181126_1_sn2018ivc_20181126_gjcb.jpg"
       },
       {
         "urlId": "sn2018-imf",
@@ -3287,7 +3287,7 @@
         "localizacion": "PGC 57660",
         "fecha": "20181116",
         "isIndex": false,
-        "dest": "registro/sn2018-imf_20181116_1_sn-2018imf_20181116_gjcb.jpg"
+        "dest": "objeto/sn2018-imf_20181116_1_sn-2018imf_20181116_gjcb.jpg"
       },
       {
         "urlId": "at2018-gjx",
@@ -3299,7 +3299,7 @@
         "text": "at2018gjx 19 Septiembre 2018",
         "fecha": "20180919",
         "isIndex": false,
-        "dest": "registro/at2018-gjx_20180919_1_at2018gjx_20180919_gjcb.png"
+        "dest": "objeto/at2018-gjx_20180919_1_at2018gjx_20180919_gjcb.png"
       },
       {
         "urlId": "sn2018-cow",
@@ -3312,7 +3312,7 @@
         "localizacion": "PGC 57660",
         "fecha": "20180702",
         "isIndex": false,
-        "dest": "registro/sn2018-cow_20180702_1_sn2018cow.png"
+        "dest": "objeto/sn2018-cow_20180702_1_sn2018cow.png"
       },
       {
         "urlId": "m109",
@@ -3324,7 +3324,7 @@
         "text": "M109 New 360mm 2730mm focal 11Mayo2018",
         "fecha": "20180511",
         "isIndex": false,
-        "dest": "registro/m109_20180511_1_m109.png"
+        "dest": "objeto/m109_20180511_1_m109.png"
       },
       {
         "urlId": "sn2018-zd",
@@ -3337,7 +3337,7 @@
         "localizacion": "NGC 2146",
         "fecha": "20180321",
         "isIndex": false,
-        "dest": "registro/sn2018-zd_20180321_1_2018zd_20180321_i88.jpg"
+        "dest": "objeto/sn2018-zd_20180321_1_2018zd_20180321_i88.jpg"
       },
       {
         "urlId": "at2018-gv",
@@ -3349,7 +3349,7 @@
         "localizacion": "NGC 2525",
         "fecha": "20180202",
         "isIndex": false,
-        "dest": "registro/at2018-gv_20180202_1_at2018gv_20180202_i88.jpg"
+        "dest": "objeto/at2018-gv_20180202_1_at2018gv_20180202_i88.jpg"
       },
       {
         "urlId": "at2017-eaw",
@@ -3362,7 +3362,7 @@
         "localizacion": "NGC 6946",
         "fecha": "20170602",
         "isIndex": false,
-        "dest": "registro/at2017-eaw_20170602_1_2017eaw_20170702_i88.jpg"
+        "dest": "objeto/at2017-eaw_20170602_1_2017eaw_20170702_i88.jpg"
       },
       {
         "urlId": "sn2017-eax",
@@ -3374,7 +3374,7 @@
         "text": "SN2017eax 18Mayo 2017",
         "fecha": "20170518",
         "isIndex": false,
-        "dest": "registro/sn2017-eax_20170518_1_sn2017eax_20170518_i88.jpg"
+        "dest": "objeto/sn2017-eax_20170518_1_sn2017eax_20170518_i88.jpg"
       },
       {
         "urlId": "sn2017-dfc",
@@ -3386,7 +3386,7 @@
         "text": "Supernova 2017dfc en un principio se penso que pertenecia a M63 pero su magnitud desconcertaba despues de su estudio espectral se comprobo que estaba a una distancia de casi 900millones años luz mientras que M63 esta a unos 30 millones es decir esta justo detras de la Galaxia en nuestro campo de vision",
         "fecha": "20170423",
         "isIndex": false,
-        "dest": "registro/sn2017-dfc_20170423_1_2017dfc_20170423_i88.jpg"
+        "dest": "objeto/sn2017-dfc_20170423_1_2017dfc_20170423_i88.jpg"
       },
       {
         "urlId": "sn2016-gfy",
@@ -3398,7 +3398,7 @@
         "text": "sn2016gfy en ngc 2276 24 Septiembre 2016",
         "fecha": "20160924",
         "isIndex": false,
-        "dest": "registro/sn2016-gfy_20160924_1_sn2016gfy_ngc2276.jpg"
+        "dest": "objeto/sn2016-gfy_20160924_1_sn2016gfy_ngc2276.jpg"
       },
       {
         "urlId": "sn2016-cok",
@@ -3411,7 +3411,7 @@
         "localizacion": "M66",
         "fecha": "20160530",
         "isIndex": false,
-        "dest": "registro/sn2016-cok_20160530_1_m66m65_20160530_i881.jpg"
+        "dest": "objeto/sn2016-cok_20160530_1_m66m65_20160530_i881.jpg"
       },
       {
         "urlId": "sn2016-coj",
@@ -3424,7 +3424,7 @@
         "localizacion": "NGC 4125",
         "fecha": "20160529",
         "isIndex": false,
-        "dest": "registro/sn2016-coj_20160529_1_sn2016coj_20160530_i881.jpg"
+        "dest": "objeto/sn2016-coj_20160529_1_sn2016coj_20160530_i881.jpg"
       },
       {
         "urlId": "ngc-891",
@@ -3436,7 +3436,7 @@
         "text": "NGC 891",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/ngc-891_20121200_1_ngc891pa.jpg"
+        "dest": "objeto/ngc-891_20121200_1_ngc891pa.jpg"
       },
       {
         "urlId": "oj287",
@@ -3448,7 +3448,7 @@
         "text": "OJ 287\n\npublicacion apjl_819_2_l37",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/oj287_20121200_1_pulsar.jpg"
+        "dest": "objeto/oj287_20121200_1_pulsar.jpg"
       },
       {
         "urlId": "m33",
@@ -3460,7 +3460,7 @@
         "text": "M33",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/m33_20121200_1_m33lrgbpro.jpg"
+        "dest": "objeto/m33_20121200_1_m33lrgbpro.jpg"
       },
       {
         "urlId": "quinteto",
@@ -3472,7 +3472,7 @@
         "text": "Imagen del Quinteto 15 Noviembre 2015",
         "fecha": "20151115",
         "isIndex": false,
-        "dest": "registro/quinteto_20151115_1_quinteto.png"
+        "dest": "objeto/quinteto_20151115_1_quinteto.png"
       },
       {
         "urlId": "ngc-7331",
@@ -3484,7 +3484,7 @@
         "text": "NGC7331 16 Octubre2015 9 tomas de 600s",
         "fecha": "20151016",
         "isIndex": false,
-        "dest": "registro/ngc-7331_20151016_1_ngc7331_9_600s_16102015.jpg"
+        "dest": "objeto/ngc-7331_20151016_1_ngc7331_9_600s_16102015.jpg"
       },
       {
         "urlId": "m82",
@@ -3496,7 +3496,7 @@
         "text": "M82 filtro h alfa",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/m82_20121200_1_m82ha.jpg"
+        "dest": "objeto/m82_20121200_1_m82ha.jpg"
       },
       {
         "urlId": "psn-j17292918-7542390",
@@ -3509,7 +3509,7 @@
         "localizacion": "NGC 6412",
         "fecha": "20150715",
         "isIndex": false,
-        "dest": "registro/psn-j17292918-7542390_20150715_1_psn-j172929187542390_ngc6412_20150715_i88.jpg"
+        "dest": "objeto/psn-j17292918-7542390_20150715_1_psn-j172929187542390_ngc6412_20150715_i88.jpg"
       },
       {
         "urlId": "psn-j20435314-1230304",
@@ -3522,7 +3522,7 @@
         "localizacion": "NGC 6956",
         "fecha": "20150712",
         "isIndex": false,
-        "dest": "registro/psn-j20435314-1230304_20150712_1_psn-j204353141230304ngc6956.jpg"
+        "dest": "objeto/psn-j20435314-1230304_20150712_1_psn-j204353141230304ngc6956.jpg"
       },
       {
         "urlId": "psn-j07285387-3349106",
@@ -3535,7 +3535,7 @@
         "localizacion": "NGC 23882",
         "fecha": "20150223",
         "isIndex": false,
-        "dest": "registro/psn-j07285387-3349106_20150223_1_psn-j072853873349106_ngc23882.jpg"
+        "dest": "objeto/psn-j07285387-3349106_20150223_1_psn-j072853873349106_ngc23882.jpg"
       },
       {
         "urlId": "psn-j14021678-5426205",
@@ -3548,7 +3548,7 @@
         "localizacion": "M101",
         "fecha": "20150222",
         "isIndex": false,
-        "dest": "registro/psn-j14021678-5426205_20150222_1_m101psn-j140216785426205.jpg"
+        "dest": "objeto/psn-j14021678-5426205_20150222_1_m101psn-j140216785426205.jpg"
       },
       {
         "urlId": "m110",
@@ -3560,7 +3560,7 @@
         "text": "Galaxia eliptica M110_E6-20141212",
         "fecha": "20141212",
         "isIndex": false,
-        "dest": "registro/m110_20141212_1_m110_e6_20141212.jpg"
+        "dest": "objeto/m110_20141212_1_m110_e6_20141212.jpg"
       },
       {
         "urlId": "sn2014-dg",
@@ -3573,7 +3573,7 @@
         "localizacion": "UGC 2855",
         "fecha": "20141217",
         "isIndex": false,
-        "dest": "registro/sn2014-dg_20141217_1_sn2014dg_ugc2855_20141217.jpg"
+        "dest": "objeto/sn2014-dg_20141217_1_sn2014dg_ugc2855_20141217.jpg"
       },
       {
         "urlId": "psn-j22081243-4110503",
@@ -3586,7 +3586,7 @@
         "localizacion": "UGC 11919",
         "fecha": "20141212",
         "isIndex": false,
-        "dest": "registro/psn-j22081243-4110503_20141212_1_psn-j220812434110503_ugc11919_sbc2014121512.jpg"
+        "dest": "objeto/psn-j22081243-4110503_20141212_1_psn-j220812434110503_ugc11919_sbc2014121512.jpg"
       },
       {
         "urlId": "pnv-j03093063-2638031",
@@ -3599,7 +3599,7 @@
         "localizacion": "Aries",
         "fecha": "20141030",
         "isIndex": false,
-        "dest": "registro/pnv-j03093063-2638031_20141030_1_pnv_-j030930632638031.jpg"
+        "dest": "objeto/pnv-j03093063-2638031_20141030_1_pnv_-j030930632638031.jpg"
       },
       {
         "urlId": "sn2014-cx",
@@ -3611,7 +3611,7 @@
         "text": "sn2014cx 30Octubre2014",
         "fecha": "20141030",
         "isIndex": false,
-        "dest": "registro/sn2014-cx_20141030_1_sn2014cx20141030_i88.jpg"
+        "dest": "objeto/sn2014-cx_20141030_1_sn2014cx20141030_i88.jpg"
       },
       {
         "urlId": "snhunt260",
@@ -3623,7 +3623,7 @@
         "text": "SNhunt260 21Octubre2014",
         "fecha": "20141021",
         "isIndex": false,
-        "dest": "registro/snhunt260_20141021_1_snhunt260-_20141021_i88.jpg"
+        "dest": "objeto/snhunt260_20141021_1_snhunt260-_20141021_i88.jpg"
       },
       {
         "urlId": "sn2014-cy",
@@ -3636,7 +3636,7 @@
         "localizacion": "NGC 7742",
         "fecha": "20141018",
         "isIndex": false,
-        "dest": "registro/sn2014-cy_20141018_1_sn2014cy_20141018_gjcb1.jpg"
+        "dest": "objeto/sn2014-cy_20141018_1_sn2014cy_20141018_gjcb1.jpg"
       },
       {
         "urlId": "sn2014-bv",
@@ -3649,7 +3649,7 @@
         "localizacion": "NGC 4386",
         "fecha": "20140714",
         "isIndex": false,
-        "dest": "registro/sn2014-bv_20140714_1_sn2014bv_20140714_i88-copia.jpg"
+        "dest": "objeto/sn2014-bv_20140714_1_sn2014bv_20140714_i88-copia.jpg"
       },
       {
         "urlId": "sn2014-aa",
@@ -3661,7 +3661,7 @@
         "text": "sn2014aa 26marzo 2014",
         "fecha": "20140326",
         "isIndex": false,
-        "dest": "registro/sn2014-aa_20140326_1_sn2014aa_20140326_i88.jpg"
+        "dest": "objeto/sn2014-aa_20140326_1_sn2014aa_20140326_i88.jpg"
       },
       {
         "urlId": "sn2014-ai",
@@ -3673,7 +3673,7 @@
         "text": "sn2014ai 26marzo2014",
         "fecha": "20140326",
         "isIndex": false,
-        "dest": "registro/sn2014-ai_20140326_1_sn2014ai_20140326_i88.jpg"
+        "dest": "objeto/sn2014-ai_20140326_1_sn2014ai_20140326_i88.jpg"
       },
       {
         "urlId": "sn2014-l",
@@ -3686,7 +3686,7 @@
         "localizacion": "M99",
         "fecha": "20140307",
         "isIndex": false,
-        "dest": "registro/sn2014-l_20140307_1_sn2014l_20140307_i88.jpg"
+        "dest": "objeto/sn2014-l_20140307_1_sn2014l_20140307_i88.jpg"
       },
       {
         "urlId": "sn2013-am",
@@ -3699,7 +3699,7 @@
         "localizacion": "NGC3448",
         "fecha": "20140202",
         "isIndex": false,
-        "dest": "registro/sn2013-am_20140202_1_sn2014g_20140202_i88.jpg"
+        "dest": "objeto/sn2013-am_20140202_1_sn2014g_20140202_i88.jpg"
       },
       {
         "urlId": "sn2014-j",
@@ -3712,7 +3712,7 @@
         "localizacion": "M82",
         "fecha": "20140202",
         "isIndex": false,
-        "dest": "registro/sn2014-j_20140202_2_sn2014jrgb_20140202_i88.jpg"
+        "dest": "objeto/sn2014-j_20140202_2_sn2014jrgb_20140202_i88.jpg"
       },
       {
         "urlId": "sn2014-j",
@@ -3725,7 +3725,7 @@
         "localizacion": "M82",
         "fecha": "20140202",
         "isIndex": false,
-        "dest": "registro/sn2014-j_20140202_1_sn2014j_20140202_i88.jpg"
+        "dest": "objeto/sn2014-j_20140202_1_sn2014j_20140202_i88.jpg"
       },
       {
         "urlId": "arp-99",
@@ -3739,7 +3739,7 @@
         "localizacion": "Pegaso",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/arp-99_20121200_1_arp99.jpg"
+        "dest": "objeto/arp-99_20121200_1_arp99.jpg"
       },
       {
         "urlId": "sn2013-ev",
@@ -3751,7 +3751,7 @@
         "text": "SN 2013ev en IC 1296\n\nsuma de 6 imagenes de 300s",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/sn2013-ev_20121200_1_sn2013ev-6-300sf.jpg"
+        "dest": "objeto/sn2013-ev_20121200_1_sn2013ev-6-300sf.jpg"
       },
       {
         "urlId": "sn2013-fa",
@@ -3764,7 +3764,7 @@
         "localizacion": "Delfín",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/sn2013-fa_20121200_1_2013fa-2013-09-10-u.jpg"
+        "dest": "objeto/sn2013-fa_20121200_1_2013fa-2013-09-10-u.jpg"
       },
       {
         "urlId": "sn2014-g",
@@ -3777,7 +3777,7 @@
         "localizacion": "M65",
         "fecha": "20130402",
         "isIndex": false,
-        "dest": "registro/sn2014-g_20130402_1_m65-3-600s-2abril-2013.jpg"
+        "dest": "objeto/sn2014-g_20130402_1_m65-3-600s-2abril-2013.jpg"
       },
       {
         "urlId": "sn2011-dh",
@@ -3788,7 +3788,7 @@
         "label": "galaxias",
         "fecha": "20110622",
         "isIndex": false,
-        "dest": "registro/sn2011-dh_20110622_1_user_556_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104.jpg"
+        "dest": "objeto/sn2011-dh_20110622_1_user_556_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104.jpg"
       },
       {
         "urlId": "ngc-5033",
@@ -3800,7 +3800,7 @@
         "text": "m51 22junio2011 NGC 5O33 7*600S",
         "fecha": "20110622",
         "isIndex": false,
-        "dest": "registro/ngc-5033_20110622_1_ngc-5033-7-600s-10g-8-abril-2011pa2.jpg"
+        "dest": "objeto/ngc-5033_20110622_1_ngc-5033-7-600s-10g-8-abril-2011pa2.jpg"
       },
       {
         "urlId": "ngc-5317",
@@ -3812,7 +3812,7 @@
         "text": "NGC 5317 2*1200S",
         "fecha": "20121200",
         "isIndex": false,
-        "dest": "registro/ngc-5317_20121200_1_ngc-5317-2-1200srr.jpg"
+        "dest": "objeto/ngc-5317_20121200_1_ngc-5317-2-1200srr.jpg"
       },
       {
         "urlId": "ngc-5194",
@@ -3825,7 +3825,7 @@
         "nombre": "M51",
         "fecha": "20050630",
         "isIndex": false,
-        "dest": "registro/ngc-5194_20050630_1_m51-22h02m18s-dia-30junio-2005-exp120segundos-dos-imagenes.jpg"
+        "dest": "objeto/ngc-5194_20050630_1_m51-22h02m18s-dia-30junio-2005-exp120segundos-dos-imagenes.jpg"
       },
       {
         "urlId": "sn2005-cs",
@@ -3836,7 +3836,7 @@
         "text": "Measures",
         "fecha": "20050630",
         "isIndex": false,
-        "dest": "registro/sn2005-cs_20050630_1_rainbowl.gif"
+        "dest": "objeto/sn2005-cs_20050630_1_rainbowl.gif"
       }
     ]
   },
@@ -3853,7 +3853,7 @@
         "label": "nebulosas",
         "fecha": "20210121",
         "isIndex": false,
-        "dest": "registro/m42_20210121_3_img-20210121-wa0011-1.jpg"
+        "dest": "objeto/m42_20210121_3_img-20210121-wa0011-1.jpg"
       },
       {
         "urlId": "orion",
@@ -3866,7 +3866,7 @@
         "fecha": "20210112",
         "nombre": "Zona de Orion",
         "isIndex": false,
-        "dest": "registro/orion_20210112_1_final.jpg"
+        "dest": "objeto/orion_20210112_1_final.jpg"
       },
       {
         "urlId": "ngc-2237",
@@ -3879,7 +3879,7 @@
         "nombre": "Nebulosa Roseta",
         "fecha": "20210100",
         "isIndex": false,
-        "dest": "registro/ngc-2237_20210100_1_integration_abe-copia.jpg"
+        "dest": "objeto/ngc-2237_20210100_1_integration_abe-copia.jpg"
       },
       {
         "urlId": "ngc-2024",
@@ -3891,7 +3891,7 @@
         "text": "NGC 2237Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020",
         "fecha": "20190929",
         "isIndex": false,
-        "dest": "registro/ngc-2024_20190929_2_img-20200302-wa0019.jpg"
+        "dest": "objeto/ngc-2024_20190929_2_img-20200302-wa0019.jpg"
       },
       {
         "urlId": "ngc-2024",
@@ -3903,7 +3903,7 @@
         "text": "NGC 2024 29 Septiembre 2019 T 200mm F 1400mm+Sony A7s",
         "fecha": "20190929",
         "isIndex": false,
-        "dest": "registro/ngc-2024_20190929_1_ngc2024final.jpg"
+        "dest": "objeto/ngc-2024_20190929_1_ngc2024final.jpg"
       },
       {
         "urlId": "m45",
@@ -3915,7 +3915,7 @@
         "text": "M45 29 Septiembre 2019 T 200mm F 1400mm+Sony A7s",
         "fecha": "20190929",
         "isIndex": false,
-        "dest": "registro/m45_20190929_1_m45final.jpg"
+        "dest": "objeto/m45_20190929_1_m45final.jpg"
       },
       {
         "urlId": "m57",
@@ -3927,7 +3927,7 @@
         "text": "M57 7 Octrubre 2018 New 360mm F 2730mm",
         "fecha": "20181000",
         "isIndex": false,
-        "dest": "registro/m57_20181000_2_m57_f.jpg"
+        "dest": "objeto/m57_20181000_2_m57_f.jpg"
       },
       {
         "urlId": "ngc-7000",
@@ -3940,7 +3940,7 @@
         "fecha": "20180808",
         "nombre": "Nebulosa del pelícano",
         "isIndex": false,
-        "dest": "registro/ngc-7000_20180808_1_1.png"
+        "dest": "objeto/ngc-7000_20180808_1_1.png"
       },
       {
         "urlId": "m97",
@@ -3952,7 +3952,7 @@
         "text": "M97 20*180s B1 17Abril 2018",
         "fecha": "20180417",
         "isIndex": false,
-        "dest": "registro/m97_20180417_1_m97.jpg"
+        "dest": "objeto/m97_20180417_1_m97.jpg"
       },
       {
         "urlId": "m42",
@@ -3964,7 +3964,7 @@
         "text": "M42 26Enero2016 nikon d90 sin modificar",
         "fecha": "20160126",
         "isIndex": false,
-        "dest": "registro/m42_20160126_2_m42f_re.jpg"
+        "dest": "objeto/m42_20160126_2_m42f_re.jpg"
       },
       {
         "urlId": "m1",
@@ -3976,7 +3976,7 @@
         "text": "M1 Noviembre 2016",
         "fecha": "20161101",
         "isIndex": false,
-        "dest": "registro/m1_20161101_1_m1_20161111_i88.jpg"
+        "dest": "objeto/m1_20161101_1_m1_20161111_i88.jpg"
       },
       {
         "urlId": "m42",
@@ -3988,7 +3988,7 @@
         "text": "M42 mosaico de dos imagenes",
         "fecha": "20160101",
         "isIndex": false,
-        "dest": "registro/m42_20160101_1_m42_20160101_i88.jpg"
+        "dest": "objeto/m42_20160101_1_m42_20160101_i88.jpg"
       },
       {
         "urlId": "ic-434",
@@ -4000,7 +4000,7 @@
         "text": "Zona ic 434 rgb 600sR 600sG 600sB R ts65 f 420 +ccd",
         "fecha": "20121100",
         "isIndex": false,
-        "dest": "registro/ic-434_20121100_2_zona_-ic434_re.jpg"
+        "dest": "objeto/ic-434_20121100_2_zona_-ic434_re.jpg"
       },
       {
         "urlId": "ic-434",
@@ -4012,7 +4012,7 @@
         "text": "Mosaico Zona ic 434 New 360 mm f 1810+ccd",
         "fecha": "20121100",
         "isIndex": false,
-        "dest": "registro/ic-434_20121100_1_2024-ic434-pp.jpg"
+        "dest": "objeto/ic-434_20121100_1_2024-ic434-pp.jpg"
       },
       {
         "urlId": "ic-5146",
@@ -4024,7 +4024,7 @@
         "text": "ngc5146",
         "fecha": "20121000",
         "isIndex": false,
-        "dest": "registro/ic-5146_20121000_1_ic-5146-15-600s-pa2.jpg"
+        "dest": "objeto/ic-5146_20121000_1_ic-5146-15-600s-pa2.jpg"
       },
       {
         "urlId": "abel-21",
@@ -4036,7 +4036,7 @@
         "text": "abel 21",
         "fecha": "20121000",
         "isIndex": false,
-        "dest": "registro/abel-21_20121000_1_user_556_medusa_pa.jpg"
+        "dest": "objeto/abel-21_20121000_1_user_556_medusa_pa.jpg"
       },
       {
         "urlId": "s106",
@@ -4048,7 +4048,7 @@
         "text": "S106 en la constelacion de Cisne 15Julio2015",
         "fecha": "20150715",
         "isIndex": false,
-        "dest": "registro/s106_20150715_2_s106.jpg"
+        "dest": "objeto/s106_20150715_2_s106.jpg"
       },
       {
         "urlId": "s106",
@@ -4059,7 +4059,7 @@
         "label": "nebulosas",
         "fecha": "20150715",
         "isIndex": false,
-        "dest": "registro/s106_20150715_1_comparativa.jpg"
+        "dest": "objeto/s106_20150715_1_comparativa.jpg"
       },
       {
         "urlId": "m27",
@@ -4071,7 +4071,7 @@
         "text": "S106 en la constelacion de Cisne 15Julio2015 (comparativa telescopio Subaru 8.2mts)\n\nM27RGB",
         "fecha": "20150715",
         "isIndex": false,
-        "dest": "registro/m27_20150715_2_m27_19junio2015final.jpg"
+        "dest": "objeto/m27_20150715_2_m27_19junio2015final.jpg"
       },
       {
         "urlId": "m27",
@@ -4083,7 +4083,7 @@
         "text": "M27 Halfa",
         "fecha": "20121100",
         "isIndex": false,
-        "dest": "registro/m27_20121100_1_m27.jpg"
+        "dest": "objeto/m27_20121100_1_m27.jpg"
       },
       {
         "urlId": "ic-1398",
@@ -4096,7 +4096,7 @@
         "nombre": "Trompa de Elefante",
         "fecha": "20121100",
         "isIndex": false,
-        "dest": "registro/ic-1398_20121100_1_trompa-pa.jpg"
+        "dest": "objeto/ic-1398_20121100_1_trompa-pa.jpg"
       },
       {
         "urlId": "m57",
@@ -4108,7 +4108,7 @@
         "text": "M57 RGB",
         "fecha": "20121100",
         "isIndex": false,
-        "dest": "registro/m57_20121100_1_rgbpix3.jpg"
+        "dest": "objeto/m57_20121100_1_rgbpix3.jpg"
       },
       {
         "urlId": "ngc-6888",
@@ -4120,7 +4120,7 @@
         "text": "NGC 6888 Ha 8 imagenes de 1200s",
         "fecha": "20090821",
         "isIndex": false,
-        "dest": "registro/ngc-6888_20090821_1_ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg"
+        "dest": "objeto/ngc-6888_20090821_1_ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg"
       },
       {
         "urlId": "ngc-7635",
@@ -4132,7 +4132,7 @@
         "text": "Ngc 7635 filtro ha",
         "fecha": "20121000",
         "isIndex": false,
-        "dest": "registro/ngc-7635_20121000_1_l-ngc-7635-pa.jpg"
+        "dest": "objeto/ngc-7635_20121000_1_l-ngc-7635-pa.jpg"
       }
     ]
   },
@@ -4150,7 +4150,7 @@
         "fecha": "20211221",
         "nombre": "Conjunción de Jupiter y Saturno",
         "isIndex": false,
-        "dest": "registro/jupiter-saturno_20211221_2_conjuncion.gif"
+        "dest": "objeto/jupiter-saturno_20211221_2_conjuncion.gif"
       },
       {
         "urlId": "jupiter-saturno",
@@ -4161,7 +4161,7 @@
         "fecha": "20201220",
         "nombre": "Conjunción Júpiter y Saturno",
         "isIndex": false,
-        "dest": "registro/jupiter-saturno_20201220_1_jupiter-saturno-20diciembre2020-2.png"
+        "dest": "objeto/jupiter-saturno_20201220_1_jupiter-saturno-20diciembre2020-2.png"
       },
       {
         "urlId": "sol",
@@ -4171,7 +4171,7 @@
         "label": "sistema-solar",
         "fecha": "20201201",
         "isIndex": false,
-        "dest": "registro/sol_20201201_3_dsc05191.jpg"
+        "dest": "objeto/sol_20201201_3_dsc05191.jpg"
       },
       {
         "urlId": "sol",
@@ -4182,7 +4182,7 @@
         "text": "Imagen del sol dia 1 diciembre",
         "fecha": "20201201",
         "isIndex": false,
-        "dest": "registro/sol_20201201_2_1_152049_l5_ap666.png"
+        "dest": "objeto/sol_20201201_2_1_152049_l5_ap666.png"
       },
       {
         "urlId": "marte",
@@ -4194,7 +4194,7 @@
         "text": "Marte 29 Octubre 2020",
         "fecha": "20201029",
         "isIndex": false,
-        "dest": "registro/marte_20201029_1_img-20201030-wa0020.jpg"
+        "dest": "objeto/marte_20201029_1_img-20201030-wa0020.jpg"
       },
       {
         "urlId": "luna",
@@ -4206,7 +4206,7 @@
         "text": "Superluna 14Noviembre2016",
         "fecha": "20161114",
         "isIndex": false,
-        "dest": "registro/luna_20161114_8_luna_14noviembre2016.jpg"
+        "dest": "objeto/luna_20161114_8_luna_14noviembre2016.jpg"
       },
       {
         "urlId": "luna",
@@ -4218,7 +4218,7 @@
         "fecha": "20150320",
         "nombre": "Eclipse de Luna",
         "isIndex": false,
-        "dest": "registro/luna_20150320_7_luna-110-2pa2.jpg"
+        "dest": "objeto/luna_20150320_7_luna-110-2pa2.jpg"
       },
       {
         "urlId": "luna",
@@ -4231,7 +4231,7 @@
         "fecha": "20150320",
         "nombre": "Eclipse de Luna",
         "isIndex": false,
-        "dest": "registro/luna_20150320_6_luna-358mmpa1.jpg"
+        "dest": "objeto/luna_20150320_6_luna-358mmpa1.jpg"
       },
       {
         "urlId": "luna",
@@ -4243,7 +4243,7 @@
         "fecha": "20150320",
         "nombre": "Eclipse de Luna",
         "isIndex": false,
-        "dest": "registro/luna_20150320_5_ecclipse1_20marzo_2015-006.jpg"
+        "dest": "objeto/luna_20150320_5_ecclipse1_20marzo_2015-006.jpg"
       },
       {
         "urlId": "luna",
@@ -4255,7 +4255,7 @@
         "fecha": "20150320",
         "nombre": "Eclipse de Luna",
         "isIndex": false,
-        "dest": "registro/luna_20150320_4_ecclipse2_20marzo_2015-006.jpg"
+        "dest": "objeto/luna_20150320_4_ecclipse2_20marzo_2015-006.jpg"
       },
       {
         "urlId": "luna",
@@ -4268,7 +4268,7 @@
         "fecha": "20150320",
         "nombre": "Eclipse de Luna",
         "isIndex": false,
-        "dest": "registro/luna_20150320_3_ecclipse3_20marzo_2015-006.jpg"
+        "dest": "objeto/luna_20150320_3_ecclipse3_20marzo_2015-006.jpg"
       },
       {
         "urlId": "venus-luna",
@@ -4281,7 +4281,7 @@
         "fecha": "20070618",
         "nombre": "Conjunción de Venus y Luna",
         "isIndex": false,
-        "dest": "registro/venus-luna_20070618_1_conjuncion-19-junio-venus-luna1.jpg"
+        "dest": "objeto/venus-luna_20070618_1_conjuncion-19-junio-venus-luna1.jpg"
       },
       {
         "urlId": "luna",
@@ -4294,7 +4294,7 @@
         "fecha": "20070303",
         "nombre": "eclipse lunar",
         "isIndex": false,
-        "dest": "registro/luna_20070303_2_eclipse-3-marzo-2007.jpg"
+        "dest": "objeto/luna_20070303_2_eclipse-3-marzo-2007.jpg"
       },
       {
         "urlId": "luna",
@@ -4307,7 +4307,7 @@
         "fecha": "20070303",
         "nombre": "eclipse lunar",
         "isIndex": false,
-        "dest": "registro/luna_20070303_1_eclipse-3-marzo-2007-ccd.jpg"
+        "dest": "objeto/luna_20070303_1_eclipse-3-marzo-2007-ccd.jpg"
       },
       {
         "urlId": "sol",
@@ -4319,7 +4319,7 @@
         "text": "El Sol captado con una camara digital y Reflector 150mm a F10",
         "fecha": "20140400",
         "isIndex": false,
-        "dest": "registro/sol_20140400_1_sol.jpg"
+        "dest": "objeto/sol_20140400_1_sol.jpg"
       },
       {
         "urlId": "venus",
@@ -4332,7 +4332,7 @@
         "fecha": "20040608",
         "nombre": "Transito de Venus",
         "isIndex": false,
-        "dest": "registro/venus_20040608_5_transito-venus-camara-reflex.jpg"
+        "dest": "objeto/venus_20040608_5_transito-venus-camara-reflex.jpg"
       },
       {
         "urlId": "venus",
@@ -4344,7 +4344,7 @@
         "fecha": "20040608",
         "nombre": "Transito de Venus",
         "isIndex": false,
-        "dest": "registro/venus_20040608_4_ccdcap0007-copia.gif"
+        "dest": "objeto/venus_20040608_4_ccdcap0007-copia.gif"
       },
       {
         "urlId": "venus",
@@ -4356,7 +4356,7 @@
         "fecha": "20040608",
         "nombre": "Transito de Venus",
         "isIndex": false,
-        "dest": "registro/venus_20040608_3_ccdcap0017.jpg"
+        "dest": "objeto/venus_20040608_3_ccdcap0017.jpg"
       },
       {
         "urlId": "venus",
@@ -4368,7 +4368,7 @@
         "fecha": "20040608",
         "nombre": "Transito de Venus",
         "isIndex": false,
-        "dest": "registro/venus_20040608_2_ccdcap0034.jpg"
+        "dest": "objeto/venus_20040608_2_ccdcap0034.jpg"
       },
       {
         "urlId": "venus",
@@ -4381,7 +4381,7 @@
         "fecha": "20040608",
         "nombre": "Transito de Venus",
         "isIndex": false,
-        "dest": "registro/venus_20040608_1_ccdcap0050.jpg"
+        "dest": "objeto/venus_20040608_1_ccdcap0050.jpg"
       }
     ]
   },

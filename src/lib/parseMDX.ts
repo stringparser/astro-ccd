@@ -1,9 +1,4 @@
-import matter from 'gray-matter';
-import toVFile from 'to-vfile';
-
-import mdx from 'remark-mdx';
-import remark from 'remark';
-import frontmatter from 'remark-frontmatter';
+import JSON5 from 'json5';
 import { RegistroItem } from './staticProps';
 
 type RemarkNode = {
@@ -34,13 +29,37 @@ export type ParsedRemarkResult =
     type: 'text' | 'heading' | 'paragraph';
     text: string;
   }
+  |
+  {
+    type: 'meta',
+    data: Record<string, string>;
+  }
 ;
 
 const mapData = (el: RemarkNode): ParsedRemarkResult | undefined => {
   const { type, value = '' } = el;
 
   switch (type) {
-    case 'text':
+    case 'text': {
+      const meta = /export\s+const\s+meta\s+=[^{]+(\{[^}]+\})/gm.exec(value);
+
+      if (meta) {
+        try {
+          const data = JSON5.parse(meta[1]);
+          return {
+            type: 'meta',
+            data,
+          };
+        } catch (err) {
+          console.log('warning: failed to parse meta', el);
+        }
+      }
+
+      return {
+        type,
+        text: value,
+      };
+    }
     case 'heading':
     case 'paragraph': {
       return {
@@ -73,13 +92,17 @@ const mapData = (el: RemarkNode): ParsedRemarkResult | undefined => {
 
         value.replace(
           /([a-z]+)=\\?['"]([^\s\\'"]+)\\?['"]/gi,
-          ($0, key: string, value: string) => {
-            const name = key === 'fecha' || key === 'date'
-              ? 'date'
-              : key
-            ;
-            data[name] = value;
+          ($0, $1: string, $2: string) => {
             data.type = 'image';
+
+            if ($1 === 'fecha' || $1 === 'date') {
+              data.date = $2;
+            } else if ($1 === 'src') {
+              data.src = $2.replace(/^\//, '');
+            } else {
+              data[$1] = $2;
+            }
+
             return $0;
           }
         );
@@ -100,21 +123,14 @@ export type ParsedMDXResult = {
 
 export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
   const fs = await import('fs-extra');
-  const fileContents = await fs.readFile(filename, 'utf8');
+  const mdx = (await import('remark-mdx')).default;
+  const remark = (await import('remark')).default;
+  const {read} = (await import('to-vfile')).default;
 
-  const {
-    data,
-    content
-  } = matter(fileContents);
-
-  const vfile = new toVFile({
-    path: filename,
-    contents: content,
-  });
+  const vFile = await read(filename);
 
   return new Promise((resolve) => {
     remark()
-      .use(frontmatter)
       .use(mdx)
       .use(() => (tree: RemarkNode) => {
         const values = (tree.children || [])
@@ -144,29 +160,39 @@ export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
           .map(mapData)
           .filter(v => v != null)
         ;
-
-        const titulo = results.reduce((acc = '', el) => {
-          if (acc !== '') {
-            return acc;
+        const meta = results.reduce((acc, el) => {
+          if (el.type === 'meta') {
+            return el.data;
           }
 
-          return el.type === 'heading' && el.text
-            ? el.text
-            : acc
-          ;
-        }, data.titulo);
+          return acc;
+        }, {} as ParsedMDXResult['meta']);
+
+        if (!meta.titulo) {
+          meta.titulo = results.reduce((acc, el) => {
+            if (acc !== '') {
+              return acc;
+            }
+
+            return el.type === 'heading' && el.text
+              ? el.text
+              : acc
+            ;
+          }, '');
+        }
 
         resolve({
           meta: {
-            titulo,
-            objeto: (data.objeto || ''),
-            etiquetas: (data.etiquetas || ''),
+            titulo: '',
+            objeto: '',
+            etiquetas: '',
+            ...meta,
           },
           items: results,
-          content,
+          content: vFile.content,
         });
       })
-      .process(vfile)
+      .process(vFile)
     ;
   });
 }
