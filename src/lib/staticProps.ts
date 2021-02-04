@@ -1,7 +1,7 @@
 import { RegistroItem } from 'bin/registro';
 import { mapearEntradasValidas } from './util';
 
-import registroJSON from 'src/datos/registro.json';
+import registroJSON from '../datos/registro.json';
 
 export type StaticItemsProps<T> = {
   props: {
