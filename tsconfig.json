@@ -2,7 +2,6 @@
   "include": [
     "src",
     "bin",
-    "datos",
     "public"
   ],
   "exclude": [
@@ -22,9 +21,6 @@
       ],
       "src/*": [
         "./src/*"
-      ],
-      "datos/*": [
-        "./datos/*"
       ],
       "public/*": [
         "./public/*"

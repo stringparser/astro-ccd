@@ -69,7 +69,7 @@ export type RegistroItem = {
 
   const sortedItems = items.sort(ordenarPorFecha);
 
-  await fs.writeFile('datos/registro.json', JSON.stringify(sortedItems, null, 2));
+  await fs.writeFile('src/datos/registro.json', JSON.stringify(sortedItems, null, 2));
 
-  console.log('wrote', sortedItems.length, 'items to datos/registro.json');
+  console.log('wrote', sortedItems.length, 'items to src/datos/registro.json');
 })();
