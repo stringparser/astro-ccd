@@ -1,8 +1,10 @@
 import { Box, Link, Typography } from "@material-ui/core";
 
+import { RegistroItem } from "bin/registro";
+
 import H1 from "src/components/Typography/H1";
 import PostsList from "src/components/PostsList/PostsList";
-import { getCometasAsteroides, RegistroItem, StaticItemsProps } from "src/lib/staticProps";
+import { getCometasAsteroides, StaticItemsProps } from "src/lib/staticProps";
 
 export type CometasAsteroidesProps = {
   items: RegistroItem[];

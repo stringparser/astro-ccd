@@ -1,8 +1,10 @@
 import { Box } from "@material-ui/core";
 
+import { RegistroItem } from "bin/registro";
+
 import H1 from "src/components/Typography/H1";
 import PostsList from "src/components/PostsList/PostsList";
-import { getSistemaSolar, RegistroItem, StaticItemsProps } from "src/lib/staticProps";
+import { getSistemaSolar, StaticItemsProps } from "src/lib/staticProps";
 
 export type SistemaSolarProps = {
   items: RegistroItem[];
