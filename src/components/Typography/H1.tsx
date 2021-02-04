@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   },
 });
 
-const H1: React.FC<TypographyProps> = ({ style, ...props }) => {
+const H1: React.FC<TypographyProps> = (props) => {
   const classes = useStyles();
 
   return (

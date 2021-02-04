@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   },
 });
 
-const H2: React.FC<TypographyProps> = ({ style, ...props }) => {
+const H2: React.FC<TypographyProps> = (props) => {
   const classes = useStyles();
 
   return (
