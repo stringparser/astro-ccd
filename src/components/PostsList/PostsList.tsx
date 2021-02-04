@@ -3,7 +3,7 @@ import React from "react";
 import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
 import { RegistroItem } from "bin/registro";
-import { opacityMixin } from "src/components/styles";
+import { opacityMixin } from "src/components/mixins";
 
 import H2 from "src/components/Typography/H2";
 import Image from "src/components/Image/Image";

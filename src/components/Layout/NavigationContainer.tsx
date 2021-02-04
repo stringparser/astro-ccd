@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useCallback } from "react";
 import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
 
-import { opacityMixin } from "src/components/styles";
+import { opacityMixin } from "src/components/mixins";
 import { PageBasename, RegistroItem } from "src/types";
 import Busqueda from "../Busqueda/Busqueda";
 import { mapRegistroURL } from "src/lib/navigation";

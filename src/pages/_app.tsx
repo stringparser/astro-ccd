@@ -11,7 +11,7 @@ import Footer from "src/components/Layout/Footer";
 import Navigation from "src/components/Layout/NavigationContainer";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
-import { maxWidthMixin } from "src/components/styles";
+import { maxWidthMixin } from "src/components/mixins";
 import { APP_ROOT_PORTAL_ID } from "src/lib/portal";
 
 const jss = create({
@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
 
 const WebApp: React.FC<AppProps> = (props: AppProps) => {
   const classes = useStyles();
-  const { router, Component, pageProps } = props;
+  const { Component, pageProps } = props;
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -59,7 +59,6 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
           <StylesProvider jss={jss}>
             <CssBaseline />
             <Head>
-
               <title>
                 OACM Fuensanta
               </title>
