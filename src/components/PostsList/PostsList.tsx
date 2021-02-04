@@ -2,13 +2,13 @@
 import React from "react";
 import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
-import { RegistroItem } from "src/lib/staticProps";
+import { RegistroItem } from "bin/registro";
+import { opacityMixin } from "src/components/mixins";
 
 import H2 from "src/components/Typography/H2";
-import Image from "../Image/Image";
-import { opacityMixin } from "src/components/styles";
+import Image from "src/components/Image/Image";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     margin: '3rem auto',
 
@@ -68,20 +68,21 @@ function PostsList<T>({ items }: PostsListProps) {
   return (
     <Box className={classes.root}>
       {postsItems.map(el => {
-        const { fecha, imagen } = el.entradas.find(el => el.imagen);
+        const { date, src } = el.entradas.find(el => el.src);
 
         const { objeto, titulo, etiquetas } = el;
 
-        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(fecha) || [])
+        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(date) || [])
           .slice(1)
           .reverse()
           .join('/')
+          .replace(/^00\//, '')
         ;
 
         return (
           <Link
             key={el.urlId}
-            href={`/objeto/${el.urlId}`}
+            href={`/registro/${el.urlId}`}
             className={classes.linkWrapper}
           >
             <H2 style={{color: 'red', maxWidth: '50%', margin: '0 auto'}}>
@@ -95,9 +96,10 @@ function PostsList<T>({ items }: PostsListProps) {
             </Typography>
 
             <Image
-              src={require(`@public/${imagen}`).default}
+              src={require(`@public/${src}`).default}
               layout="fill"
               quality={65}
+              canOpenOrginial={false}
               className={classes.imageContainer}
             />
           </Link>

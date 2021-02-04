@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import { create } from "jss"
 import { AppProps } from "next/app";
@@ -7,10 +8,10 @@ import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box 
 import { mdxComponents } from "src/lib/constants";
 
 import Footer from "src/components/Layout/Footer";
-import Navigation from "src/components/Layout/Navigation";
+import Navigation from "src/components/Layout/NavigationContainer";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
-import { maxWidthMixin } from "src/components/styles";
+import { maxWidthMixin } from "src/components/mixins";
 import { APP_ROOT_PORTAL_ID } from "src/lib/portal";
 
 const jss = create({
@@ -57,20 +58,29 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
         <MDXProvider components={mdxComponents}>
           <StylesProvider jss={jss}>
             <CssBaseline />
-            <Navigation />
+            <Head>
+              <title>
+                OACM Fuensanta
+              </title>
+              <link
+                rel="icon"
+                href={require('@public/favicon.jpeg').default}
+              />
+            </Head>
             <main className={classes.main}>
+              <Navigation />
               <Box flex="1">
                 <Component {...pageProps} />
               </Box>
               <Footer />
             </main>
-            <div id={APP_ROOT_PORTAL_ID}></div>
             <ScrollToTopButton />
           </StylesProvider>
         </MDXProvider>
       </ThemeProvider>
+      <div id={APP_ROOT_PORTAL_ID}></div>
     </>
   );
-}
+};
 
 export default WebApp;

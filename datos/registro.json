@@ -1,0 +1,5830 @@
+[
+  {
+    "titulo": "Conjunción de Jupiter y Saturno",
+    "objeto": "jupiter+saturno",
+    "etiquetas": "sistema solar",
+    "urlId": "jupiter-saturno",
+    "filename": "src/pages/registro/jupiter-saturno.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "jupiter+saturno",
+          "titulo": "Conjunción de Jupiter y Saturno",
+          "etiquetas": "sistema solar"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Conjunción de Jupiter y Saturno"
+      },
+      {
+        "type": "image",
+        "src": "registro/jupiter-saturno_20211221_2_conjuncion.gif",
+        "date": "20211221",
+        "urlId": "jupiter-saturno",
+        "width": 966,
+        "height": 1524
+      },
+      {
+        "type": "image",
+        "src": "registro/jupiter-saturno_20201220_1_jupiter-saturno-20diciembre2020-2.png",
+        "date": "20201220",
+        "urlId": "jupiter-saturno",
+        "width": 770,
+        "height": 775
+      }
+    ]
+  },
+  {
+    "titulo": "M42",
+    "objeto": "M42",
+    "etiquetas": "nebulosas",
+    "urlId": "m42",
+    "filename": "src/pages/registro/m42.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M42",
+          "titulo": "M42",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M42"
+      },
+      {
+        "type": "image",
+        "src": "registro/m42_20210121_3_img-20210121-wa0011-1.jpg",
+        "date": "20210121",
+        "urlId": "m42",
+        "width": 2268,
+        "height": 1463
+      },
+      {
+        "type": "image",
+        "src": "registro/m42_20160126_2_m42f_re.jpg",
+        "date": "20160126",
+        "urlId": "m42",
+        "width": 1134,
+        "height": 1028
+      },
+      {
+        "type": "text",
+        "text": "26Enero2016 nikon d90 sin modificar"
+      },
+      {
+        "type": "image",
+        "src": "registro/m42_20160101_1_m42_20160101_i88.jpg",
+        "date": "20160101",
+        "urlId": "m42",
+        "width": 1493,
+        "height": 1622
+      },
+      {
+        "type": "text",
+        "text": "mosaico de dos imagenes"
+      }
+    ]
+  },
+  {
+    "titulo": "Zona de Orion",
+    "objeto": "Orion",
+    "etiquetas": "nebulosas",
+    "urlId": "orion",
+    "filename": "src/pages/registro/orion.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "Orion",
+          "titulo": "Zona de Orion",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Zona de Orion"
+      },
+      {
+        "type": "image",
+        "src": "registro/orion_20210112_1_final.jpg",
+        "date": "20210112",
+        "urlId": "orion",
+        "width": 3876,
+        "height": 4579
+      },
+      {
+        "type": "text",
+        "text": "zona de  12 enero 2021"
+      }
+    ]
+  },
+  {
+    "titulo": "Nebulosa Roseta",
+    "objeto": "NGC 2237",
+    "etiquetas": "nebulosas",
+    "urlId": "ngc-2237",
+    "filename": "src/pages/registro/ngc-2237.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 2237",
+          "titulo": "Nebulosa Roseta",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Nebulosa Roseta"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-2237_20210100_1_integration_abe-copia.jpg",
+        "date": "20210100",
+        "urlId": "ngc-2237",
+        "width": 4256,
+        "height": 2848
+      },
+      {
+        "type": "text",
+        "text": "Nebulosa Rosetats 65mm 420mm"
+      }
+    ]
+  },
+  {
+    "titulo": "Sol",
+    "objeto": "sol",
+    "etiquetas": "sistema solar",
+    "urlId": "sol",
+    "filename": "src/pages/registro/sol.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "sol",
+          "titulo": "Sol",
+          "etiquetas": "sistema solar"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Sol"
+      },
+      {
+        "type": "image",
+        "src": "registro/sol_20201201_3_dsc05191.jpg",
+        "date": "20201201",
+        "urlId": "sol",
+        "width": 2522,
+        "height": 1858
+      },
+      {
+        "type": "image",
+        "src": "registro/sol_20201201_2_1_152049_l5_ap666.png",
+        "date": "20201201",
+        "urlId": "sol",
+        "width": 1134,
+        "height": 712
+      },
+      {
+        "type": "text",
+        "text": "Imagen del  dia 1 diciembre"
+      },
+      {
+        "type": "image",
+        "src": "registro/sol_20140400_1_sol.jpg",
+        "date": "20140400",
+        "urlId": "sol",
+        "width": 1772,
+        "height": 1329
+      },
+      {
+        "type": "text",
+        "text": "El Sol captado con una camara digital y Reflector 150mm a F10"
+      }
+    ]
+  },
+  {
+    "titulo": "Marte",
+    "objeto": "Marte",
+    "etiquetas": "sistema solar",
+    "urlId": "marte",
+    "filename": "src/pages/registro/marte.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "Marte",
+          "titulo": "Marte",
+          "etiquetas": "sistema solar"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Marte"
+      },
+      {
+        "type": "image",
+        "src": "registro/marte_20201029_1_img-20201030-wa0020.jpg",
+        "date": "20201029",
+        "urlId": "marte",
+        "width": 736,
+        "height": 480
+      },
+      {
+        "type": "text",
+        "text": "29 Octubre 2020"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2017 K2 (PANSTARRS)",
+    "objeto": "C/2017 K2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2017-k2",
+    "filename": "src/pages/registro/c2017-k2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2017 K2",
+          "titulo": "C/2017 K2 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2017 K2 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20200915_11_c2017-k2-panstarrs_20200915_i88.jpg",
+        "date": "20200915",
+        "urlId": "c2017-k2",
+        "width": 1092,
+        "height": 736
+      },
+      {
+        "type": "text",
+        "text": "C2017K2 15 Septiembre2020 distancia 8.3 UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20200518_10_c2017k2_20200518_i88.jpg",
+        "date": "20200518",
+        "urlId": "c2017-k2",
+        "width": 1134,
+        "height": 1079
+      },
+      {
+        "type": "text",
+        "text": "C2017K2 18 Mayo2020 distancia 8.8 UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20190809_9_2017k2_20191116_i88.jpg",
+        "date": "20190809",
+        "urlId": "c2017-k2",
+        "width": 1092,
+        "height": 736
+      },
+      {
+        "type": "text",
+        "text": "C2017K2 9 Agosto 2019 16 Noviembre 2019 distancia 10.7 UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20190809_8_2017k2_20190809_i88.jpg",
+        "date": "20190809",
+        "urlId": "c2017-k2",
+        "width": 1092,
+        "height": 736
+      },
+      {
+        "type": "text",
+        "text": "C2017K2 9 Agosto 2019 distancia 11.02 UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20190619_7_c2017k2_20190619_i88.jpg",
+        "date": "20190619",
+        "urlId": "c2017-k2",
+        "width": 1134,
+        "height": 1110
+      },
+      {
+        "type": "text",
+        "text": "C2017K2 19 Junio 2019 distancia 11.25 UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20190426_6_copia-de-2017k2_20190427_i88.png",
+        "date": "20190426",
+        "urlId": "c2017-k2",
+        "width": 819,
+        "height": 552
+      },
+      {
+        "type": "text",
+        "text": "C2017K2 26 Abril 2019 distancia 11.67UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20180814_5_2017k2_20180814_i88.jpg",
+        "date": "20180814",
+        "urlId": "c2017-k2",
+        "width": 1512,
+        "height": 1335
+      },
+      {
+        "type": "text",
+        "text": "C2017K2 14 Agosto 2018 distancia 14.09UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20171017_4_2017k2_201710_113.jpg",
+        "date": "20171017",
+        "urlId": "c2017-k2",
+        "width": 1092,
+        "height": 736
+      },
+      {
+        "type": "text",
+        "text": "C/2017k2 2017 Octubre 2017"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20170724_3_20171.jpg",
+        "date": "20170724",
+        "urlId": "c2017-k2",
+        "width": 873,
+        "height": 589
+      },
+      {
+        "type": "text",
+        "text": "Cometa 2017k2 imagen de 500s B2 24Julio 2017 Mag 19.2 FC 19 fwhm 2.2 R 0.7″"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20170724_2_111111111111.gif",
+        "date": "20170724",
+        "urlId": "c2017-k2",
+        "width": 204,
+        "height": 208
+      },
+      {
+        "type": "text",
+        "text": "Animacion 2017k2 24Julio 2017"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-k2_20170720_1_2017k2_20170720_i88-e1500715311717.jpg",
+        "date": "20170720",
+        "urlId": "c2017-k2",
+        "width": 1417,
+        "height": 1062
+      },
+      {
+        "type": "text",
+        "text": "Cometa c2017k2 10 exposiciones de 180s a B1 20Julio 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2020 F3 (NEOWISE)",
+    "objeto": "C/2020 F3",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2020-f3",
+    "filename": "src/pages/registro/c2020-f3.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2020 F3",
+          "titulo": "C/2020 F3 (NEOWISE)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2020 F3 (NEOWISE)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200719_8_2020f3.jpg",
+        "date": "20200719",
+        "urlId": "c2020-f3",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "(NEOWISE) 19Julio2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200719_7_2020f3hdr.jpg",
+        "date": "20200719",
+        "urlId": "c2020-f3",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200719_6_re3.jpg",
+        "date": "20200719",
+        "urlId": "c2020-f3",
+        "width": 4480,
+        "height": 5024
+      },
+      {
+        "type": "text",
+        "text": "(NEOWISE) 19Julio2020 Filtro hdr Pixlnsight"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200717_5_2020f3_20200717_i88co.jpg",
+        "date": "20200717",
+        "urlId": "c2020-f3",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200717_4_2020f3_20200717_i88pro.jpg",
+        "date": "20200717",
+        "urlId": "c2020-f3",
+        "width": 2184,
+        "height": 3402
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200717_3_2020f3_20200717_i88.jpg",
+        "date": "20200717",
+        "urlId": "c2020-f3",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "(NEOWISE) 17Julio2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200706_2_2020f3_50mm.gif",
+        "date": "20200706",
+        "urlId": "c2020-f3",
+        "width": 1512,
+        "height": 1060
+      },
+      {
+        "type": "text",
+        "text": "(NEOWISE) imagen objetivo 50mm 6Julio2020 Desde la Pandera"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2020-f3_20200706_1_2020f3_20200706_i88.jpg",
+        "date": "20200706",
+        "urlId": "c2020-f3",
+        "width": 990,
+        "height": 1644
+      },
+      {
+        "type": "text",
+        "text": "(NEOWISE) Recorte imagen TS 65mm 6Julio2020 Desde la Pandera"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2017 T2 (PANSTARRS)",
+    "objeto": "C/2017 T2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2017-t2",
+    "filename": "src/pages/registro/c2017-t2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2017 T2",
+          "titulo": "C/2017 T2 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2017 T2 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-t2_20200614_4_2017t2_20200614._i88.jpg",
+        "date": "20200614",
+        "urlId": "c2017-t2",
+        "width": 1134,
+        "height": 1073
+      },
+      {
+        "type": "text",
+        "text": "(PANSTARRS) 14 Junio 2020 180s*19 b3"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-t2_20200526_3_c2017t2_20200526_i88.jpg",
+        "date": "20200526",
+        "urlId": "c2017-t2",
+        "width": 2268,
+        "height": 1350
+      },
+      {
+        "type": "text",
+        "text": "(PANSTARRS) 26 Mayo 2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-t2_20200520_2_2017t2_20200520_i88.jpg",
+        "date": "20200520",
+        "urlId": "c2017-t2",
+        "width": 1134,
+        "height": 1322
+      },
+      {
+        "type": "text",
+        "text": "(PANSTARRS) 20 Mayo 2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-t2_20191123_1_2017t2_20191123_i88.jpg",
+        "date": "20191123",
+        "urlId": "c2017-t2",
+        "width": 727,
+        "height": 675
+      },
+      {
+        "type": "text",
+        "text": "(PANSTARRS) 23 Noviembre 2019"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2020jfo",
+    "objeto": "SN 2020jfo",
+    "etiquetas": "galaxias",
+    "urlId": "sn2020-jfo",
+    "filename": "src/pages/registro/sn2020-jfo.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2020jfo",
+          "titulo": "SN 2020jfo",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2020jfo"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2020-jfo_20200517_1_sn2020jfo._20200517.jpg",
+        "date": "20200517",
+        "urlId": "sn2020-jfo",
+        "width": 2082,
+        "height": 2131
+      },
+      {
+        "type": "text",
+        "text": "sn2020jfo en M61 17 Mayo 2020"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2019 Y4 (ATLAS)",
+    "objeto": "C/2019 Y4",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2019-y4",
+    "filename": "src/pages/registro/c2019-y4.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2019 Y4",
+          "titulo": "C/2019 Y4 (ATLAS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2019 Y4 (ATLAS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y4_20200414_7_c2019y4_20200414_i88jpg.jpg",
+        "date": "20200414",
+        "urlId": "c2019-y4",
+        "width": 1134,
+        "height": 766
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y4_20200414_6_c2019y4_20200414._i88.jpg",
+        "date": "20200414",
+        "urlId": "c2019-y4",
+        "width": 850,
+        "height": 1398
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y4_20200414_5_2019y4_20200414._i88.jpg",
+        "date": "20200414",
+        "urlId": "c2019-y4",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "C2019Y4 14 Abril 2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y4_20200413_4_2019y4_20200413i_88.jpg",
+        "date": "20200413",
+        "urlId": "c2019-y4",
+        "width": 1134,
+        "height": 945
+      },
+      {
+        "type": "text",
+        "text": "C2019Y4 13 Abril 2020 13 Abril 2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y4_20200328_3_c2019-y4-atlascolor_20200328_i88.jpg",
+        "date": "20200328",
+        "urlId": "c2019-y4",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "C2019Y4 28 Marzo 2020 10×RGB 120S b3"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y4_20200328_2_c2019-y4-atlas_20200328_i88.jpg",
+        "date": "20200328",
+        "urlId": "c2019-y4",
+        "width": 2184,
+        "height": 2409
+      },
+      {
+        "type": "text",
+        "text": "C2019Y4 28 Marzo 2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y4_20200319_1_2019y4_20190319_i88-1.jpg",
+        "date": "20200319",
+        "urlId": "c2019-y4",
+        "width": 1134,
+        "height": 806
+      },
+      {
+        "type": "text",
+        "text": "C2019Y4 19 Marzo 2020"
+      }
+    ]
+  },
+  {
+    "titulo": "2I/Borisov",
+    "objeto": "2I",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "2I",
+    "filename": "src/pages/registro/2I.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "2I",
+          "titulo": "2I/Borisov",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "2I/Borisov"
+      },
+      {
+        "type": "image",
+        "src": "registro/2I_20191210_5_2iborisov_20191210_i88.jpg",
+        "date": "20191210",
+        "urlId": "2I",
+        "width": 1134,
+        "height": 1091
+      },
+      {
+        "type": "text",
+        "text": "10 Diciembre 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/2I_20191109_4_002i_20191109_i88.jpg",
+        "date": "20191109",
+        "urlId": "2I",
+        "width": 1134,
+        "height": 1218
+      },
+      {
+        "type": "text",
+        "text": "9 Noviembre 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/2I_20191026_3_2i-borisov_20191026_i88.jpg",
+        "date": "20191026",
+        "urlId": "2I",
+        "width": 1092,
+        "height": 736
+      },
+      {
+        "type": "text",
+        "text": "26 Octubre 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/2I_20191005_2_2iborisov-20191005_i88.jpg",
+        "date": "20191005",
+        "urlId": "2I",
+        "width": 1134,
+        "height": 1374
+      },
+      {
+        "type": "text",
+        "text": "5 Octubre 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/2I_20190929_1_c2019q4_20190929_i88.jpg",
+        "date": "20190929",
+        "urlId": "2I",
+        "width": 1092,
+        "height": 1892
+      },
+      {
+        "type": "text",
+        "text": "29 Septiembre 2019"
+      }
+    ]
+  },
+  {
+    "titulo": "260P/McNaught",
+    "objeto": "260P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "260P",
+    "filename": "src/pages/registro/260P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "260P",
+          "titulo": "260P/McNaught",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "260P/McNaught"
+      },
+      {
+        "type": "image",
+        "src": "registro/260P_20191025_2_260p_20191025_i88.jpg",
+        "date": "20191025",
+        "urlId": "260P",
+        "width": 1092,
+        "height": 1256
+      },
+      {
+        "type": "text",
+        "text": "/McNaught 25 Octubre 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/260P_20190809_1_260p_20190809i88.jpg",
+        "date": "20190809",
+        "urlId": "260P",
+        "width": 1092,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "/McNaught 9 Agosto 2019"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2018 N2 (ASASSN)",
+    "objeto": "C/2018 N2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2018-n2",
+    "filename": "src/pages/registro/c2018-n2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2018 N2",
+          "titulo": "C/2018 N2 (ASASSN)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2018 N2 (ASASSN)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2018-n2_20191024_1_2018n2_20191124_i88.jpg",
+        "date": "20191024",
+        "urlId": "c2018-n2",
+        "width": 1092,
+        "height": 1175
+      },
+      {
+        "type": "text",
+        "text": "(ASASSN) 24 Octubre 2019\n(2019Q4)"
+      }
+    ]
+  },
+  {
+    "titulo": "29P/Schwassmann-Wachmann",
+    "objeto": "29P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "29P",
+    "filename": "src/pages/registro/29P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "29P",
+          "titulo": "29P/Schwassmann-Wachmann",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "29P/Schwassmann-Wachmann"
+      },
+      {
+        "type": "image",
+        "src": "registro/29P_20191005_5_0029p_20191005_i88.jpg",
+        "date": "20191005",
+        "urlId": "29P",
+        "width": 1134,
+        "height": 1170
+      },
+      {
+        "type": "text",
+        "text": "/Schwassmann-Wachmann 5 Ocubre 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/29P_20180928_4_29p_20180928_i88.jpg",
+        "date": "20180928",
+        "urlId": "29P",
+        "width": 2160,
+        "height": 2881
+      },
+      {
+        "type": "text",
+        "text": "/Schwassmann-Wachmann 28 Septiembre 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/29P_20180927_3_29p_20180927_i88.jpg",
+        "date": "20180927",
+        "urlId": "29P",
+        "width": 1800,
+        "height": 1603
+      },
+      {
+        "type": "text",
+        "text": "/Schwassmann-Wachmann 27 Septiembre 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/29P_20171010_2_29p.jpg",
+        "date": "20171010",
+        "urlId": "29P",
+        "width": 1092,
+        "height": 736
+      },
+      {
+        "type": "text",
+        "text": "/Schwassmann-Wachmann 10 Octubre 2017 10*300S B2"
+      },
+      {
+        "type": "image",
+        "src": "registro/29P_20170918_1_29p_20170918_i88.jpg",
+        "date": "20170918",
+        "urlId": "29P",
+        "width": 1134,
+        "height": 1126
+      },
+      {
+        "type": "text",
+        "text": "/Schwassmann-Wachmann 18Septiembre2017 imagen 500s B2"
+      }
+    ]
+  },
+  {
+    "titulo": "M45",
+    "objeto": "M45",
+    "etiquetas": "nebulosas",
+    "urlId": "m45",
+    "filename": "src/pages/registro/m45.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M45",
+          "titulo": "M45",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M45"
+      },
+      {
+        "type": "image",
+        "src": "registro/m45_20190929_1_m45final.jpg",
+        "date": "20190929",
+        "urlId": "m45",
+        "width": 4256,
+        "height": 2848
+      },
+      {
+        "type": "text",
+        "text": "29 Septiembre 2019 T 200mm F 1400mm+Sony A7s"
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 2024",
+    "objeto": "NGC 2024",
+    "etiquetas": "nebulosas",
+    "urlId": "ngc-2024",
+    "filename": "src/pages/registro/ngc-2024.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 2024",
+          "titulo": "NGC 2024",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 2024"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-2024_20190929_2_img-20200302-wa0019.jpg",
+        "date": "20190929",
+        "urlId": "ngc-2024",
+        "width": 1600,
+        "height": 981
+      },
+      {
+        "type": "text",
+        "text": "NGC 2237Nebulosa Roseta T 200mm F 1400mm+Sony A7s 22 Febrero 2020"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-2024_20190929_1_ngc2024final.jpg",
+        "date": "20190929",
+        "urlId": "ngc-2024",
+        "width": 3538,
+        "height": 2410
+      },
+      {
+        "type": "text",
+        "text": "29 Septiembre 2019 T 200mm F 1400mm+Sony A7s"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2019 Y1 (ATLAS)",
+    "objeto": "C/2019 Y1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2019-y1",
+    "filename": "src/pages/registro/c2019-y1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2019 Y1",
+          "titulo": "C/2019 Y1 (ATLAS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2019 Y1 (ATLAS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2019-y1_20190528_1_c2019-y1_20200528_i88.jpg",
+        "date": "20190528",
+        "urlId": "c2019-y1",
+        "width": 1134,
+        "height": 1174
+      },
+      {
+        "type": "text",
+        "text": "(ATLAS) 28Mayo2019"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 219ein",
+    "objeto": "SN 219ein",
+    "etiquetas": "galaxias",
+    "urlId": "sn219-ein",
+    "filename": "src/pages/registro/sn219-ein.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 219ein",
+          "titulo": "SN 219ein",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 219ein"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn219-ein_20190510_1_sn219ein_20190510_gjcb.png",
+        "date": "20190510",
+        "urlId": "sn219-ein",
+        "width": 1130,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "sn2019ein 10 Mayo 2019"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2019ein",
+    "objeto": "SN 2019ein",
+    "etiquetas": "galaxias",
+    "urlId": "sn2019-ein",
+    "filename": "src/pages/registro/sn2019-ein.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2019ein",
+          "titulo": "SN 2019ein",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2019ein"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2019-ein_20190430_1_snm51.jpg",
+        "date": "20190430",
+        "urlId": "sn2019-ein",
+        "width": 3543,
+        "height": 3265
+      },
+      {
+        "type": "text",
+        "text": "sn2019ehk en M100 30Abril2019"
+      }
+    ]
+  },
+  {
+    "titulo": "60P/Tsuchinshan",
+    "objeto": "60P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "60P",
+    "filename": "src/pages/registro/60P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "60P",
+          "titulo": "60P/Tsuchinshan",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "60P/Tsuchinshan"
+      },
+      {
+        "type": "image",
+        "src": "registro/60P_20190426_2_60ptsuchinshan_20190426_i88.jpg",
+        "date": "20190426",
+        "urlId": "60P",
+        "width": 1077,
+        "height": 745
+      },
+      {
+        "type": "text",
+        "text": "/Tsuchinshan 26abril 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/60P_20190309_1_60p_20190209_i88jpg.jpg",
+        "date": "20190309",
+        "urlId": "60P",
+        "width": 1134,
+        "height": 1177
+      },
+      {
+        "type": "text",
+        "text": "/Tsuchinshan 9 Marzo 2019"
+      }
+    ]
+  },
+  {
+    "titulo": "(6478) Gault",
+    "objeto": "(6478) Gault",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "6478-gault",
+    "filename": "src/pages/registro/6478-gault.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "(6478) Gault",
+          "titulo": "(6478) Gault",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "(6478) Gault"
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190426_9_6478-gault_20190426_i88.jpg",
+        "date": "20190426",
+        "urlId": "6478-gault",
+        "width": 1092,
+        "height": 988
+      },
+      {
+        "type": "text",
+        "text": "26 Abril 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190327_8_6478-gault_20190327_i88.jpg",
+        "date": "20190327",
+        "urlId": "6478-gault",
+        "width": 1134,
+        "height": 1029
+      },
+      {
+        "type": "text",
+        "text": "27 Marzo 2019 38×180s b2"
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190309_7_11enero_8febrero_9marzo.gif",
+        "date": "20190309",
+        "urlId": "6478-gault",
+        "width": 850,
+        "height": 506
+      },
+      {
+        "type": "text",
+        "text": "Animacion dias 11Enero_8Febrero_9Marzo 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190309_6_6478-gault_20190209_i88.jpg",
+        "date": "20190309",
+        "urlId": "6478-gault",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "text",
+        "text": "9 Marzo 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190309_5_6478-gault._20190209_i88.jpg",
+        "date": "20190309",
+        "urlId": "6478-gault",
+        "width": 850,
+        "height": 1367
+      },
+      {
+        "type": "text",
+        "text": "9 Marzo 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190208_4_6478_20190208_i88.jpg",
+        "date": "20190208",
+        "urlId": "6478-gault",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190207_3_6478_re_20190208_i88.jpg",
+        "date": "20190207",
+        "urlId": "6478-gault",
+        "width": 2160,
+        "height": 3273
+      },
+      {
+        "type": "text",
+        "text": "7 Febrero 2019 12 tomas de 300s b2 f 1810mm"
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190111_2_6478-gault_20190111_i88.jpg",
+        "date": "20190111",
+        "urlId": "6478-gault",
+        "width": 878,
+        "height": 602
+      },
+      {
+        "type": "image",
+        "src": "registro/6478-gault_20190112_1_6478-gault_com_20190111_i88.jpg",
+        "date": "20190112",
+        "urlId": "6478-gault",
+        "width": 567,
+        "height": 850
+      },
+      {
+        "type": "text",
+        "text": "12 Enero 2019 12 tomas de 300s b2 f 1810mm"
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 4627",
+    "objeto": "NGC 4627",
+    "etiquetas": "galaxias",
+    "urlId": "ngc-4627",
+    "filename": "src/pages/registro/ngc-4627.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 4627",
+          "titulo": "NGC 4627",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 4627"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-4627_20190426_1_ngc4627.jpg",
+        "date": "20190426",
+        "urlId": "ngc-4627",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "ngc 4627 26Abril 2019"
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 4656",
+    "objeto": "NGC 4656",
+    "etiquetas": "galaxias",
+    "urlId": "ngc-4656",
+    "filename": "src/pages/registro/ngc-4656.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 4656",
+          "titulo": "NGC 4656",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 4656"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-4656_20190426_1_ngc4656.jpg",
+        "date": "20190426",
+        "urlId": "ngc-4656",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "ngc 4656 26Abril 2019"
+      }
+    ]
+  },
+  {
+    "titulo": "M51",
+    "objeto": "NGC 5194",
+    "etiquetas": "galaxias",
+    "urlId": "ngc-5194",
+    "filename": "src/pages/registro/ngc-5194.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 5194",
+          "titulo": "M51",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M51"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-5194_20190302_2_m51.jpg",
+        "date": "20190302",
+        "urlId": "ngc-5194",
+        "width": 1417,
+        "height": 882
+      },
+      {
+        "type": "text",
+        "text": "AT2019abn 2Marzo 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-5194_20050630_1_m51-22h02m18s-dia-30junio-2005-exp120segundos-dos-imagenes.jpg",
+        "date": "20050630",
+        "urlId": "ngc-5194",
+        "width": 732,
+        "height": 253
+      },
+      {
+        "type": "text",
+        "text": "Supernova en M51"
+      }
+    ]
+  },
+  {
+    "titulo": "AT2019ahd",
+    "objeto": "AT2019ahd",
+    "etiquetas": "galaxias",
+    "urlId": "at2019-ahd",
+    "filename": "src/pages/registro/at2019-ahd.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "AT2019ahd",
+          "titulo": "AT2019ahd",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "AT2019ahd"
+      },
+      {
+        "type": "image",
+        "src": "registro/at2019-ahd_20190213_2_at2019ahd_20190214_gjcb.jpg",
+        "date": "20190213",
+        "urlId": "at2019-ahd",
+        "width": 2880,
+        "height": 1941
+      },
+      {
+        "type": "text",
+        "text": "at2019ahd en NGC 3423 13 Febrero 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/at2019-ahd_20190114_1_rgb.jpg",
+        "date": "20190114",
+        "urlId": "at2019-ahd",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "text",
+        "text": "sn 2019np en ngc 3254 14 Enero 2019 F2730 b2"
+      }
+    ]
+  },
+  {
+    "titulo": "SN2019np",
+    "objeto": "SN2019np",
+    "etiquetas": "galaxias",
+    "urlId": "sn2019-np",
+    "filename": "src/pages/registro/sn2019-np.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN2019np",
+          "titulo": "SN2019np",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN2019np"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2019-np_20190112_1_sn2019np_20190112_gjcb-1.png",
+        "date": "20190112",
+        "urlId": "sn2019-np",
+        "width": 850,
+        "height": 900
+      },
+      {
+        "type": "text",
+        "text": "sn 2019np en ngc 3254 12 Enero 2019 F1850 b1"
+      }
+    ]
+  },
+  {
+    "titulo": "38P/Stephan-Oterma",
+    "objeto": "38P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "38P",
+    "filename": "src/pages/registro/38P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "38P",
+          "titulo": "38P/Stephan-Oterma",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "38P/Stephan-Oterma"
+      },
+      {
+        "type": "image",
+        "src": "registro/38P_20190109_2_38p_20190109_i88.jpg",
+        "date": "20190109",
+        "urlId": "38P",
+        "width": 2160,
+        "height": 1987
+      },
+      {
+        "type": "text",
+        "text": "/Stephan-Oterma 9 Enero 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/38P_20181230_1_38p_20181230_I88.jpg",
+        "date": "20181230",
+        "urlId": "38P",
+        "width": 1134,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "/Stephan-Oterma 30 Diciembre 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "46P/Wirtanen",
+    "objeto": "46P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "46P",
+    "filename": "src/pages/registro/46P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "46P",
+          "titulo": "46P/Wirtanen",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "46P/Wirtanen"
+      },
+      {
+        "type": "image",
+        "src": "registro/46P_20190109_5_46p_20190109_i88.jpg",
+        "date": "20190109",
+        "urlId": "46P",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "text",
+        "text": "/Wirtanen 9 enero 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/46P_20181230_4_46p_20181230_I88.jpg",
+        "date": "20181230",
+        "urlId": "46P",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "text",
+        "text": "/Wirtanen 30 Diciembre 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/46P_20181130_3_46p_20181130i88rgb.jpg",
+        "date": "20181130",
+        "urlId": "46P",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "image",
+        "src": "registro/46P_20181130_2_46p_20181130_i88.jpg",
+        "date": "20181130",
+        "urlId": "46P",
+        "width": 1134,
+        "height": 1177
+      },
+      {
+        "type": "text",
+        "text": "/Wirtanen 30 Noviembre 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/46P_20181126_1_46p_20181126_i88.jpg",
+        "date": "20181126",
+        "urlId": "46P",
+        "width": 1134,
+        "height": 1081
+      },
+      {
+        "type": "text",
+        "text": "/Wirtanen 26 Noviembre 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "64P/Swift-Gehrels",
+    "objeto": "64P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "64P",
+    "filename": "src/pages/registro/64P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "64P",
+          "titulo": "64P/Swift-Gehrels",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "64P/Swift-Gehrels"
+      },
+      {
+        "type": "image",
+        "src": "registro/64P_20190109_5_64p_20190109_i88.jpg",
+        "date": "20190109",
+        "urlId": "64P",
+        "width": 2160,
+        "height": 1930
+      },
+      {
+        "type": "text",
+        "text": "/Swift-Gehrels 9 Enero 2019"
+      },
+      {
+        "type": "image",
+        "src": "registro/64P_20180106_4_64p_20190106_i88.jpg",
+        "date": "20180106",
+        "urlId": "64P",
+        "width": 1134,
+        "height": 774
+      },
+      {
+        "type": "text",
+        "text": "64p 6 enero 2018 50*120s b2"
+      },
+      {
+        "type": "image",
+        "src": "registro/64P_20181230_3_64p_20181230_I88.jpg",
+        "date": "20181230",
+        "urlId": "64P",
+        "width": 1134,
+        "height": 1030
+      },
+      {
+        "type": "text",
+        "text": "/Swift-Gehrels 30 Diciembre 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/64P_20181111_2_64p_20181111_i88.jpg",
+        "date": "20181111",
+        "urlId": "64P",
+        "width": 912,
+        "height": 604
+      },
+      {
+        "type": "text",
+        "text": "/Swift-Gehrels 11 Noviembre 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/64P_20181106_1_64p_20181106_i88.png",
+        "date": "20181106",
+        "urlId": "64P",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "text",
+        "text": "/Swift-Gehrels 6 Noviembre 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "SN2018isq",
+    "objeto": "SN2018isq",
+    "etiquetas": "galaxias",
+    "urlId": "sn2018-isq",
+    "filename": "src/pages/registro/sn2018-isq.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN2018isq",
+          "titulo": "SN2018isq",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN2018isq"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2018-isq_20181203_1_2018isq_20181203_gjcb.jpg",
+        "date": "20181203",
+        "urlId": "sn2018-isq",
+        "width": 850,
+        "height": 893
+      },
+      {
+        "type": "text",
+        "text": "sn2018isq 3 Diciembre 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "SN2018ivc",
+    "objeto": "SN2018ivc",
+    "etiquetas": "galaxias",
+    "urlId": "sn2018-ivc",
+    "filename": "src/pages/registro/sn2018-ivc.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN2018ivc",
+          "titulo": "SN2018ivc",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN2018ivc"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2018-ivc_20181126_1_sn2018ivc_20181126_gjcb.jpg",
+        "date": "20181126",
+        "urlId": "sn2018-ivc",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "text",
+        "text": "sn 2018ivc en M77 26Noviembre 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)",
+    "objeto": "C/2018 V1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2018-v1",
+    "filename": "src/pages/registro/c2018-v1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2018 V1",
+          "titulo": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2018-v1_20181116_1_2018v1_20181116_i88.jpg",
+        "date": "20181116",
+        "urlId": "c2018-v1",
+        "width": 1134,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "(Machholz-Fujikawa-Iwamoto) 16Noviembre2018 1 *120s b1"
+      }
+    ]
+  },
+  {
+    "titulo": "SN2018imf",
+    "objeto": "SN2018imf",
+    "etiquetas": "galaxias",
+    "urlId": "sn2018-imf",
+    "filename": "src/pages/registro/sn2018-imf.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN2018imf",
+          "titulo": "SN2018imf",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN2018imf"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2018-imf_20181116_1_sn-2018imf_20181116_gjcb.jpg",
+        "date": "20181116",
+        "urlId": "sn2018-imf",
+        "width": 1134,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "sn 2018 imf 16Noviembre2018 7*120s b1"
+      }
+    ]
+  },
+  {
+    "titulo": "M57",
+    "objeto": "M57",
+    "etiquetas": "nebulosas",
+    "urlId": "m57",
+    "filename": "src/pages/registro/m57.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M57",
+          "titulo": "M57",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M57"
+      },
+      {
+        "type": "image",
+        "src": "registro/m57_20181000_2_m57_f.jpg",
+        "date": "20181000",
+        "urlId": "m57",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "7 Octrubre 2018 New 360mm F 2730mm"
+      },
+      {
+        "type": "image",
+        "src": "registro/m57_20121100_1_rgbpix3.jpg",
+        "date": "20121100",
+        "urlId": "m57",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "RGB"
+      }
+    ]
+  },
+  {
+    "titulo": "21P/Giacobini-Zinner",
+    "objeto": "21P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "21P",
+    "filename": "src/pages/registro/21P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "21P",
+          "titulo": "21P/Giacobini-Zinner",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "21P/Giacobini-Zinner"
+      },
+      {
+        "type": "image",
+        "src": "registro/21P_20180921_5_21p_20180921_i88.jpg",
+        "date": "20180921",
+        "urlId": "21P",
+        "width": 2190,
+        "height": 2245
+      },
+      {
+        "type": "text",
+        "text": "21 Septiembre2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/21P_20180914_4_21p_20180914_i88.jpg",
+        "date": "20180914",
+        "urlId": "21P",
+        "width": 2880,
+        "height": 2682
+      },
+      {
+        "type": "text",
+        "text": "14 Septiembre2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/21P_20180907_3_21p_20180907_i88_1.jpg",
+        "date": "20180907",
+        "urlId": "21P",
+        "width": 6000,
+        "height": 5940
+      },
+      {
+        "type": "text",
+        "text": "7 Septiembre2018 50 imagenes de 30s"
+      },
+      {
+        "type": "image",
+        "src": "registro/21P_20180814_2_21p_20180815_i88.png",
+        "date": "20180814",
+        "urlId": "21P",
+        "width": 962,
+        "height": 652
+      },
+      {
+        "type": "text",
+        "text": "21/P 14 Agosto 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/21P_20180808_1_21p_20180809_i88.jpg",
+        "date": "20180808",
+        "urlId": "21P",
+        "width": 1512,
+        "height": 1570
+      },
+      {
+        "type": "text",
+        "text": "21/P 8Agosto 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "AT2018gjx",
+    "objeto": "AT2018gjx",
+    "etiquetas": "galaxias",
+    "urlId": "at2018-gjx",
+    "filename": "src/pages/registro/at2018-gjx.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "AT2018gjx",
+          "titulo": "AT2018gjx",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "AT2018gjx"
+      },
+      {
+        "type": "image",
+        "src": "registro/at2018-gjx_20180919_1_at2018gjx_20180919_gjcb.png",
+        "date": "20180919",
+        "urlId": "at2018-gjx",
+        "width": 1134,
+        "height": 764
+      },
+      {
+        "type": "text",
+        "text": "at2018gjx 19 Septiembre 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "Nebulosa del pelícano",
+    "objeto": "NGC 7000",
+    "etiquetas": "nebulosas",
+    "urlId": "ngc-7000",
+    "filename": "src/pages/registro/ngc-7000.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 7000",
+          "titulo": "Nebulosa del pelícano",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Nebulosa del pelícano"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-7000_20180808_1_1.png",
+        "date": "20180808",
+        "urlId": "ngc-7000",
+        "width": 1024,
+        "height": 706
+      },
+      {
+        "type": "text",
+        "text": "Nebulosa del pelicano 8Agosto2018"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2017 S3 (panstars)",
+    "objeto": "C/2017 S3",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2017-s3",
+    "filename": "src/pages/registro/c2017-s3.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2017 S3",
+          "titulo": "C/2017 S3 (panstars)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2017 S3 (panstars)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-s3_20180719_3_c2017s3_20180719_i88.png",
+        "date": "20180719",
+        "urlId": "c2017-s3",
+        "width": 676,
+        "height": 630
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-s3_20180719_2_c2017s3_20180719_i88.jpg",
+        "date": "20180719",
+        "urlId": "c2017-s3",
+        "width": 850,
+        "height": 782
+      },
+      {
+        "type": "text",
+        "text": "C2017S3 19Julio2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-s3_20180705_1_c2017s3_20180705_i88.png",
+        "date": "20180705",
+        "urlId": "c2017-s3",
+        "width": 1134,
+        "height": 999
+      },
+      {
+        "type": "text",
+        "text": "C2017S3 5Julio2018"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2018cow",
+    "objeto": "SN 2018cow",
+    "etiquetas": "galaxias",
+    "urlId": "sn2018-cow",
+    "filename": "src/pages/registro/sn2018-cow.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2018cow",
+          "titulo": "SN 2018cow",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2018cow"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2018-cow_20180702_1_sn2018cow.png",
+        "date": "20180702",
+        "urlId": "sn2018-cow",
+        "width": 2184,
+        "height": 2029
+      },
+      {
+        "type": "text",
+        "text": "sn2018cow en pgc 57660 2 Julio 2018 1*1000segundos"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2015 O1 (PANSTARRS)",
+    "objeto": "C/2015 O1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2015-o1",
+    "filename": "src/pages/registro/c2015-o1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2015 O1",
+          "titulo": "C/2015 O1 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2015 O1 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-o1_20180612_3_c2015-01_20180612i88.png",
+        "date": "20180612",
+        "urlId": "c2015-o1",
+        "width": 1134,
+        "height": 1019
+      },
+      {
+        "type": "text",
+        "text": "c2015 O1 12Junio 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-o1_20180416_2_2015-o1_20180416_i88.jpg",
+        "date": "20180416",
+        "urlId": "c2015-o1",
+        "width": 850,
+        "height": 693
+      },
+      {
+        "type": "text",
+        "text": "c2015 O1 16 Abril 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-o1_20170816_1_c2015o1_20170816_i88.jpg",
+        "date": "20170816",
+        "urlId": "c2015-o1",
+        "width": 1092,
+        "height": 992
+      },
+      {
+        "type": "text",
+        "text": "c2015 O1 16 Aagosto 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "M109",
+    "objeto": "M109",
+    "etiquetas": "galaxias",
+    "urlId": "m109",
+    "filename": "src/pages/registro/m109.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M109",
+          "titulo": "M109",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M109"
+      },
+      {
+        "type": "image",
+        "src": "registro/m109_20180511_1_m109.png",
+        "date": "20180511",
+        "urlId": "m109",
+        "width": 2184,
+        "height": 1472
+      },
+      {
+        "type": "text",
+        "text": "New 360mm 2730mm focal 11Mayo2018"
+      }
+    ]
+  },
+  {
+    "titulo": "M97",
+    "objeto": "M97",
+    "etiquetas": "nebulosas",
+    "urlId": "m97",
+    "filename": "src/pages/registro/m97.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M97",
+          "titulo": "M97",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M97"
+      },
+      {
+        "type": "image",
+        "src": "registro/m97_20180417_1_m97.jpg",
+        "date": "20180417",
+        "urlId": "m97",
+        "width": 1889,
+        "height": 1247
+      },
+      {
+        "type": "text",
+        "text": "20*180s B1 17Abril 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2018zd",
+    "objeto": "SN 2018zd",
+    "etiquetas": "galaxias",
+    "urlId": "sn2018-zd",
+    "filename": "src/pages/registro/sn2018-zd.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2018zd",
+          "titulo": "SN 2018zd",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2018zd"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2018-zd_20180321_1_2018zd_20180321_i88.jpg",
+        "date": "20180321",
+        "urlId": "sn2018-zd",
+        "width": 850,
+        "height": 776
+      },
+      {
+        "type": "text",
+        "text": "sn 2018zd en ngc 2146 21Marzo 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2016 R2 (PANSTARRS)",
+    "objeto": "C/2016 R2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2016-r2",
+    "filename": "src/pages/registro/c2016-r2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2016 R2",
+          "titulo": "C/2016 R2 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2016 R2 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180213_9_2016r2_20180213_i88.jpg",
+        "date": "20180213",
+        "urlId": "c2016-r2",
+        "width": 1092,
+        "height": 1099
+      },
+      {
+        "type": "text",
+        "text": "C2016R2 13 Febrero 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180210_8_2016r2_20180210_i88.jpg",
+        "date": "20180210",
+        "urlId": "c2016-r2",
+        "width": 716,
+        "height": 716
+      },
+      {
+        "type": "text",
+        "text": "C2016R2 10 Febrero 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180202_7_2016r2_20180202_i88.jpg",
+        "date": "20180202",
+        "urlId": "c2016-r2",
+        "width": 850,
+        "height": 797
+      },
+      {
+        "type": "text",
+        "text": "C2016R2 2 Febrero 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180123_6_c2016r2_20180123_i88.jpg",
+        "date": "20180123",
+        "urlId": "c2016-r2",
+        "width": 850,
+        "height": 794
+      },
+      {
+        "type": "text",
+        "text": "C2016R2 23Enero 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180121_5_2016r2_20180121_i88.jpg",
+        "date": "20180121",
+        "urlId": "c2016-r2",
+        "width": 850,
+        "height": 925
+      },
+      {
+        "type": "text",
+        "text": "C2016R2 21 Enero 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180111_4_grafe.jpg",
+        "date": "20180111",
+        "urlId": "c2016-r2",
+        "width": 395,
+        "height": 251
+      },
+      {
+        "type": "text",
+        "text": "Cometa 2016R2 11Enero 2018 Filtro Azul Astrodon GenII"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180111_3_2016r2_20180111_i88.jpg",
+        "date": "20180111",
+        "urlId": "c2016-r2",
+        "width": 1092,
+        "height": 963
+      },
+      {
+        "type": "text",
+        "text": "Cometa 2016R2 11Enero 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20180108_2_c2016r2_20180108_i88.jpg",
+        "date": "20180108",
+        "urlId": "c2016-r2",
+        "width": 1092,
+        "height": 956
+      },
+      {
+        "type": "text",
+        "text": "Cometa 2016R2 8 Enero 2018"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2016-r2_20171223_1_c2016r2_20171223_i881.jpg",
+        "date": "20171223",
+        "urlId": "c2016-r2",
+        "width": 1134,
+        "height": 1016
+      },
+      {
+        "type": "text",
+        "text": "Cometa 2016R2 23 dicembre 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "AT 2018gv",
+    "objeto": "AT 2018gv",
+    "etiquetas": "galaxias",
+    "urlId": "at2018-gv",
+    "filename": "src/pages/registro/at2018-gv.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "AT 2018gv",
+          "titulo": "AT 2018gv",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "AT 2018gv"
+      },
+      {
+        "type": "image",
+        "src": "registro/at2018-gv_20180202_1_at2018gv_20180202_i88.jpg",
+        "date": "20180202",
+        "urlId": "at2018-gv",
+        "width": 1092,
+        "height": 1033
+      },
+      {
+        "type": "text",
+        "text": "Supernova 2018 GV en ngc 2525 2 febrero 2018"
+      }
+    ]
+  },
+  {
+    "titulo": "174P/ECHELUS",
+    "objeto": "174P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "174P",
+    "filename": "src/pages/registro/174P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "174P",
+          "titulo": "174P/ECHELUS",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "174P/ECHELUS"
+      },
+      {
+        "type": "image",
+        "src": "registro/174P_20171223_1_174p_20171223_i88.jpg",
+        "date": "20171223",
+        "urlId": "174P",
+        "width": 1092,
+        "height": 1059
+      },
+      {
+        "type": "text",
+        "text": "Cometa 174p 23 diciembre 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2015 ER61 (PANSTARRS)",
+    "objeto": "C/2015 ER61",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2015-er61",
+    "filename": "src/pages/registro/c2015-er61.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2015 ER61",
+          "titulo": "C/2015 ER61 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2015 ER61 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-er61_20171112_2_c2015er61_20171112_i88.jpg",
+        "date": "20171112",
+        "urlId": "c2015-er61",
+        "width": 1092,
+        "height": 1071
+      },
+      {
+        "type": "text",
+        "text": "C2015 ER61 12Noviembre2017"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-er61_20170921_1_2015er61_20170921_i88.jpg",
+        "date": "20170921",
+        "urlId": "c2015-er61",
+        "width": 2184,
+        "height": 1465
+      },
+      {
+        "type": "text",
+        "text": "C2015 ER61 21septiembre2017"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2015 V1 (PANSTARRS)",
+    "objeto": "C/2015 V1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2015-v1",
+    "filename": "src/pages/registro/c2015-v1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2015 V1",
+          "titulo": "C/2015 V1 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2015 V1 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-v1_20171112_1_2015v2_20171112_i88.jpg",
+        "date": "20171112",
+        "urlId": "c2015-v1",
+        "width": 1092,
+        "height": 1084
+      },
+      {
+        "type": "text",
+        "text": "2015V1 12Noviembre 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2017 O1 (ASASSN1)",
+    "objeto": "C/2017 O1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2017-o1",
+    "filename": "src/pages/registro/c2017-o1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2017 O1",
+          "titulo": "C/2017 O1 (ASASSN1)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2017 O1 (ASASSN1)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2017-o1_20170921_1_c2017o1_20170921_i88.jpg",
+        "date": "20170921",
+        "urlId": "c2017-o1",
+        "width": 2184,
+        "height": 2179
+      },
+      {
+        "type": "text",
+        "text": "C2017 O1 21Septiembre 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "AT 2017eaw",
+    "objeto": "AT 2017eaw",
+    "etiquetas": "galaxias",
+    "urlId": "at2017-eaw",
+    "filename": "src/pages/registro/at2017-eaw.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "AT 2017eaw",
+          "titulo": "AT 2017eaw",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "AT 2017eaw"
+      },
+      {
+        "type": "image",
+        "src": "registro/at2017-eaw_20170602_1_2017eaw_20170702_i88.jpg",
+        "date": "20170602",
+        "urlId": "at2017-eaw",
+        "width": 2184,
+        "height": 1873
+      },
+      {
+        "type": "text",
+        "text": "SN 2017EAW en ngc 6946 2 Junio 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2015 V2 (JOHNSON)",
+    "objeto": "C/2015 V2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2015-v2",
+    "filename": "src/pages/registro/c2015-v2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2015 V2",
+          "titulo": "C/2015 V2 (JOHNSON)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2015 V2 (JOHNSON)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-v2_20170518_3_2015v2_20170517_i88.jpg",
+        "date": "20170518",
+        "urlId": "c2015-v2",
+        "width": 1134,
+        "height": 1046
+      },
+      {
+        "type": "text",
+        "text": "C2015V2 18Mayo 2017"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-v2_20170404_2_2015v2_20170404_i88.jpg",
+        "date": "20170404",
+        "urlId": "c2015-v2",
+        "width": 1134,
+        "height": 1047
+      },
+      {
+        "type": "text",
+        "text": "C2015V2 4 Abril 2017"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-v2_20161118_1_2015v2_20161118_i88.jpg",
+        "date": "20161118",
+        "urlId": "c2015-v2",
+        "width": 1134,
+        "height": 970
+      },
+      {
+        "type": "text",
+        "text": "C2015V2 18Noviembre2016"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2017eax",
+    "objeto": "SN 2017eax",
+    "etiquetas": "galaxias",
+    "urlId": "sn2017-eax",
+    "filename": "src/pages/registro/sn2017-eax.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2017eax",
+          "titulo": "SN 2017eax",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2017eax"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2017-eax_20170518_1_sn2017eax_20170518_i88.jpg",
+        "date": "20170518",
+        "urlId": "sn2017-eax",
+        "width": 1134,
+        "height": 999
+      },
+      {
+        "type": "text",
+        "text": "SN2017eax 18Mayo 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2017dfc",
+    "objeto": "SN 2017dfc",
+    "etiquetas": "galaxias",
+    "urlId": "sn2017-dfc",
+    "filename": "src/pages/registro/sn2017-dfc.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2017dfc",
+          "titulo": "SN 2017dfc",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2017dfc"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2017-dfc_20170423_1_2017dfc_20170423_i88.jpg",
+        "date": "20170423",
+        "urlId": "sn2017-dfc",
+        "width": 1134,
+        "height": 1115
+      },
+      {
+        "type": "text",
+        "text": "Supernova 2017dfc en un principio se penso que pertenecia a M63 pero su magnitud desconcertaba despues de su estudio espectral se comprobo que estaba a una distancia de casi 900millones años luz mientras que M63 esta a unos 30 millones es decir esta justo detras de la Galaxia en nuestro campo de vision"
+      }
+    ]
+  },
+  {
+    "titulo": "Luna",
+    "objeto": "luna",
+    "etiquetas": "sistema solar",
+    "urlId": "luna",
+    "filename": "src/pages/registro/luna.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "luna",
+          "titulo": "Luna",
+          "etiquetas": "sistema solar"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Luna"
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20161114_8_luna_14noviembre2016.jpg",
+        "date": "20161114",
+        "urlId": "luna",
+        "width": 2835,
+        "height": 1886
+      },
+      {
+        "type": "text",
+        "text": "Superluna 14Noviembre2016"
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20150320_7_luna-110-2pa2.jpg",
+        "date": "20150320",
+        "urlId": "luna",
+        "width": 1134,
+        "height": 753
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20150320_6_luna-358mmpa1.jpg",
+        "date": "20150320",
+        "urlId": "luna",
+        "width": 2848,
+        "height": 4288
+      },
+      {
+        "type": "text",
+        "text": "Eclipse 20Marzo2015 (nublado)"
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20150320_5_ecclipse1_20marzo_2015-006.jpg",
+        "date": "20150320",
+        "urlId": "luna",
+        "width": 1430,
+        "height": 949
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20150320_4_ecclipse2_20marzo_2015-006.jpg",
+        "date": "20150320",
+        "urlId": "luna",
+        "width": 1430,
+        "height": 949
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20150320_3_ecclipse3_20marzo_2015-006.jpg",
+        "date": "20150320",
+        "urlId": "luna",
+        "width": 1430,
+        "height": 949
+      },
+      {
+        "type": "text",
+        "text": "Imagen de la  New 360mm F1810mm Camara Nikon D90"
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20070303_2_eclipse-3-marzo-2007.jpg",
+        "date": "20070303",
+        "urlId": "luna",
+        "width": 827,
+        "height": 765
+      },
+      {
+        "type": "text",
+        "text": "Eclipse de  3 marzo 2007 Camara digital"
+      },
+      {
+        "type": "image",
+        "src": "registro/luna_20070303_1_eclipse-3-marzo-2007-ccd.jpg",
+        "date": "20070303",
+        "urlId": "luna",
+        "width": 827,
+        "height": 551
+      },
+      {
+        "type": "text",
+        "text": "Eclipse de  3 marzo 2007 ccd filtro h alfa"
+      }
+    ]
+  },
+  {
+    "titulo": "M1",
+    "objeto": "M1",
+    "etiquetas": "nebulosas",
+    "urlId": "m1",
+    "filename": "src/pages/registro/m1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M1",
+          "titulo": "M1",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M1"
+      },
+      {
+        "type": "image",
+        "src": "registro/m1_20161101_1_m1_20161111_i88.jpg",
+        "date": "20161101",
+        "urlId": "m1",
+        "width": 1371,
+        "height": 879
+      },
+      {
+        "type": "text",
+        "text": "Noviembre 2016"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2016gfy",
+    "objeto": "SN 2016gfy",
+    "etiquetas": "galaxias",
+    "urlId": "sn2016-gfy",
+    "filename": "src/pages/registro/sn2016-gfy.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2016gfy",
+          "titulo": "SN 2016gfy",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2016gfy"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2016-gfy_20160924_1_sn2016gfy_ngc2276.jpg",
+        "date": "20160924",
+        "urlId": "sn2016-gfy",
+        "width": 2160,
+        "height": 2156
+      },
+      {
+        "type": "text",
+        "text": "sn2016gfy en ngc 2276 24 Septiembre 2016"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2016cok",
+    "objeto": "SN 2016cok",
+    "etiquetas": "galaxias",
+    "urlId": "sn2016-cok",
+    "filename": "src/pages/registro/sn2016-cok.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2016cok",
+          "titulo": "SN 2016cok",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2016cok"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2016-cok_20160530_1_m66m65_20160530_i881.jpg",
+        "date": "20160530",
+        "urlId": "sn2016-cok",
+        "width": 1530,
+        "height": 1417
+      },
+      {
+        "type": "text",
+        "text": "Sn At2016cok en M66 30 Mayo 2016"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2016coj",
+    "objeto": "SN 2016coj",
+    "etiquetas": "galaxias",
+    "urlId": "sn2016-coj",
+    "filename": "src/pages/registro/sn2016-coj.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2016coj",
+          "titulo": "SN 2016coj",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2016coj"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2016-coj_20160529_1_sn2016coj_20160530_i881.jpg",
+        "date": "20160529",
+        "urlId": "sn2016-coj",
+        "width": 1530,
+        "height": 1244
+      },
+      {
+        "type": "text",
+        "text": "en NGC 4125 29 Mayo 2016"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2014 S2 (PANSTARRS)",
+    "objeto": "C/2014 S2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2014-s2",
+    "filename": "src/pages/registro/c2014-s2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2014 S2",
+          "titulo": "C/2014 S2 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2014 S2 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-s2_20160407_2_2014s2_20160407_i88.jpg",
+        "date": "20160407",
+        "urlId": "c2014-s2",
+        "width": 567,
+        "height": 474
+      },
+      {
+        "type": "text",
+        "text": "2014S2 7 Abril 2016"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-s2_20150913_1_2014s2_20150913_i88.jpg",
+        "date": "20150913",
+        "urlId": "c2014-s2",
+        "width": 1530,
+        "height": 1644
+      },
+      {
+        "type": "text",
+        "text": "2014S2 13 septiembre2015"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2013 US10 (CATALINA)",
+    "objeto": "C/2013 US10",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2013-us10",
+    "filename": "src/pages/registro/c2013-us10.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2013 US10",
+          "titulo": "C/2013 US10 (CATALINA)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2013 US10 (CATALINA)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-us10_20160306_7_2013us10_20160306_i88.jpg",
+        "date": "20160306",
+        "urlId": "c2013-us10",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "2013US10 6 Marzo 2016"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-us10_20160223_6_2013us10_20160223_i88.jpg",
+        "date": "20160223",
+        "urlId": "c2013-us10",
+        "width": 1530,
+        "height": 1154
+      },
+      {
+        "type": "text",
+        "text": "2013US10 23 Febrero 2016"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-us10_20151220_5_2013us10pro_20151220_i88.jpg",
+        "date": "20151220",
+        "urlId": "c2013-us10",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-us10_20121200_4_rgbpro_2.jpg",
+        "date": "20121200",
+        "urlId": "c2013-us10",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-us10_20151220_3_c_2013-us10-catalina_orbita.jpg",
+        "date": "20151220",
+        "urlId": "c2013-us10",
+        "width": 468,
+        "height": 511
+      },
+      {
+        "type": "text",
+        "text": "2013US10 20 diciembre 2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-us10_20151217_2_2013us10_20151217_i88.jpg",
+        "date": "20151217",
+        "urlId": "c2013-us10",
+        "width": 1464,
+        "height": 963
+      },
+      {
+        "type": "text",
+        "text": "2013US10 17diciembre 2015- 420mm"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-us10_20151206_1_c2013us10_20151206_i881.jpg",
+        "date": "20151206",
+        "urlId": "c2013-us10",
+        "width": 1530,
+        "height": 1352
+      },
+      {
+        "type": "text",
+        "text": "2013US10 6diciembre 2015"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2013 X1 (PANSTARRS)",
+    "objeto": "C/2013 X1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2013-x1",
+    "filename": "src/pages/registro/c2013-x1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2013 X1",
+          "titulo": "C/2013 X1 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2013 X1 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-x1_20160112_4_c2013x1_20160112_i88.jpg",
+        "date": "20160112",
+        "urlId": "c2013-x1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Cometa C2013X1 12 Enero 2016"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-x1_20151212_3_2013x1_20151212_i88.jpg",
+        "date": "20151212",
+        "urlId": "c2013-x1",
+        "width": 652,
+        "height": 425
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-x1_20151212_2_2013x1rgb_20151212_i88.jpg",
+        "date": "20151212",
+        "urlId": "c2013-x1",
+        "width": 665,
+        "height": 434
+      },
+      {
+        "type": "text",
+        "text": "Cometa C2013X1 12 diciembre 2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-x1_20151119_1_2013x1_20151119_i88.jpg",
+        "date": "20151119",
+        "urlId": "c2013-x1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Cometa C2013X1 19 Noviembre 2015"
+      }
+    ]
+  },
+  {
+    "titulo": "quinteto",
+    "objeto": "quinteto",
+    "etiquetas": "galaxias",
+    "urlId": "quinteto",
+    "filename": "src/pages/registro/quinteto.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "quinteto",
+          "titulo": "quinteto",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "quinteto"
+      },
+      {
+        "type": "image",
+        "src": "registro/quinteto_20151115_1_quinteto.png",
+        "date": "20151115",
+        "urlId": "quinteto",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Imagen del Quinteto 15 Noviembre 2015"
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 7331",
+    "objeto": "NGC 7331",
+    "etiquetas": "galaxias",
+    "urlId": "ngc-7331",
+    "filename": "src/pages/registro/ngc-7331.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 7331",
+          "titulo": "NGC 7331",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 7331"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-7331_20151016_1_ngc7331_9_600s_16102015.jpg",
+        "date": "20151016",
+        "urlId": "ngc-7331",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "NGC7331 16 Octubre2015 9 tomas de 600s"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2014 Q2 (LOVEJOY)",
+    "objeto": "C/2014 Q2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2014-q2",
+    "filename": "src/pages/registro/c2014-q2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2014 Q2",
+          "titulo": "C/2014 Q2 (LOVEJOY)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2014 Q2 (LOVEJOY)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150914_21_2014q2_20150914_i88.jpg",
+        "date": "20150914",
+        "urlId": "c2014-q2",
+        "width": 1440,
+        "height": 1191
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 14Septiembre2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150708_20_2014q2_20150708_i88.jpg",
+        "date": "20150708",
+        "urlId": "c2014-q2",
+        "width": 1134,
+        "height": 889
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 8julio2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20121200_19_2014q2_rgb.jpg",
+        "date": "20121200",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150222_18_2014q2sigjpg.jpg",
+        "date": "20150222",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 dia 22 Febrero 2015 New360mmF1810mm"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20121200_17_2014q22.jpg",
+        "date": "20121200",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150208_16_2014q2es.jpg",
+        "date": "20150208",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 dia 8 Febrero 2015 New360mmF1810mm"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150123_15_2014q2_20150123_88.jpg",
+        "date": "20150123",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150123_14_2014q2_20152301_i88i.jpg",
+        "date": "20150123",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 dia 23 Enero 2015 New360mmF1810mm"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_undefined_13_video-5.png",
+        "urlId": "c2014-q2",
+        "width": 24,
+        "height": 24
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150123_12_2014q2_20150123_i88651.jpg",
+        "date": "20150123",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150122_11_2014q2_20150123_i88f651.jpg",
+        "date": "20150122",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 dia 22 Enero 2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150122_10_2014q2f1_20150122_i88.jpg",
+        "date": "20150122",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 dia 22 Enero 2015 New360mmF1810mm"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150107_9_c2014q2_20150107_i88.jpg",
+        "date": "20150107",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150107_8_c2014q2fil_20150107_i88.jpg",
+        "date": "20150107",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20150107_7_c2014q2fil2_20150107_i881.jpg",
+        "date": "20150107",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2014Q2 dia 7 Enero 2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20121200_6_2014q2.jpg",
+        "date": "20121200",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20121200_5_2014q2f.jpg",
+        "date": "20121200",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20141226_4_2014q2inv.jpg",
+        "date": "20141226",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "cometa 2014Q2 26diciembre2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20141224_3_2014q2_20141223_i881.jpg",
+        "date": "20141224",
+        "urlId": "c2014-q2",
+        "width": 1134,
+        "height": 963
+      },
+      {
+        "type": "text",
+        "text": "cometa 2014Q2 24diciembre2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20141224_2_2014q2in_20141223_i88.jpg",
+        "date": "20141224",
+        "urlId": "c2014-q2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "cometa 2014Q2 24diciembre2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-q2_20141224_1_2014q2rgb.jpg",
+        "date": "20141224",
+        "urlId": "c2014-q2",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "cometa 2014Q2 24diciembre2014"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2015 F4 (JACQUES)",
+    "objeto": "C/2015 F4",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2015-f4",
+    "filename": "src/pages/registro/c2015-f4.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2015 F4",
+          "titulo": "C/2015 F4 (JACQUES)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2015 F4 (JACQUES)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-f4_20150914_5_2015f4_20150914_i88.jpg",
+        "date": "20150914",
+        "urlId": "c2015-f4",
+        "width": 1491,
+        "height": 1191
+      },
+      {
+        "type": "text",
+        "text": "C2015F4 14Septiembre 2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-f4_20150913_4_20150913_i88.jpg",
+        "date": "20150913",
+        "urlId": "c2015-f4",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2015F4 13Septiembre 2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-f4_20150910_3_2015f4_20150910_i882.jpg",
+        "date": "20150910",
+        "urlId": "c2015-f4",
+        "width": 1530,
+        "height": 1176
+      },
+      {
+        "type": "text",
+        "text": "C2015F4 10Septiembre 2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-f4_20150712_2_2015f4_20150713_i88.jpg",
+        "date": "20150712",
+        "urlId": "c2015-f4",
+        "width": 1530,
+        "height": 1153
+      },
+      {
+        "type": "text",
+        "text": "2015F4 12julio2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2015-f4_20150709_1_2015f4_20150708_i88.jpg",
+        "date": "20150709",
+        "urlId": "c2015-f4",
+        "width": 1530,
+        "height": 1164
+      },
+      {
+        "type": "text",
+        "text": "2015F4 9julio2015"
+      }
+    ]
+  },
+  {
+    "titulo": "M27",
+    "objeto": "M27",
+    "etiquetas": "nebulosas",
+    "urlId": "m27",
+    "filename": "src/pages/registro/m27.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M27",
+          "titulo": "M27",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M27"
+      },
+      {
+        "type": "image",
+        "src": "registro/m27_20150715_2_m27_19junio2015final.jpg",
+        "date": "20150715",
+        "urlId": "m27",
+        "width": 1530,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "S106 en la constelacion de Cisne 15Julio2015 (comparativa telescopio Subaru 8.2mts) RGB"
+      },
+      {
+        "type": "image",
+        "src": "registro/m27_20121100_1_m27.jpg",
+        "date": "20121100",
+        "urlId": "m27",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Halfa"
+      }
+    ]
+  },
+  {
+    "titulo": "PSN J17292918+7542390",
+    "objeto": "PSN J17292918+7542390",
+    "etiquetas": "galaxias",
+    "urlId": "psn-j17292918-7542390",
+    "filename": "src/pages/registro/psn-j17292918-7542390.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "PSN J17292918+7542390",
+          "titulo": "PSN J17292918+7542390",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "PSN J17292918+7542390"
+      },
+      {
+        "type": "image",
+        "src": "registro/psn-j17292918-7542390_20150715_1_psn-j172929187542390_ngc6412_20150715_i88.jpg",
+        "date": "20150715",
+        "urlId": "psn-j17292918-7542390",
+        "width": 1458,
+        "height": 1080
+      },
+      {
+        "type": "text",
+        "text": "en NGC6412 15Julio 2015"
+      }
+    ]
+  },
+  {
+    "titulo": "s106",
+    "objeto": "S106",
+    "etiquetas": "nebulosas",
+    "urlId": "s106",
+    "filename": "src/pages/registro/s106.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "S106",
+          "titulo": "s106",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "s106"
+      },
+      {
+        "type": "image",
+        "src": "registro/s106_20150715_2_s106.jpg",
+        "date": "20150715",
+        "urlId": "s106",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "S106 en la constelacion de Cisne 15Julio2015"
+      },
+      {
+        "type": "image",
+        "src": "registro/s106_20150715_1_comparativa.jpg",
+        "date": "20150715",
+        "urlId": "s106",
+        "width": 1597,
+        "height": 1033
+      }
+    ]
+  },
+  {
+    "titulo": "PSN J20435314+1230304",
+    "objeto": "PSN J20435314+1230304",
+    "etiquetas": "galaxias",
+    "urlId": "psn-j20435314-1230304",
+    "filename": "src/pages/registro/psn-j20435314-1230304.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "PSN J20435314+1230304",
+          "titulo": "PSN J20435314+1230304",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "PSN J20435314+1230304"
+      },
+      {
+        "type": "image",
+        "src": "registro/psn-j20435314-1230304_20150712_1_psn-j204353141230304ngc6956.jpg",
+        "date": "20150712",
+        "urlId": "psn-j20435314-1230304",
+        "width": 1530,
+        "height": 1253
+      },
+      {
+        "type": "text",
+        "text": "Supernova en ngc 6956 12Julio2015"
+      }
+    ]
+  },
+  {
+    "titulo": "PSN J07285387+3349106",
+    "objeto": "PSN J07285387+3349106",
+    "etiquetas": "galaxias",
+    "urlId": "psn-j07285387-3349106",
+    "filename": "src/pages/registro/psn-j07285387-3349106.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "PSN J07285387+3349106",
+          "titulo": "PSN J07285387+3349106",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "PSN J07285387+3349106"
+      },
+      {
+        "type": "image",
+        "src": "registro/psn-j07285387-3349106_20150223_1_psn-j072853873349106_ngc23882.jpg",
+        "date": "20150223",
+        "urlId": "psn-j07285387-3349106",
+        "width": 1530,
+        "height": 1407
+      },
+      {
+        "type": "text",
+        "text": "Supernova en ngc 2388 23 Febrero 2015"
+      }
+    ]
+  },
+  {
+    "titulo": "PSN J14021678+5426205",
+    "objeto": "PSN J14021678+5426205",
+    "etiquetas": "galaxias",
+    "urlId": "psn-j14021678-5426205",
+    "filename": "src/pages/registro/psn-j14021678-5426205.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "PSN J14021678+5426205",
+          "titulo": "PSN J14021678+5426205",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "PSN J14021678+5426205"
+      },
+      {
+        "type": "image",
+        "src": "registro/psn-j14021678-5426205_20150222_1_m101psn-j140216785426205.jpg",
+        "date": "20150222",
+        "urlId": "psn-j14021678-5426205",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Supernova en M101 22Febrero 2015"
+      }
+    ]
+  },
+  {
+    "titulo": "15P/Finlay",
+    "objeto": "15P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "15P",
+    "filename": "src/pages/registro/15P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "15P",
+          "titulo": "15P/Finlay",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "15P/Finlay"
+      },
+      {
+        "type": "image",
+        "src": "registro/15P_20141220_1_15p_20141220_i88_.jpg",
+        "date": "20141220",
+        "urlId": "15P",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "Outburst Cometa"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014dg",
+    "objeto": "SN 2014dg",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-dg",
+    "filename": "src/pages/registro/sn2014-dg.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014dg",
+          "titulo": "SN 2014dg",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014dg"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-dg_20141217_1_sn2014dg_ugc2855_20141217.jpg",
+        "date": "20141217",
+        "urlId": "sn2014-dg",
+        "width": 1530,
+        "height": 1304
+      },
+      {
+        "type": "text",
+        "text": "SN2014DG en ugc 2855 17diciembre2014"
+      }
+    ]
+  },
+  {
+    "titulo": "M110",
+    "objeto": "M110",
+    "etiquetas": "galaxias",
+    "urlId": "m110",
+    "filename": "src/pages/registro/m110.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M110",
+          "titulo": "M110",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M110"
+      },
+      {
+        "type": "image",
+        "src": "registro/m110_20141212_1_m110_e6_20141212.jpg",
+        "date": "20141212",
+        "urlId": "m110",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Galaxia eliptica _E6-20141212"
+      }
+    ]
+  },
+  {
+    "titulo": "PSN J22081243+4110503",
+    "objeto": "PSN J22081243+4110503",
+    "etiquetas": "galaxias",
+    "urlId": "psn-j22081243-4110503",
+    "filename": "src/pages/registro/psn-j22081243-4110503.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "PSN J22081243+4110503",
+          "titulo": "PSN J22081243+4110503",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "PSN J22081243+4110503"
+      },
+      {
+        "type": "image",
+        "src": "registro/psn-j22081243-4110503_20141212_1_psn-j220812434110503_ugc11919_sbc2014121512.jpg",
+        "date": "20141212",
+        "urlId": "psn-j22081243-4110503",
+        "width": 1134,
+        "height": 1015
+      },
+      {
+        "type": "text",
+        "text": "en ugc 11919 12Diciembre 2014"
+      }
+    ]
+  },
+  {
+    "titulo": "PNV J03093063+2638031",
+    "objeto": "PNV J03093063+2638031",
+    "etiquetas": "galaxias",
+    "urlId": "pnv-j03093063-2638031",
+    "filename": "src/pages/registro/pnv-j03093063-2638031.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "PNV J03093063+2638031",
+          "titulo": "PNV J03093063+2638031",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "PNV J03093063+2638031"
+      },
+      {
+        "type": "image",
+        "src": "registro/pnv-j03093063-2638031_20141030_1_pnv_-j030930632638031.jpg",
+        "date": "20141030",
+        "urlId": "pnv-j03093063-2638031",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "NOVA En la costelacion de Aries 30Octubre 2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014cx",
+    "objeto": "SN 2014cx",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-cx",
+    "filename": "src/pages/registro/sn2014-cx.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014cx",
+          "titulo": "SN 2014cx",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014cx"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-cx_20141030_1_sn2014cx20141030_i88.jpg",
+        "date": "20141030",
+        "urlId": "sn2014-cx",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "sn2014cx 30Octubre2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SNhunt260",
+    "objeto": "SNhunt260",
+    "etiquetas": "galaxias",
+    "urlId": "snhunt260",
+    "filename": "src/pages/registro/snhunt260.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SNhunt260",
+          "titulo": "SNhunt260",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SNhunt260"
+      },
+      {
+        "type": "image",
+        "src": "registro/snhunt260_20141021_1_snhunt260-_20141021_i88.jpg",
+        "date": "20141021",
+        "urlId": "snhunt260",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "21Octubre2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014CY",
+    "objeto": "SN 2014CY",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-cy",
+    "filename": "src/pages/registro/sn2014-cy.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014CY",
+          "titulo": "SN 2014CY",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014CY"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-cy_20141018_1_sn2014cy_20141018_gjcb1.jpg",
+        "date": "20141018",
+        "urlId": "sn2014-cy",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "SN2014CY en NGC7742"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2011 J2 (LINEAR)",
+    "objeto": "C/2011 J2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2011-j2",
+    "filename": "src/pages/registro/c2011-j2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2011 J2",
+          "titulo": "C/2011 J2 (LINEAR)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2011 J2 (LINEAR)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2011-j2_20140915_4_c2011j2_20140915_i88.jpg",
+        "date": "20140915",
+        "urlId": "c2011-j2",
+        "width": 765,
+        "height": 510
+      },
+      {
+        "type": "image",
+        "src": "registro/c2011-j2_20140915_3_c2011j2_20140915_i88dis_astr.jpg",
+        "date": "20140915",
+        "urlId": "c2011-j2",
+        "width": 570,
+        "height": 401
+      },
+      {
+        "type": "text",
+        "text": "cometa C2011J2\nImagenes del dia"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2011-j2_20140915_2_c2014j2_1_20.jpg",
+        "date": "20140915",
+        "urlId": "c2011-j2",
+        "width": 850,
+        "height": 600
+      },
+      {
+        "type": "image",
+        "src": "registro/c2011-j2_20140914_1_c2011j2_20140914_i88iv.jpg",
+        "date": "20140914",
+        "urlId": "c2011-j2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2011J2 14Septiembre 2014 posible fragmentacion del nucleo"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2014 E2 (JACQUES)",
+    "objeto": "C/2014 E2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2014-e2",
+    "filename": "src/pages/registro/c2014-e2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2014 E2",
+          "titulo": "C/2014 E2 (JACQUES)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2014 E2 (JACQUES)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140910_8_c2014e2_20140910_i88.jpg",
+        "date": "20140910",
+        "urlId": "c2014-e2",
+        "width": 850,
+        "height": 551
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140910_7_c2014e2i_20140910_i881.jpg",
+        "date": "20140910",
+        "urlId": "c2014-e2",
+        "width": 850,
+        "height": 567
+      },
+      {
+        "type": "text",
+        "text": "C2014E2 10 Septiembre 2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140828_6_c2014e2_20140828_i88.jpg",
+        "date": "20140828",
+        "urlId": "c2014-e2",
+        "width": 765,
+        "height": 500
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140827_5_c2014e2inv_20140828_i88.jpg",
+        "date": "20140827",
+        "urlId": "c2014-e2",
+        "width": 765,
+        "height": 510
+      },
+      {
+        "type": "text",
+        "text": "C2014E2 27 Agosto 2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140807_4_c2014e2_20140807_i88.jpg",
+        "date": "20140807",
+        "urlId": "c2014-e2",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140807_3_c2014e2inv_20140807_i88.jpg",
+        "date": "20140807",
+        "urlId": "c2014-e2",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "C2014E2 7 Agosto 2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140729_2_c2014e2_20140729_i882.jpg",
+        "date": "20140729",
+        "urlId": "c2014-e2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2014-e2_20140729_1_c2014e2_20140729_i88inver2.jpg",
+        "date": "20140729",
+        "urlId": "c2014-e2",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2014E2 29Julio2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014bv",
+    "objeto": "SN 2014bv",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-bv",
+    "filename": "src/pages/registro/sn2014-bv.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014bv",
+          "titulo": "SN 2014bv",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014bv"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-bv_20140714_1_sn2014bv_20140714_i88-copia.jpg",
+        "date": "20140714",
+        "urlId": "sn2014-bv",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "sn2014bv en ngc4386"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2012 K1 (PANSTARRS)",
+    "objeto": "C/2012 K1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2012-k1",
+    "filename": "src/pages/registro/c2012-k1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2012 K1",
+          "titulo": "C/2012 K1 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2012 K1 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-k1_20140523_4_2012k1-pro.jpg",
+        "date": "20140523",
+        "urlId": "c2012-k1",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "C 2012K1 23 Mayo 2014 ¿Procesado?"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-k1_20140522_3_c2012k1_20140522_i88.jpg",
+        "date": "20140522",
+        "urlId": "c2012-k1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "2012K1 22 Mayo 2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-k1_20140423_2_c2012k1_20140423_i881.jpg",
+        "date": "20140423",
+        "urlId": "c2012-k1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Comprometerse 2012K1 23 Abril 2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-k1_20140307_1_2012k1lrgb_20140307_i88.jpg",
+        "date": "20140307",
+        "urlId": "c2012-k1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2012K1 7 Marzo 2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014aa",
+    "objeto": "SN 2014aa",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-aa",
+    "filename": "src/pages/registro/sn2014-aa.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014aa",
+          "titulo": "SN 2014aa",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014aa"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-aa_20140326_1_sn2014aa_20140326_i88.jpg",
+        "date": "20140326",
+        "urlId": "sn2014-aa",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "sn2014aa 26marzo 2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014ai",
+    "objeto": "SN 2014ai",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-ai",
+    "filename": "src/pages/registro/sn2014-ai.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014ai",
+          "titulo": "SN 2014ai",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014ai"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-ai_20140326_1_sn2014ai_20140326_i88.jpg",
+        "date": "20140326",
+        "urlId": "sn2014-ai",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "sn2014ai 26marzo2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014l",
+    "objeto": "SN 2014l",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-l",
+    "filename": "src/pages/registro/sn2014-l.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014l",
+          "titulo": "SN 2014l",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014l"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-l_20140307_1_sn2014l_20140307_i88.jpg",
+        "date": "20140307",
+        "urlId": "sn2014-l",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "SN2014L En M99 7marzo2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2013am",
+    "objeto": "SN 2013am",
+    "etiquetas": "galaxias",
+    "urlId": "sn2013-am",
+    "filename": "src/pages/registro/sn2013-am.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2013am",
+          "titulo": "SN 2013am",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2013am"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2013-am_20140202_1_sn2014g_20140202_i88.jpg",
+        "date": "20140202",
+        "urlId": "sn2013-am",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "SN2014G en NGC3448 2 Febrero 2014"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014j",
+    "objeto": "SN 2014j",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-j",
+    "filename": "src/pages/registro/sn2014-j.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014j",
+          "titulo": "SN 2014j",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014j"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-j_20140202_2_sn2014jrgb_20140202_i88.jpg",
+        "date": "20140202",
+        "urlId": "sn2014-j",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "sn2014j 6 imagenes con cada filtro de 60segundos 2 febrero 2014"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-j_20140202_1_sn2014j_20140202_i88.jpg",
+        "date": "20140202",
+        "urlId": "sn2014-j",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "Supernova 2014J en la galaxia M82 2Febrero 2014"
+      }
+    ]
+  },
+  {
+    "titulo": "Hercules Cluster",
+    "objeto": "Abell 2151",
+    "etiquetas": "galaxias",
+    "urlId": "abell-2151",
+    "filename": "src/pages/registro/abell-2151.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "Abell 2151",
+          "titulo": "Hercules Cluster",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Hercules Cluster"
+      },
+      {
+        "type": "image",
+        "src": "registro/abell-2151_20140200_4_logodef.png",
+        "date": "20140200",
+        "urlId": "abell-2151",
+        "width": 279,
+        "height": 151
+      },
+      {
+        "type": "text",
+        "text": "Abel 2151"
+      },
+      {
+        "type": "image",
+        "src": "registro/abell-2151_20110527_3_abel-2151-2-1200s-27-mayo-2011pa.jpg",
+        "date": "20110527",
+        "urlId": "abell-2151",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "Nuestra galaxia mide aproximadamente 100–120mil años luz se cree que tiene unos 200—400 millones de estrellas"
+      },
+      {
+        "type": "image",
+        "src": "registro/abell-2151_20121200_2_hubble_sequence_photo.png",
+        "date": "20121200",
+        "urlId": "abell-2151",
+        "width": 800,
+        "height": 443
+      },
+      {
+        "type": "text",
+        "text": "En la siguientesecuencia de Hubble se pueden apreciar los distintos tipos de Galaxias"
+      },
+      {
+        "type": "image",
+        "src": "registro/abell-2151_20170506_1_20170506_200443.jpg",
+        "date": "20170506",
+        "urlId": "abell-2151",
+        "width": 971,
+        "height": 658
+      },
+      {
+        "type": "text",
+        "text": "ngc7331 6 Mayo 2017"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2013 R1 (LOVEJOY)",
+    "objeto": "C/2013 R1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2013-r1",
+    "filename": "src/pages/registro/c2013-r1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2013 R1",
+          "titulo": "C/2013 R1 (LOVEJOY)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2013 R1 (LOVEJOY)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-r1_20131204_4_2013r1_20131204_i88.jpg",
+        "date": "20131204",
+        "urlId": "c2013-r1",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "text",
+        "text": "C2013R1 4diciembre 2013 30 20 Imagen “New360mmF1810mm st8xme + R = 1,03” Arco"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-r1_20121200_3_procesado.jpg",
+        "date": "20121200",
+        "urlId": "c2013-r1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Procesado para visualizar estructura de la cabeza del cometa ¿procesado?"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-r1_20131117_2_2013r1_20131117_i88_.jpg",
+        "date": "20131117",
+        "urlId": "c2013-r1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2013R1 17 Noviembre 2013 30 20 Imagen ”\nArticulo de colavoracion con el IA de Andalucia, CSIF"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-r1_20130215_1_15-febrero-2013-201da12-20-10-5-2-1.jpg",
+        "date": "20130215",
+        "urlId": "c2013-r1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Asteroide 2012DA42 15Febrero 2013"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2012 S1 (ISON)",
+    "objeto": "C/2012 S1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2012-s1",
+    "filename": "src/pages/registro/c2012-s1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2012 S1",
+          "titulo": "C/2012 S1 (ISON)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2012 S1 (ISON)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_20131116_8_c2012s1_20131116_i88.jpg",
+        "date": "20131116",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2012S1 16/11/201325 2 x 2 binning de 10s Imagen"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_20131116_7_2012s1rgb_20131116_i88.jpg",
+        "date": "20131116",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Composición 3x RGB 3 tres imágenes de 20 segundos en cada canal de la Resolución 2:06 “"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_20131107_6_c2012s1_20131107_i88.jpg",
+        "date": "20131107",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C/2012S1 dia 7 Noviembre 2013 distancia 1 UA"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_20131012_5_c2012s1_20131013_i88.jpg",
+        "date": "20131012",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2012S1 Imagen dia 12 Octubre 2013 distancia 1.7UA parece que no va a ser tan espectacular"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_20130407_4_2012s1_20130407_i88.jpg",
+        "date": "20130407",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2012 S1 dia 7 Abril 2013"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_20130130_3_2012s1-10-100s-31-enero-2013.jpg",
+        "date": "20130130",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "El cometa C2012 S1 el 30 Enero 2013"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_20130106_2_user_556_6_enero_2012_c2012s1_30_100s_1357724375_527011.jpg",
+        "date": "20130106",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2012 S1 dia 6 Enero 2013"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-s1_Noviembre22_1_user_556_2012s1_3__300s_22noviembre_2012pa.jpg",
+        "date": "Noviembre22",
+        "urlId": "c2012-s1",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2012 S1 dia 22 de Noviembre de 2012 3 * 300s DISTANCIA 5.1UA"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2011 L4 (PANSTARRS)",
+    "objeto": "C/2011 L4",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2011-l4",
+    "filename": "src/pages/registro/c2011-l4.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2011 L4",
+          "titulo": "C/2011 L4 (PANSTARRS)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2011 L4 (PANSTARRS)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2011-l4_20130421_3_2011l4_20130421_i88.jpg",
+        "date": "20130421",
+        "urlId": "c2011-l4",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "2011L4 50 25s diámetro Imagen 21Abril2013"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2011-l4_20120705_2_user_556_c2011_l4pa_15_julio2012_1342515487_708930.jpg",
+        "date": "20120705",
+        "urlId": "c2011-l4",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "C2011L4 5 julio 2012"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2011-l4_20121100_1_obras_031.gif",
+        "date": "20121100",
+        "urlId": "c2011-l4",
+        "width": 127,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2014G",
+    "objeto": "SN 2014G",
+    "etiquetas": "galaxias",
+    "urlId": "sn2014-g",
+    "filename": "src/pages/registro/sn2014-g.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2014G",
+          "titulo": "SN 2014G",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2014G"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2014-g_20130402_1_m65-3-600s-2abril-2013.jpg",
+        "date": "20130402",
+        "urlId": "sn2014-g",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Supernova 2013am en M65"
+      }
+    ]
+  },
+  {
+    "titulo": "99942 Apophis",
+    "objeto": "99942 Apophis",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "99942-apophis",
+    "filename": "src/pages/registro/99942-apophis.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "99942 Apophis",
+          "titulo": "99942 Apophis",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "99942 Apophis"
+      },
+      {
+        "type": "image",
+        "src": "registro/99942-apophis_20130208_1_apophis-8febrero-2013.jpg",
+        "date": "20130208",
+        "urlId": "99942-apophis",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Imagen del Asteroide 99942 (Apophis) 0.325 kilometros dos diametro"
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 7547/49/50/53/58, Hickson 93",
+    "objeto": "Arp 99",
+    "etiquetas": "galaxias",
+    "urlId": "arp-99",
+    "filename": "src/pages/registro/arp-99.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "Arp 99",
+          "titulo": "NGC 7547/49/50/53/58, Hickson 93",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 7547/49/50/53/58, Hickson 93"
+      },
+      {
+        "type": "image",
+        "src": "registro/arp-99_20121200_1_arp99.jpg",
+        "date": "20121200",
+        "urlId": "arp-99",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "conjunto de Galaxias en Pegaso"
+      }
+    ]
+  },
+  {
+    "titulo": "C/1996 B2 (Hyakutake)",
+    "objeto": "C/1996 B2",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c1996-b2",
+    "filename": "src/pages/registro/c1996-b2.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/1996 B2",
+          "titulo": "C/1996 B2 (Hyakutake)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/1996 B2 (Hyakutake)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c1996-b2_20121200_2_c1996b2.jpg",
+        "date": "20121200",
+        "urlId": "c1996-b2",
+        "width": 592,
+        "height": 816
+      },
+      {
+        "type": "text",
+        "text": "Hyakutake () Marzo 1996"
+      },
+      {
+        "type": "image",
+        "src": "registro/c1996-b2_20121200_1_hyakutake_carta.gif",
+        "date": "20121200",
+        "urlId": "c1996-b2",
+        "width": 278,
+        "height": 554
+      }
+    ]
+  },
+  {
+    "titulo": "C/2013 UQ4 (CATALINA)",
+    "objeto": "C/2013 UQ4",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2013-uq4",
+    "filename": "src/pages/registro/c2013-uq4.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2013 UQ4",
+          "titulo": "C/2013 UQ4 (CATALINA)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2013 UQ4 (CATALINA)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-uq4_20121200_3_c2013uq4_es.jpg",
+        "date": "20121200",
+        "urlId": "c2013-uq4",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-uq4_20121200_2_c2013uq4_sig.jpg",
+        "date": "20121200",
+        "urlId": "c2013-uq4",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "image",
+        "src": "registro/c2013-uq4_20140701_1_c2013uq4_20140701_i88z.jpg",
+        "date": "20140701",
+        "urlId": "c2013-uq4",
+        "width": 756,
+        "height": 562
+      },
+      {
+        "type": "text",
+        "text": "C2013uq4 imagen madrugada 1julio2014"
+      }
+    ]
+  },
+  {
+    "titulo": "M82",
+    "objeto": "M82",
+    "etiquetas": "galaxias",
+    "urlId": "m82",
+    "filename": "src/pages/registro/m82.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "M82",
+          "titulo": "M82",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "M82"
+      },
+      {
+        "type": "image",
+        "src": "registro/m82_20121200_1_m82ha.jpg",
+        "date": "20121200",
+        "urlId": "m82",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "filtro h alfa"
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 5317",
+    "objeto": "NGC 5317",
+    "etiquetas": "galaxias",
+    "urlId": "ngc-5317",
+    "filename": "src/pages/registro/ngc-5317.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 5317",
+          "titulo": "NGC 5317",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 5317"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-5317_20121200_1_ngc-5317-2-1200srr.jpg",
+        "date": "20121200",
+        "urlId": "ngc-5317",
+        "width": 4726,
+        "height": 3150
+      },
+      {
+        "type": "text",
+        "text": "2*1200S"
+      }
+    ]
+  },
+  {
+    "titulo": "OJ287",
+    "objeto": "OJ287",
+    "etiquetas": "galaxias",
+    "urlId": "oj287",
+    "filename": "src/pages/registro/oj287.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "OJ287",
+          "titulo": "OJ287",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "OJ287"
+      },
+      {
+        "type": "image",
+        "src": "registro/oj287_20121200_1_pulsar.jpg",
+        "date": "20121200",
+        "urlId": "oj287",
+        "width": 73,
+        "height": 70
+      },
+      {
+        "type": "text",
+        "text": "OJ 287 publicacion apjl_819_2_l37"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2013ev",
+    "objeto": "SN 2013ev",
+    "etiquetas": "galaxias",
+    "urlId": "sn2013-ev",
+    "filename": "src/pages/registro/sn2013-ev.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2013ev",
+          "titulo": "SN 2013ev",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2013ev"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2013-ev_20121200_1_sn2013ev-6-300sf.jpg",
+        "date": "20121200",
+        "urlId": "sn2013-ev",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "en IC 1296 suma de 6 imagenes de 300s"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2013fa",
+    "objeto": "SN 2013fa",
+    "etiquetas": "galaxias",
+    "urlId": "sn2013-fa",
+    "filename": "src/pages/registro/sn2013-fa.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2013fa",
+          "titulo": "SN 2013fa",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2013fa"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2013-fa_20121200_1_2013fa-2013-09-10-u.jpg",
+        "date": "20121200",
+        "urlId": "sn2013-fa",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "sn2013fa en una pequeña pero bonita galaxia en la costelacion del delfin distancia 200millones años luz"
+      }
+    ]
+  },
+  {
+    "titulo": "Trompa de Elefante",
+    "objeto": "IC 1398",
+    "etiquetas": "nebulosas",
+    "urlId": "ic-1398",
+    "filename": "src/pages/registro/ic-1398.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "IC 1398",
+          "titulo": "Trompa de Elefante",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Trompa de Elefante"
+      },
+      {
+        "type": "image",
+        "src": "registro/ic-1398_20121100_1_trompa-pa.jpg",
+        "date": "20121100",
+        "urlId": "ic-1398",
+        "width": 1134,
+        "height": 856
+      },
+      {
+        "type": "text",
+        "text": "Trompa de Elefante"
+      }
+    ]
+  },
+  {
+    "titulo": "IC 434",
+    "objeto": "IC 434",
+    "etiquetas": "nebulosas",
+    "urlId": "ic-434",
+    "filename": "src/pages/registro/ic-434.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "IC 434",
+          "titulo": "IC 434",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "IC 434"
+      },
+      {
+        "type": "image",
+        "src": "registro/ic-434_20121100_2_zona_-ic434_re.jpg",
+        "date": "20121100",
+        "urlId": "ic-434",
+        "width": 1134,
+        "height": 749
+      },
+      {
+        "type": "text",
+        "text": "Zona ic 434 rgb 600sR 600sG 600sB R ts65 f 420 +ccd"
+      },
+      {
+        "type": "image",
+        "src": "registro/ic-434_20121100_1_2024-ic434-pp.jpg",
+        "date": "20121100",
+        "urlId": "ic-434",
+        "width": 1134,
+        "height": 1145
+      },
+      {
+        "type": "text",
+        "text": "Mosaico Zona ic 434 New 360 mm f 1810+ccd"
+      }
+    ]
+  },
+  {
+    "titulo": "168P/Hergenrother",
+    "objeto": "168P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "168P",
+    "filename": "src/pages/registro/168P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "168P",
+          "titulo": "168P/Hergenrother",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "168P/Hergenrother"
+      },
+      {
+        "type": "image",
+        "src": "registro/168P_20121016_1_user_556_168p_20121016_i88_1_.jpg",
+        "date": "20121016",
+        "urlId": "168P",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Octubre 2012"
+      }
+    ]
+  },
+  {
+    "titulo": "IC 5146",
+    "objeto": "IC 5146",
+    "etiquetas": "nebulosas",
+    "urlId": "ic-5146",
+    "filename": "src/pages/registro/ic-5146.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "IC 5146",
+          "titulo": "IC 5146",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "IC 5146"
+      },
+      {
+        "type": "image",
+        "src": "registro/ic-5146_20121000_1_ic-5146-15-600s-pa2.jpg",
+        "date": "20121000",
+        "urlId": "ic-5146",
+        "width": 1147,
+        "height": 765
+      },
+      {
+        "type": "text",
+        "text": "ngc5146"
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 7635",
+    "objeto": "NGC 7635",
+    "etiquetas": "nebulosas",
+    "urlId": "ngc-7635",
+    "filename": "src/pages/registro/ngc-7635.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 7635",
+          "titulo": "NGC 7635",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 7635"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-7635_20121000_1_l-ngc-7635-pa.jpg",
+        "date": "20121000",
+        "urlId": "ngc-7635",
+        "width": 1134,
+        "height": 850
+      },
+      {
+        "type": "text",
+        "text": "Ngc 7635 filtro ha"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2012 K5 (LINEAR)",
+    "objeto": "C/2012 K5",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2012-k5",
+    "filename": "src/pages/registro/c2012-k5.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2012 K5",
+          "titulo": "C/2012 K5 (LINEAR)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2012 K5 (LINEAR)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-k5_20120130_2_2012k5_20120130_i88.jpg",
+        "date": "20120130",
+        "urlId": "c2012-k5",
+        "width": 1530,
+        "height": 1020
+      },
+      {
+        "type": "text",
+        "text": "Cometa 2012k5 dia 30 Enero despues del perihelio"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2012-k5_20121200_1_2012k5-150-10s-19didiem2012pa.jpg",
+        "date": "20121200",
+        "urlId": "c2012-k5",
+        "width": 1134,
+        "height": 967
+      },
+      {
+        "type": "text",
+        "text": "2012k5 10s Imagen 140"
+      }
+    ]
+  },
+  {
+    "titulo": "2005 YU55 (308635)",
+    "objeto": "2005 YU55",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2005-yu55",
+    "filename": "src/pages/registro/c2005-yu55.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "2005 YU55",
+          "titulo": "2005 YU55 (308635)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "2005 YU55 (308635)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2005-yu55_20111159_2_2005yu559-noviembre2011pa.jpg",
+        "date": "20111159",
+        "urlId": "c2005-yu55",
+        "width": 1134,
+        "height": 756
+      },
+      {
+        "type": "image",
+        "src": "registro/c2005-yu55_20121200_1_lulin-26-60s-l-pag-24fe-2009.jpg",
+        "date": "20121200",
+        "urlId": "c2005-yu55",
+        "width": 1600,
+        "height": 1266
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 5033",
+    "objeto": "NGC 5033",
+    "etiquetas": "galaxias",
+    "urlId": "ngc-5033",
+    "filename": "src/pages/registro/ngc-5033.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 5033",
+          "titulo": "NGC 5033",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 5033"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-5033_20110622_1_ngc-5033-7-600s-10g-8-abril-2011pa2.jpg",
+        "date": "20110622",
+        "urlId": "ngc-5033",
+        "width": 4726,
+        "height": 3150
+      },
+      {
+        "type": "text",
+        "text": "m51 22junio2011 NGC 5O33 7*600S"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2011dh",
+    "objeto": "SN 2011dh",
+    "etiquetas": "galaxias",
+    "urlId": "sn2011-dh",
+    "filename": "src/pages/registro/sn2011-dh.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2011dh",
+          "titulo": "SN 2011dh",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2011dh"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2011-dh_20110622_1_user_556_sn2011dh_4_300s_1___1800s_22junio_2011pa_1308817056_407104.jpg",
+        "date": "20110622",
+        "urlId": "sn2011-dh",
+        "width": 1134,
+        "height": 756
+      }
+    ]
+  },
+  {
+    "titulo": "NGC 6888",
+    "objeto": "NGC 6888",
+    "etiquetas": "nebulosas",
+    "urlId": "ngc-6888",
+    "filename": "src/pages/registro/ngc-6888.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "NGC 6888",
+          "titulo": "NGC 6888",
+          "etiquetas": "nebulosas"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "NGC 6888"
+      },
+      {
+        "type": "image",
+        "src": "registro/ngc-6888_20090821_1_ngc-6888-rgb-8-2-4-image-1200s-21-ago-2009.jpg",
+        "date": "20090821",
+        "urlId": "ngc-6888",
+        "width": 1600,
+        "height": 1200
+      },
+      {
+        "type": "text",
+        "text": "Ha 8 imagenes de 1200s"
+      }
+    ]
+  },
+  {
+    "titulo": "17P/Holmes",
+    "objeto": "17P",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "17P",
+    "filename": "src/pages/registro/17P.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "17P",
+          "titulo": "17P/Holmes",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "17P/Holmes"
+      },
+      {
+        "type": "image",
+        "src": "registro/17P_20071118_4_11-18-2007-holmes-11-imagenes-30s-b2-pa.jpg",
+        "date": "20071118",
+        "urlId": "17P",
+        "width": 1417,
+        "height": 945
+      },
+      {
+        "type": "text",
+        "text": "C2007N3 Lulin 26 60 Filtro infrarojo Imagen de febrero 24 2009 R + 110mm F770mm CCD P Holmes Tomas 17 11 30 B2 18 Noviembre 2007 Reflector 358mm 1840mm F + CCD"
+      },
+      {
+        "type": "image",
+        "src": "registro/17P_20071114_3_cometa-17p-14-nobiembre2007-25-tomas-30s-pa.jpg",
+        "date": "20071114",
+        "urlId": "17P",
+        "width": 1417,
+        "height": 945
+      },
+      {
+        "type": "text",
+        "text": "P / P Holmes Tomas 17 25 30 14 Noviembre 2007 Reflector 358mm 1840mm F + CCD"
+      },
+      {
+        "type": "image",
+        "src": "registro/17P_20071108_2_cometa-17p-8-noviembre-2007-pg1.jpg",
+        "date": "20071108",
+        "urlId": "17P",
+        "width": 1417,
+        "height": 945
+      },
+      {
+        "type": "text",
+        "text": "P / P Holmes 17 8 Noviembre 2007 Reflector 358mm 1840mm F + CCD"
+      },
+      {
+        "type": "image",
+        "src": "registro/17P_20071028_1_cometa-17p-28-octubre-20h-27m-tu-pa.jpg",
+        "date": "20071028",
+        "urlId": "17P",
+        "width": 1417,
+        "height": 945
+      },
+      {
+        "type": "text",
+        "text": "Cometa P/Holmes 17 P 28 Octubre 2007 22h dias despues de su espectacular aumento de brillo"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2006 VZ13 (LINEAR)",
+    "objeto": "C/2006 VZ13",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2006-vz13",
+    "filename": "src/pages/registro/c2006-vz13.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2006 VZ13",
+          "titulo": "C/2006 VZ13 (LINEAR)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2006 VZ13 (LINEAR)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2006-vz13_20070723_2_m3-c2006vz13-b1-30s-as-23ju-w.jpg",
+        "date": "20070723",
+        "urlId": "c2006-vz13",
+        "width": 1417,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "Cometa c2006vz13 a su paso junto al cumulo M3 dia 23Julio 2007 toma de 30segundos"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2006-vz13_20070711_1_c2006-vz13-18-imagenes-60s-11julio2007.jpg",
+        "date": "20070711",
+        "urlId": "c2006-vz13",
+        "width": 1417,
+        "height": 1134
+      },
+      {
+        "type": "text",
+        "text": "Cometa C2006vz13 18 imagenes de 60segundos cada una Reflector 358mm a F5+ccd art 11002 11 julio 2007"
+      }
+    ]
+  },
+  {
+    "titulo": "Conjunción de Venus y Luna",
+    "objeto": "venus+luna",
+    "etiquetas": "sistema solar",
+    "urlId": "venus-luna",
+    "filename": "src/pages/registro/venus-luna.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "venus+luna",
+          "titulo": "Conjunción de Venus y Luna",
+          "etiquetas": "sistema solar"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Conjunción de Venus y Luna"
+      },
+      {
+        "type": "image",
+        "src": "registro/venus-luna_20070618_1_conjuncion-19-junio-venus-luna1.jpg",
+        "date": "20070618",
+        "urlId": "venus-luna",
+        "width": 850,
+        "height": 642
+      },
+      {
+        "type": "text",
+        "text": "CONJUNCION VENUS LUNA 18 JUNIO 2007 14H 19M TU REFLECTOR 358 F5+CAMARA OLYMPUS E1 imagen a pleno dia"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2006 P1 (McNaught)",
+    "objeto": "C/2006 P1",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2006-p1",
+    "filename": "src/pages/registro/c2006-p1.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2006 P1",
+          "titulo": "C/2006 P1 (McNaught)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2006 P1 (McNaught)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2006-p1_20070112_2_124cometa-c2006p1-reflecator-358-f5-12-enero-2007-iso-100-1-320s.jpg",
+        "date": "20070112",
+        "urlId": "c2006-p1",
+        "width": 591,
+        "height": 624
+      },
+      {
+        "type": "text",
+        "text": "McNaught C/2006p1 R 358 Pleno + Digital Camara Olympus E1 Imagen a plena luz dedia12 de Enero de 2007 a las14H 10m"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2006-p1_20070112_1_tempel-dia-3-y-4-julio-2005.jpg",
+        "date": "20070112",
+        "urlId": "c2006-p1",
+        "width": 787,
+        "height": 354
+      },
+      {
+        "type": "text",
+        "text": "El cometa Tempel tercero Julio 04 de julio 2005"
+      }
+    ]
+  },
+  {
+    "titulo": "SN 2005cs",
+    "objeto": "SN 2005cs",
+    "etiquetas": "galaxias",
+    "urlId": "sn2005-cs",
+    "filename": "src/pages/registro/sn2005-cs.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "SN 2005cs",
+          "titulo": "SN 2005cs",
+          "etiquetas": "galaxias"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "SN 2005cs"
+      },
+      {
+        "type": "image",
+        "src": "registro/sn2005-cs_20050630_1_rainbowl.gif",
+        "date": "20050630",
+        "urlId": "sn2005-cs",
+        "width": 554,
+        "height": 3
+      },
+      {
+        "type": "text",
+        "text": "Measures"
+      }
+    ]
+  },
+  {
+    "titulo": "Transito de Venus",
+    "objeto": "venus",
+    "etiquetas": "sistema solar",
+    "urlId": "venus",
+    "filename": "src/pages/registro/venus.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "venus",
+          "titulo": "Transito de Venus",
+          "etiquetas": "sistema solar"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "Transito de Venus"
+      },
+      {
+        "type": "image",
+        "src": "registro/venus_20040608_5_transito-venus-camara-reflex.jpg",
+        "date": "20040608",
+        "urlId": "venus",
+        "width": 475,
+        "height": 479
+      },
+      {
+        "type": "text",
+        "text": "TRANSITO DE VENUS 8 JUNIO 2004"
+      },
+      {
+        "type": "image",
+        "src": "registro/venus_20040608_4_ccdcap0007-copia.gif",
+        "date": "20040608",
+        "urlId": "venus",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "type": "image",
+        "src": "registro/venus_20040608_3_ccdcap0017.jpg",
+        "date": "20040608",
+        "urlId": "venus",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "type": "image",
+        "src": "registro/venus_20040608_2_ccdcap0034.jpg",
+        "date": "20040608",
+        "urlId": "venus",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "type": "image",
+        "src": "registro/venus_20040608_1_ccdcap0050.jpg",
+        "date": "20040608",
+        "urlId": "venus",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "type": "text",
+        "text": "Mañana del dia 8 Junio 2004 8.30 /9.30 UT Secuencia final del transitoWebcam+New 150mm"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2001 Q4 (NEAT)",
+    "objeto": "C/2001 Q4",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2001-q4",
+    "filename": "src/pages/registro/c2001-q4.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2001 Q4",
+          "titulo": "C/2001 Q4 (NEAT)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2001 Q4 (NEAT)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2001-q4_20040515_1_mosaico-c2001q4-4tomas-de-60s72pp.jpg",
+        "date": "20040515",
+        "urlId": "c2001-q4",
+        "width": 567,
+        "height": 386
+      },
+      {
+        "type": "text",
+        "text": "C2001Q4 4 60 Imagen de diametro 15Mayo 2004"
+      }
+    ]
+  },
+  {
+    "titulo": "C/2002 T7 (LINEAR)",
+    "objeto": "C/2002 T7",
+    "etiquetas": "cometa, asteroide",
+    "urlId": "c2002-t7",
+    "filename": "src/pages/registro/c2002-t7.mdx",
+    "entradas": [
+      {
+        "type": "meta",
+        "data": {
+          "objeto": "C/2002 T7",
+          "titulo": "C/2002 T7 (LINEAR)",
+          "etiquetas": "cometa, asteroide"
+        }
+      },
+      {
+        "type": "heading",
+        "text": "C/2002 T7 (LINEAR)"
+      },
+      {
+        "type": "image",
+        "src": "registro/c2002-t7_20031222_1_c2002t7-22dicembre2003-suma-de-8-imagenes-de-60s.jpg",
+        "date": "20031222",
+        "urlId": "c2002-t7",
+        "width": 1426,
+        "height": 762
+      },
+      {
+        "type": "text",
+        "text": "Mosaico cometa C2002T7 y M33 ( 8 Imagenes de 60s cada una) 22Diciembre 2003"
+      }
+    ]
+  }
+]

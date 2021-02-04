@@ -1,8 +1,10 @@
 import { Box } from "@material-ui/core";
 
+import { RegistroItem } from "bin/registro";
+
 import H1 from "src/components/Typography/H1";
 import PostsList from "src/components/PostsList/PostsList";
-import { getGalaxias, RegistroItem, StaticItemsProps } from "src/lib/staticProps";
+import { getGalaxias, StaticItemsProps } from "src/lib/staticProps";
 
 export type GalaxiasPosts = {
   items: RegistroItem[];

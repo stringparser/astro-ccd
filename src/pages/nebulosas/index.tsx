@@ -2,7 +2,9 @@ import { Box } from "@material-ui/core";
 
 import H1 from "src/components/Typography/H1";
 import PostsList from "src/components/PostsList/PostsList";
-import { getNebulosas, RegistroItem, StaticItemsProps } from "src/lib/staticProps";
+import { getNebulosas, StaticItemsProps } from "src/lib/staticProps";
+
+import { RegistroItem } from "bin/registro";
 
 export type NebulosasPosts = {
   items: RegistroItem[];

@@ -29,7 +29,7 @@ export type DisqusEmbedProps = {
 const DisqusEmbed: React.FC<DisqusEmbedProps> = (props) => {
   const [isInstalled, setInstalled] = useState(false);
 
-  if (typeof window === 'undefined' ||isInstalled) {
+  if (typeof window === 'undefined' || isInstalled) {
     return <DisqusEmbedPlaceholder />;
   }
 

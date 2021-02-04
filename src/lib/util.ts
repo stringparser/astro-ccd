@@ -1,4 +1,4 @@
-import { RegistroItem, RegistroItemEntrada } from "./staticProps";
+import { RegistroItemEntrada, RegistroItem } from "bin/registro";
 
 export const mesMap = {
   enero: '01',
@@ -50,8 +50,8 @@ export const mapTextToUrl = (input: string) => {
   );
 };
 
-export const esEntradaValidaConImagen = ({ fecha, imagen: src }: RegistroItemEntrada) => (
-  fecha
+export const esEntradaValidaConImagen = ({ date, src }: RegistroItemEntrada) => (
+  date
   && src
   && !/apj-logo\.gif$/.test(src)
   && !/logodef\.png$/.test(src)
@@ -64,4 +64,19 @@ export const mapearEntradasValidas = (el: RegistroItem) => {
     ...el,
     entradas: el.entradas.filter(esEntradaValidaConImagen),
   }
-}
+};
+
+export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
+  let aFecha = a.entradas.find(el => el.date)?.date;
+  let bFecha = b.entradas.find(el => el.date)?.date;
+
+  if (aFecha && aFecha.length === 6) {
+    aFecha = `${aFecha}00`;
+  }
+
+  if (bFecha && bFecha.length === 6) {
+    bFecha = `${bFecha}00`;
+  }
+
+  return (`${bFecha || ''}`).localeCompare(`${aFecha || ''}`);
+};

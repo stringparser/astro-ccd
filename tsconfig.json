@@ -1,7 +1,9 @@
 {
   "include": [
-    "./src/**/*",
-    "./bin/**/*"
+    "src",
+    "bin",
+    "datos",
+    "public"
   ],
   "exclude": [
     "node_modules",
@@ -11,16 +13,22 @@
     "jsx": "preserve",
     "lib": [
       "dom",
-      "dom.iterable",
-      "esnext"
+      "esnext",
+      "dom.iterable"
     ],
     "paths": {
+      "bin/*": [
+        "./bin/*"
+      ],
       "src/*": [
         "./src/*"
       ],
-      "bin/*": [
-        "./bin/*"
-      ]
+      "datos/*": [
+        "./datos/*"
+      ],
+      "public/*": [
+        "./public/*"
+      ],
     },
     "module": "commonjs",
     "noEmit": true,
@@ -29,8 +37,8 @@
     "baseUrl": ".",
     "allowJs": true,
     "typeRoots": [
-      "./src/types",
-      "./node_modules/@types"
+      "src/types",
+      "node_modules/@types"
     ],
     "skipLibCheck": true,
     "esModuleInterop": true,

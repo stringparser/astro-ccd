@@ -40,23 +40,24 @@ export const cleanHTML = (html: string = '') => {
 export const mapMDX = (el: PageItemProps) => {
   switch (el.type) {
     case 'text': {
-      return el.text;
+      return `${el.text
+        .replace(fechaTextRE, '')
+        .trim()
+      }`;
     }
     case 'header': {
       return `# ${el.text}`;
     }
     case 'image': {
-      return html_beautify(
+      return [
         [
-          `\n<Imagen src="${el.src}" />`,
-          el.alt,
-          cleanHTML(el.text)
-        ].filter(v => v).join('\n\n'),
-        {
-          indent_char: ' ',
-          indent_size: 2,
-        }
-      );
+          '<Imagen',
+            `\tsrc="${el.dest}"`,
+            el.fecha && `\tfecha="${el.fecha}"`,
+          '/>\n'
+        ].filter(v => v).join('\n'),
+        cleanHTML(el.text).replace(el.objeto, '')
+      ].filter(v => v).join('\n\n')
     }
   }
 }
@@ -83,7 +84,7 @@ export function mapFecha(props: PageItemProps): PageItemProps & { fechaRE?: RegE
     fecha,
   } = props;
 
-  if (fecha) {
+  if (fecha || props.type !== 'image') {
     return props;
   }
 

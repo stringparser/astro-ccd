@@ -1,8 +1,7 @@
 import clsx from 'clsx';
+import { useCallback } from 'react';
 import { Box, makeStyles } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
-import { useCallback, useState } from 'react';
-import ImageFullScreen from './ImageFullScreen';
 
 const useStyles = makeStyles({
   root: {
@@ -32,7 +31,15 @@ const useStyles = makeStyles({
   }
 });
 
+export const mapImageSrc = (src: string) => {
+  return /^(\/_next\/|data:image)/.test(src)
+    ? src
+    : require(`@public/${src}`).default
+  ;
+};
+
 export type ImageProps = NextImageProps & {
+  fecha?: string;
   width?: never;
   height?: never;
   className?: string;
@@ -42,25 +49,21 @@ export type ImageProps = NextImageProps & {
 
 const Image: React.FC<ImageProps> = ({
   src,
+  fecha,
   className,
   imageClassName,
-  canOpenOrginial,
+  canOpenOrginial = true,
   ...props
 }) => {
   const classes = useStyles(props);
 
   const handleOpen = useCallback(
     () => {
-      if (canOpenOrginial && /(\/objeto\/)/.test(location.pathname)) {
-        window.open(src, '_blank')
+      if (canOpenOrginial) {
+        window.open(mapImageSrc(src), '_blank')
       }
     },
     []
-  );
-
-  const hasPriority = /(\/objeto\/)/.test(typeof window === 'undefined'
-    ? '/'
-    : window.location.pathname
   );
 
   return (
@@ -71,10 +74,9 @@ const Image: React.FC<ImageProps> = ({
       className={clsx(classes.root, className)}
     >
       <NextImage
-        src={src}
+        src={mapImageSrc(src)}
         layout="fill"
-        loading={hasPriority ? 'eager' : 'lazy'}
-        priority={hasPriority}
+        loading="lazy"
         objectFit="contain"
         {...props}
         onClick={canOpenOrginial
