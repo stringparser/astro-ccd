@@ -1,4 +1,4 @@
-import { RegistroItem, RegistroItemEntrada } from "./staticProps";
+import { RegistroItemEntrada, RegistroItem } from "bin/registro";
 
 export const mesMap = {
   enero: '01',

@@ -1,5 +1,7 @@
+import { RegistroItem } from 'bin/registro';
 import { mapearEntradasValidas } from './util';
-import { ParsedRemarkResult, parseMDX } from './parseMDX';
+
+import registroJSON from 'datos/registro.json';
 
 export type StaticItemsProps<T> = {
   props: {
@@ -7,27 +9,9 @@ export type StaticItemsProps<T> = {
   };
 };
 
-export type RegistroItemEntrada = {
-  type: ParsedRemarkResult['type'];
-  src?: string;
-  date?: string;
-  text?: string;
-  width?: number;
-  height?: number;
-};
-
-export type RegistroItem = {
-  urlId: string;
-  date?: string;
-  titulo: string;
-  objeto: string;
-  filename: string;
-  etiquetas?: string;
-
-  entradas: Array<RegistroItemEntrada>;
-};
-
-export type OrdenablePor<T extends keyof RegistroItem = 'date'> = Pick<RegistroItem, T>;
+export const getRegistro = () => registroJSON
+  .sort(ordenarPorFecha)
+;
 
 export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
   let aFecha = a.entradas.find(el => el.date)?.date;
@@ -44,57 +28,8 @@ export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
   return (`${bFecha || ''}`).localeCompare(`${aFecha || ''}`);
 };
 
-export const getRegistro = async (): Promise<RegistroItem[]> => {
-  const fs = await import('fs-extra');
-  const path = await import('path');
-  const { promisify } = await import('util');
-
-  const imageSize = promisify((await import('image-size')).default);
-
-  const items = await Promise.all(
-    (await fs.readdir('src/pages/objeto'))
-    .filter(el => /\.mdx$/.test(el))
-    .map(async (el) => {
-      const urlId = path.basename(el, path.extname(el));
-      const filename = path.join('src', 'pages', 'objeto', el);
-
-      const result = await parseMDX(filename);
-
-      const entradas = await Promise.all(result.items
-        .map(async (el) => {
-          if (el.type === 'image') {
-            const { width, height } = await imageSize(path.join('public', el.src));
-
-            return {
-              type: el.type,
-              src: el.src,
-              date: el.date || el.fecha,
-              urlId,
-              width,
-              height,
-            };
-          }
-
-          return el;
-        })
-      );
-
-      return {
-        ...result.meta,
-        urlId,
-        filename,
-        entradas,
-      };
-    })
-  );
-
-  return items.sort(ordenarPorFecha);
-}
-
 export const getGalaxias = async () => {
-  const registro = await getRegistro();
-
-  return registro
+  return registroJSON
     .filter(el =>
       el.etiquetas.includes('galaxia')
       || el.etiquetas.includes('supernova')
@@ -104,9 +39,7 @@ export const getGalaxias = async () => {
 };
 
 export const getNebulosas = async () => {
-  const registro = await getRegistro();
-
-  return registro
+  return registroJSON
     .filter(el =>
       el.etiquetas.includes('nebulosa')
     )
@@ -116,9 +49,7 @@ export const getNebulosas = async () => {
 };
 
 export const getSistemaSolar = async () => {
-  const registro = await getRegistro();
-
-  return registro
+  return registroJSON
     .filter(el =>
       /sistema[-\s]solar/.test(el.etiquetas)
     )
@@ -128,9 +59,7 @@ export const getSistemaSolar = async () => {
 };
 
 export const getCometasAsteroides = async () => {
-  const registro = await getRegistro();
-
-  return registro
+  return registroJSON
     .filter(el =>
       el.etiquetas.includes('cometa')
       || el.etiquetas.includes('asteroide')

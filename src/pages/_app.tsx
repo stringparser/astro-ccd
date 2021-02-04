@@ -1,7 +1,8 @@
+import Head from "next/head";
 import React from "react";
 import { create } from "jss"
+import { AppProps } from "next/app";
 import { MDXProvider } from '@mdx-js/react'
-import { AppContext, AppProps } from "next/app";
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box } from "@material-ui/core";
 
 import { mdxComponents } from "src/lib/constants";
@@ -57,6 +58,16 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
         <MDXProvider components={mdxComponents}>
           <StylesProvider jss={jss}>
             <CssBaseline />
+            <Head>
+
+              <title>
+                OACM Fuensanta
+              </title>
+              <link
+                rel="icon"
+                href={require('@public/favicon.jpeg').default}
+              />
+            </Head>
             <main className={classes.main}>
               <Navigation router={router} />
               <Box flex="1">
@@ -71,19 +82,6 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
       <div id={APP_ROOT_PORTAL_ID}></div>
     </>
   );
-};
-
-// @ts-ignore
-WebApp.getInitialProps = async (context: AppContext) => {
-  const { getRegistro } = await import('src/lib/staticProps');
-
-  const registro = await getRegistro();
-
-  return {
-    pageProps: {
-      registro,
-    }
-  };
 };
 
 export default WebApp;

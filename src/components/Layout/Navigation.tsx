@@ -1,11 +1,14 @@
 import clsx from "clsx";
 import Link from "next/link";
 import HomeIcon from '@material-ui/icons/Home';
-import { NextRouter } from 'next/router';
-import { makeStyles, Link as MuiLink, Box, TextField } from "@material-ui/core";
+import { useRouter } from 'next/router';
+import { useCallback } from "react";
+import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
 
-import { PageBasename } from "src/types";
 import { opacityMixin } from "src/components/styles";
+import { PageBasename, RegistroItem } from "src/types";
+import Busqueda from "../Busqueda/Busqueda";
+import { mapRegistroURL } from "src/lib/navigation";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
@@ -130,24 +133,33 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export type NavigationProps = {
-  router: NextRouter;
-};
+export type NavigationProps = {};
 
-const Navigation: React.FC<NavigationProps> = ({ router }) => {
+const Navigation: React.FC<NavigationProps> = () => {
+  const router = useRouter();
   const classes = useStyles();
+
+  const handleBusquedaChange = useCallback((value: RegistroItem) => {
+    const url = mapRegistroURL(value);
+    router.push(url);
+  }, []);
 
   return (
     <header className={classes.header}>
         <nav className={classes.nav}>
           <aside className={classes.pageHomeAndSearch}>
-            <MuiLink href="/" className={classes.homeLink}>
+            <MuiLink
+              href="/"
+              className={classes.homeLink}
+            >
               <HomeIcon />
               <Box p="0.25rem" />
               OACM Fuensanta
             </MuiLink>
             <Box className={classes.pagesSearch}>
-              <TextField placeholder="Buscar" />
+              <Busqueda
+                onChange={handleBusquedaChange}
+              />
             </Box>
           </aside>
           <aside  className={classes.pageLinks}>

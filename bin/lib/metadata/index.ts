@@ -1,7 +1,7 @@
 import { PageBasename, PageItemProps } from "../../../src/types";
-import { mapCometImageMetadata } from "./comet-image";
-import { mapGalaxyImageMetadata } from "./galaxy-image";
-import { mapSolarSystemImageMetadata } from "./solar-system-image";
+import { mapCometImageMetadata } from "./cometImage";
+import { mapGalaxyImageMetadata } from "./galaxyImage";
+import { mapSolarSystemImageMetadata } from "./solarSystemImage";
 
 export default function mapMetadata(props: PageItemProps): PageItemProps {
   const { label } = props;

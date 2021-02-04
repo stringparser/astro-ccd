@@ -2,13 +2,13 @@
 import React from "react";
 import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
-import { RegistroItem } from "src/lib/staticProps";
-
-import H2 from "src/components/Typography/H2";
-import Image from "../Image/Image";
+import { RegistroItem } from "bin/registro";
 import { opacityMixin } from "src/components/styles";
 
-const useStyles = makeStyles(theme => ({
+import H2 from "src/components/Typography/H2";
+import Image from "src/components/Image/Image";
+
+const useStyles = makeStyles(() => ({
   root: {
     margin: '3rem auto',
 
@@ -82,7 +82,7 @@ function PostsList<T>({ items }: PostsListProps) {
         return (
           <Link
             key={el.urlId}
-            href={`/objeto/${el.urlId}`}
+            href={`/registro/${el.urlId}`}
             className={classes.linkWrapper}
           >
             <H2 style={{color: 'red', maxWidth: '50%', margin: '0 auto'}}>
