@@ -4,7 +4,7 @@ import imageSizeFn from 'image-size';
 import { promisify } from 'util';
 
 import { parseMDX } from 'bin/parseMDX';
-import { ordenarPorFecha } from 'src/lib/staticProps';
+import { ordenarPorFecha } from 'src/lib/util';
 
 const imageSize = promisify(imageSizeFn);
 
@@ -67,9 +67,13 @@ export type RegistroItem = {
     })
   );
 
+  const filename = 'datos/registro.json';
   const sortedItems = items.sort(ordenarPorFecha);
 
-  await fs.writeFile('src/datos/registro.json', JSON.stringify(sortedItems, null, 2));
+  await fs.writeFile(
+    filename,
+    JSON.stringify(sortedItems, null, 2)
+  );
 
-  console.log('wrote', sortedItems.length, 'items to src/datos/registro.json');
+  console.log('wrote', sortedItems.length, 'items to', filename);
 })();

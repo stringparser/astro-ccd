@@ -1,7 +1,6 @@
-import { RegistroItem } from 'bin/registro';
-import { mapearEntradasValidas } from './util';
+import { mapearEntradasValidas, ordenarPorFecha } from './util';
 
-import registroJSON from '../datos/registro.json';
+import registroJSON from 'datos/registro.json';
 
 export type StaticItemsProps<T> = {
   props: {
@@ -12,21 +11,6 @@ export type StaticItemsProps<T> = {
 export const getRegistro = () => registroJSON
   .sort(ordenarPorFecha)
 ;
-
-export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
-  let aFecha = a.entradas.find(el => el.date)?.date;
-  let bFecha = b.entradas.find(el => el.date)?.date;
-
-  if (aFecha && aFecha.length === 6) {
-    aFecha = `${aFecha}00`;
-  }
-
-  if (bFecha && bFecha.length === 6) {
-    bFecha = `${bFecha}00`;
-  }
-
-  return (`${bFecha || ''}`).localeCompare(`${aFecha || ''}`);
-};
 
 export const getGalaxias = async () => {
   return registroJSON
