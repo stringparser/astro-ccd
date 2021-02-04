@@ -69,7 +69,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               />
             </Head>
             <main className={classes.main}>
-              <Navigation router={router} />
+              <Navigation />
               <Box flex="1">
                 <Component {...pageProps} />
               </Box>
