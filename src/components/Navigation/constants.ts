@@ -1,0 +1,1 @@
+export const FOTOS_MENU_ID = 'fotos-menu-id';

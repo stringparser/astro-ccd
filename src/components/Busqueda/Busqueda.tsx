@@ -44,7 +44,7 @@ const getOptionLabel = (item: RegistroItem) => (
 
 const useStyles = makeStyles(() => ({
   root: {
-    width: '300px',
+    width: '200px',
   }
 }));
 
@@ -94,7 +94,7 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
   const renderInput = (params: Parameters<DefaultAutocompleteProps['renderInput']>[0]) => (
     <TextField
       {...params}
-      label="Buscar en la web"
+      label="Buscar fotos"
       margin="normal"
       variant="outlined"
       InputProps={{

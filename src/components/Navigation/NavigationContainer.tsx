@@ -9,27 +9,23 @@ import { opacityMixin } from "src/components/mixins";
 import { PageBasename, RegistroItem } from "src/types";
 import Busqueda from "../Busqueda/Busqueda";
 import { mapRegistroURL } from "src/lib/navigation";
+import FotosMenu, { fotosMenuItems } from "./FotosMenu";
+import NavbarMenuLink from "./NavbarMenuLink";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
     switch (href) {
-      case PageBasename.sistemaSolar: {
-        return {
-          href: `/${href}`,
-          text: 'sistema solar',
-        };
-      }
       case PageBasename.reparacionCCD: {
         return {
           href: `/${href}`,
           text: 'reparación DE CCD SBIG',
         };
       }
+      case PageBasename.galaxias:
+      case PageBasename.nebulosas:
+      case PageBasename.sistemaSolar:
       case PageBasename.cometasAsteroides: {
-        return {
-          href: `/${href}`,
-          text: 'cometas y asteroides',
-        };
+        return null;
       }
       case PageBasename.construccionObservatorio: {
         return {
@@ -45,11 +41,17 @@ const items = Object.entries(PageBasename)
       }
     }
   })
+  .filter(v => v)
 ;
 
 const isCurrentPage = (currentHref: string, href: string) => (
   currentHref === href
 );
+
+const isPhotosMenuPage = (route: string) => {
+  console.log('route', route);
+  return fotosMenuItems.find(el => el.href === route) != null;
+};
 
 const useStyles = makeStyles(theme => ({
   header: {
@@ -105,8 +107,6 @@ const useStyles = makeStyles(theme => ({
 
   linkContainer: {
     margin: '0.5rem 1.5rem',
-
-    maxWidth: '80px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -157,32 +157,50 @@ const Navigation: React.FC<NavigationProps> = () => {
               OACM Fuensanta
             </MuiLink>
             <Box className={classes.pagesSearch}>
-              <Busqueda
-                onChange={handleBusquedaChange}
-              />
+              <Busqueda onChange={handleBusquedaChange} />
             </Box>
           </aside>
           <aside  className={classes.pageLinks}>
-            {items.map(({ href, text }, index) =>
-              <Box
-                key={index}
-                className={classes.linkContainer}
-              >
-                <Link
-                  href={href}
-                  passHref={true}
-                >
-                  <MuiLink
-                    className={clsx(
-                      classes.link,
-                      isCurrentPage(router.route, href) && classes.currentLink,
-                    )}
-                  >
-                    {text.replace(/\-/g, ' ')}
-                  </MuiLink>
-                </Link>
-              </Box>
-            )}
+            <Box className={classes.linkContainer}>
+              <NavbarMenuLink
+                href={`/${PageBasename.fuensanta}`}
+                text="Fuensanta"
+                className={clsx(
+                  classes.link,
+                  isCurrentPage(router.route, `/${PageBasename.fuensanta}`) && classes.currentLink,
+                )}
+              />
+            </Box>
+            <Box className={classes.linkContainer}>
+              <FotosMenu
+                className={clsx(
+                  classes.link,
+                  isPhotosMenuPage(router.route)
+                  ? classes.currentLink
+                  : undefined
+                )}
+              />
+            </Box>
+            <Box className={classes.linkContainer}>
+              <NavbarMenuLink
+                href={`/${PageBasename.construccionObservatorio}`}
+                text="Construcción del Observatorio"
+                className={clsx(
+                  classes.link,
+                  isCurrentPage(router.route, `/${PageBasename.construccionObservatorio}`) && classes.currentLink,
+                )}
+              />
+            </Box>
+            <Box className={classes.linkContainer}>
+              <NavbarMenuLink
+                href={`/${PageBasename.reparacionCCD}`}
+                text="Reparación de CCD SBIG"
+                className={clsx(
+                  classes.link,
+                  isCurrentPage(router.route, `/${PageBasename.reparacionCCD}`) && classes.currentLink,
+                )}
+              />
+            </Box>
           </aside>
         </nav>
       </header>

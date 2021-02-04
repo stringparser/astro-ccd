@@ -8,7 +8,7 @@ import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box 
 import { mdxComponents } from "src/lib/constants";
 
 import Footer from "src/components/Layout/Footer";
-import Navigation from "src/components/Layout/NavigationContainer";
+import Navigation from "src/components/Navigation/NavigationContainer";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
 import { maxWidthMixin } from "src/components/mixins";
