@@ -5,6 +5,7 @@ export const opacityMixin = {
 
     '&:hover': {
       opacity: 1,
+      textDecoration: 'none',
     },
   },
 };

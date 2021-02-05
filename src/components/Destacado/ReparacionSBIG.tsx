@@ -65,6 +65,7 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
         </Typography>
         <Image
           src={require('@public/observatorio/franja.jpg').default}
+          link={false}
           layout="fill"
           className={classes.imageWrapper}
           imageClassName={classes.imagen}

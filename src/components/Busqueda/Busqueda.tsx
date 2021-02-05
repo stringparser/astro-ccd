@@ -45,6 +45,10 @@ const getOptionLabel = (item: RegistroItem) => (
 const useStyles = makeStyles(() => ({
   root: {
     width: '200px',
+    margin: '0',
+  },
+  textField: {
+    margin: '0',
   }
 }));
 
@@ -97,6 +101,7 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
       label="Buscar fotos"
       margin="normal"
       variant="outlined"
+      className={classes.textField}
       InputProps={{
         ...params.InputProps,
         type: 'search',

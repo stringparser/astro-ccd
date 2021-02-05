@@ -31,7 +31,7 @@ export const fotosMenuItems = [
   },
 ];
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   link: {
     padding: '0.5rem 0.75rem',
 
@@ -39,13 +39,16 @@ const useStyles = makeStyles({
       textDecoration: 'none',
     }
   },
-  anchor: {
+  menuAnchor: {
     cursor: 'pointer',
+  },
+  menu: {
+    zIndex: theme.zIndex.appBar,
   },
   menuItem: {
     padding: 0,
-  }
-});
+  },
+}));
 
 export type FotosMenuProps = {
   className?: string;
@@ -91,7 +94,7 @@ const FotosMenu: React.FC<FotosMenuProps> = ({ className }) => {
         ref={anchorRef}
         aria-haspopup="true"
         aria-controls={open ? FOTOS_MENU_ID : undefined}
-        className={clsx(classes.anchor, className)}
+        className={clsx(classes.menuAnchor, className)}
         onClick={handleToggle}
       >
         Fotos
@@ -100,6 +103,7 @@ const FotosMenu: React.FC<FotosMenuProps> = ({ className }) => {
         open={open}
         role={undefined}
         anchorEl={anchorRef.current}
+        className={classes.menu}
         transition
         disablePortal
       >

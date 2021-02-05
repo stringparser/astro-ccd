@@ -8,35 +8,45 @@ import { opacityMixin } from "src/components/mixins";
 import H2 from "src/components/Typography/H2";
 import Image from "src/components/Image/Image";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles({
   root: {
-    margin: '3rem auto',
+    width: '100%',
+    margin: '0 auto',
 
     display: 'flex',
     flexWrap: 'wrap',
+    alignItems: 'center',
+    flexDirection: 'column',
     justifyContent: 'center',
 
-    '@media (max-width: 376px)': {
-      flexDirection: 'column',
+    '@media (min-width: 876px)': {
+      width: 'auto',
+      flexDirection: 'row',
     },
   },
   linkWrapper: {
     ...opacityMixin,
 
-    width: '30%',
-    margin: '0 auto',
+    width: 'inherit',
+    margin: '1rem auto',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
 
-    '&:hover': {
-      opacity: 1,
-      textDecoration: 'none',
+    '@media (min-width: 876px) and (max-width: 1024px)': {
+      width: '50%',
+      margin: '0 auto',
     },
 
-    '@media (max-width: 376px)': {
-      width: 'auto',
+    '@media (min-width: 1024px)': {
+      width: '30%',
+      margin: '0 auto',
     },
+  },
+  imageTitle: {
+    color: 'red',
+    maxWidth: '50%',
+    margin: '1rem auto',
   },
   imageContainer: {
     height: '200px',
@@ -45,31 +55,20 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-  }
-}));
+  },
+});
 
 export type PostsListProps<T = RegistroItem> =  {
   items: T[];
 };
 
-function PostsList<T>({ items }: PostsListProps) {
+function PostsList({ items }: PostsListProps) {
   const classes = useStyles();
-
-  const postsItems = items.reduce((acc, item) => {
-    const id = item.urlId;
-
-    if (acc[id]) {
-      return acc;
-    }
-
-    return acc.concat(item);
-  }, [] as RegistroItem[]);
 
   return (
     <Box className={classes.root}>
-      {postsItems.map(el => {
+      {items.map(el => {
         const { date, src } = el.entradas.find(el => el.src);
-
         const { objeto, titulo, etiquetas } = el;
 
         const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(date) || [])
@@ -85,21 +84,22 @@ function PostsList<T>({ items }: PostsListProps) {
             href={`/registro/${el.urlId}`}
             className={classes.linkWrapper}
           >
-            <H2 style={{color: 'red', maxWidth: '50%', margin: '0 auto'}}>
+            <H2 className={classes.imageTitle}>
               {etiquetas.includes('sistema solar')
                 ? titulo
                 : objeto
               }
             </H2>
+
             <Typography variant="caption">
               {dateString}
             </Typography>
 
             <Image
-              src={require(`@public/${src}`).default}
+              src={src}
+              link={false}
               layout="fill"
               quality={65}
-              canOpenOrginial={false}
               className={classes.imageContainer}
             />
           </Link>

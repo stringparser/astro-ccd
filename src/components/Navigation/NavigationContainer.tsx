@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import Link from "next/link";
+import NextLink from "next/link";
 import HomeIcon from '@material-ui/icons/Home';
 import { useRouter } from 'next/router';
 import { useCallback } from "react";
@@ -55,7 +55,7 @@ const isPhotosMenuPage = (route: string) => {
 
 const useStyles = makeStyles(theme => ({
   header: {
-    padding: '0.5rem',
+    paddingBottom: 0,
 
     display: 'flex',
     justifyContent: 'center',
@@ -68,13 +68,14 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
 
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'space-between',
     justifyContent: 'center',
+    flexDirection: 'column',
   },
 
   pageHomeAndSearch: {
-    width: '100%',
+    padding: '0.5rem 1.25rem 0.25rem 1.25rem',
+
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -106,20 +107,19 @@ const useStyles = makeStyles(theme => ({
   },
 
   linkContainer: {
-    margin: '0.5rem 1.5rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+
+    marginBottom: '-1px',
   },
 
   link: {
-    padding: '0.25rem 0',
+    padding: '1rem 1.5rem',
 
     fontWeight: 'bold',
     borderBottom: '1px solid transparent',
     textTransform: 'uppercase',
-
-    transition: 'all linear 0.3s',
 
     '&:hover': {
       textDecoration: 'none',
@@ -148,14 +148,16 @@ const Navigation: React.FC<NavigationProps> = () => {
     <header className={classes.header}>
         <nav className={classes.nav}>
           <aside className={classes.pageHomeAndSearch}>
-            <MuiLink
+            <NextLink
               href="/"
-              className={classes.homeLink}
+              passHref={true}
             >
-              <HomeIcon />
-              <Box p="0.25rem" />
-              OACM Fuensanta
-            </MuiLink>
+              <MuiLink className={classes.homeLink}>
+                <HomeIcon />
+                <Box p="0.25rem" />
+                OACM Fuensanta
+              </MuiLink>
+            </NextLink>
             <Box className={classes.pagesSearch}>
               <Busqueda onChange={handleBusquedaChange} />
             </Box>
@@ -176,8 +178,8 @@ const Navigation: React.FC<NavigationProps> = () => {
                 className={clsx(
                   classes.link,
                   isPhotosMenuPage(router.route)
-                  ? classes.currentLink
-                  : undefined
+                    ? classes.currentLink
+                    : undefined
                 )}
               />
             </Box>

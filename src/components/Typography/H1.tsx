@@ -1,28 +1,28 @@
+import clsx from "clsx";
 import React from "react";
-import { Box, makeStyles, Typography, TypographyProps } from "@material-ui/core";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import Typography, { TypographyProps } from "@material-ui/core/Typography/Typography";
 
 const useStyles = makeStyles({
   root: {
+    margin: '1rem 0',
     padding: '2rem 0',
-  },
-  header: {
+
     color: 'royalblue',
     fontSize: '2.25rem',
     fontWeight: 'bold',
   },
 });
 
-const H1: React.FC<TypographyProps> = (props) => {
+const H1: React.FC<TypographyProps> = ({ className, ...props }) => {
   const classes = useStyles();
 
   return (
-    <Box margin="1rem 0" className={classes.root}>
-      <Typography
-        variant="h1"
-        className={classes.header}
-        {...props}
-      />
-    </Box>
+    <Typography
+      variant="h1"
+      {...props}
+      className={clsx(classes.root, className)}
+    />
   );
 };
 
