@@ -40,6 +40,8 @@ const DisqusEmbed: React.FC<DisqusEmbedProps> = (props) => {
     Object.assign(this.page, {
       url: window.location.href,
       language: 'es',
+      title: document.title,
+      identifier: location.pathname,
       ...props,
     });
   };

@@ -1,5 +1,5 @@
 import JSON5 from 'json5';
-import { RegistroItem } from './registro';
+import { RegistroItem } from 'types';
 
 type RemarkNode = {
   type: 'root' | 'text' | 'html' | 'yaml' | 'heading' | 'paragraph';
@@ -186,10 +186,10 @@ export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
           meta: {
             titulo: '',
             objeto: '',
-            etiquetas: '',
+            etiquetas: [],
             ...meta,
           },
-          items: results,
+          items: results.filter(el => el.type !== 'meta'),
           content: vFile.content,
         });
       })

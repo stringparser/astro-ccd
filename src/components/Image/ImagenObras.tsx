@@ -26,6 +26,7 @@ const ImagenObras = () => {
   return (
     <Image
       src={require('@public/img/obras.gif').default}
+      link={false}
       layout="fill"
       objectFit="contain"
       className={classes.root}

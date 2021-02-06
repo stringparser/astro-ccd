@@ -12,6 +12,20 @@ export const getRegistro = () => registroJSON
   .sort(ordenarPorFecha)
 ;
 
+export const getEtiquetas = () => registroJSON
+  .reduce((acc: string[], el) => {
+    const etiquetas = el.etiquetas
+      .filter(name => !acc.includes(name))
+    ;
+
+    return etiquetas.length > 0
+      ? acc.concat(...etiquetas)
+      : acc
+    ;
+  }, [])
+  .sort()
+;
+
 export const getGalaxias = async () => {
   return registroJSON
     .filter(el =>
@@ -35,7 +49,7 @@ export const getNebulosas = async () => {
 export const getSistemaSolar = async () => {
   return registroJSON
     .filter(el =>
-      /sistema[-\s]solar/.test(el.etiquetas)
+      el.etiquetas.includes('sistema solar')
     )
     .map(mapearEntradasValidas)
     .sort(ordenarPorFecha)

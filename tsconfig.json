@@ -2,6 +2,7 @@
   "include": [
     "src",
     "bin",
+    "types",
     "datos",
     "public"
   ],
@@ -37,7 +38,7 @@
     "baseUrl": ".",
     "allowJs": true,
     "typeRoots": [
-      "src/types",
+      "types",
       "node_modules/@types"
     ],
     "skipLibCheck": true,

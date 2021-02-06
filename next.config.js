@@ -61,6 +61,17 @@ exports = module.exports = withMDX({
         permanent: false,
         destination: '/reparacion/ccd',
       },
+
+      {
+        source: '/observatorio',
+        permanent: false,
+        destination: '/construccion/observatorio',
+      },
+      {
+        source: '/construccion',
+        permanent: false,
+        destination: '/construccion/observatorio',
+      },
     ];
   },
 

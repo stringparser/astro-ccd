@@ -8,7 +8,7 @@ export enum PageBasename {
   galaxias = 'galaxias',
   nebulosas = 'nebulosas',
   sistemaSolar = 'sistema-solar',
-  construccionObservatorio = 'observatorio',
+  construccionObservatorio = 'construccion/observatorio',
   reparacionCCD = 'reparacion/ccd',
 }
 
@@ -75,7 +75,7 @@ export type RegistroItem = {
   titulo: string;
   objeto: string;
   filename: string;
-  etiquetas?: string;
+  etiquetas: string[];
 
   entradas: RegistroItemEntrada[];
 };

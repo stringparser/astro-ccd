@@ -1,4 +1,4 @@
-import { RegistroItemEntrada, RegistroItem } from "bin/registro";
+import { RegistroItemEntrada, RegistroItem } from "types";
 
 export const mesMap = {
   enero: '01',
@@ -53,9 +53,8 @@ export const mapTextToUrl = (input: string) => {
 export const esEntradaValidaConImagen = ({ date, src }: RegistroItemEntrada) => (
   date
   && src
-  && !/apj-logo\.gif$/.test(src)
-  && !/logodef\.png$/.test(src)
-  && !/rainbowl\.gif$/.test(src)
+  && !/logo/.test(src)
+  && !/rainbowl/.test(src)
   && !/obras[^.\s]+\.gif$/.test(src)
 );
 
@@ -79,4 +78,8 @@ export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
   }
 
   return (`${bFecha || ''}`).localeCompare(`${aFecha || ''}`);
+};
+
+export const mapRegistroRoute = (el: RegistroItem) => {
+  return `/registro/${el.urlId}`;
 };

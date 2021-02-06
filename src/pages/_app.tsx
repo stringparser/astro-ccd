@@ -8,11 +8,12 @@ import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box 
 import { mdxComponents } from "src/lib/constants";
 
 import Footer from "src/components/Layout/Footer";
-import Navigation from "src/components/Layout/NavigationContainer";
+import Navigation from "src/components/Navigation/NavigationContainer";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
 import { maxWidthMixin } from "src/components/mixins";
 import { APP_ROOT_PORTAL_ID } from "src/lib/portal";
+import DisqusEmbed from "src/components/Disqus/DisqusEmbed";
 
 const jss = create({
   ...jssPreset(),
@@ -71,6 +72,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <Navigation />
               <Box flex="1">
                 <Component {...pageProps} />
+                <DisqusEmbed />
               </Box>
               <Footer />
             </main>

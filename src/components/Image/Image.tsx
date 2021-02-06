@@ -5,6 +5,7 @@ import NextImage, { ImageProps as NextImageProps } from 'next/image'
 
 const useStyles = makeStyles({
   root: {
+    zIndex: 0,
     margin: '2rem 1rem',
 
     cursor: 'pointer',
@@ -39,31 +40,35 @@ export const mapImageSrc = (src: string) => {
 };
 
 export type ImageProps = NextImageProps & {
+  link?: boolean;
   fecha?: string;
   width?: never;
   height?: never;
   className?: string;
   imageClassName?: string;
-  canOpenOrginial?: boolean;
 };
 
 const Image: React.FC<ImageProps> = ({
+  link = true,
   src,
   fecha,
   className,
   imageClassName,
-  canOpenOrginial = true,
+  onClick,
   ...props
 }) => {
   const classes = useStyles(props);
 
   const handleOpen = useCallback(
-    () => {
-      if (canOpenOrginial) {
+    (ev: React.MouseEvent<HTMLImageElement>) => {
+      if (link) {
         window.open(mapImageSrc(src), '_blank')
       }
+      if (onClick) {
+        onClick(ev);
+      }
     },
-    []
+    [link, onClick]
   );
 
   return (
@@ -74,15 +79,12 @@ const Image: React.FC<ImageProps> = ({
       className={clsx(classes.root, className)}
     >
       <NextImage
-        src={mapImageSrc(src)}
         layout="fill"
         loading="lazy"
         objectFit="contain"
         {...props}
-        onClick={canOpenOrginial
-          ? handleOpen
-          : undefined
-        }
+        src={mapImageSrc(src)}
+        onClick={handleOpen}
         className={clsx(classes.image, imageClassName)}
       />
     </Box>

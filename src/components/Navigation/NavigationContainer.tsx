@@ -1,35 +1,30 @@
 import clsx from "clsx";
-import Link from "next/link";
+import NextLink from "next/link";
 import HomeIcon from '@material-ui/icons/Home';
 import { useRouter } from 'next/router';
 import { useCallback } from "react";
 import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
 
-import { opacityMixin } from "src/components/mixins";
-import { PageBasename, RegistroItem } from "src/types";
 import Busqueda from "../Busqueda/Busqueda";
+import NavbarMenuLink from "./NavbarMenuLink";
+import { opacityMixin } from "src/components/mixins";
 import { mapRegistroURL } from "src/lib/navigation";
+import { PageBasename, RegistroItem } from "types";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
     switch (href) {
-      case PageBasename.sistemaSolar: {
-        return {
-          href: `/${href}`,
-          text: 'sistema solar',
-        };
-      }
       case PageBasename.reparacionCCD: {
         return {
           href: `/${href}`,
           text: 'reparación DE CCD SBIG',
         };
       }
+      case PageBasename.galaxias:
+      case PageBasename.nebulosas:
+      case PageBasename.sistemaSolar:
       case PageBasename.cometasAsteroides: {
-        return {
-          href: `/${href}`,
-          text: 'cometas y asteroides',
-        };
+        return null;
       }
       case PageBasename.construccionObservatorio: {
         return {
@@ -45,15 +40,16 @@ const items = Object.entries(PageBasename)
       }
     }
   })
+  .filter(v => v)
 ;
 
-const isCurrentPage = (currentHref: string, href: string) => (
-  currentHref === href
+const isCurrentPage = (currentPathname: string, pagePathname: string) => (
+  currentPathname.startsWith(pagePathname)
 );
 
 const useStyles = makeStyles(theme => ({
   header: {
-    padding: '0.5rem',
+    paddingBottom: 0,
 
     display: 'flex',
     justifyContent: 'center',
@@ -66,13 +62,14 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
 
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'space-between',
     justifyContent: 'center',
+    flexDirection: 'column',
   },
 
   pageHomeAndSearch: {
-    width: '100%',
+    padding: '0.5rem 1.25rem 0.25rem 1.25rem',
+
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -104,22 +101,19 @@ const useStyles = makeStyles(theme => ({
   },
 
   linkContainer: {
-    margin: '0.5rem 1.5rem',
-
-    maxWidth: '80px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+
+    marginBottom: '-1px',
   },
 
   link: {
-    padding: '0.25rem 0',
+    padding: '1rem 1.5rem',
 
     fontWeight: 'bold',
     borderBottom: '1px solid transparent',
     textTransform: 'uppercase',
-
-    transition: 'all linear 0.3s',
 
     '&:hover': {
       textDecoration: 'none',
@@ -144,43 +138,46 @@ const Navigation: React.FC<NavigationProps> = () => {
     router.push(url);
   }, []);
 
+  const navigationItems = [
+    {
+      href: '/fotografia',
+      text: 'Fotografía',
+    },
+    ...items
+  ];
+
   return (
     <header className={classes.header}>
         <nav className={classes.nav}>
           <aside className={classes.pageHomeAndSearch}>
-            <MuiLink
+            <NextLink
               href="/"
-              className={classes.homeLink}
+              passHref={true}
             >
-              <HomeIcon />
-              <Box p="0.25rem" />
-              OACM Fuensanta
-            </MuiLink>
+              <MuiLink className={classes.homeLink}>
+                <HomeIcon />
+                <Box p="0.25rem" />
+                OACM Fuensanta
+              </MuiLink>
+            </NextLink>
             <Box className={classes.pagesSearch}>
-              <Busqueda
-                onChange={handleBusquedaChange}
-              />
+              <Busqueda onChange={handleBusquedaChange} />
             </Box>
           </aside>
           <aside  className={classes.pageLinks}>
-            {items.map(({ href, text }, index) =>
+            {navigationItems.map(({ href, text }, index) =>
               <Box
                 key={index}
                 className={classes.linkContainer}
               >
-                <Link
+                <NavbarMenuLink
                   href={href}
-                  passHref={true}
-                >
-                  <MuiLink
-                    className={clsx(
-                      classes.link,
-                      isCurrentPage(router.route, href) && classes.currentLink,
-                    )}
-                  >
-                    {text.replace(/\-/g, ' ')}
-                  </MuiLink>
-                </Link>
+                  text={text.replace(/\-/g, ' ')}
+                  className={clsx(
+                    classes.link,
+                    isCurrentPage(router.route, href) && classes.currentLink,
+                  )}
+                />
               </Box>
             )}
           </aside>

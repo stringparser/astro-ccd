@@ -2,18 +2,12 @@
   {
     "titulo": "Conjunción de Jupiter y Saturno",
     "objeto": "jupiter+saturno",
-    "etiquetas": "sistema solar",
+    "etiquetas": [
+      "sistema-solar"
+    ],
     "urlId": "jupiter-saturno",
-    "filename": "src/pages/registro/jupiter-saturno.mdx",
+    "filename": "src/registro/jupiter-saturno.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "jupiter+saturno",
-          "titulo": "Conjunción de Jupiter y Saturno",
-          "etiquetas": "sistema solar"
-        }
-      },
       {
         "type": "heading",
         "text": "Conjunción de Jupiter y Saturno"
@@ -39,18 +33,12 @@
   {
     "titulo": "M42",
     "objeto": "M42",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "m42",
-    "filename": "src/pages/registro/m42.mdx",
+    "filename": "src/registro/m42.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M42",
-          "titulo": "M42",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "M42"
@@ -92,18 +80,12 @@
   {
     "titulo": "Zona de Orion",
     "objeto": "Orion",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "orion",
-    "filename": "src/pages/registro/orion.mdx",
+    "filename": "src/registro/orion.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "Orion",
-          "titulo": "Zona de Orion",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "Zona de Orion"
@@ -125,18 +107,12 @@
   {
     "titulo": "Nebulosa Roseta",
     "objeto": "NGC 2237",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ngc-2237",
-    "filename": "src/pages/registro/ngc-2237.mdx",
+    "filename": "src/registro/ngc-2237.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 2237",
-          "titulo": "Nebulosa Roseta",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "Nebulosa Roseta"
@@ -157,19 +133,13 @@
   },
   {
     "titulo": "Sol",
-    "objeto": "sol",
-    "etiquetas": "sistema solar",
+    "objeto": "Sol",
+    "etiquetas": [
+      "sistema-solar"
+    ],
     "urlId": "sol",
-    "filename": "src/pages/registro/sol.mdx",
+    "filename": "src/registro/sol.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "sol",
-          "titulo": "Sol",
-          "etiquetas": "sistema solar"
-        }
-      },
       {
         "type": "heading",
         "text": "Sol"
@@ -211,18 +181,12 @@
   {
     "titulo": "Marte",
     "objeto": "Marte",
-    "etiquetas": "sistema solar",
+    "etiquetas": [
+      "sistema-solar"
+    ],
     "urlId": "marte",
-    "filename": "src/pages/registro/marte.mdx",
+    "filename": "src/registro/marte.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "Marte",
-          "titulo": "Marte",
-          "etiquetas": "sistema solar"
-        }
-      },
       {
         "type": "heading",
         "text": "Marte"
@@ -244,18 +208,12 @@
   {
     "titulo": "C/2017 K2 (PANSTARRS)",
     "objeto": "C/2017 K2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2017-k2",
-    "filename": "src/pages/registro/c2017-k2.mdx",
+    "filename": "src/registro/c2017-k2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2017 K2",
-          "titulo": "C/2017 K2 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2017 K2 (PANSTARRS)"
@@ -397,18 +355,12 @@
   {
     "titulo": "C/2020 F3 (NEOWISE)",
     "objeto": "C/2020 F3",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2020-f3",
-    "filename": "src/pages/registro/c2020-f3.mdx",
+    "filename": "src/registro/c2020-f3.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2020 F3",
-          "titulo": "C/2020 F3 (NEOWISE)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2020 F3 (NEOWISE)"
@@ -502,18 +454,12 @@
   {
     "titulo": "C/2017 T2 (PANSTARRS)",
     "objeto": "C/2017 T2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2017-t2",
-    "filename": "src/pages/registro/c2017-t2.mdx",
+    "filename": "src/registro/c2017-t2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2017 T2",
-          "titulo": "C/2017 T2 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2017 T2 (PANSTARRS)"
@@ -571,18 +517,12 @@
   {
     "titulo": "SN 2020jfo",
     "objeto": "SN 2020jfo",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2020-jfo",
-    "filename": "src/pages/registro/sn2020-jfo.mdx",
+    "filename": "src/registro/sn2020-jfo.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2020jfo",
-          "titulo": "SN 2020jfo",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2020jfo"
@@ -604,18 +544,12 @@
   {
     "titulo": "C/2019 Y4 (ATLAS)",
     "objeto": "C/2019 Y4",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2019-y4",
-    "filename": "src/pages/registro/c2019-y4.mdx",
+    "filename": "src/registro/c2019-y4.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2019 Y4",
-          "titulo": "C/2019 Y4 (ATLAS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2019 Y4 (ATLAS)"
@@ -701,18 +635,12 @@
   {
     "titulo": "2I/Borisov",
     "objeto": "2I",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "2I",
-    "filename": "src/pages/registro/2I.mdx",
+    "filename": "src/registro/2I.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "2I",
-          "titulo": "2I/Borisov",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "2I/Borisov"
@@ -782,18 +710,12 @@
   {
     "titulo": "260P/McNaught",
     "objeto": "260P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "260P",
-    "filename": "src/pages/registro/260P.mdx",
+    "filename": "src/registro/260P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "260P",
-          "titulo": "260P/McNaught",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "260P/McNaught"
@@ -827,18 +749,12 @@
   {
     "titulo": "C/2018 N2 (ASASSN)",
     "objeto": "C/2018 N2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2018-n2",
-    "filename": "src/pages/registro/c2018-n2.mdx",
+    "filename": "src/registro/c2018-n2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2018 N2",
-          "titulo": "C/2018 N2 (ASASSN)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2018 N2 (ASASSN)"
@@ -860,18 +776,12 @@
   {
     "titulo": "29P/Schwassmann-Wachmann",
     "objeto": "29P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "29P",
-    "filename": "src/pages/registro/29P.mdx",
+    "filename": "src/registro/29P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "29P",
-          "titulo": "29P/Schwassmann-Wachmann",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "29P/Schwassmann-Wachmann"
@@ -941,18 +851,12 @@
   {
     "titulo": "M45",
     "objeto": "M45",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "m45",
-    "filename": "src/pages/registro/m45.mdx",
+    "filename": "src/registro/m45.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M45",
-          "titulo": "M45",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "M45"
@@ -974,18 +878,12 @@
   {
     "titulo": "NGC 2024",
     "objeto": "NGC 2024",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ngc-2024",
-    "filename": "src/pages/registro/ngc-2024.mdx",
+    "filename": "src/registro/ngc-2024.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 2024",
-          "titulo": "NGC 2024",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 2024"
@@ -1019,18 +917,12 @@
   {
     "titulo": "C/2019 Y1 (ATLAS)",
     "objeto": "C/2019 Y1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2019-y1",
-    "filename": "src/pages/registro/c2019-y1.mdx",
+    "filename": "src/registro/c2019-y1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2019 Y1",
-          "titulo": "C/2019 Y1 (ATLAS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2019 Y1 (ATLAS)"
@@ -1052,18 +944,12 @@
   {
     "titulo": "SN 219ein",
     "objeto": "SN 219ein",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn219-ein",
-    "filename": "src/pages/registro/sn219-ein.mdx",
+    "filename": "src/registro/sn219-ein.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 219ein",
-          "titulo": "SN 219ein",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 219ein"
@@ -1085,18 +971,12 @@
   {
     "titulo": "SN 2019ein",
     "objeto": "SN 2019ein",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2019-ein",
-    "filename": "src/pages/registro/sn2019-ein.mdx",
+    "filename": "src/registro/sn2019-ein.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2019ein",
-          "titulo": "SN 2019ein",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2019ein"
@@ -1118,18 +998,12 @@
   {
     "titulo": "60P/Tsuchinshan",
     "objeto": "60P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "60P",
-    "filename": "src/pages/registro/60P.mdx",
+    "filename": "src/registro/60P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "60P",
-          "titulo": "60P/Tsuchinshan",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "60P/Tsuchinshan"
@@ -1163,18 +1037,12 @@
   {
     "titulo": "(6478) Gault",
     "objeto": "(6478) Gault",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "6478-gault",
-    "filename": "src/pages/registro/6478-gault.mdx",
+    "filename": "src/registro/6478-gault.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "(6478) Gault",
-          "titulo": "(6478) Gault",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "(6478) Gault"
@@ -1284,18 +1152,12 @@
   {
     "titulo": "NGC 4627",
     "objeto": "NGC 4627",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "ngc-4627",
-    "filename": "src/pages/registro/ngc-4627.mdx",
+    "filename": "src/registro/ngc-4627.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 4627",
-          "titulo": "NGC 4627",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 4627"
@@ -1317,18 +1179,12 @@
   {
     "titulo": "NGC 4656",
     "objeto": "NGC 4656",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "ngc-4656",
-    "filename": "src/pages/registro/ngc-4656.mdx",
+    "filename": "src/registro/ngc-4656.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 4656",
-          "titulo": "NGC 4656",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 4656"
@@ -1350,18 +1206,12 @@
   {
     "titulo": "M51",
     "objeto": "NGC 5194",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "ngc-5194",
-    "filename": "src/pages/registro/ngc-5194.mdx",
+    "filename": "src/registro/ngc-5194.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 5194",
-          "titulo": "M51",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "M51"
@@ -1395,18 +1245,12 @@
   {
     "titulo": "AT2019ahd",
     "objeto": "AT2019ahd",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "at2019-ahd",
-    "filename": "src/pages/registro/at2019-ahd.mdx",
+    "filename": "src/registro/at2019-ahd.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "AT2019ahd",
-          "titulo": "AT2019ahd",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "AT2019ahd"
@@ -1440,18 +1284,12 @@
   {
     "titulo": "SN2019np",
     "objeto": "SN2019np",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2019-np",
-    "filename": "src/pages/registro/sn2019-np.mdx",
+    "filename": "src/registro/sn2019-np.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN2019np",
-          "titulo": "SN2019np",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN2019np"
@@ -1473,18 +1311,12 @@
   {
     "titulo": "38P/Stephan-Oterma",
     "objeto": "38P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "38P",
-    "filename": "src/pages/registro/38P.mdx",
+    "filename": "src/registro/38P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "38P",
-          "titulo": "38P/Stephan-Oterma",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "38P/Stephan-Oterma"
@@ -1518,18 +1350,12 @@
   {
     "titulo": "46P/Wirtanen",
     "objeto": "46P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "46P",
-    "filename": "src/pages/registro/46P.mdx",
+    "filename": "src/registro/46P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "46P",
-          "titulo": "46P/Wirtanen",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "46P/Wirtanen"
@@ -1595,18 +1421,12 @@
   {
     "titulo": "64P/Swift-Gehrels",
     "objeto": "64P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "64P",
-    "filename": "src/pages/registro/64P.mdx",
+    "filename": "src/registro/64P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "64P",
-          "titulo": "64P/Swift-Gehrels",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "64P/Swift-Gehrels"
@@ -1676,18 +1496,12 @@
   {
     "titulo": "SN2018isq",
     "objeto": "SN2018isq",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2018-isq",
-    "filename": "src/pages/registro/sn2018-isq.mdx",
+    "filename": "src/registro/sn2018-isq.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN2018isq",
-          "titulo": "SN2018isq",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN2018isq"
@@ -1709,18 +1523,12 @@
   {
     "titulo": "SN2018ivc",
     "objeto": "SN2018ivc",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2018-ivc",
-    "filename": "src/pages/registro/sn2018-ivc.mdx",
+    "filename": "src/registro/sn2018-ivc.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN2018ivc",
-          "titulo": "SN2018ivc",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN2018ivc"
@@ -1742,18 +1550,12 @@
   {
     "titulo": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)",
     "objeto": "C/2018 V1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2018-v1",
-    "filename": "src/pages/registro/c2018-v1.mdx",
+    "filename": "src/registro/c2018-v1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2018 V1",
-          "titulo": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2018 V1 (Machholz-Fujikawa-Iwamoto)"
@@ -1775,18 +1577,12 @@
   {
     "titulo": "SN2018imf",
     "objeto": "SN2018imf",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2018-imf",
-    "filename": "src/pages/registro/sn2018-imf.mdx",
+    "filename": "src/registro/sn2018-imf.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN2018imf",
-          "titulo": "SN2018imf",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN2018imf"
@@ -1808,18 +1604,12 @@
   {
     "titulo": "M57",
     "objeto": "M57",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "m57",
-    "filename": "src/pages/registro/m57.mdx",
+    "filename": "src/registro/m57.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M57",
-          "titulo": "M57",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "M57"
@@ -1853,18 +1643,12 @@
   {
     "titulo": "21P/Giacobini-Zinner",
     "objeto": "21P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "21P",
-    "filename": "src/pages/registro/21P.mdx",
+    "filename": "src/registro/21P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "21P",
-          "titulo": "21P/Giacobini-Zinner",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "21P/Giacobini-Zinner"
@@ -1934,18 +1718,12 @@
   {
     "titulo": "AT2018gjx",
     "objeto": "AT2018gjx",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "at2018-gjx",
-    "filename": "src/pages/registro/at2018-gjx.mdx",
+    "filename": "src/registro/at2018-gjx.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "AT2018gjx",
-          "titulo": "AT2018gjx",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "AT2018gjx"
@@ -1967,18 +1745,12 @@
   {
     "titulo": "Nebulosa del pelícano",
     "objeto": "NGC 7000",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ngc-7000",
-    "filename": "src/pages/registro/ngc-7000.mdx",
+    "filename": "src/registro/ngc-7000.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 7000",
-          "titulo": "Nebulosa del pelícano",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "Nebulosa del pelícano"
@@ -2000,18 +1772,12 @@
   {
     "titulo": "C/2017 S3 (panstars)",
     "objeto": "C/2017 S3",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2017-s3",
-    "filename": "src/pages/registro/c2017-s3.mdx",
+    "filename": "src/registro/c2017-s3.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2017 S3",
-          "titulo": "C/2017 S3 (panstars)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2017 S3 (panstars)"
@@ -2053,18 +1819,12 @@
   {
     "titulo": "SN 2018cow",
     "objeto": "SN 2018cow",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2018-cow",
-    "filename": "src/pages/registro/sn2018-cow.mdx",
+    "filename": "src/registro/sn2018-cow.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2018cow",
-          "titulo": "SN 2018cow",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2018cow"
@@ -2086,18 +1846,12 @@
   {
     "titulo": "C/2015 O1 (PANSTARRS)",
     "objeto": "C/2015 O1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2015-o1",
-    "filename": "src/pages/registro/c2015-o1.mdx",
+    "filename": "src/registro/c2015-o1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2015 O1",
-          "titulo": "C/2015 O1 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2015 O1 (PANSTARRS)"
@@ -2143,18 +1897,12 @@
   {
     "titulo": "M109",
     "objeto": "M109",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "m109",
-    "filename": "src/pages/registro/m109.mdx",
+    "filename": "src/registro/m109.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M109",
-          "titulo": "M109",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "M109"
@@ -2176,18 +1924,12 @@
   {
     "titulo": "M97",
     "objeto": "M97",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "m97",
-    "filename": "src/pages/registro/m97.mdx",
+    "filename": "src/registro/m97.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M97",
-          "titulo": "M97",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "M97"
@@ -2209,18 +1951,12 @@
   {
     "titulo": "SN 2018zd",
     "objeto": "SN 2018zd",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2018-zd",
-    "filename": "src/pages/registro/sn2018-zd.mdx",
+    "filename": "src/registro/sn2018-zd.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2018zd",
-          "titulo": "SN 2018zd",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2018zd"
@@ -2242,18 +1978,12 @@
   {
     "titulo": "C/2016 R2 (PANSTARRS)",
     "objeto": "C/2016 R2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2016-r2",
-    "filename": "src/pages/registro/c2016-r2.mdx",
+    "filename": "src/registro/c2016-r2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2016 R2",
-          "titulo": "C/2016 R2 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2016 R2 (PANSTARRS)"
@@ -2371,18 +2101,12 @@
   {
     "titulo": "AT 2018gv",
     "objeto": "AT 2018gv",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "at2018-gv",
-    "filename": "src/pages/registro/at2018-gv.mdx",
+    "filename": "src/registro/at2018-gv.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "AT 2018gv",
-          "titulo": "AT 2018gv",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "AT 2018gv"
@@ -2404,18 +2128,12 @@
   {
     "titulo": "174P/ECHELUS",
     "objeto": "174P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "174P",
-    "filename": "src/pages/registro/174P.mdx",
+    "filename": "src/registro/174P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "174P",
-          "titulo": "174P/ECHELUS",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "174P/ECHELUS"
@@ -2437,18 +2155,12 @@
   {
     "titulo": "C/2015 ER61 (PANSTARRS)",
     "objeto": "C/2015 ER61",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2015-er61",
-    "filename": "src/pages/registro/c2015-er61.mdx",
+    "filename": "src/registro/c2015-er61.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2015 ER61",
-          "titulo": "C/2015 ER61 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2015 ER61 (PANSTARRS)"
@@ -2482,18 +2194,12 @@
   {
     "titulo": "C/2015 V1 (PANSTARRS)",
     "objeto": "C/2015 V1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2015-v1",
-    "filename": "src/pages/registro/c2015-v1.mdx",
+    "filename": "src/registro/c2015-v1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2015 V1",
-          "titulo": "C/2015 V1 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2015 V1 (PANSTARRS)"
@@ -2515,18 +2221,12 @@
   {
     "titulo": "C/2017 O1 (ASASSN1)",
     "objeto": "C/2017 O1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2017-o1",
-    "filename": "src/pages/registro/c2017-o1.mdx",
+    "filename": "src/registro/c2017-o1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2017 O1",
-          "titulo": "C/2017 O1 (ASASSN1)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2017 O1 (ASASSN1)"
@@ -2548,18 +2248,12 @@
   {
     "titulo": "AT 2017eaw",
     "objeto": "AT 2017eaw",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "at2017-eaw",
-    "filename": "src/pages/registro/at2017-eaw.mdx",
+    "filename": "src/registro/at2017-eaw.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "AT 2017eaw",
-          "titulo": "AT 2017eaw",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "AT 2017eaw"
@@ -2581,18 +2275,12 @@
   {
     "titulo": "C/2015 V2 (JOHNSON)",
     "objeto": "C/2015 V2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2015-v2",
-    "filename": "src/pages/registro/c2015-v2.mdx",
+    "filename": "src/registro/c2015-v2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2015 V2",
-          "titulo": "C/2015 V2 (JOHNSON)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2015 V2 (JOHNSON)"
@@ -2638,18 +2326,12 @@
   {
     "titulo": "SN 2017eax",
     "objeto": "SN 2017eax",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2017-eax",
-    "filename": "src/pages/registro/sn2017-eax.mdx",
+    "filename": "src/registro/sn2017-eax.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2017eax",
-          "titulo": "SN 2017eax",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2017eax"
@@ -2671,18 +2353,12 @@
   {
     "titulo": "SN 2017dfc",
     "objeto": "SN 2017dfc",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2017-dfc",
-    "filename": "src/pages/registro/sn2017-dfc.mdx",
+    "filename": "src/registro/sn2017-dfc.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2017dfc",
-          "titulo": "SN 2017dfc",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2017dfc"
@@ -2704,18 +2380,12 @@
   {
     "titulo": "Luna",
     "objeto": "luna",
-    "etiquetas": "sistema solar",
+    "etiquetas": [
+      "sistema-solar"
+    ],
     "urlId": "luna",
-    "filename": "src/pages/registro/luna.mdx",
+    "filename": "src/registro/luna.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "luna",
-          "titulo": "Luna",
-          "etiquetas": "sistema solar"
-        }
-      },
       {
         "type": "heading",
         "text": "Luna"
@@ -2809,18 +2479,12 @@
   {
     "titulo": "M1",
     "objeto": "M1",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "m1",
-    "filename": "src/pages/registro/m1.mdx",
+    "filename": "src/registro/m1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M1",
-          "titulo": "M1",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "M1"
@@ -2842,18 +2506,12 @@
   {
     "titulo": "SN 2016gfy",
     "objeto": "SN 2016gfy",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2016-gfy",
-    "filename": "src/pages/registro/sn2016-gfy.mdx",
+    "filename": "src/registro/sn2016-gfy.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2016gfy",
-          "titulo": "SN 2016gfy",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2016gfy"
@@ -2875,18 +2533,12 @@
   {
     "titulo": "SN 2016cok",
     "objeto": "SN 2016cok",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2016-cok",
-    "filename": "src/pages/registro/sn2016-cok.mdx",
+    "filename": "src/registro/sn2016-cok.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2016cok",
-          "titulo": "SN 2016cok",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2016cok"
@@ -2908,18 +2560,12 @@
   {
     "titulo": "SN 2016coj",
     "objeto": "SN 2016coj",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2016-coj",
-    "filename": "src/pages/registro/sn2016-coj.mdx",
+    "filename": "src/registro/sn2016-coj.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2016coj",
-          "titulo": "SN 2016coj",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2016coj"
@@ -2941,18 +2587,12 @@
   {
     "titulo": "C/2014 S2 (PANSTARRS)",
     "objeto": "C/2014 S2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2014-s2",
-    "filename": "src/pages/registro/c2014-s2.mdx",
+    "filename": "src/registro/c2014-s2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2014 S2",
-          "titulo": "C/2014 S2 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2014 S2 (PANSTARRS)"
@@ -2986,18 +2626,12 @@
   {
     "titulo": "C/2013 US10 (CATALINA)",
     "objeto": "C/2013 US10",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2013-us10",
-    "filename": "src/pages/registro/c2013-us10.mdx",
+    "filename": "src/registro/c2013-us10.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2013 US10",
-          "titulo": "C/2013 US10 (CATALINA)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2013 US10 (CATALINA)"
@@ -3083,18 +2717,12 @@
   {
     "titulo": "C/2013 X1 (PANSTARRS)",
     "objeto": "C/2013 X1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2013-x1",
-    "filename": "src/pages/registro/c2013-x1.mdx",
+    "filename": "src/registro/c2013-x1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2013 X1",
-          "titulo": "C/2013 X1 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2013 X1 (PANSTARRS)"
@@ -3148,18 +2776,12 @@
   {
     "titulo": "quinteto",
     "objeto": "quinteto",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "quinteto",
-    "filename": "src/pages/registro/quinteto.mdx",
+    "filename": "src/registro/quinteto.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "quinteto",
-          "titulo": "quinteto",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "quinteto"
@@ -3181,18 +2803,12 @@
   {
     "titulo": "NGC 7331",
     "objeto": "NGC 7331",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "ngc-7331",
-    "filename": "src/pages/registro/ngc-7331.mdx",
+    "filename": "src/registro/ngc-7331.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 7331",
-          "titulo": "NGC 7331",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 7331"
@@ -3214,18 +2830,12 @@
   {
     "titulo": "C/2014 Q2 (LOVEJOY)",
     "objeto": "C/2014 Q2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2014-q2",
-    "filename": "src/pages/registro/c2014-q2.mdx",
+    "filename": "src/registro/c2014-q2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2014 Q2",
-          "titulo": "C/2014 Q2 (LOVEJOY)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2014 Q2 (LOVEJOY)"
@@ -3450,18 +3060,12 @@
   {
     "titulo": "C/2015 F4 (JACQUES)",
     "objeto": "C/2015 F4",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2015-f4",
-    "filename": "src/pages/registro/c2015-f4.mdx",
+    "filename": "src/registro/c2015-f4.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2015 F4",
-          "titulo": "C/2015 F4 (JACQUES)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2015 F4 (JACQUES)"
@@ -3531,18 +3135,12 @@
   {
     "titulo": "M27",
     "objeto": "M27",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "m27",
-    "filename": "src/pages/registro/m27.mdx",
+    "filename": "src/registro/m27.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M27",
-          "titulo": "M27",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "M27"
@@ -3576,18 +3174,12 @@
   {
     "titulo": "PSN J17292918+7542390",
     "objeto": "PSN J17292918+7542390",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "psn-j17292918-7542390",
-    "filename": "src/pages/registro/psn-j17292918-7542390.mdx",
+    "filename": "src/registro/psn-j17292918-7542390.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "PSN J17292918+7542390",
-          "titulo": "PSN J17292918+7542390",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "PSN J17292918+7542390"
@@ -3609,18 +3201,12 @@
   {
     "titulo": "s106",
     "objeto": "S106",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "s106",
-    "filename": "src/pages/registro/s106.mdx",
+    "filename": "src/registro/s106.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "S106",
-          "titulo": "s106",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "s106"
@@ -3650,18 +3236,12 @@
   {
     "titulo": "PSN J20435314+1230304",
     "objeto": "PSN J20435314+1230304",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "psn-j20435314-1230304",
-    "filename": "src/pages/registro/psn-j20435314-1230304.mdx",
+    "filename": "src/registro/psn-j20435314-1230304.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "PSN J20435314+1230304",
-          "titulo": "PSN J20435314+1230304",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "PSN J20435314+1230304"
@@ -3683,18 +3263,12 @@
   {
     "titulo": "PSN J07285387+3349106",
     "objeto": "PSN J07285387+3349106",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "psn-j07285387-3349106",
-    "filename": "src/pages/registro/psn-j07285387-3349106.mdx",
+    "filename": "src/registro/psn-j07285387-3349106.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "PSN J07285387+3349106",
-          "titulo": "PSN J07285387+3349106",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "PSN J07285387+3349106"
@@ -3716,18 +3290,12 @@
   {
     "titulo": "PSN J14021678+5426205",
     "objeto": "PSN J14021678+5426205",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "psn-j14021678-5426205",
-    "filename": "src/pages/registro/psn-j14021678-5426205.mdx",
+    "filename": "src/registro/psn-j14021678-5426205.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "PSN J14021678+5426205",
-          "titulo": "PSN J14021678+5426205",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "PSN J14021678+5426205"
@@ -3749,18 +3317,12 @@
   {
     "titulo": "15P/Finlay",
     "objeto": "15P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "15P",
-    "filename": "src/pages/registro/15P.mdx",
+    "filename": "src/registro/15P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "15P",
-          "titulo": "15P/Finlay",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "15P/Finlay"
@@ -3782,18 +3344,12 @@
   {
     "titulo": "SN 2014dg",
     "objeto": "SN 2014dg",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-dg",
-    "filename": "src/pages/registro/sn2014-dg.mdx",
+    "filename": "src/registro/sn2014-dg.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014dg",
-          "titulo": "SN 2014dg",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014dg"
@@ -3815,18 +3371,12 @@
   {
     "titulo": "M110",
     "objeto": "M110",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "m110",
-    "filename": "src/pages/registro/m110.mdx",
+    "filename": "src/registro/m110.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M110",
-          "titulo": "M110",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "M110"
@@ -3848,18 +3398,12 @@
   {
     "titulo": "PSN J22081243+4110503",
     "objeto": "PSN J22081243+4110503",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "psn-j22081243-4110503",
-    "filename": "src/pages/registro/psn-j22081243-4110503.mdx",
+    "filename": "src/registro/psn-j22081243-4110503.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "PSN J22081243+4110503",
-          "titulo": "PSN J22081243+4110503",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "PSN J22081243+4110503"
@@ -3881,18 +3425,12 @@
   {
     "titulo": "PNV J03093063+2638031",
     "objeto": "PNV J03093063+2638031",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "pnv-j03093063-2638031",
-    "filename": "src/pages/registro/pnv-j03093063-2638031.mdx",
+    "filename": "src/registro/pnv-j03093063-2638031.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "PNV J03093063+2638031",
-          "titulo": "PNV J03093063+2638031",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "PNV J03093063+2638031"
@@ -3914,18 +3452,12 @@
   {
     "titulo": "SN 2014cx",
     "objeto": "SN 2014cx",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-cx",
-    "filename": "src/pages/registro/sn2014-cx.mdx",
+    "filename": "src/registro/sn2014-cx.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014cx",
-          "titulo": "SN 2014cx",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014cx"
@@ -3947,18 +3479,12 @@
   {
     "titulo": "SNhunt260",
     "objeto": "SNhunt260",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "snhunt260",
-    "filename": "src/pages/registro/snhunt260.mdx",
+    "filename": "src/registro/snhunt260.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SNhunt260",
-          "titulo": "SNhunt260",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SNhunt260"
@@ -3980,18 +3506,12 @@
   {
     "titulo": "SN 2014CY",
     "objeto": "SN 2014CY",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-cy",
-    "filename": "src/pages/registro/sn2014-cy.mdx",
+    "filename": "src/registro/sn2014-cy.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014CY",
-          "titulo": "SN 2014CY",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014CY"
@@ -4013,18 +3533,12 @@
   {
     "titulo": "C/2011 J2 (LINEAR)",
     "objeto": "C/2011 J2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2011-j2",
-    "filename": "src/pages/registro/c2011-j2.mdx",
+    "filename": "src/registro/c2011-j2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2011 J2",
-          "titulo": "C/2011 J2 (LINEAR)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2011 J2 (LINEAR)"
@@ -4074,18 +3588,12 @@
   {
     "titulo": "C/2014 E2 (JACQUES)",
     "objeto": "C/2014 E2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2014-e2",
-    "filename": "src/pages/registro/c2014-e2.mdx",
+    "filename": "src/registro/c2014-e2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2014 E2",
-          "titulo": "C/2014 E2 (JACQUES)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2014 E2 (JACQUES)"
@@ -4175,18 +3683,12 @@
   {
     "titulo": "SN 2014bv",
     "objeto": "SN 2014bv",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-bv",
-    "filename": "src/pages/registro/sn2014-bv.mdx",
+    "filename": "src/registro/sn2014-bv.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014bv",
-          "titulo": "SN 2014bv",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014bv"
@@ -4208,18 +3710,12 @@
   {
     "titulo": "C/2012 K1 (PANSTARRS)",
     "objeto": "C/2012 K1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2012-k1",
-    "filename": "src/pages/registro/c2012-k1.mdx",
+    "filename": "src/registro/c2012-k1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2012 K1",
-          "titulo": "C/2012 K1 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2012 K1 (PANSTARRS)"
@@ -4277,18 +3773,12 @@
   {
     "titulo": "SN 2014aa",
     "objeto": "SN 2014aa",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-aa",
-    "filename": "src/pages/registro/sn2014-aa.mdx",
+    "filename": "src/registro/sn2014-aa.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014aa",
-          "titulo": "SN 2014aa",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014aa"
@@ -4310,18 +3800,12 @@
   {
     "titulo": "SN 2014ai",
     "objeto": "SN 2014ai",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-ai",
-    "filename": "src/pages/registro/sn2014-ai.mdx",
+    "filename": "src/registro/sn2014-ai.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014ai",
-          "titulo": "SN 2014ai",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014ai"
@@ -4343,18 +3827,12 @@
   {
     "titulo": "SN 2014l",
     "objeto": "SN 2014l",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-l",
-    "filename": "src/pages/registro/sn2014-l.mdx",
+    "filename": "src/registro/sn2014-l.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014l",
-          "titulo": "SN 2014l",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014l"
@@ -4376,18 +3854,12 @@
   {
     "titulo": "SN 2013am",
     "objeto": "SN 2013am",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2013-am",
-    "filename": "src/pages/registro/sn2013-am.mdx",
+    "filename": "src/registro/sn2013-am.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2013am",
-          "titulo": "SN 2013am",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2013am"
@@ -4409,18 +3881,12 @@
   {
     "titulo": "SN 2014j",
     "objeto": "SN 2014j",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-j",
-    "filename": "src/pages/registro/sn2014-j.mdx",
+    "filename": "src/registro/sn2014-j.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014j",
-          "titulo": "SN 2014j",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014j"
@@ -4454,18 +3920,12 @@
   {
     "titulo": "Hercules Cluster",
     "objeto": "Abell 2151",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "abell-2151",
-    "filename": "src/pages/registro/abell-2151.mdx",
+    "filename": "src/registro/abell-2151.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "Abell 2151",
-          "titulo": "Hercules Cluster",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "Hercules Cluster"
@@ -4523,18 +3983,12 @@
   {
     "titulo": "C/2013 R1 (LOVEJOY)",
     "objeto": "C/2013 R1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2013-r1",
-    "filename": "src/pages/registro/c2013-r1.mdx",
+    "filename": "src/registro/c2013-r1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2013 R1",
-          "titulo": "C/2013 R1 (LOVEJOY)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2013 R1 (LOVEJOY)"
@@ -4573,7 +4027,7 @@
       },
       {
         "type": "text",
-        "text": "C2013R1 17 Noviembre 2013 30 20 Imagen ”\nArticulo de colavoracion con el IA de Andalucia, CSIF"
+        "text": "C2013R1 17 Noviembre 2013 30 20 Imagen ”\nArticulo de colaboración con el IA de Andalucia, CSIF"
       },
       {
         "type": "image",
@@ -4592,18 +4046,12 @@
   {
     "titulo": "C/2012 S1 (ISON)",
     "objeto": "C/2012 S1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2012-s1",
-    "filename": "src/pages/registro/c2012-s1.mdx",
+    "filename": "src/registro/c2012-s1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2012 S1",
-          "titulo": "C/2012 S1 (ISON)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2012 S1 (ISON)"
@@ -4709,18 +4157,12 @@
   {
     "titulo": "C/2011 L4 (PANSTARRS)",
     "objeto": "C/2011 L4",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2011-l4",
-    "filename": "src/pages/registro/c2011-l4.mdx",
+    "filename": "src/registro/c2011-l4.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2011 L4",
-          "titulo": "C/2011 L4 (PANSTARRS)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2011 L4 (PANSTARRS)"
@@ -4762,18 +4204,12 @@
   {
     "titulo": "SN 2014G",
     "objeto": "SN 2014G",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2014-g",
-    "filename": "src/pages/registro/sn2014-g.mdx",
+    "filename": "src/registro/sn2014-g.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2014G",
-          "titulo": "SN 2014G",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2014G"
@@ -4795,18 +4231,12 @@
   {
     "titulo": "99942 Apophis",
     "objeto": "99942 Apophis",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "99942-apophis",
-    "filename": "src/pages/registro/99942-apophis.mdx",
+    "filename": "src/registro/99942-apophis.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "99942 Apophis",
-          "titulo": "99942 Apophis",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "99942 Apophis"
@@ -4828,18 +4258,12 @@
   {
     "titulo": "NGC 7547/49/50/53/58, Hickson 93",
     "objeto": "Arp 99",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "arp-99",
-    "filename": "src/pages/registro/arp-99.mdx",
+    "filename": "src/registro/arp-99.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "Arp 99",
-          "titulo": "NGC 7547/49/50/53/58, Hickson 93",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 7547/49/50/53/58, Hickson 93"
@@ -4861,18 +4285,12 @@
   {
     "titulo": "C/1996 B2 (Hyakutake)",
     "objeto": "C/1996 B2",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c1996-b2",
-    "filename": "src/pages/registro/c1996-b2.mdx",
+    "filename": "src/registro/c1996-b2.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/1996 B2",
-          "titulo": "C/1996 B2 (Hyakutake)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/1996 B2 (Hyakutake)"
@@ -4902,18 +4320,12 @@
   {
     "titulo": "C/2013 UQ4 (CATALINA)",
     "objeto": "C/2013 UQ4",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2013-uq4",
-    "filename": "src/pages/registro/c2013-uq4.mdx",
+    "filename": "src/registro/c2013-uq4.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2013 UQ4",
-          "titulo": "C/2013 UQ4 (CATALINA)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2013 UQ4 (CATALINA)"
@@ -4951,18 +4363,12 @@
   {
     "titulo": "M82",
     "objeto": "M82",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "m82",
-    "filename": "src/pages/registro/m82.mdx",
+    "filename": "src/registro/m82.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "M82",
-          "titulo": "M82",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "M82"
@@ -4984,18 +4390,12 @@
   {
     "titulo": "NGC 5317",
     "objeto": "NGC 5317",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "ngc-5317",
-    "filename": "src/pages/registro/ngc-5317.mdx",
+    "filename": "src/registro/ngc-5317.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 5317",
-          "titulo": "NGC 5317",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 5317"
@@ -5017,18 +4417,12 @@
   {
     "titulo": "OJ287",
     "objeto": "OJ287",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "oj287",
-    "filename": "src/pages/registro/oj287.mdx",
+    "filename": "src/registro/oj287.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "OJ287",
-          "titulo": "OJ287",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "OJ287"
@@ -5050,18 +4444,12 @@
   {
     "titulo": "SN 2013ev",
     "objeto": "SN 2013ev",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2013-ev",
-    "filename": "src/pages/registro/sn2013-ev.mdx",
+    "filename": "src/registro/sn2013-ev.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2013ev",
-          "titulo": "SN 2013ev",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2013ev"
@@ -5083,18 +4471,12 @@
   {
     "titulo": "SN 2013fa",
     "objeto": "SN 2013fa",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2013-fa",
-    "filename": "src/pages/registro/sn2013-fa.mdx",
+    "filename": "src/registro/sn2013-fa.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2013fa",
-          "titulo": "SN 2013fa",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2013fa"
@@ -5116,18 +4498,12 @@
   {
     "titulo": "Trompa de Elefante",
     "objeto": "IC 1398",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ic-1398",
-    "filename": "src/pages/registro/ic-1398.mdx",
+    "filename": "src/registro/ic-1398.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "IC 1398",
-          "titulo": "Trompa de Elefante",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "Trompa de Elefante"
@@ -5149,18 +4525,12 @@
   {
     "titulo": "IC 434",
     "objeto": "IC 434",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ic-434",
-    "filename": "src/pages/registro/ic-434.mdx",
+    "filename": "src/registro/ic-434.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "IC 434",
-          "titulo": "IC 434",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "IC 434"
@@ -5194,18 +4564,12 @@
   {
     "titulo": "168P/Hergenrother",
     "objeto": "168P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "168P",
-    "filename": "src/pages/registro/168P.mdx",
+    "filename": "src/registro/168P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "168P",
-          "titulo": "168P/Hergenrother",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "168P/Hergenrother"
@@ -5227,18 +4591,12 @@
   {
     "titulo": "IC 5146",
     "objeto": "IC 5146",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ic-5146",
-    "filename": "src/pages/registro/ic-5146.mdx",
+    "filename": "src/registro/ic-5146.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "IC 5146",
-          "titulo": "IC 5146",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "IC 5146"
@@ -5260,18 +4618,12 @@
   {
     "titulo": "NGC 7635",
     "objeto": "NGC 7635",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ngc-7635",
-    "filename": "src/pages/registro/ngc-7635.mdx",
+    "filename": "src/registro/ngc-7635.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 7635",
-          "titulo": "NGC 7635",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 7635"
@@ -5293,18 +4645,12 @@
   {
     "titulo": "C/2012 K5 (LINEAR)",
     "objeto": "C/2012 K5",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2012-k5",
-    "filename": "src/pages/registro/c2012-k5.mdx",
+    "filename": "src/registro/c2012-k5.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2012 K5",
-          "titulo": "C/2012 K5 (LINEAR)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2012 K5 (LINEAR)"
@@ -5338,18 +4684,12 @@
   {
     "titulo": "2005 YU55 (308635)",
     "objeto": "2005 YU55",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2005-yu55",
-    "filename": "src/pages/registro/c2005-yu55.mdx",
+    "filename": "src/registro/c2005-yu55.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "2005 YU55",
-          "titulo": "2005 YU55 (308635)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "2005 YU55 (308635)"
@@ -5375,18 +4715,12 @@
   {
     "titulo": "NGC 5033",
     "objeto": "NGC 5033",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "ngc-5033",
-    "filename": "src/pages/registro/ngc-5033.mdx",
+    "filename": "src/registro/ngc-5033.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 5033",
-          "titulo": "NGC 5033",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 5033"
@@ -5408,18 +4742,12 @@
   {
     "titulo": "SN 2011dh",
     "objeto": "SN 2011dh",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2011-dh",
-    "filename": "src/pages/registro/sn2011-dh.mdx",
+    "filename": "src/registro/sn2011-dh.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2011dh",
-          "titulo": "SN 2011dh",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2011dh"
@@ -5437,18 +4765,12 @@
   {
     "titulo": "NGC 6888",
     "objeto": "NGC 6888",
-    "etiquetas": "nebulosas",
+    "etiquetas": [
+      "nebulosas"
+    ],
     "urlId": "ngc-6888",
-    "filename": "src/pages/registro/ngc-6888.mdx",
+    "filename": "src/registro/ngc-6888.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "NGC 6888",
-          "titulo": "NGC 6888",
-          "etiquetas": "nebulosas"
-        }
-      },
       {
         "type": "heading",
         "text": "NGC 6888"
@@ -5470,18 +4792,12 @@
   {
     "titulo": "17P/Holmes",
     "objeto": "17P",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "17P",
-    "filename": "src/pages/registro/17P.mdx",
+    "filename": "src/registro/17P.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "17P",
-          "titulo": "17P/Holmes",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "17P/Holmes"
@@ -5539,18 +4855,12 @@
   {
     "titulo": "C/2006 VZ13 (LINEAR)",
     "objeto": "C/2006 VZ13",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2006-vz13",
-    "filename": "src/pages/registro/c2006-vz13.mdx",
+    "filename": "src/registro/c2006-vz13.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2006 VZ13",
-          "titulo": "C/2006 VZ13 (LINEAR)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2006 VZ13 (LINEAR)"
@@ -5584,18 +4894,12 @@
   {
     "titulo": "Conjunción de Venus y Luna",
     "objeto": "venus+luna",
-    "etiquetas": "sistema solar",
+    "etiquetas": [
+      "sistema-solar"
+    ],
     "urlId": "venus-luna",
-    "filename": "src/pages/registro/venus-luna.mdx",
+    "filename": "src/registro/venus-luna.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "venus+luna",
-          "titulo": "Conjunción de Venus y Luna",
-          "etiquetas": "sistema solar"
-        }
-      },
       {
         "type": "heading",
         "text": "Conjunción de Venus y Luna"
@@ -5617,18 +4921,12 @@
   {
     "titulo": "C/2006 P1 (McNaught)",
     "objeto": "C/2006 P1",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2006-p1",
-    "filename": "src/pages/registro/c2006-p1.mdx",
+    "filename": "src/registro/c2006-p1.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2006 P1",
-          "titulo": "C/2006 P1 (McNaught)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2006 P1 (McNaught)"
@@ -5662,18 +4960,12 @@
   {
     "titulo": "SN 2005cs",
     "objeto": "SN 2005cs",
-    "etiquetas": "galaxias",
+    "etiquetas": [
+      "galaxias"
+    ],
     "urlId": "sn2005-cs",
-    "filename": "src/pages/registro/sn2005-cs.mdx",
+    "filename": "src/registro/sn2005-cs.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "SN 2005cs",
-          "titulo": "SN 2005cs",
-          "etiquetas": "galaxias"
-        }
-      },
       {
         "type": "heading",
         "text": "SN 2005cs"
@@ -5695,18 +4987,12 @@
   {
     "titulo": "Transito de Venus",
     "objeto": "venus",
-    "etiquetas": "sistema solar",
+    "etiquetas": [
+      "sistema-solar"
+    ],
     "urlId": "venus",
-    "filename": "src/pages/registro/venus.mdx",
+    "filename": "src/registro/venus.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "venus",
-          "titulo": "Transito de Venus",
-          "etiquetas": "sistema solar"
-        }
-      },
       {
         "type": "heading",
         "text": "Transito de Venus"
@@ -5764,18 +5050,12 @@
   {
     "titulo": "C/2001 Q4 (NEAT)",
     "objeto": "C/2001 Q4",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2001-q4",
-    "filename": "src/pages/registro/c2001-q4.mdx",
+    "filename": "src/registro/c2001-q4.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2001 Q4",
-          "titulo": "C/2001 Q4 (NEAT)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2001 Q4 (NEAT)"
@@ -5797,18 +5077,12 @@
   {
     "titulo": "C/2002 T7 (LINEAR)",
     "objeto": "C/2002 T7",
-    "etiquetas": "cometa, asteroide",
+    "etiquetas": [
+      "cometas-asteroides"
+    ],
     "urlId": "c2002-t7",
-    "filename": "src/pages/registro/c2002-t7.mdx",
+    "filename": "src/registro/c2002-t7.mdx",
     "entradas": [
-      {
-        "type": "meta",
-        "data": {
-          "objeto": "C/2002 T7",
-          "titulo": "C/2002 T7 (LINEAR)",
-          "etiquetas": "cometa, asteroide"
-        }
-      },
       {
         "type": "heading",
         "text": "C/2002 T7 (LINEAR)"

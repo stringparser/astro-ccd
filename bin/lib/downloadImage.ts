@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import path from 'path';
 import fetch from 'node-fetch';
-import { PageItemProps } from 'src/types';
+import { PageItemProps } from 'types';
 
 type DownloadImageResult = PageItemProps & { dest: string; };
 

@@ -5,7 +5,7 @@ import cheerio from 'cheerio';
 import mapMetadata from './metadata';
 import downloadImage from './downloadImage';
 import { mapTextToUrl } from '../../src/lib/util';
-import { PageBasename, PageItemProps, ParsedPageContent } from '../../src/types';
+import { PageBasename, PageItemProps, ParsedPageContent } from '../../types';
 import { ActualPageBasename, cleanHTML, mapFecha, standalonePagesRE, urlMap } from './util';
 
 const skipForIndex = <T>(isIndex: boolean, handle: T) => isIndex
@@ -64,7 +64,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
             type,
             textContent: type === 'header'
               ? el.text()
-              : cleanHTML(el.text())
+              : cleanHTML(el.html())
             ,
           };
         })

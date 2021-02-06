@@ -8,30 +8,10 @@ import { ordenarPorFecha } from 'src/lib/util';
 
 const imageSize = promisify(imageSizeFn);
 
-export type RegistroItemEntrada = {
-  type: string;
-  src?: string;
-  date?: string;
-  text?: string;
-  width?: number;
-  height?: number;
-};
-
-export type RegistroItem = {
-  urlId: string;
-  date?: string;
-  titulo: string;
-  objeto: string;
-  filename: string;
-  etiquetas?: string;
-
-  entradas: RegistroItemEntrada[];
-};
-
 (async () => {
 
   const items = await Promise.all(
-    (await fs.readdir('src/pages/registro'))
+    (await fs.readdir('src/registro'))
     .filter(el => /\.mdx$/.test(el))
     .map(async (el) => {
       const urlId = path.basename(el, path.extname(el));
