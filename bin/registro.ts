@@ -11,7 +11,7 @@ const imageSize = promisify(imageSizeFn);
 (async () => {
 
   const items = await Promise.all(
-    (await fs.readdir('src/registro'))
+    (await fs.readdir('src/pages/registro'))
     .filter(el => /\.mdx$/.test(el))
     .map(async (el) => {
       const urlId = path.basename(el, path.extname(el));

@@ -6,7 +6,7 @@
       "sistema-solar"
     ],
     "urlId": "jupiter-saturno",
-    "filename": "src/registro/jupiter-saturno.mdx",
+    "filename": "src/pages/registro/jupiter-saturno.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -37,7 +37,7 @@
       "nebulosas"
     ],
     "urlId": "m42",
-    "filename": "src/registro/m42.mdx",
+    "filename": "src/pages/registro/m42.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -84,7 +84,7 @@
       "nebulosas"
     ],
     "urlId": "orion",
-    "filename": "src/registro/orion.mdx",
+    "filename": "src/pages/registro/orion.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -111,7 +111,7 @@
       "nebulosas"
     ],
     "urlId": "ngc-2237",
-    "filename": "src/registro/ngc-2237.mdx",
+    "filename": "src/pages/registro/ngc-2237.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -138,7 +138,7 @@
       "sistema-solar"
     ],
     "urlId": "sol",
-    "filename": "src/registro/sol.mdx",
+    "filename": "src/pages/registro/sol.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -185,7 +185,7 @@
       "sistema-solar"
     ],
     "urlId": "marte",
-    "filename": "src/registro/marte.mdx",
+    "filename": "src/pages/registro/marte.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -212,7 +212,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2017-k2",
-    "filename": "src/registro/c2017-k2.mdx",
+    "filename": "src/pages/registro/c2017-k2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -359,7 +359,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2020-f3",
-    "filename": "src/registro/c2020-f3.mdx",
+    "filename": "src/pages/registro/c2020-f3.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -458,7 +458,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2017-t2",
-    "filename": "src/registro/c2017-t2.mdx",
+    "filename": "src/pages/registro/c2017-t2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -521,7 +521,7 @@
       "galaxias"
     ],
     "urlId": "sn2020-jfo",
-    "filename": "src/registro/sn2020-jfo.mdx",
+    "filename": "src/pages/registro/sn2020-jfo.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -548,7 +548,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2019-y4",
-    "filename": "src/registro/c2019-y4.mdx",
+    "filename": "src/pages/registro/c2019-y4.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -639,7 +639,7 @@
       "cometas-asteroides"
     ],
     "urlId": "2I",
-    "filename": "src/registro/2I.mdx",
+    "filename": "src/pages/registro/2I.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -714,7 +714,7 @@
       "cometas-asteroides"
     ],
     "urlId": "260P",
-    "filename": "src/registro/260P.mdx",
+    "filename": "src/pages/registro/260P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -753,7 +753,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2018-n2",
-    "filename": "src/registro/c2018-n2.mdx",
+    "filename": "src/pages/registro/c2018-n2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -780,7 +780,7 @@
       "cometas-asteroides"
     ],
     "urlId": "29P",
-    "filename": "src/registro/29P.mdx",
+    "filename": "src/pages/registro/29P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -855,7 +855,7 @@
       "nebulosas"
     ],
     "urlId": "m45",
-    "filename": "src/registro/m45.mdx",
+    "filename": "src/pages/registro/m45.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -882,7 +882,7 @@
       "nebulosas"
     ],
     "urlId": "ngc-2024",
-    "filename": "src/registro/ngc-2024.mdx",
+    "filename": "src/pages/registro/ngc-2024.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -921,7 +921,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2019-y1",
-    "filename": "src/registro/c2019-y1.mdx",
+    "filename": "src/pages/registro/c2019-y1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -948,7 +948,7 @@
       "galaxias"
     ],
     "urlId": "sn219-ein",
-    "filename": "src/registro/sn219-ein.mdx",
+    "filename": "src/pages/registro/sn219-ein.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -975,7 +975,7 @@
       "galaxias"
     ],
     "urlId": "sn2019-ein",
-    "filename": "src/registro/sn2019-ein.mdx",
+    "filename": "src/pages/registro/sn2019-ein.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1002,7 +1002,7 @@
       "cometas-asteroides"
     ],
     "urlId": "60P",
-    "filename": "src/registro/60P.mdx",
+    "filename": "src/pages/registro/60P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1041,7 +1041,7 @@
       "cometas-asteroides"
     ],
     "urlId": "6478-gault",
-    "filename": "src/registro/6478-gault.mdx",
+    "filename": "src/pages/registro/6478-gault.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1156,7 +1156,7 @@
       "galaxias"
     ],
     "urlId": "ngc-4627",
-    "filename": "src/registro/ngc-4627.mdx",
+    "filename": "src/pages/registro/ngc-4627.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1183,7 +1183,7 @@
       "galaxias"
     ],
     "urlId": "ngc-4656",
-    "filename": "src/registro/ngc-4656.mdx",
+    "filename": "src/pages/registro/ngc-4656.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1210,7 +1210,7 @@
       "galaxias"
     ],
     "urlId": "ngc-5194",
-    "filename": "src/registro/ngc-5194.mdx",
+    "filename": "src/pages/registro/ngc-5194.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1249,7 +1249,7 @@
       "galaxias"
     ],
     "urlId": "at2019-ahd",
-    "filename": "src/registro/at2019-ahd.mdx",
+    "filename": "src/pages/registro/at2019-ahd.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1288,7 +1288,7 @@
       "galaxias"
     ],
     "urlId": "sn2019-np",
-    "filename": "src/registro/sn2019-np.mdx",
+    "filename": "src/pages/registro/sn2019-np.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1315,7 +1315,7 @@
       "cometas-asteroides"
     ],
     "urlId": "38P",
-    "filename": "src/registro/38P.mdx",
+    "filename": "src/pages/registro/38P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1354,7 +1354,7 @@
       "cometas-asteroides"
     ],
     "urlId": "46P",
-    "filename": "src/registro/46P.mdx",
+    "filename": "src/pages/registro/46P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1425,7 +1425,7 @@
       "cometas-asteroides"
     ],
     "urlId": "64P",
-    "filename": "src/registro/64P.mdx",
+    "filename": "src/pages/registro/64P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1500,7 +1500,7 @@
       "galaxias"
     ],
     "urlId": "sn2018-isq",
-    "filename": "src/registro/sn2018-isq.mdx",
+    "filename": "src/pages/registro/sn2018-isq.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1527,7 +1527,7 @@
       "galaxias"
     ],
     "urlId": "sn2018-ivc",
-    "filename": "src/registro/sn2018-ivc.mdx",
+    "filename": "src/pages/registro/sn2018-ivc.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1554,7 +1554,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2018-v1",
-    "filename": "src/registro/c2018-v1.mdx",
+    "filename": "src/pages/registro/c2018-v1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1581,7 +1581,7 @@
       "galaxias"
     ],
     "urlId": "sn2018-imf",
-    "filename": "src/registro/sn2018-imf.mdx",
+    "filename": "src/pages/registro/sn2018-imf.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1608,7 +1608,7 @@
       "nebulosas"
     ],
     "urlId": "m57",
-    "filename": "src/registro/m57.mdx",
+    "filename": "src/pages/registro/m57.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1647,7 +1647,7 @@
       "cometas-asteroides"
     ],
     "urlId": "21P",
-    "filename": "src/registro/21P.mdx",
+    "filename": "src/pages/registro/21P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1722,7 +1722,7 @@
       "galaxias"
     ],
     "urlId": "at2018-gjx",
-    "filename": "src/registro/at2018-gjx.mdx",
+    "filename": "src/pages/registro/at2018-gjx.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1749,7 +1749,7 @@
       "nebulosas"
     ],
     "urlId": "ngc-7000",
-    "filename": "src/registro/ngc-7000.mdx",
+    "filename": "src/pages/registro/ngc-7000.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1776,7 +1776,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2017-s3",
-    "filename": "src/registro/c2017-s3.mdx",
+    "filename": "src/pages/registro/c2017-s3.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1823,7 +1823,7 @@
       "galaxias"
     ],
     "urlId": "sn2018-cow",
-    "filename": "src/registro/sn2018-cow.mdx",
+    "filename": "src/pages/registro/sn2018-cow.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1850,7 +1850,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2015-o1",
-    "filename": "src/registro/c2015-o1.mdx",
+    "filename": "src/pages/registro/c2015-o1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1901,7 +1901,7 @@
       "galaxias"
     ],
     "urlId": "m109",
-    "filename": "src/registro/m109.mdx",
+    "filename": "src/pages/registro/m109.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1928,7 +1928,7 @@
       "nebulosas"
     ],
     "urlId": "m97",
-    "filename": "src/registro/m97.mdx",
+    "filename": "src/pages/registro/m97.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1955,7 +1955,7 @@
       "galaxias"
     ],
     "urlId": "sn2018-zd",
-    "filename": "src/registro/sn2018-zd.mdx",
+    "filename": "src/pages/registro/sn2018-zd.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -1982,7 +1982,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2016-r2",
-    "filename": "src/registro/c2016-r2.mdx",
+    "filename": "src/pages/registro/c2016-r2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2105,7 +2105,7 @@
       "galaxias"
     ],
     "urlId": "at2018-gv",
-    "filename": "src/registro/at2018-gv.mdx",
+    "filename": "src/pages/registro/at2018-gv.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2132,7 +2132,7 @@
       "cometas-asteroides"
     ],
     "urlId": "174P",
-    "filename": "src/registro/174P.mdx",
+    "filename": "src/pages/registro/174P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2159,7 +2159,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2015-er61",
-    "filename": "src/registro/c2015-er61.mdx",
+    "filename": "src/pages/registro/c2015-er61.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2198,7 +2198,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2015-v1",
-    "filename": "src/registro/c2015-v1.mdx",
+    "filename": "src/pages/registro/c2015-v1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2225,7 +2225,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2017-o1",
-    "filename": "src/registro/c2017-o1.mdx",
+    "filename": "src/pages/registro/c2017-o1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2252,7 +2252,7 @@
       "galaxias"
     ],
     "urlId": "at2017-eaw",
-    "filename": "src/registro/at2017-eaw.mdx",
+    "filename": "src/pages/registro/at2017-eaw.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2279,7 +2279,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2015-v2",
-    "filename": "src/registro/c2015-v2.mdx",
+    "filename": "src/pages/registro/c2015-v2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2330,7 +2330,7 @@
       "galaxias"
     ],
     "urlId": "sn2017-eax",
-    "filename": "src/registro/sn2017-eax.mdx",
+    "filename": "src/pages/registro/sn2017-eax.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2357,7 +2357,7 @@
       "galaxias"
     ],
     "urlId": "sn2017-dfc",
-    "filename": "src/registro/sn2017-dfc.mdx",
+    "filename": "src/pages/registro/sn2017-dfc.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2384,7 +2384,7 @@
       "sistema-solar"
     ],
     "urlId": "luna",
-    "filename": "src/registro/luna.mdx",
+    "filename": "src/pages/registro/luna.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2483,7 +2483,7 @@
       "nebulosas"
     ],
     "urlId": "m1",
-    "filename": "src/registro/m1.mdx",
+    "filename": "src/pages/registro/m1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2510,7 +2510,7 @@
       "galaxias"
     ],
     "urlId": "sn2016-gfy",
-    "filename": "src/registro/sn2016-gfy.mdx",
+    "filename": "src/pages/registro/sn2016-gfy.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2537,7 +2537,7 @@
       "galaxias"
     ],
     "urlId": "sn2016-cok",
-    "filename": "src/registro/sn2016-cok.mdx",
+    "filename": "src/pages/registro/sn2016-cok.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2564,7 +2564,7 @@
       "galaxias"
     ],
     "urlId": "sn2016-coj",
-    "filename": "src/registro/sn2016-coj.mdx",
+    "filename": "src/pages/registro/sn2016-coj.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2591,7 +2591,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2014-s2",
-    "filename": "src/registro/c2014-s2.mdx",
+    "filename": "src/pages/registro/c2014-s2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2630,7 +2630,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2013-us10",
-    "filename": "src/registro/c2013-us10.mdx",
+    "filename": "src/pages/registro/c2013-us10.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2721,7 +2721,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2013-x1",
-    "filename": "src/registro/c2013-x1.mdx",
+    "filename": "src/pages/registro/c2013-x1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2780,7 +2780,7 @@
       "galaxias"
     ],
     "urlId": "quinteto",
-    "filename": "src/registro/quinteto.mdx",
+    "filename": "src/pages/registro/quinteto.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2807,7 +2807,7 @@
       "galaxias"
     ],
     "urlId": "ngc-7331",
-    "filename": "src/registro/ngc-7331.mdx",
+    "filename": "src/pages/registro/ngc-7331.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -2834,7 +2834,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2014-q2",
-    "filename": "src/registro/c2014-q2.mdx",
+    "filename": "src/pages/registro/c2014-q2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3064,7 +3064,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2015-f4",
-    "filename": "src/registro/c2015-f4.mdx",
+    "filename": "src/pages/registro/c2015-f4.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3139,7 +3139,7 @@
       "nebulosas"
     ],
     "urlId": "m27",
-    "filename": "src/registro/m27.mdx",
+    "filename": "src/pages/registro/m27.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3178,7 +3178,7 @@
       "galaxias"
     ],
     "urlId": "psn-j17292918-7542390",
-    "filename": "src/registro/psn-j17292918-7542390.mdx",
+    "filename": "src/pages/registro/psn-j17292918-7542390.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3205,7 +3205,7 @@
       "nebulosas"
     ],
     "urlId": "s106",
-    "filename": "src/registro/s106.mdx",
+    "filename": "src/pages/registro/s106.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3240,7 +3240,7 @@
       "galaxias"
     ],
     "urlId": "psn-j20435314-1230304",
-    "filename": "src/registro/psn-j20435314-1230304.mdx",
+    "filename": "src/pages/registro/psn-j20435314-1230304.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3267,7 +3267,7 @@
       "galaxias"
     ],
     "urlId": "psn-j07285387-3349106",
-    "filename": "src/registro/psn-j07285387-3349106.mdx",
+    "filename": "src/pages/registro/psn-j07285387-3349106.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3294,7 +3294,7 @@
       "galaxias"
     ],
     "urlId": "psn-j14021678-5426205",
-    "filename": "src/registro/psn-j14021678-5426205.mdx",
+    "filename": "src/pages/registro/psn-j14021678-5426205.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3321,7 +3321,7 @@
       "cometas-asteroides"
     ],
     "urlId": "15P",
-    "filename": "src/registro/15P.mdx",
+    "filename": "src/pages/registro/15P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3348,7 +3348,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-dg",
-    "filename": "src/registro/sn2014-dg.mdx",
+    "filename": "src/pages/registro/sn2014-dg.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3375,7 +3375,7 @@
       "galaxias"
     ],
     "urlId": "m110",
-    "filename": "src/registro/m110.mdx",
+    "filename": "src/pages/registro/m110.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3402,7 +3402,7 @@
       "galaxias"
     ],
     "urlId": "psn-j22081243-4110503",
-    "filename": "src/registro/psn-j22081243-4110503.mdx",
+    "filename": "src/pages/registro/psn-j22081243-4110503.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3429,7 +3429,7 @@
       "galaxias"
     ],
     "urlId": "pnv-j03093063-2638031",
-    "filename": "src/registro/pnv-j03093063-2638031.mdx",
+    "filename": "src/pages/registro/pnv-j03093063-2638031.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3456,7 +3456,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-cx",
-    "filename": "src/registro/sn2014-cx.mdx",
+    "filename": "src/pages/registro/sn2014-cx.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3483,7 +3483,7 @@
       "galaxias"
     ],
     "urlId": "snhunt260",
-    "filename": "src/registro/snhunt260.mdx",
+    "filename": "src/pages/registro/snhunt260.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3510,7 +3510,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-cy",
-    "filename": "src/registro/sn2014-cy.mdx",
+    "filename": "src/pages/registro/sn2014-cy.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3537,7 +3537,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2011-j2",
-    "filename": "src/registro/c2011-j2.mdx",
+    "filename": "src/pages/registro/c2011-j2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3592,7 +3592,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2014-e2",
-    "filename": "src/registro/c2014-e2.mdx",
+    "filename": "src/pages/registro/c2014-e2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3687,7 +3687,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-bv",
-    "filename": "src/registro/sn2014-bv.mdx",
+    "filename": "src/pages/registro/sn2014-bv.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3714,7 +3714,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2012-k1",
-    "filename": "src/registro/c2012-k1.mdx",
+    "filename": "src/pages/registro/c2012-k1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3777,7 +3777,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-aa",
-    "filename": "src/registro/sn2014-aa.mdx",
+    "filename": "src/pages/registro/sn2014-aa.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3804,7 +3804,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-ai",
-    "filename": "src/registro/sn2014-ai.mdx",
+    "filename": "src/pages/registro/sn2014-ai.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3831,7 +3831,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-l",
-    "filename": "src/registro/sn2014-l.mdx",
+    "filename": "src/pages/registro/sn2014-l.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3858,7 +3858,7 @@
       "galaxias"
     ],
     "urlId": "sn2013-am",
-    "filename": "src/registro/sn2013-am.mdx",
+    "filename": "src/pages/registro/sn2013-am.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3885,7 +3885,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-j",
-    "filename": "src/registro/sn2014-j.mdx",
+    "filename": "src/pages/registro/sn2014-j.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3924,7 +3924,7 @@
       "galaxias"
     ],
     "urlId": "abell-2151",
-    "filename": "src/registro/abell-2151.mdx",
+    "filename": "src/pages/registro/abell-2151.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -3987,7 +3987,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2013-r1",
-    "filename": "src/registro/c2013-r1.mdx",
+    "filename": "src/pages/registro/c2013-r1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4050,7 +4050,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2012-s1",
-    "filename": "src/registro/c2012-s1.mdx",
+    "filename": "src/pages/registro/c2012-s1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4161,7 +4161,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2011-l4",
-    "filename": "src/registro/c2011-l4.mdx",
+    "filename": "src/pages/registro/c2011-l4.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4208,7 +4208,7 @@
       "galaxias"
     ],
     "urlId": "sn2014-g",
-    "filename": "src/registro/sn2014-g.mdx",
+    "filename": "src/pages/registro/sn2014-g.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4235,7 +4235,7 @@
       "cometas-asteroides"
     ],
     "urlId": "99942-apophis",
-    "filename": "src/registro/99942-apophis.mdx",
+    "filename": "src/pages/registro/99942-apophis.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4262,7 +4262,7 @@
       "galaxias"
     ],
     "urlId": "arp-99",
-    "filename": "src/registro/arp-99.mdx",
+    "filename": "src/pages/registro/arp-99.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4289,7 +4289,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c1996-b2",
-    "filename": "src/registro/c1996-b2.mdx",
+    "filename": "src/pages/registro/c1996-b2.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4324,7 +4324,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2013-uq4",
-    "filename": "src/registro/c2013-uq4.mdx",
+    "filename": "src/pages/registro/c2013-uq4.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4367,7 +4367,7 @@
       "galaxias"
     ],
     "urlId": "m82",
-    "filename": "src/registro/m82.mdx",
+    "filename": "src/pages/registro/m82.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4394,7 +4394,7 @@
       "galaxias"
     ],
     "urlId": "ngc-5317",
-    "filename": "src/registro/ngc-5317.mdx",
+    "filename": "src/pages/registro/ngc-5317.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4421,7 +4421,7 @@
       "galaxias"
     ],
     "urlId": "oj287",
-    "filename": "src/registro/oj287.mdx",
+    "filename": "src/pages/registro/oj287.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4448,7 +4448,7 @@
       "galaxias"
     ],
     "urlId": "sn2013-ev",
-    "filename": "src/registro/sn2013-ev.mdx",
+    "filename": "src/pages/registro/sn2013-ev.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4475,7 +4475,7 @@
       "galaxias"
     ],
     "urlId": "sn2013-fa",
-    "filename": "src/registro/sn2013-fa.mdx",
+    "filename": "src/pages/registro/sn2013-fa.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4502,7 +4502,7 @@
       "nebulosas"
     ],
     "urlId": "ic-1398",
-    "filename": "src/registro/ic-1398.mdx",
+    "filename": "src/pages/registro/ic-1398.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4515,10 +4515,6 @@
         "urlId": "ic-1398",
         "width": 1134,
         "height": 856
-      },
-      {
-        "type": "text",
-        "text": "Trompa de Elefante"
       }
     ]
   },
@@ -4529,7 +4525,7 @@
       "nebulosas"
     ],
     "urlId": "ic-434",
-    "filename": "src/registro/ic-434.mdx",
+    "filename": "src/pages/registro/ic-434.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4568,7 +4564,7 @@
       "cometas-asteroides"
     ],
     "urlId": "168P",
-    "filename": "src/registro/168P.mdx",
+    "filename": "src/pages/registro/168P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4595,7 +4591,7 @@
       "nebulosas"
     ],
     "urlId": "ic-5146",
-    "filename": "src/registro/ic-5146.mdx",
+    "filename": "src/pages/registro/ic-5146.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4622,7 +4618,7 @@
       "nebulosas"
     ],
     "urlId": "ngc-7635",
-    "filename": "src/registro/ngc-7635.mdx",
+    "filename": "src/pages/registro/ngc-7635.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4649,7 +4645,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2012-k5",
-    "filename": "src/registro/c2012-k5.mdx",
+    "filename": "src/pages/registro/c2012-k5.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4688,7 +4684,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2005-yu55",
-    "filename": "src/registro/c2005-yu55.mdx",
+    "filename": "src/pages/registro/c2005-yu55.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4719,7 +4715,7 @@
       "galaxias"
     ],
     "urlId": "ngc-5033",
-    "filename": "src/registro/ngc-5033.mdx",
+    "filename": "src/pages/registro/ngc-5033.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4746,7 +4742,7 @@
       "galaxias"
     ],
     "urlId": "sn2011-dh",
-    "filename": "src/registro/sn2011-dh.mdx",
+    "filename": "src/pages/registro/sn2011-dh.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4769,7 +4765,7 @@
       "nebulosas"
     ],
     "urlId": "ngc-6888",
-    "filename": "src/registro/ngc-6888.mdx",
+    "filename": "src/pages/registro/ngc-6888.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4796,7 +4792,7 @@
       "cometas-asteroides"
     ],
     "urlId": "17P",
-    "filename": "src/registro/17P.mdx",
+    "filename": "src/pages/registro/17P.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4859,7 +4855,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2006-vz13",
-    "filename": "src/registro/c2006-vz13.mdx",
+    "filename": "src/pages/registro/c2006-vz13.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4898,7 +4894,7 @@
       "sistema-solar"
     ],
     "urlId": "venus-luna",
-    "filename": "src/registro/venus-luna.mdx",
+    "filename": "src/pages/registro/venus-luna.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4925,7 +4921,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2006-p1",
-    "filename": "src/registro/c2006-p1.mdx",
+    "filename": "src/pages/registro/c2006-p1.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4964,7 +4960,7 @@
       "galaxias"
     ],
     "urlId": "sn2005-cs",
-    "filename": "src/registro/sn2005-cs.mdx",
+    "filename": "src/pages/registro/sn2005-cs.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -4991,7 +4987,7 @@
       "sistema-solar"
     ],
     "urlId": "venus",
-    "filename": "src/registro/venus.mdx",
+    "filename": "src/pages/registro/venus.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -5054,7 +5050,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2001-q4",
-    "filename": "src/registro/c2001-q4.mdx",
+    "filename": "src/pages/registro/c2001-q4.mdx",
     "entradas": [
       {
         "type": "heading",
@@ -5081,7 +5077,7 @@
       "cometas-asteroides"
     ],
     "urlId": "c2002-t7",
-    "filename": "src/registro/c2002-t7.mdx",
+    "filename": "src/pages/registro/c2002-t7.mdx",
     "entradas": [
       {
         "type": "heading",
