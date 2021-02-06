@@ -45,7 +45,7 @@ const ListadoCompletoDeFotografías: React.FC<ListadoCompletoDeFotografíasProps
   return (
     <Box>
       <H1>
-        Listado completo de fotografías
+        Listado de observaciones
       </H1>
       <Box className={classes.seccionContainer}>
       {etiquetas.map(el => {

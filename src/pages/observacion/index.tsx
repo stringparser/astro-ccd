@@ -9,6 +9,7 @@ import { getEtiquetas, getRegistro } from "src/lib/staticProps";
 import NavigationLink from "src/components/Navigation/NavigationLink";
 import { ChevronRight } from "@material-ui/icons";
 import { esEntradaValidaConImagen } from "src/lib/util";
+import { useRouter } from "next/router";
 
 export type FotografiaProps = {
   items: RegistroItem[];
@@ -16,6 +17,7 @@ export type FotografiaProps = {
 };
 
 const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
+  const router = useRouter();
 
   const [selectedEtiquetas, setSelectedEtiquetas] = useState<string[]>([]);
 
@@ -46,7 +48,7 @@ const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
   return (
     <Box>
       <H1 style={{ marginBottom: '0.25rem' }}>
-        Fotografía
+        Observacion Astronómica
       </H1>
       <Box
         margin="0 auto 2rem auto"
@@ -58,7 +60,7 @@ const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
         <ChevronRight style={{height: '15px'}} />
         <span> </span>
         <NavigationLink
-          href="/fotografia/listado"
+          href={`${router.pathname}/listado`}
           text="Listado completo"
         />
       </Box>

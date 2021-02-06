@@ -3,7 +3,7 @@ import NextLink from "next/link";
 import HomeIcon from '@material-ui/icons/Home';
 import { useRouter } from 'next/router';
 import { useCallback } from "react";
-import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
+import { makeStyles, Link as MuiLink, Box, Typography } from "@material-ui/core";
 
 import Busqueda from "../Busqueda/Busqueda";
 import NavbarMenuLink from "./NavbarMenuLink";
@@ -75,6 +75,14 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-between',
   },
 
+  homeLinkContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+
+    alignItems: 'start',
+    justifyContent: 'center',
+  },
+
   homeLink: {
     display: 'flex',
     fontSize: '1.45rem',
@@ -85,7 +93,6 @@ const useStyles = makeStyles(theme => ({
   },
 
   pagesSearch: {
-    flex: 1,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
@@ -140,8 +147,8 @@ const Navigation: React.FC<NavigationProps> = () => {
 
   const navigationItems = [
     {
-      href: '/fotografia',
-      text: 'Fotografía',
+      href: '/observacion',
+      text: 'Observación',
     },
     ...items
   ];
@@ -150,16 +157,21 @@ const Navigation: React.FC<NavigationProps> = () => {
     <header className={classes.header}>
         <nav className={classes.nav}>
           <aside className={classes.pageHomeAndSearch}>
-            <NextLink
-              href="/"
-              passHref={true}
-            >
-              <MuiLink className={classes.homeLink}>
-                <HomeIcon />
-                <Box p="0.25rem" />
-                OACM Fuensanta
-              </MuiLink>
-            </NextLink>
+            <Box flex={1} className={classes.homeLinkContainer}>
+              <NextLink
+                href="/"
+                passHref={true}
+              >
+                <MuiLink className={classes.homeLink}>
+                  <HomeIcon />
+                  <Box p="0.25rem" />
+                  OACM Fuensanta
+                </MuiLink>
+              </NextLink>
+              <Typography variant="caption" style={{opacity: .8, whiteSpace: 'pre-wrap', maxWidth: '50vw', textAlign: 'center'}}>
+                Observacion astrónomica. Construcción de observatorio, telescopio y CCD.
+              </Typography>
+            </Box>
             <Box className={classes.pagesSearch}>
               <Busqueda onChange={handleBusquedaChange} />
             </Box>

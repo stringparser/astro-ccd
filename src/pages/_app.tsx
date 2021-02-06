@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 import { create } from "jss"
 import { AppProps } from "next/app";
 import { MDXProvider } from '@mdx-js/react'
@@ -42,9 +42,9 @@ const useStyles = makeStyles(theme => ({
 
 const WebApp: React.FC<AppProps> = (props: AppProps) => {
   const classes = useStyles();
-  const { Component, pageProps } = props;
+  const { Component, pageProps, router } = props;
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector<HTMLElement>('#jss-server-side');
 
@@ -72,7 +72,10 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <Navigation />
               <Box flex="1">
                 <Component {...pageProps} />
-                <DisqusEmbed />
+                {router.pathname === '/'
+                  ? null
+                  : <DisqusEmbed />
+                }
               </Box>
               <Footer />
             </main>

@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
 
-    '@media (min-width: 876px)': {
+    '@media (min-width: 562px)': {
       width: 'auto',
       flexDirection: 'row',
     },
@@ -34,7 +34,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
 
-    '@media (min-width: 876px) and (max-width: 1024px)': {
+    '@media (min-width: 562px) and (max-width: 1024px)': {
       width: '50%',
       margin: '0 auto',
     },
@@ -79,7 +79,6 @@ const useStyles = makeStyles({
 export type PostsListProps<T = RegistroItem> =  {
   items: T[];
   mostrarEtiquetas?: boolean;
-  onEtiquetaClick?: (el: RegistroItem) => void;
 };
 
 function PostsList(props: PostsListProps) {
@@ -87,7 +86,6 @@ function PostsList(props: PostsListProps) {
   const {
     items,
     mostrarEtiquetas,
-    onEtiquetaClick,
   } = props;
 
   return (
