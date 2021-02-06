@@ -4,12 +4,11 @@ import Button from "@material-ui/core/Button/Button";
 import NextLink from "next/link";
 import MuiLink from "@material-ui/core/Link/Link";
 
-import { PageBasename } from "src/types";
+import { PageBasename } from "types";
 
 import { ClickAwayListener, Grow, makeStyles, MenuItem, MenuList, Paper, Popper } from "@material-ui/core";
 
 import { FOTOS_MENU_ID } from "./constants";
-import { opacityMixin } from "../mixins";
 import clsx from "clsx";
 
 export const fotosMenuItems = [

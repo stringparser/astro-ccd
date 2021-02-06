@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { fetchPageContent } from './lib/pageContents';
-import { PageBasename, PageItemContents } from '../src/types';
+import { fetchPageContent } from './lib/fetchPageContent';
+import { PageBasename, PageItemContents } from '../types';
 import { fechaTextRE, mapMDX, mapJSON, urlMap } from './lib/util';
 
 Promise.all([
@@ -177,7 +177,7 @@ Promise.all([
 
       const filename = isIndex
         ? path.resolve(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
-        : path.resolve(__dirname, '..', 'src', 'pages', 'objeto', `${urlId}.mdx`)
+        : path.resolve(__dirname, '..', 'src', 'pages', 'registro', `${urlId}.mdx`)
       ;
 
       const mergedContent = content
@@ -219,13 +219,9 @@ Promise.all([
             filename,
             [
               '\nexport const meta = {',
-                page.objeto && `\tobjeto: '${page.objeto}',`,
-                pageTitle && `\ttitulo: '${pageTitle}',`,
-                page.label && `\tetiquetas: '${
-                  page.label === PageBasename.sistemaSolar && 'sistema solar'
-                  || page.label === PageBasename.cometasAsteroides && 'cometa, asteroide'
-                  || page.label
-                }',`,
+                page.objeto && `\tobjeto: '${page.objeto === 'sol' ? 'Sol' : page.objeto}',`,
+                pageTitle && `\ttitulo: '${pageTitle === 'sol' ? 'Sol' : pageTitle}',`,
+                page.label && `\tetiquetas: ['${page.label}'],`,
               '};\n',
               pageTitle && `# ${pageTitle}\n`,
               mergedContent

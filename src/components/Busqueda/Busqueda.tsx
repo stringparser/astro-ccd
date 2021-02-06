@@ -3,7 +3,7 @@ import { useState } from "react";
 import Autocomplete, { AutocompleteProps } from '@material-ui/lab/Autocomplete';
 import { makeStyles, TextField, TextFieldProps } from "@material-ui/core";
 
-import { RegistroItem } from "src/types";
+import { RegistroItem } from "types";
 
 import { BUSQUEDA_ID } from "src/components/Busqueda/constants";
 import { getRegistro } from "src/lib/staticProps";
@@ -44,7 +44,7 @@ const getOptionLabel = (item: RegistroItem) => (
 
 const useStyles = makeStyles(() => ({
   root: {
-    width: '200px',
+    width: '250px',
     margin: '0',
   },
   textField: {
@@ -98,7 +98,7 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
   const renderInput = (params: Parameters<DefaultAutocompleteProps['renderInput']>[0]) => (
     <TextField
       {...params}
-      label="Buscar fotos"
+      label="Búsqueda"
       margin="normal"
       variant="outlined"
       className={classes.textField}

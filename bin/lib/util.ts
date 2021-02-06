@@ -1,7 +1,5 @@
-import { html_beautify } from "js-beautify";
-
 import { mesMap } from "../../src/lib/util";
-import { PageBasename, PageItemProps } from "../../src/types";
+import { PageBasename, PageItemProps } from "../../types";
 
 export const urlMap = {
   'ccd-2': PageBasename.reparacionCCD,

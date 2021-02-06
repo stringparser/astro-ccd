@@ -5,12 +5,11 @@ import { useRouter } from 'next/router';
 import { useCallback } from "react";
 import { makeStyles, Link as MuiLink, Box } from "@material-ui/core";
 
-import { opacityMixin } from "src/components/mixins";
-import { PageBasename, RegistroItem } from "src/types";
 import Busqueda from "../Busqueda/Busqueda";
-import { mapRegistroURL } from "src/lib/navigation";
-import FotosMenu, { fotosMenuItems } from "./FotosMenu";
 import NavbarMenuLink from "./NavbarMenuLink";
+import { opacityMixin } from "src/components/mixins";
+import { mapRegistroURL } from "src/lib/navigation";
+import { PageBasename, RegistroItem } from "types";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
@@ -44,14 +43,9 @@ const items = Object.entries(PageBasename)
   .filter(v => v)
 ;
 
-const isCurrentPage = (currentHref: string, href: string) => (
-  currentHref === href
+const isCurrentPage = (currentPathname: string, pagePathname: string) => (
+  currentPathname.startsWith(pagePathname)
 );
-
-const isPhotosMenuPage = (route: string) => {
-  console.log('route', route);
-  return fotosMenuItems.find(el => el.href === route) != null;
-};
 
 const useStyles = makeStyles(theme => ({
   header: {
@@ -144,6 +138,14 @@ const Navigation: React.FC<NavigationProps> = () => {
     router.push(url);
   }, []);
 
+  const navigationItems = [
+    {
+      href: '/fotografia',
+      text: 'Fotografía',
+    },
+    ...items
+  ];
+
   return (
     <header className={classes.header}>
         <nav className={classes.nav}>
@@ -163,46 +165,21 @@ const Navigation: React.FC<NavigationProps> = () => {
             </Box>
           </aside>
           <aside  className={classes.pageLinks}>
-            <Box className={classes.linkContainer}>
-              <NavbarMenuLink
-                href={`/${PageBasename.fuensanta}`}
-                text="Fuensanta"
-                className={clsx(
-                  classes.link,
-                  isCurrentPage(router.route, `/${PageBasename.fuensanta}`) && classes.currentLink,
-                )}
-              />
-            </Box>
-            <Box className={classes.linkContainer}>
-              <FotosMenu
-                className={clsx(
-                  classes.link,
-                  isPhotosMenuPage(router.route)
-                    ? classes.currentLink
-                    : undefined
-                )}
-              />
-            </Box>
-            <Box className={classes.linkContainer}>
-              <NavbarMenuLink
-                href={`/${PageBasename.construccionObservatorio}`}
-                text="Construcción del Observatorio"
-                className={clsx(
-                  classes.link,
-                  isCurrentPage(router.route, `/${PageBasename.construccionObservatorio}`) && classes.currentLink,
-                )}
-              />
-            </Box>
-            <Box className={classes.linkContainer}>
-              <NavbarMenuLink
-                href={`/${PageBasename.reparacionCCD}`}
-                text="Reparación de CCD SBIG"
-                className={clsx(
-                  classes.link,
-                  isCurrentPage(router.route, `/${PageBasename.reparacionCCD}`) && classes.currentLink,
-                )}
-              />
-            </Box>
+            {navigationItems.map(({ href, text }, index) =>
+              <Box
+                key={index}
+                className={classes.linkContainer}
+              >
+                <NavbarMenuLink
+                  href={href}
+                  text={text.replace(/\-/g, ' ')}
+                  className={clsx(
+                    classes.link,
+                    isCurrentPage(router.route, href) && classes.currentLink,
+                  )}
+                />
+              </Box>
+            )}
           </aside>
         </nav>
       </header>

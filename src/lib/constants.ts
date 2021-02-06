@@ -7,6 +7,7 @@ import Image from 'src/components/Image/Image';
 import ImagenObras from 'src/components/Image/ImagenObras';
 import DisqusEmbed from 'src/components/Disqus/DisqusEmbed';
 import ReparacionSBIG from 'src/components/Destacado/ReparacionSBIG';
+import { PageBasename } from 'types';
 
 export const mdxComponents = {
   head: Head,
@@ -23,6 +24,4 @@ export const mdxComponents = {
 
   ImagenObras,
   ReparacionSBIG,
-
-  Comentarios: DisqusEmbed,
 };

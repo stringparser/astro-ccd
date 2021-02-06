@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
 import Image from "src/components/Image/Image";
-import { PageBasename } from "src/types";
+import { PageBasename } from "types";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -64,7 +64,7 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
           {titulo}
         </Typography>
         <Image
-          src={require('@public/observatorio/franja.jpg').default}
+          src={require('./img/franja.jpg').default}
           link={false}
           layout="fill"
           className={classes.imageWrapper}

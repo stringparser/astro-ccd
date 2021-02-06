@@ -1,4 +1,4 @@
-import { PageItemProps } from "../../../src/types";
+import { PageItemProps } from "../../../types";
 
 export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps {
   const { src, text, objeto: id } = props;

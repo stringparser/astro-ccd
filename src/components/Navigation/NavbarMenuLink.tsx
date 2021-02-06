@@ -1,15 +1,7 @@
-import clsx from "clsx";
 import React from "react";
 import NextLink from "next/link";
 
-import Box from "@material-ui/core/Box/Box";
 import MuiLink from "@material-ui/core/Link/Link";
-import { makeStyles } from "@material-ui/core";
-
-const useStyles = makeStyles({
-  link: {},
-  linkContainer: {},
-});
 
 export type NavbarMenuLinkProps = {
   href: string;
@@ -18,7 +10,6 @@ export type NavbarMenuLinkProps = {
 };
 
 const NavbarMenuLink: React.FC<NavbarMenuLinkProps> = (props) => {
-  const classes = useStyles();
   const { href, text, className } = props;
 
   return (

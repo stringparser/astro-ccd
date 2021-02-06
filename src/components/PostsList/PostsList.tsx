@@ -2,7 +2,7 @@
 import React from "react";
 import { Box, Link, makeStyles, Typography } from "@material-ui/core";
 
-import { RegistroItem } from "bin/registro";
+import { RegistroItem } from "types";
 import { opacityMixin } from "src/components/mixins";
 
 import H2 from "src/components/Typography/H2";
@@ -46,7 +46,10 @@ const useStyles = makeStyles({
   imageTitle: {
     color: 'red',
     maxWidth: '50%',
-    margin: '1rem auto',
+    margin: '1rem auto 0 auto',
+  },
+  imageFecha: {
+    marginTop: '1rem',
   },
   imageContainer: {
     height: '200px',
@@ -60,9 +63,10 @@ const useStyles = makeStyles({
 
 export type PostsListProps<T = RegistroItem> =  {
   items: T[];
+  mostrarEtiquetas?: boolean;
 };
 
-function PostsList({ items }: PostsListProps) {
+function PostsList({ items, mostrarEtiquetas }: PostsListProps) {
   const classes = useStyles();
 
   return (
@@ -91,7 +95,13 @@ function PostsList({ items }: PostsListProps) {
               }
             </H2>
 
-            <Typography variant="caption">
+            {mostrarEtiquetas && (
+              <Typography variant="caption">
+                {etiquetas.join(', ').replace(/[-]/g, ' ')}
+              </Typography>
+            )}
+
+            <Typography variant="caption" className={classes.imageFecha}>
               {dateString}
             </Typography>
 
