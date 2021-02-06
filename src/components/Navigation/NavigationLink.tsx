@@ -6,7 +6,7 @@ import MuiLink from "@material-ui/core/Link/Link";
 
 export type NavbarMenuLinkProps = {
   href: string;
-  text: string;
+  text?: string;
   className?: string;
 };
 
@@ -21,7 +21,7 @@ const NavigationLink: React.FC<NavbarMenuLinkProps> = (props) => {
       <MuiLink
         className={className}
       >
-        {text}
+        {text || props.children}
       </MuiLink>
     </NextLink>
   )

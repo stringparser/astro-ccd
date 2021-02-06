@@ -8,6 +8,7 @@ import PostsList from "src/components/PostsList/PostsList";
 import { getEtiquetas, getRegistro } from "src/lib/staticProps";
 import NavigationLink from "src/components/Navigation/NavigationLink";
 import { ChevronRight } from "@material-ui/icons";
+import { esEntradaValidaConImagen } from "src/lib/util";
 
 export type FotografiaProps = {
   items: RegistroItem[];
@@ -37,6 +38,10 @@ const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
       )
     : items
   ;
+
+  console.log('items', items.find(el =>
+    el.entradas.find(it => /logodef/.test(it.src))
+  ));
 
   return (
     <Box>
@@ -94,9 +99,19 @@ const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
 };
 
 export async function getStaticProps(): Promise<{ props: FotografiaProps; }> {
+  const registro = getRegistro();
+
   return {
     props: {
-      items: await getRegistro(),
+      items: registro
+        .map(el => {
+          return {
+            ...el,
+            entradas: el.entradas.filter(esEntradaValidaConImagen)
+          }
+        })
+        .filter(el => el.entradas.length > 0)
+      ,
       etiquetas: getEtiquetas(),
     },
   };

@@ -1,12 +1,13 @@
 
 import React from "react";
-import { Box, Link, makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles, Typography } from "@material-ui/core";
 
 import { RegistroItem } from "types";
 import { opacityMixin } from "src/components/mixins";
 
 import H2 from "src/components/Typography/H2";
 import Image from "src/components/Image/Image";
+import NavigationLink from "../Navigation/NavigationLink";
 
 const useStyles = makeStyles({
   root: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles({
       flexDirection: 'row',
     },
   },
-  linkWrapper: {
+  mainWrapper: {
     ...opacityMixin,
 
     width: 'inherit',
@@ -42,6 +43,14 @@ const useStyles = makeStyles({
       width: '30%',
       margin: '0 auto',
     },
+
+    '&:hover': {
+      textDecoration: 'none',
+
+      '& h2': {
+        textDecoration: 'underline',
+      }
+    }
   },
   imageTitle: {
     color: 'red',
@@ -59,15 +68,27 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  clickable: {
+    cursor: 'pointer',
+  },
+  etiquetas: {
+    marginBottom: '.5rem'
+  }
 });
 
 export type PostsListProps<T = RegistroItem> =  {
   items: T[];
   mostrarEtiquetas?: boolean;
+  onEtiquetaClick?: (el: RegistroItem) => void;
 };
 
-function PostsList({ items, mostrarEtiquetas }: PostsListProps) {
+function PostsList(props: PostsListProps) {
   const classes = useStyles();
+  const {
+    items,
+    mostrarEtiquetas,
+    onEtiquetaClick,
+  } = props;
 
   return (
     <Box className={classes.root}>
@@ -75,6 +96,7 @@ function PostsList({ items, mostrarEtiquetas }: PostsListProps) {
         const { date, src } = el.entradas.find(el => el.src);
         const { objeto, titulo, etiquetas } = el;
 
+        const href = `/registro/${el.urlId}`;
         const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(date) || [])
           .slice(1)
           .reverse()
@@ -83,36 +105,39 @@ function PostsList({ items, mostrarEtiquetas }: PostsListProps) {
         ;
 
         return (
-          <Link
+          <NavigationLink
             key={el.urlId}
-            href={`/registro/${el.urlId}`}
-            className={classes.linkWrapper}
+            href={href}
+            className={classes.mainWrapper}
           >
-            <H2 className={classes.imageTitle}>
-              {etiquetas.includes('sistema solar')
-                ? titulo
-                : objeto
-              }
-            </H2>
+              <H2 className={classes.imageTitle}>
+                {etiquetas.includes('sistema solar')
+                  ? titulo
+                  : objeto
+                }
+              </H2>
 
-            {mostrarEtiquetas && (
-              <Typography variant="caption">
-                {etiquetas.join(', ').replace(/[-]/g, ' ')}
+              {mostrarEtiquetas && (
+                <Typography
+                  variant="caption"
+                  className={classes.etiquetas}
+                >
+                  {etiquetas.join(', ').replace(/[-]/g, ' ')}
+                </Typography>
+              )}
+
+              <Typography variant="caption" className={classes.imageFecha}>
+                {dateString}
               </Typography>
-            )}
 
-            <Typography variant="caption" className={classes.imageFecha}>
-              {dateString}
-            </Typography>
-
-            <Image
-              src={src}
-              link={false}
-              layout="fill"
-              quality={65}
-              className={classes.imageContainer}
-            />
-          </Link>
+              <Image
+                src={src}
+                link={false}
+                layout="fill"
+                quality={65}
+                className={classes.imageContainer}
+              />
+          </NavigationLink>
         );
       })}
     </Box>

@@ -14,14 +14,15 @@ const useStyles = makeStyles(() => ({
 
     display: 'flex',
     flexWrap: 'wrap',
+    justifyContent: 'space-between'
   },
   seccionEtiqueta: {
+    width: '150px',
     display: 'flex',
     alignItems: 'start',
     flexDirection: 'column',
   },
   tituloEtiqueta: {
-    width: '75%',
     margin: '1rem 0',
     textTransform: 'uppercase',
   },

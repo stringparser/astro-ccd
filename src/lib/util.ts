@@ -53,9 +53,8 @@ export const mapTextToUrl = (input: string) => {
 export const esEntradaValidaConImagen = ({ date, src }: RegistroItemEntrada) => (
   date
   && src
-  && !/apj-logo\.gif$/.test(src)
-  && !/logodef\.png$/.test(src)
-  && !/rainbowl\.gif$/.test(src)
+  && !/logo/.test(src)
+  && !/rainbowl/.test(src)
   && !/obras[^.\s]+\.gif$/.test(src)
 );
 
