@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, Link, makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles, Typography } from "@material-ui/core";
 
 import Image from "src/components/Image/Image";
 import { PageBasename } from "types";
+import NavigationLink from "src/components/Navigation/NavigationLink";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -53,8 +54,8 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
       justifyContent="center"
       className={classes.root}
     >
-      <Link
-        href={PageBasename.reparacionCCD}
+      <NavigationLink
+        href={`/${PageBasename.reparacionCCD}`}
         className={classes.enlace}
       >
         <Typography
@@ -70,7 +71,7 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
           className={classes.imageWrapper}
           imageClassName={classes.imagen}
         />
-      </Link>
+      </NavigationLink>
     </Box>
   )
 }
