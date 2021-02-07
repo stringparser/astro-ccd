@@ -11,7 +11,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...rest,
       fecha: '20201220',
-      objeto: 'jupiter+saturno',
+      objeto: 'jupiter saturno',
       nombre: 'Conjunción Júpiter y Saturno',
     };
   }
@@ -20,7 +20,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20201220',
-      objeto: 'jupiter+saturno',
+      objeto: 'jupiter saturno',
       text: 'Conjunción de Júpiter y Saturno',
     };
   }
@@ -29,7 +29,7 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
     return {
       ...props,
       fecha: '20201220',
-      objeto: 'jupiter+saturno',
+      objeto: 'jupiter saturno',
       nombre: 'Conjunción Júpiter y Saturno',
     };
   }
@@ -74,8 +74,8 @@ export function mapSolarSystemImageMetadata(props: PageItemProps): PageItemProps
 
     return {
       ...props,
-      fecha: '20211221',
-      objeto: 'jupiter+saturno',
+      fecha: '20201221',
+      objeto: 'jupiter saturno',
       nombre: 'Conjunción de Jupiter y Saturno'
     };
   }

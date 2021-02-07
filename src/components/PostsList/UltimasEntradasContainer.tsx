@@ -12,7 +12,7 @@ const UltimasEntradasContainer = () => {
     })
     .filter(el => el.entradas.length)
     .sort(ordenarPorFecha)
-    .slice(0, 10)
+    .slice(0, 9)
   ;
 
   return <PostsList items={items} />

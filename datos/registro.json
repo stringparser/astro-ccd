@@ -1,36 +1,5 @@
 [
   {
-    "titulo": "Conjunción de Jupiter y Saturno",
-    "objeto": "jupiter+saturno",
-    "etiquetas": [
-      "sistema-solar"
-    ],
-    "urlId": "jupiter-saturno",
-    "filename": "src/pages/registro/jupiter-saturno.mdx",
-    "entradas": [
-      {
-        "type": "heading",
-        "text": "Conjunción de Jupiter y Saturno"
-      },
-      {
-        "type": "image",
-        "src": "registro/jupiter-saturno_20211221_2_conjuncion.gif",
-        "date": "20211221",
-        "urlId": "jupiter-saturno",
-        "width": 966,
-        "height": 1524
-      },
-      {
-        "type": "image",
-        "src": "registro/jupiter-saturno_20201220_1_jupiter-saturno-20diciembre2020-2.png",
-        "date": "20201220",
-        "urlId": "jupiter-saturno",
-        "width": 770,
-        "height": 775
-      }
-    ]
-  },
-  {
     "titulo": "M42",
     "objeto": "M42",
     "etiquetas": [
@@ -128,6 +97,37 @@
       {
         "type": "text",
         "text": "Nebulosa Rosetats 65mm 420mm"
+      }
+    ]
+  },
+  {
+    "titulo": "Conjunción de Jupiter y Saturno",
+    "objeto": "jupiter+saturno",
+    "etiquetas": [
+      "sistema-solar"
+    ],
+    "urlId": "jupiter-saturno",
+    "filename": "src/pages/registro/jupiter-saturno.mdx",
+    "entradas": [
+      {
+        "type": "heading",
+        "text": "Conjunción de Jupiter y Saturno"
+      },
+      {
+        "type": "image",
+        "src": "registro/jupiter-saturno_20211221_2_conjuncion.gif",
+        "date": "20201221",
+        "urlId": "jupiter-saturno",
+        "width": 966,
+        "height": 1524
+      },
+      {
+        "type": "image",
+        "src": "registro/jupiter-saturno_20201220_1_jupiter-saturno-20diciembre2020-2.png",
+        "date": "20201220",
+        "urlId": "jupiter-saturno",
+        "width": 770,
+        "height": 775
       }
     ]
   },
