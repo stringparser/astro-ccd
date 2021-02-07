@@ -6,9 +6,8 @@ import H2 from 'src/components/Typography/H2';
 import Image from 'src/components/Image/Image';
 import ImagenObras from 'src/components/Image/ImagenObras';
 import ReparacionSBIG from 'src/components/Destacado/ReparacionSBIG';
+import MDXWrapperContainer from 'src/components/MDX/MDXWrapperContainer';
 import UltimasEntradasContainer from 'src/components/PostsList/UltimasEntradasContainer';
-
-UltimasEntradasContainer
 
 export const mdxComponents = {
   head: Head,
@@ -25,6 +24,8 @@ export const mdxComponents = {
 
   ImagenObras,
   ReparacionSBIG,
+
+  wrapper: MDXWrapperContainer,
 
   UltimasEntradas: UltimasEntradasContainer,
 };

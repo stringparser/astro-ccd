@@ -5,7 +5,7 @@ import { AppProps } from "next/app";
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box } from "@material-ui/core";
 
-import { mdxComponents } from "src/lib/constants";
+import { mdxComponents } from "src/components/MDX/components";
 
 import Footer from "src/components/Layout/Footer";
 import Navigation from "src/components/Navigation/NavigationContainer";

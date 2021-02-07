@@ -1,14 +1,12 @@
+import Head from "next/head";
+import { Box, Chip } from "@material-ui/core";
 import { useCallback, useState } from "react";
-import { Box, Chip, Typography } from "@material-ui/core";
 
 import { RegistroItem } from "types";
+import { esEntradaValidaConImagen } from "src/lib/util";
 
-import H1 from "src/components/Typography/H1";
 import PostsList from "src/components/PostsList/PostsList";
 import { getEtiquetas, getRegistro } from "src/lib/staticProps";
-import NavigationLink from "src/components/Navigation/NavigationLink";
-import { ChevronRight } from "@material-ui/icons";
-import { esEntradaValidaConImagen } from "src/lib/util";
 import { useRouter } from "next/router";
 
 export type FotografiaProps = {
@@ -18,75 +16,55 @@ export type FotografiaProps = {
 
 const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
   const router = useRouter();
-
-  const [selectedEtiquetas, setSelectedEtiquetas] = useState<string[]>([]);
+  const [selectedEtiqueta, setSelectedEtiqueta] = useState<string | null>(null);
 
   const handleEtiquetaClick = useCallback(
     (ev: React.MouseEvent<HTMLDivElement>) => {
       const { id } = ev.currentTarget.dataset;
 
-      setSelectedEtiquetas(selectedEtiquetas.includes(id)
-        ? selectedEtiquetas.filter(el => el !== id)
-        : selectedEtiquetas.concat(id)
+      setSelectedEtiqueta(selectedEtiqueta === id
+        ? null
+        : id
       );
-    }
-  , [etiquetas, selectedEtiquetas]);
 
-  const filteredItems = selectedEtiquetas.length > 0
+      router.replace(`?etiqueta=${id}`);
+    }
+  , [etiquetas, selectedEtiqueta]);
+
+  const filteredItems = selectedEtiqueta
     ? items.filter(el =>
-        selectedEtiquetas.find(name =>
-          el.etiquetas.includes(name)
-        ) != null
+        el.etiquetas.includes(selectedEtiqueta)
       )
     : items
   ;
 
-  console.log('items', items.find(el =>
-    el.entradas.find(it => /logodef/.test(it.src))
-  ));
-
   return (
     <Box>
-      <H1 style={{ marginBottom: '0.25rem' }}>
-        Observacion Astronómica
-      </H1>
+      <Head>
+        <title>OACM Fuensanta | Fotografía</title>
+      </Head>
       <Box
-        margin="0 auto 2rem auto"
-        maxWidth="60%"
+        margin="3rem 0 2rem 0"
         display="flex"
         alignItems="center"
         justifyContent="center"
       >
-        <ChevronRight style={{height: '15px'}} />
-        <span> </span>
-        <NavigationLink
-          href={`${router.pathname}/listado`}
-          text="Listado completo"
-        />
-      </Box>
-      <Box
-        margin="0 auto 2rem auto"
-        maxWidth="60%"
-        alignItems="center"
-        justifyContent="start"
-      >
         <Box
-          flex={1}
           display="flex"
           alignItems="center"
-          justifyContent="space-between"
         >
           {etiquetas.map(name => {
             return (
               <Chip
                 key={name}
                 label={name.replace(/[-]+/, ' ')}
-                variant={selectedEtiquetas.includes(name)
+                variant={selectedEtiqueta === name
                   ? 'default'
                   : 'outlined'
                 }
                 onClick={handleEtiquetaClick}
                 data-id={name}
+                style={{margin: '0 1rem 0 0'}}
               />
             );
           })}

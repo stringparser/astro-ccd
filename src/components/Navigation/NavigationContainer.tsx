@@ -17,7 +17,7 @@ const items = Object.entries(PageBasename)
       case PageBasename.reparacionCCD: {
         return {
           href: `/${href}`,
-          text: 'reparación DE CCD SBIG',
+          text: 'reparación',
         };
       }
       case PageBasename.galaxias:
@@ -29,7 +29,7 @@ const items = Object.entries(PageBasename)
       case PageBasename.construccionObservatorio: {
         return {
           href: `/${href}`,
-          text: 'contrucción del observatorio',
+          text: 'Observatorio',
         };
       }
       default: {
@@ -92,6 +92,13 @@ const useStyles = makeStyles(theme => ({
     ...opacityMixin
   },
 
+  homeLinkSubtitle: {
+    opacity: .8,
+    maxWidth: '50vw',
+    textAlign: 'center',
+    whiteSpace: 'pre-wrap',
+  },
+
   pagesSearch: {
     display: 'flex',
     alignItems: 'center',
@@ -104,7 +111,7 @@ const useStyles = makeStyles(theme => ({
 
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-around'
   },
 
   linkContainer: {
@@ -147,8 +154,8 @@ const Navigation: React.FC<NavigationProps> = () => {
 
   const navigationItems = [
     {
-      href: '/observacion',
-      text: 'Observación',
+      href: '/fotografia',
+      text: 'Fotografía',
     },
     ...items
   ];
@@ -168,8 +175,8 @@ const Navigation: React.FC<NavigationProps> = () => {
                   OACM Fuensanta
                 </MuiLink>
               </NextLink>
-              <Typography variant="caption" style={{opacity: .8, whiteSpace: 'pre-wrap', maxWidth: '50vw', textAlign: 'center'}}>
-                Observacion astrónomica. Construcción de observatorio, telescopio y CCD.
+              <Typography variant="caption" className={classes.homeLinkSubtitle}>
+                Observación astrónomica. Construcción de observatorio, telescopio y CCD.
               </Typography>
             </Box>
             <Box className={classes.pagesSearch}>
@@ -177,6 +184,18 @@ const Navigation: React.FC<NavigationProps> = () => {
             </Box>
           </aside>
           <aside  className={classes.pageLinks}>
+              <Box
+                className={classes.linkContainer}
+              >
+                <NavbarMenuLink
+                  href="/"
+                  text="Inicio"
+                  className={clsx(
+                    classes.link,
+                    router.route === '/' && classes.currentLink,
+                  )}
+                />
+              </Box>
             {navigationItems.map(({ href, text }, index) =>
               <Box
                 key={index}

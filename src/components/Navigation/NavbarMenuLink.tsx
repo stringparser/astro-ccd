@@ -17,9 +17,7 @@ const NavbarMenuLink: React.FC<NavbarMenuLinkProps> = (props) => {
       href={href}
       passHref={true}
     >
-      <MuiLink
-        className={className}
-      >
+      <MuiLink className={className}>
         {text.replace(/\-/g, ' ')}
       </MuiLink>
     </NextLink>

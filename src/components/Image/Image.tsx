@@ -80,6 +80,7 @@ const Image: React.FC<ImageProps> = ({
     >
       <NextImage
         layout="fill"
+        quality={100}
         loading="lazy"
         objectFit="contain"
         {...props}

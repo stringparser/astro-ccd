@@ -40,7 +40,7 @@ export type ReparacionSBIGProps = {
 };
 
 const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
-  titulo = 'REPARACIÓN CCD SBIG'
+  titulo = 'REPARACIÓN DE CCD SBIG'
 }) => {
   const classes = useStyles();
 

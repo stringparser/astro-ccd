@@ -57,9 +57,6 @@ const useStyles = makeStyles({
     maxWidth: '50%',
     margin: '1rem auto 0 auto',
   },
-  imageFecha: {
-    marginTop: '1rem',
-  },
   imageContainer: {
     height: '200px',
     margin: '1rem 2rem',
@@ -68,12 +65,15 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  etiquetas: {
+    margin: '.25rem 0'
+  },
+  imageFecha: {
+    margin: '0.5rem 0 0 0',
+  },
   clickable: {
     cursor: 'pointer',
   },
-  etiquetas: {
-    marginBottom: '.5rem'
-  }
 });
 
 export type PostsListProps<T = RegistroItem> =  {
