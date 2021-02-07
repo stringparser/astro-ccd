@@ -109,10 +109,7 @@ function PostsList(props: PostsListProps) {
             className={classes.mainWrapper}
           >
               <H2 className={classes.imageTitle}>
-                {etiquetas.includes('sistema solar')
-                  ? titulo
-                  : objeto
-                }
+                {titulo || objeto}
               </H2>
 
               {mostrarEtiquetas && (
