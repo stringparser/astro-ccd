@@ -29,13 +29,13 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
     (ev: React.MouseEvent<HTMLAnchorElement>) => {
       ev.preventDefault();
 
-      router.push(ev.currentTarget.href);
+      router.push(href);
 
       if (onClick) {
         onClick(ev);
       }
     },
-    [router]
+    [href, router, onClick]
   );
 
   return (
