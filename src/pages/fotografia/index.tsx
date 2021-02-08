@@ -38,7 +38,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 
   const handleObjetoClick = useCallback(
     (ev: React.MouseEvent<HTMLDivElement>) => {
-      const { id } = ev.currentTarget.dataset;
+      const { id, tipo } = ev.currentTarget.dataset;
 
       const nextId = selectedObjeto === id
         ? null
@@ -47,14 +47,17 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 
       setSelectedObjeto(nextId);
 
-      router.replace(`?${
-        [
-          selectedTipo ? `tipo=${selectedTipo}` : '',
-          nextId && `urlId=${nextId}`
-        ]
-        .filter(v => v)
-        .join('&')
-      }`);
+      const query = {} as FotografiaProps['query'];
+
+      if (nextId) {
+        query.urlId = nextId;
+      }
+
+      if (tipo || selectedTipo) {
+        query.tipo = tipo || selectedTipo;
+      }
+
+      router.replace({ query }, undefined, { shallow: true });
     },
     [items, selectedObjeto]
   );
@@ -70,10 +73,13 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 
       setSelectedTipo(nextTipo);
 
-      router.replace(nextTipo
-        ? `?tipo=${nextTipo}`
-        : router.pathname
-      );
+      const query = {} as FotografiaProps['query'];
+
+      if (nextTipo) {
+        query.tipo = nextTipo;
+      }
+
+      router.replace({ query }, undefined, { shallow: true });
 
     }
   , [etiquetas, selectedTipo]);
@@ -164,7 +170,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
               : true
             )
             .map(el => {
-              const { urlId, objeto } = el;
+              const { tipo, urlId, objeto } = el;
 
               return (
                 <Chip
@@ -176,6 +182,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
                   }
                   onClick={handleObjetoClick}
                   data-id={urlId}
+                  data-tipo={tipo}
                   style={{margin: '0.5rem', textTransform: 'capitalize'}}
                 />
               );
