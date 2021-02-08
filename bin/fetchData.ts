@@ -118,23 +118,6 @@ Promise.all([
           content: !pageTitle
             ? pageContent
             : pageContent
-                .filter(v => !pageTitleRE.test(v.text))
-                .map(({ text = '', ...rest }) => {
-                  return {
-                    ...rest,
-                    text: text.replace(/\s*#?\s*(Cometa)?\s*(\d{1,3}\/?p|(c\/)?\d{4}[a-z]\d)\s*/gi, '')
-                    .replace(/c\d{4}\s*[a-z]{1,2}\d{1,2}/ig, '')
-                    .replace(fechaTextRE, '')
-                    .replace(fechaRE, '')
-                    .replace(/(http)?s?\:?\/\/astroccd\.wordpress\.com\/([^\s'"\/]+)\/?/g,
-                      ($0, value: string) => {
-                        const mappedBaseUrl = urlMap[value as keyof typeof urlMap] || value;
-
-                        return `/${mappedBaseUrl}`;
-                      }
-                    )
-                  }
-                })
                 .filter(el => {
                   switch (el.type) {
                     case 'image': {
@@ -180,7 +163,7 @@ Promise.all([
 
       const filename = isIndex
         ? path.resolve(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
-        : path.resolve(__dirname, '..', 'src', 'pages', 'registro', `${urlId}.mdx`)
+        : path.resolve(__dirname, '..', 'src', 'pages', 'fotografia', 'registro', `${urlId}.mdx`)
       ;
 
       const mergedContent = content
@@ -197,7 +180,6 @@ Promise.all([
           }
 
           return v
-            .replace(pageTitle, '')
             .replace(/(2I)?\/\s*Borisov\s*/, '')
             .replace('colavoracion', 'colaboración')
           ;

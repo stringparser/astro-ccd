@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import { useRouter } from "next/router";
+import NavigationBreadcrumbs from "src/components/Navigation/NavigationBreadcrumbs";
 
 const MDXWrapperContainer: React.FC = ({ children }) => {
   const router = useRouter();
@@ -27,6 +28,8 @@ const MDXWrapperContainer: React.FC = ({ children }) => {
   ;
 
   if (title) {
+    const routeParts = router.pathname.slice(1).split('/');
+
     return (
       <>
         <Head>

@@ -5,6 +5,8 @@ import { RegistroItem } from "types";
 import H1 from "src/components/Typography/H1";
 import H2 from "src/components/Typography/H2";
 import NavigationLink from "src/components/Navigation/NavigationLink";
+import NavigationBreadcrumbs from "src/components/Navigation/NavigationBreadcrumbs";
+import { useRouter } from "next/router";
 
 const useStyles = makeStyles(() => ({
   seccionContainer: {
@@ -32,19 +34,19 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export type ListadoCompletoDeFotografíasProps = {
+export type RegistroFotografíasProps = {
   tipos: string[];
   items: RegistroItem[];
 };
 
-const ListadoCompletoDeFotografías: React.FC<ListadoCompletoDeFotografíasProps> = (props) => {
+const RegistroFotografías: React.FC<RegistroFotografíasProps> = (props) => {
   const classes = useStyles();
   const { items, tipos } = props;
 
   return (
     <Box>
       <H1>
-        Listado de observaciones
+        Registro de Fotografías
       </H1>
       <Box className={classes.seccionContainer}>
       {tipos.map(el => {
@@ -83,16 +85,16 @@ const ListadoCompletoDeFotografías: React.FC<ListadoCompletoDeFotografíasProps
   )
 };
 
-export async function getStaticProps(): Promise<{ props: ListadoCompletoDeFotografíasProps; }> {
-  const tiposDeEntradas = (await import('cache/tipos.json')).default;
-  const entradasConImagenes = (await import('cache/registro-observaciones.json')).default;
+export async function getStaticProps(): Promise<{ props: RegistroFotografíasProps; }> {
+  const tipos = (await import('cache/registro-etiquetas.json')).default;
+  const items = (await import('cache/registro-fotografia.json')).default;
 
   return {
     props: {
-      tipos: tiposDeEntradas,
-      items: entradasConImagenes,
+      tipos,
+      items,
     },
   };
 };
 
-export default ListadoCompletoDeFotografías;
+export default RegistroFotografías;

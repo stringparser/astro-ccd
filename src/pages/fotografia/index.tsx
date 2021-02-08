@@ -116,7 +116,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
       </Head>
 
       <Box
-        margin="3rem 2rem"
+        margin="2rem"
         border="1px solid rgba(255, 255, 255, 0.15)"
         borderRadius="4px"
       >
@@ -200,8 +200,8 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 };
 
 export async function getServerSideProps(context: GetServerSidePropsContext): Promise<{ props: FotografiaProps; }> {
-  const items = (await import('cache/registro-observaciones.json')).default;
-  const etiquetas = (await import('cache/tipos.json')).default;
+  const items = (await import('cache/registro-fotografia.json')).default;
+  const etiquetas = (await import('cache/registro-etiquetas.json')).default;
 
   const {
     tipo: selectedTipo = null,

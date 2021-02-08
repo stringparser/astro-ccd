@@ -5,15 +5,17 @@ import { AppProps } from "next/app";
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box } from "@material-ui/core";
 
-import { mdxComponents } from "src/components/MDX/components";
+import { maxWidthMixin } from "src/components/mixins";
+import { APP_ROOT_PORTAL_ID } from "src/lib/portal";
 
 import Footer from "src/components/Layout/Footer";
 import Navigation from "src/components/Navigation/NavigationContainer";
+import DisqusEmbed from "src/components/Disqus/DisqusEmbed";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
-import { maxWidthMixin } from "src/components/mixins";
-import { APP_ROOT_PORTAL_ID } from "src/lib/portal";
-import DisqusEmbed from "src/components/Disqus/DisqusEmbed";
+import NavigationBreadcrumbs from "src/components/Navigation/NavigationBreadcrumbs";
+
+import { mdxComponents } from "src/components/MDX/components";
 
 const jss = create({
   ...jssPreset(),
@@ -71,6 +73,9 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
             <main className={classes.main}>
               <Navigation />
               <Box flex="1">
+                <NavigationBreadcrumbs
+                  router={router}
+                />
                 <Component {...pageProps} />
                 {/^(\/|\/404)$/.test(router.pathname)
                   ? null
