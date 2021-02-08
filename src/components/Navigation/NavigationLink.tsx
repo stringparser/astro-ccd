@@ -20,7 +20,6 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
     style,
     children,
     className,
-    ...rest
   } = props;
 
   return (

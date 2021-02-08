@@ -13,11 +13,11 @@ const imageSize = promisify(imageSizeFn);
 (async () => {
 
   const items = await Promise.all(
-    (await fs.readdir('src/pages/registro'))
+    (await fs.readdir('src/pages/fotografia/registro'))
     .filter(el => /\.mdx$/.test(el))
     .map(async (el) => {
       const urlId = path.basename(el, path.extname(el));
-      const filename = path.join('src', 'pages', 'registro', el);
+      const filename = path.join('src', 'pages', 'fotografia', 'registro', el);
 
       const result = await parseMDX(filename);
 
@@ -59,7 +59,7 @@ const imageSize = promisify(imageSizeFn);
 
   console.log('wrote', sortedItems.length, 'items to', filename);
 
-  const itemsWithImagesFile = 'cache/registro-observaciones.json';
+  const itemsWithImagesFile = 'cache/registro-fotografia.json';
   const itemsWithImages = sortedItems
     .filter(el => el.tipo != null || el.tipo != '')
     .map(el => {
@@ -79,7 +79,7 @@ const imageSize = promisify(imageSizeFn);
 
   console.log('wrote', itemsWithImages.length, 'items to', itemsWithImagesFile);
 
-  const tiposFilename = 'cache/tipos.json';
+  const tiposFilename = 'cache/registro-etiquetas.json';
   const tiposJSON = itemsWithImages.reduce((acc: string[], el) => {
     return acc.includes(el.tipo)
       ? acc

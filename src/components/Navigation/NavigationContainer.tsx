@@ -8,6 +8,7 @@ import NavbarMenuLink from "./NavbarMenuLink";
 import { opacityMixin } from "src/components/mixins";
 import { mapRegistroURL } from "src/lib/navigation";
 import { PageBasename, RegistroItem } from "types";
+import NavigationLink from "src/components/Navigation/NavigationLink";
 
 const items = Object.entries(PageBasename)
   .map(([key, href]) => {
@@ -83,10 +84,11 @@ const useStyles = makeStyles(theme => ({
 
   homeLink: {
     display: 'flex',
-    fontSize: '1.45rem',
     alignItems: 'center',
-    justifyContent: 'start',
+    justifyItems: 'center',
+    flexDirection: 'column',
 
+    fontSize: '1.45rem',
     ...opacityMixin
   },
 
@@ -161,17 +163,17 @@ const Navigation: React.FC<NavigationProps> = () => {
     <header className={classes.header}>
         <nav className={classes.nav}>
           <aside className={classes.pageHomeAndSearch}>
-            <Box flex={1} className={classes.homeLinkContainer}>
-              <Box
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                flexDirection="column"
+            <Box
+              flex={1}
+              className={classes.homeLinkContainer}
+            >
+              <NavigationLink
+                href="/"
                 className={classes.homeLink}
               >
                 <span>OACM</span>
                 <span>Fuensanta</span>
-              </Box>
+              </NavigationLink>
               <Typography
                 variant="caption"
                 className={classes.homeLinkSubtitle}
@@ -186,18 +188,6 @@ const Navigation: React.FC<NavigationProps> = () => {
             </Box>
           </aside>
           <aside  className={classes.pageLinks}>
-              <Box
-                className={classes.linkContainer}
-              >
-                <NavbarMenuLink
-                  href="/"
-                  text="Inicio"
-                  className={clsx(
-                    classes.link,
-                    router.route === '/' && classes.currentLink,
-                  )}
-                />
-              </Box>
             {navigationItems.map(({ href, text }, index) =>
               <Box
                 key={index}

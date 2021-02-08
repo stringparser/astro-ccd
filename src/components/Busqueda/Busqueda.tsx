@@ -6,7 +6,7 @@ import { makeStyles, TextField, TextFieldProps } from "@material-ui/core";
 import { RegistroItem } from "types";
 
 import { BUSQUEDA_ID } from "src/components/Busqueda/constants";
-import registroObservaciones from "cache/registro-observaciones.json";
+import registroObservaciones from "cache/registro-fotografia.json";
 
 const mapOptions = (inputValue: string): RegistroItem[] => {
   if (!inputValue) {

@@ -101,7 +101,7 @@ function PostsList(props: PostsListProps) {
         const { date, src, width, height } = el.entradas.find(el => el.src);
         const { urlId, objeto, titulo, tipo } = el;
 
-        const href = `/registro/${urlId}`;
+        const href = `/fotografia/registro/${urlId}`;
 
         return (
           <NavigationLink

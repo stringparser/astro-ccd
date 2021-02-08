@@ -31,13 +31,13 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
           const children = $(el).children().toArray();
 
           const elements = children.length > 1
-            ? children.map(el => mapChildren(el))
+            ? children.flatMap(el => mapChildren(el))
             : [$el]
           ;
 
           return elements;
         })
-        .flat(10)
+        .flat(100)
         .map(el => {
           const image = el.find('img');
           const hasImage = image.length > 0;
