@@ -72,7 +72,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <Navigation />
               <Box flex="1">
                 <Component {...pageProps} />
-                {router.pathname === '/'
+                {/^(\/|\/404)$/.test(router.pathname)
                   ? null
                   : <DisqusEmbed />
                 }
