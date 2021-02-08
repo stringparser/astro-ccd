@@ -2,8 +2,8 @@ import React from "react";
 
 import clsx from "clsx";
 
-import MuiLink from "@material-ui/core/Link/Link";
 import { makeStyles } from "@material-ui/core";
+import MuiLink, { LinkProps as MuiLinkProps } from "@material-ui/core/Link/Link";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -11,15 +11,17 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export type NavbarMenuLinkProps = {
-  href?: string;
+export type NavbarMenuLinkProps = MuiLinkProps & {
   text?: string;
-  className?: string;
-  onClick?: (ev: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
 const BaseLink: React.FC<NavbarMenuLinkProps> = (props) => {
   const {
+    // @ts-ignore
+    ref,
+    // @ts-ignore
+    refs,
+
     href,
     text,
     className,

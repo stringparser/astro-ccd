@@ -36,13 +36,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export type ReparacionSBIGProps = {
-  titulo?: string;
-};
-
-const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
-  titulo = 'REPARACIÓN DE CCD SBIG'
-}) => {
+const ReparacionSBIG = () => {
   const classes = useStyles();
 
   return (
@@ -62,7 +56,7 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
           component="h2"
           className={classes.titulo}
         >
-          {titulo}
+          REPARACIÓN DE CCD SBIG
         </Typography>
         <Image
           src={require('./img/franja.jpg').default}
@@ -75,6 +69,6 @@ const ReparacionSBIG: React.FC<ReparacionSBIGProps> = ({
       </NavigationLink>
     </Box>
   )
-}
+};
 
 export default ReparacionSBIG;

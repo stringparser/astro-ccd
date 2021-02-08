@@ -7,15 +7,19 @@ export type NavbarLinkProps = {
   id?: string
   href?: string;
   text?: string;
+  style?: React.CSSProperties;
   className?: string;
   onClick?: (ev: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
 const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
   const {
+    id,
     href,
     text,
+    style,
     children,
+    className,
     ...rest
   } = props;
 
@@ -24,11 +28,15 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
       href={href}
       passHref={true}
     >
-      <BaseLink {...rest}>
+      <BaseLink
+        id={id}
+        style={style}
+        className={className}
+      >
         {text || children}
       </BaseLink>
     </NextLink>
   );
-}
+};
 
 export default NavigationLink;

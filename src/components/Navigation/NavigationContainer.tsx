@@ -77,25 +77,25 @@ const useStyles = makeStyles(theme => ({
 
   homeLinkContainer: {
     display: 'flex',
-    flexDirection: 'column',
 
-    alignItems: 'start',
-    justifyContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'start',
   },
 
   homeLink: {
     display: 'flex',
     fontSize: '1.45rem',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'start',
 
     ...opacityMixin
   },
 
   homeLinkSubtitle: {
     opacity: .8,
+    margin: '0 0 0 1rem',
     maxWidth: '50vw',
-    textAlign: 'center',
+    textAlign: 'left',
     whiteSpace: 'pre-wrap',
   },
 
@@ -107,7 +107,7 @@ const useStyles = makeStyles(theme => ({
 
   pageLinks: {
     width: '100%',
-    marginTop: '1.5rem',
+    marginTop: '0.75rem',
 
     display: 'flex',
     alignItems: 'center',
@@ -165,18 +165,23 @@ const Navigation: React.FC<NavigationProps> = () => {
         <nav className={classes.nav}>
           <aside className={classes.pageHomeAndSearch}>
             <Box flex={1} className={classes.homeLinkContainer}>
-              <NextLink
-                href="/"
-                passHref={true}
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                flexDirection="column"
+                className={classes.homeLink}
               >
-                <MuiLink className={classes.homeLink}>
-                  <HomeIcon />
-                  <Box p="0.25rem" />
-                  OACM Fuensanta
-                </MuiLink>
-              </NextLink>
-              <Typography variant="caption" className={classes.homeLinkSubtitle}>
-                Observación astrónomica. Construcción de observatorio, telescopio y CCD.
+                <span>OACM</span>
+                <span>Fuensanta</span>
+              </Box>
+              <Typography
+                variant="caption"
+                className={classes.homeLinkSubtitle}
+              >
+                Observación astrónomica. <br/>
+                Construcción de observatorio, <br/>
+                telescopio y CCD.
               </Typography>
             </Box>
             <Box className={classes.pagesSearch}>

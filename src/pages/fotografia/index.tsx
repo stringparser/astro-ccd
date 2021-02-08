@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useCallback, useLayoutEffect, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useState } from "react";
 import { Box, Chip, Typography } from "@material-ui/core";
 
 import { RegistroItem } from "types";
@@ -16,6 +16,10 @@ export type FotografiaProps = {
     tipo: string;
   }>
 };
+
+const useIsomorphicLayoutEffect =
+  typeof window !== 'undefined' ? useLayoutEffect : useEffect
+;
 
 const Fotografia: React.FC<FotografiaProps> = props => {
   const router = useRouter();
@@ -59,7 +63,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
     (ev: React.MouseEvent<HTMLDivElement>) => {
       const { id } = ev.currentTarget.dataset;
 
-      const nextTipo = selectedTipo === id
+      const nextTipo =  id == null || selectedTipo === id
         ? null
         : id
       ;
@@ -81,7 +85,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
     : items
   ;
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (typeof window === 'undefined') {
       return;
     }
@@ -104,21 +108,30 @@ const Fotografia: React.FC<FotografiaProps> = props => {
       <Head>
         <title>OACM Fuensanta | Fotografía</title>
       </Head>
+
       <Box
-        pt="1rem"
         margin="3rem 2rem"
         border="1px solid rgba(255, 255, 255, 0.15)"
+        borderRadius="4px"
       >
         <Box
+          p="0.75rem"
+          pb="0.75rem"
           width="100%"
           display="flex"
           alignItems="center"
           justifyContent="start"
-
+          borderBottom="1px solid rgba(255, 255, 255, 0.15)"
         >
-          <Typography style={{margin: '0 1rem 0 3rem'}}>
-            Filtrar por:
-          </Typography>
+          <Chip
+            label="Seleccionar todos"
+            variant={selectedTipo
+              ? 'outlined'
+              : 'default'
+            }
+            onClick={handleEtiquetaClick}
+            style={{margin: '0.5rem'}}
+          />
           {etiquetas.map(name => {
             return (
               <Chip
@@ -130,16 +143,20 @@ const Fotografia: React.FC<FotografiaProps> = props => {
                 }
                 onClick={handleEtiquetaClick}
                 data-id={name}
-                style={{margin: '0 1rem 0 0'}}
+                style={{margin: '0 1rem 0 0', textTransform: 'capitalize'}}
               />
             );
           })}
         </Box>
         <Box
-          margin="1rem 0"
+          margin="0.5rem"
           width="100%"
           height="100px"
           overflow="scroll"
+          display="flex"
+          flexWrap="wrap"
+          alignItems="center"
+          justifyContent="start"
         >
           {items
             .filter(el => selectedTipo
@@ -159,7 +176,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
                   }
                   onClick={handleObjetoClick}
                   data-id={urlId}
-                  style={{margin: '0.5rem'}}
+                  style={{margin: '0.5rem', textTransform: 'capitalize'}}
                 />
               );
             })
