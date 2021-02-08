@@ -86,7 +86,10 @@ const defaultTheme = createMuiTheme({
           margin: '0 10%',
 
           fontSize: '1rem',
-          textAlign: 'center',
+
+          '@media (max-width: 599.95px)': {
+            textAlign: 'center',
+          }
         },
 
         hr: {

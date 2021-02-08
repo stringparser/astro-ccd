@@ -75,9 +75,9 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'space-between',
 
-    '@media (max-width: 675px)': {
+    [theme.breakpoints.down('xs')]: {
       flexDirection: 'column',
-    },
+    }
   },
 
   homeLinkContainer: {
@@ -86,8 +86,8 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'start',
 
-    '@media (max-width: 675px)': {
-      marginBottom: '0.5rem',
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: '1rem',
     },
   },
 
@@ -95,13 +95,9 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyItems: 'center',
-    flexDirection: 'column',
+    flexDirection: 'row',
 
     fontSize: '1.45rem',
-
-    '@media (max-width: 675px)': {
-      flexDirection: 'row',
-    },
 
     ...opacityMixin
   },
@@ -119,11 +115,10 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
-    justifyContent: 'space-around',
 
-    '@media (max-width: 675px)': {
-      flexDirection: 'column',
-    },
+    [theme.breakpoints.down('xs')]: {
+      justifyContent: 'center',
+    }
   },
 
   linkContainer: {
@@ -135,7 +130,7 @@ const useStyles = makeStyles(theme => ({
   },
 
   link: {
-    padding: '1rem 1.5rem',
+    padding: '1rem',
 
     fontWeight: 'bold',
     borderBottom: '1px solid transparent',
@@ -184,9 +179,11 @@ const Navigation: React.FC<NavigationProps> = () => {
                 href="/"
                 className={classes.homeLink}
               >
-                <span>OACM</span>
-                <span> </span>
-                <span>Fuensanta</span>
+                <Avatar
+                  src={require('@public/favicon.png').default}
+                />
+                <Box ml="1rem" />
+                OACM Fuensanta
               </NavigationLink>
               {/* <Box className={classes.}>
                 <Typography
