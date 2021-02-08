@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import MuiBreadcrumbs from '@material-ui/core/Breadcrumbs';
 
 import NavigationLink from 'src/components/Navigation/NavigationLink';
+import { Box, makeStyles } from '@material-ui/core';
 
 const mapRouteParts = (router: NextRouter) => {
   if (router.pathname === '/') {
@@ -43,10 +44,21 @@ const mapRouteParts = (router: NextRouter) => {
   });
 };
 
+const useStyles = makeStyles(() => ({
+  root: {
+    margin: '1rem 3rem 2rem 3rem',
+
+    '@media (max-width: 675px)': {
+      margin: '0.5rem 0.25rem',
+    }
+  },
+}));
+
 export type NavigationBreadcrumbsProps = {};
 
 const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
   const router = useRouter();
+  const classes = useStyles();
 
   const items = mapRouteParts(router);
 
@@ -58,41 +70,38 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
   ;
 
   return (
-    <MuiBreadcrumbs
-      aria-label="breadcrumb"
-      style={{
-        margin: '1rem 3rem 2rem 3rem',
-      }}
-    >
-      {current
-        ? <NavigationLink
-            href="/"
-            text="inicio"
-          />
-        : <Typography color="textPrimary" style={{margin: 'unset'}}>
-            inicio
-          </Typography>
-      }
-      {links.map(({ text }, index, items) => {
-        const href = items.slice(0, index + 1)
-          .map(el => el.href)
-          .join('')
-        ;
+    <Box className={classes.root}>
+      <MuiBreadcrumbs aria-label="breadcrumb">
+        {current
+          ? <NavigationLink
+              href="/"
+              text="inicio"
+            />
+          : <Typography color="textPrimary" style={{margin: 'unset'}}>
+              inicio
+            </Typography>
+        }
+        {links.map(({ text }, index, items) => {
+          const href = items.slice(0, index + 1)
+            .map(el => el.href)
+            .join('')
+          ;
 
-        return (
-          <NavigationLink
-            key={href}
-            href={href}
-            text={text}
-          />
-        );
-      })}
-      {current && (
-        <Typography color="textPrimary" style={{margin: 'unset'}}>
-          {current.text}
-        </Typography>
-      )}
-    </MuiBreadcrumbs>
+          return (
+            <NavigationLink
+              key={href}
+              href={href}
+              text={text}
+            />
+          );
+        })}
+        {current && (
+          <Typography color="textPrimary" style={{margin: 'unset'}}>
+            {current.text}
+          </Typography>
+        )}
+      </MuiBreadcrumbs>
+    </Box>
   );
 };
 

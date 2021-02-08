@@ -74,6 +74,10 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+
+    '@media (max-width: 675px)': {
+      flexDirection: 'column',
+    },
   },
 
   homeLinkContainer: {
@@ -81,6 +85,10 @@ const useStyles = makeStyles(theme => ({
 
     alignItems: 'center',
     justifyContent: 'start',
+
+    '@media (max-width: 675px)': {
+      marginBottom: '0.5rem',
+    },
   },
 
   homeLink: {
@@ -90,6 +98,11 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
 
     fontSize: '1.45rem',
+
+    '@media (max-width: 675px)': {
+      flexDirection: 'row',
+    },
+
     ...opacityMixin
   },
 
@@ -104,8 +117,13 @@ const useStyles = makeStyles(theme => ({
     marginTop: '0.75rem',
 
     display: 'flex',
+    flexWrap: 'wrap',
     alignItems: 'center',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+
+    '@media (max-width: 675px)': {
+      flexDirection: 'column',
+    },
   },
 
   linkContainer: {
@@ -166,21 +184,19 @@ const Navigation: React.FC<NavigationProps> = () => {
                 href="/"
                 className={classes.homeLink}
               >
-                OACM <br />
-                Fuensanta
+                <span>OACM</span>
+                <span> </span>
+                <span>Fuensanta</span>
               </NavigationLink>
-              <Typography
-                variant="caption"
-                style={{
-                  opacity: .8,
-                  margin: '0 0 0 2rem',
-                  textAlign: 'left',
-                }}
-              >
-                Observación astrónomica. <br/>
-                Construcción de observatorio, <br/>
-                telescopio y CCD.
-              </Typography>
+              {/* <Box className={classes.}>
+                <Typography
+                  variant="caption"
+                >
+                  Observación astrónomica. <br/>
+                  Construcción de observatorio, <br/>
+                  telescopio y CCD.
+                </Typography>
+              </Box> */}
             </Box>
             <Box className={classes.pagesSearch}>
               <Busqueda onChange={handleBusquedaChange} />

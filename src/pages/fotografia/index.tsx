@@ -124,6 +124,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
           pb="0.75rem"
           width="100%"
           display="flex"
+          flexWrap="wrap"
           alignItems="center"
           justifyContent="start"
           borderBottom="1px solid rgba(255, 255, 255, 0.15)"

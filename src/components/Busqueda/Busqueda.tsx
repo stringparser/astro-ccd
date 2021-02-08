@@ -99,7 +99,7 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
     <TextField
       {...params}
       label="Búsqueda"
-      margin="normal"
+      margin="dense"
       variant="outlined"
       className={classes.textField}
       InputProps={{
