@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "A very simple example of Next.js-based website with Jest tests, all written in TypeScript",
   "scripts": {
-    "predev": "npm run generar:registro",
+    "predev": "npm run cache",
     "dev": "next",
     "test": "jest",
-    "prebuild": "npm run generar:registro",
+    "prebuild": "npm run cache",
     "build": "next build",
+    "precache": "rm -rf cache && mkdir cache",
+    "cache": "ts-node ./bin/cache.ts",
     "start": "next start",
-    "clean": "rm -f ./src/pages/registro/*.mdx",
     "export": "next export",
     "ts:node": "ts-node -r tsconfig-paths/register",
-    "fetch:data": "npm run clean && npm run ts:node ./bin/fetchData.ts",
-    "generar:registro": "npm run ts:node ./bin/registro.ts"
+    "prefetch:data": "rm -f ./src/pages/registro/*.mdx && rm -rf debug && mkdir debug",
+    "fetch:data": "npm run ts:node ./bin/fetchData.ts",
+    "postfetch:data": "npm run cache"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   },
   "homepage": "https://github.com/stringparser/astro-ccd#readme",
   "dependencies": {
+    "@babel/core": "7.12.9",
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",

@@ -1,20 +1,18 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Box, Chip } from "@material-ui/core";
 import { useCallback, useState } from "react";
 
 import { RegistroItem } from "types";
-import { esEntradaValidaConImagen } from "src/lib/util";
 
 import PostsList from "src/components/PostsList/PostsList";
-import { getEtiquetas, getRegistro } from "src/lib/staticProps";
-import { useRouter } from "next/router";
 
 export type FotografiaProps = {
+  tipos: string[];
   items: RegistroItem[];
-  etiquetas: string[];
 };
 
-const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
+const Fotografia: React.FC<FotografiaProps> = ({ tipos, items }) => {
   const router = useRouter();
   const [selectedEtiqueta, setSelectedEtiqueta] = useState<string | null>(null);
 
@@ -29,11 +27,11 @@ const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
 
       router.replace(`?etiqueta=${id}`);
     }
-  , [etiquetas, selectedEtiqueta]);
+  , [tipos, selectedEtiqueta]);
 
   const filteredItems = selectedEtiqueta
     ? items.filter(el =>
-        el.etiquetas.includes(selectedEtiqueta)
+        el.tipo.includes(selectedEtiqueta)
       )
     : items
   ;
@@ -53,7 +51,7 @@ const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
           display="flex"
           alignItems="center"
         >
-          {etiquetas.map(name => {
+          {tipos.map(name => {
             return (
               <Chip
                 key={name}
@@ -79,20 +77,13 @@ const Fotografia: React.FC<FotografiaProps> = ({ items, etiquetas }) => {
 };
 
 export async function getStaticProps(): Promise<{ props: FotografiaProps; }> {
-  const registro = getRegistro();
+  const tiposDeEntradas = (await import('cache/tipos.json')).default;
+  const entradasConImagenes = (await import('cache/registro-observaciones.json')).default;
 
   return {
     props: {
-      items: registro
-        .map(el => {
-          return {
-            ...el,
-            entradas: el.entradas.filter(esEntradaValidaConImagen)
-          }
-        })
-        .filter(el => el.entradas.length > 0)
-      ,
-      etiquetas: getEtiquetas(),
+      tipos: tiposDeEntradas,
+      items: entradasConImagenes,
     },
   };
 };

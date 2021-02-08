@@ -16,7 +16,7 @@ Promise.all([
 .then(async (results) => {
 
   await fs.writeFile(
-    'datos/index.json',
+    'debug/index.json',
     JSON.stringify(results, mapJSON, 2)
   );
 
@@ -152,7 +152,7 @@ Promise.all([
 
   await Promise.all([
     fs.writeFile(
-      'datos/pages.json',
+      'debug/pages.json',
       JSON.stringify(pagesFiltered, mapJSON, 2),
     )
   ]);
@@ -173,7 +173,10 @@ Promise.all([
         return Promise.resolve();
       }
 
-      const {content, isIndex} = page;
+      const {
+        content,
+        isIndex
+      } = page;
 
       const filename = isIndex
         ? path.resolve(__dirname, '..', 'src', 'pages', urlId, 'index.mdx')
@@ -196,11 +199,11 @@ Promise.all([
           return v
             .replace(pageTitle, '')
             .replace(/(2I)?\/\s*Borisov\s*/, '')
+            .replace('colavoracion', 'colaboración')
           ;
         })
         .join('\n')
         .trim()
-        .replace('colavoracion', 'colaboración')
       ;
 
       if (!isIndex && /<(a|img|figure|table|Image)/.test(mergedContent) === false) {
@@ -219,9 +222,13 @@ Promise.all([
             filename,
             [
               '\nexport const meta = {',
+                page.label && `\ttipo: '${page.label}',`,
                 page.objeto && `\tobjeto: '${page.objeto === 'sol' ? 'Sol' : page.objeto}',`,
-                pageTitle && `\ttitulo: '${pageTitle === 'sol' ? 'Sol' : pageTitle}',`,
-                page.label && `\tetiquetas: ['${page.label}'],`,
+                page.title && `\ttitulo: '${
+                  pageTitle === 'sol' && 'Sol'
+                  || pageTitle !== page.objeto && pageTitle
+                  || ''
+                }',`,
               '};\n',
               pageTitle && `# ${pageTitle}\n`,
               mergedContent

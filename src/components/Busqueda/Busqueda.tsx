@@ -6,7 +6,7 @@ import { makeStyles, TextField, TextFieldProps } from "@material-ui/core";
 import { RegistroItem } from "types";
 
 import { BUSQUEDA_ID } from "src/components/Busqueda/constants";
-import { getRegistro } from "src/lib/staticProps";
+import registroObservaciones from "cache/registro-observaciones.json";
 
 const mapOptions = (inputValue: string): RegistroItem[] => {
   if (!inputValue) {
@@ -23,7 +23,7 @@ const mapOptions = (inputValue: string): RegistroItem[] => {
     : null
   ;
 
-  return getRegistro()
+  return registroObservaciones
     .filter(searchRE
       ? ({ objeto, titulo }: RegistroItem) => (
         objeto && searchRE.test(objeto)
