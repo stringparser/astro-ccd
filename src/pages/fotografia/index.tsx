@@ -1,12 +1,13 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useCallback, useEffect, useLayoutEffect, useState } from "react";
-import { Box, Chip, Typography } from "@material-ui/core";
+import { Box, Chip } from "@material-ui/core";
+import { useCallback, useState } from "react";
+import { GetServerSidePropsContext } from "next";
 
 import { RegistroItem } from "types";
+import { useIsomorphicLayoutEffect } from "src/lib/util";
 
 import PostsList from "src/components/PostsList/PostsList";
-import { GetServerSidePropsContext } from "next";
 
 export type FotografiaProps = {
   items: RegistroItem[];
@@ -17,9 +18,7 @@ export type FotografiaProps = {
   }>
 };
 
-const useIsomorphicLayoutEffect =
-  typeof window !== 'undefined' ? useLayoutEffect : useEffect
-;
+
 
 const Fotografia: React.FC<FotografiaProps> = props => {
   const router = useRouter();

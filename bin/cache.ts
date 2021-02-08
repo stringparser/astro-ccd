@@ -94,9 +94,7 @@ const imageSize = promisify(imageSizeFn);
   );
 
   console.log('wrote', tiposFilename.length, 'tipos en', tiposFilename);
-
-  const ultimasEntradasJSON = itemsWithImages
-  .slice(0, 9);
+  const ultimasEntradasJSON = itemsWithImages.slice(0, 9);
 
   const ultimasEntradasFilename = 'cache/ultimas-entradas.json';
 

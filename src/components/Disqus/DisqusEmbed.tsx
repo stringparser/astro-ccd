@@ -3,8 +3,10 @@ import { memo, useState } from "react";
 
 const useStyles = makeStyles(theme => ({
   root: {
+    maxWidth: '100%',
+
     padding: '0.5rem 1.25rem',
-    marginTop: '4rem',
+    marginTop: '1rem',
     borderTop: `1px solid ${theme.palette.divider}`,
   },
 }))

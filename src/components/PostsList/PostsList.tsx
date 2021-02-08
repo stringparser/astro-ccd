@@ -84,6 +84,7 @@ const useStyles = makeStyles({
 export type PostsListProps<T = RegistroItem> =  {
   items: T[];
   selected?: string;
+  className?: string;
   mostrarEtiquetas?: boolean;
 };
 
@@ -92,11 +93,14 @@ function PostsList(props: PostsListProps) {
   const {
     items,
     selected,
+    className,
     mostrarEtiquetas,
   } = props;
 
   return (
-    <Box className={classes.root}>
+    <Box
+      className={clsx(classes.root, className)}
+    >
       {items.map(el => {
         const { date, src, width, height } = el.entradas.find(el => el.src);
         const { urlId, objeto, titulo, tipo } = el;
