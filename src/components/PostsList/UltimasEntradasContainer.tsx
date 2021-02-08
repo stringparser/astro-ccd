@@ -1,21 +1,9 @@
-import { getRegistro } from "src/lib/staticProps";
-import { esEntradaValidaConImagen, ordenarPorFecha } from "src/lib/util";
-import PostsList from "./PostsList";
+import PostsList from "src/components/PostsList/PostsList";
+
+import ultimasEntradas from "cache/ultimas-entradas.json";
 
 const UltimasEntradasContainer = () => {
-  const items = getRegistro()
-    .map(el => {
-      return {
-        ...el,
-        entradas: el.entradas.filter(esEntradaValidaConImagen)
-      }
-    })
-    .filter(el => el.entradas.length)
-    .sort(ordenarPorFecha)
-    .slice(0, 9)
-  ;
-
-  return <PostsList items={items} />
+  return <PostsList items={ultimasEntradas} />
 };
 
 export default UltimasEntradasContainer;

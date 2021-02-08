@@ -1,5 +1,5 @@
 import JSON5 from 'json5';
-import { RegistroItem } from 'types';
+import { RegistroItem } from '../types';
 
 type RemarkNode = {
   type: 'root' | 'text' | 'html' | 'yaml' | 'heading' | 'paragraph';
@@ -116,7 +116,7 @@ const mapData = (el: RemarkNode): ParsedRemarkResult | undefined => {
 };
 
 export type ParsedMDXResult = {
-  meta: Pick<RegistroItem, 'titulo' | 'objeto' | 'etiquetas'>;
+  meta: Pick<RegistroItem, 'tipo' | 'titulo' | 'objeto'>;
   items: ParsedRemarkResult[];
   content: string;
 };
@@ -184,9 +184,9 @@ export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
 
         resolve({
           meta: {
+            tipo: '',
             titulo: '',
             objeto: '',
-            etiquetas: [],
             ...meta,
           },
           items: results.filter(el => el.type !== 'meta'),

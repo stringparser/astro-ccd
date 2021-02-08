@@ -91,7 +91,7 @@ function PostsList(props: PostsListProps) {
     <Box className={classes.root}>
       {items.map(el => {
         const { date, src, width, height } = el.entradas.find(el => el.src);
-        const { objeto, titulo, etiquetas } = el;
+        const { objeto, titulo, tipo } = el;
 
         const href = `/registro/${el.urlId}`;
 
@@ -110,7 +110,7 @@ function PostsList(props: PostsListProps) {
                   variant="caption"
                   className={classes.etiquetas}
                 >
-                  {etiquetas.join(', ').replace(/[-]/g, ' ')}
+                  {tipo.replace(/[-]/g, ' ')}
                 </Typography>
               )}
 

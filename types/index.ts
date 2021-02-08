@@ -70,12 +70,12 @@ export type RegistroItemEntrada = {
 };
 
 export type RegistroItem = {
+  tipo: string;
   urlId: string;
   date?: string;
   titulo: string;
   objeto: string;
   filename: string;
-  etiquetas: string[];
 
   entradas: RegistroItemEntrada[];
 };

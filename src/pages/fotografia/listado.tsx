@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, makeStyles } from "@material-ui/core";
 import { RegistroItem } from "types";
-import { getEtiquetas, getRegistro } from "src/lib/staticProps";
 
 import H1 from "src/components/Typography/H1";
 import H2 from "src/components/Typography/H2";
@@ -34,13 +33,13 @@ const useStyles = makeStyles(() => ({
 }));
 
 export type ListadoCompletoDeFotografíasProps = {
+  tipos: string[];
   items: RegistroItem[];
-  etiquetas: string[];
 };
 
 const ListadoCompletoDeFotografías: React.FC<ListadoCompletoDeFotografíasProps> = (props) => {
   const classes = useStyles();
-  const { items, etiquetas } = props;
+  const { items, tipos } = props;
 
   return (
     <Box>
@@ -48,7 +47,7 @@ const ListadoCompletoDeFotografías: React.FC<ListadoCompletoDeFotografíasProps
         Listado de observaciones
       </H1>
       <Box className={classes.seccionContainer}>
-      {etiquetas.map(el => {
+      {tipos.map(el => {
         return (
           <Box
             key={el}
@@ -62,7 +61,7 @@ const ListadoCompletoDeFotografías: React.FC<ListadoCompletoDeFotografíasProps
             </H2>
             <ul className={classes.listadoEtiqueta}>
               {items
-                .filter(it => it.etiquetas.includes(el))
+                .filter(it => it.tipo.includes(el))
                 .map(el => {
 
                   return (
@@ -85,10 +84,13 @@ const ListadoCompletoDeFotografías: React.FC<ListadoCompletoDeFotografíasProps
 };
 
 export async function getStaticProps(): Promise<{ props: ListadoCompletoDeFotografíasProps; }> {
+  const tiposDeEntradas = (await import('cache/tipos.json')).default;
+  const entradasConImagenes = (await import('cache/registro-observaciones.json')).default;
+
   return {
     props: {
-      items: getRegistro(),
-      etiquetas: getEtiquetas(),
+      tipos: tiposDeEntradas,
+      items: entradasConImagenes,
     },
   };
 };
