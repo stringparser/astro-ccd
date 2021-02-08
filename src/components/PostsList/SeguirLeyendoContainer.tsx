@@ -87,7 +87,7 @@ const SeguirLeyendoContainer: React.FC = () => {
         <span> de </span>
         <span>{etiquetaText}</span>
         <span> como </span>
-        <span> {objeto.titulo}</span>
+        <span>{objeto.titulo}</span>
       </H2>
       <PostsList
         items={filteredItems}

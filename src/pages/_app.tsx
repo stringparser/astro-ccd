@@ -64,7 +64,10 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
             <CssBaseline />
             <Head>
               <title>
-                OACM Fuensanta | Inicio
+                {router.route === '/'
+                  ? 'OACM Fuensanta | Inicio'
+                  : 'OACM Fuensanta'
+                }
               </title>
               <link
                 rel="icon"
