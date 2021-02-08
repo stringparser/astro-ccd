@@ -14,6 +14,7 @@ import DisqusEmbed from "src/components/Disqus/DisqusEmbed";
 import defaultTheme from "src/components/default-theme";
 import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
 import NavigationBreadcrumbs from "src/components/Navigation/NavigationBreadcrumbs";
+import SeguirLeyendoContainer from "src/components/PostsList/SeguirLeyendoContainer";
 
 import { mdxComponents } from "src/components/MDX/components";
 
@@ -63,7 +64,10 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
             <CssBaseline />
             <Head>
               <title>
-                OACM Fuensanta
+                {router.route === '/'
+                  ? 'OACM Fuensanta | Inicio'
+                  : 'OACM Fuensanta'
+                }
               </title>
               <link
                 rel="icon"
@@ -75,6 +79,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <Box flex="1">
                 <NavigationBreadcrumbs />
                 <Component {...pageProps} />
+                <SeguirLeyendoContainer />
                 {/^(\/|\/404)$/.test(router.pathname)
                   ? null
                   : <DisqusEmbed />

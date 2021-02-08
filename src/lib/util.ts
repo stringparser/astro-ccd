@@ -1,3 +1,4 @@
+import { useEffect, useLayoutEffect } from "react";
 import { RegistroItemEntrada, RegistroItem } from "types";
 
 export const mesMap = {
@@ -83,3 +84,7 @@ export const ordenarPorFecha = (a: RegistroItem, b: RegistroItem) => {
 export const mapRegistroRoute = (el: RegistroItem) => {
   return `/registro/${el.urlId}`;
 };
+
+export const useIsomorphicLayoutEffect =
+  typeof window !== 'undefined' ? useLayoutEffect : useEffect
+;

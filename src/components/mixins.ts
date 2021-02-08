@@ -12,7 +12,7 @@ export const opacityMixin = {
 
 export const maxWidthMixin = {
   '@media (max-width: 960px)': {
-    width: 'auto',
+    width: '100vw',
   },
 
   '@media (min-width: 1024px)': {
