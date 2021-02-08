@@ -1,23 +1,10 @@
 import React from 'react';
-import { NextRouter } from 'next/router';
+import { NextRouter, useRouter } from 'next/router';
 
-import HomeIcon from '@material-ui/icons/Home';
 import Typography from '@material-ui/core/Typography';
-import makeStyles from '@material-ui/core/styles/makeStyles';
 import MuiBreadcrumbs from '@material-ui/core/Breadcrumbs';
 
 import NavigationLink from 'src/components/Navigation/NavigationLink';
-import { Box } from '@material-ui/core';
-
-export type NavigationBreadcrumbsProps = {
-  router: NextRouter;
-};
-
-const useStyles = makeStyles(() => ({
-  root: {
-    margin: '1rem 3rem 2rem 3rem',
-  }
-}))
 
 const mapRouteParts = (router: NextRouter) => {
   if (router.pathname === '/') {
@@ -42,8 +29,8 @@ const mapRouteParts = (router: NextRouter) => {
       }
       case 'reparacion': {
         return {
-          href: '/reparaccion',
-          text: 'reparacción',
+          href: '/reparacion',
+          text: 'reparación',
         };
       }
       default: {
@@ -56,9 +43,10 @@ const mapRouteParts = (router: NextRouter) => {
   });
 };
 
-const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = props => {
-  const classes = useStyles();
-  const { router } = props;
+export type NavigationBreadcrumbsProps = {};
+
+const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
+  const router = useRouter();
 
   const items = mapRouteParts(router);
 
@@ -71,8 +59,10 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = props => {
 
   return (
     <MuiBreadcrumbs
-      className={classes.root}
       aria-label="breadcrumb"
+      style={{
+        margin: '1rem 3rem 2rem 3rem',
+      }}
     >
       {current
         ? <NavigationLink

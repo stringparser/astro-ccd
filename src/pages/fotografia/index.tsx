@@ -130,7 +130,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
           borderBottom="1px solid rgba(255, 255, 255, 0.15)"
         >
           <Chip
-            label="Seleccionar todos"
+            label="Seleccionar todo"
             variant={selectedTipo
               ? 'outlined'
               : 'default'
