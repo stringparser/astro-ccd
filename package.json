@@ -8,7 +8,7 @@
     "test": "jest",
     "prebuild": "npm run cache",
     "build": "next build",
-    "precache": "rm -r cache && mkdir cache",
+    "precache": "rm -rf cache && mkdir cache",
     "cache": "ts-node ./bin/cache.ts",
     "start": "next start",
     "export": "next export",
