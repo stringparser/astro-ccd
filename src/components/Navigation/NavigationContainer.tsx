@@ -93,10 +93,8 @@ const useStyles = makeStyles(theme => ({
 
   homeLinkSubtitle: {
     opacity: .8,
-    margin: '0 0 0 1rem',
-    maxWidth: '50vw',
+    margin: '0 0 0 2rem',
     textAlign: 'left',
-    whiteSpace: 'pre-wrap',
   },
 
   pagesSearch: {
