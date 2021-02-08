@@ -1,7 +1,7 @@
-import React, { forwardRef } from "react";
-import NextLink from "next/link";
+import React, { useCallback } from "react";
 
 import BaseLink from "src/components/Navigation/BaseLink";
+import { useRouter } from "next/router";
 
 export type NavbarLinkProps = {
   id?: string
@@ -13,6 +13,8 @@ export type NavbarLinkProps = {
 };
 
 const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
+  const router = useRouter();
+
   const {
     id,
     href,
@@ -20,21 +22,32 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
     style,
     children,
     className,
+    onClick,
   } = props;
 
+  const handleClick = useCallback(
+    (ev: React.MouseEvent<HTMLAnchorElement>) => {
+      ev.preventDefault();
+
+      router.push(ev.currentTarget.href);
+
+      if (onClick) {
+        onClick(ev);
+      }
+    },
+    [router]
+  );
+
   return (
-    <NextLink
+    <BaseLink
+      id={id}
       href={href}
-      passHref={true}
+      style={style}
+      className={className}
+      onClick={handleClick}
     >
-      <BaseLink
-        id={id}
-        style={style}
-        className={className}
-      >
-        {text || children}
-      </BaseLink>
-    </NextLink>
+      {text || children}
+    </BaseLink>
   );
 };
 

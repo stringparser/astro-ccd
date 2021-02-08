@@ -53,7 +53,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
     if (jssStyles && jssStyles.parentElement) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
-  }, []);
+  }, [router]);
 
   return (
     <>
@@ -67,15 +67,13 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               </title>
               <link
                 rel="icon"
-                href={require('@public/favicon.jpeg').default}
+                href={require('@public/favicon.png').default}
               />
             </Head>
             <main className={classes.main}>
               <Navigation />
               <Box flex="1">
-                <NavigationBreadcrumbs
-                  router={router}
-                />
+                <NavigationBreadcrumbs />
                 <Component {...pageProps} />
                 {/^(\/|\/404)$/.test(router.pathname)
                   ? null

@@ -1,13 +1,14 @@
 import clsx from "clsx";
 import { useRouter } from 'next/router';
 import { useCallback } from "react";
-import { makeStyles, Box, Typography } from "@material-ui/core";
+import { makeStyles, Box, Typography, Avatar } from "@material-ui/core";
 
-import Busqueda from "../Busqueda/Busqueda";
-import NavbarMenuLink from "./NavbarMenuLink";
 import { opacityMixin } from "src/components/mixins";
 import { mapRegistroURL } from "src/lib/navigation";
 import { PageBasename, RegistroItem } from "types";
+
+import Busqueda from "src/components/Busqueda/Busqueda";
+import NavbarMenuLink from "src/components/Navigation/NavbarMenuLink";
 import NavigationLink from "src/components/Navigation/NavigationLink";
 
 const items = Object.entries(PageBasename)
@@ -92,12 +93,6 @@ const useStyles = makeStyles(theme => ({
     ...opacityMixin
   },
 
-  homeLinkSubtitle: {
-    opacity: .8,
-    margin: '0 0 0 2rem',
-    textAlign: 'left',
-  },
-
   pagesSearch: {
     display: 'flex',
     alignItems: 'center',
@@ -171,12 +166,16 @@ const Navigation: React.FC<NavigationProps> = () => {
                 href="/"
                 className={classes.homeLink}
               >
-                <span>OACM</span>
-                <span>Fuensanta</span>
+                OACM <br />
+                Fuensanta
               </NavigationLink>
               <Typography
                 variant="caption"
-                className={classes.homeLinkSubtitle}
+                style={{
+                  opacity: .8,
+                  margin: '0 0 0 2rem',
+                  textAlign: 'left',
+                }}
               >
                 Observación astrónomica. <br/>
                 Construcción de observatorio, <br/>
