@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
     display: 'flex',
     flexWrap: 'wrap',
-    alignItems: 'center',
+    alignItems: 'start',
     flexDirection: 'column',
     justifyContent: 'center',
 
@@ -54,22 +54,21 @@ const useStyles = makeStyles({
   },
   imageTitle: {
     color: 'red',
-    maxWidth: '50%',
     margin: '1rem auto 0 auto',
   },
   imageContainer: {
-    height: '200px',
-    margin: '1rem 2rem',
+    margin: '1rem',
 
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+
+    '& > :first-child': {
+      maxHeight: '300px',
+    }
   },
   etiquetas: {
     margin: '.25rem 0'
-  },
-  imageFecha: {
-    margin: '0.5rem 0 0 0',
   },
   clickable: {
     cursor: 'pointer',
@@ -91,16 +90,10 @@ function PostsList(props: PostsListProps) {
   return (
     <Box className={classes.root}>
       {items.map(el => {
-        const { date, src } = el.entradas.find(el => el.src);
+        const { date, src, width, height } = el.entradas.find(el => el.src);
         const { objeto, titulo, etiquetas } = el;
 
         const href = `/registro/${el.urlId}`;
-        const dateString = (/(\d{4})(\d{2})(\d{2})?/.exec(date) || [])
-          .slice(1)
-          .reverse()
-          .join('/')
-          .replace(/^00\//, '')
-        ;
 
         return (
           <NavigationLink
@@ -121,15 +114,14 @@ function PostsList(props: PostsListProps) {
                 </Typography>
               )}
 
-              <Typography variant="caption" className={classes.imageFecha}>
-                {dateString}
-              </Typography>
-
               <Image
                 src={src}
                 link={false}
-                layout="fill"
-                quality={65}
+                fecha={date}
+                isBig={false}
+                width={width}
+                height={height}
+                quality={50}
                 className={classes.imageContainer}
               />
           </NavigationLink>

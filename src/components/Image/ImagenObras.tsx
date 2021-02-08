@@ -9,14 +9,16 @@ const useStyles = makeStyles({
     minHeight: 'unset !important',
 
     border: 'none',
+
+    '& > :first-child': {
+      borderColor: 'transparent !important',
+    },
   },
   image: {
 
     width: '150px !important',
     height: '150px !important',
     margin: '0 auto !important',
-
-    borderColor: 'transparent !important',
   }
 });
 
@@ -27,6 +29,7 @@ const ImagenObras = () => {
     <Image
       src={require('@public/img/obras.gif').default}
       link={false}
+      isBig={false}
       layout="fill"
       objectFit="contain"
       className={classes.root}
