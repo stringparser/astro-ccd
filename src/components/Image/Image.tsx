@@ -34,7 +34,6 @@ const useStyles = makeStyles({
       maxWidth: '85%',
       overflow: 'auto !important',
       position: 'static !important',
-      borderColor: 'transparent',
     },
 
     '& img': {

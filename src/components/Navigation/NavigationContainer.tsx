@@ -1,9 +1,7 @@
 import clsx from "clsx";
-import NextLink from "next/link";
-import HomeIcon from '@material-ui/icons/Home';
 import { useRouter } from 'next/router';
 import { useCallback } from "react";
-import { makeStyles, Link as MuiLink, Box, Typography } from "@material-ui/core";
+import { makeStyles, Box, Typography } from "@material-ui/core";
 
 import Busqueda from "../Busqueda/Busqueda";
 import NavbarMenuLink from "./NavbarMenuLink";
@@ -44,7 +42,8 @@ const items = Object.entries(PageBasename)
 ;
 
 const isCurrentPage = (currentPathname: string, pagePathname: string) => (
-  currentPathname.startsWith(pagePathname)
+  currentPathname.startsWith(pagePathname) ||
+  pagePathname === '/fotografia' && currentPathname.startsWith('/registro')
 );
 
 const useStyles = makeStyles(theme => ({
