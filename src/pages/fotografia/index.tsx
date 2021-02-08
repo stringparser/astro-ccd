@@ -1,40 +1,103 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { Box, Chip } from "@material-ui/core";
-import { useCallback, useState } from "react";
+import { useCallback, useLayoutEffect, useState } from "react";
+import { Box, Chip, Typography } from "@material-ui/core";
 
 import { RegistroItem } from "types";
 
 import PostsList from "src/components/PostsList/PostsList";
+import { GetServerSidePropsContext } from "next";
 
 export type FotografiaProps = {
-  tipos: string[];
   items: RegistroItem[];
+  etiquetas: string[];
+  query: Partial<{
+    urlId: string;
+    tipo: string;
+  }>
 };
 
-const Fotografia: React.FC<FotografiaProps> = ({ tipos, items }) => {
+const Fotografia: React.FC<FotografiaProps> = props => {
   const router = useRouter();
-  const [selectedEtiqueta, setSelectedEtiqueta] = useState<string | null>(null);
+
+  const {
+    items,
+    etiquetas,
+    query: {
+      tipo: initialTipo,
+      urlId: initialId,
+    },
+  } = props;
+
+  const [selectedTipo, setSelectedTipo] = useState<string | null>(initialTipo);
+  const [selectedObjeto, setSelectedObjeto] = useState<string | null>(initialId);
+
+  const handleObjetoClick = useCallback(
+    (ev: React.MouseEvent<HTMLDivElement>) => {
+      const { id } = ev.currentTarget.dataset;
+
+      const nextId = selectedObjeto === id
+        ? null
+        : id
+      ;
+
+      setSelectedObjeto(nextId);
+
+      router.replace(`?${
+        [
+          selectedTipo ? `tipo=${selectedTipo}` : '',
+          nextId && `urlId=${nextId}`
+        ]
+        .filter(v => v)
+        .join('&')
+      }`);
+    },
+    [items, selectedObjeto]
+  );
 
   const handleEtiquetaClick = useCallback(
     (ev: React.MouseEvent<HTMLDivElement>) => {
       const { id } = ev.currentTarget.dataset;
 
-      setSelectedEtiqueta(selectedEtiqueta === id
+      const nextTipo = selectedTipo === id
         ? null
         : id
+      ;
+
+      setSelectedTipo(nextTipo);
+
+      router.replace(nextTipo
+        ? `?tipo=${nextTipo}`
+        : router.pathname
       );
 
-      router.replace(`?etiqueta=${id}`);
     }
-  , [tipos, selectedEtiqueta]);
+  , [etiquetas, selectedTipo]);
 
-  const filteredItems = selectedEtiqueta
+  const filteredItems = selectedTipo
     ? items.filter(el =>
-        el.tipo.includes(selectedEtiqueta)
+        el.tipo.includes(selectedTipo)
       )
     : items
   ;
+
+  useLayoutEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    const el = document.getElementById(selectedObjeto);
+
+    if (el == null) {
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      el.scrollIntoView();
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [selectedObjeto]);
 
   return (
     <Box>
@@ -42,21 +105,26 @@ const Fotografia: React.FC<FotografiaProps> = ({ tipos, items }) => {
         <title>OACM Fuensanta | Fotografía</title>
       </Head>
       <Box
-        margin="3rem 0 2rem 0"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
+        pt="1rem"
+        margin="3rem 2rem"
+        border="1px solid rgba(255, 255, 255, 0.15)"
       >
         <Box
+          width="100%"
           display="flex"
           alignItems="center"
+          justifyContent="start"
+
         >
-          {tipos.map(name => {
+          <Typography style={{margin: '0 1rem 0 3rem'}}>
+            Filtrar por:
+          </Typography>
+          {etiquetas.map(name => {
             return (
               <Chip
                 key={name}
                 label={name.replace(/[-]+/, ' ')}
-                variant={selectedEtiqueta === name
+                variant={selectedTipo === name
                   ? 'default'
                   : 'outlined'
                 }
@@ -67,23 +135,75 @@ const Fotografia: React.FC<FotografiaProps> = ({ tipos, items }) => {
             );
           })}
         </Box>
+        <Box
+          margin="1rem 0"
+          width="100%"
+          height="100px"
+          overflow="scroll"
+        >
+          {items
+            .filter(el => selectedTipo
+              ? el.tipo === selectedTipo
+              : true
+            )
+            .map(el => {
+              const { urlId, objeto } = el;
+
+              return (
+                <Chip
+                  key={urlId}
+                  label={objeto}
+                  variant={selectedObjeto === urlId
+                    ? 'default'
+                    : 'outlined'
+                  }
+                  onClick={handleObjetoClick}
+                  data-id={urlId}
+                  style={{margin: '0.5rem'}}
+                />
+              );
+            })
+          }
+        </Box>
       </Box>
       <PostsList
         items={filteredItems}
+        selected={selectedObjeto}
         mostrarEtiquetas
       />
     </Box>
   );
 };
 
-export async function getStaticProps(): Promise<{ props: FotografiaProps; }> {
-  const tiposDeEntradas = (await import('cache/tipos.json')).default;
-  const entradasConImagenes = (await import('cache/registro-observaciones.json')).default;
+export async function getServerSideProps(context: GetServerSidePropsContext): Promise<{ props: FotografiaProps; }> {
+  const items = (await import('cache/registro-observaciones.json')).default;
+  const etiquetas = (await import('cache/tipos.json')).default;
+
+  const {
+    tipo: selectedTipo = null,
+    urlId: selectedId = null,
+  } = (context.query || {}) as FotografiaProps['query'];
+
+  const selectedItem = items.find(el => el.urlId === selectedId);
 
   return {
     props: {
-      tipos: tiposDeEntradas,
-      items: entradasConImagenes,
+      items,
+      etiquetas,
+      query: {
+        urlId: selectedItem
+          ? selectedId
+          : null
+        ,
+        tipo: selectedItem
+           ? selectedItem.tipo === selectedTipo
+            ? selectedTipo
+            : null
+           : etiquetas.includes(selectedTipo)
+            ? selectedTipo
+            : null
+          ,
+      },
     },
   };
 };

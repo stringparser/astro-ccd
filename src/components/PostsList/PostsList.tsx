@@ -1,4 +1,5 @@
 
+import clsx from "clsx";
 import React from "react";
 import { Box, makeStyles, Typography } from "@material-ui/core";
 
@@ -67,6 +68,11 @@ const useStyles = makeStyles({
       maxHeight: '300px',
     }
   },
+  imageContainerSelected: {
+    '& > :first-child': {
+      borderColor: 'royalblue',
+    }
+  },
   etiquetas: {
     margin: '.25rem 0'
   },
@@ -77,6 +83,7 @@ const useStyles = makeStyles({
 
 export type PostsListProps<T = RegistroItem> =  {
   items: T[];
+  selected?: string;
   mostrarEtiquetas?: boolean;
 };
 
@@ -84,6 +91,7 @@ function PostsList(props: PostsListProps) {
   const classes = useStyles();
   const {
     items,
+    selected,
     mostrarEtiquetas,
   } = props;
 
@@ -91,13 +99,14 @@ function PostsList(props: PostsListProps) {
     <Box className={classes.root}>
       {items.map(el => {
         const { date, src, width, height } = el.entradas.find(el => el.src);
-        const { objeto, titulo, tipo } = el;
+        const { urlId, objeto, titulo, tipo } = el;
 
-        const href = `/registro/${el.urlId}`;
+        const href = `/registro/${urlId}`;
 
         return (
           <NavigationLink
-            key={el.urlId}
+            id={urlId}
+            key={urlId}
             href={href}
             className={classes.mainWrapper}
           >
@@ -122,7 +131,10 @@ function PostsList(props: PostsListProps) {
                 width={width}
                 height={height}
                 quality={50}
-                className={classes.imageContainer}
+                className={clsx(
+                  classes.imageContainer,
+                  selected == urlId && classes.imageContainerSelected
+                )}
               />
           </NavigationLink>
         );

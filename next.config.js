@@ -39,17 +39,32 @@ exports = module.exports = withMDX({
       {
         source: '/cometasasteroides',
         permanent: false,
-        destination: '/cometas-asteroides',
+        destination: '/fotografia?tipo=cometas-asteroides',
       },
       {
         source: '/planetas-satelites',
         permanent: false,
-        destination: '/sistema-solar',
+        destination: '/fotografia?tipo=sistema-solar',
+      },
+      {
+        source: '/galaxias',
+        permanent: false,
+        destination: '/fotografia?tipo=galaxias',
+      },
+      {
+        source: '/nebulosas',
+        permanent: false,
+        destination: '/fotografia?tipo=nebulosas',
+      },
+      {
+        source: '/construccion',
+        permanent: false,
+        destination: '/construccion/observatorio',
       },
       {
         source: '/construccion-del-observatorio',
         permanent: false,
-        destination: '/observatorio',
+        destination: '/construccion/observatorio',
       },
       {
         source: '/ccd-2',

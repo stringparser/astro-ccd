@@ -1,19 +1,18 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import NextLink from "next/link";
 
 import BaseLink from "src/components/Navigation/BaseLink";
 
-export type NavbarMenuLinkProps = {
+export type NavbarLinkProps = {
+  id?: string
   href?: string;
   text?: string;
   className?: string;
   onClick?: (ev: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
-const NavigationLink: React.FC<NavbarMenuLinkProps> = (props) => {
+const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
   const {
-    // @ts-ignore
-    ref,
     href,
     text,
     children,
@@ -29,7 +28,7 @@ const NavigationLink: React.FC<NavbarMenuLinkProps> = (props) => {
         {text || children}
       </BaseLink>
     </NextLink>
-  )
+  );
 }
 
 export default NavigationLink;
