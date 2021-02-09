@@ -12,7 +12,11 @@ const mapRouteParts = (router: NextRouter) => {
     return [];
   }
 
-  const routeParts = (router.asPath || router.pathname).slice(1).split('/');
+  const routeParts = (router.asPath || router.pathname)
+    .slice(1)
+    .replace(/[?#][^\s]*$/, '')
+    .split('/')
+  ;
 
   return routeParts.map(value => {
     switch (value) {
