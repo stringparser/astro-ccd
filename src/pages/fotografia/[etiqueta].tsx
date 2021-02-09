@@ -38,6 +38,7 @@ export const getStaticProps: GetStaticProps<EntradasPorEtiquetaProps, EntradasPo
       ? params.etiqueta
       : ''
     ;
+
     const items = (await import(`cache/registro-${etiqueta}.json`)).default as RegistroItem[];
 
     return {
@@ -45,6 +46,7 @@ export const getStaticProps: GetStaticProps<EntradasPorEtiquetaProps, EntradasPo
         items,
         etiqueta,
       },
+      revalidate: false,
     };
   }
 ;
@@ -72,23 +74,14 @@ const useStyles = makeStyles(theme => ({
       marginTop: '2rem',
     },
   },
-  imageContainer: {
-    margin: '0 1rem',
-
-    [theme.breakpoints.up('lg')]: {
-      margin: '0 2rem',
-    },
-  }
 }));
 
 const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
   const router = useRouter();
   const classes = useStyles();
+  const etiqueta = (props.etiqueta || '').trim() || router.asPath.split('/').pop();
 
-  const {
-    items,
-    etiqueta,
-  } = props;
+  const { items } = props;
 
   const {
     urlId: initialSelectedId = null,
