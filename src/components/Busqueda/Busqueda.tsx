@@ -7,9 +7,11 @@ import { InputAdornment, makeStyles, TextField, TextFieldProps } from "@material
 import { RegistroItem } from "types";
 
 import { BUSQUEDA_ID } from "src/components/Busqueda/constants";
-import registroObservaciones from "cache/registro-fotografia.json";
+import registroObservaciones from "cache/registro-metadata.json";
 
-const mapOptions = (inputValue: string): RegistroItem[] => {
+export type SearchItem = Pick<RegistroItem, 'urlId' | 'titulo' | 'objeto'>;
+
+const mapOptions = (inputValue: string): SearchItem[] => {
   if (!inputValue) {
     return [];
   }
@@ -26,11 +28,11 @@ const mapOptions = (inputValue: string): RegistroItem[] => {
 
   return registroObservaciones
     .filter(searchRE
-      ? ({ objeto, titulo }: RegistroItem) => (
+      ? ({ objeto, titulo }: SearchItem) => (
         objeto && searchRE.test(objeto)
         || titulo && searchRE.test(titulo)
       )
-      : ({ objeto, titulo }: RegistroItem) => (
+      : ({ objeto, titulo }: SearchItem) => (
         objeto && objeto.includes(inputValue)
         || titulo && titulo.includes(inputValue)
       )
@@ -38,7 +40,7 @@ const mapOptions = (inputValue: string): RegistroItem[] => {
   ;
 };
 
-const getOptionLabel = (item: RegistroItem) => (
+const getOptionLabel = (item: SearchItem) => (
   item.titulo
   || item.objeto
 );
@@ -61,13 +63,13 @@ type DefaultAutocompleteProps = AutocompleteProps<
 >;
 
 export type BusquedaProps = {
-  onChange?: (value: RegistroItem) => void;
+  onChange?: (value: SearchItem) => void;
 };
 
 const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
   const classes = useStyles();
 
-  const [value, setValue] = useState<RegistroItem>(null);
+  const [value, setValue] = useState<SearchItem>(null);
   const [inputValue, setInputValue] = useState('');
 
   const options = mapOptions(inputValue);

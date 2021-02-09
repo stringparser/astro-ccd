@@ -8,7 +8,7 @@ import { opacityMixin } from "src/components/mixins";
 import { mapRegistroURL } from "src/lib/navigation";
 import { PageBasename, RegistroItem } from "types";
 
-import Busqueda from "src/components/Busqueda/Busqueda";
+import Busqueda, { SearchItem } from "src/components/Busqueda/Busqueda";
 import NavigationLink from "src/components/Navigation/NavigationLink";
 
 const isCurrentPage = (currentPathname: string, pagePathname: string) => (
@@ -161,9 +161,8 @@ const Navigation: React.FC<NavigationProps> = () => {
   const router = useRouter();
   const classes = useStyles();
 
-  const handleBusquedaChange = useCallback((value: RegistroItem) => {
-    const url = mapRegistroURL(value);
-    router.push(url);
+  const handleBusquedaChange = useCallback((el: SearchItem) => {
+    router.push(`/fotografia/registro/${el.urlId}`);
   }, []);
 
   const navigationItems = [
