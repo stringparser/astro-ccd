@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { useCallback } from 'react';
 import { Box, makeStyles, Typography } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
+import { mapFormattedDate } from 'src/lib/util';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     minHeight: '350px',
     maxHeight: '400px',
 
-    '& > :first-child': {
+    '& > :last-child': {
       flex: 1,
       border: '1px solid rgba(255, 255, 255, 0.15)',
       borderRadius: '4px',
@@ -30,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     minHeight: 'unset',
     maxHeight: 'unset',
 
-    '& > :first-child': {
+    '& > :last-child': {
       overflow: 'auto !important',
       position: 'static !important',
     },
@@ -47,6 +48,11 @@ const useStyles = makeStyles(theme => ({
     padding: '0.5rem 0',
     textAlign: 'center',
   },
+  imageSelected: {
+    '& > :last-child': {
+      borderColor: 'royalblue',
+    }
+  }
 }));
 
 export const mapImageSrc = (src: string) => {
@@ -61,6 +67,7 @@ export type ImageProps = NextImageProps & {
   isBig?: boolean;
   fecha?: string;
   className?: string;
+  isSelected?: boolean;
   imageClassName?: string;
 };
 
@@ -70,6 +77,7 @@ const Image: React.FC<ImageProps> = ({
   src,
   fecha,
   className,
+  isSelected,
   imageClassName,
   onClick,
   ...props
@@ -88,15 +96,10 @@ const Image: React.FC<ImageProps> = ({
     [link, onClick]
   );
 
-
   const hasHeightAndWidth = props.width != null && props.height != null;
 
   const formattedFecha = fecha
-    ? (/(\d{4})(\d{2})(\d{2})?/.exec(fecha) || [])
-      .slice(1)
-      .reverse()
-      .join('/')
-      .replace(/^00\//, '')
+    ? mapFormattedDate(fecha)
     : undefined
   ;
 
@@ -105,9 +108,15 @@ const Image: React.FC<ImageProps> = ({
       className={clsx(
         classes.root,
         className,
-        isBig && classes.imageBig
+        isBig && classes.imageBig,
+        isSelected && classes.imageSelected
       )}
     >
+      {formattedFecha && (
+        <Typography className={classes.imageFecha}>
+          {formattedFecha}
+        </Typography>
+      )}
       <NextImage
         layout={hasHeightAndWidth
           ? 'intrinsic'
@@ -121,11 +130,6 @@ const Image: React.FC<ImageProps> = ({
         onClick={handleOpen}
         className={imageClassName}
       />
-      {formattedFecha && (
-        <Typography className={classes.imageFecha}>
-          {formattedFecha}
-        </Typography>
-      )}
     </Box>
   );
 };

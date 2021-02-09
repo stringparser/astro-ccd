@@ -44,17 +44,17 @@ exports = module.exports = withMDX({
       {
         source: '/planetas-satelites',
         permanent: false,
-        destination: '/fotografia?tipo=sistema-solar',
+        destination: '/fotografia/sistema-solar',
       },
       {
         source: '/galaxias',
         permanent: false,
-        destination: '/fotografia?tipo=galaxias',
+        destination: '/fotografia/galaxias',
       },
       {
         source: '/nebulosas',
         permanent: false,
-        destination: '/fotografia?tipo=nebulosas',
+        destination: '/fotografia/nebulosas',
       },
       {
         source: '/construccion',

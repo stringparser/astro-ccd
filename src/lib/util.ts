@@ -88,3 +88,34 @@ export const mapRegistroRoute = (el: RegistroItem) => {
 export const useIsomorphicLayoutEffect =
   typeof window !== 'undefined' ? useLayoutEffect : useEffect
 ;
+
+export const capitalize = (value: string) => {
+  return value
+    .replace(/[-]/g, ' ')
+    .replace(/(\S+)/g, ($0, $1: string) => {
+      return `${$1.charAt(0).toUpperCase()}${$1.slice(1).toLocaleLowerCase()}`;
+    })
+  ;
+}
+
+export const mapTagTextTitle = (value: string) => {
+  const text = capitalize(value);
+
+  switch (text) {
+    case 'Cometas Asteroides': {
+      return 'Cometas y Asteroides';
+    }
+    default: {
+      return text;
+    }
+  }
+};
+
+export const mapFormattedDate = (value: string) => {
+  return (/(\d{4})(\d{2})(\d{2})?/.exec(value) || [])
+    .slice(1)
+    .reverse()
+    .join('/')
+    .replace(/^00\//, '')
+  ;
+};

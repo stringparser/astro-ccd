@@ -1,14 +1,12 @@
 
 import clsx from "clsx";
 import React from "react";
-import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles } from "@material-ui/core";
 
 import { RegistroItem } from "types";
 import { opacityMixin } from "src/components/mixins";
 
-import H2 from "src/components/Typography/H2";
-import Image from "src/components/Image/Image";
-import NavigationLink from "../Navigation/NavigationLink";
+import PostsListItem from "src/components/PostsList/PostsListItem";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,123 +19,55 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
 
-    '@media (min-width: 562px)': {
+    [theme.breakpoints.up('sm')]: {
       width: 'auto',
       flexDirection: 'row',
     },
   },
-  mainWrapper: {
-    ...opacityMixin,
-
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    justifyContent: 'center',
-
-    [theme.breakpoints.between('sm', 'md')]: {
-      width: '50%',
-    },
-
-    [theme.breakpoints.up('md')]: {
-      width: '33%',
-    },
-
-    '&:hover': {
-      '& h2': {
-        textDecoration: 'underline',
-      }
-    }
-  },
-  imageTitle: {
-    color: 'red',
-    margin: '1rem auto 0 auto',
-  },
-  imageContainer: {
-    margin: '1rem',
-
-    display: 'flex',
-    flexDirection: 'column',
-
-    alignItems: 'center',
-    justifyContent: 'center',
-
-    '& > :first-child': {
-      maxHeight: '300px',
-    }
-  },
-  imageContainerSelected: {
-    '& > :first-child': {
-      borderColor: 'royalblue',
-    }
-  },
-  etiquetas: {
-    margin: '.25rem 0'
-  },
-  clickable: {
-    cursor: 'pointer',
-  },
 }));
 
-export type PostsListProps<T = RegistroItem> =  {
-  items: T[];
-  selected?: string;
-  className?: string;
-  mostrarEtiquetas?: boolean;
-};
+export type PostsListProps = {
+    items: RegistroItem[];
+    showTag?: boolean;
+    selected?: string;
+    className?: string;
+    itemContainerClass?: string;
+    imageContainerClass?: string;
+  }
+;
 
 function PostsList(props: PostsListProps) {
   const classes = useStyles();
   const {
     items,
+    showTag,
     selected,
     className,
-    mostrarEtiquetas,
+    itemContainerClass,
+    imageContainerClass,
   } = props;
 
   return (
-    <Box
-      className={clsx(classes.root, className)}
-    >
-      {items.map(el => {
-        const { date, src, width, height } = el.entradas.find(el => el.src);
-        const { urlId, objeto, titulo, tipo } = el;
+    <Box className={clsx(classes.root, className)}>
+      {items.map((el) => {
+        const href = `/fotografia/registro/${el.urlId}`;
+        const entrada = el.entradas.find(el => el.src);
 
-        const href = `/fotografia/registro/${urlId}`;
+        const item = {
+          ...el,
+          ...entrada,
+        };
 
         return (
-          <NavigationLink
-            id={urlId}
-            key={urlId}
+          <PostsListItem
+            key={href}
             href={href}
-            className={classes.mainWrapper}
-          >
-              <H2 className={classes.imageTitle}>
-                {titulo || objeto}
-              </H2>
-
-              {mostrarEtiquetas && (
-                <Typography
-                  variant="caption"
-                  className={classes.etiquetas}
-                >
-                  {tipo.replace(/[-]/g, ' ')}
-                </Typography>
-              )}
-
-              <Image
-                src={src}
-                link={false}
-                fecha={date}
-                isBig={false}
-                width={width}
-                height={height}
-                quality={50}
-                className={clsx(
-                  classes.imageContainer,
-                  selected == urlId && classes.imageContainerSelected
-                )}
-              />
-          </NavigationLink>
+            item={item}
+            showTag={showTag}
+            isSelected={selected === el.urlId}
+            className={itemContainerClass}
+            imageContainerClass={imageContainerClass}
+          />
         );
       })}
     </Box>

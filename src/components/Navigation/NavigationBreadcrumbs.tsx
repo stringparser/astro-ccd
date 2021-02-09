@@ -8,11 +8,11 @@ import NavigationLink from 'src/components/Navigation/NavigationLink';
 import { Box, makeStyles } from '@material-ui/core';
 
 const mapRouteParts = (router: NextRouter) => {
-  if (router.pathname === '/') {
+  if (router.asPath === '/') {
     return [];
   }
 
-  const routeParts = router.pathname.slice(1).split('/');
+  const routeParts = (router.asPath || router.pathname).slice(1).split('/');
 
   return routeParts.map(value => {
     switch (value) {
