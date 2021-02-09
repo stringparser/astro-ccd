@@ -3,19 +3,16 @@ import { useCallback } from 'react';
 import { Box, makeStyles, Typography } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     zIndex: 0,
-    margin: '2rem 1rem',
+    margin: '2rem auto',
 
     cursor: 'pointer',
     position: 'relative',
 
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-
     width: 'auto',
+    maxWidth: '90%',
     minHeight: '350px',
     maxHeight: '400px',
 
@@ -24,14 +21,16 @@ const useStyles = makeStyles({
       border: '1px solid rgba(255, 255, 255, 0.15)',
       borderRadius: '4px',
     },
+
+    [theme.breakpoints.up('md')]: {
+      margin: '2rem 0',
+    }
   },
-  image: {},
   imageBig: {
     minHeight: 'unset',
     maxHeight: 'unset',
 
     '& > :first-child': {
-      maxWidth: '85%',
       overflow: 'auto !important',
       position: 'static !important',
     },
@@ -46,8 +45,9 @@ const useStyles = makeStyles({
   },
   imageFecha: {
     padding: '0.5rem 0',
+    textAlign: 'center',
   },
-});
+}));
 
 export const mapImageSrc = (src: string) => {
   return /^(\/_next\/|data:image)/.test(src)
@@ -102,10 +102,6 @@ const Image: React.FC<ImageProps> = ({
 
   return (
     <Box
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
       className={clsx(
         classes.root,
         className,
@@ -123,7 +119,7 @@ const Image: React.FC<ImageProps> = ({
         {...props}
         src={mapImageSrc(src)}
         onClick={handleOpen}
-        className={clsx(classes.image, imageClassName)}
+        className={imageClassName}
       />
       {formattedFecha && (
         <Typography className={classes.imageFecha}>

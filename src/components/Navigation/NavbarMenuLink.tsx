@@ -5,7 +5,8 @@ import MuiLink from "@material-ui/core/Link/Link";
 
 export type NavbarMenuLinkProps = {
   href: string;
-  text: string;
+  text?: string;
+  children?: React.ReactNode;
   className?: string;
 };
 

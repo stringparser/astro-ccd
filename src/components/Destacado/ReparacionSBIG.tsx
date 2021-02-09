@@ -4,8 +4,9 @@ import { Box, makeStyles, Typography } from "@material-ui/core";
 import Image from "src/components/Image/Image";
 import { PageBasename } from "types";
 import NavigationLink from "src/components/Navigation/NavigationLink";
+import H2 from "src/components/Typography/H2";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   root: {
     margin: '1rem 0',
     position: 'relative',
@@ -26,9 +27,13 @@ const useStyles = makeStyles(() => ({
   },
   imageWrapper: {
     width: '80%',
-    margin: '1rem auto',
+    margin: '1rem 0',
     height: '150px',
     minHeight: 'unset !important',
+
+    [theme.breakpoints.down('sm')]: {
+      margin: '1rem auto',
+    }
   },
   titulo: {
     color: 'currentColor',
@@ -52,12 +57,9 @@ const ReparacionSBIG = () => {
         href={`/${PageBasename.reparacionCCD}`}
         className={classes.enlace}
       >
-        <Typography
-          component="h2"
-          className={classes.titulo}
-        >
+        <H2 className={classes.titulo}>
           REPARACIÓN DE CCD SBIG
-        </Typography>
+        </H2>
         <Image
           src={require('./img/franja.jpg').default}
           link={false}

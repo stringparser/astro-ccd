@@ -3,45 +3,13 @@ import { useRouter } from 'next/router';
 import { useCallback } from "react";
 import { makeStyles, Box, Typography, Avatar } from "@material-ui/core";
 
+import etiquetas from "cache/registro-etiquetas.json";
 import { opacityMixin } from "src/components/mixins";
 import { mapRegistroURL } from "src/lib/navigation";
 import { PageBasename, RegistroItem } from "types";
 
 import Busqueda from "src/components/Busqueda/Busqueda";
-import NavbarMenuLink from "src/components/Navigation/NavbarMenuLink";
 import NavigationLink from "src/components/Navigation/NavigationLink";
-
-const items = Object.entries(PageBasename)
-  .map(([key, href]) => {
-    switch (href) {
-      case PageBasename.reparacionCCD: {
-        return {
-          href: `/${href}`,
-          text: 'reparación',
-        };
-      }
-      case PageBasename.galaxias:
-      case PageBasename.nebulosas:
-      case PageBasename.sistemaSolar:
-      case PageBasename.cometasAsteroides: {
-        return null;
-      }
-      case PageBasename.construccionObservatorio: {
-        return {
-          href: `/${href}`,
-          text: 'Observatorio',
-        };
-      }
-      default: {
-        return {
-          href: `/${href}`,
-          text: key,
-        };
-      }
-    }
-  })
-  .filter(v => v)
-;
 
 const isCurrentPage = (currentPathname: string, pagePathname: string) => (
   currentPathname.startsWith(pagePathname) ||
@@ -82,11 +50,13 @@ const useStyles = makeStyles(theme => ({
 
   homeLinkContainer: {
     display: 'flex',
+    flexDirection: 'column',
 
-    alignItems: 'center',
-    justifyContent: 'start',
+    alignItems: 'start',
+    justifyContent: 'center',
 
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
+      alignItems: 'center',
       marginBottom: '1rem',
     },
   },
@@ -98,6 +68,10 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'row',
 
     fontSize: '1.45rem',
+
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.65rem',
+    },
 
     ...opacityMixin
   },
@@ -115,9 +89,23 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
+    justifyContent: 'space-around',
 
-    [theme.breakpoints.down('xs')]: {
-      justifyContent: 'center',
+    [theme.breakpoints.up('sm')]: {
+      justifyContent: 'flex-start',
+    }
+  },
+
+  pageDescription: {
+    maxWidth: '320px',
+
+    opacity: .8,
+    textAlign: 'center',
+    marginTop: '0.5rem',
+
+    [theme.breakpoints.up('sm')]: {
+      maxWidth: '90%',
+      textAlign: 'left',
     }
   },
 
@@ -125,27 +113,42 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-
-    marginBottom: '-1px',
   },
 
   link: {
-    padding: '1rem',
+    padding: '0.85rem',
 
     fontWeight: 'bold',
     borderBottom: '1px solid transparent',
+
+    userSelect: 'none',
     textTransform: 'uppercase',
 
     '&:hover': {
       textDecoration: 'none',
     },
 
+    [theme.breakpoints.up('sm')]: {
+      padding: '1rem 2rem',
+    },
+
     ...opacityMixin
   },
 
   currentLink: {
-    borderBottomColor: 'rgb(255, 0, 0, 0.6)',
+    color: 'rgb(255, 0, 0, 0.6)',
+
+    [theme.breakpoints.up('sm')]: {
+      color: theme.palette.text.primary,
+      borderBottomColor: 'rgb(255, 0, 0, 0.6)',
+    }
   },
+
+  hiddenSM: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    }
+  }
 }));
 
 export type NavigationProps = {};
@@ -162,9 +165,43 @@ const Navigation: React.FC<NavigationProps> = () => {
   const navigationItems = [
     {
       href: '/fotografia',
-      text: 'Fotografía',
+      children: 'Fotografía',
     },
-    ...items
+    ...Object.entries(PageBasename)
+    .map(([key, href]) => {
+      switch (href) {
+        case PageBasename.reparacionCCD: {
+          return {
+            href: `/${href}`,
+            children: (
+              <>
+                Reparación
+                <span className={classes.hiddenSM}> de CDD SBIG</span>
+              </>
+            ),
+          };
+        }
+        case PageBasename.galaxias:
+        case PageBasename.nebulosas:
+        case PageBasename.sistemaSolar:
+        case PageBasename.cometasAsteroides: {
+          return null;
+        }
+        case PageBasename.construccionObservatorio: {
+          return {
+            href: `/${href}`,
+            children: 'Observatorio',
+          };
+        }
+        default: {
+          return {
+            href: `/${href}`,
+            children: key,
+          };
+        }
+      }
+    })
+    .filter(v => v)
   ];
 
   return (
@@ -185,34 +222,32 @@ const Navigation: React.FC<NavigationProps> = () => {
                 <Box ml="1rem" />
                 OACM Fuensanta
               </NavigationLink>
-              {/* <Box className={classes.}>
-                <Typography
-                  variant="caption"
-                >
-                  Observación astrónomica. <br/>
-                  Construcción de observatorio, <br/>
-                  telescopio y CCD.
+
+              <Box className={classes.pageDescription}>
+                <Typography variant="caption">
+                  Observación astrónomica. Construcción de observatorio, telescopio y CCD.
                 </Typography>
-              </Box> */}
+              </Box>
             </Box>
             <Box className={classes.pagesSearch}>
               <Busqueda onChange={handleBusquedaChange} />
             </Box>
           </aside>
           <aside  className={classes.pageLinks}>
-            {navigationItems.map(({ href, text }, index) =>
+            {navigationItems.map(({ href, children }, index) =>
               <Box
                 key={index}
                 className={classes.linkContainer}
               >
-                <NavbarMenuLink
+                <NavigationLink
                   href={href}
-                  text={text.replace(/\-/g, ' ')}
                   className={clsx(
                     classes.link,
                     isCurrentPage(router.route, href) && classes.currentLink,
                   )}
-                />
+                >
+                  {children}
+                </NavigationLink>
               </Box>
             )}
           </aside>
