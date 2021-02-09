@@ -7,6 +7,8 @@ import MuiBreadcrumbs from '@material-ui/core/Breadcrumbs';
 import NavigationLink from 'src/components/Navigation/NavigationLink';
 import { Box, makeStyles } from '@material-ui/core';
 
+import registroMetadata from 'cache/registro-metadata.json';
+
 const mapRouteParts = (router: NextRouter) => {
   if (router.asPath === '/') {
     return [];
@@ -18,31 +20,20 @@ const mapRouteParts = (router: NextRouter) => {
     .split('/')
   ;
 
+  const urlId = routeParts[routeParts.length - 1];
+  const itemProps = registroMetadata.find(el => el.urlId === urlId);
+
   return routeParts.map(value => {
     switch (value) {
-      case 'fotografia': {
-        return {
-          href: '/fotografia',
-          text: 'fotografía',
-        };
-      }
-      case 'construccion': {
-        return {
-          href: '/construccion',
-          text: 'construcción',
-        };
-      }
-      case 'reparacion': {
-        return {
-          href: '/reparacion',
-          text: 'reparación',
-        };
+      case 'registro': {
+        if (itemProps && itemProps.tipo) {
+          return itemProps.tipo;
+        }
+
+        return value;
       }
       default: {
-        return {
-          href: `/${value}`,
-          text: value,
-        };
+        return value;
       }
     }
   });
@@ -81,10 +72,14 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
               inicio
             </Typography>
         }
-        {links.map(({ text }, index, items) => {
-          const href = items.slice(0, index + 1)
-            .map(el => el.href)
-            .join('')
+        {links.map((value, index, items) => {
+          const href = `/${items.slice(0, index + 1)
+            .join('/')
+          }`;
+
+          const text = value
+            .replace(/cion$/, 'ción')
+            .replace(/^fotografia$/, 'fotografía')
           ;
 
           return (
@@ -97,7 +92,7 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
         })}
         {current && (
           <Typography color="textPrimary" style={{margin: 'unset'}}>
-            {current.text}
+            {current}
           </Typography>
         )}
       </MuiBreadcrumbs>

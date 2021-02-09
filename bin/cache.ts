@@ -7,7 +7,6 @@ import { promisify } from 'util';
 
 import { parseMDX } from './parseMDX';
 import { esEntradaValidaConImagen, ordenarPorFecha } from '../src/lib/util';
-import { RegistroItem } from 'types';
 
 const imageSize = promisify(imageSizeFn);
 
@@ -80,6 +79,38 @@ const imageSize = promisify(imageSizeFn);
 
   console.log('wrote', itemsWithImages.length, 'items to', itemsWithImagesFile);
 
+  const itemsOneImageFile = 'cache/registro-solo-ultima-fotografia.json';
+  const itemsOneImage = itemsWithImages
+    .map(({ entradas: [entrada], ...el }) => {
+      return {
+        ...el,
+        entradas: [entrada],
+      };
+    })
+  ;
+
+  await fs.writeFile(
+    itemsOneImageFile,
+    JSON.stringify(itemsOneImage, null, 2)
+  );
+
+  console.log('wrote', itemsOneImage.length, 'items to', itemsOneImageFile);
+
+  const metadataFilename = 'cache/registro-metadata.json';
+  const metadataItems = itemsWithImages
+    .filter(el => el.tipo != null || el.tipo != '')
+    .map(({ entradas, ...el }) => {
+      return el;
+    })
+  ;
+
+  await fs.writeFile(
+    metadataFilename,
+    JSON.stringify(metadataItems, null, 2)
+  );
+
+  console.log('wrote', metadataItems.length, 'items to', metadataFilename);
+
   const tiposFilename = 'cache/registro-etiquetas.json';
   const tiposJSON = itemsWithImages.reduce((acc: string[], el) => {
     return acc.includes(el.tipo)
@@ -94,7 +125,7 @@ const imageSize = promisify(imageSizeFn);
     JSON.stringify(tiposJSON,  null, 2)
   );
 
-  console.log('wrote', tiposFilename.length, 'tipos en', tiposFilename);
+  console.log('wrote', tiposFilename.length, 'to', tiposFilename);
 
   const ultimasEntradasJSON = itemsWithImages.slice(0, 9);
   const ultimasEntradasFilename = 'cache/ultimas-entradas.json';
@@ -104,7 +135,7 @@ const imageSize = promisify(imageSizeFn);
     JSON.stringify(ultimasEntradasJSON,  null, 2)
   );
 
-  console.log('wrote', ultimasEntradasJSON.length, 'en', ultimasEntradasFilename);
+  console.log('wrote', ultimasEntradasJSON.length, 'to', ultimasEntradasFilename);
 
   const lastItemsPerEtiqueta = await Promise.all(tiposJSON
     .map(name =>
@@ -122,7 +153,7 @@ const imageSize = promisify(imageSizeFn);
 
       await fs.writeFile(filename, serializedItems);
 
-      console.log('wrote', items.length, 'en', filename);
+      console.log('wrote', items.length, 'to', filename);
 
       return items[0];
     })
@@ -135,5 +166,5 @@ const imageSize = promisify(imageSizeFn);
     JSON.stringify(lastItemsPerEtiqueta,  null, 2)
   );
 
-  console.log('wrote', lastItemsPerEtiqueta.length, 'en', lastItemsPerEtiquetaFilename);
+  console.log('wrote', lastItemsPerEtiqueta.length, 'to', lastItemsPerEtiquetaFilename);
 })();

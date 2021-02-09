@@ -1,12 +1,12 @@
 import { Box, makeStyles } from "@material-ui/core";
 import { useRouter } from "next/router";
 
-import { ordenarPorFecha } from "src/lib/util";
+import { mapTagTextTitle, ordenarPorFecha } from "src/lib/util";
 
 import H2 from 'src/components/Typography/H2';
 import PostsList from "src/components/PostsList/PostsList";
 
-import registroFotosJSON from "cache/registro-fotografia.json";
+import registroSoloUltimaFoto from "cache/registro-solo-ultima-fotografia.json";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -63,11 +63,11 @@ const SeguirLeyendoContainer: React.FC = () => {
     return null;
   }
 
-  const objeto = registroFotosJSON.find(el => el.urlId === urlId);
+  const objeto = registroSoloUltimaFoto.find(el => el.urlId === urlId);
   const etiqueta = objeto.tipo || '';
-  const etiquetaText = etiqueta.replace(/[-]/g, ' ');
+  const etiquetaText = mapTagTextTitle(etiqueta);
 
-  const filteredItems = registroFotosJSON
+  const filteredItems = registroSoloUltimaFoto
     .filter(el =>
       el.tipo === etiqueta
       && el.urlId !== urlId
@@ -80,7 +80,7 @@ const SeguirLeyendoContainer: React.FC = () => {
     <Box className={classes.root}>
       <H2 style={{
         maxWidth: '50vw',
-        margin: '0 auto',
+        margin: '0.5rem auto',
         whiteSpace: 'pre-line'
       }}>
         Fotografía
