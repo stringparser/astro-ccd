@@ -26,24 +26,11 @@ const useStyles = makeStyles(theme => ({
     margin: '0.25rem',
     textTransform: 'capitalize',
   },
-  title: {
-    marginLeft: '1rem',
-
-    [theme.breakpoints.up('md')]: {
-      marginLeft: '2rem',
-    }
-  },
   postsItemsContainer: {
-    margin: '0 1rem',
-
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'start',
     justifyContent: 'center',
-
-    [theme.breakpoints.up('md')]: {
-      margin: '0 2rem',
-    }
   },
   postsListItem: {
     [theme.breakpoints.up('md')]: {
@@ -73,11 +60,9 @@ const Fotografia: React.FC<FotografiaProps> = props => {
         <title>OACM Fuensanta | Fotografía</title>
       </Head>
 
-      <Box className={classes.title}>
-        <H1>
-          Fotografía
-        </H1>
-      </Box>
+      <H1>
+        Fotografía
+      </H1>
 
       <Box className={classes.postsItemsContainer}>
         {items.map(el => {

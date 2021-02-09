@@ -89,10 +89,9 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <Navigation />
               <Box flex="1">
                 <NavigationBreadcrumbs />
-                <Component
-                  {...pageProps}
-                  className={classes.content}
-                />
+                <Box className={classes.content}>
+                  <Component {...pageProps} />
+                </Box>
                 <SeguirLeyendoContainer />
                 {/^(\/|\/404)$/.test(router.pathname)
                   ? null
