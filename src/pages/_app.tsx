@@ -5,7 +5,6 @@ import { AppProps } from "next/app";
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider, CssBaseline, StylesProvider, jssPreset, makeStyles, Box } from "@material-ui/core";
 
-import { maxWidthMixin } from "src/components/mixins";
 import { APP_ROOT_PORTAL_ID } from "src/lib/portal";
 
 import Footer from "src/components/Layout/Footer";
@@ -16,6 +15,7 @@ import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
 import NavigationBreadcrumbs from "src/components/Navigation/NavigationBreadcrumbs";
 import SeguirLeyendoContainer from "src/components/PostsList/SeguirLeyendoContainer";
 
+import { FAVICON_SRC } from "src/lib/constants";
 import { mdxComponents } from "src/components/MDX/components";
 
 const jss = create({
@@ -82,7 +82,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               </title>
               <link
                 rel="icon"
-                href={require('@public/favicon.png').default}
+                href={FAVICON_SRC}
               />
             </Head>
             <main className={classes.main}>

@@ -3,11 +3,12 @@ import { useRouter } from 'next/router';
 import { useCallback } from "react";
 import { makeStyles, Box, Typography, Avatar } from "@material-ui/core";
 
+import { FAVICON_SRC } from "src/lib/constants";
 import { opacityMixin } from "src/components/mixins";
 import { PageBasename } from "types";
 
-import Busqueda, { SearchItem } from "src/components/Busqueda/Busqueda";
 import NavigationLink from "src/components/Navigation/NavigationLink";
+import Busqueda, { SearchItem } from "src/components/Busqueda/Busqueda";
 
 const isCurrentPage = (currentPathname: string, pagePathname: string) => (
   currentPathname.startsWith(pagePathname) ||
@@ -219,7 +220,7 @@ const Navigation: React.FC<NavigationProps> = () => {
                 className={classes.homeLink}
               >
                 <Avatar
-                  src={require('@public/favicon.png').default}
+                  src={FAVICON_SRC}
                 />
                 <Box ml="1rem" />
                 OACM Fuensanta
