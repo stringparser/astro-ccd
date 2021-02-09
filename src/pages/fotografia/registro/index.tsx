@@ -1,12 +1,11 @@
 import React from "react";
-import { Box, makeStyles } from "@material-ui/core";
 import { RegistroItem } from "types";
+import { GetStaticProps } from "next";
+import { Box, makeStyles } from "@material-ui/core";
 
 import H1 from "src/components/Typography/H1";
 import H2 from "src/components/Typography/H2";
 import NavigationLink from "src/components/Navigation/NavigationLink";
-import NavigationBreadcrumbs from "src/components/Navigation/NavigationBreadcrumbs";
-import { useRouter } from "next/router";
 
 const useStyles = makeStyles(() => ({
   seccionContainer: {
@@ -85,7 +84,7 @@ const RegistroFotografías: React.FC<RegistroFotografíasProps> = (props) => {
   )
 };
 
-export async function getStaticProps(): Promise<{ props: RegistroFotografíasProps; }> {
+export const getStaticProps: GetStaticProps<RegistroFotografíasProps> = async () => {
   const tipos = (await import('cache/registro-etiquetas.json')).default;
   const items = (await import('cache/registro-fotografia.json')).default;
 
@@ -94,6 +93,7 @@ export async function getStaticProps(): Promise<{ props: RegistroFotografíasPro
       tipos,
       items,
     },
+    revalidate: false,
   };
 };
 
