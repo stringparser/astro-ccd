@@ -116,8 +116,6 @@ const imageSize = promisify(imageSizeFn);
       items.sort(ordenarPorFecha)
     )
     .map(async (items) => {
-      console.log('items', items);
-
       const tipo = items[0].tipo;
       const filename = `cache/registro-${tipo}.json`;
       const serializedItems = JSON.stringify(items, null, 2);

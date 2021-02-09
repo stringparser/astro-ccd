@@ -48,8 +48,10 @@ const useStyles = makeStyles(theme => ({
     padding: '0.5rem 0',
     textAlign: 'center',
   },
-  imageIsSelected: {
-    borderColor: 'royalblue',
+  imageSelected: {
+    '& > :last-child': {
+      borderColor: 'royalblue',
+    }
   }
 }));
 
@@ -106,7 +108,8 @@ const Image: React.FC<ImageProps> = ({
       className={clsx(
         classes.root,
         className,
-        isBig && classes.imageBig
+        isBig && classes.imageBig,
+        isSelected && classes.imageSelected
       )}
     >
       {formattedFecha && (
@@ -125,10 +128,7 @@ const Image: React.FC<ImageProps> = ({
         {...props}
         src={mapImageSrc(src)}
         onClick={handleOpen}
-        className={clsx(
-          imageClassName,
-          isSelected && classes.imageIsSelected
-        )}
+        className={imageClassName}
       />
     </Box>
   );
