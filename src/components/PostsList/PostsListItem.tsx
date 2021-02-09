@@ -38,6 +38,7 @@ const useStyles = makeStyles(theme => ({
   },
   imageContainer: {
     margin: '1rem',
+    marginTop: '0',
 
     display: 'flex',
     flexDirection: 'column',
