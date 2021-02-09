@@ -166,6 +166,11 @@ Promise.all([
         : path.resolve(__dirname, '..', 'src', 'pages', 'fotografia', 'registro', `${urlId}.mdx`)
       ;
 
+      if (await fs.pathExists(filename)) {
+        console.log('file exists, skipping', filename);
+        return Promise.resolve();
+      }
+
       const mergedContent = content
         .map(el => el.mdx)
         .filter(v => v.trim() != '')

@@ -1,7 +1,8 @@
 import safeRegex from "safe-regex";
 import { useState } from "react";
+import { SearchOutlined } from "@material-ui/icons";
 import Autocomplete, { AutocompleteProps } from '@material-ui/lab/Autocomplete';
-import { makeStyles, TextField, TextFieldProps } from "@material-ui/core";
+import { InputAdornment, makeStyles, TextField, TextFieldProps } from "@material-ui/core";
 
 import { RegistroItem } from "types";
 
@@ -99,7 +100,6 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
     <TextField
       {...params}
       label="Búsqueda"
-      margin="dense"
       variant="outlined"
       className={classes.textField}
       InputProps={{
@@ -108,6 +108,11 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
         value: inputValue,
         onChange: handleInputChange,
         onKeyDown: handleKeyDown,
+        endAdornment: (
+          <InputAdornment position="end">
+            <SearchOutlined />
+          </InputAdornment>
+        ),
       }}
     />
   );

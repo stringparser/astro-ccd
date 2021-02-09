@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { Box, Chip } from "@material-ui/core";
+import { Box, Chip, makeStyles } from "@material-ui/core";
 import { useCallback, useState } from "react";
 import { GetServerSidePropsContext } from "next";
 
@@ -18,10 +18,16 @@ export type FotografiaProps = {
   }>
 };
 
-
+const useStyles = makeStyles(() => ({
+  chip: {
+    margin: '0.25rem',
+    textTransform: 'capitalize',
+  },
+}));
 
 const Fotografia: React.FC<FotografiaProps> = props => {
   const router = useRouter();
+  const classes = useStyles();
 
   const {
     items,
@@ -136,7 +142,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
               : 'default'
             }
             onClick={handleEtiquetaClick}
-            style={{margin: '0.5rem'}}
+            className={classes.chip}
           />
           {etiquetas.map(name => {
             return (
@@ -149,7 +155,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
                 }
                 onClick={handleEtiquetaClick}
                 data-id={name}
-                style={{margin: '0 1rem 0 0', textTransform: 'capitalize'}}
+                className={classes.chip}
               />
             );
           })}
@@ -183,7 +189,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
                   onClick={handleObjetoClick}
                   data-id={urlId}
                   data-tipo={tipo}
-                  style={{margin: '0.5rem', textTransform: 'capitalize'}}
+                  className={classes.chip}
                 />
               );
             })

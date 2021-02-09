@@ -72,21 +72,17 @@ const defaultTheme = createMuiTheme({
           scrollBehavior: 'smooth',
 
           '& > div': {
-            width: '100%',
             display: 'flex',
             flexDirection: 'column',
+          },
+
+          '@media (min-width: 960px)': {
+            textAlign: 'left',
           }
         },
 
         a: {
           color: '#ff0000',
-        },
-
-        'p, p.MuiTypography-root': {
-          margin: '0 10%',
-
-          fontSize: '1rem',
-          textAlign: 'center',
         },
 
         hr: {
@@ -95,8 +91,11 @@ const defaultTheme = createMuiTheme({
         },
 
         img: {
-          margin: '0 auto',
           maxWidth: '100%',
+
+          '@media (min-width: 960px)': {
+            margin: '0 auto',
+          },
         },
       },
     },

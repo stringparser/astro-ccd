@@ -8,6 +8,11 @@ import MuiLink, { LinkProps as MuiLinkProps } from "@material-ui/core/Link/Link"
 const useStyles = makeStyles(() => ({
   root: {
     cursor: 'pointer',
+    overflowWrap: 'anywhere',
+
+    '&:hover': {
+      textDecoration: 'none',
+    },
   },
 }))
 

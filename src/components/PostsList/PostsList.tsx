@@ -10,7 +10,7 @@ import H2 from "src/components/Typography/H2";
 import Image from "src/components/Image/Image";
 import NavigationLink from "../Navigation/NavigationLink";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
     margin: '0 auto',
@@ -29,25 +29,20 @@ const useStyles = makeStyles({
   mainWrapper: {
     ...opacityMixin,
 
-    width: 'inherit',
-    margin: '1rem auto',
     display: 'flex',
+    alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',
 
-    '@media (min-width: 562px) and (max-width: 1024px)': {
+    [theme.breakpoints.between('sm', 'md')]: {
       width: '50%',
-      margin: '0 auto',
     },
 
-    '@media (min-width: 1024px)': {
-      width: '30%',
-      margin: '0 auto',
+    [theme.breakpoints.up('md')]: {
+      width: '33%',
     },
 
     '&:hover': {
-      textDecoration: 'none',
-
       '& h2': {
         textDecoration: 'underline',
       }
@@ -61,6 +56,8 @@ const useStyles = makeStyles({
     margin: '1rem',
 
     display: 'flex',
+    flexDirection: 'column',
+
     alignItems: 'center',
     justifyContent: 'center',
 
@@ -79,7 +76,7 @@ const useStyles = makeStyles({
   clickable: {
     cursor: 'pointer',
   },
-});
+}));
 
 export type PostsListProps<T = RegistroItem> =  {
   items: T[];

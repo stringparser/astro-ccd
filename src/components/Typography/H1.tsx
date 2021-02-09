@@ -3,16 +3,21 @@ import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography, { TypographyProps } from "@material-ui/core/Typography/Typography";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
-    margin: '1rem 0',
+    margin: '0 auto',
     padding: '2rem 0',
+    textAlign: 'center',
 
     color: 'royalblue',
     fontSize: '2.25rem',
     fontWeight: 'bold',
+
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'left',
+    },
   },
-});
+}));
 
 const H1: React.FC<TypographyProps> = ({ className, ...props }) => {
   const classes = useStyles();

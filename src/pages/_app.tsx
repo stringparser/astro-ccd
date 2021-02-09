@@ -27,19 +27,30 @@ const useStyles = makeStyles(theme => ({
     flex: 1,
     margin: '0 auto',
     padding: '1rem 0.5rem 0 0.5rem',
-    minHeight: '100vh',
 
-    border: '0.25rem solid white',
-    borderTop: 'none',
-    borderColor: 'rgba(255,255,255, 0.05)',
-    borderBottom: 'none',
+    width: '100%',
+    minHeight: '100vh',
 
     display: 'flex',
     flexDirection: 'column',
 
     backgroundColor: theme.palette.common.black,
 
-    ...maxWidthMixin,
+    [theme.breakpoints.up('md')]: {
+      width: theme.breakpoints.values.md,
+      border: '0.25rem solid white',
+      borderTop: 'none',
+      borderColor: 'rgba(255,255,255, 0.05)',
+      borderBottom: 'none',
+    }
+  },
+  content: {
+    margin: '1rem 2.5%',
+    textAlign: 'left',
+
+    [theme.breakpoints.up('sm')]: {
+      margin: '2rem 5%'
+    }
   }
 }));
 
@@ -78,7 +89,10 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
               <Navigation />
               <Box flex="1">
                 <NavigationBreadcrumbs />
-                <Component {...pageProps} />
+                <Component
+                  {...pageProps}
+                  className={classes.content}
+                />
                 <SeguirLeyendoContainer />
                 {/^(\/|\/404)$/.test(router.pathname)
                   ? null
