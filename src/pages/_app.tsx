@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   content: {
-    margin: '1rem 2.5%',
+    margin: '1rem 1%',
     textAlign: 'left',
 
     [theme.breakpoints.up('sm')]: {

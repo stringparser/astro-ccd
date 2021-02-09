@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
 
     '& a,p': {
       [theme.breakpoints.down('xs')]: {
-        fontSize: '0.85rem',
+        fontSize: '0.95rem',
       },
     },
   },
