@@ -99,14 +99,17 @@ export const capitalize = (value: string) => {
 }
 
 export const mapTagTextTitle = (value: string) => {
-  const text = capitalize(value);
+  const text = value.toLowerCase()
+    .replace(/\s+/g, ' ')
+    .replace(/[-]/g, ' ')
+  ;
 
   switch (text) {
-    case 'Cometas Asteroides': {
+    case 'cometas asteroides': {
       return 'Cometas y Asteroides';
     }
     default: {
-      return text;
+      return capitalize(text);
     }
   }
 };

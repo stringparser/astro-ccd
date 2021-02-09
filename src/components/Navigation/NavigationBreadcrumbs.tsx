@@ -39,9 +39,19 @@ const mapRouteParts = (router: NextRouter) => {
   });
 };
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   root: {
-    margin: '1rem 1.5rem',
+    margin: '0.75rem 0.5rem',
+
+    [theme.breakpoints.up('sm')]: {
+      margin: '1rem 1.5rem',
+    },
+
+    '& a,p': {
+      [theme.breakpoints.down('xs')]: {
+        fontSize: '0.85rem',
+      },
+    },
   },
 }));
 

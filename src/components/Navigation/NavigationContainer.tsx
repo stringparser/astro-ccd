@@ -139,10 +139,9 @@ const useStyles = makeStyles(theme => ({
   },
 
   currentLink: {
-    color: 'rgb(255, 0, 0, 0.6)',
+    color: theme.palette.text.primary,
 
     [theme.breakpoints.up('sm')]: {
-      color: theme.palette.text.primary,
       borderBottomColor: 'rgb(255, 0, 0, 0.6)',
     }
   },

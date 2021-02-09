@@ -8,7 +8,7 @@ import { RegistroItem } from "types";
 
 import H1 from "src/components/Typography/H1";
 import PostsListItem from "src/components/PostsList/PostsListItem";
-import { capitalize } from "src/lib/util";
+import { capitalize, mapTagTextTitle } from "src/lib/util";
 
 export const getStaticProps = async () => {
   const items = (await import('cache/ultima-entrada-por-etiqueta.json')).default as RegistroItem[];
@@ -33,6 +33,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
   },
   postsListItem: {
+
     [theme.breakpoints.up('md')]: {
       width: '50%',
     },
@@ -67,13 +68,15 @@ const Fotografia: React.FC<FotografiaProps> = props => {
       <Box className={classes.postsItemsContainer}>
         {items.map(el => {
           const etiqueta = el.tipo;
+          const [entrada] = el.entradas;
           const { entradas, ...itemProps } = el;
 
           const href = `/fotografia/${etiqueta}`;
           const item = {
             ...itemProps,
-            ...el.entradas[0],
-            titulo: capitalize(etiqueta)
+            ...entrada,
+            date: undefined,
+            titulo: mapTagTextTitle(etiqueta),
           };
 
           return (
