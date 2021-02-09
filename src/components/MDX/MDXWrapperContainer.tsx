@@ -14,7 +14,7 @@ const MDXWrapperContainer: React.FC = ({ children, ...rest }) => {
     );
   }
 
-  const title = React.Children.toArray(children)
+  const description = React.Children.toArray(children)
     .reduce((acc, el) => {
       // @ts-ignore
       const { children: child, mdxType } = el.props || {};
@@ -27,11 +27,11 @@ const MDXWrapperContainer: React.FC = ({ children, ...rest }) => {
     }, '')
   ;
 
-  if (title) {
+  if (description) {
     return (
       <Box {...rest}>
         <Head>
-          <title>OACM Fuensanta | {title}</title>
+          <meta property="og:description" content={`${description}`} />
         </Head>
         {children}
       </Box>
