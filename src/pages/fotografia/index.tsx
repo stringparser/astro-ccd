@@ -1,21 +1,31 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { Box, Chip, makeStyles } from "@material-ui/core";
-import { useCallback, useState } from "react";
-import { GetServerSidePropsContext } from "next";
+import { useCallback, useEffect, useState } from "react";
+import { InferGetStaticPropsType } from "next";
 
-import { RegistroItem } from "types";
 import { useIsomorphicLayoutEffect } from "src/lib/util";
 
 import PostsList from "src/components/PostsList/PostsList";
 
-export type FotografiaProps = {
-  items: RegistroItem[];
-  etiquetas: string[];
-  query: Partial<{
-    urlId: string;
-    tipo: string;
-  }>
+export const getStaticProps = async () => {
+  const items = (await import('cache/registro-fotografia.json')).default;
+  const etiquetas = (await import('cache/registro-etiquetas.json')).default;
+
+  return {
+    props: {
+      items,
+      etiquetas,
+    },
+    revalidate: false,
+  };
+};
+
+export type FotografiaProps = InferGetStaticPropsType<typeof getStaticProps>;
+
+export type FotografiaQueryProps = {
+  tipo: string | null;
+  urlId: string | null;
 };
 
 const useStyles = makeStyles(() => ({
@@ -32,14 +42,36 @@ const Fotografia: React.FC<FotografiaProps> = props => {
   const {
     items,
     etiquetas,
-    query: {
-      tipo: initialTipo,
-      urlId: initialId,
-    },
   } = props;
+
+  const {
+    tipo: initialSelectedTipo = null,
+    urlId: initialSelectedId = null,
+  } = (router.query || {}) as FotografiaQueryProps;
+
+  const selectedItem = items.find(el => el.urlId === initialSelectedId);
+
+  const initialId = selectedItem
+    ? initialSelectedId
+    : null
+  ;
+
+  const initialTipo = selectedItem
+    ? selectedItem.tipo === initialSelectedTipo
+      ? initialSelectedTipo
+      : null
+    : etiquetas.includes(initialSelectedTipo)
+      ? initialSelectedTipo
+      : null
+  ;
 
   const [selectedTipo, setSelectedTipo] = useState<string | null>(initialTipo);
   const [selectedObjeto, setSelectedObjeto] = useState<string | null>(initialId);
+
+  useEffect(() => {
+    setSelectedTipo(initialTipo);
+    setSelectedObjeto(initialId);
+  }, [initialId, initialTipo])
 
   const handleObjetoClick = useCallback(
     (ev: React.MouseEvent<HTMLDivElement>) => {
@@ -52,7 +84,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 
       setSelectedObjeto(nextId);
 
-      const query = {} as FotografiaProps['query'];
+      const query = {} as FotografiaQueryProps;
 
       if (nextId) {
         query.urlId = nextId;
@@ -78,7 +110,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 
       setSelectedTipo(nextTipo);
 
-      const query = {} as FotografiaProps['query'];
+      const query = {} as FotografiaQueryProps;
 
       if (nextTipo) {
         query.tipo = nextTipo;
@@ -203,39 +235,6 @@ const Fotografia: React.FC<FotografiaProps> = props => {
       />
     </Box>
   );
-};
-
-export async function getServerSideProps(context: GetServerSidePropsContext): Promise<{ props: FotografiaProps; }> {
-  const items = (await import('cache/registro-fotografia.json')).default;
-  const etiquetas = (await import('cache/registro-etiquetas.json')).default;
-
-  const {
-    tipo: selectedTipo = null,
-    urlId: selectedId = null,
-  } = (context.query || {}) as FotografiaProps['query'];
-
-  const selectedItem = items.find(el => el.urlId === selectedId);
-
-  return {
-    props: {
-      items,
-      etiquetas,
-      query: {
-        urlId: selectedItem
-          ? selectedId
-          : null
-        ,
-        tipo: selectedItem
-           ? selectedItem.tipo === selectedTipo
-            ? selectedTipo
-            : null
-           : etiquetas.includes(selectedTipo)
-            ? selectedTipo
-            : null
-          ,
-      },
-    },
-  };
 };
 
 export default Fotografia;
