@@ -128,7 +128,11 @@ const useStyles = makeStyles(theme => ({
       textDecoration: 'none',
     },
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
+      padding: '1rem 1.5rem',
+    },
+
+    [theme.breakpoints.up('md')]: {
       padding: '1rem 2rem',
     },
 
@@ -214,6 +218,7 @@ const Navigation: React.FC<NavigationProps> = () => {
             >
               <NavigationLink
                 href="/"
+                prefecth={true}
                 className={classes.homeLink}
               >
                 <Avatar
@@ -241,6 +246,7 @@ const Navigation: React.FC<NavigationProps> = () => {
               >
                 <NavigationLink
                   href={href}
+                  prefecth={/^\/(reparacion|fotografia)/.test(href)}
                   className={clsx(
                     classes.link,
                     isCurrentPage(router.route, href) && classes.currentLink,

@@ -1,13 +1,15 @@
+import NextLink from "next/link";
+import { useRouter } from "next/router";
 import React, { useCallback } from "react";
 
 import BaseLink from "src/components/Navigation/BaseLink";
-import { useRouter } from "next/router";
 
 export type NavbarLinkProps = {
   id?: string
   href?: string;
   text?: string;
   style?: React.CSSProperties;
+  prefecth?: boolean;
   className?: string;
   onClick?: (ev: React.MouseEvent<HTMLAnchorElement>) => void;
 };
@@ -20,6 +22,7 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
     href,
     text,
     style,
+    prefecth,
     children,
     className,
     onClick,
@@ -37,6 +40,11 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
     },
     [href, router, onClick]
   );
+
+  <NextLink
+    href={href}
+    prefetch={prefecth}
+  />
 
   return (
     <BaseLink

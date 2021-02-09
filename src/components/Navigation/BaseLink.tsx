@@ -22,11 +22,6 @@ export type NavbarMenuLinkProps = MuiLinkProps & {
 
 const BaseLink: React.FC<NavbarMenuLinkProps> = (props) => {
   const {
-    // @ts-ignore
-    ref,
-    // @ts-ignore
-    refs,
-
     href,
     text,
     className,
