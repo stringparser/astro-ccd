@@ -8,6 +8,7 @@ import { opacityMixin } from "src/components/mixins";
 import H2 from "src/components/Typography/H2";
 import Image from "src/components/Image/Image";
 import NavigationLink from "src/components/Navigation/NavigationLink";
+import { mapTagTextTitle } from "src/lib/util";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -108,7 +109,7 @@ const PostsListItem: React.FC<PostsListItemProps> = (props) => {
             variant="caption"
             className={classes.etiquetas}
           >
-            {tipo.replace(/[-]/g, ' ')}
+            {mapTagTextTitle(tipo)}
           </Typography>
         )}
 

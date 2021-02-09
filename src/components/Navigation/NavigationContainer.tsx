@@ -192,7 +192,15 @@ const Navigation: React.FC<NavigationProps> = () => {
         case PageBasename.construccionObservatorio: {
           return {
             href: `/${href}`,
-            children: 'Observatorio',
+            children: (
+              <>
+                <span className={classes.hiddenSM}>
+                  Construcción del
+                  <span> </span>
+                </span>
+                Observatorio
+              </>
+            ),
           };
         }
         default: {
@@ -228,7 +236,7 @@ const Navigation: React.FC<NavigationProps> = () => {
 
               <Box className={classes.pageDescription}>
                 <Typography variant="caption">
-                  Observación astrónomica. Construcción de observatorio, telescopio y CCD.
+                  Observación astrónomica. Construcción del observatorio, telescopio y CCD.
                 </Typography>
               </Box>
             </Box>
