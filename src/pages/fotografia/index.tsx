@@ -11,7 +11,7 @@ import PostsListItem from "src/components/PostsList/PostsListItem";
 import { capitalize } from "src/lib/util";
 
 export const getStaticProps = async () => {
-  const items = (await import('cache/ultimas-entradas-por-etiqueta.json')).default as RegistroItem[];
+  const items = (await import('cache/ultima-entrada-por-etiqueta.json')).default as RegistroItem[];
 
   return {
     props: {
@@ -59,10 +59,11 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 
   const { items } = props;
 
+  // prefetch sub-pages
   items.map(el =>
     <NextLink
       href={`/fotografia/${el.tipo}`}
-      prefetch
+      prefetch={true}
     />
   );
 

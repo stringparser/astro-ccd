@@ -167,4 +167,22 @@ const imageSize = promisify(imageSizeFn);
   );
 
   console.log('wrote', lastItemsPerEtiqueta.length, 'to', lastItemsPerEtiquetaFilename);
+
+  const lastItemPerEtiquetaFilename = 'cache/ultima-entrada-por-etiqueta.json';
+  const lastItemPerEtiquetaJSON = lastItemsPerEtiqueta
+    .map(el => {
+      const [entrada] = el.entradas;
+      return {
+        ...el,
+        entradas: [entrada]
+      }
+    })
+  ;
+
+  await fs.writeFile(
+    lastItemPerEtiquetaFilename,
+    JSON.stringify(lastItemPerEtiquetaJSON,  null, 2)
+  );
+
+  console.log('wrote', lastItemPerEtiquetaJSON.length, 'to', lastItemPerEtiquetaFilename);
 })();
