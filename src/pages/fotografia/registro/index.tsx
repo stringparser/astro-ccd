@@ -13,7 +13,6 @@ type RegistroItemColumn = {
   width?: number;
   field?: keyof RegistroItem;
   header: string;
-  align?: 'one',
   getValue?: (value: RegistroItem) => React.ReactNode;
 };
 

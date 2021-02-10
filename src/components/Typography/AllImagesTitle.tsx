@@ -1,6 +1,8 @@
-import { Box, BoxProps, makeStyles, Typography } from "@material-ui/core";
-import { ChevronRight } from "@material-ui/icons";
 import clsx from "clsx";
+import { ChevronRight } from "@material-ui/icons";
+import { Box, BoxProps, makeStyles, Typography } from "@material-ui/core";
+
+import H1 from "src/components/Typography/H1";
 import NavigationLink from "src/components/Navigation/NavigationLink";
 
 const useStyles = makeStyles(theme => ({
@@ -27,7 +29,12 @@ const useStyles = makeStyles(theme => ({
 
 export type AllImagesTitleProps = BoxProps;
 
-const AllImagesTitle: React.FC<AllImagesTitleProps> = ({ title, className, ...props }) => {
+const AllImagesTitle: React.FC<AllImagesTitleProps> = ({
+  component = H1,
+  title,
+  className,
+  ...props
+}) => {
   const classes = useStyles();
 
   return (
@@ -53,6 +60,6 @@ const AllImagesTitle: React.FC<AllImagesTitleProps> = ({ title, className, ...pr
       </Box>
     </Box>
   );
-}
+};
 
 export default AllImagesTitle;
