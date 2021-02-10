@@ -9,6 +9,9 @@ import { mapTagTextTitle, useIsomorphicLayoutEffect } from 'src/lib/util';
 
 import H1 from 'src/components/Typography/H1';
 import PostsList from 'src/components/PostsList/PostsList';
+import NavigationLink from 'src/components/Navigation/NavigationLink';
+import { ChevronRight } from '@material-ui/icons';
+import AllImagesTitle from 'src/components/Typography/AllImagesTitle';
 
 export type EntradasPorEtiquetaParams = {
   etiqueta: string;
@@ -147,9 +150,10 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
         <title>OACM Fuensanta | {tagTextTitle}</title>
       </Head>
 
-      <H1>
-        {tagTextTitle}
-      </H1>
+      <AllImagesTitle
+        title={tagTextTitle}
+        component={H1}
+      />
 
       <Box
         width="100%"

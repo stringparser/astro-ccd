@@ -1,14 +1,17 @@
 import Head from "next/head";
 import React from "react";
 import NextLink from "next/link";
-import { Box, makeStyles } from "@material-ui/core";
+import { Box, makeStyles, Typography } from "@material-ui/core";
 import { InferGetStaticPropsType } from "next";
 
 import { RegistroItem } from "types";
 
 import H1 from "src/components/Typography/H1";
 import PostsListItem from "src/components/PostsList/PostsListItem";
-import { capitalize, mapTagTextTitle } from "src/lib/util";
+import { mapTagTextTitle } from "src/lib/util";
+import NavigationLink from "src/components/Navigation/NavigationLink";
+import { ChevronRight } from "@material-ui/icons";
+import AllImagesTitle from "src/components/Typography/AllImagesTitle";
 
 export const getStaticProps = async () => {
   const items = (await import('cache/ultima-entrada-por-etiqueta.json')).default as RegistroItem[];
@@ -61,9 +64,10 @@ const Fotografia: React.FC<FotografiaProps> = props => {
         <title>OACM Fuensanta | Fotografía</title>
       </Head>
 
-      <H1>
-        Fotografía
-      </H1>
+      <AllImagesTitle
+        title="Fotografía"
+        component={H1}
+      />
 
       <Box className={classes.postsItemsContainer}>
         {items.map(el => {

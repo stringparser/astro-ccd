@@ -44,7 +44,7 @@ const ImagenObras = () => {
 
   return (
     <Image
-      src={require('@public/img/obras.gif').default}
+      src={'@public/img/obras.gif'}
       link={false}
       isBig={false}
       layout="fill"
