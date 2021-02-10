@@ -46,7 +46,7 @@ const columns: RegistroItemColumn[] = [
     }
   },
   {
-    header: 'ÚLTIMA FOTO',
+    header: 'ACTUALIZADO',
     getValue(el) {
       const href = mapRegistroURL(el);
       const { urlId } = el;
