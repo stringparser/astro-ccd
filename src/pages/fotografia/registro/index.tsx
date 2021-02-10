@@ -49,7 +49,6 @@ const columns: RegistroItemColumn[] = [
     header: 'ACTUALIZADO',
     getValue(el) {
       const href = mapRegistroURL(el);
-      const { urlId } = el;
 
       const [entrada] = el.entradas.slice()
         .filter(el => el.date)
