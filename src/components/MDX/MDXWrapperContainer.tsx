@@ -15,23 +15,18 @@ export type MDXChild = {
 };
 
 const mapChildren = (input: any[], key = '') => {
-  // @ts-ignore
-  if (input == null || input.type == null || input.props == null) {
-    return input;
-  }
-
   const children = Array.isArray(input)
     ? input
     : [input]
   ;
 
   return children.map((el, index) => {
-    const child = el.props?.children;
-    const elType = el.props?.mdxType || el.props?.originalType;
+    const child = el?.props?.children || el;
+    const elType = el?.props?.mdxType || el.props?.originalType;
 
     if (elType !== 'h1' && typeof child === 'string' && (/^\s*#{2,}/.test(child) || /h(\d)/.test(elType))) {
       return (
-        <H2 key={key ? `${key}.${index}` : index} style={{textAlign: 'center', margin: '0 auto', color: 'red'}}>
+        <H2 key={key ? `${key}.${index}` : index}>
           {child.replace(/^[\s#]+/, '')}
         </H2>
       );

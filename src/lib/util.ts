@@ -1,3 +1,6 @@
+import { CSSProperties } from '@material-ui/core/styles/withStyles';
+import latinize from 'latinize';
+import { NextRouter } from 'next/router';
 import { useEffect, useLayoutEffect } from "react";
 import { RegistroItemEntrada, RegistroItem } from "types";
 
@@ -20,7 +23,33 @@ export const mesMap = {
   diciembre: '12',
 };
 
+type IProps = Parameters<React.FC>[0] & {
+  style?: React.CSSProperties;
+}
 
+export const mapIdPropsFromChildren = (props: IProps, router: NextRouter) => {
+  const { style, children } = props;
+
+  const id = typeof children === 'string'
+    ? `${router.pathname.slice(1).split('/').shift()}-${mapTextToUrl(children)}`
+    : undefined
+  ;
+
+  if (id == null) {
+    return {};
+  }
+
+  return {
+    id,
+    style: {
+      cursor: 'pointer',
+      ...style
+    },
+    onClick() {
+      router.replace({ hash: id }, undefined, { shallow: true });
+    }
+  };
+}
 
 export const fechaTextRE = new RegExp([
   '(\\d{1,2})',
@@ -40,7 +69,7 @@ export const mapTextToUrl = (input: string) => {
     || input
   ;
 
-  return (text
+  return latinize(text
     .replace(/[\/()]+/g, '')
     .trim()
     .replace(/[\s,._+]+/g, '-')
@@ -58,6 +87,7 @@ export const mapTextToUrl = (input: string) => {
       return $0;
     })
     .replace(/-[-]+/g, '-')
+
   );
 };
 

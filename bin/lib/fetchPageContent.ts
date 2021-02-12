@@ -235,6 +235,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
         .map(props => {
           return {
             ...props,
+            label,
             isIndex: Object.values(PageBasename).includes(props.urlId as PageBasename),
           };;
         })
