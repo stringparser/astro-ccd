@@ -44,18 +44,24 @@ const useStyles = makeStyles(theme => ({
       borderBottom: 'none',
     }
   },
-  content: {
+  content: (props: AppProps) => ({
     margin: '1rem 1%',
-    textAlign: 'left',
 
     [theme.breakpoints.up('sm')]: {
       margin: '2rem 5%'
+    },
+
+    '& p': {
+      color: props.router.route.includes('/fotografia/')
+        ? '#ff0000'
+        : 'inherit'
+      ,
     }
-  }
+  }),
 }));
 
 const WebApp: React.FC<AppProps> = (props: AppProps) => {
-  const classes = useStyles();
+  const classes = useStyles(props);
   const { Component, pageProps, router } = props;
 
   useEffect(() => {

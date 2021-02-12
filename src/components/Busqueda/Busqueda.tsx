@@ -42,31 +42,20 @@ const filterOptions = (options: SearchItem[], state: FilterOptionsState<SearchIt
 
   const result = options
     .filter(searchRE
-      ? ({ tag, objeto, titulo }: SearchItem) => (
+      ? ({ tag, urlId, objeto, titulo }: SearchItem) => (
         tag && searchRE.test(tag)
+        || urlId && searchRE.test(urlId)
         || objeto && searchRE.test(objeto)
         || titulo && searchRE.test(titulo)
       )
-      : ({ tag, objeto, titulo }: SearchItem) => (
+      : ({ tag, urlId, objeto, titulo }: SearchItem) => (
         tag && tag.includes(inputValue)
+        || urlId && urlId.includes(inputValue)
         || objeto && objeto.includes(inputValue)
         || titulo && titulo.includes(inputValue)
       )
     )
   ;
-
-  if (result.length === 1) {
-    const [object] = result;
-    const objectType = object.tipo;
-    const objetUrlId = object.urlId;
-
-    return result.concat(
-      searchItems.filter(el =>
-        el.urlId !== objetUrlId
-        && el.tipo === objectType
-      )
-    );
-  }
 
   return result;
 };

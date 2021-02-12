@@ -79,9 +79,10 @@ const SeguirLeyendoContainer: React.FC = () => {
   return (
     <Box className={classes.root}>
       <H2 style={{
-        maxWidth: '50vw',
         margin: '0.5rem auto',
-        whiteSpace: 'pre-line'
+        maxWidth: '300px',
+        whiteSpace: 'pre-line',
+        lineHeight: '1.5rem',
       }}>
         Fotografía
         <span> de </span>

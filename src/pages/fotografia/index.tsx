@@ -5,10 +5,10 @@ import { Box, makeStyles } from "@material-ui/core";
 import { InferGetStaticPropsType } from "next";
 
 import { RegistroItem } from "types";
+import { mapTagTextTitle } from "src/lib/util";
 
 import H1 from "src/components/Typography/H1";
 import PostsListItem from "src/components/PostsList/PostsListItem";
-import { capitalize, mapTagTextTitle } from "src/lib/util";
 
 export const getStaticProps = async () => {
   const items = (await import('cache/ultima-entrada-por-etiqueta.json')).default as RegistroItem[];
@@ -31,12 +31,6 @@ const useStyles = makeStyles(theme => ({
     flexWrap: 'wrap',
     alignItems: 'start',
     justifyContent: 'center',
-  },
-  postsListItem: {
-
-    [theme.breakpoints.up('md')]: {
-      width: '50%',
-    },
   },
 }));
 
@@ -84,7 +78,6 @@ const Fotografia: React.FC<FotografiaProps> = props => {
               key={href}
               href={href}
               item={item}
-              className={classes.postsListItem}
             />
           )
         })}

@@ -118,6 +118,7 @@ const imageSize = promisify(imageSizeFn);
       : acc.concat(el.tipo)
     ;
   }, [])
+  .filter(v => v && v.trim())
   .sort();
 
   await fs.writeFile(

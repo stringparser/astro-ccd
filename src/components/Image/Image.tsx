@@ -57,6 +57,14 @@ const useStyles = makeStyles(theme => ({
     '& > :last-child': {
       borderColor: 'royalblue',
     }
+  },
+  noBorder: {
+    '& > :last-child': {
+      borderColor: 'transparent',
+    }
+  },
+  isSmall: {
+    maxWidth: '300px',
   }
 }));
 
@@ -71,6 +79,8 @@ export type ImageProps = NextImageProps & {
   desc?: string;
   link?: boolean;
   isBig?: boolean;
+  pequeña?: boolean;
+  sinBorde?: boolean;
   fecha?: string;
   className?: string;
   isSelected?: boolean;
@@ -83,6 +93,8 @@ const Image: React.FC<ImageProps> = ({
   src,
   fecha,
   desc,
+  pequeña,
+  sinBorde,
   className,
   isSelected,
   imageClassName,
@@ -116,7 +128,9 @@ const Image: React.FC<ImageProps> = ({
         classes.root,
         className,
         isBig && classes.imageBig,
-        isSelected && classes.imageSelected
+        pequeña && classes.isSmall,
+        isSelected && classes.imageSelected,
+        sinBorde && classes.noBorder,
       )}
     >
       {desc && (

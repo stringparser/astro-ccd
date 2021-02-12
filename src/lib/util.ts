@@ -1,4 +1,3 @@
-import { CSSProperties } from '@material-ui/core/styles/withStyles';
 import latinize from 'latinize';
 import { NextRouter } from 'next/router';
 import { useEffect, useLayoutEffect } from "react";
@@ -30,14 +29,16 @@ type IProps = Parameters<React.FC>[0] & {
 export const mapIdPropsFromChildren = (props: IProps, router: NextRouter) => {
   const { style, children } = props;
 
-  const id = typeof children === 'string'
-    ? `${router.pathname.slice(1).split('/').shift()}-${mapTextToUrl(children)}`
-    : undefined
-  ;
-
-  if (id == null) {
+  if (typeof children !== 'string') {
     return {};
   }
+
+  const [base, page, urlId] = router.asPath.slice(1).split('/');
+
+  const id = /\/registro\//.test(router.route)
+    ? `${urlId}-${mapTextToUrl(children)}`
+    : `${[base, page].filter(v => v).join('-')}-${mapTextToUrl(children)}`
+  ;
 
   return {
     id,
@@ -154,6 +155,22 @@ export const mapTagTextTitle = (value: string) => {
   }
 };
 
+export const inverseMesMap = [
+  null,
+  'Enero',
+  'Febrero',
+  'Marzo',
+  'Abril',
+  'Mayo',
+  'Junio',
+  'Julio',
+  'Agosto',
+  'Septiembre',
+  'Octubre',
+  'Noviembre',
+  'Diciembre'
+];
+
 export const mapFormattedDate = (value: string) => {
   if (fechaTextRE.test(value)) {
     return value;
@@ -162,7 +179,16 @@ export const mapFormattedDate = (value: string) => {
   return (/(\d{4})(\d{2})(\d{2})?/.exec(value) || [])
     .slice(1)
     .reverse()
-    .join('/')
-    .replace(/^00\//, '')
+    .map((el, index) => {
+      const num = parseInt(el, 10);
+
+      if (index === 1) {
+        return inverseMesMap[num] || num;
+      }
+
+      return num;
+    })
+    .filter(v => v)
+    .join(' de ')
   ;
 };
