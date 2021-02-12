@@ -1,8 +1,9 @@
 import fs from 'fs-extra';
 import path from 'path';
+import { mapMDX, mapJSON } from './lib/util';
 import { fetchPageContent } from './lib/fetchPageContent';
 import { PageBasename, PageItemContents } from '../types';
-import { fechaTextRE, mapMDX, mapJSON, urlMap } from './lib/util';
+import { fechaTextRE } from 'src/lib/util';
 
 Promise.all([
   fetchPageContent('https://astro-ccd.com/fuensanta-3'),
@@ -167,7 +168,7 @@ Promise.all([
       ;
 
       if (await fs.pathExists(filename)) {
-        console.log('file exists, skipping', filename);
+        console.log('file exists', path.relative(process.cwd(), filename));
         return Promise.resolve();
       }
 

@@ -42,6 +42,11 @@ const useStyles = makeStyles(theme => ({
       margin: '0 auto !important',
       // @ts-ignore
       position: 'unset !important',
+    },
+
+    '&:hover > :last-child': {
+      opacity: .95,
+      borderColor: 'royalblue',
     }
   },
   imageFecha: {
@@ -63,6 +68,7 @@ export const mapImageSrc = (src: string) => {
 };
 
 export type ImageProps = NextImageProps & {
+  desc?: string;
   link?: boolean;
   isBig?: boolean;
   fecha?: string;
@@ -76,6 +82,7 @@ const Image: React.FC<ImageProps> = ({
   isBig = true,
   src,
   fecha,
+  desc,
   className,
   isSelected,
   imageClassName,
@@ -112,7 +119,12 @@ const Image: React.FC<ImageProps> = ({
         isSelected && classes.imageSelected
       )}
     >
-      {formattedFecha && (
+      {desc && (
+        <p style={{margin: '0.5rem auto', opacity: .8, textAlign: 'center'}}>
+          {desc} ({formattedFecha})
+        </p>
+      )}
+      {!desc && formattedFecha && (
         <Typography className={classes.imageFecha}>
           {formattedFecha}
         </Typography>
@@ -122,6 +134,7 @@ const Image: React.FC<ImageProps> = ({
           ? 'intrinsic'
           : 'fill' as 'fixed' // fixes stupid bug with types
         }
+        title={isBig ? 'hacer click para ampliar' : null}
         quality={100}
         loading="lazy"
         objectFit="contain"

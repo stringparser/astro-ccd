@@ -1,15 +1,66 @@
 import Head from "next/head";
 import React from "react";
-import { useRouter } from "next/router";
 import { Box } from "@material-ui/core";
+import { useRouter } from "next/router";
+import H2 from "src/components/Typography/H2";
 
-const MDXWrapperContainer: React.FC = ({ children, ...rest }) => {
+export type MDXChild = {
+  key: string | null;
+  type?: React.ElementType;
+  props?: {
+    mdxType: string;
+    children: string | MDXChild | MDXChild[];
+    originalType: string;
+  }
+};
+
+const mapChildren = (input: any[], key = '') => {
+  // @ts-ignore
+  if (input == null || input.type == null || input.props == null) {
+    return input;
+  }
+
+  const children = Array.isArray(input)
+    ? input
+    : [input]
+  ;
+
+  return children.map((el, index) => {
+    const child = el.props?.children;
+    const elType = el.props?.mdxType || el.props?.originalType;
+
+    if (elType !== 'h1' && typeof child === 'string' && (/^\s*#{2,}/.test(child) || /h(\d)/.test(elType))) {
+      return (
+        <H2 key={key ? `${key}.${index}` : index} style={{textAlign: 'center', margin: '0 auto', color: 'red'}}>
+          {child.replace(/^[\s#]+/, '')}
+        </H2>
+      );
+    }
+
+    if (Array.isArray(child)) {
+      return mapChildren(child, `${index}`);
+    } else if (typeof child === 'string') {
+      return el;
+    }
+
+    return React.cloneElement(el as any, {
+      ...el.props,
+      key: `${index}`
+    });
+  });
+};
+
+export type MDXWrapperContainerProps = {
+  children: MDXChild[];
+};
+
+const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...rest }) => {
   const router = useRouter();
 
   if (router.route === '/') {
     return (
       <Box {...rest}>
-        {children}
+        {mapChildren(children)}
       </Box>
     );
   }
@@ -33,14 +84,14 @@ const MDXWrapperContainer: React.FC = ({ children, ...rest }) => {
         <Head>
           <meta property="og:description" content={`${description}`} />
         </Head>
-        {children}
+        {mapChildren(children)}
       </Box>
     );
   }
 
   return (
     <Box {...rest}>
-      {children}
+      {mapChildren(children)}
     </Box>
   );
 };

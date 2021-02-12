@@ -1,4 +1,4 @@
-import { mesMap } from "../../src/lib/util";
+import { fechaTextRE, mesMap } from "../../src/lib/util";
 import { PageBasename, PageItemProps } from "../../types";
 
 export const urlMap = {
@@ -59,14 +59,6 @@ export const mapMDX = (el: PageItemProps) => {
     }
   }
 }
-
-export const fechaTextRE = new RegExp([
-  '(\\d{1,2})',
-  '(?:\\s*(de)?\\s*|[-_\\s]*)',
-  `(${Object.keys(mesMap).join('|')})`,
-  '(?:\\s*(de)?\\s*|[-_\\s]*)',
-  '(\\d{4})'
-].join(''), 'i');
 
 const fechaNombreArchivoRE = new RegExp([
   '(\\d{1,2})',

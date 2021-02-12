@@ -20,6 +20,16 @@ export const mesMap = {
   diciembre: '12',
 };
 
+
+
+export const fechaTextRE = new RegExp([
+  '(\\d{1,2})',
+  '(?:\\s*(de)?\\s*|[-_\\s]*)',
+  `(${Object.keys(mesMap).join('|')})`,
+  '(?:\\s*(de)?\\s*|[-_\\s]*)',
+  '(\\d{4})'
+].join(''), 'i');
+
 export const mapTextToUrl = (input: string) => {
 
   const text =
@@ -115,6 +125,10 @@ export const mapTagTextTitle = (value: string) => {
 };
 
 export const mapFormattedDate = (value: string) => {
+  if (fechaTextRE.test(value)) {
+    return value;
+  }
+
   return (/(\d{4})(\d{2})(\d{2})?/.exec(value) || [])
     .slice(1)
     .reverse()

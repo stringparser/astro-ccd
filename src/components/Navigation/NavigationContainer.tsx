@@ -135,6 +135,10 @@ const useStyles = makeStyles(theme => ({
       padding: '1rem 2rem',
     },
 
+    [theme.breakpoints.up('sm')]: {
+      marginBottom: '-1px',
+    },
+
     ...opacityMixin
   },
 

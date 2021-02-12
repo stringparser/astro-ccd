@@ -85,6 +85,10 @@ const defaultTheme = createMuiTheme({
           color: '#ff0000',
         },
 
+        p: {
+          maxWidth: '765px',
+        },
+
         hr: {
           margin: '4rem 0 0 0',
           borderColor: 'rgba(255, 255, 255, 0.2)',

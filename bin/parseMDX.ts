@@ -129,7 +129,7 @@ export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
 
   const vFile = await read(filename);
 
-  return new Promise((resolve) => {
+  return await new Promise((resolve) => {
     remark()
       .use(mdx)
       .use(() => (tree: RemarkNode) => {
