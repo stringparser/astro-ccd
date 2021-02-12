@@ -1,5 +1,5 @@
 import safeRegex from "safe-regex";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { SearchOutlined } from "@material-ui/icons";
 import Autocomplete, { AutocompleteProps } from '@material-ui/lab/Autocomplete';
 import { InputAdornment, makeStyles, TextField, TextFieldProps } from "@material-ui/core";
@@ -7,13 +7,27 @@ import { InputAdornment, makeStyles, TextField, TextFieldProps } from "@material
 import { RegistroItem } from "types";
 
 import { BUSQUEDA_ID } from "src/components/Busqueda/constants";
-import registroObservaciones from "cache/registro-metadata.json";
+import registroMetadata from "cache/registro-metadata.json";
+import { FilterOptionsState } from "@material-ui/lab/useAutocomplete";
 
-export type SearchItem = Pick<RegistroItem, 'urlId' | 'titulo' | 'objeto'>;
+export type SearchItem = Pick<RegistroItem, 'urlId' | 'tipo' | 'titulo' | 'objeto'> & {
+  tag: string;
+};
 
-const mapOptions = (inputValue: string): SearchItem[] => {
+const searchItems = registroMetadata
+  .map(el => {
+    return {
+      ...el,
+      tag: el.tipo.replace(/[-_]+/g, ' ')
+    };
+  })
+;
+
+const filterOptions = (options: SearchItem[], state: FilterOptionsState<SearchItem>): SearchItem[] => {
+  const { inputValue } = state;
+
   if (!inputValue) {
-    return [];
+    return searchItems.slice(0, 10);
   }
 
   const testSource = inputValue
@@ -22,22 +36,39 @@ const mapOptions = (inputValue: string): SearchItem[] => {
   ;
 
   const searchRE = safeRegex(testSource)
-    ? new RegExp(testSource, 'i')
+    ? new RegExp(testSource, 'gi')
     : null
   ;
 
-  return registroObservaciones
+  const result = options
     .filter(searchRE
-      ? ({ objeto, titulo }: SearchItem) => (
-        objeto && searchRE.test(objeto)
+      ? ({ tag, objeto, titulo }: SearchItem) => (
+        tag && searchRE.test(tag)
+        || objeto && searchRE.test(objeto)
         || titulo && searchRE.test(titulo)
       )
-      : ({ objeto, titulo }: SearchItem) => (
-        objeto && objeto.includes(inputValue)
+      : ({ tag, objeto, titulo }: SearchItem) => (
+        tag && tag.includes(inputValue)
+        || objeto && objeto.includes(inputValue)
         || titulo && titulo.includes(inputValue)
       )
     )
   ;
+
+  if (result.length === 1) {
+    const [object] = result;
+    const objectType = object.tipo;
+    const objetUrlId = object.urlId;
+
+    return result.concat(
+      searchItems.filter(el =>
+        el.urlId !== objetUrlId
+        && el.tipo === objectType
+      )
+    );
+  }
+
+  return result;
 };
 
 const getOptionLabel = (item: SearchItem) => (
@@ -45,21 +76,24 @@ const getOptionLabel = (item: SearchItem) => (
   || item.objeto
 );
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   root: {
     width: '250px',
     margin: '0',
   },
-  textField: {
-    margin: '0',
+  inputRoot: {
+    '&.MuiInputBase-root.MuiOutlinedInput-root.MuiOutlinedInput-adornedEnd': {
+      margin: 0,
+      paddingRight: theme.spacing(1.5),
+    }
   }
 }));
 
 type DefaultAutocompleteProps = AutocompleteProps<
-  RegistroItem,
+  SearchItem,
   false,
   true,
-  true
+  false
 >;
 
 export type BusquedaProps = {
@@ -72,63 +106,63 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
   const [value, setValue] = useState<SearchItem>(null);
   const [inputValue, setInputValue] = useState('');
 
-  const options = mapOptions(inputValue);
+  const handleKeyDown = useCallback(
+    (ev: React.KeyboardEvent<HTMLInputElement>) => {
+      if (onChange && ev.key === 'Enter' && value) {
+        onChange(value);
+      }
+    },
+    [value, onChange]
+  );
 
-  const handleKeyDown = (ev: React.KeyboardEvent<HTMLInputElement>) => {
-    const selectedValue = value || options[0];
+  const handleInputChange: TextFieldProps['onChange'] = useCallback(
+    (ev) => setInputValue(ev.target.value),
+    [setInputValue]
+  );
 
-    if (onChange && ev.key === 'Enter' && selectedValue) {
-      onChange(selectedValue);
-    }
-  }
+  const handleAutoCompleteChange: DefaultAutocompleteProps['onChange'] = useCallback(
+    (ev, selectedValue) => {
+      setValue(selectedValue);
 
-  const handleInputChange: TextFieldProps['onChange'] = (ev) => {
-    setInputValue(ev.target.value);
-  };
-
-  const handleAutoCompleteChange: DefaultAutocompleteProps['onChange'] = (ev, value) => {
-    if (typeof value === 'string') {
-      return;
-    }
-
-    setValue(value);
-
-    if (onChange) {
-      onChange(value);
-    }
-  };
+      if (selectedValue && onChange) {
+        onChange(selectedValue);
+      }
+    },
+    [setValue, onChange]
+  );
 
   const renderInput = (params: Parameters<DefaultAutocompleteProps['renderInput']>[0]) => (
-    <TextField
-      {...params}
-      label="Búsqueda"
-      variant="outlined"
-      className={classes.textField}
-      InputProps={{
-        ...params.InputProps,
-        type: 'search',
-        value: inputValue,
-        onChange: handleInputChange,
-        onKeyDown: handleKeyDown,
-        endAdornment: (
-          <InputAdornment position="end">
-            <SearchOutlined />
-          </InputAdornment>
-        ),
-      }}
-    />
-  );
+      <TextField
+        {...params}
+        label="Búsqueda"
+        variant="outlined"
+        InputProps={{
+          ...params.InputProps,
+          type: 'search',
+          value: inputValue,
+          onChange: handleInputChange,
+          onKeyDown: handleKeyDown,
+          endAdornment: (
+            <InputAdornment position="end">
+              <SearchOutlined />
+            </InputAdornment>
+          ),
+        }}
+      />
+    )
+  ;
 
   return (
     <Autocomplete
       id={BUSQUEDA_ID}
       value={value}
-      options={options}
-      freeSolo
+      options={searchItems}
       autoSelect
-      disableClearable
-      className={classes.root}
+      autoComplete
+      autoHighlight
+      classes={classes}
       renderInput={renderInput}
+      filterOptions={filterOptions}
       getOptionLabel={getOptionLabel}
       onChange={handleAutoCompleteChange}
     />
