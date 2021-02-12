@@ -211,11 +211,6 @@ Promise.all([
               '\nexport const meta = {',
                 page.label && `\ttipo: '${page.label}',`,
                 page.objeto && `\tobjeto: '${page.objeto === 'sol' ? 'Sol' : page.objeto}',`,
-                page.title && `\ttitulo: '${
-                  pageTitle === 'sol' && 'Sol'
-                  || pageTitle !== page.objeto && pageTitle
-                  || ''
-                }',`,
               '};\n',
               pageTitle && `# ${pageTitle}\n`,
               mergedContent
