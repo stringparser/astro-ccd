@@ -58,12 +58,12 @@ const SeguirLeyendoContainer: React.FC = () => {
   }
 
   const urlId = router.pathname.replace(/\/$/, '').split('/').pop();
+  const objeto = registroSoloUltimaFoto.find(el => el.urlId === urlId);
 
-  if (!urlId) {
+  if (!urlId || !objeto) {
     return null;
   }
 
-  const objeto = registroSoloUltimaFoto.find(el => el.urlId === urlId);
   const etiqueta = objeto.tipo || '';
   const etiquetaText = mapTagTextTitle(etiqueta);
 
