@@ -149,8 +149,7 @@ export const capitalize = (value: string) => {
 
 export const mapTagTextTitle = (value: string) => {
   const text = value.toLowerCase()
-    .replace(/\s+/g, ' ')
-    .replace(/[-]/g, ' ')
+    .replace(/[_-\s]+/g, ' ')
   ;
 
   switch (text) {

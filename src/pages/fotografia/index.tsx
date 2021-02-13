@@ -7,9 +7,8 @@ import { InferGetStaticPropsType } from "next";
 import { RegistroItem } from "types";
 import { mapTagTextTitle } from "src/lib/util";
 
-import H1 from "src/components/Typography/H1";
 import PostsListItem from "src/components/PostsList/PostsListItem";
-import AllImagesTitle from "src/components/Typography/AllImagesTitle";
+import PostsListTitle from "src/components/PostsList/PostsListTitle";
 
 export const getStaticProps = async () => {
   const items = (await import('cache/ultima-entrada-por-etiqueta.json')).default as RegistroItem[];
@@ -51,14 +50,13 @@ const Fotografia: React.FC<FotografiaProps> = props => {
   );
 
   return (
-    <Box>
+    <>
       <Head>
         <title>OACM Fuensanta | Fotografía</title>
       </Head>
 
-      <AllImagesTitle
+      <PostsListTitle
         title="Fotografía"
-        component={H1}
       />
 
       <Box className={classes.postsItemsContainer}>
@@ -84,7 +82,7 @@ const Fotografia: React.FC<FotografiaProps> = props => {
           )
         })}
       </Box>
-    </Box>
+    </>
   );
 };
 

@@ -19,10 +19,6 @@ const useStyles = makeStyles(theme => ({
       padding: 'unset',
     },
 
-    '& a,p,svg': {
-      color: 'royalblue',
-    },
-
     [theme.breakpoints.up('md')]: {
       flexDirection: 'row',
       justifyContent: 'space-between',
@@ -45,7 +41,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
   },
   linkContent: {
-    color: theme.palette.common.white,
+    color: 'royalblue',
 
     [theme.breakpoints.up('sm')]: {
       display: 'flex',
@@ -59,10 +55,9 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-export type AllImagesTitleProps = BoxProps;
+export type PostsListTitleProps = Omit<BoxProps, 'component'>;
 
-const AllImagesTitle: React.FC<AllImagesTitleProps> = ({
-  component: TitleComponent = H1,
+const PostsListTitle: React.FC<PostsListTitleProps> = ({
   title,
   children,
   className,
@@ -76,9 +71,9 @@ const AllImagesTitle: React.FC<AllImagesTitleProps> = ({
       className={clsx(classes.root, className)}
     >
       <Box className={classes.left}>
-        <TitleComponent>
+        <H1>
           {title}
-        </TitleComponent>
+        </H1>
 
         <NavigationLink
           href="/fotografia/registro"
@@ -97,4 +92,4 @@ const AllImagesTitle: React.FC<AllImagesTitleProps> = ({
   );
 };
 
-export default AllImagesTitle;
+export default PostsListTitle;

@@ -66,6 +66,10 @@ const useStyles = makeStyles(theme => ({
     cursor: 'pointer',
   },
   disabled: {
+    '& .MuiChip-label': {
+      padding: 0,
+    },
+
     borderColor: 'transparent',
   }
 }));

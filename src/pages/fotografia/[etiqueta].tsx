@@ -7,10 +7,9 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { RegistroItem } from 'types';
 import { mapTagTextTitle, useIsomorphicLayoutEffect } from 'src/lib/util';
 
-import H1 from 'src/components/Typography/H1';
 import Alert from '@material-ui/lab/Alert/Alert';
 import PostsList from 'src/components/PostsList/PostsList';
-import AllImagesTitle from 'src/components/Typography/AllImagesTitle';
+import PostsListTitle from 'src/components/PostsList/PostsListTitle';
 import ObservadoresSupernovas from 'src/components/Logo/ObservadoresSupernovas';
 
 export type EntradasPorEtiquetaParams = {
@@ -49,19 +48,11 @@ export const getStaticProps: GetStaticProps<EntradasPorEtiquetaProps, EntradasPo
         items,
         etiqueta,
       },
-      revalidate: false,
     };
   }
 ;
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    margin: '0 1rem',
-
-    [theme.breakpoints.up('md')]: {
-      margin: '0 2rem',
-    }
-  },
   chip: {
     margin: '0.25rem',
     textTransform: 'capitalize',
@@ -145,20 +136,21 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
   const tagTextTitle = mapTagTextTitle(etiqueta);
 
   return (
-    <Box className={classes.root}>
+    <>
       <Head>
-        <title>OACM Fuensanta | {tagTextTitle}</title>
+        <title>
+          OACM Fuensanta | {tagTextTitle}
+        </title>
       </Head>
 
-      <AllImagesTitle
+      <PostsListTitle
         title={tagTextTitle}
-        component={H1}
       >
         {/supernova/i.test(tagTextTitle)
           ? <ObservadoresSupernovas />
           : null
         }
-      </AllImagesTitle>
+      </PostsListTitle>
 
       {items.length > 6 && (<Box
         width="100%"
@@ -210,7 +202,7 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
         items={items}
         selected={selectedObjeto}
       />
-    </Box>
+    </>
   );
 };
 

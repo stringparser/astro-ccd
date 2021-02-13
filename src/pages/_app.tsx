@@ -51,11 +51,12 @@ const useStyles = makeStyles(theme => ({
       margin: '2rem 5%'
     },
 
+    color: props.router.route.includes('/fotografia/')
+      ? '#ff0000'
+      : 'inherit'
+    ,
+
     '& p': {
-      color: props.router.route.includes('/fotografia/')
-        ? '#ff0000'
-        : 'inherit'
-      ,
       maxWidth: props.router.route.includes('/fotografia/')
         ? undefined
         : '90%'

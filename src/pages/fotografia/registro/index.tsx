@@ -96,7 +96,7 @@ const RegistroFotografías: React.FC<RegistroFotografíasProps> = (props) => {
   ;
 
   return (
-    <Box>
+    <>
       <H1>
         Registro completo
       </H1>
@@ -153,7 +153,7 @@ const RegistroFotografías: React.FC<RegistroFotografíasProps> = (props) => {
           </TableBody>
         </Table>
       </TableContainer>
-    </Box>
+    </>
   )
 };
 
