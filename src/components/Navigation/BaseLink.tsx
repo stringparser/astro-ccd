@@ -24,6 +24,7 @@ const BaseLink: React.FC<NavbarMenuLinkProps> = (props) => {
   const {
     href,
     text,
+    target,
     className,
     onClick,
     ...rest
@@ -34,13 +35,14 @@ const BaseLink: React.FC<NavbarMenuLinkProps> = (props) => {
   return (
     <MuiLink
       href={href}
+      target={target || '_blank'}
       onClick={onClick}
       className={clsx(classes.root, className)}
       {...rest}
     >
       {text || props.children}
     </MuiLink>
-  )
+  );
 }
 
 export default BaseLink;

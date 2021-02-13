@@ -135,11 +135,16 @@ const useStyles = makeStyles(theme => ({
       padding: '1rem 2rem',
     },
 
+    [theme.breakpoints.up('sm')]: {
+      marginBottom: '-1px',
+    },
+
     ...opacityMixin
   },
 
   currentLink: {
     color: theme.palette.text.primary,
+    opacity: 1,
 
     [theme.breakpoints.up('sm')]: {
       borderBottomColor: 'rgb(255, 0, 0, 0.6)',

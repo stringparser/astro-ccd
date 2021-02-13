@@ -82,7 +82,12 @@ const defaultTheme = createMuiTheme({
         },
 
         a: {
-          color: '#ff0000',
+          color: 'currentColor',
+        },
+
+        p: {
+          margin: '0 auto',
+          fontWeight: 'bold',
         },
 
         hr: {

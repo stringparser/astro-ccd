@@ -235,6 +235,7 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
         .map(props => {
           return {
             ...props,
+            label,
             isIndex: Object.values(PageBasename).includes(props.urlId as PageBasename),
           };;
         })
@@ -248,29 +249,12 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
       }
     })
     .then(async (result) => {
-      let countUrlId: Record<string, number> = {};
 
       const updatedItems = await Promise.all<PageItemProps>(result.items
-        .map((el) => {
-          const { urlId } = el;
-
-          if (urlId && el.src) {
-            countUrlId[urlId] = (countUrlId[urlId] || 1) + 1;
-          }
-
-          return el;
-        })
         .map(async (el) => {
           switch (el.type) {
             case 'image': {
               const { urlId } = el;
-
-              const count = countUrlId[urlId] = (countUrlId[urlId] || 2) - 1;
-
-              const dest = el.isIndex
-                ? `public/${result.label}/${path.basename(el.src)}`
-                : `public/registro/${urlId}_${el.fecha}_${count}_${path.basename(el.src)}`
-              ;
 
               const oldFile = path.join('public', 'img', path.basename(el.src));
               const oldFileExists = await fs.pathExists(oldFile);
@@ -280,10 +264,10 @@ export function fetchPageContent(url: string): Promise<ParsedPageContent> {
                 await fs.remove(oldFile);
               }
 
-              return downloadImage(el, dest)
+              return downloadImage(el)
                 .then(el => ({
                   ...el,
-                  dest: dest.replace(/^public\//, '')
+                  dest: el.dest.replace(/^public\//, '')
                 }))
               ;
             }

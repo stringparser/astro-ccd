@@ -5,13 +5,10 @@ import { Box, makeStyles, Typography } from "@material-ui/core";
 import { InferGetStaticPropsType } from "next";
 
 import { RegistroItem } from "types";
-
-import H1 from "src/components/Typography/H1";
-import PostsListItem from "src/components/PostsList/PostsListItem";
 import { mapTagTextTitle } from "src/lib/util";
-import NavigationLink from "src/components/Navigation/NavigationLink";
-import { ChevronRight } from "@material-ui/icons";
-import AllImagesTitle from "src/components/Typography/AllImagesTitle";
+
+import PostsListItem from "src/components/PostsList/PostsListItem";
+import PostsListTitle from "src/components/PostsList/PostsListTitle";
 
 export const getStaticProps = async () => {
   const items = (await import('cache/ultima-entrada-por-etiqueta.json')).default as RegistroItem[];
@@ -35,12 +32,6 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'start',
     justifyContent: 'center',
   },
-  postsListItem: {
-
-    [theme.breakpoints.up('md')]: {
-      width: '50%',
-    },
-  },
 }));
 
 export type FotografiaProps = InferGetStaticPropsType<typeof getStaticProps>;
@@ -59,14 +50,13 @@ const Fotografia: React.FC<FotografiaProps> = props => {
   );
 
   return (
-    <Box>
+    <>
       <Head>
         <title>OACM Fuensanta | Fotografía</title>
       </Head>
 
-      <AllImagesTitle
+      <PostsListTitle
         title="Fotografía"
-        component={H1}
       />
 
       <Box className={classes.postsItemsContainer}>
@@ -88,12 +78,11 @@ const Fotografia: React.FC<FotografiaProps> = props => {
               key={href}
               href={href}
               item={item}
-              className={classes.postsListItem}
             />
           )
         })}
       </Box>
-    </Box>
+    </>
   );
 };
 

@@ -1,17 +1,16 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { Box, Chip, makeStyles } from '@material-ui/core';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Box, Chip, makeStyles, Typography } from '@material-ui/core';
 import React, { useState, useEffect, useCallback } from 'react';
 
 import { RegistroItem } from 'types';
 import { mapTagTextTitle, useIsomorphicLayoutEffect } from 'src/lib/util';
 
-import H1 from 'src/components/Typography/H1';
+import Alert from '@material-ui/lab/Alert/Alert';
 import PostsList from 'src/components/PostsList/PostsList';
-import NavigationLink from 'src/components/Navigation/NavigationLink';
-import { ChevronRight } from '@material-ui/icons';
-import AllImagesTitle from 'src/components/Typography/AllImagesTitle';
+import PostsListTitle from 'src/components/PostsList/PostsListTitle';
+import ObservadoresSupernovas from 'src/components/Logo/ObservadoresSupernovas';
 
 export type EntradasPorEtiquetaParams = {
   etiqueta: string;
@@ -49,19 +48,11 @@ export const getStaticProps: GetStaticProps<EntradasPorEtiquetaProps, EntradasPo
         items,
         etiqueta,
       },
-      revalidate: false,
     };
   }
 ;
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    margin: '0 1rem',
-
-    [theme.breakpoints.up('md')]: {
-      margin: '0 2rem',
-    }
-  },
   chip: {
     margin: '0.25rem',
     textTransform: 'capitalize',
@@ -82,7 +73,7 @@ const useStyles = makeStyles(theme => ({
 const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
   const router = useRouter();
   const classes = useStyles();
-  const etiqueta = (props.etiqueta || '').trim() || router.asPath.split('/').pop();
+  const etiqueta = (props.etiqueta || '').trim() || router.route.split('/').pop();
 
   const { items } = props;
 
@@ -101,7 +92,7 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
 
   useEffect(() => {
     setSelectedObjeto(initialId);
-  }, [initialId])
+  }, [initialId]);
 
   const handleObjetoClick = useCallback(
     (ev: React.MouseEvent<HTMLDivElement>) => {
@@ -145,17 +136,23 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
   const tagTextTitle = mapTagTextTitle(etiqueta);
 
   return (
-    <Box className={classes.root}>
+    <>
       <Head>
-        <title>OACM Fuensanta | {tagTextTitle}</title>
+        <title>
+          OACM Fuensanta | {tagTextTitle}
+        </title>
       </Head>
 
-      <AllImagesTitle
+      <PostsListTitle
         title={tagTextTitle}
-        component={H1}
-      />
+      >
+        {/supernova/i.test(tagTextTitle)
+          ? <ObservadoresSupernovas />
+          : null
+        }
+      </PostsListTitle>
 
-      <Box
+      {items.length > 6 && (<Box
         width="100%"
         height="100px"
         overflow="scroll"
@@ -187,12 +184,25 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
             );
           })
         }
+      </Box>)}
+
+      <Box
+        width="80%"
+        margin="1rem auto"
+      >
+        <Alert
+          severity="info"
+        >
+          Últimas capturas. Fotos anteriores en cada entrada.
+        </Alert>
       </Box>
+
       <PostsList
+        tipo={etiqueta}
         items={items}
         selected={selectedObjeto}
       />
-    </Box>
+    </>
   );
 };
 

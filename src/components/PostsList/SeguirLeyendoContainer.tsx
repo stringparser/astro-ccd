@@ -10,7 +10,7 @@ import registroSoloUltimaFoto from "cache/registro-solo-ultima-fotografia.json";
 
 const useStyles = makeStyles(() => ({
   root: {
-    marginTop: '2rem',
+    margin: '4rem 0 2rem 0',
 
     display: 'flex',
     alignItems: 'center',
@@ -58,38 +58,55 @@ const SeguirLeyendoContainer: React.FC = () => {
   }
 
   const urlId = router.pathname.replace(/\/$/, '').split('/').pop();
+  const objeto = registroSoloUltimaFoto.find(el => el.urlId === urlId);
 
-  if (!urlId) {
+  if (!urlId || !objeto) {
     return null;
   }
 
-  const objeto = registroSoloUltimaFoto.find(el => el.urlId === urlId);
-  const etiqueta = objeto.tipo || '';
-  const etiquetaText = mapTagTextTitle(etiqueta);
+  const etiquetas = (objeto.tipo || '').split(',');
+  const etiquetaText = mapTagTextTitle(etiquetas.join(', '));
 
   const filteredItems = registroSoloUltimaFoto
-    .filter(el =>
-      el.tipo === etiqueta
-      && el.urlId !== urlId
-    )
+    .filter(el => {
+      if (el.urlId === urlId) {
+        return false;
+      }
+      const parts = el.tipo.split(',');
+
+      return parts.length == etiquetas.length
+        ? parts.find(el => etiquetas.includes(el))
+        : false
+      ;
+    })
     .sort(ordenarPorFecha)
     .slice(0, 3)
+  ;
+
+  if (filteredItems.length === 0) {
+    return null;
+  }
+
+  const tipo = typeof router.query.tipo === 'string'
+    ? router.query.tipo
+    : undefined
   ;
 
   return (
     <Box className={classes.root}>
       <H2 style={{
-        maxWidth: '50vw',
         margin: '0.5rem auto',
-        whiteSpace: 'pre-line'
+        maxWidth: '300px',
+        whiteSpace: 'pre-line',
+        lineHeight: '1.5rem',
       }}>
-        Fotografía
-        <span> de </span>
+        <span>Fotografía de </span>
         <span>{etiquetaText}</span>
         <span> como </span>
         <span>{objeto.titulo}</span>
       </H2>
       <PostsList
+        tipo={tipo}
         items={filteredItems}
         className={classes.seguirLeyendoItems}
       />

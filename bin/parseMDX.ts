@@ -1,5 +1,6 @@
 import JSON5 from 'json5';
 import { RegistroItem } from '../types';
+import { mapTextToUrl } from '../src/lib/util';
 
 type RemarkNode = {
   type: 'root' | 'text' | 'html' | 'yaml' | 'heading' | 'paragraph';
@@ -129,7 +130,7 @@ export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
 
   const vFile = await read(filename);
 
-  return new Promise((resolve) => {
+  return await new Promise((resolve) => {
     remark()
       .use(mdx)
       .use(() => (tree: RemarkNode) => {
@@ -180,6 +181,13 @@ export const parseMDX = async (filename: string): Promise<ParsedMDXResult> => {
               : acc
             ;
           }, '');
+        }
+
+        if (meta.tipo) {
+          meta.tipo = meta.tipo.split(/\s*[,]+\s*/)
+            .map(name => mapTextToUrl(name.trim()))
+            .join(',')
+          ;
         }
 
         resolve({

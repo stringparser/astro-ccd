@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     margin: '0 auto',
     padding: '1rem 0.5rem 0 0.5rem',
 
-    width: '100%',
+    width: '100vw',
     minHeight: '100vh',
 
     display: 'flex',
@@ -44,18 +44,29 @@ const useStyles = makeStyles(theme => ({
       borderBottom: 'none',
     }
   },
-  content: {
+  content: (props: AppProps) => ({
     margin: '1rem 1%',
-    textAlign: 'left',
 
     [theme.breakpoints.up('sm')]: {
       margin: '2rem 5%'
+    },
+
+    color: props.router.route.includes('/fotografia/')
+      ? '#ff0000'
+      : 'inherit'
+    ,
+
+    '& p': {
+      maxWidth: props.router.route.includes('/fotografia/')
+        ? undefined
+        : '90%'
+      ,
     }
-  }
+  }),
 }));
 
 const WebApp: React.FC<AppProps> = (props: AppProps) => {
-  const classes = useStyles();
+  const classes = useStyles(props);
   const { Component, pageProps, router } = props;
 
   useEffect(() => {

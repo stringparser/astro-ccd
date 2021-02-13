@@ -4,34 +4,74 @@ import { Box, makeStyles, Typography } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
 import { mapFormattedDate, mapTextToUrl } from 'src/lib/util';
 
+export const mapImageSrc = (src: string) => {
+  return /^(\/_next\/|data:image)/.test(src)
+    ? src
+    : require(`@public/${src}`).default
+  ;
+};
+
+export type ImageProps = NextImageProps & {
+  desc?: string;
+  link?: boolean;
+  isBig?: boolean;
+  pequeña?: boolean;
+  sinBorde?: boolean;
+  fecha?: string;
+  className?: string;
+  isSelected?: boolean;
+  dateClassName?: string;
+  imageClassName?: string;
+};
+
 const useStyles = makeStyles(theme => ({
-  root: {
-    zIndex: 0,
+  root: (props: ImageProps) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+
     margin: '2rem auto',
 
     cursor: 'pointer',
-    position: 'relative',
+    position: props.width && props.height
+      ? 'static'
+      : 'relative'
+    ,
 
     width: 'auto',
     maxWidth: '90%',
-    minHeight: '350px',
-    maxHeight: '400px',
 
-    '& > :last-child': {
-      flex: 1,
-      border: '1px solid rgba(255, 255, 255, 0.15)',
-      borderRadius: '4px',
+    '& p': {
+      maxWidth: 'unset'
     },
 
-    [theme.breakpoints.up('md')]: {
-      margin: '2rem 0',
-    }
-  },
+    '& > :last-child': {
+      display: 'inline-flex !important',
+
+      height: props.isBig || parseInt(`${props.height}`, 10) < 300
+        ? props.height
+        : '300px'
+      ,
+
+      border: '1px solid rgba(255, 255, 255, 0.15)',
+      borderRadius: '4px',
+
+      minHeight: parseInt(`${props.height}`, 10) < 250
+        ? props.height
+        : undefined
+      ,
+
+      '& > :first-child:not(img)': {
+        display: 'none',
+      }
+    },
+  }),
   imageBig: {
     minHeight: 'unset',
     maxHeight: 'unset',
 
-    '& > :last-child': {
+    '& > div:last-child': {
+      height: 'auto',
       overflow: 'auto !important',
       position: 'static !important',
     },
@@ -42,6 +82,11 @@ const useStyles = makeStyles(theme => ({
       margin: '0 auto !important',
       // @ts-ignore
       position: 'unset !important',
+    },
+
+    '&:hover > div:last-child': {
+      opacity: .95,
+      borderColor: 'royalblue',
     }
   },
   imageFecha: {
@@ -52,37 +97,35 @@ const useStyles = makeStyles(theme => ({
     '& > :last-child': {
       borderColor: 'royalblue',
     }
+  },
+  noBorder: {
+    '& > :last-child': {
+      borderColor: 'transparent !important',
+    }
+  },
+  isSmall: {
+    maxWidth: '300px',
   }
 }));
 
-export const mapImageSrc = (src: string) => {
-  return (
-    /^(\/_next\/|data:image)/.test(src) && src
-    || require(`@public/${src.replace(/^@public\//, '')}`).default
-  );
-};
-
-export type ImageProps = NextImageProps & {
-  link?: boolean;
-  isBig?: boolean;
-  fecha?: string;
-  className?: string;
-  isSelected?: boolean;
-  imageClassName?: string;
-};
-
-const Image: React.FC<ImageProps> = ({
-  link = true,
-  isBig = true,
-  src,
-  fecha,
-  className,
-  isSelected,
-  imageClassName,
-  onClick,
-  ...props
-}) => {
+const Image: React.FC<ImageProps> = props => {
   const classes = useStyles(props);
+
+  const {
+    link = true,
+    isBig = true,
+    src,
+    fecha,
+    desc,
+    pequeña,
+    sinBorde,
+    className,
+    isSelected,
+    dateClassName,
+    imageClassName,
+    onClick,
+    ...restProps
+  } = props;
 
   const handleOpen = useCallback(
     (ev: React.MouseEvent<HTMLImageElement>) => {
@@ -113,11 +156,18 @@ const Image: React.FC<ImageProps> = ({
         classes.root,
         className,
         isBig && classes.imageBig,
-        isSelected && classes.imageSelected
+        pequeña && classes.isSmall,
+        isSelected && classes.imageSelected,
+        sinBorde && classes.noBorder,
       )}
     >
-      {formattedFecha && (
-        <Typography className={classes.imageFecha}>
+      {desc && (
+        <p style={{margin: '0.5rem auto', opacity: .8, textAlign: 'center'}}>
+          {desc} ({formattedFecha})
+        </p>
+      )}
+      {!desc && formattedFecha && (
+        <Typography className={clsx(classes.imageFecha, dateClassName)}>
           {formattedFecha}
         </Typography>
       )}
@@ -126,10 +176,11 @@ const Image: React.FC<ImageProps> = ({
           ? 'intrinsic'
           : 'fill' as 'fixed' // fixes stupid bug with types
         }
+        title={isBig ? 'hacer click para ampliar' : null}
         quality={100}
         loading="lazy"
         objectFit="contain"
-        {...props}
+        {...restProps}
         src={mapImageSrc(src)}
         onClick={handleOpen}
         className={imageClassName}

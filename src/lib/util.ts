@@ -1,3 +1,5 @@
+import latinize from 'latinize';
+import { NextRouter } from 'next/router';
 import { useEffect, useLayoutEffect } from "react";
 import { RegistroItemEntrada, RegistroItem } from "types";
 
@@ -20,6 +22,52 @@ export const mesMap = {
   diciembre: '12',
 };
 
+type IProps = Parameters<React.FC>[0] & {
+  style?: React.CSSProperties;
+}
+
+export const mapIdPropsFromChildren = (props: IProps, router: NextRouter) => {
+  const { style, children } = props;
+
+  if (typeof children !== 'string') {
+    return {};
+  }
+
+  const textUrl = mapTextToUrl(children);
+  const [base, page, urlId] = router.asPath.slice(1).split('/');
+
+  const id = (
+    urlId && `${urlId}-${textUrl}`
+    || mapTextToUrl(children)
+  );
+
+  return {
+    id,
+    style: {
+      cursor: 'pointer',
+      ...style
+    },
+    onClick() {
+      router.replace(
+        {
+          hash: id,
+          pathname: router.pathname,
+        },
+        undefined,
+        { shallow: true }
+      );
+    }
+  };
+}
+
+export const fechaTextRE = new RegExp([
+  '(\\d{1,2})',
+  '(?:\\s*(de)?\\s*|[-_\\s]*)',
+  `(${Object.keys(mesMap).join('|')})`,
+  '(?:\\s*(de)?\\s*|[-_\\s]*)',
+  '(\\d{4})'
+].join(''), 'i');
+
 export const mapTextToUrl = (input: string) => {
 
   const text =
@@ -30,7 +78,7 @@ export const mapTextToUrl = (input: string) => {
     || input
   ;
 
-  return (text
+  return latinize(text
     .replace(/[\/()]+/g, '')
     .trim()
     .replace(/[\s,._+]+/g, '-')
@@ -48,6 +96,7 @@ export const mapTextToUrl = (input: string) => {
       return $0;
     })
     .replace(/-[-]+/g, '-')
+
   );
 };
 
@@ -100,8 +149,7 @@ export const capitalize = (value: string) => {
 
 export const mapTagTextTitle = (value: string) => {
   const text = value.toLowerCase()
-    .replace(/\s+/g, ' ')
-    .replace(/[-]/g, ' ')
+    .replace(/[_-\s]+/g, ' ')
   ;
 
   switch (text) {
@@ -114,11 +162,40 @@ export const mapTagTextTitle = (value: string) => {
   }
 };
 
+export const inverseMesMap = [
+  null,
+  'Enero',
+  'Febrero',
+  'Marzo',
+  'Abril',
+  'Mayo',
+  'Junio',
+  'Julio',
+  'Agosto',
+  'Septiembre',
+  'Octubre',
+  'Noviembre',
+  'Diciembre'
+];
+
 export const mapFormattedDate = (value: string) => {
+  if (fechaTextRE.test(value)) {
+    return value;
+  }
+
   return (/(\d{4})(\d{2})(\d{2})?/.exec(value) || [])
     .slice(1)
     .reverse()
-    .join('/')
-    .replace(/^00\//, '')
+    .map((el, index) => {
+      const num = parseInt(el, 10);
+
+      if (index === 1) {
+        return inverseMesMap[num] || num;
+      }
+
+      return num;
+    })
+    .filter(v => v)
+    .join(' de ')
   ;
 };

@@ -7,6 +7,7 @@ import { RegistroItem } from "types";
 import { opacityMixin } from "src/components/mixins";
 
 import PostsListItem from "src/components/PostsList/PostsListItem";
+import { mapRegistroURL } from "src/lib/navigation";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,9 +25,16 @@ const useStyles = makeStyles(theme => ({
       flexDirection: 'row',
     },
   },
+  dateClassName: {
+    '&.MuiTypography-root': {
+      color: theme.palette.common.white,
+      opacity: .9,
+    },
+  }
 }));
 
 export type PostsListProps = {
+    tipo?: string;
     items: RegistroItem[];
     showTag?: boolean;
     selected?: string;
@@ -39,6 +47,7 @@ export type PostsListProps = {
 function PostsList(props: PostsListProps) {
   const classes = useStyles();
   const {
+    tipo,
     items,
     showTag,
     selected,
@@ -50,8 +59,9 @@ function PostsList(props: PostsListProps) {
   return (
     <Box className={clsx(classes.root, className)}>
       {items.map((el) => {
-        const href = `/fotografia/registro/${el.urlId}`;
         const entrada = el.entradas.find(el => el.src);
+
+        const href = mapRegistroURL(el, tipo || el.tipo, entrada);
 
         const item = {
           ...el,
@@ -66,6 +76,7 @@ function PostsList(props: PostsListProps) {
             showTag={showTag}
             isSelected={selected === el.urlId}
             className={itemContainerClass}
+            dateClassName={classes.dateClassName}
             imageContainerClass={imageContainerClass}
           />
         );

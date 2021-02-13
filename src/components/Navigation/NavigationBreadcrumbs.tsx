@@ -1,11 +1,13 @@
 import React from 'react';
 import { NextRouter, useRouter } from 'next/router';
 
+import { mapTextToUrl } from 'src/lib/util';
+
 import Typography from '@material-ui/core/Typography';
 import MuiBreadcrumbs from '@material-ui/core/Breadcrumbs';
+import { Box, Chip, makeStyles } from '@material-ui/core';
 
 import NavigationLink from 'src/components/Navigation/NavigationLink';
-import { Box, makeStyles } from '@material-ui/core';
 
 import registroMetadata from 'cache/registro-metadata.json';
 
@@ -23,11 +25,16 @@ const mapRouteParts = (router: NextRouter) => {
   const urlId = routeParts[routeParts.length - 1];
   const itemProps = registroMetadata.find(el => el.urlId === urlId);
 
+  const tipo = typeof router.query.tipo === 'string'
+    ? router.query.tipo
+    : itemProps && itemProps.tipo
+  ;
+
   return routeParts.map(value => {
     switch (value) {
       case 'registro': {
-        if (itemProps && itemProps.tipo) {
-          return itemProps.tipo;
+        if (tipo) {
+          return tipo.split(',')[0];
         }
 
         return value;
@@ -47,13 +54,27 @@ const useStyles = makeStyles(theme => ({
       margin: '1rem 1.5rem',
     },
 
-    '& a,p': {
+    '& $clickable, $disabled': {
+      fontSize: 'inherit',
+
       [theme.breakpoints.down('xs')]: {
         fontSize: '0.95rem',
       },
     },
   },
+  clickable: {
+    cursor: 'pointer',
+  },
+  disabled: {
+    borderColor: 'transparent',
+  }
 }));
+
+const normalizeText = (value: string) => (
+  value
+    .replace(/cion$/, 'ción')
+    .replace(/^fotografia$/, 'fotografía')
+);
 
 export type NavigationBreadcrumbsProps = {};
 
@@ -72,38 +93,49 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
 
   return (
     <Box className={classes.root}>
-      <MuiBreadcrumbs aria-label="breadcrumb">
+      <MuiBreadcrumbs aria-label="breadcrumb" separator=">">
         {current
           ? <NavigationLink
               href="/"
-              text="inicio"
+            >
+              <Chip
+                label="inicio"
+                variant="outlined"
+                className={classes.clickable}
+              />
+            </NavigationLink>
+          : <Chip
+                label="inicio"
+                className={classes.disabled}
             />
-          : <Typography color="textPrimary" style={{margin: 'unset'}}>
-              inicio
-            </Typography>
         }
         {links.map((value, index, items) => {
-          const href = `/${items.slice(0, index + 1)
+          const href = `/${items
+            .slice(0, index + 1)
             .join('/')
           }`;
 
-          const text = value
-            .replace(/cion$/, 'ción')
-            .replace(/^fotografia$/, 'fotografía')
-          ;
+          const text = normalizeText(value);
 
           return (
             <NavigationLink
               key={href}
               href={href}
-              text={text}
-            />
+            >
+              <Chip
+                label={text}
+                variant="outlined"
+                className={classes.clickable}
+              />
+            </NavigationLink>
           );
         })}
         {current && (
-          <Typography color="textPrimary" style={{margin: 'unset'}}>
-            {current}
-          </Typography>
+          <Chip
+            label={normalizeText(current)}
+            variant="outlined"
+            className={classes.disabled}
+          />
         )}
       </MuiBreadcrumbs>
     </Box>

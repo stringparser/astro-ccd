@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "description": "A very simple example of Next.js-based website with Jest tests, all written in TypeScript",
   "scripts": {
-    "predev": "npm run cache",
+    "predev": "npm run update",
     "dev": "next",
     "test": "jest",
-    "prebuild": "npm run cache",
+    "prebuild": "npm run update",
     "build": "next build",
-    "precache": "rm -rf cache && mkdir cache",
-    "cache": "ts-node ./bin/cache.ts",
+    "preupdate": "rm -rf cache && mkdir cache",
+    "update": "ts-node ./bin/update.ts",
     "start": "next start",
     "export": "next export",
     "ts:node": "ts-node -r tsconfig-paths/register",
     "prefetch:data": "rm -f ./src/pages/registro/*.mdx && rm -rf debug && mkdir debug",
     "fetch:data": "npm run ts:node ./bin/fetchData.ts",
-    "postfetch:data": "npm run cache"
+    "postfetch:data": "npm run update"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
     "image-size": "^0.9.3",
+    "latinize": "^0.5.0",
     "material-ui": "^0.20.2",
     "next": "^10.0.5",
     "react": "^16.13.1",
@@ -49,13 +50,14 @@
     "tsconfig-paths": "^3.9.0"
   },
   "devDependencies": {
+    "@types/babel__core": "7.1.12",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/file-loader": "^4.2.0",
     "@types/fs-extra": "^9.0.6",
     "@types/jest": "^26.0.13",
     "@types/js-beautify": "^1.13.1",
-    "@types/json5": "^0.0.30",
+    "@types/latinize": "^0.2.15",
     "@types/material-ui": "^0.20.8",
     "@types/node-fetch": "^2.5.7",
     "@types/react": "^16.9.49",

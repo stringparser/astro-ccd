@@ -5,7 +5,13 @@ import { PageItemProps } from 'types';
 
 type DownloadImageResult = PageItemProps & { dest: string; };
 
-const downloadImage = async (el: PageItemProps, dest: string): Promise<DownloadImageResult> => {
+const downloadImage = async (el: PageItemProps): Promise<DownloadImageResult> => {
+
+  const dest = el.dest || (el.isIndex
+    ? `public/${el.label}/${path.basename(el.src)}`
+    : `public/registro/${el.urlId}_${el.fecha}_${path.basename(el.src)}`
+  );
+
   const isDownloaded = await fs.pathExists(dest);
 
   if (isDownloaded) {
