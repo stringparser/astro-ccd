@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useCallback } from 'react';
 import { Box, makeStyles, Typography } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
-import { mapFormattedDate } from 'src/lib/util';
+import { mapFormattedDate, mapTextToUrl } from 'src/lib/util';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -69,10 +69,10 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export const mapImageSrc = (src: string) => {
-  return /^(\/_next\/|data:image)/.test(src)
-    ? src
-    : require(`@public/${src}`).default
-  ;
+  return (
+    /^(\/_next\/|data:image)/.test(src) && src
+    || require(`@public/${src.replace(/^@public\//, '')}`).default
+  );
 };
 
 export type ImageProps = NextImageProps & {
@@ -124,6 +124,10 @@ const Image: React.FC<ImageProps> = ({
 
   return (
     <Box
+      id={/^(\/_next\/|data:image)/.test(src)
+        ? undefined
+        : mapTextToUrl(src)
+      }
       className={clsx(
         classes.root,
         className,
