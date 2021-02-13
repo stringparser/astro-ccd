@@ -25,7 +25,7 @@ const columns: RegistroItemColumn[] = [
   {
     header: 'FECHA',
     getValue(el) {
-      const href = mapRegistroURL(el);
+      const href = mapRegistroURL(el, (el.tipo || '').split(',')[0]);
 
       const { src, date = '' } = el;
 

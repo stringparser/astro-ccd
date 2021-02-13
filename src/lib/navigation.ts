@@ -3,10 +3,15 @@ import { RegistroItem, RegistroItemEntrada } from "types";
 
 export const mapRegistroURL = (
   el: Pick<RegistroItem, 'urlId'>,
-  tipo: string,
+  tipo?: string,
   entrada?: RegistroItemEntrada,
 ) => {
-  const href = `/fotografia/registro/${el.urlId}?tipo=${tipo}`;
+  const base = `/fotografia/registro/${el.urlId}`;
+
+  const href = tipo
+    ? `${base}?tipo=${tipo}`
+    : base
+  ;
 
   return entrada
     ? `${href}#${mapTextToUrl(entrada.src)}`
