@@ -12,26 +12,55 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
 
+    marginBottom: '2rem',
+
+    '& h1': {
+      margin: 'unset',
+      padding: 'unset',
+    },
+
+    '& a,p,svg': {
+      color: 'royalblue',
+    },
+
     [theme.breakpoints.up('md')]: {
       flexDirection: 'row',
       justifyContent: 'space-between',
-    }
+    },
   },
   link: {
-    display: 'flex',
     marginTop: '0.5rem',
 
-    [theme.breakpoints.up('md')]: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
+
+    [theme.breakpoints.up('sm')]: {
+      alignItems: 'start',
       justifyContent: 'flex-end',
     },
+  },
+  linkContent: {
+    color: theme.palette.common.white,
+
+    [theme.breakpoints.up('sm')]: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+    },
+
+    '& .MuiTypography-root': {
+      display: 'flex',
+      alignItems: 'center',
+    }
   }
 }))
 
 export type AllImagesTitleProps = BoxProps;
 
 const AllImagesTitle: React.FC<AllImagesTitleProps> = ({
-  component = H1,
+  component: TitleComponent = H1,
   title,
+  children,
   className,
   ...props
 }) => {
@@ -42,22 +71,22 @@ const AllImagesTitle: React.FC<AllImagesTitleProps> = ({
       {...props}
       className={clsx(classes.root, className)}
     >
-      {title}
-
       <Box className={classes.link}>
+        <TitleComponent>
+          {title}
+        </TitleComponent>
+
         <NavigationLink href="/fotografia/registro">
-          <Box
-            display="flex"
-            alignItems="center"
-          >
+          <Box className={classes.linkContent}>
             <Typography>
-              Listado de imágenes
+              Listado completo <ChevronRight />
             </Typography>
-            <span> </span>
-            <ChevronRight />
           </Box>
         </NavigationLink>
       </Box>
+
+
+      {children}
     </Box>
   );
 };

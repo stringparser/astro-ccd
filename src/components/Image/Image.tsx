@@ -4,34 +4,70 @@ import { Box, makeStyles, Typography } from '@material-ui/core';
 import NextImage, { ImageProps as NextImageProps } from 'next/image'
 import { mapFormattedDate, mapTextToUrl } from 'src/lib/util';
 
+export const mapImageSrc = (src: string) => {
+  return /^(\/_next\/|data:image)/.test(src)
+    ? src
+    : require(`@public/${src}`).default
+  ;
+};
+
+export type ImageProps = NextImageProps & {
+  desc?: string;
+  link?: boolean;
+  isBig?: boolean;
+  pequeña?: boolean;
+  sinBorde?: boolean;
+  fecha?: string;
+  className?: string;
+  isSelected?: boolean;
+  imageClassName?: string;
+};
+
 const useStyles = makeStyles(theme => ({
-  root: {
+  root: (props: ImageProps) => ({
     zIndex: 0,
     margin: '2rem auto',
 
     cursor: 'pointer',
-    position: 'relative',
+    position: props.width && props.height
+      ? 'static'
+      : 'relative'
+    ,
 
     width: 'auto',
     maxWidth: '90%',
-    minHeight: '350px',
-    maxHeight: '400px',
 
     '& > :last-child': {
-      flex: 1,
+      display: 'flex !important',
+
+      height: parseInt(`${props.height}`, 10) < 300
+        ? props.height
+        : '300px'
+      ,
+
       border: '1px solid rgba(255, 255, 255, 0.15)',
       borderRadius: '4px',
+
+      minHeight: parseInt(`${props.height}`, 10) < 250
+        ? props.height
+        : undefined
+      ,
+
+      '& > :first-child:not(img)': {
+        display: 'none',
+      }
     },
 
     [theme.breakpoints.up('md')]: {
       margin: '2rem 0',
     }
-  },
+  }),
   imageBig: {
     minHeight: 'unset',
     maxHeight: 'unset',
 
     '& > :last-child': {
+      display: 'inline-flex !important',
       overflow: 'auto !important',
       position: 'static !important',
     },
@@ -60,7 +96,7 @@ const useStyles = makeStyles(theme => ({
   },
   noBorder: {
     '& > :last-child': {
-      borderColor: 'transparent',
+      borderColor: 'transparent !important',
     }
   },
   isSmall: {
@@ -68,40 +104,23 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export const mapImageSrc = (src: string) => {
-  return (
-    /^(\/_next\/|data:image)/.test(src) && src
-    || require(`@public/${src.replace(/^@public\//, '')}`).default
-  );
-};
-
-export type ImageProps = NextImageProps & {
-  desc?: string;
-  link?: boolean;
-  isBig?: boolean;
-  pequeña?: boolean;
-  sinBorde?: boolean;
-  fecha?: string;
-  className?: string;
-  isSelected?: boolean;
-  imageClassName?: string;
-};
-
-const Image: React.FC<ImageProps> = ({
-  link = true,
-  isBig = true,
-  src,
-  fecha,
-  desc,
-  pequeña,
-  sinBorde,
-  className,
-  isSelected,
-  imageClassName,
-  onClick,
-  ...props
-}) => {
+const Image: React.FC<ImageProps> = props => {
   const classes = useStyles(props);
+
+  const {
+    link = true,
+    isBig = true,
+    src,
+    fecha,
+    desc,
+    pequeña,
+    sinBorde,
+    className,
+    isSelected,
+    imageClassName,
+    onClick,
+    ...restProps
+  } = props;
 
   const handleOpen = useCallback(
     (ev: React.MouseEvent<HTMLImageElement>) => {
@@ -156,7 +175,7 @@ const Image: React.FC<ImageProps> = ({
         quality={100}
         loading="lazy"
         objectFit="contain"
-        {...props}
+        {...restProps}
         src={mapImageSrc(src)}
         onClick={handleOpen}
         className={imageClassName}

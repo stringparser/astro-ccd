@@ -89,7 +89,15 @@ const RegistroFotografías: React.FC<RegistroFotografíasProps> = (props) => {
       <H1>
         Registro de Fotografías
       </H1>
-      <TableContainer>
+
+      <TableContainer
+        style={{
+          marginTop: '2rem',
+
+          border: '1px solid rgba(255,255,255,0.15)',
+          borderRadius: '4px',
+        }}
+      >
         <Table>
           <TableHead>
             <TableRow>

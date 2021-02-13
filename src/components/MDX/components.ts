@@ -17,6 +17,7 @@ export const mdxComponents = {
 
   a: BaseLink,
   Link: BaseLink,
+  Enlace: BaseLink,
 
   Image,
   img: Image,

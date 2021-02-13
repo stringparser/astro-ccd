@@ -154,6 +154,7 @@ const Busqueda: React.FC<BusquedaProps> = ({ onChange }) => {
       filterOptions={filterOptions}
       getOptionLabel={getOptionLabel}
       onChange={handleAutoCompleteChange}
+      noOptionsText="Sin resultados para tu búsqueda"
     />
   );
 };

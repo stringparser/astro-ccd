@@ -87,6 +87,7 @@ const SeguirLeyendoContainer: React.FC = () => {
         Fotografía
         <span> de </span>
         <span>{etiquetaText}</span>
+        <br />
         <span> como </span>
         <span>{objeto.titulo}</span>
       </H2>

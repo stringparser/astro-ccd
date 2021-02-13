@@ -9,8 +9,7 @@ import { mapTagTextTitle, useIsomorphicLayoutEffect } from 'src/lib/util';
 
 import H1 from 'src/components/Typography/H1';
 import PostsList from 'src/components/PostsList/PostsList';
-import NavigationLink from 'src/components/Navigation/NavigationLink';
-import { ChevronRight } from '@material-ui/icons';
+import ObservadoresSupernovas from 'src/components/Logo/ObservadoresSupernovas';
 import AllImagesTitle from 'src/components/Typography/AllImagesTitle';
 
 export type EntradasPorEtiquetaParams = {
@@ -153,7 +152,12 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
       <AllImagesTitle
         title={tagTextTitle}
         component={H1}
-      />
+      >
+        {/galaxia|supernova/i.test(tagTextTitle)
+          ? <ObservadoresSupernovas />
+          : null
+        }
+      </AllImagesTitle>
 
       <Box
         width="100%"

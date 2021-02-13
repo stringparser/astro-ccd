@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   },
   imageTitle: {
     color: 'red',
-    margin: '1rem auto 0 auto',
+    margin: '1rem auto',
   },
   imageContainer: {
     margin: '1rem',
