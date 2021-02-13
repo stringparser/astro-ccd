@@ -25,11 +25,16 @@ const mapRouteParts = (router: NextRouter) => {
   const urlId = routeParts[routeParts.length - 1];
   const itemProps = registroMetadata.find(el => el.urlId === urlId);
 
+  const tipo = typeof router.query.tipo === 'string'
+    ? router.query.tipo
+    : itemProps && itemProps.tipo
+  ;
+
   return routeParts.map(value => {
     switch (value) {
       case 'registro': {
-        if (itemProps && itemProps.tipo) {
-          return itemProps.tipo.split(',')[0];
+        if (tipo) {
+          return tipo.split(',')[0];
         }
 
         return value;
@@ -65,6 +70,12 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+const normalizeText = (value: string) => (
+  value
+    .replace(/cion$/, 'ción')
+    .replace(/^fotografia$/, 'fotografía')
+);
+
 export type NavigationBreadcrumbsProps = {};
 
 const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
@@ -99,14 +110,12 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
             />
         }
         {links.map((value, index, items) => {
-          const href = `/${items.slice(0, index + 1)
+          const href = `/${items
+            .slice(0, index + 1)
             .join('/')
           }`;
 
-          const text = value
-            .replace(/cion$/, 'ción')
-            .replace(/^fotografia$/, 'fotografía')
-          ;
+          const text = normalizeText(value);
 
           return (
             <NavigationLink
@@ -123,7 +132,7 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
         })}
         {current && (
           <Chip
-            label={current}
+            label={normalizeText(current)}
             variant="outlined"
             className={classes.disabled}
           />

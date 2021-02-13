@@ -7,6 +7,7 @@ import { promisify } from 'util';
 
 import { parseMDX } from './parseMDX';
 import { esEntradaValidaConImagen, ordenarPorFecha } from '../src/lib/util';
+import { RegistroItem } from 'types';
 
 const imageSize = promisify(imageSizeFn);
 
@@ -45,7 +46,7 @@ const imageSize = promisify(imageSizeFn);
         urlId,
         filename,
         entradas,
-      };
+      } as RegistroItem;
     })
   );
 
@@ -141,7 +142,7 @@ const imageSize = promisify(imageSizeFn);
 
   console.log('wrote', ultimasEntradasJSON.length, 'to', ultimasEntradasFilename);
 
-  const lastItemsPerEtiqueta = await Promise.all(tiposJSON
+  const lastItemsPerEtiqueta = (await Promise.all(tiposJSON
     .map((tipo): [string, typeof itemsWithImages] => [
       tipo,
       itemsWithImages.filter(el =>
@@ -162,9 +163,14 @@ const imageSize = promisify(imageSizeFn);
       return {
         ...items[0],
         tipo,
-      };
+      } as RegistroItem;
     })
-  );
+  )).sort((a, b) => {
+    const [{ date: dateA = '' }] = a.entradas;
+    const [{ date: dateB = '' }] = b.entradas;
+
+    return dateB.localeCompare(dateA);
+  });
 
   const lastItemsPerEtiquetaFilename = 'cache/ultimas-entradas-por-etiqueta.json';
 

@@ -87,6 +87,11 @@ const SeguirLeyendoContainer: React.FC = () => {
     return null;
   }
 
+  const tipo = typeof router.query.tipo === 'string'
+    ? router.query.tipo
+    : undefined
+  ;
+
   return (
     <Box className={classes.root}>
       <H2 style={{
@@ -101,6 +106,7 @@ const SeguirLeyendoContainer: React.FC = () => {
         <span>{objeto.titulo}</span>
       </H2>
       <PostsList
+        tipo={tipo}
         items={filteredItems}
         className={classes.seguirLeyendoItems}
       />

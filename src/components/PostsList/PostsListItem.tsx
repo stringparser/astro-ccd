@@ -35,7 +35,10 @@ const useStyles = makeStyles(theme => ({
   },
   imageTitle: {
     color: 'red',
-    margin: '1rem auto 0 auto',
+    margin: '1rem auto',
+  },
+  imageTitleWithDate: {
+    marginBottom: '0',
   },
   imageContainer: {
     margin: '1rem',
@@ -102,7 +105,12 @@ const PostsListItem: React.FC<PostsListItemProps> = (props) => {
       href={href}
       className={clsx(classes.root, className)}
     >
-        <H2 className={classes.imageTitle}>
+        <H2
+          className={clsx(
+            classes.imageTitle,
+            date && classes.imageTitleWithDate
+          )}
+        >
           {titulo || objeto}
         </H2>
 

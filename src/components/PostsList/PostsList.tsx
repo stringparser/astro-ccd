@@ -34,6 +34,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export type PostsListProps = {
+    tipo?: string;
     items: RegistroItem[];
     showTag?: boolean;
     selected?: string;
@@ -46,6 +47,7 @@ export type PostsListProps = {
 function PostsList(props: PostsListProps) {
   const classes = useStyles();
   const {
+    tipo,
     items,
     showTag,
     selected,
@@ -59,7 +61,7 @@ function PostsList(props: PostsListProps) {
       {items.map((el) => {
         const entrada = el.entradas.find(el => el.src);
 
-        const href = mapRegistroURL(el, entrada);
+        const href = mapRegistroURL(el, tipo || el.tipo, entrada);
 
         const item = {
           ...el,

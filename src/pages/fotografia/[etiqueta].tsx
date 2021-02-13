@@ -205,6 +205,7 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
         }
       </Box>)}
       <PostsList
+        tipo={etiqueta}
         items={items}
         selected={selectedObjeto}
       />
