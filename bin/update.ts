@@ -113,12 +113,15 @@ const imageSize = promisify(imageSizeFn);
 
   const tiposFilename = 'cache/registro-etiquetas.json';
   const tiposJSON = itemsWithImages.reduce((acc: string[], el) => {
-    return acc.includes(el.tipo)
-      ? acc
-      : acc.concat(el.tipo)
+    const newTipos = el.tipo
+      .split(',')
+      .filter(name => !acc.includes(name))
     ;
+
+    return acc.concat(newTipos);
   }, [])
-  .filter(v => v && v.trim())
+  .map(v => v.trim())
+  .filter(v => v !== '')
   .sort();
 
   await fs.writeFile(
@@ -139,16 +142,16 @@ const imageSize = promisify(imageSizeFn);
   console.log('wrote', ultimasEntradasJSON.length, 'to', ultimasEntradasFilename);
 
   const lastItemsPerEtiqueta = await Promise.all(tiposJSON
-    .map(name =>
+    .map((tipo): [string, typeof itemsWithImages] => [
+      tipo,
       itemsWithImages.filter(el =>
-        el.tipo === name
+        el.tipo.split(',').find(name => name === tipo)
       )
-    )
-    .map(items =>
-      items.sort(ordenarPorFecha)
-    )
-    .map(async (items) => {
-      const tipo = items[0].tipo;
+    ])
+    .filter(([tipo, items]) => items.length > 0)
+    .map(async ([tipo, items]) => {
+      items.sort(ordenarPorFecha);
+
       const filename = `cache/registro-${tipo}.json`;
       const serializedItems = JSON.stringify(items, null, 2);
 
@@ -156,7 +159,10 @@ const imageSize = promisify(imageSizeFn);
 
       console.log('wrote', items.length, 'to', filename);
 
-      return items[0];
+      return {
+        ...items[0],
+        tipo,
+      };
     })
   );
 

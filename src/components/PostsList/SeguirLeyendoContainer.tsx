@@ -10,7 +10,7 @@ import registroSoloUltimaFoto from "cache/registro-solo-ultima-fotografia.json";
 
 const useStyles = makeStyles(() => ({
   root: {
-    marginTop: '2rem',
+    margin: '4rem 0 2rem 0',
 
     display: 'flex',
     alignItems: 'center',
@@ -64,17 +64,28 @@ const SeguirLeyendoContainer: React.FC = () => {
     return null;
   }
 
-  const etiqueta = objeto.tipo || '';
-  const etiquetaText = mapTagTextTitle(etiqueta);
+  const etiquetas = (objeto.tipo || '').split(',');
+  const etiquetaText = mapTagTextTitle(etiquetas.join(', '));
 
   const filteredItems = registroSoloUltimaFoto
-    .filter(el =>
-      el.tipo === etiqueta
-      && el.urlId !== urlId
-    )
+    .filter(el => {
+      if (el.urlId === urlId) {
+        return false;
+      }
+      const parts = el.tipo.split(',');
+
+      return parts.length == etiquetas.length
+        ? parts.find(el => etiquetas.includes(el))
+        : false
+      ;
+    })
     .sort(ordenarPorFecha)
     .slice(0, 3)
   ;
+
+  if (filteredItems.length === 0) {
+    return null;
+  }
 
   return (
     <Box className={classes.root}>
@@ -84,10 +95,8 @@ const SeguirLeyendoContainer: React.FC = () => {
         whiteSpace: 'pre-line',
         lineHeight: '1.5rem',
       }}>
-        Fotografía
-        <span> de </span>
+        <span>Fotografía de </span>
         <span>{etiquetaText}</span>
-        <br />
         <span> como </span>
         <span>{objeto.titulo}</span>
       </H2>

@@ -63,8 +63,8 @@ const ReparacionSBIG = () => {
         <Image
           src={require('./img/franja.jpg').default}
           link={false}
-          isBig={false}
-          layout="fill"
+          width={634}
+          height={125}
           className={classes.imageWrapper}
           imageClassName={classes.imagen}
         />

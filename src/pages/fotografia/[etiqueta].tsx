@@ -159,7 +159,7 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
         }
       </AllImagesTitle>
 
-      <Box
+      {items.length > 6 && (<Box
         width="100%"
         height="100px"
         overflow="scroll"
@@ -191,7 +191,7 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
             );
           })
         }
-      </Box>
+      </Box>)}
       <PostsList
         items={items}
         selected={selectedObjeto}

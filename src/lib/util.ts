@@ -33,12 +33,13 @@ export const mapIdPropsFromChildren = (props: IProps, router: NextRouter) => {
     return {};
   }
 
+  const textUrl = mapTextToUrl(children);
   const [base, page, urlId] = router.asPath.slice(1).split('/');
 
-  const id = /\/registro\//.test(router.route)
-    ? `${urlId}-${mapTextToUrl(children)}`
-    : `${[base, page].filter(v => v).join('-')}-${mapTextToUrl(children)}`
-  ;
+  const id = (
+    urlId && `${urlId}-${textUrl}`
+    || mapTextToUrl(children)
+  );
 
   return {
     id,
@@ -47,7 +48,14 @@ export const mapIdPropsFromChildren = (props: IProps, router: NextRouter) => {
       ...style
     },
     onClick() {
-      router.replace({ hash: id }, undefined, { shallow: true });
+      router.replace(
+        {
+          hash: id,
+          pathname: router.pathname,
+        },
+        undefined,
+        { shallow: true }
+      );
     }
   };
 }

@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     margin: '0 auto',
     padding: '1rem 0.5rem 0 0.5rem',
 
-    width: '100%',
+    width: '100vw',
     minHeight: '100vh',
 
     display: 'flex',
@@ -55,6 +55,10 @@ const useStyles = makeStyles(theme => ({
       color: props.router.route.includes('/fotografia/')
         ? '#ff0000'
         : 'inherit'
+      ,
+      maxWidth: props.router.route.includes('/fotografia/')
+        ? undefined
+        : '90%'
       ,
     }
   }),

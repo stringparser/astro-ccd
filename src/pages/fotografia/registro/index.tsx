@@ -1,5 +1,5 @@
 import React from "react";
-import { RegistroItem } from "types";
+import { RegistroItem, RegistroItemEntrada } from "types";
 import { GetStaticProps } from "next";
 import { Box, Typography, TableRow, Table, TableBody, TableCell, TableHead, TableContainer } from "@material-ui/core";
 
@@ -9,53 +9,25 @@ import { mapFormattedDate, mapTagTextTitle, mapTextToUrl } from "src/lib/util";
 import H1 from "src/components/Typography/H1";
 import NavigationLink from "src/components/Navigation/NavigationLink";
 
+type RegistroListItem =
+  Omit<RegistroItem, 'entradas'>
+  & RegistroItemEntrada
+;
+
 type RegistroItemColumn = {
   width?: number;
-  field?: keyof RegistroItem;
+  field?: keyof RegistroListItem;
   header: string;
-  getValue?: (value: RegistroItem) => React.ReactNode;
+  getValue?: (value: RegistroListItem) => React.ReactNode;
 };
 
 const columns: RegistroItemColumn[] = [
   {
-    field: 'objeto',
-    header: 'OBJETO',
+    header: 'FECHA',
     getValue(el) {
       const href = mapRegistroURL(el);
 
-      return (
-        <NavigationLink href={href}>
-          <Typography>
-            {el.titulo || el.objeto}
-          </Typography>
-        </NavigationLink>
-      );
-    }
-  },
-  {
-    field: 'tipo',
-    header: 'TIPO',
-    getValue(el) {
-      return (
-        <NavigationLink href={`/fotografia/${el.tipo}`}>
-          <Typography>
-            {mapTagTextTitle(`${el.tipo}`)}
-          </Typography>
-        </NavigationLink>
-      );
-    }
-  },
-  {
-    header: 'ACTUALIZADO',
-    getValue(el) {
-      const href = mapRegistroURL(el);
-
-      const [entrada] = el.entradas.slice()
-        .filter(el => el.date)
-        .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-      ;
-
-      const { src, date = '' } = entrada;
+      const { src, date = '' } = el;
 
       const dateString = mapFormattedDate(date) || '?';
 
@@ -74,7 +46,42 @@ const columns: RegistroItemColumn[] = [
         </>
       );
     }
-  }
+  },
+  {
+    field: 'tipo',
+    header: 'TIPO',
+    getValue(el) {
+      return (
+        el.tipo.split(',').map(tipo => {
+          return (
+            <NavigationLink
+              key={tipo}
+              href={`/fotografia/${tipo}`}
+            >
+              <Typography>
+                {mapTagTextTitle(tipo)}
+              </Typography>
+            </NavigationLink>
+          );
+        })
+      );
+    }
+  },
+  {
+    field: 'objeto',
+    header: 'OBJETO',
+    getValue(el) {
+      const href = mapRegistroURL(el);
+
+      return (
+        <NavigationLink href={href}>
+          <Typography>
+            {el.titulo || el.objeto}
+          </Typography>
+        </NavigationLink>
+      );
+    }
+  },
 ];
 
 export type RegistroFotografíasProps = {
@@ -82,23 +89,36 @@ export type RegistroFotografíasProps = {
 };
 
 const RegistroFotografías: React.FC<RegistroFotografíasProps> = (props) => {
-  const { items } = props;
+  const items = props.items
+    .flatMap(({ entradas, ...el }) =>
+      entradas.map(it => ({ ...el, ...it }))
+    )
+  ;
 
   return (
     <Box>
       <H1>
-        Registro de Fotografías
+        Registro completo
       </H1>
 
       <TableContainer
+        component={Box}
         style={{
+          width: 'auto',
           marginTop: '2rem',
 
-          border: '1px solid rgba(255,255,255,0.15)',
           borderRadius: '4px',
         }}
       >
-        <Table>
+        <Table
+          style={{
+            width: 'auto',
+            border: '1px solid rgba(255,255,255,0.15)',
+            margin: '0 auto'
+          }}
+          size="small"
+          stickyHeader={true}
+        >
           <TableHead>
             <TableRow>
               {columns.map(el => {

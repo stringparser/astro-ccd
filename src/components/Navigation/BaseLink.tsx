@@ -42,7 +42,7 @@ const BaseLink: React.FC<NavbarMenuLinkProps> = (props) => {
     >
       {text || props.children}
     </MuiLink>
-  )
+  );
 }
 
 export default BaseLink;

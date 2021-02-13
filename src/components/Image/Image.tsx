@@ -25,7 +25,10 @@ export type ImageProps = NextImageProps & {
 
 const useStyles = makeStyles(theme => ({
   root: (props: ImageProps) => ({
-    zIndex: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+
     margin: '2rem auto',
 
     cursor: 'pointer',
@@ -37,10 +40,14 @@ const useStyles = makeStyles(theme => ({
     width: 'auto',
     maxWidth: '90%',
 
-    '& > :last-child': {
-      display: 'flex !important',
+    '& p': {
+      maxWidth: 'unset'
+    },
 
-      height: parseInt(`${props.height}`, 10) < 300
+    '& > :last-child': {
+      display: 'inline-flex !important',
+
+      height: props.isBig || parseInt(`${props.height}`, 10) < 300
         ? props.height
         : '300px'
       ,
@@ -57,17 +64,13 @@ const useStyles = makeStyles(theme => ({
         display: 'none',
       }
     },
-
-    [theme.breakpoints.up('md')]: {
-      margin: '2rem 0',
-    }
   }),
   imageBig: {
     minHeight: 'unset',
     maxHeight: 'unset',
 
-    '& > :last-child': {
-      display: 'inline-flex !important',
+    '& > div:last-child': {
+      height: 'auto',
       overflow: 'auto !important',
       position: 'static !important',
     },
@@ -80,7 +83,7 @@ const useStyles = makeStyles(theme => ({
       position: 'unset !important',
     },
 
-    '&:hover > :last-child': {
+    '&:hover > div:last-child': {
       opacity: .95,
       borderColor: 'royalblue',
     }

@@ -28,7 +28,8 @@ const useStyles = makeStyles(theme => ({
       justifyContent: 'space-between',
     },
   },
-  link: {
+  left: {
+    flex: 1,
     marginTop: '0.5rem',
 
     display: 'flex',
@@ -37,15 +38,18 @@ const useStyles = makeStyles(theme => ({
 
     [theme.breakpoints.up('sm')]: {
       alignItems: 'start',
-      justifyContent: 'flex-end',
+      justifyContent: 'flex-start',
     },
+  },
+  link: {
+    width: '100%',
   },
   linkContent: {
     color: theme.palette.common.white,
 
     [theme.breakpoints.up('sm')]: {
       display: 'flex',
-      justifyContent: 'flex-end',
+      justifyContent: 'flex-start',
     },
 
     '& .MuiTypography-root': {
@@ -71,20 +75,22 @@ const AllImagesTitle: React.FC<AllImagesTitleProps> = ({
       {...props}
       className={clsx(classes.root, className)}
     >
-      <Box className={classes.link}>
+      <Box className={classes.left}>
         <TitleComponent>
           {title}
         </TitleComponent>
 
-        <NavigationLink href="/fotografia/registro">
+        <NavigationLink
+          href="/fotografia/registro"
+          className={classes.link}
+        >
           <Box className={classes.linkContent}>
             <Typography>
-              Listado completo <ChevronRight />
+              Registro <ChevronRight />
             </Typography>
           </Box>
         </NavigationLink>
       </Box>
-
 
       {children}
     </Box>

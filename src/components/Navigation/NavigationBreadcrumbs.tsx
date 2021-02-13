@@ -1,11 +1,13 @@
 import React from 'react';
 import { NextRouter, useRouter } from 'next/router';
 
+import { mapTextToUrl } from 'src/lib/util';
+
 import Typography from '@material-ui/core/Typography';
 import MuiBreadcrumbs from '@material-ui/core/Breadcrumbs';
+import { Box, Chip, makeStyles } from '@material-ui/core';
 
 import NavigationLink from 'src/components/Navigation/NavigationLink';
-import { Box, makeStyles } from '@material-ui/core';
 
 import registroMetadata from 'cache/registro-metadata.json';
 
@@ -27,7 +29,7 @@ const mapRouteParts = (router: NextRouter) => {
     switch (value) {
       case 'registro': {
         if (itemProps && itemProps.tipo) {
-          return itemProps.tipo;
+          return itemProps.tipo.split(',')[0];
         }
 
         return value;
@@ -47,12 +49,20 @@ const useStyles = makeStyles(theme => ({
       margin: '1rem 1.5rem',
     },
 
-    '& a,p': {
+    '& $clickable, $disabled': {
+      fontSize: 'inherit',
+
       [theme.breakpoints.down('xs')]: {
         fontSize: '0.95rem',
       },
     },
   },
+  clickable: {
+    cursor: 'pointer',
+  },
+  disabled: {
+    borderColor: 'transparent',
+  }
 }));
 
 export type NavigationBreadcrumbsProps = {};
@@ -72,15 +82,21 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
 
   return (
     <Box className={classes.root}>
-      <MuiBreadcrumbs aria-label="breadcrumb">
+      <MuiBreadcrumbs aria-label="breadcrumb" separator=">">
         {current
           ? <NavigationLink
               href="/"
-              text="inicio"
+            >
+              <Chip
+                label="inicio"
+                variant="outlined"
+                className={classes.clickable}
+              />
+            </NavigationLink>
+          : <Chip
+                label="inicio"
+                className={classes.disabled}
             />
-          : <Typography color="textPrimary" style={{margin: 'unset'}}>
-              inicio
-            </Typography>
         }
         {links.map((value, index, items) => {
           const href = `/${items.slice(0, index + 1)
@@ -96,14 +112,21 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
             <NavigationLink
               key={href}
               href={href}
-              text={text}
-            />
+            >
+              <Chip
+                label={text}
+                variant="outlined"
+                className={classes.clickable}
+              />
+            </NavigationLink>
           );
         })}
         {current && (
-          <Typography color="textPrimary" style={{margin: 'unset'}}>
-            {current}
-          </Typography>
+          <Chip
+            label={current}
+            variant="outlined"
+            className={classes.disabled}
+          />
         )}
       </MuiBreadcrumbs>
     </Box>

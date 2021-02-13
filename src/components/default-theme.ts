@@ -86,7 +86,7 @@ const defaultTheme = createMuiTheme({
         },
 
         p: {
-          maxWidth: '765px',
+          margin: '0 auto',
           fontWeight: 'bold',
         },
 
