@@ -24,10 +24,6 @@ const defaultTheme = createMuiTheme({
 
   typography: {
     fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif',
-
-    h1: {
-      fontSize: 2,
-    },
   },
 
   props: {
@@ -86,7 +82,7 @@ const defaultTheme = createMuiTheme({
         },
 
         p: {
-          margin: '0 auto',
+          margin: '1rem auto',
           fontWeight: 'bold',
         },
 

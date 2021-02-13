@@ -163,7 +163,7 @@ const Image: React.FC<ImageProps> = props => {
     >
       {desc && (
         <p style={{margin: '0.5rem auto', opacity: .8, textAlign: 'center'}}>
-          {desc} ({formattedFecha})
+          {desc} {formattedFecha ? `(${formattedFecha})` : null}
         </p>
       )}
       {!desc && formattedFecha && (

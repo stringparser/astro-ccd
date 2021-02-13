@@ -1,9 +1,8 @@
 import React from 'react';
 import { NextRouter, useRouter } from 'next/router';
 
-import { mapTextToUrl } from 'src/lib/util';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
-import Typography from '@material-ui/core/Typography';
 import MuiBreadcrumbs from '@material-ui/core/Breadcrumbs';
 import { Box, Chip, makeStyles } from '@material-ui/core';
 
@@ -48,7 +47,7 @@ const mapRouteParts = (router: NextRouter) => {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    margin: '0.75rem 0.5rem',
+    margin: '0.55rem 0.1rem',
 
     [theme.breakpoints.up('sm')]: {
       margin: '1rem 1.5rem',
@@ -61,6 +60,12 @@ const useStyles = makeStyles(theme => ({
         fontSize: '0.95rem',
       },
     },
+
+    [theme.breakpoints.down('xs')]: {
+      '& .MuiBreadcrumbs-separator': {
+        margin: '0',
+      },
+    }
   },
   clickable: {
     cursor: 'pointer',
@@ -93,18 +98,23 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
 
   return (
     <Box className={classes.root}>
-      <MuiBreadcrumbs aria-label="breadcrumb" separator=">">
+      <MuiBreadcrumbs
+        separator={<NavigateNextIcon fontSize="inherit" />}
+        aria-label="breadcrumb"
+      >
         {current
           ? <NavigationLink
               href="/"
             >
               <Chip
                 label="inicio"
+                size="small"
                 variant="outlined"
                 className={classes.clickable}
               />
             </NavigationLink>
           : <Chip
+                size="small"
                 label="inicio"
                 className={classes.disabled}
             />
@@ -124,6 +134,7 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
             >
               <Chip
                 label={text}
+                size="small"
                 variant="outlined"
                 className={classes.clickable}
               />
@@ -133,6 +144,7 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
         {current && (
           <Chip
             label={normalizeText(current)}
+            size="small"
             variant="outlined"
             className={classes.disabled}
           />

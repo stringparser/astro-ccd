@@ -143,8 +143,11 @@ const useStyles = makeStyles(theme => ({
   },
 
   currentLink: {
-    color: theme.palette.text.primary,
     opacity: 1,
+
+    '&.MuiTypography-root': {
+      color: theme.palette.text.primary,
+    },
 
     [theme.breakpoints.up('sm')]: {
       borderBottomColor: 'rgb(255, 0, 0, 0.6)',

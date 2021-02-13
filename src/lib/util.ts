@@ -179,23 +179,32 @@ export const inverseMesMap = [
 ];
 
 export const mapFormattedDate = (value: string) => {
-  if (fechaTextRE.test(value)) {
+  const numMatch = /(20\d{2})([01]\d{1})(\d{1,2})?/.exec(value);
+
+  if (numMatch) {
+    return numMatch
+      .slice(1)
+      .reverse()
+      .map((el, index) => {
+        const num = parseInt(el, 10);
+
+        if (index === 1) {
+          return inverseMesMap[num] || num;
+        }
+
+        return el;
+      })
+      .filter(v => v || v !== '00')
+      .join(' de ')
+      .replace(/^00\s*(?:de)?\s*/g, '')
+    ;
+  }
+
+  const textMatch = fechaTextRE.exec(value);
+
+  if (textMatch) {
     return value;
   }
 
-  return (/(\d{4})(\d{2})(\d{2})?/.exec(value) || [])
-    .slice(1)
-    .reverse()
-    .map((el, index) => {
-      const num = parseInt(el, 10);
-
-      if (index === 1) {
-        return inverseMesMap[num] || num;
-      }
-
-      return num;
-    })
-    .filter(v => v)
-    .join(' de ')
-  ;
+  return '';
 };

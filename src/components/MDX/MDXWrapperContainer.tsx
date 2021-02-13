@@ -1,7 +1,8 @@
 import Head from "next/head";
-import React from "react";
 import { Box } from "@material-ui/core";
 import { useRouter } from "next/router";
+import React, { Fragment } from "react";
+
 import H2 from "src/components/Typography/H2";
 
 export type MDXChild = {
@@ -32,10 +33,12 @@ const mapChildren = (input: any[], key = '') => {
       );
     }
 
-    if (Array.isArray(child)) {
-      return mapChildren(child, `${index}`);
-    } else if (typeof child === 'string') {
-      return el;
+    if (typeof child === 'string') {
+      return (
+        <Fragment key={index}>
+          {el}
+        </Fragment>
+      );
     }
 
     return React.cloneElement(el as any, {
