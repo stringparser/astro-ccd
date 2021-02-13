@@ -17,6 +17,8 @@ const useStyles = makeStyles(theme => ({
 
     '& > :first-child': {
       flex: 1,
+      position: 'unset !important',
+      overflow: 'unset !important',
       width: 'auto !important',
       borderColor: 'transparent !important',
     },
