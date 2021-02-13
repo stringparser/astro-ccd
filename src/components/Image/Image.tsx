@@ -20,6 +20,7 @@ export type ImageProps = NextImageProps & {
   fecha?: string;
   className?: string;
   isSelected?: boolean;
+  dateClassName?: string;
   imageClassName?: string;
 };
 
@@ -120,6 +121,7 @@ const Image: React.FC<ImageProps> = props => {
     sinBorde,
     className,
     isSelected,
+    dateClassName,
     imageClassName,
     onClick,
     ...restProps
@@ -165,7 +167,7 @@ const Image: React.FC<ImageProps> = props => {
         </p>
       )}
       {!desc && formattedFecha && (
-        <Typography className={classes.imageFecha}>
+        <Typography className={clsx(classes.imageFecha, dateClassName)}>
           {formattedFecha}
         </Typography>
       )}

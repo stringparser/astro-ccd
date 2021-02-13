@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   },
   imageTitle: {
     color: 'red',
-    margin: '1rem auto',
+    margin: '1rem auto 0 auto',
   },
   imageContainer: {
     margin: '1rem',
@@ -68,6 +68,7 @@ export type PostsListItemProps =  {
   showTag?: boolean;
   isSelected?: boolean;
   className?: string;
+  dateClassName?: string;
   imageContainerClass?: string;
 };
 
@@ -79,6 +80,7 @@ const PostsListItem: React.FC<PostsListItemProps> = (props) => {
     showTag,
     isSelected,
     className,
+    dateClassName,
     imageContainerClass,
   } = props;
 
@@ -126,6 +128,7 @@ const PostsListItem: React.FC<PostsListItemProps> = (props) => {
             classes.imageContainer,
             imageContainerClass
           )}
+          dateClassName={dateClassName}
         />
     </NavigationLink>
   )

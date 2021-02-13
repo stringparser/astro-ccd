@@ -1,16 +1,17 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { Box, Chip, makeStyles } from '@material-ui/core';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Box, Chip, makeStyles, Typography } from '@material-ui/core';
 import React, { useState, useEffect, useCallback } from 'react';
 
 import { RegistroItem } from 'types';
 import { mapTagTextTitle, useIsomorphicLayoutEffect } from 'src/lib/util';
 
 import H1 from 'src/components/Typography/H1';
+import Alert from '@material-ui/lab/Alert/Alert';
 import PostsList from 'src/components/PostsList/PostsList';
-import ObservadoresSupernovas from 'src/components/Logo/ObservadoresSupernovas';
 import AllImagesTitle from 'src/components/Typography/AllImagesTitle';
+import ObservadoresSupernovas from 'src/components/Logo/ObservadoresSupernovas';
 
 export type EntradasPorEtiquetaParams = {
   etiqueta: string;
@@ -158,6 +159,17 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
           : null
         }
       </AllImagesTitle>
+
+      <Box
+        width="80%"
+        margin="1rem auto"
+      >
+        <Alert
+          severity="info"
+        >
+          Últimas capturas. Fotos anteriores en cada entrada.
+        </Alert>
+      </Box>
 
       {items.length > 6 && (<Box
         width="100%"
