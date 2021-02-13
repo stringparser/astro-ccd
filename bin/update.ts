@@ -146,7 +146,7 @@ const imageSize = promisify(imageSizeFn);
     .map((tipo): [string, typeof itemsWithImages] => [
       tipo,
       itemsWithImages.filter(el =>
-        el.tipo.split(',').find(name => name === tipo)
+        el.tipo.split(',')[0] === tipo
       )
     ])
     .filter(([tipo, items]) => items.length > 0)

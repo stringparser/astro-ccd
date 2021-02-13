@@ -154,22 +154,11 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
         title={tagTextTitle}
         component={H1}
       >
-        {/galaxia|supernova/i.test(tagTextTitle)
+        {/supernova/i.test(tagTextTitle)
           ? <ObservadoresSupernovas />
           : null
         }
       </AllImagesTitle>
-
-      <Box
-        width="80%"
-        margin="1rem auto"
-      >
-        <Alert
-          severity="info"
-        >
-          Últimas capturas. Fotos anteriores en cada entrada.
-        </Alert>
-      </Box>
 
       {items.length > 6 && (<Box
         width="100%"
@@ -204,6 +193,18 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
           })
         }
       </Box>)}
+
+      <Box
+        width="80%"
+        margin="1rem auto"
+      >
+        <Alert
+          severity="info"
+        >
+          Últimas capturas. Fotos anteriores en cada entrada.
+        </Alert>
+      </Box>
+
       <PostsList
         tipo={etiqueta}
         items={items}
