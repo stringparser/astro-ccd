@@ -61,6 +61,7 @@ const ReparacionSBIG = () => {
           REPARACIÓN DE CCD SBIG
         </H2>
         <Image
+          sinBorde
           src={require('./img/franja.jpg').default}
           link={false}
           width={634}
