@@ -82,7 +82,7 @@ const useStyles = makeStyles(theme => ({
 const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
   const router = useRouter();
   const classes = useStyles();
-  const etiqueta = (props.etiqueta || '').trim() || router.asPath.split('/').pop();
+  const etiqueta = (props.etiqueta || '').trim() || router.route.split('/').pop();
 
   const { items } = props;
 
@@ -101,7 +101,7 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
 
   useEffect(() => {
     setSelectedObjeto(initialId);
-  }, [initialId])
+  }, [initialId]);
 
   const handleObjetoClick = useCallback(
     (ev: React.MouseEvent<HTMLDivElement>) => {
