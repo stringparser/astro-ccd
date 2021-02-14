@@ -3,7 +3,7 @@ import { Box, makeStyles, Button, withStyles } from "@material-ui/core";
 
 import { PageBasename } from "types";
 
-import H2 from "src/components/Typography/H2";
+import H3 from "src/components/Typography/H3";
 import Image from "src/components/Image/Image";
 import NavigationLink from "src/components/Navigation/NavigationLink";
 
@@ -30,16 +30,17 @@ const useStyles = makeStyles(theme => ({
   imageWrapper: {
     position: 'relative',
 
-    width: '80%',
-    margin: '1rem 0',
-    height: '150px',
+    margin: '1rem 0 0 0',
+    maxHeight: '150px',
     minHeight: 'unset !important',
 
     [theme.breakpoints.down('sm')]: {
-      margin: '1rem auto',
+      margin: '1rem 0 0 1rem',
     }
   },
   titulo: {
+    marginBottom: 0,
+
     color: 'currentColor',
     fontWeight: 'bold',
   },
@@ -47,20 +48,15 @@ const useStyles = makeStyles(theme => ({
 
 const StyledButton = withStyles(theme => ({
   root: {
-    position: 'absolute',
-
-    right: '5px',
-    bottom: '20px',
-    backgroundColor: 'royalblue',
+    margin: '0 0 2rem 0',
 
     [theme.breakpoints.up('sm')]: {
-      bottom: '30px',
-    },
+      marginTop: '0.75rem',
+    }
   },
   label: {
     fontWeight: 'bold',
 
-    color: theme.palette.common.white,
     opacity: .7,
   }
 }))(Button);
@@ -81,9 +77,9 @@ const ReparacionSBIG = () => {
         href={`/${PageBasename.reparacionCCD}`}
         className={classes.enlace}
       >
-        <H2 className={classes.titulo}>
+        <H3 className={classes.titulo}>
           REPARACIÓN DE CCD SBIG
-        </H2>
+        </H3>
         <Image
           sinBorde
           src={require('./img/franja.jpg').default}
@@ -92,19 +88,21 @@ const ReparacionSBIG = () => {
           height={125}
           className={classes.imageWrapper}
           imageClassName={classes.imagen}
-        >
-          <NavigationLink
-            href="/contacto"
-          >
-            <StyledButton
-              size="small"
-              variant="contained"
-            >
-              CONTACTO
-            </StyledButton>
-          </NavigationLink>
-        </Image>
+        />
       </NavigationLink>
+      <Box>
+        <NavigationLink
+          href="/contacto"
+          target="_blank"
+        >
+          <StyledButton
+            size="small"
+            variant="contained"
+          >
+            CONTACTO
+          </StyledButton>
+        </NavigationLink>
+      </Box>
     </Box>
   )
 };

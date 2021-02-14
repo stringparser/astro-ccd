@@ -1,10 +1,11 @@
+import { LinkProps } from "@material-ui/core";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import React, { useCallback } from "react";
 
 import BaseLink from "src/components/Navigation/BaseLink";
 
-export type NavbarLinkProps = {
+export type NavbarLinkProps = LinkProps & {
   id?: string
   href?: string;
   text?: string;
@@ -18,19 +19,18 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
   const router = useRouter();
 
   const {
-    id,
     href,
     text,
-    style,
     prefecth,
     children,
-    className,
     onClick,
+    ...rest
   } = props;
 
   const handleClick = useCallback(
     (ev: React.MouseEvent<HTMLAnchorElement>) => {
       ev.preventDefault();
+      ev.stopPropagation();
 
       router.push(href);
 
@@ -48,10 +48,8 @@ const NavigationLink: React.FC<NavbarLinkProps> = (props) => {
 
   return (
     <BaseLink
-      id={id}
+      {...rest}
       href={href}
-      style={style}
-      className={className}
       onClick={handleClick}
     >
       {text || children}

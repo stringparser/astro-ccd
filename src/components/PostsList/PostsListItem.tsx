@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => ({
   imageTitle: {
     color: 'red',
     margin: '1rem auto',
+    fontSize: '1rem',
   },
   imageTitleWithDate: {
     marginBottom: '0',
