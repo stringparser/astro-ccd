@@ -39,7 +39,7 @@ exports = module.exports = withMDX({
       {
         source: '/cometasasteroides',
         permanent: false,
-        destination: '/fotografia?tipo=cometas-asteroides',
+        destination: '/fotografia/cometas',
       },
       {
         source: '/planetas-satelites',
