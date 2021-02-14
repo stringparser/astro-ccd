@@ -135,11 +135,21 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
   }, [selectedObjeto]);
 
   const tagTextTitle = mapTagTextTitle(etiqueta);
+  const lastImage = items[0]?.entradas[0]?.src;
 
   return (
     <>
       <SEOHead
         title={tagTextTitle}
+        meta={lastImage
+          ? [
+            {
+              property: 'og:image',
+              content: require(`@public/${items[0].entradas[0].src}`).default
+            }
+          ]
+          : []
+        }
       />
 
       <PostsListTitle

@@ -29,7 +29,7 @@ const defaultMeta: SeoHeadProps['meta'] = [
   },
   {
     property: 'og:description',
-    content: 'Observación astrónomica. Construcción del observatorio, telescopio y CCD'
+    content: 'Observación astrónomica'
   },
   {
     property: 'og:image',
