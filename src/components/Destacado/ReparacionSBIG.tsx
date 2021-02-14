@@ -1,4 +1,5 @@
 import React from "react";
+import { Email } from "@material-ui/icons";
 import { Box, makeStyles, Button, withStyles } from "@material-ui/core";
 
 import { PageBasename } from "types";
@@ -6,7 +7,7 @@ import { PageBasename } from "types";
 import H3 from "src/components/Typography/H3";
 import Image from "src/components/Image/Image";
 import NavigationLink from "src/components/Navigation/NavigationLink";
-import { Email } from "@material-ui/icons";
+import { openContactEmail } from "src/lib/navigation";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -95,19 +96,15 @@ const ReparacionSBIG = () => {
         />
       </NavigationLink>
       <Box>
-        <NavigationLink
-          href="/contacto"
-          target="_blank"
+        <StyledButton
+          size="small"
+          variant="contained"
+          onClick={openContactEmail}
         >
-          <StyledButton
-            size="small"
-            variant="contained"
-          >
-            <Email fontSize="small" />
-            <Box p="0.25rem" />
-            CONTACTO
-          </StyledButton>
-        </NavigationLink>
+          <Email fontSize="small" />
+          <Box p="0.25rem" />
+          CONTACTO
+        </StyledButton>
       </Box>
     </Box>
   )
