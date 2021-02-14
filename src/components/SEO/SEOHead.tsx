@@ -28,6 +28,10 @@ const defaultMeta: SeoHeadProps['meta'] = [
     content: 'OACM Fuensanta',
   },
   {
+    property: 'og:description',
+    content: 'Observación astrónomica. Construcción del observatorio, telescopio y CCD'
+  },
+  {
     property: 'og:image',
     content: `${origin}${require('@public/favicon.png').default}`,
   }
