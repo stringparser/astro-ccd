@@ -118,7 +118,7 @@ const Image: React.FC<ImageProps> = props => {
   const {
     src,
     link = true,
-    isBig = /registro\//.test(src),
+    isBig = true,
     fecha,
     desc,
     children,
