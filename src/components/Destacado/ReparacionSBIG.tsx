@@ -6,6 +6,7 @@ import { PageBasename } from "types";
 import H3 from "src/components/Typography/H3";
 import Image from "src/components/Image/Image";
 import NavigationLink from "src/components/Navigation/NavigationLink";
+import { Email } from "@material-ui/icons";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -48,6 +49,9 @@ const useStyles = makeStyles(theme => ({
 
 const StyledButton = withStyles(theme => ({
   root: {
+    display: 'inline-flex',
+    alignItems: 'center',
+
     margin: '0 0 2rem 0',
 
     [theme.breakpoints.up('sm')]: {
@@ -99,6 +103,8 @@ const ReparacionSBIG = () => {
             size="small"
             variant="contained"
           >
+            <Email fontSize="small" />
+            <Box p="0.25rem" />
             CONTACTO
           </StyledButton>
         </NavigationLink>
