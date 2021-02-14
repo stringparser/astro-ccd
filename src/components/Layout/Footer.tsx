@@ -1,26 +1,47 @@
 import React from "react";
 import Email from "@material-ui/icons/Email";
-import { Box, Typography, useTheme } from "@material-ui/core";
+import { Box, Typography, withStyles } from "@material-ui/core";
 
 import NavigationLink from "src/components/Navigation/NavigationLink";
 
+const StyledBox = withStyles(theme => ({
+  root:  {
+    display: 'flex',
+    flexDirection: 'column',
+
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    padding: '2rem 1rem 3rem 1rem',
+    borderTop: `1px solid ${theme.palette.divider}`,
+
+    '& > :not(:first-child)': {
+      marginTop: '1rem',
+    },
+
+    [theme.breakpoints.up('sm')]: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+
+      '& > :not(:first-child)': {
+        marginTop: 'unset',
+      },
+    },
+  }
+}))(Box);
+
 const Footer = () => {
-  const theme = useTheme();
 
   return (
-    <Box
-      mt="3rem"
-      color="red"
-      display="flex"
-      padding="2rem 1rem 3rem 1rem"
-      borderTop={`1px solid ${theme.palette.divider}`}
-      alignItems="center"
-      justifyContent="space-between"
-    >
-      <Typography color="textSecondary">
-        Las imagenes  son de libre distribucion  siempre que se indique  su  procedencia
+    <StyledBox>
+      <Typography
+        color="textSecondary"
+      >
+        Las imágenes son de libre distribución siempre que se indique su procedencia.
       </Typography>
-      <NavigationLink href="/contacto">
+      <NavigationLink
+        href="/contacto"
+      >
         <Box
           display="flex"
           alignItems="center"
@@ -31,7 +52,7 @@ const Footer = () => {
           Contacto
         </Box>
       </NavigationLink>
-    </Box>
+    </StyledBox>
   )
 };
 
