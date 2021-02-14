@@ -25,20 +25,15 @@ const columns: RegistroItemColumn[] = [
   {
     header: 'FECHA',
     getValue(el) {
-      const href = mapRegistroURL(el, (el.tipo || '').split(',')[0]);
+      const href = mapRegistroURL(el, (el.tipo || '').split(',')[0], el);
 
-      const { src, date = '' } = el;
+      const { date = '' } = el;
 
       const dateString = mapFormattedDate(date) || '?';
 
       return (
         <>
-          <NavigationLink
-            href={dateString == '?'
-              ? href
-              : `${href}#${mapTextToUrl(src)}`
-            }
-          >
+          <NavigationLink href={href}>
             <Typography>
               {dateString}
             </Typography>

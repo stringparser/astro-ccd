@@ -119,10 +119,6 @@ const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...
     <Fragment>
       <SEOHead
         meta={meta}
-        title={descriptionContent
-          ? descriptionContent
-          : undefined
-        }
       />
       {mapChildren(children)}
     </Fragment>
