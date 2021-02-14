@@ -1,8 +1,8 @@
 import React from "react";
 import Email from "@material-ui/icons/Email";
-import { Box, Typography, withStyles } from "@material-ui/core";
+import { Box, Button, Typography, withStyles } from "@material-ui/core";
 
-import NavigationLink from "src/components/Navigation/NavigationLink";
+import { openContactEmail } from "src/lib/navigation";
 
 const StyledBox = withStyles(theme => ({
   root:  {
@@ -30,6 +30,14 @@ const StyledBox = withStyles(theme => ({
   }
 }))(Box);
 
+const StyledButton = withStyles({
+  root: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+  }
+})(Button);
+
 const Footer = () => {
 
   return (
@@ -39,19 +47,14 @@ const Footer = () => {
       >
         Las imágenes son de libre distribución siempre que se indique su procedencia.
       </Typography>
-      <NavigationLink
-        href="/contacto"
+      <StyledButton
+        variant="text"
+        onClick={openContactEmail}
       >
-        <Box
-          display="flex"
-          alignItems="center"
-          justifyContent="space-around"
-        >
-          <Email fontSize="small" />
-          <Box p="3px" />
-          Contacto
-        </Box>
-      </NavigationLink>
+        <Email fontSize="small" />
+        <Box p="3px" />
+        Contacto
+      </StyledButton>
     </StyledBox>
   )
 };
