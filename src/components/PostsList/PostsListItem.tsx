@@ -51,8 +51,8 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
 
-    '& > :first-child': {
-      maxHeight: '300px',
+    '& > div:last-of-type': {
+      height: '300px',
     }
   },
   etiquetas: {

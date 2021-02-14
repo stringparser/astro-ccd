@@ -50,7 +50,9 @@ const useStyles = makeStyles(theme => ({
 
       height: props.isBig || parseInt(`${props.height}`, 10) < 300
         ? props.height
-        : '300px'
+        : /registro\//.test(props.src)
+          ? undefined
+          : '300px'
       ,
 
       border: '1px solid rgba(255, 255, 255, 0.15)',
@@ -72,6 +74,7 @@ const useStyles = makeStyles(theme => ({
 
     '& > div:last-of-type': {
       height: 'auto',
+      // margin: '0 auto !important',
       overflow: 'auto !important',
       position: 'static !important',
     },
@@ -112,14 +115,14 @@ const Image: React.FC<ImageProps> = props => {
   const classes = useStyles(props);
 
   const {
-    link = true,
-    isBig = true,
     src,
+    link = true,
+    isBig = /registro\//.test(src),
     fecha,
     desc,
     children,
     pequeña,
-    sinBorde,
+    sinBorde = !/registro\//.test(src),
     className,
     isSelected,
     dateClassName,
