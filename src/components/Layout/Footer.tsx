@@ -1,5 +1,8 @@
 import React from "react";
-import { Box, useTheme } from "@material-ui/core";
+import Email from "@material-ui/icons/Email";
+import { Box, Typography, useTheme } from "@material-ui/core";
+
+import NavigationLink from "src/components/Navigation/NavigationLink";
 
 const Footer = () => {
   const theme = useTheme();
@@ -14,12 +17,20 @@ const Footer = () => {
       alignItems="center"
       justifyContent="space-between"
     >
-      <span>
+      <Typography color="textSecondary">
         Las imagenes  son de libre distribucion  siempre que se indique  su  procedencia
-      </span>
-      <span>
-        Contacto: jcgmilla@gmail.com
-      </span>
+      </Typography>
+      <NavigationLink href="/contacto">
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="space-around"
+        >
+          <Email fontSize="small" />
+          <Box p="3px" />
+          Contacto
+        </Box>
+      </NavigationLink>
     </Box>
   )
 };

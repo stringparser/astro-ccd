@@ -62,6 +62,10 @@ const useStyles = makeStyles(theme => ({
     },
 
     [theme.breakpoints.down('xs')]: {
+      '& .MuiChip-label': {
+        height: 'auto',
+        padding: '0 8px',
+      },
       '& .MuiBreadcrumbs-separator': {
         margin: '0',
       },
@@ -108,13 +112,11 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
             >
               <Chip
                 label="inicio"
-                size="small"
                 variant="outlined"
                 className={classes.clickable}
               />
             </NavigationLink>
           : <Chip
-                size="small"
                 label="inicio"
                 className={classes.disabled}
             />
@@ -134,7 +136,6 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
             >
               <Chip
                 label={text}
-                size="small"
                 variant="outlined"
                 className={classes.clickable}
               />
@@ -144,7 +145,6 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
         {current && (
           <Chip
             label={normalizeText(current)}
-            size="small"
             variant="outlined"
             className={classes.disabled}
           />

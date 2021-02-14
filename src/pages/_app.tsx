@@ -104,7 +104,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
                   <Component {...pageProps} />
                 </Box>
                 <SeguirLeyendoContainer />
-                {/^(\/|\/404)$/.test(router.pathname)
+                {/^(\/|\/404|\/contacto)$/.test(router.pathname)
                   ? null
                   : <DisqusEmbed />
                 }

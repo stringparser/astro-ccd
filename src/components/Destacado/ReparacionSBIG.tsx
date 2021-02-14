@@ -1,10 +1,11 @@
 import React from "react";
-import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles, Button, withStyles } from "@material-ui/core";
 
-import Image from "src/components/Image/Image";
 import { PageBasename } from "types";
-import NavigationLink from "src/components/Navigation/NavigationLink";
+
 import H2 from "src/components/Typography/H2";
+import Image from "src/components/Image/Image";
+import NavigationLink from "src/components/Navigation/NavigationLink";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,6 +20,7 @@ const useStyles = makeStyles(theme => ({
   },
   enlace: {
     color: 'currentColor',
+    position: 'relative',
     userSelect: 'none',
   },
   imagen: {
@@ -26,6 +28,8 @@ const useStyles = makeStyles(theme => ({
     borderColor: 'transparent !important',
   },
   imageWrapper: {
+    position: 'relative',
+
     width: '80%',
     margin: '1rem 0',
     height: '150px',
@@ -40,6 +44,26 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 'bold',
   },
 }));
+
+const StyledButton = withStyles(theme => ({
+  root: {
+    position: 'absolute',
+
+    right: '5px',
+    bottom: '20px',
+    backgroundColor: 'royalblue',
+
+    [theme.breakpoints.up('sm')]: {
+      bottom: '30px',
+    },
+  },
+  label: {
+    fontWeight: 'bold',
+
+    color: theme.palette.common.white,
+    opacity: .7,
+  }
+}))(Button);
 
 const ReparacionSBIG = () => {
   const classes = useStyles();
@@ -68,7 +92,18 @@ const ReparacionSBIG = () => {
           height={125}
           className={classes.imageWrapper}
           imageClassName={classes.imagen}
-        />
+        >
+          <NavigationLink
+            href="/contacto"
+          >
+            <StyledButton
+              size="small"
+              variant="contained"
+            >
+              CONTACTO
+            </StyledButton>
+          </NavigationLink>
+        </Image>
       </NavigationLink>
     </Box>
   )

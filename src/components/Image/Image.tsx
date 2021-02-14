@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
       maxWidth: 'unset'
     },
 
-    '& > :last-child': {
+    '& > div:last-of-type': {
       display: 'inline-flex !important',
 
       height: props.isBig || parseInt(`${props.height}`, 10) < 300
@@ -70,7 +70,7 @@ const useStyles = makeStyles(theme => ({
     minHeight: 'unset',
     maxHeight: 'unset',
 
-    '& > div:last-child': {
+    '& > div:last-of-type': {
       height: 'auto',
       overflow: 'auto !important',
       position: 'static !important',
@@ -84,7 +84,7 @@ const useStyles = makeStyles(theme => ({
       position: 'unset !important',
     },
 
-    '&:hover > div:last-child': {
+    '&:hover > div:last-of-type': {
       opacity: .95,
       borderColor: 'royalblue',
     }
@@ -94,12 +94,12 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
   },
   imageSelected: {
-    '& > :last-child': {
+    '& > div:last-of-type': {
       borderColor: 'royalblue',
     }
   },
   noBorder: {
-    '& > :last-child': {
+    '& > div:last-of-type': {
       borderColor: 'transparent !important',
     }
   },
@@ -117,6 +117,7 @@ const Image: React.FC<ImageProps> = props => {
     src,
     fecha,
     desc,
+    children,
     pequeña,
     sinBorde,
     className,
@@ -185,6 +186,7 @@ const Image: React.FC<ImageProps> = props => {
         onClick={handleOpen}
         className={imageClassName}
       />
+      {children}
     </Box>
   );
 };
