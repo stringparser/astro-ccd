@@ -103,21 +103,27 @@ const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...
     })
   ;
 
-  if (descriptionChild) {
-    const { children: description } = descriptionChild?.props;
-    const content = `${description}`;
+  const { children: description } = descriptionChild?.props || {};
+  const descriptionContent = `${description}`;
 
+  if (descriptionChild) {
     meta.push(
       {
         property: 'og:description',
-        content,
+        content: descriptionContent,
       }
     );
   }
 
   return (
     <Fragment>
-      <SEOHead meta={meta} />
+      <SEOHead
+        meta={meta}
+        title={descriptionContent
+          ? descriptionContent
+          : undefined
+        }
+      />
       {mapChildren(children)}
     </Fragment>
   );
