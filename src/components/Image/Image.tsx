@@ -42,6 +42,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: '90%',
 
     '& p': {
+      width: '100%',
       maxWidth: 'unset'
     },
 
