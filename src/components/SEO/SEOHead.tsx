@@ -50,10 +50,18 @@ const SEOHead: React.FC<SeoHeadProps> = ({ title, meta: initialMeta = [] }) => {
     },
   ];
 
+  const pageName = page === 'ccd'
+    ? 'CCD'
+    : page
+  ;
+
   return (
     <Head>
       <title>
-        {capitalize(title || page || '')}
+        {[
+          'OACM Fuensanta',
+          pageName,
+        ].filter(v => v).join(' | ')}
       </title>
       {meta.length === 0
         ? null
