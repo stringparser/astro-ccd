@@ -29,13 +29,13 @@ const columns: RegistroItemColumn[] = [
 
       const { date = '' } = el;
 
-      const dateString = mapFormattedDate(date) || '?';
+      const dateString = mapFormattedDate(date, ' ') || '?';
 
       return (
         <>
           <NavigationLink href={href}>
             <Typography>
-              {dateString}
+              {dateString.replace(/^[0\s]+/, '')}
             </Typography>
           </NavigationLink>
         </>
@@ -88,6 +88,9 @@ const RegistroFotografías: React.FC<RegistroFotografíasProps> = (props) => {
     .flatMap(({ entradas, ...el }) =>
       entradas.map(it => ({ ...el, ...it }))
     )
+    .sort((a, b) => {
+      return (b.date || '').localeCompare(a.date || '');
+    })
   ;
 
   return (

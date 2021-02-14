@@ -173,7 +173,7 @@ export const inverseMesMap = [
   'Diciembre'
 ];
 
-export const mapFormattedDate = (value: string) => {
+export const mapFormattedDate = (value: string, sep = ' de ') => {
   const numMatch = /(20\d{2})([01]\d{1})(\d{1,2})?/.exec(value);
 
   if (numMatch) {
@@ -190,7 +190,7 @@ export const mapFormattedDate = (value: string) => {
         return el;
       })
       .filter(v => v || v !== '00')
-      .join(' de ')
+      .join(sep)
       .replace(/^00\s*(?:de)?\s*/g, '')
     ;
   }
