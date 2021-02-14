@@ -4,7 +4,7 @@ import { GetStaticProps } from "next";
 import { Box, Typography, TableRow, Table, TableBody, TableCell, TableHead, TableContainer } from "@material-ui/core";
 
 import { mapRegistroURL } from "src/lib/navigation";
-import { mapFormattedDate, mapTagTextTitle, mapTextToUrl } from "src/lib/util";
+import { mapFormattedDate, mapTagTextTitle } from "src/lib/util";
 
 import H1 from "src/components/Typography/H1";
 import NavigationLink from "src/components/Navigation/NavigationLink";
@@ -25,7 +25,7 @@ const columns: RegistroItemColumn[] = [
   {
     header: 'FECHA',
     getValue(el) {
-      const href = mapRegistroURL(el, (el.tipo || '').split(',')[0], el);
+      const href = mapRegistroURL(el, (el.tipo || '').split(',')[0], el.src);
 
       const { date = '' } = el;
 

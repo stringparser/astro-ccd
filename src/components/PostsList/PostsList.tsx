@@ -4,7 +4,6 @@ import React from "react";
 import { Box, makeStyles } from "@material-ui/core";
 
 import { RegistroItem } from "types";
-import { opacityMixin } from "src/components/mixins";
 
 import PostsListItem from "src/components/PostsList/PostsListItem";
 import { mapRegistroURL } from "src/lib/navigation";

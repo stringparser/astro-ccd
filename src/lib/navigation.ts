@@ -7,7 +7,7 @@ import registroMetadata from 'cache/registro-metadata.json';
 export const mapRegistroURL = (
   el: Pick<RegistroItem, 'urlId'>,
   tipo?: string,
-  entrada?: RegistroItemEntrada,
+  src?: string,
 ) => {
   const base = `/fotografia/registro/${el.urlId}`;
 
@@ -16,8 +16,8 @@ export const mapRegistroURL = (
     : base
   ;
 
-  return entrada
-    ? `${href}#${mapTextToUrl(entrada.src.split('/').pop())}`
+  return src
+    ? `${href}#${mapTextToUrl(src.split('/').pop())}`
     : href
   ;
 };
