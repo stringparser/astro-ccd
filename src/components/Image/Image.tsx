@@ -51,9 +51,7 @@ const useStyles = makeStyles(theme => ({
 
       height: props.isBig || parseInt(`${props.height}`, 10) < 300
         ? props.height
-        : /registro\//.test(props.src)
-          ? undefined
-          : '300px'
+        : undefined
       ,
 
       border: '1px solid rgba(255, 255, 255, 0.15)',
