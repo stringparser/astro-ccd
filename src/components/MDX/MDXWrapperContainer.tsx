@@ -109,12 +109,8 @@ const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...
 
     meta.push(
       {
+        property: 'og:description',
         content,
-        name: 'description',
-      },
-      {
-        content,
-        property: 'og:description'
       }
     );
   }
