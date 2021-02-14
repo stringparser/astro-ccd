@@ -11,6 +11,7 @@ import Alert from '@material-ui/lab/Alert/Alert';
 import PostsList from 'src/components/PostsList/PostsList';
 import PostsListTitle from 'src/components/PostsList/PostsListTitle';
 import ObservadoresSupernovas from 'src/components/Logo/ObservadoresSupernovas';
+import SEOHead from 'src/components/SEO/SEOHead';
 
 export type EntradasPorEtiquetaParams = {
   etiqueta: string;
@@ -137,11 +138,9 @@ const EntradasPorEtiqueta: React.FC<EntradasPorEtiquetaProps> = (props) => {
 
   return (
     <>
-      <Head>
-        <title>
-          OACM Fuensanta | {tagTextTitle}
-        </title>
-      </Head>
+      <SEOHead
+        title={tagTextTitle}
+      />
 
       <PostsListTitle
         title={tagTextTitle}

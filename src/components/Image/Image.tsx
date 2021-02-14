@@ -51,9 +51,7 @@ const useStyles = makeStyles(theme => ({
 
       height: props.isBig || parseInt(`${props.height}`, 10) < 300
         ? props.height
-        : /registro\//.test(props.src)
-          ? undefined
-          : '300px'
+        : undefined
       ,
 
       border: '1px solid rgba(255, 255, 255, 0.15)',
@@ -99,7 +97,7 @@ const useStyles = makeStyles(theme => ({
   },
   imageSelected: {
     '& > div:last-of-type': {
-      borderColor: 'royalblue',
+      borderColor: 'royalblue !important',
     }
   },
   noBorder: {
@@ -118,7 +116,7 @@ const Image: React.FC<ImageProps> = props => {
   const {
     src,
     link = true,
-    isBig = /registro\//.test(src),
+    isBig = true,
     fecha,
     desc,
     children,
@@ -153,10 +151,7 @@ const Image: React.FC<ImageProps> = props => {
 
   return (
     <Box
-      id={/^(\/_next\/|data:image)/.test(src)
-        ? undefined
-        : mapTextToUrl(src)
-      }
+      id={mapTextToUrl(src.split('/').pop())}
       className={clsx(
         classes.root,
         className,

@@ -61,7 +61,7 @@ function PostsList(props: PostsListProps) {
       {items.map((el) => {
         const entrada = el.entradas.find(el => el.src);
 
-        const href = mapRegistroURL(el, tipo || el.tipo, entrada);
+        const href = mapRegistroURL(el, tipo || el.tipo);
 
         const item = {
           ...el,

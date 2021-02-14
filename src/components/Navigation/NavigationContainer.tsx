@@ -105,7 +105,11 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       maxWidth: '90%',
       textAlign: 'left',
-    }
+
+      '& .MuiTypography-caption': {
+        fontSize: '1rem',
+      }
+    },
   },
 
   linkContainer: {
