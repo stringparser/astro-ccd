@@ -15,6 +15,7 @@ import ScrollToTopButton from "src/components/Layout/ScrollToTopButton";
 import NavigationBreadcrumbs from "src/components/Navigation/NavigationBreadcrumbs";
 import SeguirLeyendoContainer from "src/components/PostsList/SeguirLeyendoContainer";
 
+import SEOHead from "src/components/SEO/SEOHead";
 import { FAVICON_SRC } from "src/lib/constants";
 import { mdxComponents } from "src/components/MDX/components";
 
@@ -84,15 +85,10 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
         <MDXProvider components={mdxComponents}>
           <StylesProvider jss={jss}>
             <CssBaseline />
+            <SEOHead />
             <Head>
-              <title>
-                {router.route === '/'
-                  ? 'OACM Fuensanta | Inicio'
-                  : 'OACM Fuensanta'
-                }
-              </title>
               <link
-                rel="icon"
+                rel="shortcut icon"
                 href={FAVICON_SRC}
               />
             </Head>
@@ -104,7 +100,7 @@ const WebApp: React.FC<AppProps> = (props: AppProps) => {
                   <Component {...pageProps} />
                 </Box>
                 <SeguirLeyendoContainer />
-                {/^(\/|\/404|\/contacto)$/.test(router.pathname)
+                {/^(\/|\/404)$/.test(router.pathname)
                   ? null
                   : <DisqusEmbed />
                 }

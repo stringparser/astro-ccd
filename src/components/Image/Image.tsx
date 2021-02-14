@@ -99,7 +99,7 @@ const useStyles = makeStyles(theme => ({
   },
   imageSelected: {
     '& > div:last-of-type': {
-      borderColor: 'royalblue',
+      borderColor: 'royalblue !important',
     }
   },
   noBorder: {
@@ -153,10 +153,7 @@ const Image: React.FC<ImageProps> = props => {
 
   return (
     <Box
-      id={/^(\/_next\/|data:image)/.test(src)
-        ? undefined
-        : mapTextToUrl(src)
-      }
+      id={mapTextToUrl(src.split('/').pop())}
       className={clsx(
         classes.root,
         className,

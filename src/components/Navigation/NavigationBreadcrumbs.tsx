@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextRouter, useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -7,43 +7,7 @@ import MuiBreadcrumbs from '@material-ui/core/Breadcrumbs';
 import { Box, Chip, makeStyles } from '@material-ui/core';
 
 import NavigationLink from 'src/components/Navigation/NavigationLink';
-
-import registroMetadata from 'cache/registro-metadata.json';
-
-const mapRouteParts = (router: NextRouter) => {
-  if (router.asPath === '/') {
-    return [];
-  }
-
-  const routeParts = (router.asPath || router.pathname)
-    .slice(1)
-    .replace(/[?#][^\s]*$/, '')
-    .split('/')
-  ;
-
-  const urlId = routeParts[routeParts.length - 1];
-  const itemProps = registroMetadata.find(el => el.urlId === urlId);
-
-  const tipo = typeof router.query.tipo === 'string'
-    ? router.query.tipo
-    : itemProps && itemProps.tipo
-  ;
-
-  return routeParts.map(value => {
-    switch (value) {
-      case 'registro': {
-        if (tipo) {
-          return tipo.split(',')[0];
-        }
-
-        return value;
-      }
-      default: {
-        return value;
-      }
-    }
-  });
-};
+import { mapRouteParts } from 'src/lib/navigation';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -118,6 +82,7 @@ const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = () => {
             </NavigationLink>
           : <Chip
                 label="inicio"
+                variant="outlined"
                 className={classes.disabled}
             />
         }

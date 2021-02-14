@@ -1,14 +1,18 @@
-import Head from "next/head";
 import { Box } from "@material-ui/core";
 import { useRouter } from "next/router";
 import React, { Fragment } from "react";
 
+import { getOrigin } from "src/lib/navigation";
+
 import H2 from "src/components/Typography/H2";
+import SEOHead, { SeoHeadProps } from "src/components/SEO/SEOHead";
 
 export type MDXChild = {
   key: string | null;
   type?: React.ElementType;
   props?: {
+    src?: string;
+    desc?: string;
     mdxType: string;
     children: string | MDXChild | MDXChild[];
     originalType: string;
@@ -58,37 +62,66 @@ const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...
   if (router.route === '/') {
     return (
       <Box {...rest}>
+        <SEOHead title="Inicio" />
         {mapChildren(children)}
       </Box>
     );
   }
 
-  const description = React.Children.toArray(children)
-    .reduce((acc, el) => {
-      // @ts-ignore
-      const { children: child, mdxType } = el.props || {};
+  const origin = getOrigin();
 
-      if (!acc && /^h\d$/.test(mdxType) && typeof child === 'string') {
-        return child;
-      }
+  const meta: SeoHeadProps['meta'] = [];
 
-      return acc;
-    }, '')
+  const arrayChildren = React.Children.toArray(children) as MDXChild[];
+
+  const imageChild = arrayChildren.find(el => {
+    const { src, mdxType } = el?.props || {};
+    return mdxType === 'Imagen' && src;
+  });
+
+  if (imageChild) {
+    const { src, desc } = imageChild?.props;
+    const content = `${origin}${require(`@public/${src}`).default}`;
+
+    meta.push({
+      property: 'og:image',
+      content,
+    });
+
+    if (desc) {
+      meta.push({
+        property: 'og:image:alt',
+        content: desc,
+      });
+    }
+  }
+
+  const descriptionChild = arrayChildren
+    .find(el => {
+      const { children: child, mdxType } = el?.props || {};
+      return /^h\d$/.test(mdxType) && typeof child === 'string';
+    })
   ;
 
-  if (description) {
-    return (
-      <Box {...rest}>
-        <Head>
-          <meta property="og:description" content={`${description}`} />
-        </Head>
-        {mapChildren(children)}
-      </Box>
+  if (descriptionChild) {
+    const { children: description } = descriptionChild?.props;
+    const content = `${description}`;
+
+    meta.push(
+      {
+        content,
+        name: 'description',
+      },
+      {
+        content,
+        property: 'og:description'
+      }
     );
   }
 
   return (
     <Box {...rest}>
+      <SEOHead meta={meta} />
       {mapChildren(children)}
     </Box>
   );

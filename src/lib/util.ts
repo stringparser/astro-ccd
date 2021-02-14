@@ -1,6 +1,7 @@
 import latinize from 'latinize';
 import { NextRouter } from 'next/router';
 import { useEffect, useLayoutEffect } from "react";
+import { mapRouteParts } from 'src/lib/navigation';
 import { RegistroItemEntrada, RegistroItem } from "types";
 
 export const mesMap = {
@@ -29,17 +30,11 @@ type IProps = Parameters<React.FC>[0] & {
 export const mapIdPropsFromChildren = (props: IProps, router: NextRouter) => {
   const { style, children } = props;
 
-  if (typeof children !== 'string') {
+  if (typeof children !== 'string' || children.trim() == '') {
     return {};
   }
 
-  const textUrl = mapTextToUrl(children);
-  const [base, page, urlId] = router.asPath.slice(1).split('/');
-
-  const id = (
-    urlId && `${urlId}-${textUrl}`
-    || mapTextToUrl(children)
-  );
+  const id = mapTextToUrl(children);
 
   return {
     id,

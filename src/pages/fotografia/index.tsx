@@ -9,6 +9,7 @@ import { mapTagTextTitle } from "src/lib/util";
 
 import PostsListItem from "src/components/PostsList/PostsListItem";
 import PostsListTitle from "src/components/PostsList/PostsListTitle";
+import SEOHead from "src/components/SEO/SEOHead";
 
 export const getStaticProps = async () => {
   const items = (await import('cache/ultima-entrada-por-etiqueta.json')).default as RegistroItem[];
@@ -51,9 +52,9 @@ const Fotografia: React.FC<FotografiaProps> = props => {
 
   return (
     <>
-      <Head>
-        <title>OACM Fuensanta | Fotografía</title>
-      </Head>
+      <SEOHead
+        title="Fotografía"
+      />
 
       <PostsListTitle
         title="Fotografía"
