@@ -79,7 +79,9 @@ const SeguirLeyendoContainer: React.FC = () => {
         : false
       ;
     })
-    .sort(ordenarPorFecha)
+    .sort(() => {
+      return  2 * Math.random() - 1;
+    })
     .slice(0, 3)
   ;
 
@@ -94,16 +96,16 @@ const SeguirLeyendoContainer: React.FC = () => {
 
   return (
     <Box className={classes.root}>
-      <H2 style={{
-        margin: '0.5rem auto',
-        maxWidth: '300px',
-        whiteSpace: 'pre-line',
-        lineHeight: '1.5rem',
-      }}>
-        <span>Fotografía de </span>
-        <span>{etiquetaText}</span>
-        <span> como </span>
-        <span>{objeto.titulo}</span>
+      <H2
+        id="entradas-como"
+        style={{
+          margin: '0.5rem auto',
+          maxWidth: '300px',
+          whiteSpace: 'pre-line',
+          lineHeight: '1.5rem',
+        }}
+      >
+        Otras fotografías
       </H2>
       <PostsList
         tipo={tipo}
