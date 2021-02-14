@@ -60,10 +60,7 @@ const SEOHead: React.FC<SeoHeadProps> = ({ title, meta: initialMeta = [] }) => {
   return (
     <Head>
       <title>
-        {[
-          'OACM Fuensanta',
-          title || pageName,
-        ].filter(v => v).join(' | ')}
+        {title || pageName}
       </title>
       {meta.length === 0
         ? null
