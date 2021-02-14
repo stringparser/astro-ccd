@@ -83,10 +83,10 @@ const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...
     const { src, desc } = imageChild?.props;
     const content = `${origin}${require(`@public/${src}`).default}`;
 
-    meta.push({
-      property: 'og:image',
-      content,
-    });
+    // meta.push({
+    //   property: 'og:image',
+    //   content,
+    // });
 
     if (desc) {
       meta.push({

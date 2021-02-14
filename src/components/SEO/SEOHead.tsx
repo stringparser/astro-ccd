@@ -9,6 +9,8 @@ export type SeoHeadProps = {
   title?: string;
 };
 
+const origin = getOrigin();
+
 const defaultMeta: SeoHeadProps['meta'] = [
   {
     charSet: 'UTF-8',
@@ -24,12 +26,15 @@ const defaultMeta: SeoHeadProps['meta'] = [
   {
     property: 'og:site_name',
     content: 'OACM Fuensanta',
+  },
+  {
+    property: 'og:image',
+    content: `${origin}${require('@public/favicon.png').default}`,
   }
 ];
 
 const SEOHead: React.FC<SeoHeadProps> = ({ title, meta: initialMeta = [] }) => {
   const router = useRouter();
-  const origin = getOrigin();
   const [, page] = mapRouteParts(router);
 
   const meta: React.MetaHTMLAttributes<HTMLMetaElement>[] = [
