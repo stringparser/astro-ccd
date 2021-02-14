@@ -61,10 +61,10 @@ const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...
 
   if (router.route === '/') {
     return (
-      <Box {...rest}>
+      <Fragment>
         <SEOHead title="Inicio" />
         {mapChildren(children)}
-      </Box>
+      </Fragment>
     );
   }
 
@@ -120,10 +120,10 @@ const MDXWrapperContainer: React.FC<MDXWrapperContainerProps> = ({ children, ...
   }
 
   return (
-    <Box {...rest}>
+    <Fragment>
       <SEOHead meta={meta} />
       {mapChildren(children)}
-    </Box>
+    </Fragment>
   );
 };
 
